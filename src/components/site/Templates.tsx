@@ -220,8 +220,8 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {category.services.map((s) => (
             <Link key={s.slug} to={`/${s.slug}` as never} className="group rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40">
-              <div className="text-base font-semibold capitalize">{titleCase(s.keyword)}</div>
-              <p className="mt-2 text-sm text-muted-foreground">Learn more about {s.keyword} and how we deliver results.</p>
+              <div className="text-base font-semibold">{titleCase(s.keyword)}</div>
+              <p className="mt-2 text-sm text-muted-foreground">Learn more about {titleCase(s.keyword)} and how we deliver results.</p>
               <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
                 View service <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
               </div>
@@ -249,7 +249,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {category.blog.map((b) => (
               <Link key={b.slug} to={`/blog/${b.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
-                <div className="text-sm font-semibold capitalize">{titleCase(b.keyword)}</div>
+                <div className="text-sm font-semibold">{titleCase(b.keyword)}</div>
                 <div className="mt-1 text-xs text-muted-foreground">Read the guide →</div>
               </Link>
             ))}
@@ -282,7 +282,7 @@ export function ServicePageTemplate({
       <Hero
         kicker={`${category.title} • Sri Lanka`}
         h1={`${title} — Get Found, Get Customers`}
-        intro={`Looking for the best ${keyword} solution? We design, plan and execute high-performing ${keyword} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
+        intro={`Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: category.title, to: `/${category.slug}` },
@@ -290,16 +290,16 @@ export function ServicePageTemplate({
         ]}
       />
       <section className="mx-auto max-w-3xl px-4 py-12">
-        <h2 className="text-2xl font-bold sm:text-3xl">Why {keyword} works in Sri Lanka</h2>
+        <h2 className="text-2xl font-bold sm:text-3xl">Why {title} works in Sri Lanka</h2>
         <p className="mt-4 text-muted-foreground">
-          {keyword.charAt(0).toUpperCase() + keyword.slice(1)} remains one of the most effective ways for Sri Lankan brands to reach the right audience at the right time. Whether you are a startup, SME or enterprise, our team blends data, creativity and local insight to deliver measurable results — leads, sales, awareness or brand love.
+          {title} remains one of the most effective ways for Sri Lankan brands to reach the right audience at the right time. Whether you are a startup, SME or enterprise, our team blends data, creativity and local insight to deliver measurable results — leads, sales, awareness or brand love.
         </p>
         <p className="mt-4 text-muted-foreground">
           We handle the complete journey: strategy, audience research, creative production, media buying, campaign launch, optimisation and detailed reporting. You stay in control while we do the heavy lifting.
         </p>
       </section>
       <Bullets
-        title={`What's included in our ${keyword} service`}
+        title={`What's included in our ${title} service`}
         items={[
           "Discovery call & objective setting",
           "Audience research & competitor analysis",
@@ -312,7 +312,7 @@ export function ServicePageTemplate({
         ]}
       />
       <FeatureGrid
-        title={`Why choose us for ${keyword}`}
+        title={`Why choose us for ${title}`}
         items={[
           { icon: <Target className="h-5 w-5" />, title: "Goal-driven", body: "Every rupee tied to a measurable outcome." },
           { icon: <Sparkles className="h-5 w-5" />, title: "Creative that converts", body: "On-brand creative built for the Sri Lankan audience." },
@@ -333,7 +333,7 @@ export function ServicePageTemplate({
             .slice(0, 6)
             .map((s) => (
               <Link key={s.slug} to={`/${s.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
-                <div className="font-semibold capitalize">{titleCase(s.keyword)}</div>
+                <div className="font-semibold">{titleCase(s.keyword)}</div>
                 <div className="mt-1 text-xs text-muted-foreground">Explore service →</div>
               </Link>
             ))}
@@ -341,7 +341,7 @@ export function ServicePageTemplate({
       </section>
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={`Want clear answers about ${keyword}?`}
+          headline={`Want clear answers about ${title}?`}
           sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
         />
       </div>
@@ -365,7 +365,7 @@ export function BlogArticleTemplate({
       <Hero
         kicker="Insights & Guides"
         h1={`${title}: Complete Guide`}
-        intro={`Everything Sri Lankan businesses need to know about ${keyword} — strategies, channels, costs to consider, common mistakes and how to choose the right partner.`}
+        intro={`Everything Sri Lankan businesses need to know about ${title} — strategies, channels, costs to consider, common mistakes and how to choose the right partner.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Blog" },
@@ -377,7 +377,7 @@ export function BlogArticleTemplate({
       </article>
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={`Still have questions about ${keyword}?`}
+          headline={`Still have questions about ${title}?`}
           sub={`Free phone & WhatsApp guidance — talk to a real Sri Lankan advertising specialist.`}
         />
       </div>
@@ -387,7 +387,7 @@ export function BlogArticleTemplate({
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {category.services.slice(0, 6).map((s) => (
             <Link key={s.slug} to={`/${s.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
-              <div className="font-semibold capitalize">{titleCase(s.keyword)}</div>
+              <div className="font-semibold">{titleCase(s.keyword)}</div>
               <div className="mt-1 text-xs text-muted-foreground">View service →</div>
             </Link>
           ))}

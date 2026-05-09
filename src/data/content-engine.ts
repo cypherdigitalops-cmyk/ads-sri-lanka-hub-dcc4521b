@@ -587,7 +587,7 @@ function findCategoryBlock(category: Category): CategoryKnowledge | null {
 
 function kw(keyword: string) {
   // Normalise display variant.
-  return keyword;
+  return titleCase(keyword);
 }
 
 // --------- BLOG ARTICLE GENERATOR (1,200+ words real content) ---------
@@ -733,7 +733,7 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
     text: `${titled} is part of ${category.title.toLowerCase()} in Sri Lanka. ${k.definition}`,
   });
 
-  blocks.push({ type: "h2", text: `What's involved in delivering ${keyword}` });
+  blocks.push({ type: "h2", text: `What's involved in delivering ${titled}` });
   blocks.push({
     type: "ul",
     items: k.channels.slice(0, 6).map((c) => `${c.name}: ${c.desc}`),

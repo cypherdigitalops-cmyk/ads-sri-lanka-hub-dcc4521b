@@ -9,27 +9,700 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as YoutubeMarketingSriLankaRouteImport } from './routes/youtube-marketing-sri-lanka'
+import { Route as YoutubeAdsSriLankaRouteImport } from './routes/youtube-ads-sri-lanka'
+import { Route as WordpressDevelopmentSriLankaRouteImport } from './routes/wordpress-development-sri-lanka'
+import { Route as WhatsappMarketingSriLankaRouteImport } from './routes/whatsapp-marketing-sri-lanka'
+import { Route as WebsiteMaintenanceSriLankaRouteImport } from './routes/website-maintenance-sri-lanka'
+import { Route as WebsiteDevelopmentSriLankaRouteImport } from './routes/website-development-sri-lanka'
+import { Route as WebDesignSriLankaRouteImport } from './routes/web-design-sri-lanka'
+import { Route as VideoProductionSriLankaRouteImport } from './routes/video-production-sri-lanka'
+import { Route as UiUxDesignSriLankaRouteImport } from './routes/ui-ux-design-sri-lanka'
+import { Route as TvCommercialsSriLankaRouteImport } from './routes/tv-commercials-sri-lanka'
+import { Route as TvAdvertisingSriLankaRouteImport } from './routes/tv-advertising-sri-lanka'
+import { Route as TtlAdvertisingSriLankaRouteImport } from './routes/ttl-advertising-sri-lanka'
+import { Route as TransitAdvertisingSriLankaRouteImport } from './routes/transit-advertising-sri-lanka'
+import { Route as TiktokMarketingSriLankaRouteImport } from './routes/tiktok-marketing-sri-lanka'
+import { Route as TiktokAdsSriLankaRouteImport } from './routes/tiktok-ads-sri-lanka'
+import { Route as TechnicalSeoSriLankaRouteImport } from './routes/technical-seo-sri-lanka'
+import { Route as SocialMediaMarketingSriLankaRouteImport } from './routes/social-media-marketing-sri-lanka'
+import { Route as SocialMediaManagementSriLankaRouteImport } from './routes/social-media-management-sri-lanka'
+import { Route as SocialMediaAgencySriLankaRouteImport } from './routes/social-media-agency-sri-lanka'
+import { Route as SmsMarketingSriLankaRouteImport } from './routes/sms-marketing-sri-lanka'
+import { Route as ShopBrandingSriLankaRouteImport } from './routes/shop-branding-sri-lanka'
+import { Route as SeoServicesSriLankaRouteImport } from './routes/seo-services-sri-lanka'
+import { Route as SeoCompanySriLankaRouteImport } from './routes/seo-company-sri-lanka'
+import { Route as RoadshowMarketingSriLankaRouteImport } from './routes/roadshow-marketing-sri-lanka'
+import { Route as RetailBrandingSriLankaRouteImport } from './routes/retail-branding-sri-lanka'
+import { Route as RemarketingSriLankaRouteImport } from './routes/remarketing-sri-lanka'
+import { Route as RadioAdvertisingSriLankaRouteImport } from './routes/radio-advertising-sri-lanka'
+import { Route as ProgrammaticAdvertisingSriLankaRouteImport } from './routes/programmatic-advertising-sri-lanka'
+import { Route as PpcSriLankaRouteImport } from './routes/ppc-sri-lanka'
+import { Route as PointOfSaleAdvertisingSriLankaRouteImport } from './routes/point-of-sale-advertising-sri-lanka'
+import { Route as PerformanceMarketingSriLankaRouteImport } from './routes/performance-marketing-sri-lanka'
+import { Route as PackagingDesignSriLankaRouteImport } from './routes/packaging-design-sri-lanka'
+import { Route as OutdoorAdvertisingSriLankaRouteImport } from './routes/outdoor-advertising-sri-lanka'
+import { Route as OmnichannelMarketingSriLankaRouteImport } from './routes/omnichannel-marketing-sri-lanka'
+import { Route as NewspaperAdvertisingSriLankaRouteImport } from './routes/newspaper-advertising-sri-lanka'
+import { Route as MultiChannelAdvertisingSriLankaRouteImport } from './routes/multi-channel-advertising-sri-lanka'
+import { Route as MotionGraphicsSriLankaRouteImport } from './routes/motion-graphics-sri-lanka'
+import { Route as MobileBillboardSriLankaRouteImport } from './routes/mobile-billboard-sri-lanka'
+import { Route as MediaPlanningSriLankaRouteImport } from './routes/media-planning-sri-lanka'
+import { Route as MediaBuyingSriLankaRouteImport } from './routes/media-buying-sri-lanka'
+import { Route as MallActivationSriLankaRouteImport } from './routes/mall-activation-sri-lanka'
+import { Route as MagazineAdvertisingSriLankaRouteImport } from './routes/magazine-advertising-sri-lanka'
+import { Route as LogoDesignSriLankaRouteImport } from './routes/logo-design-sri-lanka'
+import { Route as LocalSeoSriLankaRouteImport } from './routes/local-seo-sri-lanka'
+import { Route as LinkedinMarketingSriLankaRouteImport } from './routes/linkedin-marketing-sri-lanka'
+import { Route as LinkedinAdsSriLankaRouteImport } from './routes/linkedin-ads-sri-lanka'
+import { Route as LedVideoWallSriLankaRouteImport } from './routes/led-video-wall-sri-lanka'
+import { Route as LedScreenAdvertisingSriLankaRouteImport } from './routes/led-screen-advertising-sri-lanka'
+import { Route as LeadGenerationSriLankaRouteImport } from './routes/lead-generation-sri-lanka'
+import { Route as LandingPageDesignSriLankaRouteImport } from './routes/landing-page-design-sri-lanka'
+import { Route as IntegratedMarketingSriLankaRouteImport } from './routes/integrated-marketing-sri-lanka'
+import { Route as InstagramMarketingSriLankaRouteImport } from './routes/instagram-marketing-sri-lanka'
+import { Route as InstagramAdsSriLankaRouteImport } from './routes/instagram-ads-sri-lanka'
+import { Route as InfluencerMarketingSriLankaRouteImport } from './routes/influencer-marketing-sri-lanka'
+import { Route as HoardingAdvertisingSriLankaRouteImport } from './routes/hoarding-advertising-sri-lanka'
+import { Route as GraphicDesignSriLankaRouteImport } from './routes/graphic-design-sri-lanka'
+import { Route as GoogleAdsSriLankaRouteImport } from './routes/google-ads-sri-lanka'
 import { Route as GetQuoteRouteImport } from './routes/get-quote'
+import { Route as FullServiceAdvertisingSriLankaRouteImport } from './routes/full-service-advertising-sri-lanka'
+import { Route as FieldMarketingSriLankaRouteImport } from './routes/field-marketing-sri-lanka'
+import { Route as FacebookMarketingSriLankaRouteImport } from './routes/facebook-marketing-sri-lanka'
+import { Route as FacebookAdsSriLankaRouteImport } from './routes/facebook-ads-sri-lanka'
+import { Route as ExhibitionBrandingSriLankaRouteImport } from './routes/exhibition-branding-sri-lanka'
+import { Route as EventMarketingSriLankaRouteImport } from './routes/event-marketing-sri-lanka'
+import { Route as EmailSmsMarketingSriLankaRouteImport } from './routes/email-sms-marketing-sri-lanka'
+import { Route as EmailAutomationSriLankaRouteImport } from './routes/email-automation-sri-lanka'
+import { Route as EcommerceWebsiteSriLankaRouteImport } from './routes/ecommerce-website-sri-lanka'
+import { Route as EcommerceSeoSriLankaRouteImport } from './routes/ecommerce-seo-sri-lanka'
+import { Route as DroneVideographySriLankaRouteImport } from './routes/drone-videography-sri-lanka'
+import { Route as DisplayAdvertisingSriLankaRouteImport } from './routes/display-advertising-sri-lanka'
+import { Route as DigitalMarketingSriLankaRouteImport } from './routes/digital-marketing-sri-lanka'
+import { Route as DigitalBillboardSriLankaRouteImport } from './routes/digital-billboard-sri-lanka'
+import { Route as CreativeAgencySriLankaRouteImport } from './routes/creative-agency-sri-lanka'
+import { Route as CorporateVideoSriLankaRouteImport } from './routes/corporate-video-sri-lanka'
+import { Route as CorporateBrandingSriLankaRouteImport } from './routes/corporate-branding-sri-lanka'
+import { Route as ContentMarketingSriLankaRouteImport } from './routes/content-marketing-sri-lanka'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CompanyProfileDesignSriLankaRouteImport } from './routes/company-profile-design-sri-lanka'
+import { Route as CommercialVideoSriLankaRouteImport } from './routes/commercial-video-sri-lanka'
+import { Route as CinemaAdvertisingSriLankaRouteImport } from './routes/cinema-advertising-sri-lanka'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
+import { Route as BulkSmsSriLankaRouteImport } from './routes/bulk-sms-sri-lanka'
+import { Route as BulkEmailSriLankaRouteImport } from './routes/bulk-email-sri-lanka'
+import { Route as BtlAdvertisingSriLankaRouteImport } from './routes/btl-advertising-sri-lanka'
+import { Route as BrandingSriLankaRouteImport } from './routes/branding-sri-lanka'
+import { Route as BrandIdentitySriLankaRouteImport } from './routes/brand-identity-sri-lanka'
+import { Route as BrandCommunicationSriLankaRouteImport } from './routes/brand-communication-sri-lanka'
+import { Route as BrandActivationSriLankaRouteImport } from './routes/brand-activation-sri-lanka'
+import { Route as BillboardAdvertisingSriLankaRouteImport } from './routes/billboard-advertising-sri-lanka'
+import { Route as BacklinkServicesSriLankaRouteImport } from './routes/backlink-services-sri-lanka'
+import { Route as B2bEmailMarketingSriLankaRouteImport } from './routes/b2b-email-marketing-sri-lanka'
+import { Route as AtlAdvertisingSriLankaRouteImport } from './routes/atl-advertising-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as R3dAnimationSriLankaRouteImport } from './routes/3d-animation-sri-lanka'
+import { Route as R360MarketingCampaignsSriLankaRouteImport } from './routes/360-marketing-campaigns-sri-lanka'
+import { Route as R2dAnimationSriLankaRouteImport } from './routes/2d-animation-sri-lanka'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogYoutubeVideoMarketingSriLankaRouteImport } from './routes/blog/youtube-video-marketing-sri-lanka'
+import { Route as BlogWhatsappAdvertisingSriLankaRouteImport } from './routes/blog/whatsapp-advertising-sri-lanka'
+import { Route as BlogWebsiteRedesignSriLankaRouteImport } from './routes/blog/website-redesign-sri-lanka'
+import { Route as BlogWebsiteRankingSriLankaRouteImport } from './routes/blog/website-ranking-sri-lanka'
+import { Route as BlogWebsiteBannersSriLankaRouteImport } from './routes/blog/website-banners-sri-lanka'
+import { Route as BlogWebDesignSriLankaRouteImport } from './routes/blog/web-design-sri-lanka'
+import { Route as BlogWebBannersSriLankaRouteImport } from './routes/blog/web-banners-sri-lanka'
+import { Route as BlogViralMarketingSriLankaRouteImport } from './routes/blog/viral-marketing-sri-lanka'
+import { Route as BlogVideoProductionSriLankaRouteImport } from './routes/blog/video-production-sri-lanka'
+import { Route as BlogTtlAdvertisingSriLankaRouteImport } from './routes/blog/ttl-advertising-sri-lanka'
+import { Route as BlogTrainAdvertisingSriLankaRouteImport } from './routes/blog/train-advertising-sri-lanka'
+import { Route as BlogTraditionalAdvertisingSriLankaRouteImport } from './routes/blog/traditional-advertising-sri-lanka'
+import { Route as BlogTradeMarketingSriLankaRouteImport } from './routes/blog/trade-marketing-sri-lanka'
+import { Route as BlogTiktokAdvertisingSriLankaRouteImport } from './routes/blog/tiktok-advertising-sri-lanka'
+import { Route as BlogThroughTheLineAdvertisingSriLankaRouteImport } from './routes/blog/through-the-line-advertising-sri-lanka'
+import { Route as BlogTelevisionCommercialsSriLankaRouteImport } from './routes/blog/television-commercials-sri-lanka'
+import { Route as BlogTaxiAdvertisingSriLankaRouteImport } from './routes/blog/taxi-advertising-sri-lanka'
+import { Route as BlogStrategicMarketingSriLankaRouteImport } from './routes/blog/strategic-marketing-sri-lanka'
+import { Route as BlogStallBrandingSriLankaRouteImport } from './routes/blog/stall-branding-sri-lanka'
+import { Route as BlogSocialMediaMarketingSriLankaRouteImport } from './routes/blog/social-media-marketing-sri-lanka'
+import { Route as BlogSocialMediaCampaignsSriLankaRouteImport } from './routes/blog/social-media-campaigns-sri-lanka'
+import { Route as BlogSocialMediaAdvertisingSriLankaRouteImport } from './routes/blog/social-media-advertising-sri-lanka'
+import { Route as BlogSmsAdvertisingSriLankaRouteImport } from './routes/blog/sms-advertising-sri-lanka'
+import { Route as BlogSignBoardAdvertisingSriLankaRouteImport } from './routes/blog/sign-board-advertising-sri-lanka'
+import { Route as BlogSeoSriLankaRouteImport } from './routes/blog/seo-sri-lanka'
+import { Route as BlogSeoAgencySriLankaRouteImport } from './routes/blog/seo-agency-sri-lanka'
+import { Route as BlogSemSriLankaRouteImport } from './routes/blog/sem-sri-lanka'
+import { Route as BlogSearchEngineOptimizationSriLankaRouteImport } from './routes/blog/search-engine-optimization-sri-lanka'
+import { Route as BlogSearchEngineMarketingSriLankaRouteImport } from './routes/blog/search-engine-marketing-sri-lanka'
+import { Route as BlogSamplingCampaignsSriLankaRouteImport } from './routes/blog/sampling-campaigns-sri-lanka'
+import { Route as BlogRetargetingSriLankaRouteImport } from './routes/blog/retargeting-sri-lanka'
+import { Route as BlogResponsiveWebDesignSriLankaRouteImport } from './routes/blog/responsive-web-design-sri-lanka'
+import { Route as BlogReelsMarketingSriLankaRouteImport } from './routes/blog/reels-marketing-sri-lanka'
+import { Route as BlogPromotionalVideoSriLankaRouteImport } from './routes/blog/promotional-video-sri-lanka'
+import { Route as BlogPromotionalSmsSriLankaRouteImport } from './routes/blog/promotional-sms-sri-lanka'
+import { Route as BlogProductPromotionSriLankaRouteImport } from './routes/blog/product-promotion-sri-lanka'
+import { Route as BlogPrintMediaAdvertisingSriLankaRouteImport } from './routes/blog/print-media-advertising-sri-lanka'
+import { Route as BlogPosBrandingSriLankaRouteImport } from './routes/blog/pos-branding-sri-lanka'
+import { Route as BlogPayPerClickSriLankaRouteImport } from './routes/blog/pay-per-click-sri-lanka'
+import { Route as BlogOutdoorAdvertisingSriLankaRouteImport } from './routes/blog/outdoor-advertising-sri-lanka'
+import { Route as BlogOrganicTrafficSriLankaRouteImport } from './routes/blog/organic-traffic-sri-lanka'
+import { Route as BlogOnlineMarketingSriLankaRouteImport } from './routes/blog/online-marketing-sri-lanka'
+import { Route as BlogOnPageSeoSriLankaRouteImport } from './routes/blog/on-page-seo-sri-lanka'
+import { Route as BlogOffPageSeoSriLankaRouteImport } from './routes/blog/off-page-seo-sri-lanka'
+import { Route as BlogNewsletterMarketingSriLankaRouteImport } from './routes/blog/newsletter-marketing-sri-lanka'
+import { Route as BlogNeonSignsSriLankaRouteImport } from './routes/blog/neon-signs-sri-lanka'
+import { Route as BlogNationalAdvertisingCampaignsSriLankaRouteImport } from './routes/blog/national-advertising-campaigns-sri-lanka'
+import { Route as BlogMerchandisingSriLankaRouteImport } from './routes/blog/merchandising-sri-lanka'
+import { Route as BlogMassMediaAdvertisingSriLankaRouteImport } from './routes/blog/mass-media-advertising-sri-lanka'
+import { Route as BlogMarketingMaterialsSriLankaRouteImport } from './routes/blog/marketing-materials-sri-lanka'
+import { Route as BlogLedDisplayAdvertisingSriLankaRouteImport } from './routes/blog/led-display-advertising-sri-lanka'
+import { Route as BlogLeafletDistributionSriLankaRouteImport } from './routes/blog/leaflet-distribution-sri-lanka'
+import { Route as BlogLampPostAdvertisingSriLankaRouteImport } from './routes/blog/lamp-post-advertising-sri-lanka'
+import { Route as BlogKeywordResearchSriLankaRouteImport } from './routes/blog/keyword-research-sri-lanka'
+import { Route as BlogInternetMarketingSriLankaRouteImport } from './routes/blog/internet-marketing-sri-lanka'
+import { Route as BlogIntegratedAdvertisingSriLankaRouteImport } from './routes/blog/integrated-advertising-sri-lanka'
+import { Route as BlogInstagramAdvertisingSriLankaRouteImport } from './routes/blog/instagram-advertising-sri-lanka'
+import { Route as BlogInStoreBrandingSriLankaRouteImport } from './routes/blog/in-store-branding-sri-lanka'
+import { Route as BlogGroundActivationSriLankaRouteImport } from './routes/blog/ground-activation-sri-lanka'
+import { Route as BlogGoogleRankingSriLankaRouteImport } from './routes/blog/google-ranking-sri-lanka'
+import { Route as BlogGoogleAdvertisingSriLankaRouteImport } from './routes/blog/google-advertising-sri-lanka'
+import { Route as BlogFlyerDistributionSriLankaRouteImport } from './routes/blog/flyer-distribution-sri-lanka'
+import { Route as BlogFlyerDesignSriLankaRouteImport } from './routes/blog/flyer-design-sri-lanka'
+import { Route as BlogFacebookAdvertisingSriLankaRouteImport } from './routes/blog/facebook-advertising-sri-lanka'
+import { Route as BlogEventPromotionSriLankaRouteImport } from './routes/blog/event-promotion-sri-lanka'
+import { Route as BlogEmailMarketingSriLankaRouteImport } from './routes/blog/email-marketing-sri-lanka'
+import { Route as BlogEmailCampaignsSriLankaRouteImport } from './routes/blog/email-campaigns-sri-lanka'
+import { Route as BlogEmailAdvertisingSriLankaRouteImport } from './routes/blog/email-advertising-sri-lanka'
+import { Route as BlogDoorToDoorMarketingSriLankaRouteImport } from './routes/blog/door-to-door-marketing-sri-lanka'
+import { Route as BlogDigitalMarketingSriLankaRouteImport } from './routes/blog/digital-marketing-sri-lanka'
+import { Route as BlogDigitalCampaignManagementSriLankaRouteImport } from './routes/blog/digital-campaign-management-sri-lanka'
+import { Route as BlogDigitalAdvertisingSriLankaRouteImport } from './routes/blog/digital-advertising-sri-lanka'
+import { Route as BlogCrossPlatformMarketingSriLankaRouteImport } from './routes/blog/cross-platform-marketing-sri-lanka'
+import { Route as BlogCreativeDesignSriLankaRouteImport } from './routes/blog/creative-design-sri-lanka'
+import { Route as BlogCorporateAdvertisingSriLankaRouteImport } from './routes/blog/corporate-advertising-sri-lanka'
+import { Route as BlogConversionMarketingSriLankaRouteImport } from './routes/blog/conversion-marketing-sri-lanka'
+import { Route as BlogContentCreationSriLankaRouteImport } from './routes/blog/content-creation-sri-lanka'
+import { Route as BlogConsumerPromotionsSriLankaRouteImport } from './routes/blog/consumer-promotions-sri-lanka'
+import { Route as BlogCommunityManagementSriLankaRouteImport } from './routes/blog/community-management-sri-lanka'
+import { Route as BlogBusinessBrandingSriLankaRouteImport } from './routes/blog/business-branding-sri-lanka'
+import { Route as BlogBusAdvertisingSriLankaRouteImport } from './routes/blog/bus-advertising-sri-lanka'
+import { Route as BlogBtlAdvertisingSriLankaRouteImport } from './routes/blog/btl-advertising-sri-lanka'
+import { Route as BlogBrochureDesignSriLankaRouteImport } from './routes/blog/brochure-design-sri-lanka'
+import { Route as BlogBrandingSriLankaRouteImport } from './routes/blog/branding-sri-lanka'
+import { Route as BlogBrandAwarenessCampaignsSriLankaRouteImport } from './routes/blog/brand-awareness-campaigns-sri-lanka'
+import { Route as BlogBelowTheLineAdvertisingSriLankaRouteImport } from './routes/blog/below-the-line-advertising-sri-lanka'
+import { Route as BlogBannerDesignSriLankaRouteImport } from './routes/blog/banner-design-sri-lanka'
+import { Route as BlogAtlBtlTtlAdvertisingSriLankaRouteImport } from './routes/blog/atl-btl-ttl-advertising-sri-lanka'
+import { Route as BlogAtlAdvertisingSriLankaRouteImport } from './routes/blog/atl-advertising-sri-lanka'
+import { Route as BlogAdvertisingVideoSriLankaRouteImport } from './routes/blog/advertising-video-sri-lanka'
+import { Route as BlogActivationMarketingSriLankaRouteImport } from './routes/blog/activation-marketing-sri-lanka'
+import { Route as BlogAboveTheLineAdvertisingSriLankaRouteImport } from './routes/blog/above-the-line-advertising-sri-lanka'
+import { Route as Blog360AdvertisingSriLankaRouteImport } from './routes/blog/360-advertising-sri-lanka'
 
+const YoutubeMarketingSriLankaRoute =
+  YoutubeMarketingSriLankaRouteImport.update({
+    id: '/youtube-marketing-sri-lanka',
+    path: '/youtube-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const YoutubeAdsSriLankaRoute = YoutubeAdsSriLankaRouteImport.update({
+  id: '/youtube-ads-sri-lanka',
+  path: '/youtube-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WordpressDevelopmentSriLankaRoute =
+  WordpressDevelopmentSriLankaRouteImport.update({
+    id: '/wordpress-development-sri-lanka',
+    path: '/wordpress-development-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WhatsappMarketingSriLankaRoute =
+  WhatsappMarketingSriLankaRouteImport.update({
+    id: '/whatsapp-marketing-sri-lanka',
+    path: '/whatsapp-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WebsiteMaintenanceSriLankaRoute =
+  WebsiteMaintenanceSriLankaRouteImport.update({
+    id: '/website-maintenance-sri-lanka',
+    path: '/website-maintenance-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WebsiteDevelopmentSriLankaRoute =
+  WebsiteDevelopmentSriLankaRouteImport.update({
+    id: '/website-development-sri-lanka',
+    path: '/website-development-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WebDesignSriLankaRoute = WebDesignSriLankaRouteImport.update({
+  id: '/web-design-sri-lanka',
+  path: '/web-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideoProductionSriLankaRoute = VideoProductionSriLankaRouteImport.update({
+  id: '/video-production-sri-lanka',
+  path: '/video-production-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UiUxDesignSriLankaRoute = UiUxDesignSriLankaRouteImport.update({
+  id: '/ui-ux-design-sri-lanka',
+  path: '/ui-ux-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TvCommercialsSriLankaRoute = TvCommercialsSriLankaRouteImport.update({
+  id: '/tv-commercials-sri-lanka',
+  path: '/tv-commercials-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TvAdvertisingSriLankaRoute = TvAdvertisingSriLankaRouteImport.update({
+  id: '/tv-advertising-sri-lanka',
+  path: '/tv-advertising-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TtlAdvertisingSriLankaRoute = TtlAdvertisingSriLankaRouteImport.update({
+  id: '/ttl-advertising-sri-lanka',
+  path: '/ttl-advertising-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransitAdvertisingSriLankaRoute =
+  TransitAdvertisingSriLankaRouteImport.update({
+    id: '/transit-advertising-sri-lanka',
+    path: '/transit-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TiktokMarketingSriLankaRoute = TiktokMarketingSriLankaRouteImport.update({
+  id: '/tiktok-marketing-sri-lanka',
+  path: '/tiktok-marketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TiktokAdsSriLankaRoute = TiktokAdsSriLankaRouteImport.update({
+  id: '/tiktok-ads-sri-lanka',
+  path: '/tiktok-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TechnicalSeoSriLankaRoute = TechnicalSeoSriLankaRouteImport.update({
+  id: '/technical-seo-sri-lanka',
+  path: '/technical-seo-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SocialMediaMarketingSriLankaRoute =
+  SocialMediaMarketingSriLankaRouteImport.update({
+    id: '/social-media-marketing-sri-lanka',
+    path: '/social-media-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SocialMediaManagementSriLankaRoute =
+  SocialMediaManagementSriLankaRouteImport.update({
+    id: '/social-media-management-sri-lanka',
+    path: '/social-media-management-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SocialMediaAgencySriLankaRoute =
+  SocialMediaAgencySriLankaRouteImport.update({
+    id: '/social-media-agency-sri-lanka',
+    path: '/social-media-agency-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SmsMarketingSriLankaRoute = SmsMarketingSriLankaRouteImport.update({
+  id: '/sms-marketing-sri-lanka',
+  path: '/sms-marketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShopBrandingSriLankaRoute = ShopBrandingSriLankaRouteImport.update({
+  id: '/shop-branding-sri-lanka',
+  path: '/shop-branding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoServicesSriLankaRoute = SeoServicesSriLankaRouteImport.update({
+  id: '/seo-services-sri-lanka',
+  path: '/seo-services-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoCompanySriLankaRoute = SeoCompanySriLankaRouteImport.update({
+  id: '/seo-company-sri-lanka',
+  path: '/seo-company-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoadshowMarketingSriLankaRoute =
+  RoadshowMarketingSriLankaRouteImport.update({
+    id: '/roadshow-marketing-sri-lanka',
+    path: '/roadshow-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const RetailBrandingSriLankaRoute = RetailBrandingSriLankaRouteImport.update({
+  id: '/retail-branding-sri-lanka',
+  path: '/retail-branding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RemarketingSriLankaRoute = RemarketingSriLankaRouteImport.update({
+  id: '/remarketing-sri-lanka',
+  path: '/remarketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RadioAdvertisingSriLankaRoute =
+  RadioAdvertisingSriLankaRouteImport.update({
+    id: '/radio-advertising-sri-lanka',
+    path: '/radio-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProgrammaticAdvertisingSriLankaRoute =
+  ProgrammaticAdvertisingSriLankaRouteImport.update({
+    id: '/programmatic-advertising-sri-lanka',
+    path: '/programmatic-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PpcSriLankaRoute = PpcSriLankaRouteImport.update({
+  id: '/ppc-sri-lanka',
+  path: '/ppc-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PointOfSaleAdvertisingSriLankaRoute =
+  PointOfSaleAdvertisingSriLankaRouteImport.update({
+    id: '/point-of-sale-advertising-sri-lanka',
+    path: '/point-of-sale-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PerformanceMarketingSriLankaRoute =
+  PerformanceMarketingSriLankaRouteImport.update({
+    id: '/performance-marketing-sri-lanka',
+    path: '/performance-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PackagingDesignSriLankaRoute = PackagingDesignSriLankaRouteImport.update({
+  id: '/packaging-design-sri-lanka',
+  path: '/packaging-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OutdoorAdvertisingSriLankaRoute =
+  OutdoorAdvertisingSriLankaRouteImport.update({
+    id: '/outdoor-advertising-sri-lanka',
+    path: '/outdoor-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OmnichannelMarketingSriLankaRoute =
+  OmnichannelMarketingSriLankaRouteImport.update({
+    id: '/omnichannel-marketing-sri-lanka',
+    path: '/omnichannel-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const NewspaperAdvertisingSriLankaRoute =
+  NewspaperAdvertisingSriLankaRouteImport.update({
+    id: '/newspaper-advertising-sri-lanka',
+    path: '/newspaper-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MultiChannelAdvertisingSriLankaRoute =
+  MultiChannelAdvertisingSriLankaRouteImport.update({
+    id: '/multi-channel-advertising-sri-lanka',
+    path: '/multi-channel-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MotionGraphicsSriLankaRoute = MotionGraphicsSriLankaRouteImport.update({
+  id: '/motion-graphics-sri-lanka',
+  path: '/motion-graphics-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MobileBillboardSriLankaRoute = MobileBillboardSriLankaRouteImport.update({
+  id: '/mobile-billboard-sri-lanka',
+  path: '/mobile-billboard-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaPlanningSriLankaRoute = MediaPlanningSriLankaRouteImport.update({
+  id: '/media-planning-sri-lanka',
+  path: '/media-planning-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaBuyingSriLankaRoute = MediaBuyingSriLankaRouteImport.update({
+  id: '/media-buying-sri-lanka',
+  path: '/media-buying-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MallActivationSriLankaRoute = MallActivationSriLankaRouteImport.update({
+  id: '/mall-activation-sri-lanka',
+  path: '/mall-activation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MagazineAdvertisingSriLankaRoute =
+  MagazineAdvertisingSriLankaRouteImport.update({
+    id: '/magazine-advertising-sri-lanka',
+    path: '/magazine-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LogoDesignSriLankaRoute = LogoDesignSriLankaRouteImport.update({
+  id: '/logo-design-sri-lanka',
+  path: '/logo-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocalSeoSriLankaRoute = LocalSeoSriLankaRouteImport.update({
+  id: '/local-seo-sri-lanka',
+  path: '/local-seo-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LinkedinMarketingSriLankaRoute =
+  LinkedinMarketingSriLankaRouteImport.update({
+    id: '/linkedin-marketing-sri-lanka',
+    path: '/linkedin-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LinkedinAdsSriLankaRoute = LinkedinAdsSriLankaRouteImport.update({
+  id: '/linkedin-ads-sri-lanka',
+  path: '/linkedin-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LedVideoWallSriLankaRoute = LedVideoWallSriLankaRouteImport.update({
+  id: '/led-video-wall-sri-lanka',
+  path: '/led-video-wall-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LedScreenAdvertisingSriLankaRoute =
+  LedScreenAdvertisingSriLankaRouteImport.update({
+    id: '/led-screen-advertising-sri-lanka',
+    path: '/led-screen-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LeadGenerationSriLankaRoute = LeadGenerationSriLankaRouteImport.update({
+  id: '/lead-generation-sri-lanka',
+  path: '/lead-generation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LandingPageDesignSriLankaRoute =
+  LandingPageDesignSriLankaRouteImport.update({
+    id: '/landing-page-design-sri-lanka',
+    path: '/landing-page-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const IntegratedMarketingSriLankaRoute =
+  IntegratedMarketingSriLankaRouteImport.update({
+    id: '/integrated-marketing-sri-lanka',
+    path: '/integrated-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InstagramMarketingSriLankaRoute =
+  InstagramMarketingSriLankaRouteImport.update({
+    id: '/instagram-marketing-sri-lanka',
+    path: '/instagram-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InstagramAdsSriLankaRoute = InstagramAdsSriLankaRouteImport.update({
+  id: '/instagram-ads-sri-lanka',
+  path: '/instagram-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InfluencerMarketingSriLankaRoute =
+  InfluencerMarketingSriLankaRouteImport.update({
+    id: '/influencer-marketing-sri-lanka',
+    path: '/influencer-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const HoardingAdvertisingSriLankaRoute =
+  HoardingAdvertisingSriLankaRouteImport.update({
+    id: '/hoarding-advertising-sri-lanka',
+    path: '/hoarding-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GraphicDesignSriLankaRoute = GraphicDesignSriLankaRouteImport.update({
+  id: '/graphic-design-sri-lanka',
+  path: '/graphic-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoogleAdsSriLankaRoute = GoogleAdsSriLankaRouteImport.update({
+  id: '/google-ads-sri-lanka',
+  path: '/google-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GetQuoteRoute = GetQuoteRouteImport.update({
   id: '/get-quote',
   path: '/get-quote',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FullServiceAdvertisingSriLankaRoute =
+  FullServiceAdvertisingSriLankaRouteImport.update({
+    id: '/full-service-advertising-sri-lanka',
+    path: '/full-service-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FieldMarketingSriLankaRoute = FieldMarketingSriLankaRouteImport.update({
+  id: '/field-marketing-sri-lanka',
+  path: '/field-marketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FacebookMarketingSriLankaRoute =
+  FacebookMarketingSriLankaRouteImport.update({
+    id: '/facebook-marketing-sri-lanka',
+    path: '/facebook-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FacebookAdsSriLankaRoute = FacebookAdsSriLankaRouteImport.update({
+  id: '/facebook-ads-sri-lanka',
+  path: '/facebook-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExhibitionBrandingSriLankaRoute =
+  ExhibitionBrandingSriLankaRouteImport.update({
+    id: '/exhibition-branding-sri-lanka',
+    path: '/exhibition-branding-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventMarketingSriLankaRoute = EventMarketingSriLankaRouteImport.update({
+  id: '/event-marketing-sri-lanka',
+  path: '/event-marketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmailSmsMarketingSriLankaRoute =
+  EmailSmsMarketingSriLankaRouteImport.update({
+    id: '/email-sms-marketing-sri-lanka',
+    path: '/email-sms-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EmailAutomationSriLankaRoute = EmailAutomationSriLankaRouteImport.update({
+  id: '/email-automation-sri-lanka',
+  path: '/email-automation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcommerceWebsiteSriLankaRoute =
+  EcommerceWebsiteSriLankaRouteImport.update({
+    id: '/ecommerce-website-sri-lanka',
+    path: '/ecommerce-website-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EcommerceSeoSriLankaRoute = EcommerceSeoSriLankaRouteImport.update({
+  id: '/ecommerce-seo-sri-lanka',
+  path: '/ecommerce-seo-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DroneVideographySriLankaRoute =
+  DroneVideographySriLankaRouteImport.update({
+    id: '/drone-videography-sri-lanka',
+    path: '/drone-videography-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DisplayAdvertisingSriLankaRoute =
+  DisplayAdvertisingSriLankaRouteImport.update({
+    id: '/display-advertising-sri-lanka',
+    path: '/display-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DigitalMarketingSriLankaRoute =
+  DigitalMarketingSriLankaRouteImport.update({
+    id: '/digital-marketing-sri-lanka',
+    path: '/digital-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DigitalBillboardSriLankaRoute =
+  DigitalBillboardSriLankaRouteImport.update({
+    id: '/digital-billboard-sri-lanka',
+    path: '/digital-billboard-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreativeAgencySriLankaRoute = CreativeAgencySriLankaRouteImport.update({
+  id: '/creative-agency-sri-lanka',
+  path: '/creative-agency-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateVideoSriLankaRoute = CorporateVideoSriLankaRouteImport.update({
+  id: '/corporate-video-sri-lanka',
+  path: '/corporate-video-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateBrandingSriLankaRoute =
+  CorporateBrandingSriLankaRouteImport.update({
+    id: '/corporate-branding-sri-lanka',
+    path: '/corporate-branding-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ContentMarketingSriLankaRoute =
+  ContentMarketingSriLankaRouteImport.update({
+    id: '/content-marketing-sri-lanka',
+    path: '/content-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CompanyProfileDesignSriLankaRoute =
+  CompanyProfileDesignSriLankaRouteImport.update({
+    id: '/company-profile-design-sri-lanka',
+    path: '/company-profile-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CommercialVideoSriLankaRoute = CommercialVideoSriLankaRouteImport.update({
+  id: '/commercial-video-sri-lanka',
+  path: '/commercial-video-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CinemaAdvertisingSriLankaRoute =
+  CinemaAdvertisingSriLankaRouteImport.update({
+    id: '/cinema-advertising-sri-lanka',
+    path: '/cinema-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const CaseStudiesRoute = CaseStudiesRouteImport.update({
   id: '/case-studies',
   path: '/case-studies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BulkSmsSriLankaRoute = BulkSmsSriLankaRouteImport.update({
+  id: '/bulk-sms-sri-lanka',
+  path: '/bulk-sms-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BulkEmailSriLankaRoute = BulkEmailSriLankaRouteImport.update({
+  id: '/bulk-email-sri-lanka',
+  path: '/bulk-email-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BtlAdvertisingSriLankaRoute = BtlAdvertisingSriLankaRouteImport.update({
+  id: '/btl-advertising-sri-lanka',
+  path: '/btl-advertising-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrandingSriLankaRoute = BrandingSriLankaRouteImport.update({
+  id: '/branding-sri-lanka',
+  path: '/branding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrandIdentitySriLankaRoute = BrandIdentitySriLankaRouteImport.update({
+  id: '/brand-identity-sri-lanka',
+  path: '/brand-identity-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrandCommunicationSriLankaRoute =
+  BrandCommunicationSriLankaRouteImport.update({
+    id: '/brand-communication-sri-lanka',
+    path: '/brand-communication-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BrandActivationSriLankaRoute = BrandActivationSriLankaRouteImport.update({
+  id: '/brand-activation-sri-lanka',
+  path: '/brand-activation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BillboardAdvertisingSriLankaRoute =
+  BillboardAdvertisingSriLankaRouteImport.update({
+    id: '/billboard-advertising-sri-lanka',
+    path: '/billboard-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BacklinkServicesSriLankaRoute =
+  BacklinkServicesSriLankaRouteImport.update({
+    id: '/backlink-services-sri-lanka',
+    path: '/backlink-services-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const B2bEmailMarketingSriLankaRoute =
+  B2bEmailMarketingSriLankaRouteImport.update({
+    id: '/b2b-email-marketing-sri-lanka',
+    path: '/b2b-email-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AtlAdvertisingSriLankaRoute = AtlAdvertisingSriLankaRouteImport.update({
+  id: '/atl-advertising-sri-lanka',
+  path: '/atl-advertising-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdvertisingRatesRoute = AdvertisingRatesRouteImport.update({
@@ -47,87 +720,2468 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R3dAnimationSriLankaRoute = R3dAnimationSriLankaRouteImport.update({
+  id: '/3d-animation-sri-lanka',
+  path: '/3d-animation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R360MarketingCampaignsSriLankaRoute =
+  R360MarketingCampaignsSriLankaRouteImport.update({
+    id: '/360-marketing-campaigns-sri-lanka',
+    path: '/360-marketing-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R2dAnimationSriLankaRoute = R2dAnimationSriLankaRouteImport.update({
+  id: '/2d-animation-sri-lanka',
+  path: '/2d-animation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogYoutubeVideoMarketingSriLankaRoute =
+  BlogYoutubeVideoMarketingSriLankaRouteImport.update({
+    id: '/blog/youtube-video-marketing-sri-lanka',
+    path: '/blog/youtube-video-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhatsappAdvertisingSriLankaRoute =
+  BlogWhatsappAdvertisingSriLankaRouteImport.update({
+    id: '/blog/whatsapp-advertising-sri-lanka',
+    path: '/blog/whatsapp-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWebsiteRedesignSriLankaRoute =
+  BlogWebsiteRedesignSriLankaRouteImport.update({
+    id: '/blog/website-redesign-sri-lanka',
+    path: '/blog/website-redesign-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWebsiteRankingSriLankaRoute =
+  BlogWebsiteRankingSriLankaRouteImport.update({
+    id: '/blog/website-ranking-sri-lanka',
+    path: '/blog/website-ranking-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWebsiteBannersSriLankaRoute =
+  BlogWebsiteBannersSriLankaRouteImport.update({
+    id: '/blog/website-banners-sri-lanka',
+    path: '/blog/website-banners-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWebDesignSriLankaRoute = BlogWebDesignSriLankaRouteImport.update({
+  id: '/blog/web-design-sri-lanka',
+  path: '/blog/web-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogWebBannersSriLankaRoute = BlogWebBannersSriLankaRouteImport.update({
+  id: '/blog/web-banners-sri-lanka',
+  path: '/blog/web-banners-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogViralMarketingSriLankaRoute =
+  BlogViralMarketingSriLankaRouteImport.update({
+    id: '/blog/viral-marketing-sri-lanka',
+    path: '/blog/viral-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogVideoProductionSriLankaRoute =
+  BlogVideoProductionSriLankaRouteImport.update({
+    id: '/blog/video-production-sri-lanka',
+    path: '/blog/video-production-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTtlAdvertisingSriLankaRoute =
+  BlogTtlAdvertisingSriLankaRouteImport.update({
+    id: '/blog/ttl-advertising-sri-lanka',
+    path: '/blog/ttl-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTrainAdvertisingSriLankaRoute =
+  BlogTrainAdvertisingSriLankaRouteImport.update({
+    id: '/blog/train-advertising-sri-lanka',
+    path: '/blog/train-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTraditionalAdvertisingSriLankaRoute =
+  BlogTraditionalAdvertisingSriLankaRouteImport.update({
+    id: '/blog/traditional-advertising-sri-lanka',
+    path: '/blog/traditional-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTradeMarketingSriLankaRoute =
+  BlogTradeMarketingSriLankaRouteImport.update({
+    id: '/blog/trade-marketing-sri-lanka',
+    path: '/blog/trade-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTiktokAdvertisingSriLankaRoute =
+  BlogTiktokAdvertisingSriLankaRouteImport.update({
+    id: '/blog/tiktok-advertising-sri-lanka',
+    path: '/blog/tiktok-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogThroughTheLineAdvertisingSriLankaRoute =
+  BlogThroughTheLineAdvertisingSriLankaRouteImport.update({
+    id: '/blog/through-the-line-advertising-sri-lanka',
+    path: '/blog/through-the-line-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTelevisionCommercialsSriLankaRoute =
+  BlogTelevisionCommercialsSriLankaRouteImport.update({
+    id: '/blog/television-commercials-sri-lanka',
+    path: '/blog/television-commercials-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogTaxiAdvertisingSriLankaRoute =
+  BlogTaxiAdvertisingSriLankaRouteImport.update({
+    id: '/blog/taxi-advertising-sri-lanka',
+    path: '/blog/taxi-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogStrategicMarketingSriLankaRoute =
+  BlogStrategicMarketingSriLankaRouteImport.update({
+    id: '/blog/strategic-marketing-sri-lanka',
+    path: '/blog/strategic-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogStallBrandingSriLankaRoute =
+  BlogStallBrandingSriLankaRouteImport.update({
+    id: '/blog/stall-branding-sri-lanka',
+    path: '/blog/stall-branding-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSocialMediaMarketingSriLankaRoute =
+  BlogSocialMediaMarketingSriLankaRouteImport.update({
+    id: '/blog/social-media-marketing-sri-lanka',
+    path: '/blog/social-media-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSocialMediaCampaignsSriLankaRoute =
+  BlogSocialMediaCampaignsSriLankaRouteImport.update({
+    id: '/blog/social-media-campaigns-sri-lanka',
+    path: '/blog/social-media-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSocialMediaAdvertisingSriLankaRoute =
+  BlogSocialMediaAdvertisingSriLankaRouteImport.update({
+    id: '/blog/social-media-advertising-sri-lanka',
+    path: '/blog/social-media-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSmsAdvertisingSriLankaRoute =
+  BlogSmsAdvertisingSriLankaRouteImport.update({
+    id: '/blog/sms-advertising-sri-lanka',
+    path: '/blog/sms-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSignBoardAdvertisingSriLankaRoute =
+  BlogSignBoardAdvertisingSriLankaRouteImport.update({
+    id: '/blog/sign-board-advertising-sri-lanka',
+    path: '/blog/sign-board-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSeoSriLankaRoute = BlogSeoSriLankaRouteImport.update({
+  id: '/blog/seo-sri-lanka',
+  path: '/blog/seo-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSeoAgencySriLankaRoute = BlogSeoAgencySriLankaRouteImport.update({
+  id: '/blog/seo-agency-sri-lanka',
+  path: '/blog/seo-agency-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSemSriLankaRoute = BlogSemSriLankaRouteImport.update({
+  id: '/blog/sem-sri-lanka',
+  path: '/blog/sem-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSearchEngineOptimizationSriLankaRoute =
+  BlogSearchEngineOptimizationSriLankaRouteImport.update({
+    id: '/blog/search-engine-optimization-sri-lanka',
+    path: '/blog/search-engine-optimization-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSearchEngineMarketingSriLankaRoute =
+  BlogSearchEngineMarketingSriLankaRouteImport.update({
+    id: '/blog/search-engine-marketing-sri-lanka',
+    path: '/blog/search-engine-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSamplingCampaignsSriLankaRoute =
+  BlogSamplingCampaignsSriLankaRouteImport.update({
+    id: '/blog/sampling-campaigns-sri-lanka',
+    path: '/blog/sampling-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogRetargetingSriLankaRoute = BlogRetargetingSriLankaRouteImport.update({
+  id: '/blog/retargeting-sri-lanka',
+  path: '/blog/retargeting-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogResponsiveWebDesignSriLankaRoute =
+  BlogResponsiveWebDesignSriLankaRouteImport.update({
+    id: '/blog/responsive-web-design-sri-lanka',
+    path: '/blog/responsive-web-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogReelsMarketingSriLankaRoute =
+  BlogReelsMarketingSriLankaRouteImport.update({
+    id: '/blog/reels-marketing-sri-lanka',
+    path: '/blog/reels-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogPromotionalVideoSriLankaRoute =
+  BlogPromotionalVideoSriLankaRouteImport.update({
+    id: '/blog/promotional-video-sri-lanka',
+    path: '/blog/promotional-video-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogPromotionalSmsSriLankaRoute =
+  BlogPromotionalSmsSriLankaRouteImport.update({
+    id: '/blog/promotional-sms-sri-lanka',
+    path: '/blog/promotional-sms-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogProductPromotionSriLankaRoute =
+  BlogProductPromotionSriLankaRouteImport.update({
+    id: '/blog/product-promotion-sri-lanka',
+    path: '/blog/product-promotion-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogPrintMediaAdvertisingSriLankaRoute =
+  BlogPrintMediaAdvertisingSriLankaRouteImport.update({
+    id: '/blog/print-media-advertising-sri-lanka',
+    path: '/blog/print-media-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogPosBrandingSriLankaRoute = BlogPosBrandingSriLankaRouteImport.update({
+  id: '/blog/pos-branding-sri-lanka',
+  path: '/blog/pos-branding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogPayPerClickSriLankaRoute = BlogPayPerClickSriLankaRouteImport.update({
+  id: '/blog/pay-per-click-sri-lanka',
+  path: '/blog/pay-per-click-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogOutdoorAdvertisingSriLankaRoute =
+  BlogOutdoorAdvertisingSriLankaRouteImport.update({
+    id: '/blog/outdoor-advertising-sri-lanka',
+    path: '/blog/outdoor-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogOrganicTrafficSriLankaRoute =
+  BlogOrganicTrafficSriLankaRouteImport.update({
+    id: '/blog/organic-traffic-sri-lanka',
+    path: '/blog/organic-traffic-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogOnlineMarketingSriLankaRoute =
+  BlogOnlineMarketingSriLankaRouteImport.update({
+    id: '/blog/online-marketing-sri-lanka',
+    path: '/blog/online-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogOnPageSeoSriLankaRoute = BlogOnPageSeoSriLankaRouteImport.update({
+  id: '/blog/on-page-seo-sri-lanka',
+  path: '/blog/on-page-seo-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogOffPageSeoSriLankaRoute = BlogOffPageSeoSriLankaRouteImport.update({
+  id: '/blog/off-page-seo-sri-lanka',
+  path: '/blog/off-page-seo-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogNewsletterMarketingSriLankaRoute =
+  BlogNewsletterMarketingSriLankaRouteImport.update({
+    id: '/blog/newsletter-marketing-sri-lanka',
+    path: '/blog/newsletter-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogNeonSignsSriLankaRoute = BlogNeonSignsSriLankaRouteImport.update({
+  id: '/blog/neon-signs-sri-lanka',
+  path: '/blog/neon-signs-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogNationalAdvertisingCampaignsSriLankaRoute =
+  BlogNationalAdvertisingCampaignsSriLankaRouteImport.update({
+    id: '/blog/national-advertising-campaigns-sri-lanka',
+    path: '/blog/national-advertising-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogMerchandisingSriLankaRoute =
+  BlogMerchandisingSriLankaRouteImport.update({
+    id: '/blog/merchandising-sri-lanka',
+    path: '/blog/merchandising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogMassMediaAdvertisingSriLankaRoute =
+  BlogMassMediaAdvertisingSriLankaRouteImport.update({
+    id: '/blog/mass-media-advertising-sri-lanka',
+    path: '/blog/mass-media-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogMarketingMaterialsSriLankaRoute =
+  BlogMarketingMaterialsSriLankaRouteImport.update({
+    id: '/blog/marketing-materials-sri-lanka',
+    path: '/blog/marketing-materials-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogLedDisplayAdvertisingSriLankaRoute =
+  BlogLedDisplayAdvertisingSriLankaRouteImport.update({
+    id: '/blog/led-display-advertising-sri-lanka',
+    path: '/blog/led-display-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogLeafletDistributionSriLankaRoute =
+  BlogLeafletDistributionSriLankaRouteImport.update({
+    id: '/blog/leaflet-distribution-sri-lanka',
+    path: '/blog/leaflet-distribution-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogLampPostAdvertisingSriLankaRoute =
+  BlogLampPostAdvertisingSriLankaRouteImport.update({
+    id: '/blog/lamp-post-advertising-sri-lanka',
+    path: '/blog/lamp-post-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogKeywordResearchSriLankaRoute =
+  BlogKeywordResearchSriLankaRouteImport.update({
+    id: '/blog/keyword-research-sri-lanka',
+    path: '/blog/keyword-research-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogInternetMarketingSriLankaRoute =
+  BlogInternetMarketingSriLankaRouteImport.update({
+    id: '/blog/internet-marketing-sri-lanka',
+    path: '/blog/internet-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogIntegratedAdvertisingSriLankaRoute =
+  BlogIntegratedAdvertisingSriLankaRouteImport.update({
+    id: '/blog/integrated-advertising-sri-lanka',
+    path: '/blog/integrated-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogInstagramAdvertisingSriLankaRoute =
+  BlogInstagramAdvertisingSriLankaRouteImport.update({
+    id: '/blog/instagram-advertising-sri-lanka',
+    path: '/blog/instagram-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogInStoreBrandingSriLankaRoute =
+  BlogInStoreBrandingSriLankaRouteImport.update({
+    id: '/blog/in-store-branding-sri-lanka',
+    path: '/blog/in-store-branding-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogGroundActivationSriLankaRoute =
+  BlogGroundActivationSriLankaRouteImport.update({
+    id: '/blog/ground-activation-sri-lanka',
+    path: '/blog/ground-activation-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogGoogleRankingSriLankaRoute =
+  BlogGoogleRankingSriLankaRouteImport.update({
+    id: '/blog/google-ranking-sri-lanka',
+    path: '/blog/google-ranking-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogGoogleAdvertisingSriLankaRoute =
+  BlogGoogleAdvertisingSriLankaRouteImport.update({
+    id: '/blog/google-advertising-sri-lanka',
+    path: '/blog/google-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogFlyerDistributionSriLankaRoute =
+  BlogFlyerDistributionSriLankaRouteImport.update({
+    id: '/blog/flyer-distribution-sri-lanka',
+    path: '/blog/flyer-distribution-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogFlyerDesignSriLankaRoute = BlogFlyerDesignSriLankaRouteImport.update({
+  id: '/blog/flyer-design-sri-lanka',
+  path: '/blog/flyer-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogFacebookAdvertisingSriLankaRoute =
+  BlogFacebookAdvertisingSriLankaRouteImport.update({
+    id: '/blog/facebook-advertising-sri-lanka',
+    path: '/blog/facebook-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEventPromotionSriLankaRoute =
+  BlogEventPromotionSriLankaRouteImport.update({
+    id: '/blog/event-promotion-sri-lanka',
+    path: '/blog/event-promotion-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEmailMarketingSriLankaRoute =
+  BlogEmailMarketingSriLankaRouteImport.update({
+    id: '/blog/email-marketing-sri-lanka',
+    path: '/blog/email-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEmailCampaignsSriLankaRoute =
+  BlogEmailCampaignsSriLankaRouteImport.update({
+    id: '/blog/email-campaigns-sri-lanka',
+    path: '/blog/email-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEmailAdvertisingSriLankaRoute =
+  BlogEmailAdvertisingSriLankaRouteImport.update({
+    id: '/blog/email-advertising-sri-lanka',
+    path: '/blog/email-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDoorToDoorMarketingSriLankaRoute =
+  BlogDoorToDoorMarketingSriLankaRouteImport.update({
+    id: '/blog/door-to-door-marketing-sri-lanka',
+    path: '/blog/door-to-door-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDigitalMarketingSriLankaRoute =
+  BlogDigitalMarketingSriLankaRouteImport.update({
+    id: '/blog/digital-marketing-sri-lanka',
+    path: '/blog/digital-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDigitalCampaignManagementSriLankaRoute =
+  BlogDigitalCampaignManagementSriLankaRouteImport.update({
+    id: '/blog/digital-campaign-management-sri-lanka',
+    path: '/blog/digital-campaign-management-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDigitalAdvertisingSriLankaRoute =
+  BlogDigitalAdvertisingSriLankaRouteImport.update({
+    id: '/blog/digital-advertising-sri-lanka',
+    path: '/blog/digital-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCrossPlatformMarketingSriLankaRoute =
+  BlogCrossPlatformMarketingSriLankaRouteImport.update({
+    id: '/blog/cross-platform-marketing-sri-lanka',
+    path: '/blog/cross-platform-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCreativeDesignSriLankaRoute =
+  BlogCreativeDesignSriLankaRouteImport.update({
+    id: '/blog/creative-design-sri-lanka',
+    path: '/blog/creative-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCorporateAdvertisingSriLankaRoute =
+  BlogCorporateAdvertisingSriLankaRouteImport.update({
+    id: '/blog/corporate-advertising-sri-lanka',
+    path: '/blog/corporate-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogConversionMarketingSriLankaRoute =
+  BlogConversionMarketingSriLankaRouteImport.update({
+    id: '/blog/conversion-marketing-sri-lanka',
+    path: '/blog/conversion-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogContentCreationSriLankaRoute =
+  BlogContentCreationSriLankaRouteImport.update({
+    id: '/blog/content-creation-sri-lanka',
+    path: '/blog/content-creation-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogConsumerPromotionsSriLankaRoute =
+  BlogConsumerPromotionsSriLankaRouteImport.update({
+    id: '/blog/consumer-promotions-sri-lanka',
+    path: '/blog/consumer-promotions-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCommunityManagementSriLankaRoute =
+  BlogCommunityManagementSriLankaRouteImport.update({
+    id: '/blog/community-management-sri-lanka',
+    path: '/blog/community-management-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBusinessBrandingSriLankaRoute =
+  BlogBusinessBrandingSriLankaRouteImport.update({
+    id: '/blog/business-branding-sri-lanka',
+    path: '/blog/business-branding-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBusAdvertisingSriLankaRoute =
+  BlogBusAdvertisingSriLankaRouteImport.update({
+    id: '/blog/bus-advertising-sri-lanka',
+    path: '/blog/bus-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBtlAdvertisingSriLankaRoute =
+  BlogBtlAdvertisingSriLankaRouteImport.update({
+    id: '/blog/btl-advertising-sri-lanka',
+    path: '/blog/btl-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBrochureDesignSriLankaRoute =
+  BlogBrochureDesignSriLankaRouteImport.update({
+    id: '/blog/brochure-design-sri-lanka',
+    path: '/blog/brochure-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBrandingSriLankaRoute = BlogBrandingSriLankaRouteImport.update({
+  id: '/blog/branding-sri-lanka',
+  path: '/blog/branding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogBrandAwarenessCampaignsSriLankaRoute =
+  BlogBrandAwarenessCampaignsSriLankaRouteImport.update({
+    id: '/blog/brand-awareness-campaigns-sri-lanka',
+    path: '/blog/brand-awareness-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBelowTheLineAdvertisingSriLankaRoute =
+  BlogBelowTheLineAdvertisingSriLankaRouteImport.update({
+    id: '/blog/below-the-line-advertising-sri-lanka',
+    path: '/blog/below-the-line-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBannerDesignSriLankaRoute =
+  BlogBannerDesignSriLankaRouteImport.update({
+    id: '/blog/banner-design-sri-lanka',
+    path: '/blog/banner-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogAtlBtlTtlAdvertisingSriLankaRoute =
+  BlogAtlBtlTtlAdvertisingSriLankaRouteImport.update({
+    id: '/blog/atl-btl-ttl-advertising-sri-lanka',
+    path: '/blog/atl-btl-ttl-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogAtlAdvertisingSriLankaRoute =
+  BlogAtlAdvertisingSriLankaRouteImport.update({
+    id: '/blog/atl-advertising-sri-lanka',
+    path: '/blog/atl-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogAdvertisingVideoSriLankaRoute =
+  BlogAdvertisingVideoSriLankaRouteImport.update({
+    id: '/blog/advertising-video-sri-lanka',
+    path: '/blog/advertising-video-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogActivationMarketingSriLankaRoute =
+  BlogActivationMarketingSriLankaRouteImport.update({
+    id: '/blog/activation-marketing-sri-lanka',
+    path: '/blog/activation-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogAboveTheLineAdvertisingSriLankaRoute =
+  BlogAboveTheLineAdvertisingSriLankaRouteImport.update({
+    id: '/blog/above-the-line-advertising-sri-lanka',
+    path: '/blog/above-the-line-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Blog360AdvertisingSriLankaRoute =
+  Blog360AdvertisingSriLankaRouteImport.update({
+    id: '/blog/360-advertising-sri-lanka',
+    path: '/blog/360-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
+  '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
+  '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
+  '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
+  '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
+  '/billboard-advertising-sri-lanka': typeof BillboardAdvertisingSriLankaRoute
+  '/brand-activation-sri-lanka': typeof BrandActivationSriLankaRoute
+  '/brand-communication-sri-lanka': typeof BrandCommunicationSriLankaRoute
+  '/brand-identity-sri-lanka': typeof BrandIdentitySriLankaRoute
+  '/branding-sri-lanka': typeof BrandingSriLankaRoute
+  '/btl-advertising-sri-lanka': typeof BtlAdvertisingSriLankaRoute
+  '/bulk-email-sri-lanka': typeof BulkEmailSriLankaRoute
+  '/bulk-sms-sri-lanka': typeof BulkSmsSriLankaRoute
   '/case-studies': typeof CaseStudiesRoute
+  '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
+  '/company-profile-design-sri-lanka': typeof CompanyProfileDesignSriLankaRoute
   '/contact': typeof ContactRoute
+  '/content-marketing-sri-lanka': typeof ContentMarketingSriLankaRoute
+  '/corporate-branding-sri-lanka': typeof CorporateBrandingSriLankaRoute
+  '/corporate-video-sri-lanka': typeof CorporateVideoSriLankaRoute
+  '/creative-agency-sri-lanka': typeof CreativeAgencySriLankaRoute
+  '/digital-billboard-sri-lanka': typeof DigitalBillboardSriLankaRoute
+  '/digital-marketing-sri-lanka': typeof DigitalMarketingSriLankaRoute
+  '/display-advertising-sri-lanka': typeof DisplayAdvertisingSriLankaRoute
+  '/drone-videography-sri-lanka': typeof DroneVideographySriLankaRoute
+  '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
+  '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
+  '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
+  '/event-marketing-sri-lanka': typeof EventMarketingSriLankaRoute
+  '/exhibition-branding-sri-lanka': typeof ExhibitionBrandingSriLankaRoute
+  '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
+  '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
+  '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
+  '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
+  '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
+  '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
+  '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
+  '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
+  '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
+  '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
+  '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
+  '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
+  '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
+  '/led-video-wall-sri-lanka': typeof LedVideoWallSriLankaRoute
+  '/linkedin-ads-sri-lanka': typeof LinkedinAdsSriLankaRoute
+  '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
+  '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
+  '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
+  '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
+  '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
+  '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
+  '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
+  '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
+  '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
+  '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
+  '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
+  '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
+  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
+  '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
+  '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
+  '/ppc-sri-lanka': typeof PpcSriLankaRoute
+  '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
+  '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
+  '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
+  '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
+  '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
+  '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
+  '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
+  '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
+  '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
+  '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
+  '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
+  '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
+  '/tiktok-ads-sri-lanka': typeof TiktokAdsSriLankaRoute
+  '/tiktok-marketing-sri-lanka': typeof TiktokMarketingSriLankaRoute
+  '/transit-advertising-sri-lanka': typeof TransitAdvertisingSriLankaRoute
+  '/ttl-advertising-sri-lanka': typeof TtlAdvertisingSriLankaRoute
+  '/tv-advertising-sri-lanka': typeof TvAdvertisingSriLankaRoute
+  '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
+  '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
+  '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
+  '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
+  '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
+  '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
+  '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
+  '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
+  '/youtube-ads-sri-lanka': typeof YoutubeAdsSriLankaRoute
+  '/youtube-marketing-sri-lanka': typeof YoutubeMarketingSriLankaRoute
+  '/blog/360-advertising-sri-lanka': typeof Blog360AdvertisingSriLankaRoute
+  '/blog/above-the-line-advertising-sri-lanka': typeof BlogAboveTheLineAdvertisingSriLankaRoute
+  '/blog/activation-marketing-sri-lanka': typeof BlogActivationMarketingSriLankaRoute
+  '/blog/advertising-video-sri-lanka': typeof BlogAdvertisingVideoSriLankaRoute
+  '/blog/atl-advertising-sri-lanka': typeof BlogAtlAdvertisingSriLankaRoute
+  '/blog/atl-btl-ttl-advertising-sri-lanka': typeof BlogAtlBtlTtlAdvertisingSriLankaRoute
+  '/blog/banner-design-sri-lanka': typeof BlogBannerDesignSriLankaRoute
+  '/blog/below-the-line-advertising-sri-lanka': typeof BlogBelowTheLineAdvertisingSriLankaRoute
+  '/blog/brand-awareness-campaigns-sri-lanka': typeof BlogBrandAwarenessCampaignsSriLankaRoute
+  '/blog/branding-sri-lanka': typeof BlogBrandingSriLankaRoute
+  '/blog/brochure-design-sri-lanka': typeof BlogBrochureDesignSriLankaRoute
+  '/blog/btl-advertising-sri-lanka': typeof BlogBtlAdvertisingSriLankaRoute
+  '/blog/bus-advertising-sri-lanka': typeof BlogBusAdvertisingSriLankaRoute
+  '/blog/business-branding-sri-lanka': typeof BlogBusinessBrandingSriLankaRoute
+  '/blog/community-management-sri-lanka': typeof BlogCommunityManagementSriLankaRoute
+  '/blog/consumer-promotions-sri-lanka': typeof BlogConsumerPromotionsSriLankaRoute
+  '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
+  '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
+  '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
+  '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
+  '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
+  '/blog/digital-campaign-management-sri-lanka': typeof BlogDigitalCampaignManagementSriLankaRoute
+  '/blog/digital-marketing-sri-lanka': typeof BlogDigitalMarketingSriLankaRoute
+  '/blog/door-to-door-marketing-sri-lanka': typeof BlogDoorToDoorMarketingSriLankaRoute
+  '/blog/email-advertising-sri-lanka': typeof BlogEmailAdvertisingSriLankaRoute
+  '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
+  '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
+  '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
+  '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
+  '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
+  '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
+  '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
+  '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
+  '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
+  '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
+  '/blog/internet-marketing-sri-lanka': typeof BlogInternetMarketingSriLankaRoute
+  '/blog/keyword-research-sri-lanka': typeof BlogKeywordResearchSriLankaRoute
+  '/blog/lamp-post-advertising-sri-lanka': typeof BlogLampPostAdvertisingSriLankaRoute
+  '/blog/leaflet-distribution-sri-lanka': typeof BlogLeafletDistributionSriLankaRoute
+  '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
+  '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
+  '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
+  '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
+  '/blog/national-advertising-campaigns-sri-lanka': typeof BlogNationalAdvertisingCampaignsSriLankaRoute
+  '/blog/neon-signs-sri-lanka': typeof BlogNeonSignsSriLankaRoute
+  '/blog/newsletter-marketing-sri-lanka': typeof BlogNewsletterMarketingSriLankaRoute
+  '/blog/off-page-seo-sri-lanka': typeof BlogOffPageSeoSriLankaRoute
+  '/blog/on-page-seo-sri-lanka': typeof BlogOnPageSeoSriLankaRoute
+  '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
+  '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
+  '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
+  '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
+  '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
+  '/blog/promotional-sms-sri-lanka': typeof BlogPromotionalSmsSriLankaRoute
+  '/blog/promotional-video-sri-lanka': typeof BlogPromotionalVideoSriLankaRoute
+  '/blog/reels-marketing-sri-lanka': typeof BlogReelsMarketingSriLankaRoute
+  '/blog/responsive-web-design-sri-lanka': typeof BlogResponsiveWebDesignSriLankaRoute
+  '/blog/retargeting-sri-lanka': typeof BlogRetargetingSriLankaRoute
+  '/blog/sampling-campaigns-sri-lanka': typeof BlogSamplingCampaignsSriLankaRoute
+  '/blog/search-engine-marketing-sri-lanka': typeof BlogSearchEngineMarketingSriLankaRoute
+  '/blog/search-engine-optimization-sri-lanka': typeof BlogSearchEngineOptimizationSriLankaRoute
+  '/blog/sem-sri-lanka': typeof BlogSemSriLankaRoute
+  '/blog/seo-agency-sri-lanka': typeof BlogSeoAgencySriLankaRoute
+  '/blog/seo-sri-lanka': typeof BlogSeoSriLankaRoute
+  '/blog/sign-board-advertising-sri-lanka': typeof BlogSignBoardAdvertisingSriLankaRoute
+  '/blog/sms-advertising-sri-lanka': typeof BlogSmsAdvertisingSriLankaRoute
+  '/blog/social-media-advertising-sri-lanka': typeof BlogSocialMediaAdvertisingSriLankaRoute
+  '/blog/social-media-campaigns-sri-lanka': typeof BlogSocialMediaCampaignsSriLankaRoute
+  '/blog/social-media-marketing-sri-lanka': typeof BlogSocialMediaMarketingSriLankaRoute
+  '/blog/stall-branding-sri-lanka': typeof BlogStallBrandingSriLankaRoute
+  '/blog/strategic-marketing-sri-lanka': typeof BlogStrategicMarketingSriLankaRoute
+  '/blog/taxi-advertising-sri-lanka': typeof BlogTaxiAdvertisingSriLankaRoute
+  '/blog/television-commercials-sri-lanka': typeof BlogTelevisionCommercialsSriLankaRoute
+  '/blog/through-the-line-advertising-sri-lanka': typeof BlogThroughTheLineAdvertisingSriLankaRoute
+  '/blog/tiktok-advertising-sri-lanka': typeof BlogTiktokAdvertisingSriLankaRoute
+  '/blog/trade-marketing-sri-lanka': typeof BlogTradeMarketingSriLankaRoute
+  '/blog/traditional-advertising-sri-lanka': typeof BlogTraditionalAdvertisingSriLankaRoute
+  '/blog/train-advertising-sri-lanka': typeof BlogTrainAdvertisingSriLankaRoute
+  '/blog/ttl-advertising-sri-lanka': typeof BlogTtlAdvertisingSriLankaRoute
+  '/blog/video-production-sri-lanka': typeof BlogVideoProductionSriLankaRoute
+  '/blog/viral-marketing-sri-lanka': typeof BlogViralMarketingSriLankaRoute
+  '/blog/web-banners-sri-lanka': typeof BlogWebBannersSriLankaRoute
+  '/blog/web-design-sri-lanka': typeof BlogWebDesignSriLankaRoute
+  '/blog/website-banners-sri-lanka': typeof BlogWebsiteBannersSriLankaRoute
+  '/blog/website-ranking-sri-lanka': typeof BlogWebsiteRankingSriLankaRoute
+  '/blog/website-redesign-sri-lanka': typeof BlogWebsiteRedesignSriLankaRoute
+  '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
+  '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
+  '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
+  '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
+  '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
+  '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
+  '/billboard-advertising-sri-lanka': typeof BillboardAdvertisingSriLankaRoute
+  '/brand-activation-sri-lanka': typeof BrandActivationSriLankaRoute
+  '/brand-communication-sri-lanka': typeof BrandCommunicationSriLankaRoute
+  '/brand-identity-sri-lanka': typeof BrandIdentitySriLankaRoute
+  '/branding-sri-lanka': typeof BrandingSriLankaRoute
+  '/btl-advertising-sri-lanka': typeof BtlAdvertisingSriLankaRoute
+  '/bulk-email-sri-lanka': typeof BulkEmailSriLankaRoute
+  '/bulk-sms-sri-lanka': typeof BulkSmsSriLankaRoute
   '/case-studies': typeof CaseStudiesRoute
+  '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
+  '/company-profile-design-sri-lanka': typeof CompanyProfileDesignSriLankaRoute
   '/contact': typeof ContactRoute
+  '/content-marketing-sri-lanka': typeof ContentMarketingSriLankaRoute
+  '/corporate-branding-sri-lanka': typeof CorporateBrandingSriLankaRoute
+  '/corporate-video-sri-lanka': typeof CorporateVideoSriLankaRoute
+  '/creative-agency-sri-lanka': typeof CreativeAgencySriLankaRoute
+  '/digital-billboard-sri-lanka': typeof DigitalBillboardSriLankaRoute
+  '/digital-marketing-sri-lanka': typeof DigitalMarketingSriLankaRoute
+  '/display-advertising-sri-lanka': typeof DisplayAdvertisingSriLankaRoute
+  '/drone-videography-sri-lanka': typeof DroneVideographySriLankaRoute
+  '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
+  '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
+  '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
+  '/event-marketing-sri-lanka': typeof EventMarketingSriLankaRoute
+  '/exhibition-branding-sri-lanka': typeof ExhibitionBrandingSriLankaRoute
+  '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
+  '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
+  '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
+  '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
+  '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
+  '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
+  '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
+  '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
+  '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
+  '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
+  '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
+  '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
+  '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
+  '/led-video-wall-sri-lanka': typeof LedVideoWallSriLankaRoute
+  '/linkedin-ads-sri-lanka': typeof LinkedinAdsSriLankaRoute
+  '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
+  '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
+  '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
+  '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
+  '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
+  '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
+  '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
+  '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
+  '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
+  '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
+  '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
+  '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
+  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
+  '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
+  '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
+  '/ppc-sri-lanka': typeof PpcSriLankaRoute
+  '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
+  '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
+  '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
+  '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
+  '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
+  '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
+  '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
+  '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
+  '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
+  '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
+  '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
+  '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
+  '/tiktok-ads-sri-lanka': typeof TiktokAdsSriLankaRoute
+  '/tiktok-marketing-sri-lanka': typeof TiktokMarketingSriLankaRoute
+  '/transit-advertising-sri-lanka': typeof TransitAdvertisingSriLankaRoute
+  '/ttl-advertising-sri-lanka': typeof TtlAdvertisingSriLankaRoute
+  '/tv-advertising-sri-lanka': typeof TvAdvertisingSriLankaRoute
+  '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
+  '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
+  '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
+  '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
+  '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
+  '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
+  '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
+  '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
+  '/youtube-ads-sri-lanka': typeof YoutubeAdsSriLankaRoute
+  '/youtube-marketing-sri-lanka': typeof YoutubeMarketingSriLankaRoute
+  '/blog/360-advertising-sri-lanka': typeof Blog360AdvertisingSriLankaRoute
+  '/blog/above-the-line-advertising-sri-lanka': typeof BlogAboveTheLineAdvertisingSriLankaRoute
+  '/blog/activation-marketing-sri-lanka': typeof BlogActivationMarketingSriLankaRoute
+  '/blog/advertising-video-sri-lanka': typeof BlogAdvertisingVideoSriLankaRoute
+  '/blog/atl-advertising-sri-lanka': typeof BlogAtlAdvertisingSriLankaRoute
+  '/blog/atl-btl-ttl-advertising-sri-lanka': typeof BlogAtlBtlTtlAdvertisingSriLankaRoute
+  '/blog/banner-design-sri-lanka': typeof BlogBannerDesignSriLankaRoute
+  '/blog/below-the-line-advertising-sri-lanka': typeof BlogBelowTheLineAdvertisingSriLankaRoute
+  '/blog/brand-awareness-campaigns-sri-lanka': typeof BlogBrandAwarenessCampaignsSriLankaRoute
+  '/blog/branding-sri-lanka': typeof BlogBrandingSriLankaRoute
+  '/blog/brochure-design-sri-lanka': typeof BlogBrochureDesignSriLankaRoute
+  '/blog/btl-advertising-sri-lanka': typeof BlogBtlAdvertisingSriLankaRoute
+  '/blog/bus-advertising-sri-lanka': typeof BlogBusAdvertisingSriLankaRoute
+  '/blog/business-branding-sri-lanka': typeof BlogBusinessBrandingSriLankaRoute
+  '/blog/community-management-sri-lanka': typeof BlogCommunityManagementSriLankaRoute
+  '/blog/consumer-promotions-sri-lanka': typeof BlogConsumerPromotionsSriLankaRoute
+  '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
+  '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
+  '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
+  '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
+  '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
+  '/blog/digital-campaign-management-sri-lanka': typeof BlogDigitalCampaignManagementSriLankaRoute
+  '/blog/digital-marketing-sri-lanka': typeof BlogDigitalMarketingSriLankaRoute
+  '/blog/door-to-door-marketing-sri-lanka': typeof BlogDoorToDoorMarketingSriLankaRoute
+  '/blog/email-advertising-sri-lanka': typeof BlogEmailAdvertisingSriLankaRoute
+  '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
+  '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
+  '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
+  '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
+  '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
+  '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
+  '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
+  '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
+  '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
+  '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
+  '/blog/internet-marketing-sri-lanka': typeof BlogInternetMarketingSriLankaRoute
+  '/blog/keyword-research-sri-lanka': typeof BlogKeywordResearchSriLankaRoute
+  '/blog/lamp-post-advertising-sri-lanka': typeof BlogLampPostAdvertisingSriLankaRoute
+  '/blog/leaflet-distribution-sri-lanka': typeof BlogLeafletDistributionSriLankaRoute
+  '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
+  '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
+  '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
+  '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
+  '/blog/national-advertising-campaigns-sri-lanka': typeof BlogNationalAdvertisingCampaignsSriLankaRoute
+  '/blog/neon-signs-sri-lanka': typeof BlogNeonSignsSriLankaRoute
+  '/blog/newsletter-marketing-sri-lanka': typeof BlogNewsletterMarketingSriLankaRoute
+  '/blog/off-page-seo-sri-lanka': typeof BlogOffPageSeoSriLankaRoute
+  '/blog/on-page-seo-sri-lanka': typeof BlogOnPageSeoSriLankaRoute
+  '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
+  '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
+  '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
+  '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
+  '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
+  '/blog/promotional-sms-sri-lanka': typeof BlogPromotionalSmsSriLankaRoute
+  '/blog/promotional-video-sri-lanka': typeof BlogPromotionalVideoSriLankaRoute
+  '/blog/reels-marketing-sri-lanka': typeof BlogReelsMarketingSriLankaRoute
+  '/blog/responsive-web-design-sri-lanka': typeof BlogResponsiveWebDesignSriLankaRoute
+  '/blog/retargeting-sri-lanka': typeof BlogRetargetingSriLankaRoute
+  '/blog/sampling-campaigns-sri-lanka': typeof BlogSamplingCampaignsSriLankaRoute
+  '/blog/search-engine-marketing-sri-lanka': typeof BlogSearchEngineMarketingSriLankaRoute
+  '/blog/search-engine-optimization-sri-lanka': typeof BlogSearchEngineOptimizationSriLankaRoute
+  '/blog/sem-sri-lanka': typeof BlogSemSriLankaRoute
+  '/blog/seo-agency-sri-lanka': typeof BlogSeoAgencySriLankaRoute
+  '/blog/seo-sri-lanka': typeof BlogSeoSriLankaRoute
+  '/blog/sign-board-advertising-sri-lanka': typeof BlogSignBoardAdvertisingSriLankaRoute
+  '/blog/sms-advertising-sri-lanka': typeof BlogSmsAdvertisingSriLankaRoute
+  '/blog/social-media-advertising-sri-lanka': typeof BlogSocialMediaAdvertisingSriLankaRoute
+  '/blog/social-media-campaigns-sri-lanka': typeof BlogSocialMediaCampaignsSriLankaRoute
+  '/blog/social-media-marketing-sri-lanka': typeof BlogSocialMediaMarketingSriLankaRoute
+  '/blog/stall-branding-sri-lanka': typeof BlogStallBrandingSriLankaRoute
+  '/blog/strategic-marketing-sri-lanka': typeof BlogStrategicMarketingSriLankaRoute
+  '/blog/taxi-advertising-sri-lanka': typeof BlogTaxiAdvertisingSriLankaRoute
+  '/blog/television-commercials-sri-lanka': typeof BlogTelevisionCommercialsSriLankaRoute
+  '/blog/through-the-line-advertising-sri-lanka': typeof BlogThroughTheLineAdvertisingSriLankaRoute
+  '/blog/tiktok-advertising-sri-lanka': typeof BlogTiktokAdvertisingSriLankaRoute
+  '/blog/trade-marketing-sri-lanka': typeof BlogTradeMarketingSriLankaRoute
+  '/blog/traditional-advertising-sri-lanka': typeof BlogTraditionalAdvertisingSriLankaRoute
+  '/blog/train-advertising-sri-lanka': typeof BlogTrainAdvertisingSriLankaRoute
+  '/blog/ttl-advertising-sri-lanka': typeof BlogTtlAdvertisingSriLankaRoute
+  '/blog/video-production-sri-lanka': typeof BlogVideoProductionSriLankaRoute
+  '/blog/viral-marketing-sri-lanka': typeof BlogViralMarketingSriLankaRoute
+  '/blog/web-banners-sri-lanka': typeof BlogWebBannersSriLankaRoute
+  '/blog/web-design-sri-lanka': typeof BlogWebDesignSriLankaRoute
+  '/blog/website-banners-sri-lanka': typeof BlogWebsiteBannersSriLankaRoute
+  '/blog/website-ranking-sri-lanka': typeof BlogWebsiteRankingSriLankaRoute
+  '/blog/website-redesign-sri-lanka': typeof BlogWebsiteRedesignSriLankaRoute
+  '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
+  '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
+  '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
+  '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
+  '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
+  '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
+  '/billboard-advertising-sri-lanka': typeof BillboardAdvertisingSriLankaRoute
+  '/brand-activation-sri-lanka': typeof BrandActivationSriLankaRoute
+  '/brand-communication-sri-lanka': typeof BrandCommunicationSriLankaRoute
+  '/brand-identity-sri-lanka': typeof BrandIdentitySriLankaRoute
+  '/branding-sri-lanka': typeof BrandingSriLankaRoute
+  '/btl-advertising-sri-lanka': typeof BtlAdvertisingSriLankaRoute
+  '/bulk-email-sri-lanka': typeof BulkEmailSriLankaRoute
+  '/bulk-sms-sri-lanka': typeof BulkSmsSriLankaRoute
   '/case-studies': typeof CaseStudiesRoute
+  '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
+  '/company-profile-design-sri-lanka': typeof CompanyProfileDesignSriLankaRoute
   '/contact': typeof ContactRoute
+  '/content-marketing-sri-lanka': typeof ContentMarketingSriLankaRoute
+  '/corporate-branding-sri-lanka': typeof CorporateBrandingSriLankaRoute
+  '/corporate-video-sri-lanka': typeof CorporateVideoSriLankaRoute
+  '/creative-agency-sri-lanka': typeof CreativeAgencySriLankaRoute
+  '/digital-billboard-sri-lanka': typeof DigitalBillboardSriLankaRoute
+  '/digital-marketing-sri-lanka': typeof DigitalMarketingSriLankaRoute
+  '/display-advertising-sri-lanka': typeof DisplayAdvertisingSriLankaRoute
+  '/drone-videography-sri-lanka': typeof DroneVideographySriLankaRoute
+  '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
+  '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
+  '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
+  '/event-marketing-sri-lanka': typeof EventMarketingSriLankaRoute
+  '/exhibition-branding-sri-lanka': typeof ExhibitionBrandingSriLankaRoute
+  '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
+  '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
+  '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
+  '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
+  '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
+  '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
+  '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
+  '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
+  '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
+  '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
+  '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
+  '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
+  '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
+  '/led-video-wall-sri-lanka': typeof LedVideoWallSriLankaRoute
+  '/linkedin-ads-sri-lanka': typeof LinkedinAdsSriLankaRoute
+  '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
+  '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
+  '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
+  '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
+  '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
+  '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
+  '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
+  '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
+  '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
+  '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
+  '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
+  '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
+  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
+  '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
+  '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
+  '/ppc-sri-lanka': typeof PpcSriLankaRoute
+  '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
+  '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
+  '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
+  '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
+  '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
+  '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
+  '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
+  '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
+  '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
+  '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
+  '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
+  '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
+  '/tiktok-ads-sri-lanka': typeof TiktokAdsSriLankaRoute
+  '/tiktok-marketing-sri-lanka': typeof TiktokMarketingSriLankaRoute
+  '/transit-advertising-sri-lanka': typeof TransitAdvertisingSriLankaRoute
+  '/ttl-advertising-sri-lanka': typeof TtlAdvertisingSriLankaRoute
+  '/tv-advertising-sri-lanka': typeof TvAdvertisingSriLankaRoute
+  '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
+  '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
+  '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
+  '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
+  '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
+  '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
+  '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
+  '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
+  '/youtube-ads-sri-lanka': typeof YoutubeAdsSriLankaRoute
+  '/youtube-marketing-sri-lanka': typeof YoutubeMarketingSriLankaRoute
+  '/blog/360-advertising-sri-lanka': typeof Blog360AdvertisingSriLankaRoute
+  '/blog/above-the-line-advertising-sri-lanka': typeof BlogAboveTheLineAdvertisingSriLankaRoute
+  '/blog/activation-marketing-sri-lanka': typeof BlogActivationMarketingSriLankaRoute
+  '/blog/advertising-video-sri-lanka': typeof BlogAdvertisingVideoSriLankaRoute
+  '/blog/atl-advertising-sri-lanka': typeof BlogAtlAdvertisingSriLankaRoute
+  '/blog/atl-btl-ttl-advertising-sri-lanka': typeof BlogAtlBtlTtlAdvertisingSriLankaRoute
+  '/blog/banner-design-sri-lanka': typeof BlogBannerDesignSriLankaRoute
+  '/blog/below-the-line-advertising-sri-lanka': typeof BlogBelowTheLineAdvertisingSriLankaRoute
+  '/blog/brand-awareness-campaigns-sri-lanka': typeof BlogBrandAwarenessCampaignsSriLankaRoute
+  '/blog/branding-sri-lanka': typeof BlogBrandingSriLankaRoute
+  '/blog/brochure-design-sri-lanka': typeof BlogBrochureDesignSriLankaRoute
+  '/blog/btl-advertising-sri-lanka': typeof BlogBtlAdvertisingSriLankaRoute
+  '/blog/bus-advertising-sri-lanka': typeof BlogBusAdvertisingSriLankaRoute
+  '/blog/business-branding-sri-lanka': typeof BlogBusinessBrandingSriLankaRoute
+  '/blog/community-management-sri-lanka': typeof BlogCommunityManagementSriLankaRoute
+  '/blog/consumer-promotions-sri-lanka': typeof BlogConsumerPromotionsSriLankaRoute
+  '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
+  '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
+  '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
+  '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
+  '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
+  '/blog/digital-campaign-management-sri-lanka': typeof BlogDigitalCampaignManagementSriLankaRoute
+  '/blog/digital-marketing-sri-lanka': typeof BlogDigitalMarketingSriLankaRoute
+  '/blog/door-to-door-marketing-sri-lanka': typeof BlogDoorToDoorMarketingSriLankaRoute
+  '/blog/email-advertising-sri-lanka': typeof BlogEmailAdvertisingSriLankaRoute
+  '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
+  '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
+  '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
+  '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
+  '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
+  '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
+  '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
+  '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
+  '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
+  '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
+  '/blog/internet-marketing-sri-lanka': typeof BlogInternetMarketingSriLankaRoute
+  '/blog/keyword-research-sri-lanka': typeof BlogKeywordResearchSriLankaRoute
+  '/blog/lamp-post-advertising-sri-lanka': typeof BlogLampPostAdvertisingSriLankaRoute
+  '/blog/leaflet-distribution-sri-lanka': typeof BlogLeafletDistributionSriLankaRoute
+  '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
+  '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
+  '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
+  '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
+  '/blog/national-advertising-campaigns-sri-lanka': typeof BlogNationalAdvertisingCampaignsSriLankaRoute
+  '/blog/neon-signs-sri-lanka': typeof BlogNeonSignsSriLankaRoute
+  '/blog/newsletter-marketing-sri-lanka': typeof BlogNewsletterMarketingSriLankaRoute
+  '/blog/off-page-seo-sri-lanka': typeof BlogOffPageSeoSriLankaRoute
+  '/blog/on-page-seo-sri-lanka': typeof BlogOnPageSeoSriLankaRoute
+  '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
+  '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
+  '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
+  '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
+  '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
+  '/blog/promotional-sms-sri-lanka': typeof BlogPromotionalSmsSriLankaRoute
+  '/blog/promotional-video-sri-lanka': typeof BlogPromotionalVideoSriLankaRoute
+  '/blog/reels-marketing-sri-lanka': typeof BlogReelsMarketingSriLankaRoute
+  '/blog/responsive-web-design-sri-lanka': typeof BlogResponsiveWebDesignSriLankaRoute
+  '/blog/retargeting-sri-lanka': typeof BlogRetargetingSriLankaRoute
+  '/blog/sampling-campaigns-sri-lanka': typeof BlogSamplingCampaignsSriLankaRoute
+  '/blog/search-engine-marketing-sri-lanka': typeof BlogSearchEngineMarketingSriLankaRoute
+  '/blog/search-engine-optimization-sri-lanka': typeof BlogSearchEngineOptimizationSriLankaRoute
+  '/blog/sem-sri-lanka': typeof BlogSemSriLankaRoute
+  '/blog/seo-agency-sri-lanka': typeof BlogSeoAgencySriLankaRoute
+  '/blog/seo-sri-lanka': typeof BlogSeoSriLankaRoute
+  '/blog/sign-board-advertising-sri-lanka': typeof BlogSignBoardAdvertisingSriLankaRoute
+  '/blog/sms-advertising-sri-lanka': typeof BlogSmsAdvertisingSriLankaRoute
+  '/blog/social-media-advertising-sri-lanka': typeof BlogSocialMediaAdvertisingSriLankaRoute
+  '/blog/social-media-campaigns-sri-lanka': typeof BlogSocialMediaCampaignsSriLankaRoute
+  '/blog/social-media-marketing-sri-lanka': typeof BlogSocialMediaMarketingSriLankaRoute
+  '/blog/stall-branding-sri-lanka': typeof BlogStallBrandingSriLankaRoute
+  '/blog/strategic-marketing-sri-lanka': typeof BlogStrategicMarketingSriLankaRoute
+  '/blog/taxi-advertising-sri-lanka': typeof BlogTaxiAdvertisingSriLankaRoute
+  '/blog/television-commercials-sri-lanka': typeof BlogTelevisionCommercialsSriLankaRoute
+  '/blog/through-the-line-advertising-sri-lanka': typeof BlogThroughTheLineAdvertisingSriLankaRoute
+  '/blog/tiktok-advertising-sri-lanka': typeof BlogTiktokAdvertisingSriLankaRoute
+  '/blog/trade-marketing-sri-lanka': typeof BlogTradeMarketingSriLankaRoute
+  '/blog/traditional-advertising-sri-lanka': typeof BlogTraditionalAdvertisingSriLankaRoute
+  '/blog/train-advertising-sri-lanka': typeof BlogTrainAdvertisingSriLankaRoute
+  '/blog/ttl-advertising-sri-lanka': typeof BlogTtlAdvertisingSriLankaRoute
+  '/blog/video-production-sri-lanka': typeof BlogVideoProductionSriLankaRoute
+  '/blog/viral-marketing-sri-lanka': typeof BlogViralMarketingSriLankaRoute
+  '/blog/web-banners-sri-lanka': typeof BlogWebBannersSriLankaRoute
+  '/blog/web-design-sri-lanka': typeof BlogWebDesignSriLankaRoute
+  '/blog/website-banners-sri-lanka': typeof BlogWebsiteBannersSriLankaRoute
+  '/blog/website-ranking-sri-lanka': typeof BlogWebsiteRankingSriLankaRoute
+  '/blog/website-redesign-sri-lanka': typeof BlogWebsiteRedesignSriLankaRoute
+  '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
+  '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/2d-animation-sri-lanka'
+    | '/360-marketing-campaigns-sri-lanka'
+    | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/atl-advertising-sri-lanka'
+    | '/b2b-email-marketing-sri-lanka'
+    | '/backlink-services-sri-lanka'
+    | '/billboard-advertising-sri-lanka'
+    | '/brand-activation-sri-lanka'
+    | '/brand-communication-sri-lanka'
+    | '/brand-identity-sri-lanka'
+    | '/branding-sri-lanka'
+    | '/btl-advertising-sri-lanka'
+    | '/bulk-email-sri-lanka'
+    | '/bulk-sms-sri-lanka'
     | '/case-studies'
+    | '/cinema-advertising-sri-lanka'
+    | '/commercial-video-sri-lanka'
+    | '/company-profile-design-sri-lanka'
     | '/contact'
+    | '/content-marketing-sri-lanka'
+    | '/corporate-branding-sri-lanka'
+    | '/corporate-video-sri-lanka'
+    | '/creative-agency-sri-lanka'
+    | '/digital-billboard-sri-lanka'
+    | '/digital-marketing-sri-lanka'
+    | '/display-advertising-sri-lanka'
+    | '/drone-videography-sri-lanka'
+    | '/ecommerce-seo-sri-lanka'
+    | '/ecommerce-website-sri-lanka'
+    | '/email-automation-sri-lanka'
+    | '/email-sms-marketing-sri-lanka'
+    | '/event-marketing-sri-lanka'
+    | '/exhibition-branding-sri-lanka'
+    | '/facebook-ads-sri-lanka'
+    | '/facebook-marketing-sri-lanka'
+    | '/field-marketing-sri-lanka'
+    | '/full-service-advertising-sri-lanka'
     | '/get-quote'
+    | '/google-ads-sri-lanka'
+    | '/graphic-design-sri-lanka'
+    | '/hoarding-advertising-sri-lanka'
+    | '/influencer-marketing-sri-lanka'
+    | '/instagram-ads-sri-lanka'
+    | '/instagram-marketing-sri-lanka'
+    | '/integrated-marketing-sri-lanka'
+    | '/landing-page-design-sri-lanka'
+    | '/lead-generation-sri-lanka'
+    | '/led-screen-advertising-sri-lanka'
+    | '/led-video-wall-sri-lanka'
+    | '/linkedin-ads-sri-lanka'
+    | '/linkedin-marketing-sri-lanka'
+    | '/local-seo-sri-lanka'
+    | '/logo-design-sri-lanka'
+    | '/magazine-advertising-sri-lanka'
+    | '/mall-activation-sri-lanka'
+    | '/media-buying-sri-lanka'
+    | '/media-planning-sri-lanka'
+    | '/mobile-billboard-sri-lanka'
+    | '/motion-graphics-sri-lanka'
+    | '/multi-channel-advertising-sri-lanka'
+    | '/newspaper-advertising-sri-lanka'
+    | '/omnichannel-marketing-sri-lanka'
+    | '/outdoor-advertising-sri-lanka'
+    | '/packaging-design-sri-lanka'
+    | '/performance-marketing-sri-lanka'
+    | '/point-of-sale-advertising-sri-lanka'
+    | '/ppc-sri-lanka'
+    | '/programmatic-advertising-sri-lanka'
+    | '/radio-advertising-sri-lanka'
+    | '/remarketing-sri-lanka'
+    | '/retail-branding-sri-lanka'
+    | '/roadshow-marketing-sri-lanka'
+    | '/seo-company-sri-lanka'
+    | '/seo-services-sri-lanka'
+    | '/shop-branding-sri-lanka'
+    | '/sms-marketing-sri-lanka'
+    | '/social-media-agency-sri-lanka'
+    | '/social-media-management-sri-lanka'
+    | '/social-media-marketing-sri-lanka'
+    | '/technical-seo-sri-lanka'
+    | '/tiktok-ads-sri-lanka'
+    | '/tiktok-marketing-sri-lanka'
+    | '/transit-advertising-sri-lanka'
+    | '/ttl-advertising-sri-lanka'
+    | '/tv-advertising-sri-lanka'
+    | '/tv-commercials-sri-lanka'
+    | '/ui-ux-design-sri-lanka'
+    | '/video-production-sri-lanka'
+    | '/web-design-sri-lanka'
+    | '/website-development-sri-lanka'
+    | '/website-maintenance-sri-lanka'
+    | '/whatsapp-marketing-sri-lanka'
+    | '/wordpress-development-sri-lanka'
+    | '/youtube-ads-sri-lanka'
+    | '/youtube-marketing-sri-lanka'
+    | '/blog/360-advertising-sri-lanka'
+    | '/blog/above-the-line-advertising-sri-lanka'
+    | '/blog/activation-marketing-sri-lanka'
+    | '/blog/advertising-video-sri-lanka'
+    | '/blog/atl-advertising-sri-lanka'
+    | '/blog/atl-btl-ttl-advertising-sri-lanka'
+    | '/blog/banner-design-sri-lanka'
+    | '/blog/below-the-line-advertising-sri-lanka'
+    | '/blog/brand-awareness-campaigns-sri-lanka'
+    | '/blog/branding-sri-lanka'
+    | '/blog/brochure-design-sri-lanka'
+    | '/blog/btl-advertising-sri-lanka'
+    | '/blog/bus-advertising-sri-lanka'
+    | '/blog/business-branding-sri-lanka'
+    | '/blog/community-management-sri-lanka'
+    | '/blog/consumer-promotions-sri-lanka'
+    | '/blog/content-creation-sri-lanka'
+    | '/blog/conversion-marketing-sri-lanka'
+    | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/creative-design-sri-lanka'
+    | '/blog/cross-platform-marketing-sri-lanka'
+    | '/blog/digital-advertising-sri-lanka'
+    | '/blog/digital-campaign-management-sri-lanka'
+    | '/blog/digital-marketing-sri-lanka'
+    | '/blog/door-to-door-marketing-sri-lanka'
+    | '/blog/email-advertising-sri-lanka'
+    | '/blog/email-campaigns-sri-lanka'
+    | '/blog/email-marketing-sri-lanka'
+    | '/blog/event-promotion-sri-lanka'
+    | '/blog/facebook-advertising-sri-lanka'
+    | '/blog/flyer-design-sri-lanka'
+    | '/blog/flyer-distribution-sri-lanka'
+    | '/blog/google-advertising-sri-lanka'
+    | '/blog/google-ranking-sri-lanka'
+    | '/blog/ground-activation-sri-lanka'
+    | '/blog/in-store-branding-sri-lanka'
+    | '/blog/instagram-advertising-sri-lanka'
+    | '/blog/integrated-advertising-sri-lanka'
+    | '/blog/internet-marketing-sri-lanka'
+    | '/blog/keyword-research-sri-lanka'
+    | '/blog/lamp-post-advertising-sri-lanka'
+    | '/blog/leaflet-distribution-sri-lanka'
+    | '/blog/led-display-advertising-sri-lanka'
+    | '/blog/marketing-materials-sri-lanka'
+    | '/blog/mass-media-advertising-sri-lanka'
+    | '/blog/merchandising-sri-lanka'
+    | '/blog/national-advertising-campaigns-sri-lanka'
+    | '/blog/neon-signs-sri-lanka'
+    | '/blog/newsletter-marketing-sri-lanka'
+    | '/blog/off-page-seo-sri-lanka'
+    | '/blog/on-page-seo-sri-lanka'
+    | '/blog/online-marketing-sri-lanka'
+    | '/blog/organic-traffic-sri-lanka'
+    | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pos-branding-sri-lanka'
+    | '/blog/print-media-advertising-sri-lanka'
+    | '/blog/product-promotion-sri-lanka'
+    | '/blog/promotional-sms-sri-lanka'
+    | '/blog/promotional-video-sri-lanka'
+    | '/blog/reels-marketing-sri-lanka'
+    | '/blog/responsive-web-design-sri-lanka'
+    | '/blog/retargeting-sri-lanka'
+    | '/blog/sampling-campaigns-sri-lanka'
+    | '/blog/search-engine-marketing-sri-lanka'
+    | '/blog/search-engine-optimization-sri-lanka'
+    | '/blog/sem-sri-lanka'
+    | '/blog/seo-agency-sri-lanka'
+    | '/blog/seo-sri-lanka'
+    | '/blog/sign-board-advertising-sri-lanka'
+    | '/blog/sms-advertising-sri-lanka'
+    | '/blog/social-media-advertising-sri-lanka'
+    | '/blog/social-media-campaigns-sri-lanka'
+    | '/blog/social-media-marketing-sri-lanka'
+    | '/blog/stall-branding-sri-lanka'
+    | '/blog/strategic-marketing-sri-lanka'
+    | '/blog/taxi-advertising-sri-lanka'
+    | '/blog/television-commercials-sri-lanka'
+    | '/blog/through-the-line-advertising-sri-lanka'
+    | '/blog/tiktok-advertising-sri-lanka'
+    | '/blog/trade-marketing-sri-lanka'
+    | '/blog/traditional-advertising-sri-lanka'
+    | '/blog/train-advertising-sri-lanka'
+    | '/blog/ttl-advertising-sri-lanka'
+    | '/blog/video-production-sri-lanka'
+    | '/blog/viral-marketing-sri-lanka'
+    | '/blog/web-banners-sri-lanka'
+    | '/blog/web-design-sri-lanka'
+    | '/blog/website-banners-sri-lanka'
+    | '/blog/website-ranking-sri-lanka'
+    | '/blog/website-redesign-sri-lanka'
+    | '/blog/whatsapp-advertising-sri-lanka'
+    | '/blog/youtube-video-marketing-sri-lanka'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/2d-animation-sri-lanka'
+    | '/360-marketing-campaigns-sri-lanka'
+    | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/atl-advertising-sri-lanka'
+    | '/b2b-email-marketing-sri-lanka'
+    | '/backlink-services-sri-lanka'
+    | '/billboard-advertising-sri-lanka'
+    | '/brand-activation-sri-lanka'
+    | '/brand-communication-sri-lanka'
+    | '/brand-identity-sri-lanka'
+    | '/branding-sri-lanka'
+    | '/btl-advertising-sri-lanka'
+    | '/bulk-email-sri-lanka'
+    | '/bulk-sms-sri-lanka'
     | '/case-studies'
+    | '/cinema-advertising-sri-lanka'
+    | '/commercial-video-sri-lanka'
+    | '/company-profile-design-sri-lanka'
     | '/contact'
+    | '/content-marketing-sri-lanka'
+    | '/corporate-branding-sri-lanka'
+    | '/corporate-video-sri-lanka'
+    | '/creative-agency-sri-lanka'
+    | '/digital-billboard-sri-lanka'
+    | '/digital-marketing-sri-lanka'
+    | '/display-advertising-sri-lanka'
+    | '/drone-videography-sri-lanka'
+    | '/ecommerce-seo-sri-lanka'
+    | '/ecommerce-website-sri-lanka'
+    | '/email-automation-sri-lanka'
+    | '/email-sms-marketing-sri-lanka'
+    | '/event-marketing-sri-lanka'
+    | '/exhibition-branding-sri-lanka'
+    | '/facebook-ads-sri-lanka'
+    | '/facebook-marketing-sri-lanka'
+    | '/field-marketing-sri-lanka'
+    | '/full-service-advertising-sri-lanka'
     | '/get-quote'
+    | '/google-ads-sri-lanka'
+    | '/graphic-design-sri-lanka'
+    | '/hoarding-advertising-sri-lanka'
+    | '/influencer-marketing-sri-lanka'
+    | '/instagram-ads-sri-lanka'
+    | '/instagram-marketing-sri-lanka'
+    | '/integrated-marketing-sri-lanka'
+    | '/landing-page-design-sri-lanka'
+    | '/lead-generation-sri-lanka'
+    | '/led-screen-advertising-sri-lanka'
+    | '/led-video-wall-sri-lanka'
+    | '/linkedin-ads-sri-lanka'
+    | '/linkedin-marketing-sri-lanka'
+    | '/local-seo-sri-lanka'
+    | '/logo-design-sri-lanka'
+    | '/magazine-advertising-sri-lanka'
+    | '/mall-activation-sri-lanka'
+    | '/media-buying-sri-lanka'
+    | '/media-planning-sri-lanka'
+    | '/mobile-billboard-sri-lanka'
+    | '/motion-graphics-sri-lanka'
+    | '/multi-channel-advertising-sri-lanka'
+    | '/newspaper-advertising-sri-lanka'
+    | '/omnichannel-marketing-sri-lanka'
+    | '/outdoor-advertising-sri-lanka'
+    | '/packaging-design-sri-lanka'
+    | '/performance-marketing-sri-lanka'
+    | '/point-of-sale-advertising-sri-lanka'
+    | '/ppc-sri-lanka'
+    | '/programmatic-advertising-sri-lanka'
+    | '/radio-advertising-sri-lanka'
+    | '/remarketing-sri-lanka'
+    | '/retail-branding-sri-lanka'
+    | '/roadshow-marketing-sri-lanka'
+    | '/seo-company-sri-lanka'
+    | '/seo-services-sri-lanka'
+    | '/shop-branding-sri-lanka'
+    | '/sms-marketing-sri-lanka'
+    | '/social-media-agency-sri-lanka'
+    | '/social-media-management-sri-lanka'
+    | '/social-media-marketing-sri-lanka'
+    | '/technical-seo-sri-lanka'
+    | '/tiktok-ads-sri-lanka'
+    | '/tiktok-marketing-sri-lanka'
+    | '/transit-advertising-sri-lanka'
+    | '/ttl-advertising-sri-lanka'
+    | '/tv-advertising-sri-lanka'
+    | '/tv-commercials-sri-lanka'
+    | '/ui-ux-design-sri-lanka'
+    | '/video-production-sri-lanka'
+    | '/web-design-sri-lanka'
+    | '/website-development-sri-lanka'
+    | '/website-maintenance-sri-lanka'
+    | '/whatsapp-marketing-sri-lanka'
+    | '/wordpress-development-sri-lanka'
+    | '/youtube-ads-sri-lanka'
+    | '/youtube-marketing-sri-lanka'
+    | '/blog/360-advertising-sri-lanka'
+    | '/blog/above-the-line-advertising-sri-lanka'
+    | '/blog/activation-marketing-sri-lanka'
+    | '/blog/advertising-video-sri-lanka'
+    | '/blog/atl-advertising-sri-lanka'
+    | '/blog/atl-btl-ttl-advertising-sri-lanka'
+    | '/blog/banner-design-sri-lanka'
+    | '/blog/below-the-line-advertising-sri-lanka'
+    | '/blog/brand-awareness-campaigns-sri-lanka'
+    | '/blog/branding-sri-lanka'
+    | '/blog/brochure-design-sri-lanka'
+    | '/blog/btl-advertising-sri-lanka'
+    | '/blog/bus-advertising-sri-lanka'
+    | '/blog/business-branding-sri-lanka'
+    | '/blog/community-management-sri-lanka'
+    | '/blog/consumer-promotions-sri-lanka'
+    | '/blog/content-creation-sri-lanka'
+    | '/blog/conversion-marketing-sri-lanka'
+    | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/creative-design-sri-lanka'
+    | '/blog/cross-platform-marketing-sri-lanka'
+    | '/blog/digital-advertising-sri-lanka'
+    | '/blog/digital-campaign-management-sri-lanka'
+    | '/blog/digital-marketing-sri-lanka'
+    | '/blog/door-to-door-marketing-sri-lanka'
+    | '/blog/email-advertising-sri-lanka'
+    | '/blog/email-campaigns-sri-lanka'
+    | '/blog/email-marketing-sri-lanka'
+    | '/blog/event-promotion-sri-lanka'
+    | '/blog/facebook-advertising-sri-lanka'
+    | '/blog/flyer-design-sri-lanka'
+    | '/blog/flyer-distribution-sri-lanka'
+    | '/blog/google-advertising-sri-lanka'
+    | '/blog/google-ranking-sri-lanka'
+    | '/blog/ground-activation-sri-lanka'
+    | '/blog/in-store-branding-sri-lanka'
+    | '/blog/instagram-advertising-sri-lanka'
+    | '/blog/integrated-advertising-sri-lanka'
+    | '/blog/internet-marketing-sri-lanka'
+    | '/blog/keyword-research-sri-lanka'
+    | '/blog/lamp-post-advertising-sri-lanka'
+    | '/blog/leaflet-distribution-sri-lanka'
+    | '/blog/led-display-advertising-sri-lanka'
+    | '/blog/marketing-materials-sri-lanka'
+    | '/blog/mass-media-advertising-sri-lanka'
+    | '/blog/merchandising-sri-lanka'
+    | '/blog/national-advertising-campaigns-sri-lanka'
+    | '/blog/neon-signs-sri-lanka'
+    | '/blog/newsletter-marketing-sri-lanka'
+    | '/blog/off-page-seo-sri-lanka'
+    | '/blog/on-page-seo-sri-lanka'
+    | '/blog/online-marketing-sri-lanka'
+    | '/blog/organic-traffic-sri-lanka'
+    | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pos-branding-sri-lanka'
+    | '/blog/print-media-advertising-sri-lanka'
+    | '/blog/product-promotion-sri-lanka'
+    | '/blog/promotional-sms-sri-lanka'
+    | '/blog/promotional-video-sri-lanka'
+    | '/blog/reels-marketing-sri-lanka'
+    | '/blog/responsive-web-design-sri-lanka'
+    | '/blog/retargeting-sri-lanka'
+    | '/blog/sampling-campaigns-sri-lanka'
+    | '/blog/search-engine-marketing-sri-lanka'
+    | '/blog/search-engine-optimization-sri-lanka'
+    | '/blog/sem-sri-lanka'
+    | '/blog/seo-agency-sri-lanka'
+    | '/blog/seo-sri-lanka'
+    | '/blog/sign-board-advertising-sri-lanka'
+    | '/blog/sms-advertising-sri-lanka'
+    | '/blog/social-media-advertising-sri-lanka'
+    | '/blog/social-media-campaigns-sri-lanka'
+    | '/blog/social-media-marketing-sri-lanka'
+    | '/blog/stall-branding-sri-lanka'
+    | '/blog/strategic-marketing-sri-lanka'
+    | '/blog/taxi-advertising-sri-lanka'
+    | '/blog/television-commercials-sri-lanka'
+    | '/blog/through-the-line-advertising-sri-lanka'
+    | '/blog/tiktok-advertising-sri-lanka'
+    | '/blog/trade-marketing-sri-lanka'
+    | '/blog/traditional-advertising-sri-lanka'
+    | '/blog/train-advertising-sri-lanka'
+    | '/blog/ttl-advertising-sri-lanka'
+    | '/blog/video-production-sri-lanka'
+    | '/blog/viral-marketing-sri-lanka'
+    | '/blog/web-banners-sri-lanka'
+    | '/blog/web-design-sri-lanka'
+    | '/blog/website-banners-sri-lanka'
+    | '/blog/website-ranking-sri-lanka'
+    | '/blog/website-redesign-sri-lanka'
+    | '/blog/whatsapp-advertising-sri-lanka'
+    | '/blog/youtube-video-marketing-sri-lanka'
   id:
     | '__root__'
     | '/'
+    | '/2d-animation-sri-lanka'
+    | '/360-marketing-campaigns-sri-lanka'
+    | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/atl-advertising-sri-lanka'
+    | '/b2b-email-marketing-sri-lanka'
+    | '/backlink-services-sri-lanka'
+    | '/billboard-advertising-sri-lanka'
+    | '/brand-activation-sri-lanka'
+    | '/brand-communication-sri-lanka'
+    | '/brand-identity-sri-lanka'
+    | '/branding-sri-lanka'
+    | '/btl-advertising-sri-lanka'
+    | '/bulk-email-sri-lanka'
+    | '/bulk-sms-sri-lanka'
     | '/case-studies'
+    | '/cinema-advertising-sri-lanka'
+    | '/commercial-video-sri-lanka'
+    | '/company-profile-design-sri-lanka'
     | '/contact'
+    | '/content-marketing-sri-lanka'
+    | '/corporate-branding-sri-lanka'
+    | '/corporate-video-sri-lanka'
+    | '/creative-agency-sri-lanka'
+    | '/digital-billboard-sri-lanka'
+    | '/digital-marketing-sri-lanka'
+    | '/display-advertising-sri-lanka'
+    | '/drone-videography-sri-lanka'
+    | '/ecommerce-seo-sri-lanka'
+    | '/ecommerce-website-sri-lanka'
+    | '/email-automation-sri-lanka'
+    | '/email-sms-marketing-sri-lanka'
+    | '/event-marketing-sri-lanka'
+    | '/exhibition-branding-sri-lanka'
+    | '/facebook-ads-sri-lanka'
+    | '/facebook-marketing-sri-lanka'
+    | '/field-marketing-sri-lanka'
+    | '/full-service-advertising-sri-lanka'
     | '/get-quote'
+    | '/google-ads-sri-lanka'
+    | '/graphic-design-sri-lanka'
+    | '/hoarding-advertising-sri-lanka'
+    | '/influencer-marketing-sri-lanka'
+    | '/instagram-ads-sri-lanka'
+    | '/instagram-marketing-sri-lanka'
+    | '/integrated-marketing-sri-lanka'
+    | '/landing-page-design-sri-lanka'
+    | '/lead-generation-sri-lanka'
+    | '/led-screen-advertising-sri-lanka'
+    | '/led-video-wall-sri-lanka'
+    | '/linkedin-ads-sri-lanka'
+    | '/linkedin-marketing-sri-lanka'
+    | '/local-seo-sri-lanka'
+    | '/logo-design-sri-lanka'
+    | '/magazine-advertising-sri-lanka'
+    | '/mall-activation-sri-lanka'
+    | '/media-buying-sri-lanka'
+    | '/media-planning-sri-lanka'
+    | '/mobile-billboard-sri-lanka'
+    | '/motion-graphics-sri-lanka'
+    | '/multi-channel-advertising-sri-lanka'
+    | '/newspaper-advertising-sri-lanka'
+    | '/omnichannel-marketing-sri-lanka'
+    | '/outdoor-advertising-sri-lanka'
+    | '/packaging-design-sri-lanka'
+    | '/performance-marketing-sri-lanka'
+    | '/point-of-sale-advertising-sri-lanka'
+    | '/ppc-sri-lanka'
+    | '/programmatic-advertising-sri-lanka'
+    | '/radio-advertising-sri-lanka'
+    | '/remarketing-sri-lanka'
+    | '/retail-branding-sri-lanka'
+    | '/roadshow-marketing-sri-lanka'
+    | '/seo-company-sri-lanka'
+    | '/seo-services-sri-lanka'
+    | '/shop-branding-sri-lanka'
+    | '/sms-marketing-sri-lanka'
+    | '/social-media-agency-sri-lanka'
+    | '/social-media-management-sri-lanka'
+    | '/social-media-marketing-sri-lanka'
+    | '/technical-seo-sri-lanka'
+    | '/tiktok-ads-sri-lanka'
+    | '/tiktok-marketing-sri-lanka'
+    | '/transit-advertising-sri-lanka'
+    | '/ttl-advertising-sri-lanka'
+    | '/tv-advertising-sri-lanka'
+    | '/tv-commercials-sri-lanka'
+    | '/ui-ux-design-sri-lanka'
+    | '/video-production-sri-lanka'
+    | '/web-design-sri-lanka'
+    | '/website-development-sri-lanka'
+    | '/website-maintenance-sri-lanka'
+    | '/whatsapp-marketing-sri-lanka'
+    | '/wordpress-development-sri-lanka'
+    | '/youtube-ads-sri-lanka'
+    | '/youtube-marketing-sri-lanka'
+    | '/blog/360-advertising-sri-lanka'
+    | '/blog/above-the-line-advertising-sri-lanka'
+    | '/blog/activation-marketing-sri-lanka'
+    | '/blog/advertising-video-sri-lanka'
+    | '/blog/atl-advertising-sri-lanka'
+    | '/blog/atl-btl-ttl-advertising-sri-lanka'
+    | '/blog/banner-design-sri-lanka'
+    | '/blog/below-the-line-advertising-sri-lanka'
+    | '/blog/brand-awareness-campaigns-sri-lanka'
+    | '/blog/branding-sri-lanka'
+    | '/blog/brochure-design-sri-lanka'
+    | '/blog/btl-advertising-sri-lanka'
+    | '/blog/bus-advertising-sri-lanka'
+    | '/blog/business-branding-sri-lanka'
+    | '/blog/community-management-sri-lanka'
+    | '/blog/consumer-promotions-sri-lanka'
+    | '/blog/content-creation-sri-lanka'
+    | '/blog/conversion-marketing-sri-lanka'
+    | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/creative-design-sri-lanka'
+    | '/blog/cross-platform-marketing-sri-lanka'
+    | '/blog/digital-advertising-sri-lanka'
+    | '/blog/digital-campaign-management-sri-lanka'
+    | '/blog/digital-marketing-sri-lanka'
+    | '/blog/door-to-door-marketing-sri-lanka'
+    | '/blog/email-advertising-sri-lanka'
+    | '/blog/email-campaigns-sri-lanka'
+    | '/blog/email-marketing-sri-lanka'
+    | '/blog/event-promotion-sri-lanka'
+    | '/blog/facebook-advertising-sri-lanka'
+    | '/blog/flyer-design-sri-lanka'
+    | '/blog/flyer-distribution-sri-lanka'
+    | '/blog/google-advertising-sri-lanka'
+    | '/blog/google-ranking-sri-lanka'
+    | '/blog/ground-activation-sri-lanka'
+    | '/blog/in-store-branding-sri-lanka'
+    | '/blog/instagram-advertising-sri-lanka'
+    | '/blog/integrated-advertising-sri-lanka'
+    | '/blog/internet-marketing-sri-lanka'
+    | '/blog/keyword-research-sri-lanka'
+    | '/blog/lamp-post-advertising-sri-lanka'
+    | '/blog/leaflet-distribution-sri-lanka'
+    | '/blog/led-display-advertising-sri-lanka'
+    | '/blog/marketing-materials-sri-lanka'
+    | '/blog/mass-media-advertising-sri-lanka'
+    | '/blog/merchandising-sri-lanka'
+    | '/blog/national-advertising-campaigns-sri-lanka'
+    | '/blog/neon-signs-sri-lanka'
+    | '/blog/newsletter-marketing-sri-lanka'
+    | '/blog/off-page-seo-sri-lanka'
+    | '/blog/on-page-seo-sri-lanka'
+    | '/blog/online-marketing-sri-lanka'
+    | '/blog/organic-traffic-sri-lanka'
+    | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pos-branding-sri-lanka'
+    | '/blog/print-media-advertising-sri-lanka'
+    | '/blog/product-promotion-sri-lanka'
+    | '/blog/promotional-sms-sri-lanka'
+    | '/blog/promotional-video-sri-lanka'
+    | '/blog/reels-marketing-sri-lanka'
+    | '/blog/responsive-web-design-sri-lanka'
+    | '/blog/retargeting-sri-lanka'
+    | '/blog/sampling-campaigns-sri-lanka'
+    | '/blog/search-engine-marketing-sri-lanka'
+    | '/blog/search-engine-optimization-sri-lanka'
+    | '/blog/sem-sri-lanka'
+    | '/blog/seo-agency-sri-lanka'
+    | '/blog/seo-sri-lanka'
+    | '/blog/sign-board-advertising-sri-lanka'
+    | '/blog/sms-advertising-sri-lanka'
+    | '/blog/social-media-advertising-sri-lanka'
+    | '/blog/social-media-campaigns-sri-lanka'
+    | '/blog/social-media-marketing-sri-lanka'
+    | '/blog/stall-branding-sri-lanka'
+    | '/blog/strategic-marketing-sri-lanka'
+    | '/blog/taxi-advertising-sri-lanka'
+    | '/blog/television-commercials-sri-lanka'
+    | '/blog/through-the-line-advertising-sri-lanka'
+    | '/blog/tiktok-advertising-sri-lanka'
+    | '/blog/trade-marketing-sri-lanka'
+    | '/blog/traditional-advertising-sri-lanka'
+    | '/blog/train-advertising-sri-lanka'
+    | '/blog/ttl-advertising-sri-lanka'
+    | '/blog/video-production-sri-lanka'
+    | '/blog/viral-marketing-sri-lanka'
+    | '/blog/web-banners-sri-lanka'
+    | '/blog/web-design-sri-lanka'
+    | '/blog/website-banners-sri-lanka'
+    | '/blog/website-ranking-sri-lanka'
+    | '/blog/website-redesign-sri-lanka'
+    | '/blog/whatsapp-advertising-sri-lanka'
+    | '/blog/youtube-video-marketing-sri-lanka'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  R2dAnimationSriLankaRoute: typeof R2dAnimationSriLankaRoute
+  R360MarketingCampaignsSriLankaRoute: typeof R360MarketingCampaignsSriLankaRoute
+  R3dAnimationSriLankaRoute: typeof R3dAnimationSriLankaRoute
   AboutRoute: typeof AboutRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
+  AtlAdvertisingSriLankaRoute: typeof AtlAdvertisingSriLankaRoute
+  B2bEmailMarketingSriLankaRoute: typeof B2bEmailMarketingSriLankaRoute
+  BacklinkServicesSriLankaRoute: typeof BacklinkServicesSriLankaRoute
+  BillboardAdvertisingSriLankaRoute: typeof BillboardAdvertisingSriLankaRoute
+  BrandActivationSriLankaRoute: typeof BrandActivationSriLankaRoute
+  BrandCommunicationSriLankaRoute: typeof BrandCommunicationSriLankaRoute
+  BrandIdentitySriLankaRoute: typeof BrandIdentitySriLankaRoute
+  BrandingSriLankaRoute: typeof BrandingSriLankaRoute
+  BtlAdvertisingSriLankaRoute: typeof BtlAdvertisingSriLankaRoute
+  BulkEmailSriLankaRoute: typeof BulkEmailSriLankaRoute
+  BulkSmsSriLankaRoute: typeof BulkSmsSriLankaRoute
   CaseStudiesRoute: typeof CaseStudiesRoute
+  CinemaAdvertisingSriLankaRoute: typeof CinemaAdvertisingSriLankaRoute
+  CommercialVideoSriLankaRoute: typeof CommercialVideoSriLankaRoute
+  CompanyProfileDesignSriLankaRoute: typeof CompanyProfileDesignSriLankaRoute
   ContactRoute: typeof ContactRoute
+  ContentMarketingSriLankaRoute: typeof ContentMarketingSriLankaRoute
+  CorporateBrandingSriLankaRoute: typeof CorporateBrandingSriLankaRoute
+  CorporateVideoSriLankaRoute: typeof CorporateVideoSriLankaRoute
+  CreativeAgencySriLankaRoute: typeof CreativeAgencySriLankaRoute
+  DigitalBillboardSriLankaRoute: typeof DigitalBillboardSriLankaRoute
+  DigitalMarketingSriLankaRoute: typeof DigitalMarketingSriLankaRoute
+  DisplayAdvertisingSriLankaRoute: typeof DisplayAdvertisingSriLankaRoute
+  DroneVideographySriLankaRoute: typeof DroneVideographySriLankaRoute
+  EcommerceSeoSriLankaRoute: typeof EcommerceSeoSriLankaRoute
+  EcommerceWebsiteSriLankaRoute: typeof EcommerceWebsiteSriLankaRoute
+  EmailAutomationSriLankaRoute: typeof EmailAutomationSriLankaRoute
+  EmailSmsMarketingSriLankaRoute: typeof EmailSmsMarketingSriLankaRoute
+  EventMarketingSriLankaRoute: typeof EventMarketingSriLankaRoute
+  ExhibitionBrandingSriLankaRoute: typeof ExhibitionBrandingSriLankaRoute
+  FacebookAdsSriLankaRoute: typeof FacebookAdsSriLankaRoute
+  FacebookMarketingSriLankaRoute: typeof FacebookMarketingSriLankaRoute
+  FieldMarketingSriLankaRoute: typeof FieldMarketingSriLankaRoute
+  FullServiceAdvertisingSriLankaRoute: typeof FullServiceAdvertisingSriLankaRoute
   GetQuoteRoute: typeof GetQuoteRoute
+  GoogleAdsSriLankaRoute: typeof GoogleAdsSriLankaRoute
+  GraphicDesignSriLankaRoute: typeof GraphicDesignSriLankaRoute
+  HoardingAdvertisingSriLankaRoute: typeof HoardingAdvertisingSriLankaRoute
+  InfluencerMarketingSriLankaRoute: typeof InfluencerMarketingSriLankaRoute
+  InstagramAdsSriLankaRoute: typeof InstagramAdsSriLankaRoute
+  InstagramMarketingSriLankaRoute: typeof InstagramMarketingSriLankaRoute
+  IntegratedMarketingSriLankaRoute: typeof IntegratedMarketingSriLankaRoute
+  LandingPageDesignSriLankaRoute: typeof LandingPageDesignSriLankaRoute
+  LeadGenerationSriLankaRoute: typeof LeadGenerationSriLankaRoute
+  LedScreenAdvertisingSriLankaRoute: typeof LedScreenAdvertisingSriLankaRoute
+  LedVideoWallSriLankaRoute: typeof LedVideoWallSriLankaRoute
+  LinkedinAdsSriLankaRoute: typeof LinkedinAdsSriLankaRoute
+  LinkedinMarketingSriLankaRoute: typeof LinkedinMarketingSriLankaRoute
+  LocalSeoSriLankaRoute: typeof LocalSeoSriLankaRoute
+  LogoDesignSriLankaRoute: typeof LogoDesignSriLankaRoute
+  MagazineAdvertisingSriLankaRoute: typeof MagazineAdvertisingSriLankaRoute
+  MallActivationSriLankaRoute: typeof MallActivationSriLankaRoute
+  MediaBuyingSriLankaRoute: typeof MediaBuyingSriLankaRoute
+  MediaPlanningSriLankaRoute: typeof MediaPlanningSriLankaRoute
+  MobileBillboardSriLankaRoute: typeof MobileBillboardSriLankaRoute
+  MotionGraphicsSriLankaRoute: typeof MotionGraphicsSriLankaRoute
+  MultiChannelAdvertisingSriLankaRoute: typeof MultiChannelAdvertisingSriLankaRoute
+  NewspaperAdvertisingSriLankaRoute: typeof NewspaperAdvertisingSriLankaRoute
+  OmnichannelMarketingSriLankaRoute: typeof OmnichannelMarketingSriLankaRoute
+  OutdoorAdvertisingSriLankaRoute: typeof OutdoorAdvertisingSriLankaRoute
+  PackagingDesignSriLankaRoute: typeof PackagingDesignSriLankaRoute
+  PerformanceMarketingSriLankaRoute: typeof PerformanceMarketingSriLankaRoute
+  PointOfSaleAdvertisingSriLankaRoute: typeof PointOfSaleAdvertisingSriLankaRoute
+  PpcSriLankaRoute: typeof PpcSriLankaRoute
+  ProgrammaticAdvertisingSriLankaRoute: typeof ProgrammaticAdvertisingSriLankaRoute
+  RadioAdvertisingSriLankaRoute: typeof RadioAdvertisingSriLankaRoute
+  RemarketingSriLankaRoute: typeof RemarketingSriLankaRoute
+  RetailBrandingSriLankaRoute: typeof RetailBrandingSriLankaRoute
+  RoadshowMarketingSriLankaRoute: typeof RoadshowMarketingSriLankaRoute
+  SeoCompanySriLankaRoute: typeof SeoCompanySriLankaRoute
+  SeoServicesSriLankaRoute: typeof SeoServicesSriLankaRoute
+  ShopBrandingSriLankaRoute: typeof ShopBrandingSriLankaRoute
+  SmsMarketingSriLankaRoute: typeof SmsMarketingSriLankaRoute
+  SocialMediaAgencySriLankaRoute: typeof SocialMediaAgencySriLankaRoute
+  SocialMediaManagementSriLankaRoute: typeof SocialMediaManagementSriLankaRoute
+  SocialMediaMarketingSriLankaRoute: typeof SocialMediaMarketingSriLankaRoute
+  TechnicalSeoSriLankaRoute: typeof TechnicalSeoSriLankaRoute
+  TiktokAdsSriLankaRoute: typeof TiktokAdsSriLankaRoute
+  TiktokMarketingSriLankaRoute: typeof TiktokMarketingSriLankaRoute
+  TransitAdvertisingSriLankaRoute: typeof TransitAdvertisingSriLankaRoute
+  TtlAdvertisingSriLankaRoute: typeof TtlAdvertisingSriLankaRoute
+  TvAdvertisingSriLankaRoute: typeof TvAdvertisingSriLankaRoute
+  TvCommercialsSriLankaRoute: typeof TvCommercialsSriLankaRoute
+  UiUxDesignSriLankaRoute: typeof UiUxDesignSriLankaRoute
+  VideoProductionSriLankaRoute: typeof VideoProductionSriLankaRoute
+  WebDesignSriLankaRoute: typeof WebDesignSriLankaRoute
+  WebsiteDevelopmentSriLankaRoute: typeof WebsiteDevelopmentSriLankaRoute
+  WebsiteMaintenanceSriLankaRoute: typeof WebsiteMaintenanceSriLankaRoute
+  WhatsappMarketingSriLankaRoute: typeof WhatsappMarketingSriLankaRoute
+  WordpressDevelopmentSriLankaRoute: typeof WordpressDevelopmentSriLankaRoute
+  YoutubeAdsSriLankaRoute: typeof YoutubeAdsSriLankaRoute
+  YoutubeMarketingSriLankaRoute: typeof YoutubeMarketingSriLankaRoute
+  Blog360AdvertisingSriLankaRoute: typeof Blog360AdvertisingSriLankaRoute
+  BlogAboveTheLineAdvertisingSriLankaRoute: typeof BlogAboveTheLineAdvertisingSriLankaRoute
+  BlogActivationMarketingSriLankaRoute: typeof BlogActivationMarketingSriLankaRoute
+  BlogAdvertisingVideoSriLankaRoute: typeof BlogAdvertisingVideoSriLankaRoute
+  BlogAtlAdvertisingSriLankaRoute: typeof BlogAtlAdvertisingSriLankaRoute
+  BlogAtlBtlTtlAdvertisingSriLankaRoute: typeof BlogAtlBtlTtlAdvertisingSriLankaRoute
+  BlogBannerDesignSriLankaRoute: typeof BlogBannerDesignSriLankaRoute
+  BlogBelowTheLineAdvertisingSriLankaRoute: typeof BlogBelowTheLineAdvertisingSriLankaRoute
+  BlogBrandAwarenessCampaignsSriLankaRoute: typeof BlogBrandAwarenessCampaignsSriLankaRoute
+  BlogBrandingSriLankaRoute: typeof BlogBrandingSriLankaRoute
+  BlogBrochureDesignSriLankaRoute: typeof BlogBrochureDesignSriLankaRoute
+  BlogBtlAdvertisingSriLankaRoute: typeof BlogBtlAdvertisingSriLankaRoute
+  BlogBusAdvertisingSriLankaRoute: typeof BlogBusAdvertisingSriLankaRoute
+  BlogBusinessBrandingSriLankaRoute: typeof BlogBusinessBrandingSriLankaRoute
+  BlogCommunityManagementSriLankaRoute: typeof BlogCommunityManagementSriLankaRoute
+  BlogConsumerPromotionsSriLankaRoute: typeof BlogConsumerPromotionsSriLankaRoute
+  BlogContentCreationSriLankaRoute: typeof BlogContentCreationSriLankaRoute
+  BlogConversionMarketingSriLankaRoute: typeof BlogConversionMarketingSriLankaRoute
+  BlogCorporateAdvertisingSriLankaRoute: typeof BlogCorporateAdvertisingSriLankaRoute
+  BlogCreativeDesignSriLankaRoute: typeof BlogCreativeDesignSriLankaRoute
+  BlogCrossPlatformMarketingSriLankaRoute: typeof BlogCrossPlatformMarketingSriLankaRoute
+  BlogDigitalAdvertisingSriLankaRoute: typeof BlogDigitalAdvertisingSriLankaRoute
+  BlogDigitalCampaignManagementSriLankaRoute: typeof BlogDigitalCampaignManagementSriLankaRoute
+  BlogDigitalMarketingSriLankaRoute: typeof BlogDigitalMarketingSriLankaRoute
+  BlogDoorToDoorMarketingSriLankaRoute: typeof BlogDoorToDoorMarketingSriLankaRoute
+  BlogEmailAdvertisingSriLankaRoute: typeof BlogEmailAdvertisingSriLankaRoute
+  BlogEmailCampaignsSriLankaRoute: typeof BlogEmailCampaignsSriLankaRoute
+  BlogEmailMarketingSriLankaRoute: typeof BlogEmailMarketingSriLankaRoute
+  BlogEventPromotionSriLankaRoute: typeof BlogEventPromotionSriLankaRoute
+  BlogFacebookAdvertisingSriLankaRoute: typeof BlogFacebookAdvertisingSriLankaRoute
+  BlogFlyerDesignSriLankaRoute: typeof BlogFlyerDesignSriLankaRoute
+  BlogFlyerDistributionSriLankaRoute: typeof BlogFlyerDistributionSriLankaRoute
+  BlogGoogleAdvertisingSriLankaRoute: typeof BlogGoogleAdvertisingSriLankaRoute
+  BlogGoogleRankingSriLankaRoute: typeof BlogGoogleRankingSriLankaRoute
+  BlogGroundActivationSriLankaRoute: typeof BlogGroundActivationSriLankaRoute
+  BlogInStoreBrandingSriLankaRoute: typeof BlogInStoreBrandingSriLankaRoute
+  BlogInstagramAdvertisingSriLankaRoute: typeof BlogInstagramAdvertisingSriLankaRoute
+  BlogIntegratedAdvertisingSriLankaRoute: typeof BlogIntegratedAdvertisingSriLankaRoute
+  BlogInternetMarketingSriLankaRoute: typeof BlogInternetMarketingSriLankaRoute
+  BlogKeywordResearchSriLankaRoute: typeof BlogKeywordResearchSriLankaRoute
+  BlogLampPostAdvertisingSriLankaRoute: typeof BlogLampPostAdvertisingSriLankaRoute
+  BlogLeafletDistributionSriLankaRoute: typeof BlogLeafletDistributionSriLankaRoute
+  BlogLedDisplayAdvertisingSriLankaRoute: typeof BlogLedDisplayAdvertisingSriLankaRoute
+  BlogMarketingMaterialsSriLankaRoute: typeof BlogMarketingMaterialsSriLankaRoute
+  BlogMassMediaAdvertisingSriLankaRoute: typeof BlogMassMediaAdvertisingSriLankaRoute
+  BlogMerchandisingSriLankaRoute: typeof BlogMerchandisingSriLankaRoute
+  BlogNationalAdvertisingCampaignsSriLankaRoute: typeof BlogNationalAdvertisingCampaignsSriLankaRoute
+  BlogNeonSignsSriLankaRoute: typeof BlogNeonSignsSriLankaRoute
+  BlogNewsletterMarketingSriLankaRoute: typeof BlogNewsletterMarketingSriLankaRoute
+  BlogOffPageSeoSriLankaRoute: typeof BlogOffPageSeoSriLankaRoute
+  BlogOnPageSeoSriLankaRoute: typeof BlogOnPageSeoSriLankaRoute
+  BlogOnlineMarketingSriLankaRoute: typeof BlogOnlineMarketingSriLankaRoute
+  BlogOrganicTrafficSriLankaRoute: typeof BlogOrganicTrafficSriLankaRoute
+  BlogOutdoorAdvertisingSriLankaRoute: typeof BlogOutdoorAdvertisingSriLankaRoute
+  BlogPayPerClickSriLankaRoute: typeof BlogPayPerClickSriLankaRoute
+  BlogPosBrandingSriLankaRoute: typeof BlogPosBrandingSriLankaRoute
+  BlogPrintMediaAdvertisingSriLankaRoute: typeof BlogPrintMediaAdvertisingSriLankaRoute
+  BlogProductPromotionSriLankaRoute: typeof BlogProductPromotionSriLankaRoute
+  BlogPromotionalSmsSriLankaRoute: typeof BlogPromotionalSmsSriLankaRoute
+  BlogPromotionalVideoSriLankaRoute: typeof BlogPromotionalVideoSriLankaRoute
+  BlogReelsMarketingSriLankaRoute: typeof BlogReelsMarketingSriLankaRoute
+  BlogResponsiveWebDesignSriLankaRoute: typeof BlogResponsiveWebDesignSriLankaRoute
+  BlogRetargetingSriLankaRoute: typeof BlogRetargetingSriLankaRoute
+  BlogSamplingCampaignsSriLankaRoute: typeof BlogSamplingCampaignsSriLankaRoute
+  BlogSearchEngineMarketingSriLankaRoute: typeof BlogSearchEngineMarketingSriLankaRoute
+  BlogSearchEngineOptimizationSriLankaRoute: typeof BlogSearchEngineOptimizationSriLankaRoute
+  BlogSemSriLankaRoute: typeof BlogSemSriLankaRoute
+  BlogSeoAgencySriLankaRoute: typeof BlogSeoAgencySriLankaRoute
+  BlogSeoSriLankaRoute: typeof BlogSeoSriLankaRoute
+  BlogSignBoardAdvertisingSriLankaRoute: typeof BlogSignBoardAdvertisingSriLankaRoute
+  BlogSmsAdvertisingSriLankaRoute: typeof BlogSmsAdvertisingSriLankaRoute
+  BlogSocialMediaAdvertisingSriLankaRoute: typeof BlogSocialMediaAdvertisingSriLankaRoute
+  BlogSocialMediaCampaignsSriLankaRoute: typeof BlogSocialMediaCampaignsSriLankaRoute
+  BlogSocialMediaMarketingSriLankaRoute: typeof BlogSocialMediaMarketingSriLankaRoute
+  BlogStallBrandingSriLankaRoute: typeof BlogStallBrandingSriLankaRoute
+  BlogStrategicMarketingSriLankaRoute: typeof BlogStrategicMarketingSriLankaRoute
+  BlogTaxiAdvertisingSriLankaRoute: typeof BlogTaxiAdvertisingSriLankaRoute
+  BlogTelevisionCommercialsSriLankaRoute: typeof BlogTelevisionCommercialsSriLankaRoute
+  BlogThroughTheLineAdvertisingSriLankaRoute: typeof BlogThroughTheLineAdvertisingSriLankaRoute
+  BlogTiktokAdvertisingSriLankaRoute: typeof BlogTiktokAdvertisingSriLankaRoute
+  BlogTradeMarketingSriLankaRoute: typeof BlogTradeMarketingSriLankaRoute
+  BlogTraditionalAdvertisingSriLankaRoute: typeof BlogTraditionalAdvertisingSriLankaRoute
+  BlogTrainAdvertisingSriLankaRoute: typeof BlogTrainAdvertisingSriLankaRoute
+  BlogTtlAdvertisingSriLankaRoute: typeof BlogTtlAdvertisingSriLankaRoute
+  BlogVideoProductionSriLankaRoute: typeof BlogVideoProductionSriLankaRoute
+  BlogViralMarketingSriLankaRoute: typeof BlogViralMarketingSriLankaRoute
+  BlogWebBannersSriLankaRoute: typeof BlogWebBannersSriLankaRoute
+  BlogWebDesignSriLankaRoute: typeof BlogWebDesignSriLankaRoute
+  BlogWebsiteBannersSriLankaRoute: typeof BlogWebsiteBannersSriLankaRoute
+  BlogWebsiteRankingSriLankaRoute: typeof BlogWebsiteRankingSriLankaRoute
+  BlogWebsiteRedesignSriLankaRoute: typeof BlogWebsiteRedesignSriLankaRoute
+  BlogWhatsappAdvertisingSriLankaRoute: typeof BlogWhatsappAdvertisingSriLankaRoute
+  BlogYoutubeVideoMarketingSriLankaRoute: typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/youtube-marketing-sri-lanka': {
+      id: '/youtube-marketing-sri-lanka'
+      path: '/youtube-marketing-sri-lanka'
+      fullPath: '/youtube-marketing-sri-lanka'
+      preLoaderRoute: typeof YoutubeMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/youtube-ads-sri-lanka': {
+      id: '/youtube-ads-sri-lanka'
+      path: '/youtube-ads-sri-lanka'
+      fullPath: '/youtube-ads-sri-lanka'
+      preLoaderRoute: typeof YoutubeAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wordpress-development-sri-lanka': {
+      id: '/wordpress-development-sri-lanka'
+      path: '/wordpress-development-sri-lanka'
+      fullPath: '/wordpress-development-sri-lanka'
+      preLoaderRoute: typeof WordpressDevelopmentSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/whatsapp-marketing-sri-lanka': {
+      id: '/whatsapp-marketing-sri-lanka'
+      path: '/whatsapp-marketing-sri-lanka'
+      fullPath: '/whatsapp-marketing-sri-lanka'
+      preLoaderRoute: typeof WhatsappMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/website-maintenance-sri-lanka': {
+      id: '/website-maintenance-sri-lanka'
+      path: '/website-maintenance-sri-lanka'
+      fullPath: '/website-maintenance-sri-lanka'
+      preLoaderRoute: typeof WebsiteMaintenanceSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/website-development-sri-lanka': {
+      id: '/website-development-sri-lanka'
+      path: '/website-development-sri-lanka'
+      fullPath: '/website-development-sri-lanka'
+      preLoaderRoute: typeof WebsiteDevelopmentSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/web-design-sri-lanka': {
+      id: '/web-design-sri-lanka'
+      path: '/web-design-sri-lanka'
+      fullPath: '/web-design-sri-lanka'
+      preLoaderRoute: typeof WebDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/video-production-sri-lanka': {
+      id: '/video-production-sri-lanka'
+      path: '/video-production-sri-lanka'
+      fullPath: '/video-production-sri-lanka'
+      preLoaderRoute: typeof VideoProductionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ui-ux-design-sri-lanka': {
+      id: '/ui-ux-design-sri-lanka'
+      path: '/ui-ux-design-sri-lanka'
+      fullPath: '/ui-ux-design-sri-lanka'
+      preLoaderRoute: typeof UiUxDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tv-commercials-sri-lanka': {
+      id: '/tv-commercials-sri-lanka'
+      path: '/tv-commercials-sri-lanka'
+      fullPath: '/tv-commercials-sri-lanka'
+      preLoaderRoute: typeof TvCommercialsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tv-advertising-sri-lanka': {
+      id: '/tv-advertising-sri-lanka'
+      path: '/tv-advertising-sri-lanka'
+      fullPath: '/tv-advertising-sri-lanka'
+      preLoaderRoute: typeof TvAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ttl-advertising-sri-lanka': {
+      id: '/ttl-advertising-sri-lanka'
+      path: '/ttl-advertising-sri-lanka'
+      fullPath: '/ttl-advertising-sri-lanka'
+      preLoaderRoute: typeof TtlAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transit-advertising-sri-lanka': {
+      id: '/transit-advertising-sri-lanka'
+      path: '/transit-advertising-sri-lanka'
+      fullPath: '/transit-advertising-sri-lanka'
+      preLoaderRoute: typeof TransitAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tiktok-marketing-sri-lanka': {
+      id: '/tiktok-marketing-sri-lanka'
+      path: '/tiktok-marketing-sri-lanka'
+      fullPath: '/tiktok-marketing-sri-lanka'
+      preLoaderRoute: typeof TiktokMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tiktok-ads-sri-lanka': {
+      id: '/tiktok-ads-sri-lanka'
+      path: '/tiktok-ads-sri-lanka'
+      fullPath: '/tiktok-ads-sri-lanka'
+      preLoaderRoute: typeof TiktokAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/technical-seo-sri-lanka': {
+      id: '/technical-seo-sri-lanka'
+      path: '/technical-seo-sri-lanka'
+      fullPath: '/technical-seo-sri-lanka'
+      preLoaderRoute: typeof TechnicalSeoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/social-media-marketing-sri-lanka': {
+      id: '/social-media-marketing-sri-lanka'
+      path: '/social-media-marketing-sri-lanka'
+      fullPath: '/social-media-marketing-sri-lanka'
+      preLoaderRoute: typeof SocialMediaMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/social-media-management-sri-lanka': {
+      id: '/social-media-management-sri-lanka'
+      path: '/social-media-management-sri-lanka'
+      fullPath: '/social-media-management-sri-lanka'
+      preLoaderRoute: typeof SocialMediaManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/social-media-agency-sri-lanka': {
+      id: '/social-media-agency-sri-lanka'
+      path: '/social-media-agency-sri-lanka'
+      fullPath: '/social-media-agency-sri-lanka'
+      preLoaderRoute: typeof SocialMediaAgencySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sms-marketing-sri-lanka': {
+      id: '/sms-marketing-sri-lanka'
+      path: '/sms-marketing-sri-lanka'
+      fullPath: '/sms-marketing-sri-lanka'
+      preLoaderRoute: typeof SmsMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shop-branding-sri-lanka': {
+      id: '/shop-branding-sri-lanka'
+      path: '/shop-branding-sri-lanka'
+      fullPath: '/shop-branding-sri-lanka'
+      preLoaderRoute: typeof ShopBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-services-sri-lanka': {
+      id: '/seo-services-sri-lanka'
+      path: '/seo-services-sri-lanka'
+      fullPath: '/seo-services-sri-lanka'
+      preLoaderRoute: typeof SeoServicesSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-company-sri-lanka': {
+      id: '/seo-company-sri-lanka'
+      path: '/seo-company-sri-lanka'
+      fullPath: '/seo-company-sri-lanka'
+      preLoaderRoute: typeof SeoCompanySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/roadshow-marketing-sri-lanka': {
+      id: '/roadshow-marketing-sri-lanka'
+      path: '/roadshow-marketing-sri-lanka'
+      fullPath: '/roadshow-marketing-sri-lanka'
+      preLoaderRoute: typeof RoadshowMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/retail-branding-sri-lanka': {
+      id: '/retail-branding-sri-lanka'
+      path: '/retail-branding-sri-lanka'
+      fullPath: '/retail-branding-sri-lanka'
+      preLoaderRoute: typeof RetailBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/remarketing-sri-lanka': {
+      id: '/remarketing-sri-lanka'
+      path: '/remarketing-sri-lanka'
+      fullPath: '/remarketing-sri-lanka'
+      preLoaderRoute: typeof RemarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/radio-advertising-sri-lanka': {
+      id: '/radio-advertising-sri-lanka'
+      path: '/radio-advertising-sri-lanka'
+      fullPath: '/radio-advertising-sri-lanka'
+      preLoaderRoute: typeof RadioAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programmatic-advertising-sri-lanka': {
+      id: '/programmatic-advertising-sri-lanka'
+      path: '/programmatic-advertising-sri-lanka'
+      fullPath: '/programmatic-advertising-sri-lanka'
+      preLoaderRoute: typeof ProgrammaticAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ppc-sri-lanka': {
+      id: '/ppc-sri-lanka'
+      path: '/ppc-sri-lanka'
+      fullPath: '/ppc-sri-lanka'
+      preLoaderRoute: typeof PpcSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/point-of-sale-advertising-sri-lanka': {
+      id: '/point-of-sale-advertising-sri-lanka'
+      path: '/point-of-sale-advertising-sri-lanka'
+      fullPath: '/point-of-sale-advertising-sri-lanka'
+      preLoaderRoute: typeof PointOfSaleAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/performance-marketing-sri-lanka': {
+      id: '/performance-marketing-sri-lanka'
+      path: '/performance-marketing-sri-lanka'
+      fullPath: '/performance-marketing-sri-lanka'
+      preLoaderRoute: typeof PerformanceMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packaging-design-sri-lanka': {
+      id: '/packaging-design-sri-lanka'
+      path: '/packaging-design-sri-lanka'
+      fullPath: '/packaging-design-sri-lanka'
+      preLoaderRoute: typeof PackagingDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/outdoor-advertising-sri-lanka': {
+      id: '/outdoor-advertising-sri-lanka'
+      path: '/outdoor-advertising-sri-lanka'
+      fullPath: '/outdoor-advertising-sri-lanka'
+      preLoaderRoute: typeof OutdoorAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/omnichannel-marketing-sri-lanka': {
+      id: '/omnichannel-marketing-sri-lanka'
+      path: '/omnichannel-marketing-sri-lanka'
+      fullPath: '/omnichannel-marketing-sri-lanka'
+      preLoaderRoute: typeof OmnichannelMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/newspaper-advertising-sri-lanka': {
+      id: '/newspaper-advertising-sri-lanka'
+      path: '/newspaper-advertising-sri-lanka'
+      fullPath: '/newspaper-advertising-sri-lanka'
+      preLoaderRoute: typeof NewspaperAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/multi-channel-advertising-sri-lanka': {
+      id: '/multi-channel-advertising-sri-lanka'
+      path: '/multi-channel-advertising-sri-lanka'
+      fullPath: '/multi-channel-advertising-sri-lanka'
+      preLoaderRoute: typeof MultiChannelAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/motion-graphics-sri-lanka': {
+      id: '/motion-graphics-sri-lanka'
+      path: '/motion-graphics-sri-lanka'
+      fullPath: '/motion-graphics-sri-lanka'
+      preLoaderRoute: typeof MotionGraphicsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mobile-billboard-sri-lanka': {
+      id: '/mobile-billboard-sri-lanka'
+      path: '/mobile-billboard-sri-lanka'
+      fullPath: '/mobile-billboard-sri-lanka'
+      preLoaderRoute: typeof MobileBillboardSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media-planning-sri-lanka': {
+      id: '/media-planning-sri-lanka'
+      path: '/media-planning-sri-lanka'
+      fullPath: '/media-planning-sri-lanka'
+      preLoaderRoute: typeof MediaPlanningSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media-buying-sri-lanka': {
+      id: '/media-buying-sri-lanka'
+      path: '/media-buying-sri-lanka'
+      fullPath: '/media-buying-sri-lanka'
+      preLoaderRoute: typeof MediaBuyingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mall-activation-sri-lanka': {
+      id: '/mall-activation-sri-lanka'
+      path: '/mall-activation-sri-lanka'
+      fullPath: '/mall-activation-sri-lanka'
+      preLoaderRoute: typeof MallActivationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/magazine-advertising-sri-lanka': {
+      id: '/magazine-advertising-sri-lanka'
+      path: '/magazine-advertising-sri-lanka'
+      fullPath: '/magazine-advertising-sri-lanka'
+      preLoaderRoute: typeof MagazineAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/logo-design-sri-lanka': {
+      id: '/logo-design-sri-lanka'
+      path: '/logo-design-sri-lanka'
+      fullPath: '/logo-design-sri-lanka'
+      preLoaderRoute: typeof LogoDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/local-seo-sri-lanka': {
+      id: '/local-seo-sri-lanka'
+      path: '/local-seo-sri-lanka'
+      fullPath: '/local-seo-sri-lanka'
+      preLoaderRoute: typeof LocalSeoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/linkedin-marketing-sri-lanka': {
+      id: '/linkedin-marketing-sri-lanka'
+      path: '/linkedin-marketing-sri-lanka'
+      fullPath: '/linkedin-marketing-sri-lanka'
+      preLoaderRoute: typeof LinkedinMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/linkedin-ads-sri-lanka': {
+      id: '/linkedin-ads-sri-lanka'
+      path: '/linkedin-ads-sri-lanka'
+      fullPath: '/linkedin-ads-sri-lanka'
+      preLoaderRoute: typeof LinkedinAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/led-video-wall-sri-lanka': {
+      id: '/led-video-wall-sri-lanka'
+      path: '/led-video-wall-sri-lanka'
+      fullPath: '/led-video-wall-sri-lanka'
+      preLoaderRoute: typeof LedVideoWallSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/led-screen-advertising-sri-lanka': {
+      id: '/led-screen-advertising-sri-lanka'
+      path: '/led-screen-advertising-sri-lanka'
+      fullPath: '/led-screen-advertising-sri-lanka'
+      preLoaderRoute: typeof LedScreenAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lead-generation-sri-lanka': {
+      id: '/lead-generation-sri-lanka'
+      path: '/lead-generation-sri-lanka'
+      fullPath: '/lead-generation-sri-lanka'
+      preLoaderRoute: typeof LeadGenerationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/landing-page-design-sri-lanka': {
+      id: '/landing-page-design-sri-lanka'
+      path: '/landing-page-design-sri-lanka'
+      fullPath: '/landing-page-design-sri-lanka'
+      preLoaderRoute: typeof LandingPageDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/integrated-marketing-sri-lanka': {
+      id: '/integrated-marketing-sri-lanka'
+      path: '/integrated-marketing-sri-lanka'
+      fullPath: '/integrated-marketing-sri-lanka'
+      preLoaderRoute: typeof IntegratedMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/instagram-marketing-sri-lanka': {
+      id: '/instagram-marketing-sri-lanka'
+      path: '/instagram-marketing-sri-lanka'
+      fullPath: '/instagram-marketing-sri-lanka'
+      preLoaderRoute: typeof InstagramMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/instagram-ads-sri-lanka': {
+      id: '/instagram-ads-sri-lanka'
+      path: '/instagram-ads-sri-lanka'
+      fullPath: '/instagram-ads-sri-lanka'
+      preLoaderRoute: typeof InstagramAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/influencer-marketing-sri-lanka': {
+      id: '/influencer-marketing-sri-lanka'
+      path: '/influencer-marketing-sri-lanka'
+      fullPath: '/influencer-marketing-sri-lanka'
+      preLoaderRoute: typeof InfluencerMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hoarding-advertising-sri-lanka': {
+      id: '/hoarding-advertising-sri-lanka'
+      path: '/hoarding-advertising-sri-lanka'
+      fullPath: '/hoarding-advertising-sri-lanka'
+      preLoaderRoute: typeof HoardingAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/graphic-design-sri-lanka': {
+      id: '/graphic-design-sri-lanka'
+      path: '/graphic-design-sri-lanka'
+      fullPath: '/graphic-design-sri-lanka'
+      preLoaderRoute: typeof GraphicDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/google-ads-sri-lanka': {
+      id: '/google-ads-sri-lanka'
+      path: '/google-ads-sri-lanka'
+      fullPath: '/google-ads-sri-lanka'
+      preLoaderRoute: typeof GoogleAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/get-quote': {
       id: '/get-quote'
       path: '/get-quote'
       fullPath: '/get-quote'
       preLoaderRoute: typeof GetQuoteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/full-service-advertising-sri-lanka': {
+      id: '/full-service-advertising-sri-lanka'
+      path: '/full-service-advertising-sri-lanka'
+      fullPath: '/full-service-advertising-sri-lanka'
+      preLoaderRoute: typeof FullServiceAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/field-marketing-sri-lanka': {
+      id: '/field-marketing-sri-lanka'
+      path: '/field-marketing-sri-lanka'
+      fullPath: '/field-marketing-sri-lanka'
+      preLoaderRoute: typeof FieldMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/facebook-marketing-sri-lanka': {
+      id: '/facebook-marketing-sri-lanka'
+      path: '/facebook-marketing-sri-lanka'
+      fullPath: '/facebook-marketing-sri-lanka'
+      preLoaderRoute: typeof FacebookMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/facebook-ads-sri-lanka': {
+      id: '/facebook-ads-sri-lanka'
+      path: '/facebook-ads-sri-lanka'
+      fullPath: '/facebook-ads-sri-lanka'
+      preLoaderRoute: typeof FacebookAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/exhibition-branding-sri-lanka': {
+      id: '/exhibition-branding-sri-lanka'
+      path: '/exhibition-branding-sri-lanka'
+      fullPath: '/exhibition-branding-sri-lanka'
+      preLoaderRoute: typeof ExhibitionBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-marketing-sri-lanka': {
+      id: '/event-marketing-sri-lanka'
+      path: '/event-marketing-sri-lanka'
+      fullPath: '/event-marketing-sri-lanka'
+      preLoaderRoute: typeof EventMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/email-sms-marketing-sri-lanka': {
+      id: '/email-sms-marketing-sri-lanka'
+      path: '/email-sms-marketing-sri-lanka'
+      fullPath: '/email-sms-marketing-sri-lanka'
+      preLoaderRoute: typeof EmailSmsMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/email-automation-sri-lanka': {
+      id: '/email-automation-sri-lanka'
+      path: '/email-automation-sri-lanka'
+      fullPath: '/email-automation-sri-lanka'
+      preLoaderRoute: typeof EmailAutomationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecommerce-website-sri-lanka': {
+      id: '/ecommerce-website-sri-lanka'
+      path: '/ecommerce-website-sri-lanka'
+      fullPath: '/ecommerce-website-sri-lanka'
+      preLoaderRoute: typeof EcommerceWebsiteSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecommerce-seo-sri-lanka': {
+      id: '/ecommerce-seo-sri-lanka'
+      path: '/ecommerce-seo-sri-lanka'
+      fullPath: '/ecommerce-seo-sri-lanka'
+      preLoaderRoute: typeof EcommerceSeoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drone-videography-sri-lanka': {
+      id: '/drone-videography-sri-lanka'
+      path: '/drone-videography-sri-lanka'
+      fullPath: '/drone-videography-sri-lanka'
+      preLoaderRoute: typeof DroneVideographySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/display-advertising-sri-lanka': {
+      id: '/display-advertising-sri-lanka'
+      path: '/display-advertising-sri-lanka'
+      fullPath: '/display-advertising-sri-lanka'
+      preLoaderRoute: typeof DisplayAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-marketing-sri-lanka': {
+      id: '/digital-marketing-sri-lanka'
+      path: '/digital-marketing-sri-lanka'
+      fullPath: '/digital-marketing-sri-lanka'
+      preLoaderRoute: typeof DigitalMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-billboard-sri-lanka': {
+      id: '/digital-billboard-sri-lanka'
+      path: '/digital-billboard-sri-lanka'
+      fullPath: '/digital-billboard-sri-lanka'
+      preLoaderRoute: typeof DigitalBillboardSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creative-agency-sri-lanka': {
+      id: '/creative-agency-sri-lanka'
+      path: '/creative-agency-sri-lanka'
+      fullPath: '/creative-agency-sri-lanka'
+      preLoaderRoute: typeof CreativeAgencySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate-video-sri-lanka': {
+      id: '/corporate-video-sri-lanka'
+      path: '/corporate-video-sri-lanka'
+      fullPath: '/corporate-video-sri-lanka'
+      preLoaderRoute: typeof CorporateVideoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate-branding-sri-lanka': {
+      id: '/corporate-branding-sri-lanka'
+      path: '/corporate-branding-sri-lanka'
+      fullPath: '/corporate-branding-sri-lanka'
+      preLoaderRoute: typeof CorporateBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/content-marketing-sri-lanka': {
+      id: '/content-marketing-sri-lanka'
+      path: '/content-marketing-sri-lanka'
+      fullPath: '/content-marketing-sri-lanka'
+      preLoaderRoute: typeof ContentMarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -137,11 +3191,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/company-profile-design-sri-lanka': {
+      id: '/company-profile-design-sri-lanka'
+      path: '/company-profile-design-sri-lanka'
+      fullPath: '/company-profile-design-sri-lanka'
+      preLoaderRoute: typeof CompanyProfileDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commercial-video-sri-lanka': {
+      id: '/commercial-video-sri-lanka'
+      path: '/commercial-video-sri-lanka'
+      fullPath: '/commercial-video-sri-lanka'
+      preLoaderRoute: typeof CommercialVideoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cinema-advertising-sri-lanka': {
+      id: '/cinema-advertising-sri-lanka'
+      path: '/cinema-advertising-sri-lanka'
+      fullPath: '/cinema-advertising-sri-lanka'
+      preLoaderRoute: typeof CinemaAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/case-studies': {
       id: '/case-studies'
       path: '/case-studies'
       fullPath: '/case-studies'
       preLoaderRoute: typeof CaseStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bulk-sms-sri-lanka': {
+      id: '/bulk-sms-sri-lanka'
+      path: '/bulk-sms-sri-lanka'
+      fullPath: '/bulk-sms-sri-lanka'
+      preLoaderRoute: typeof BulkSmsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bulk-email-sri-lanka': {
+      id: '/bulk-email-sri-lanka'
+      path: '/bulk-email-sri-lanka'
+      fullPath: '/bulk-email-sri-lanka'
+      preLoaderRoute: typeof BulkEmailSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/btl-advertising-sri-lanka': {
+      id: '/btl-advertising-sri-lanka'
+      path: '/btl-advertising-sri-lanka'
+      fullPath: '/btl-advertising-sri-lanka'
+      preLoaderRoute: typeof BtlAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/branding-sri-lanka': {
+      id: '/branding-sri-lanka'
+      path: '/branding-sri-lanka'
+      fullPath: '/branding-sri-lanka'
+      preLoaderRoute: typeof BrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brand-identity-sri-lanka': {
+      id: '/brand-identity-sri-lanka'
+      path: '/brand-identity-sri-lanka'
+      fullPath: '/brand-identity-sri-lanka'
+      preLoaderRoute: typeof BrandIdentitySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brand-communication-sri-lanka': {
+      id: '/brand-communication-sri-lanka'
+      path: '/brand-communication-sri-lanka'
+      fullPath: '/brand-communication-sri-lanka'
+      preLoaderRoute: typeof BrandCommunicationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brand-activation-sri-lanka': {
+      id: '/brand-activation-sri-lanka'
+      path: '/brand-activation-sri-lanka'
+      fullPath: '/brand-activation-sri-lanka'
+      preLoaderRoute: typeof BrandActivationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/billboard-advertising-sri-lanka': {
+      id: '/billboard-advertising-sri-lanka'
+      path: '/billboard-advertising-sri-lanka'
+      fullPath: '/billboard-advertising-sri-lanka'
+      preLoaderRoute: typeof BillboardAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/backlink-services-sri-lanka': {
+      id: '/backlink-services-sri-lanka'
+      path: '/backlink-services-sri-lanka'
+      fullPath: '/backlink-services-sri-lanka'
+      preLoaderRoute: typeof BacklinkServicesSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/b2b-email-marketing-sri-lanka': {
+      id: '/b2b-email-marketing-sri-lanka'
+      path: '/b2b-email-marketing-sri-lanka'
+      fullPath: '/b2b-email-marketing-sri-lanka'
+      preLoaderRoute: typeof B2bEmailMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/atl-advertising-sri-lanka': {
+      id: '/atl-advertising-sri-lanka'
+      path: '/atl-advertising-sri-lanka'
+      fullPath: '/atl-advertising-sri-lanka'
+      preLoaderRoute: typeof AtlAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/advertising-rates': {
@@ -165,6 +3317,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/3d-animation-sri-lanka': {
+      id: '/3d-animation-sri-lanka'
+      path: '/3d-animation-sri-lanka'
+      fullPath: '/3d-animation-sri-lanka'
+      preLoaderRoute: typeof R3dAnimationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/360-marketing-campaigns-sri-lanka': {
+      id: '/360-marketing-campaigns-sri-lanka'
+      path: '/360-marketing-campaigns-sri-lanka'
+      fullPath: '/360-marketing-campaigns-sri-lanka'
+      preLoaderRoute: typeof R360MarketingCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/2d-animation-sri-lanka': {
+      id: '/2d-animation-sri-lanka'
+      path: '/2d-animation-sri-lanka'
+      fullPath: '/2d-animation-sri-lanka'
+      preLoaderRoute: typeof R2dAnimationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -172,18 +3345,880 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/youtube-video-marketing-sri-lanka': {
+      id: '/blog/youtube-video-marketing-sri-lanka'
+      path: '/blog/youtube-video-marketing-sri-lanka'
+      fullPath: '/blog/youtube-video-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogYoutubeVideoMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/whatsapp-advertising-sri-lanka': {
+      id: '/blog/whatsapp-advertising-sri-lanka'
+      path: '/blog/whatsapp-advertising-sri-lanka'
+      fullPath: '/blog/whatsapp-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogWhatsappAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/website-redesign-sri-lanka': {
+      id: '/blog/website-redesign-sri-lanka'
+      path: '/blog/website-redesign-sri-lanka'
+      fullPath: '/blog/website-redesign-sri-lanka'
+      preLoaderRoute: typeof BlogWebsiteRedesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/website-ranking-sri-lanka': {
+      id: '/blog/website-ranking-sri-lanka'
+      path: '/blog/website-ranking-sri-lanka'
+      fullPath: '/blog/website-ranking-sri-lanka'
+      preLoaderRoute: typeof BlogWebsiteRankingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/website-banners-sri-lanka': {
+      id: '/blog/website-banners-sri-lanka'
+      path: '/blog/website-banners-sri-lanka'
+      fullPath: '/blog/website-banners-sri-lanka'
+      preLoaderRoute: typeof BlogWebsiteBannersSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/web-design-sri-lanka': {
+      id: '/blog/web-design-sri-lanka'
+      path: '/blog/web-design-sri-lanka'
+      fullPath: '/blog/web-design-sri-lanka'
+      preLoaderRoute: typeof BlogWebDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/web-banners-sri-lanka': {
+      id: '/blog/web-banners-sri-lanka'
+      path: '/blog/web-banners-sri-lanka'
+      fullPath: '/blog/web-banners-sri-lanka'
+      preLoaderRoute: typeof BlogWebBannersSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/viral-marketing-sri-lanka': {
+      id: '/blog/viral-marketing-sri-lanka'
+      path: '/blog/viral-marketing-sri-lanka'
+      fullPath: '/blog/viral-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogViralMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/video-production-sri-lanka': {
+      id: '/blog/video-production-sri-lanka'
+      path: '/blog/video-production-sri-lanka'
+      fullPath: '/blog/video-production-sri-lanka'
+      preLoaderRoute: typeof BlogVideoProductionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/ttl-advertising-sri-lanka': {
+      id: '/blog/ttl-advertising-sri-lanka'
+      path: '/blog/ttl-advertising-sri-lanka'
+      fullPath: '/blog/ttl-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogTtlAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/train-advertising-sri-lanka': {
+      id: '/blog/train-advertising-sri-lanka'
+      path: '/blog/train-advertising-sri-lanka'
+      fullPath: '/blog/train-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogTrainAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/traditional-advertising-sri-lanka': {
+      id: '/blog/traditional-advertising-sri-lanka'
+      path: '/blog/traditional-advertising-sri-lanka'
+      fullPath: '/blog/traditional-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogTraditionalAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/trade-marketing-sri-lanka': {
+      id: '/blog/trade-marketing-sri-lanka'
+      path: '/blog/trade-marketing-sri-lanka'
+      fullPath: '/blog/trade-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogTradeMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/tiktok-advertising-sri-lanka': {
+      id: '/blog/tiktok-advertising-sri-lanka'
+      path: '/blog/tiktok-advertising-sri-lanka'
+      fullPath: '/blog/tiktok-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogTiktokAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/through-the-line-advertising-sri-lanka': {
+      id: '/blog/through-the-line-advertising-sri-lanka'
+      path: '/blog/through-the-line-advertising-sri-lanka'
+      fullPath: '/blog/through-the-line-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogThroughTheLineAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/television-commercials-sri-lanka': {
+      id: '/blog/television-commercials-sri-lanka'
+      path: '/blog/television-commercials-sri-lanka'
+      fullPath: '/blog/television-commercials-sri-lanka'
+      preLoaderRoute: typeof BlogTelevisionCommercialsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/taxi-advertising-sri-lanka': {
+      id: '/blog/taxi-advertising-sri-lanka'
+      path: '/blog/taxi-advertising-sri-lanka'
+      fullPath: '/blog/taxi-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogTaxiAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/strategic-marketing-sri-lanka': {
+      id: '/blog/strategic-marketing-sri-lanka'
+      path: '/blog/strategic-marketing-sri-lanka'
+      fullPath: '/blog/strategic-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogStrategicMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/stall-branding-sri-lanka': {
+      id: '/blog/stall-branding-sri-lanka'
+      path: '/blog/stall-branding-sri-lanka'
+      fullPath: '/blog/stall-branding-sri-lanka'
+      preLoaderRoute: typeof BlogStallBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/social-media-marketing-sri-lanka': {
+      id: '/blog/social-media-marketing-sri-lanka'
+      path: '/blog/social-media-marketing-sri-lanka'
+      fullPath: '/blog/social-media-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogSocialMediaMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/social-media-campaigns-sri-lanka': {
+      id: '/blog/social-media-campaigns-sri-lanka'
+      path: '/blog/social-media-campaigns-sri-lanka'
+      fullPath: '/blog/social-media-campaigns-sri-lanka'
+      preLoaderRoute: typeof BlogSocialMediaCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/social-media-advertising-sri-lanka': {
+      id: '/blog/social-media-advertising-sri-lanka'
+      path: '/blog/social-media-advertising-sri-lanka'
+      fullPath: '/blog/social-media-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogSocialMediaAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/sms-advertising-sri-lanka': {
+      id: '/blog/sms-advertising-sri-lanka'
+      path: '/blog/sms-advertising-sri-lanka'
+      fullPath: '/blog/sms-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogSmsAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/sign-board-advertising-sri-lanka': {
+      id: '/blog/sign-board-advertising-sri-lanka'
+      path: '/blog/sign-board-advertising-sri-lanka'
+      fullPath: '/blog/sign-board-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogSignBoardAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/seo-sri-lanka': {
+      id: '/blog/seo-sri-lanka'
+      path: '/blog/seo-sri-lanka'
+      fullPath: '/blog/seo-sri-lanka'
+      preLoaderRoute: typeof BlogSeoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/seo-agency-sri-lanka': {
+      id: '/blog/seo-agency-sri-lanka'
+      path: '/blog/seo-agency-sri-lanka'
+      fullPath: '/blog/seo-agency-sri-lanka'
+      preLoaderRoute: typeof BlogSeoAgencySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/sem-sri-lanka': {
+      id: '/blog/sem-sri-lanka'
+      path: '/blog/sem-sri-lanka'
+      fullPath: '/blog/sem-sri-lanka'
+      preLoaderRoute: typeof BlogSemSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/search-engine-optimization-sri-lanka': {
+      id: '/blog/search-engine-optimization-sri-lanka'
+      path: '/blog/search-engine-optimization-sri-lanka'
+      fullPath: '/blog/search-engine-optimization-sri-lanka'
+      preLoaderRoute: typeof BlogSearchEngineOptimizationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/search-engine-marketing-sri-lanka': {
+      id: '/blog/search-engine-marketing-sri-lanka'
+      path: '/blog/search-engine-marketing-sri-lanka'
+      fullPath: '/blog/search-engine-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogSearchEngineMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/sampling-campaigns-sri-lanka': {
+      id: '/blog/sampling-campaigns-sri-lanka'
+      path: '/blog/sampling-campaigns-sri-lanka'
+      fullPath: '/blog/sampling-campaigns-sri-lanka'
+      preLoaderRoute: typeof BlogSamplingCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/retargeting-sri-lanka': {
+      id: '/blog/retargeting-sri-lanka'
+      path: '/blog/retargeting-sri-lanka'
+      fullPath: '/blog/retargeting-sri-lanka'
+      preLoaderRoute: typeof BlogRetargetingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/responsive-web-design-sri-lanka': {
+      id: '/blog/responsive-web-design-sri-lanka'
+      path: '/blog/responsive-web-design-sri-lanka'
+      fullPath: '/blog/responsive-web-design-sri-lanka'
+      preLoaderRoute: typeof BlogResponsiveWebDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/reels-marketing-sri-lanka': {
+      id: '/blog/reels-marketing-sri-lanka'
+      path: '/blog/reels-marketing-sri-lanka'
+      fullPath: '/blog/reels-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogReelsMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/promotional-video-sri-lanka': {
+      id: '/blog/promotional-video-sri-lanka'
+      path: '/blog/promotional-video-sri-lanka'
+      fullPath: '/blog/promotional-video-sri-lanka'
+      preLoaderRoute: typeof BlogPromotionalVideoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/promotional-sms-sri-lanka': {
+      id: '/blog/promotional-sms-sri-lanka'
+      path: '/blog/promotional-sms-sri-lanka'
+      fullPath: '/blog/promotional-sms-sri-lanka'
+      preLoaderRoute: typeof BlogPromotionalSmsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/product-promotion-sri-lanka': {
+      id: '/blog/product-promotion-sri-lanka'
+      path: '/blog/product-promotion-sri-lanka'
+      fullPath: '/blog/product-promotion-sri-lanka'
+      preLoaderRoute: typeof BlogProductPromotionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/print-media-advertising-sri-lanka': {
+      id: '/blog/print-media-advertising-sri-lanka'
+      path: '/blog/print-media-advertising-sri-lanka'
+      fullPath: '/blog/print-media-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogPrintMediaAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/pos-branding-sri-lanka': {
+      id: '/blog/pos-branding-sri-lanka'
+      path: '/blog/pos-branding-sri-lanka'
+      fullPath: '/blog/pos-branding-sri-lanka'
+      preLoaderRoute: typeof BlogPosBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/pay-per-click-sri-lanka': {
+      id: '/blog/pay-per-click-sri-lanka'
+      path: '/blog/pay-per-click-sri-lanka'
+      fullPath: '/blog/pay-per-click-sri-lanka'
+      preLoaderRoute: typeof BlogPayPerClickSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/outdoor-advertising-sri-lanka': {
+      id: '/blog/outdoor-advertising-sri-lanka'
+      path: '/blog/outdoor-advertising-sri-lanka'
+      fullPath: '/blog/outdoor-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogOutdoorAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/organic-traffic-sri-lanka': {
+      id: '/blog/organic-traffic-sri-lanka'
+      path: '/blog/organic-traffic-sri-lanka'
+      fullPath: '/blog/organic-traffic-sri-lanka'
+      preLoaderRoute: typeof BlogOrganicTrafficSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/online-marketing-sri-lanka': {
+      id: '/blog/online-marketing-sri-lanka'
+      path: '/blog/online-marketing-sri-lanka'
+      fullPath: '/blog/online-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogOnlineMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/on-page-seo-sri-lanka': {
+      id: '/blog/on-page-seo-sri-lanka'
+      path: '/blog/on-page-seo-sri-lanka'
+      fullPath: '/blog/on-page-seo-sri-lanka'
+      preLoaderRoute: typeof BlogOnPageSeoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/off-page-seo-sri-lanka': {
+      id: '/blog/off-page-seo-sri-lanka'
+      path: '/blog/off-page-seo-sri-lanka'
+      fullPath: '/blog/off-page-seo-sri-lanka'
+      preLoaderRoute: typeof BlogOffPageSeoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/newsletter-marketing-sri-lanka': {
+      id: '/blog/newsletter-marketing-sri-lanka'
+      path: '/blog/newsletter-marketing-sri-lanka'
+      fullPath: '/blog/newsletter-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogNewsletterMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/neon-signs-sri-lanka': {
+      id: '/blog/neon-signs-sri-lanka'
+      path: '/blog/neon-signs-sri-lanka'
+      fullPath: '/blog/neon-signs-sri-lanka'
+      preLoaderRoute: typeof BlogNeonSignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/national-advertising-campaigns-sri-lanka': {
+      id: '/blog/national-advertising-campaigns-sri-lanka'
+      path: '/blog/national-advertising-campaigns-sri-lanka'
+      fullPath: '/blog/national-advertising-campaigns-sri-lanka'
+      preLoaderRoute: typeof BlogNationalAdvertisingCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/merchandising-sri-lanka': {
+      id: '/blog/merchandising-sri-lanka'
+      path: '/blog/merchandising-sri-lanka'
+      fullPath: '/blog/merchandising-sri-lanka'
+      preLoaderRoute: typeof BlogMerchandisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/mass-media-advertising-sri-lanka': {
+      id: '/blog/mass-media-advertising-sri-lanka'
+      path: '/blog/mass-media-advertising-sri-lanka'
+      fullPath: '/blog/mass-media-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogMassMediaAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/marketing-materials-sri-lanka': {
+      id: '/blog/marketing-materials-sri-lanka'
+      path: '/blog/marketing-materials-sri-lanka'
+      fullPath: '/blog/marketing-materials-sri-lanka'
+      preLoaderRoute: typeof BlogMarketingMaterialsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/led-display-advertising-sri-lanka': {
+      id: '/blog/led-display-advertising-sri-lanka'
+      path: '/blog/led-display-advertising-sri-lanka'
+      fullPath: '/blog/led-display-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogLedDisplayAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/leaflet-distribution-sri-lanka': {
+      id: '/blog/leaflet-distribution-sri-lanka'
+      path: '/blog/leaflet-distribution-sri-lanka'
+      fullPath: '/blog/leaflet-distribution-sri-lanka'
+      preLoaderRoute: typeof BlogLeafletDistributionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/lamp-post-advertising-sri-lanka': {
+      id: '/blog/lamp-post-advertising-sri-lanka'
+      path: '/blog/lamp-post-advertising-sri-lanka'
+      fullPath: '/blog/lamp-post-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogLampPostAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/keyword-research-sri-lanka': {
+      id: '/blog/keyword-research-sri-lanka'
+      path: '/blog/keyword-research-sri-lanka'
+      fullPath: '/blog/keyword-research-sri-lanka'
+      preLoaderRoute: typeof BlogKeywordResearchSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/internet-marketing-sri-lanka': {
+      id: '/blog/internet-marketing-sri-lanka'
+      path: '/blog/internet-marketing-sri-lanka'
+      fullPath: '/blog/internet-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogInternetMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/integrated-advertising-sri-lanka': {
+      id: '/blog/integrated-advertising-sri-lanka'
+      path: '/blog/integrated-advertising-sri-lanka'
+      fullPath: '/blog/integrated-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogIntegratedAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/instagram-advertising-sri-lanka': {
+      id: '/blog/instagram-advertising-sri-lanka'
+      path: '/blog/instagram-advertising-sri-lanka'
+      fullPath: '/blog/instagram-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogInstagramAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/in-store-branding-sri-lanka': {
+      id: '/blog/in-store-branding-sri-lanka'
+      path: '/blog/in-store-branding-sri-lanka'
+      fullPath: '/blog/in-store-branding-sri-lanka'
+      preLoaderRoute: typeof BlogInStoreBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/ground-activation-sri-lanka': {
+      id: '/blog/ground-activation-sri-lanka'
+      path: '/blog/ground-activation-sri-lanka'
+      fullPath: '/blog/ground-activation-sri-lanka'
+      preLoaderRoute: typeof BlogGroundActivationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/google-ranking-sri-lanka': {
+      id: '/blog/google-ranking-sri-lanka'
+      path: '/blog/google-ranking-sri-lanka'
+      fullPath: '/blog/google-ranking-sri-lanka'
+      preLoaderRoute: typeof BlogGoogleRankingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/google-advertising-sri-lanka': {
+      id: '/blog/google-advertising-sri-lanka'
+      path: '/blog/google-advertising-sri-lanka'
+      fullPath: '/blog/google-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogGoogleAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/flyer-distribution-sri-lanka': {
+      id: '/blog/flyer-distribution-sri-lanka'
+      path: '/blog/flyer-distribution-sri-lanka'
+      fullPath: '/blog/flyer-distribution-sri-lanka'
+      preLoaderRoute: typeof BlogFlyerDistributionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/flyer-design-sri-lanka': {
+      id: '/blog/flyer-design-sri-lanka'
+      path: '/blog/flyer-design-sri-lanka'
+      fullPath: '/blog/flyer-design-sri-lanka'
+      preLoaderRoute: typeof BlogFlyerDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/facebook-advertising-sri-lanka': {
+      id: '/blog/facebook-advertising-sri-lanka'
+      path: '/blog/facebook-advertising-sri-lanka'
+      fullPath: '/blog/facebook-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogFacebookAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/event-promotion-sri-lanka': {
+      id: '/blog/event-promotion-sri-lanka'
+      path: '/blog/event-promotion-sri-lanka'
+      fullPath: '/blog/event-promotion-sri-lanka'
+      preLoaderRoute: typeof BlogEventPromotionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/email-marketing-sri-lanka': {
+      id: '/blog/email-marketing-sri-lanka'
+      path: '/blog/email-marketing-sri-lanka'
+      fullPath: '/blog/email-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogEmailMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/email-campaigns-sri-lanka': {
+      id: '/blog/email-campaigns-sri-lanka'
+      path: '/blog/email-campaigns-sri-lanka'
+      fullPath: '/blog/email-campaigns-sri-lanka'
+      preLoaderRoute: typeof BlogEmailCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/email-advertising-sri-lanka': {
+      id: '/blog/email-advertising-sri-lanka'
+      path: '/blog/email-advertising-sri-lanka'
+      fullPath: '/blog/email-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogEmailAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/door-to-door-marketing-sri-lanka': {
+      id: '/blog/door-to-door-marketing-sri-lanka'
+      path: '/blog/door-to-door-marketing-sri-lanka'
+      fullPath: '/blog/door-to-door-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogDoorToDoorMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/digital-marketing-sri-lanka': {
+      id: '/blog/digital-marketing-sri-lanka'
+      path: '/blog/digital-marketing-sri-lanka'
+      fullPath: '/blog/digital-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogDigitalMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/digital-campaign-management-sri-lanka': {
+      id: '/blog/digital-campaign-management-sri-lanka'
+      path: '/blog/digital-campaign-management-sri-lanka'
+      fullPath: '/blog/digital-campaign-management-sri-lanka'
+      preLoaderRoute: typeof BlogDigitalCampaignManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/digital-advertising-sri-lanka': {
+      id: '/blog/digital-advertising-sri-lanka'
+      path: '/blog/digital-advertising-sri-lanka'
+      fullPath: '/blog/digital-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogDigitalAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/cross-platform-marketing-sri-lanka': {
+      id: '/blog/cross-platform-marketing-sri-lanka'
+      path: '/blog/cross-platform-marketing-sri-lanka'
+      fullPath: '/blog/cross-platform-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogCrossPlatformMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/creative-design-sri-lanka': {
+      id: '/blog/creative-design-sri-lanka'
+      path: '/blog/creative-design-sri-lanka'
+      fullPath: '/blog/creative-design-sri-lanka'
+      preLoaderRoute: typeof BlogCreativeDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/corporate-advertising-sri-lanka': {
+      id: '/blog/corporate-advertising-sri-lanka'
+      path: '/blog/corporate-advertising-sri-lanka'
+      fullPath: '/blog/corporate-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogCorporateAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/conversion-marketing-sri-lanka': {
+      id: '/blog/conversion-marketing-sri-lanka'
+      path: '/blog/conversion-marketing-sri-lanka'
+      fullPath: '/blog/conversion-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogConversionMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/content-creation-sri-lanka': {
+      id: '/blog/content-creation-sri-lanka'
+      path: '/blog/content-creation-sri-lanka'
+      fullPath: '/blog/content-creation-sri-lanka'
+      preLoaderRoute: typeof BlogContentCreationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/consumer-promotions-sri-lanka': {
+      id: '/blog/consumer-promotions-sri-lanka'
+      path: '/blog/consumer-promotions-sri-lanka'
+      fullPath: '/blog/consumer-promotions-sri-lanka'
+      preLoaderRoute: typeof BlogConsumerPromotionsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/community-management-sri-lanka': {
+      id: '/blog/community-management-sri-lanka'
+      path: '/blog/community-management-sri-lanka'
+      fullPath: '/blog/community-management-sri-lanka'
+      preLoaderRoute: typeof BlogCommunityManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/business-branding-sri-lanka': {
+      id: '/blog/business-branding-sri-lanka'
+      path: '/blog/business-branding-sri-lanka'
+      fullPath: '/blog/business-branding-sri-lanka'
+      preLoaderRoute: typeof BlogBusinessBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/bus-advertising-sri-lanka': {
+      id: '/blog/bus-advertising-sri-lanka'
+      path: '/blog/bus-advertising-sri-lanka'
+      fullPath: '/blog/bus-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogBusAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/btl-advertising-sri-lanka': {
+      id: '/blog/btl-advertising-sri-lanka'
+      path: '/blog/btl-advertising-sri-lanka'
+      fullPath: '/blog/btl-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogBtlAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/brochure-design-sri-lanka': {
+      id: '/blog/brochure-design-sri-lanka'
+      path: '/blog/brochure-design-sri-lanka'
+      fullPath: '/blog/brochure-design-sri-lanka'
+      preLoaderRoute: typeof BlogBrochureDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/branding-sri-lanka': {
+      id: '/blog/branding-sri-lanka'
+      path: '/blog/branding-sri-lanka'
+      fullPath: '/blog/branding-sri-lanka'
+      preLoaderRoute: typeof BlogBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/brand-awareness-campaigns-sri-lanka': {
+      id: '/blog/brand-awareness-campaigns-sri-lanka'
+      path: '/blog/brand-awareness-campaigns-sri-lanka'
+      fullPath: '/blog/brand-awareness-campaigns-sri-lanka'
+      preLoaderRoute: typeof BlogBrandAwarenessCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/below-the-line-advertising-sri-lanka': {
+      id: '/blog/below-the-line-advertising-sri-lanka'
+      path: '/blog/below-the-line-advertising-sri-lanka'
+      fullPath: '/blog/below-the-line-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogBelowTheLineAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/banner-design-sri-lanka': {
+      id: '/blog/banner-design-sri-lanka'
+      path: '/blog/banner-design-sri-lanka'
+      fullPath: '/blog/banner-design-sri-lanka'
+      preLoaderRoute: typeof BlogBannerDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/atl-btl-ttl-advertising-sri-lanka': {
+      id: '/blog/atl-btl-ttl-advertising-sri-lanka'
+      path: '/blog/atl-btl-ttl-advertising-sri-lanka'
+      fullPath: '/blog/atl-btl-ttl-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogAtlBtlTtlAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/atl-advertising-sri-lanka': {
+      id: '/blog/atl-advertising-sri-lanka'
+      path: '/blog/atl-advertising-sri-lanka'
+      fullPath: '/blog/atl-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogAtlAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/advertising-video-sri-lanka': {
+      id: '/blog/advertising-video-sri-lanka'
+      path: '/blog/advertising-video-sri-lanka'
+      fullPath: '/blog/advertising-video-sri-lanka'
+      preLoaderRoute: typeof BlogAdvertisingVideoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/activation-marketing-sri-lanka': {
+      id: '/blog/activation-marketing-sri-lanka'
+      path: '/blog/activation-marketing-sri-lanka'
+      fullPath: '/blog/activation-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogActivationMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/above-the-line-advertising-sri-lanka': {
+      id: '/blog/above-the-line-advertising-sri-lanka'
+      path: '/blog/above-the-line-advertising-sri-lanka'
+      fullPath: '/blog/above-the-line-advertising-sri-lanka'
+      preLoaderRoute: typeof BlogAboveTheLineAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/360-advertising-sri-lanka': {
+      id: '/blog/360-advertising-sri-lanka'
+      path: '/blog/360-advertising-sri-lanka'
+      fullPath: '/blog/360-advertising-sri-lanka'
+      preLoaderRoute: typeof Blog360AdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  R2dAnimationSriLankaRoute: R2dAnimationSriLankaRoute,
+  R360MarketingCampaignsSriLankaRoute: R360MarketingCampaignsSriLankaRoute,
+  R3dAnimationSriLankaRoute: R3dAnimationSriLankaRoute,
   AboutRoute: AboutRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
+  AtlAdvertisingSriLankaRoute: AtlAdvertisingSriLankaRoute,
+  B2bEmailMarketingSriLankaRoute: B2bEmailMarketingSriLankaRoute,
+  BacklinkServicesSriLankaRoute: BacklinkServicesSriLankaRoute,
+  BillboardAdvertisingSriLankaRoute: BillboardAdvertisingSriLankaRoute,
+  BrandActivationSriLankaRoute: BrandActivationSriLankaRoute,
+  BrandCommunicationSriLankaRoute: BrandCommunicationSriLankaRoute,
+  BrandIdentitySriLankaRoute: BrandIdentitySriLankaRoute,
+  BrandingSriLankaRoute: BrandingSriLankaRoute,
+  BtlAdvertisingSriLankaRoute: BtlAdvertisingSriLankaRoute,
+  BulkEmailSriLankaRoute: BulkEmailSriLankaRoute,
+  BulkSmsSriLankaRoute: BulkSmsSriLankaRoute,
   CaseStudiesRoute: CaseStudiesRoute,
+  CinemaAdvertisingSriLankaRoute: CinemaAdvertisingSriLankaRoute,
+  CommercialVideoSriLankaRoute: CommercialVideoSriLankaRoute,
+  CompanyProfileDesignSriLankaRoute: CompanyProfileDesignSriLankaRoute,
   ContactRoute: ContactRoute,
+  ContentMarketingSriLankaRoute: ContentMarketingSriLankaRoute,
+  CorporateBrandingSriLankaRoute: CorporateBrandingSriLankaRoute,
+  CorporateVideoSriLankaRoute: CorporateVideoSriLankaRoute,
+  CreativeAgencySriLankaRoute: CreativeAgencySriLankaRoute,
+  DigitalBillboardSriLankaRoute: DigitalBillboardSriLankaRoute,
+  DigitalMarketingSriLankaRoute: DigitalMarketingSriLankaRoute,
+  DisplayAdvertisingSriLankaRoute: DisplayAdvertisingSriLankaRoute,
+  DroneVideographySriLankaRoute: DroneVideographySriLankaRoute,
+  EcommerceSeoSriLankaRoute: EcommerceSeoSriLankaRoute,
+  EcommerceWebsiteSriLankaRoute: EcommerceWebsiteSriLankaRoute,
+  EmailAutomationSriLankaRoute: EmailAutomationSriLankaRoute,
+  EmailSmsMarketingSriLankaRoute: EmailSmsMarketingSriLankaRoute,
+  EventMarketingSriLankaRoute: EventMarketingSriLankaRoute,
+  ExhibitionBrandingSriLankaRoute: ExhibitionBrandingSriLankaRoute,
+  FacebookAdsSriLankaRoute: FacebookAdsSriLankaRoute,
+  FacebookMarketingSriLankaRoute: FacebookMarketingSriLankaRoute,
+  FieldMarketingSriLankaRoute: FieldMarketingSriLankaRoute,
+  FullServiceAdvertisingSriLankaRoute: FullServiceAdvertisingSriLankaRoute,
   GetQuoteRoute: GetQuoteRoute,
+  GoogleAdsSriLankaRoute: GoogleAdsSriLankaRoute,
+  GraphicDesignSriLankaRoute: GraphicDesignSriLankaRoute,
+  HoardingAdvertisingSriLankaRoute: HoardingAdvertisingSriLankaRoute,
+  InfluencerMarketingSriLankaRoute: InfluencerMarketingSriLankaRoute,
+  InstagramAdsSriLankaRoute: InstagramAdsSriLankaRoute,
+  InstagramMarketingSriLankaRoute: InstagramMarketingSriLankaRoute,
+  IntegratedMarketingSriLankaRoute: IntegratedMarketingSriLankaRoute,
+  LandingPageDesignSriLankaRoute: LandingPageDesignSriLankaRoute,
+  LeadGenerationSriLankaRoute: LeadGenerationSriLankaRoute,
+  LedScreenAdvertisingSriLankaRoute: LedScreenAdvertisingSriLankaRoute,
+  LedVideoWallSriLankaRoute: LedVideoWallSriLankaRoute,
+  LinkedinAdsSriLankaRoute: LinkedinAdsSriLankaRoute,
+  LinkedinMarketingSriLankaRoute: LinkedinMarketingSriLankaRoute,
+  LocalSeoSriLankaRoute: LocalSeoSriLankaRoute,
+  LogoDesignSriLankaRoute: LogoDesignSriLankaRoute,
+  MagazineAdvertisingSriLankaRoute: MagazineAdvertisingSriLankaRoute,
+  MallActivationSriLankaRoute: MallActivationSriLankaRoute,
+  MediaBuyingSriLankaRoute: MediaBuyingSriLankaRoute,
+  MediaPlanningSriLankaRoute: MediaPlanningSriLankaRoute,
+  MobileBillboardSriLankaRoute: MobileBillboardSriLankaRoute,
+  MotionGraphicsSriLankaRoute: MotionGraphicsSriLankaRoute,
+  MultiChannelAdvertisingSriLankaRoute: MultiChannelAdvertisingSriLankaRoute,
+  NewspaperAdvertisingSriLankaRoute: NewspaperAdvertisingSriLankaRoute,
+  OmnichannelMarketingSriLankaRoute: OmnichannelMarketingSriLankaRoute,
+  OutdoorAdvertisingSriLankaRoute: OutdoorAdvertisingSriLankaRoute,
+  PackagingDesignSriLankaRoute: PackagingDesignSriLankaRoute,
+  PerformanceMarketingSriLankaRoute: PerformanceMarketingSriLankaRoute,
+  PointOfSaleAdvertisingSriLankaRoute: PointOfSaleAdvertisingSriLankaRoute,
+  PpcSriLankaRoute: PpcSriLankaRoute,
+  ProgrammaticAdvertisingSriLankaRoute: ProgrammaticAdvertisingSriLankaRoute,
+  RadioAdvertisingSriLankaRoute: RadioAdvertisingSriLankaRoute,
+  RemarketingSriLankaRoute: RemarketingSriLankaRoute,
+  RetailBrandingSriLankaRoute: RetailBrandingSriLankaRoute,
+  RoadshowMarketingSriLankaRoute: RoadshowMarketingSriLankaRoute,
+  SeoCompanySriLankaRoute: SeoCompanySriLankaRoute,
+  SeoServicesSriLankaRoute: SeoServicesSriLankaRoute,
+  ShopBrandingSriLankaRoute: ShopBrandingSriLankaRoute,
+  SmsMarketingSriLankaRoute: SmsMarketingSriLankaRoute,
+  SocialMediaAgencySriLankaRoute: SocialMediaAgencySriLankaRoute,
+  SocialMediaManagementSriLankaRoute: SocialMediaManagementSriLankaRoute,
+  SocialMediaMarketingSriLankaRoute: SocialMediaMarketingSriLankaRoute,
+  TechnicalSeoSriLankaRoute: TechnicalSeoSriLankaRoute,
+  TiktokAdsSriLankaRoute: TiktokAdsSriLankaRoute,
+  TiktokMarketingSriLankaRoute: TiktokMarketingSriLankaRoute,
+  TransitAdvertisingSriLankaRoute: TransitAdvertisingSriLankaRoute,
+  TtlAdvertisingSriLankaRoute: TtlAdvertisingSriLankaRoute,
+  TvAdvertisingSriLankaRoute: TvAdvertisingSriLankaRoute,
+  TvCommercialsSriLankaRoute: TvCommercialsSriLankaRoute,
+  UiUxDesignSriLankaRoute: UiUxDesignSriLankaRoute,
+  VideoProductionSriLankaRoute: VideoProductionSriLankaRoute,
+  WebDesignSriLankaRoute: WebDesignSriLankaRoute,
+  WebsiteDevelopmentSriLankaRoute: WebsiteDevelopmentSriLankaRoute,
+  WebsiteMaintenanceSriLankaRoute: WebsiteMaintenanceSriLankaRoute,
+  WhatsappMarketingSriLankaRoute: WhatsappMarketingSriLankaRoute,
+  WordpressDevelopmentSriLankaRoute: WordpressDevelopmentSriLankaRoute,
+  YoutubeAdsSriLankaRoute: YoutubeAdsSriLankaRoute,
+  YoutubeMarketingSriLankaRoute: YoutubeMarketingSriLankaRoute,
+  Blog360AdvertisingSriLankaRoute: Blog360AdvertisingSriLankaRoute,
+  BlogAboveTheLineAdvertisingSriLankaRoute:
+    BlogAboveTheLineAdvertisingSriLankaRoute,
+  BlogActivationMarketingSriLankaRoute: BlogActivationMarketingSriLankaRoute,
+  BlogAdvertisingVideoSriLankaRoute: BlogAdvertisingVideoSriLankaRoute,
+  BlogAtlAdvertisingSriLankaRoute: BlogAtlAdvertisingSriLankaRoute,
+  BlogAtlBtlTtlAdvertisingSriLankaRoute: BlogAtlBtlTtlAdvertisingSriLankaRoute,
+  BlogBannerDesignSriLankaRoute: BlogBannerDesignSriLankaRoute,
+  BlogBelowTheLineAdvertisingSriLankaRoute:
+    BlogBelowTheLineAdvertisingSriLankaRoute,
+  BlogBrandAwarenessCampaignsSriLankaRoute:
+    BlogBrandAwarenessCampaignsSriLankaRoute,
+  BlogBrandingSriLankaRoute: BlogBrandingSriLankaRoute,
+  BlogBrochureDesignSriLankaRoute: BlogBrochureDesignSriLankaRoute,
+  BlogBtlAdvertisingSriLankaRoute: BlogBtlAdvertisingSriLankaRoute,
+  BlogBusAdvertisingSriLankaRoute: BlogBusAdvertisingSriLankaRoute,
+  BlogBusinessBrandingSriLankaRoute: BlogBusinessBrandingSriLankaRoute,
+  BlogCommunityManagementSriLankaRoute: BlogCommunityManagementSriLankaRoute,
+  BlogConsumerPromotionsSriLankaRoute: BlogConsumerPromotionsSriLankaRoute,
+  BlogContentCreationSriLankaRoute: BlogContentCreationSriLankaRoute,
+  BlogConversionMarketingSriLankaRoute: BlogConversionMarketingSriLankaRoute,
+  BlogCorporateAdvertisingSriLankaRoute: BlogCorporateAdvertisingSriLankaRoute,
+  BlogCreativeDesignSriLankaRoute: BlogCreativeDesignSriLankaRoute,
+  BlogCrossPlatformMarketingSriLankaRoute:
+    BlogCrossPlatformMarketingSriLankaRoute,
+  BlogDigitalAdvertisingSriLankaRoute: BlogDigitalAdvertisingSriLankaRoute,
+  BlogDigitalCampaignManagementSriLankaRoute:
+    BlogDigitalCampaignManagementSriLankaRoute,
+  BlogDigitalMarketingSriLankaRoute: BlogDigitalMarketingSriLankaRoute,
+  BlogDoorToDoorMarketingSriLankaRoute: BlogDoorToDoorMarketingSriLankaRoute,
+  BlogEmailAdvertisingSriLankaRoute: BlogEmailAdvertisingSriLankaRoute,
+  BlogEmailCampaignsSriLankaRoute: BlogEmailCampaignsSriLankaRoute,
+  BlogEmailMarketingSriLankaRoute: BlogEmailMarketingSriLankaRoute,
+  BlogEventPromotionSriLankaRoute: BlogEventPromotionSriLankaRoute,
+  BlogFacebookAdvertisingSriLankaRoute: BlogFacebookAdvertisingSriLankaRoute,
+  BlogFlyerDesignSriLankaRoute: BlogFlyerDesignSriLankaRoute,
+  BlogFlyerDistributionSriLankaRoute: BlogFlyerDistributionSriLankaRoute,
+  BlogGoogleAdvertisingSriLankaRoute: BlogGoogleAdvertisingSriLankaRoute,
+  BlogGoogleRankingSriLankaRoute: BlogGoogleRankingSriLankaRoute,
+  BlogGroundActivationSriLankaRoute: BlogGroundActivationSriLankaRoute,
+  BlogInStoreBrandingSriLankaRoute: BlogInStoreBrandingSriLankaRoute,
+  BlogInstagramAdvertisingSriLankaRoute: BlogInstagramAdvertisingSriLankaRoute,
+  BlogIntegratedAdvertisingSriLankaRoute:
+    BlogIntegratedAdvertisingSriLankaRoute,
+  BlogInternetMarketingSriLankaRoute: BlogInternetMarketingSriLankaRoute,
+  BlogKeywordResearchSriLankaRoute: BlogKeywordResearchSriLankaRoute,
+  BlogLampPostAdvertisingSriLankaRoute: BlogLampPostAdvertisingSriLankaRoute,
+  BlogLeafletDistributionSriLankaRoute: BlogLeafletDistributionSriLankaRoute,
+  BlogLedDisplayAdvertisingSriLankaRoute:
+    BlogLedDisplayAdvertisingSriLankaRoute,
+  BlogMarketingMaterialsSriLankaRoute: BlogMarketingMaterialsSriLankaRoute,
+  BlogMassMediaAdvertisingSriLankaRoute: BlogMassMediaAdvertisingSriLankaRoute,
+  BlogMerchandisingSriLankaRoute: BlogMerchandisingSriLankaRoute,
+  BlogNationalAdvertisingCampaignsSriLankaRoute:
+    BlogNationalAdvertisingCampaignsSriLankaRoute,
+  BlogNeonSignsSriLankaRoute: BlogNeonSignsSriLankaRoute,
+  BlogNewsletterMarketingSriLankaRoute: BlogNewsletterMarketingSriLankaRoute,
+  BlogOffPageSeoSriLankaRoute: BlogOffPageSeoSriLankaRoute,
+  BlogOnPageSeoSriLankaRoute: BlogOnPageSeoSriLankaRoute,
+  BlogOnlineMarketingSriLankaRoute: BlogOnlineMarketingSriLankaRoute,
+  BlogOrganicTrafficSriLankaRoute: BlogOrganicTrafficSriLankaRoute,
+  BlogOutdoorAdvertisingSriLankaRoute: BlogOutdoorAdvertisingSriLankaRoute,
+  BlogPayPerClickSriLankaRoute: BlogPayPerClickSriLankaRoute,
+  BlogPosBrandingSriLankaRoute: BlogPosBrandingSriLankaRoute,
+  BlogPrintMediaAdvertisingSriLankaRoute:
+    BlogPrintMediaAdvertisingSriLankaRoute,
+  BlogProductPromotionSriLankaRoute: BlogProductPromotionSriLankaRoute,
+  BlogPromotionalSmsSriLankaRoute: BlogPromotionalSmsSriLankaRoute,
+  BlogPromotionalVideoSriLankaRoute: BlogPromotionalVideoSriLankaRoute,
+  BlogReelsMarketingSriLankaRoute: BlogReelsMarketingSriLankaRoute,
+  BlogResponsiveWebDesignSriLankaRoute: BlogResponsiveWebDesignSriLankaRoute,
+  BlogRetargetingSriLankaRoute: BlogRetargetingSriLankaRoute,
+  BlogSamplingCampaignsSriLankaRoute: BlogSamplingCampaignsSriLankaRoute,
+  BlogSearchEngineMarketingSriLankaRoute:
+    BlogSearchEngineMarketingSriLankaRoute,
+  BlogSearchEngineOptimizationSriLankaRoute:
+    BlogSearchEngineOptimizationSriLankaRoute,
+  BlogSemSriLankaRoute: BlogSemSriLankaRoute,
+  BlogSeoAgencySriLankaRoute: BlogSeoAgencySriLankaRoute,
+  BlogSeoSriLankaRoute: BlogSeoSriLankaRoute,
+  BlogSignBoardAdvertisingSriLankaRoute: BlogSignBoardAdvertisingSriLankaRoute,
+  BlogSmsAdvertisingSriLankaRoute: BlogSmsAdvertisingSriLankaRoute,
+  BlogSocialMediaAdvertisingSriLankaRoute:
+    BlogSocialMediaAdvertisingSriLankaRoute,
+  BlogSocialMediaCampaignsSriLankaRoute: BlogSocialMediaCampaignsSriLankaRoute,
+  BlogSocialMediaMarketingSriLankaRoute: BlogSocialMediaMarketingSriLankaRoute,
+  BlogStallBrandingSriLankaRoute: BlogStallBrandingSriLankaRoute,
+  BlogStrategicMarketingSriLankaRoute: BlogStrategicMarketingSriLankaRoute,
+  BlogTaxiAdvertisingSriLankaRoute: BlogTaxiAdvertisingSriLankaRoute,
+  BlogTelevisionCommercialsSriLankaRoute:
+    BlogTelevisionCommercialsSriLankaRoute,
+  BlogThroughTheLineAdvertisingSriLankaRoute:
+    BlogThroughTheLineAdvertisingSriLankaRoute,
+  BlogTiktokAdvertisingSriLankaRoute: BlogTiktokAdvertisingSriLankaRoute,
+  BlogTradeMarketingSriLankaRoute: BlogTradeMarketingSriLankaRoute,
+  BlogTraditionalAdvertisingSriLankaRoute:
+    BlogTraditionalAdvertisingSriLankaRoute,
+  BlogTrainAdvertisingSriLankaRoute: BlogTrainAdvertisingSriLankaRoute,
+  BlogTtlAdvertisingSriLankaRoute: BlogTtlAdvertisingSriLankaRoute,
+  BlogVideoProductionSriLankaRoute: BlogVideoProductionSriLankaRoute,
+  BlogViralMarketingSriLankaRoute: BlogViralMarketingSriLankaRoute,
+  BlogWebBannersSriLankaRoute: BlogWebBannersSriLankaRoute,
+  BlogWebDesignSriLankaRoute: BlogWebDesignSriLankaRoute,
+  BlogWebsiteBannersSriLankaRoute: BlogWebsiteBannersSriLankaRoute,
+  BlogWebsiteRankingSriLankaRoute: BlogWebsiteRankingSriLankaRoute,
+  BlogWebsiteRedesignSriLankaRoute: BlogWebsiteRedesignSriLankaRoute,
+  BlogWhatsappAdvertisingSriLankaRoute: BlogWhatsappAdvertisingSriLankaRoute,
+  BlogYoutubeVideoMarketingSriLankaRoute:
+    BlogYoutubeVideoMarketingSriLankaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

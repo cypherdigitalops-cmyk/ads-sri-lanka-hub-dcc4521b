@@ -13,22 +13,97 @@ import { SITE } from "@/data/site";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: SITE.name,
-  url: SITE.url,
-  telephone: SITE.phoneIntl,
-  email: SITE.email,
-  description:
-    "Sri Lanka's #1 advertising hub — ATL, BTL, digital, SEO, social media, outdoor, branding, web and video production for businesses across Sri Lanka.",
-  address: { "@type": "PostalAddress", addressCountry: "LK", addressLocality: "Colombo" },
-  contactPoint: [{
-    "@type": "ContactPoint",
-    telephone: SITE.phoneIntl,
-    contactType: "customer service",
-    areaServed: "LK",
-    availableLanguage: ["en", "si", "ta"],
-  }],
-  sameAs: [SITE.whatsapp],
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+      "@id": `${SITE.url}/#organization`,
+      name: SITE.name,
+      alternateName: "advertisingsrilanka.lk",
+      url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}/og-home.jpg`,
+      },
+      image: `${SITE.url}/og-home.jpg`,
+      telephone: SITE.phoneIntl,
+      email: SITE.email,
+      priceRange: "$$",
+      description:
+        "Sri Lanka's #1 advertising hub — ATL, BTL, digital, SEO, social media, outdoor, branding, web and video production for businesses across Sri Lanka.",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Colombo",
+        addressLocality: "Colombo",
+        addressRegion: "Western Province",
+        postalCode: "00100",
+        addressCountry: "LK",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 6.9271,
+        longitude: 79.8612,
+      },
+      areaServed: [
+        { "@type": "Country", name: "Sri Lanka" },
+        { "@type": "City", name: "Colombo" },
+        { "@type": "City", name: "Kandy" },
+        { "@type": "City", name: "Galle" },
+        { "@type": "City", name: "Jaffna" },
+        { "@type": "City", name: "Negombo" },
+        { "@type": "City", name: "Kurunegala" },
+        { "@type": "City", name: "Anuradhapura" },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: SITE.phoneIntl,
+          contactType: "customer service",
+          areaServed: "LK",
+          availableLanguage: ["en", "si", "ta"],
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: SITE.phoneIntl,
+          contactType: "sales",
+          areaServed: "LK",
+          availableLanguage: ["en", "si", "ta"],
+        },
+      ],
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          opens: "09:00",
+          closes: "18:00",
+        },
+      ],
+      sameAs: [SITE.whatsapp],
+      knowsAbout: [
+        "Advertising in Sri Lanka",
+        "ATL Advertising",
+        "BTL Advertising",
+        "Digital Marketing",
+        "SEO",
+        "Social Media Marketing",
+        "Outdoor Advertising",
+        "Branding",
+        "Event Management",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      url: SITE.url,
+      name: SITE.name,
+      inLanguage: "en-LK",
+      publisher: { "@id": `${SITE.url}/#organization` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${SITE.url}/services?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
 };
 
 function NotFoundComponent() {

@@ -365,7 +365,7 @@ export function BlogArticleTemplate({
       <Hero
         kicker="Insights & Guides"
         h1={`${title}: Complete Guide`}
-        intro={`Everything Sri Lankan businesses need to know about ${keyword} — strategies, channels, costs to consider, common mistakes and how to choose the right partner.`}
+        intro={`Everything Sri Lankan businesses need to know about ${title} — strategies, channels, costs to consider, common mistakes and how to choose the right partner.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Blog" },
@@ -377,7 +377,7 @@ export function BlogArticleTemplate({
       </article>
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={`Still have questions about ${keyword}?`}
+          headline={`Still have questions about ${title}?`}
           sub={`Free phone & WhatsApp guidance — talk to a real Sri Lankan advertising specialist.`}
         />
       </div>
@@ -387,7 +387,7 @@ export function BlogArticleTemplate({
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {category.services.slice(0, 6).map((s) => (
             <Link key={s.slug} to={`/${s.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
-              <div className="font-semibold capitalize">{titleCase(s.keyword)}</div>
+              <div className="font-semibold">{titleCase(s.keyword)}</div>
               <div className="mt-1 text-xs text-muted-foreground">View service →</div>
             </Link>
           ))}

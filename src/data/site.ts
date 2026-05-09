@@ -18,6 +18,7 @@ export type Category = {
   title: string;
   short: string;
   intro: string;
+  icon?: string;
   services: ServicePage[];
   blog: BlogPage[];
 };

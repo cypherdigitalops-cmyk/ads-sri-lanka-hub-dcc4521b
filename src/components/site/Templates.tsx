@@ -157,8 +157,8 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
       ) : null}
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={`Get expert help with ${category.title.toLowerCase()} in Sri Lanka`}
-          sub="One call. Free strategy. Custom plan for your brand."
+          headline={`Have a question about ${category.title.toLowerCase()} in Sri Lanka?`}
+          sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
         />
       </div>
       <FAQ
@@ -239,7 +239,10 @@ export function ServicePageTemplate({
         </div>
       </section>
       <div className="mx-auto max-w-7xl px-4">
-        <CTASection headline={`Start your ${keyword} campaign today`} sub={`Free strategy call with our ${category.title.toLowerCase()} specialists.`} />
+        <CTASection
+          headline={`Want clear answers about ${keyword}?`}
+          sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
+        />
       </div>
       <FAQ
         items={[
@@ -309,7 +312,10 @@ export function BlogArticleTemplate({
         </p>
       </article>
       <div className="mx-auto max-w-7xl px-4">
-        <CTASection headline={`Need expert help with ${keyword}?`} sub="Free consultation with a senior strategist." />
+        <CTASection
+          headline={`Still have questions about ${keyword}?`}
+          sub={`Free phone & WhatsApp guidance — talk to a real Sri Lankan advertising specialist.`}
+        />
       </div>
       <section className="mx-auto max-w-7xl px-4 py-10">
         <h2 className="text-2xl font-bold">Explore related services</h2>

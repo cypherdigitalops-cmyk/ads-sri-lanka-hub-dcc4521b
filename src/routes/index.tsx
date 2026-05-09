@@ -366,7 +366,7 @@ function Index() {
         </div>
         <div className="mx-auto max-w-3xl px-4 py-20">
           <div className="text-center">
-            <div className="text-sm font-semibold uppercase tracking-wider text-accent">FAQ</div>
+            <div className="text-sm font-semibold text-accent">FAQ</div>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Common questions</h2>
           </div>
           <div className="mt-10 space-y-3">

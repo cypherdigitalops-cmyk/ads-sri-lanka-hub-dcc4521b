@@ -94,7 +94,7 @@ function GetQuote() {
         </form>
         <aside className="space-y-4">
           <div className="rounded-2xl border border-border bg-card p-6">
-            <div className="text-sm font-semibold uppercase tracking-wider text-accent">Faster?</div>
+            <div className="text-sm font-semibold text-accent">Faster?</div>
             <div className="mt-2 text-xl font-bold">Talk to us right now</div>
             <div className="mt-5 space-y-3">
               <a href={`tel:${SITE.phone}`} className="flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-5 py-3 font-semibold text-accent-foreground"><Phone className="h-4 w-4" /> Call {SITE.phone}</a>

@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { CATEGORIES, SITE } from "@/data/site";
+import { CATEGORIES, SITE, titleCase } from "@/data/site";
 
 export function SiteFooter() {
   return (
@@ -8,7 +8,9 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-4">
         <div>
           <div className="text-lg font-semibold">advertisingsrilanka<span className="text-accent">.lk</span></div>
-          <p className="mt-3 text-sm text-primary-foreground/75">{SITE.tagline}. ATL, BTL, digital, outdoor, branding, web and video — all under one roof.</p>
+          <p className="mt-3 text-sm text-primary-foreground/75">
+            Sri Lanka's information hub for every advertising solution — ATL, BTL, digital, SEO, social media, outdoor, branding, web &amp; video. Search, learn, then call us with your question.
+          </p>
           <div className="mt-5 space-y-2 text-sm">
             <a href={`tel:${SITE.phone}`} className="flex items-center gap-2 hover:text-accent"><Phone className="h-4 w-4" /> {SITE.phone}</a>
             <a href={SITE.whatsapp} target="_blank" rel="noopener" className="flex items-center gap-2 hover:text-accent"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
@@ -16,10 +18,15 @@ export function SiteFooter() {
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Colombo, Sri Lanka</div>
           </div>
         </div>
-        <div className="md:col-span-2 grid grid-cols-2 gap-6 text-sm">
-          {CATEGORIES.slice(0, 8).map((c) => (
-            <Link key={c.slug} to={`/${c.slug}` as never} className="hover:text-accent">{c.title}</Link>
-          ))}
+        <div className="md:col-span-2 text-sm">
+          <div className="font-semibold mb-3">Browse categories</div>
+          <div className="grid grid-cols-2 gap-2">
+            {CATEGORIES.map((c) => (
+              <Link key={c.slug} to={`/${c.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
+                {c.title}
+              </Link>
+            ))}
+          </div>
         </div>
         <div className="text-sm">
           <div className="font-semibold mb-3">Company</div>
@@ -34,9 +41,42 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
+
+      {/* Full sitemap: services + blog guides for crawlability */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="mx-auto max-w-7xl px-4 py-10">
+          <div className="mb-4 text-sm font-semibold text-accent uppercase tracking-wider">All services &amp; guides</div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {CATEGORIES.map((c) => (
+              <div key={c.slug}>
+                <Link to={`/${c.slug}` as never} className="text-sm font-semibold text-primary-foreground hover:text-accent">
+                  {c.title} →
+                </Link>
+                <ul className="mt-2 space-y-1 text-xs text-primary-foreground/70">
+                  {c.services.map((s) => (
+                    <li key={s.slug}>
+                      <Link to={`/${s.slug}` as never} className="hover:text-accent">
+                        {titleCase(s.keyword)}
+                      </Link>
+                    </li>
+                  ))}
+                  {c.blog.map((b) => (
+                    <li key={b.slug}>
+                      <Link to={`/blog/${b.slug}` as never} className="hover:text-accent">
+                        Guide: {titleCase(b.keyword)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-4 py-5 text-xs text-primary-foreground/70">
-          © {new Date().getFullYear()} {SITE.domain} — All rights reserved.
+          © {new Date().getFullYear()} {SITE.domain} — Information hub. Call {SITE.phone} for free advertising guidance.
         </div>
       </div>
     </footer>

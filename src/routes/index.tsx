@@ -11,9 +11,9 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising in Sri Lanka — Information Hub for Every Advertising Solution";
-const TITLE_OG = "Advertising in Sri Lanka — Find Every Advertising Solution";
-const DESC = "Information hub for advertising in Sri Lanka. Compare TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video — and find the right solution for your business. Free guidance: 0771437707.";
+const TITLE = "Advertising in Sri Lanka — Complete Guide to Every Advertising Option | advertisingsrilanka.lk";
+const TITLE_OG = "Advertising in Sri Lanka — Complete Guide to Every Option";
+const DESC = "The complete guide to advertising in Sri Lanka. Learn how TV, radio, billboards, Google Ads, social media, SEO, branding and video advertising work — and get free advice for your business. Call 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -93,13 +93,13 @@ function Index() {
         <div className="pointer-events-none absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:py-28">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent backdrop-blur">
-            <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's Advertising Information Hub
+            <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's #1 Advertising Information Hub
           </div>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Find every advertising solution available in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span>.
+            Advertising in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span> — Your Complete Guide to Every Option
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
-            Your one-stop guide to advertising in Sri Lanka — TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video. Explore options, compare channels and get free guidance for your next campaign.
+            Sri Lanka's #1 advertising information hub — learn how every advertising channel works, compare your options, and get free guidance for your next campaign.
           </p>
 
           {/* SEARCH */}

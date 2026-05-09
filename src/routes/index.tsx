@@ -11,7 +11,8 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 
 const TITLE = "Advertising Sri Lanka — #1 Advertising Agency for ATL, BTL, Digital, SEO & Outdoor";
-const DESC = "Every advertising solution Sri Lankan businesses need — TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video. Call 0771437707 for a free plan.";
+const TITLE_OG = "Advertising Sri Lanka — Find Every Advertising Solution in Sri Lanka";
+const DESC = "The information hub for advertising in Sri Lanka. Learn about TV, radio, press, billboards, Google Ads, social media, SEO, branding & video — and find the right solution for your business. Free guidance: 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -42,7 +43,7 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: SITE.url },
       { property: "og:image", content: SITE.url + "/og-home.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: TITLE },
+      { name: "twitter:title", content: TITLE_OG },
       { name: "twitter:description", content: DESC },
     ],
     links: [{ rel: "canonical", href: SITE.url + "/" }],

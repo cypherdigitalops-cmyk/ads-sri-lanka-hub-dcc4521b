@@ -10,9 +10,9 @@ import { CTASection } from "@/components/site/CTASection";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka — #1 Advertising Agency for ATL, BTL, Digital, SEO & Outdoor";
-const TITLE_OG = "Advertising Sri Lanka — Find Every Advertising Solution in Sri Lanka";
-const DESC = "The information hub for advertising in Sri Lanka. Learn about TV, radio, press, billboards, Google Ads, social media, SEO, branding & video — and find the right solution for your business. Free guidance: 0771437707.";
+const TITLE = "Advertising in Sri Lanka — Information Hub for Every Advertising Solution";
+const TITLE_OG = "Advertising in Sri Lanka — Find Every Advertising Solution";
+const DESC = "Information hub for advertising in Sri Lanka. Compare TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video — and find the right solution for your business. Free guidance: 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,

@@ -9,6 +9,27 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SITE } from "@/data/site";
+
+const ORG_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE.name,
+  url: SITE.url,
+  telephone: SITE.phoneIntl,
+  email: SITE.email,
+  description:
+    "Sri Lanka's #1 advertising hub — ATL, BTL, digital, SEO, social media, outdoor, branding, web and video production for businesses across Sri Lanka.",
+  address: { "@type": "PostalAddress", addressCountry: "LK", addressLocality: "Colombo" },
+  contactPoint: [{
+    "@type": "ContactPoint",
+    telephone: SITE.phoneIntl,
+    contactType: "customer service",
+    areaServed: "LK",
+    availableLanguage: ["en", "si", "ta"],
+  }],
+  sameAs: [SITE.whatsapp],
+};
 
 function NotFoundComponent() {
   return (
@@ -72,22 +93,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Sri Lanka Ads Hub is a comprehensive online advertising platform for Sri Lanka." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Sri Lanka Ads Hub is a comprehensive online advertising platform for Sri Lanka." },
+      { title: "Advertising Sri Lanka — #1 Advertising Agency in Sri Lanka" },
+      { name: "description", content: "Every advertising solution in one place — TV, radio, press, billboards, Google Ads, SEO, social media, branding, web & video. Call 0771437707." },
+      { name: "author", content: SITE.name },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { name: "theme-color", content: "#15224a" },
+      { property: "og:site_name", content: SITE.name },
+      { property: "og:locale", content: "en_LK" },
+      { property: "og:title", content: "Advertising Sri Lanka — #1 Advertising Agency" },
+      { property: "og:description", content: "Every advertising solution in one place. Call 0771437707 for a free strategy plan." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Sri Lanka Ads Hub is a comprehensive online advertising platform for Sri Lanka." },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Advertising Sri Lanka — #1 Advertising Agency" },
+      { name: "twitter:description", content: "Every advertising solution in one place. Call 0771437707." },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(ORG_JSONLD) },
     ],
   }),
   shellComponent: RootShell,

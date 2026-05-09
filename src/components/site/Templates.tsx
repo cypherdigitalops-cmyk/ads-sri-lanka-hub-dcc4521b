@@ -113,7 +113,7 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
       <div className="pointer-events-none absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-primary-glow/30 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-4 py-14 sm:py-20">
         <div className="text-primary-foreground/80"><Breadcrumbs items={crumbs} /></div>
-        <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-accent">
+        <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-medium text-accent">
           <Sparkles className="h-3.5 w-3.5" /> {kicker}
         </div>
         <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{h1}</h1>

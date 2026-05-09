@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GetQuoteRouteImport } from './routes/get-quote'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ const GetQuoteRoute = GetQuoteRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertisingRatesRoute = AdvertisingRatesRouteImport.update({
+  id: '/advertising-rates',
+  path: '/advertising-rates',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdvertisingPackagesRoute = AdvertisingPackagesRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
+  '/advertising-rates': typeof AdvertisingRatesRoute
   '/contact': typeof ContactRoute
   '/get-quote': typeof GetQuoteRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
+  '/advertising-rates': typeof AdvertisingRatesRoute
   '/contact': typeof ContactRoute
   '/get-quote': typeof GetQuoteRoute
 }
@@ -60,6 +68,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
+  '/advertising-rates': typeof AdvertisingRatesRoute
   '/contact': typeof ContactRoute
   '/get-quote': typeof GetQuoteRoute
 }
@@ -69,15 +78,23 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/advertising-packages'
+    | '/advertising-rates'
     | '/contact'
     | '/get-quote'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/advertising-packages' | '/contact' | '/get-quote'
+  to:
+    | '/'
+    | '/about'
+    | '/advertising-packages'
+    | '/advertising-rates'
+    | '/contact'
+    | '/get-quote'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/advertising-packages'
+    | '/advertising-rates'
     | '/contact'
     | '/get-quote'
   fileRoutesById: FileRoutesById
@@ -86,6 +103,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
+  AdvertisingRatesRoute: typeof AdvertisingRatesRoute
   ContactRoute: typeof ContactRoute
   GetQuoteRoute: typeof GetQuoteRoute
 }
@@ -104,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-rates': {
+      id: '/advertising-rates'
+      path: '/advertising-rates'
+      fullPath: '/advertising-rates'
+      preLoaderRoute: typeof AdvertisingRatesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/advertising-packages': {
@@ -134,6 +159,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
+  AdvertisingRatesRoute: AdvertisingRatesRoute,
   ContactRoute: ContactRoute,
   GetQuoteRoute: GetQuoteRoute,
 }

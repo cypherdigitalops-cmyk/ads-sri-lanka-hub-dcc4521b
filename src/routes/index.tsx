@@ -1,23 +1,49 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Award, BarChart3, Megaphone, Phone, Sparkles, Target, TrendingUp, Users } from "lucide-react";
+import { useMemo, useState } from "react";
+import {
+  ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
+  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, Phone, Quote,
+  Search, Share2, Sparkles, Star, Target, Tv, Users,
+} from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
-import { CATEGORIES, SITE } from "@/data/site";
+import { CATEGORIES, SITE, titleCase } from "@/data/site";
+import heroImg from "@/assets/hero-advertising.jpg";
 
 const TITLE = "Advertising Sri Lanka — #1 Advertising Agency for ATL, BTL, Digital, SEO & Outdoor";
-const DESC = "Advertising Sri Lanka is the all-in-one advertising hub for businesses in Sri Lanka. TV, radio, press, billboards, Google Ads, social media, SEO, branding & more. Call 0771437707.";
+const DESC = "Every advertising solution Sri Lankan businesses need — TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video. Call 0771437707 for a free plan.";
+
+const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
+  Palette, Monitor, Film,
+};
+
+const HOME_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  url: SITE.url,
+  name: SITE.name,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: SITE.url + "/services?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "advertising sri lanka, advertising agency sri lanka, atl, btl, digital marketing sri lanka, seo sri lanka, billboard advertising, tv advertising, radio advertising" },
+      { name: "keywords", content: "advertising sri lanka, advertising agency sri lanka, atl, btl, digital marketing sri lanka, seo sri lanka, billboard advertising, tv advertising, radio advertising, social media marketing sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { property: "og:url", content: SITE.url },
+      { property: "og:image", content: SITE.url + "/og-home.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESC },
     ],
     links: [{ rel: "canonical", href: SITE.url + "/" }],
   }),
@@ -25,80 +51,255 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [q, setQ] = useState("");
+  const allServices = useMemo(
+    () =>
+      CATEGORIES.flatMap((c) =>
+        c.services.map((s) => ({ ...s, category: c })),
+      ),
+    [],
+  );
+  const filtered = q
+    ? allServices.filter((s) => s.keyword.toLowerCase().includes(q.toLowerCase())).slice(0, 8)
+    : [];
+
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(HOME_JSONLD) }}
+      />
+
+      {/* HERO */}
       <section className="relative overflow-hidden bg-[image:var(--gradient-hero)] text-primary-foreground">
+        <img
+          src={heroImg}
+          alt="Advertising in Sri Lanka — billboards, digital ads and social media campaigns over Colombo skyline"
+          width={1920}
+          height={1080}
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+        />
         <div className="pointer-events-none absolute -right-32 top-10 h-96 w-96 rounded-full bg-accent/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:py-28">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-accent">
+          <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent backdrop-blur">
             <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's #1 Advertising Hub
           </div>
-          <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight sm:text-6xl">
-            Every advertising solution your business needs in <span className="text-accent">Sri Lanka</span>.
+          <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
+            Every advertising solution your brand needs in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span>.
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-primary-foreground/85">
-            ATL, BTL, digital, SEO, outdoor, branding, web and video — under one expert team. From Colombo to Jaffna, we get your brand seen, heard and remembered.
+          <p className="mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
+            ATL, BTL, digital, SEO, outdoor, branding, web & video — under one expert team. From Colombo to Jaffna, we get your brand seen, heard and remembered.
           </p>
+
+          {/* SEARCH */}
+          <div className="mt-8 max-w-2xl">
+            <div className="relative">
+              <Search className="pointer-events-none absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Search any advertising service... e.g. Google Ads, billboard, TV"
+                className="h-14 w-full rounded-full bg-background pl-14 pr-32 text-base text-foreground shadow-[var(--shadow-elegant)] outline-none ring-2 ring-transparent focus:ring-accent"
+                aria-label="Search advertising services"
+              />
+              <Link
+                to="/services"
+                className="absolute right-2 top-1/2 hidden -translate-y-1/2 items-center gap-1 rounded-full bg-[image:var(--gradient-accent)] px-5 py-2.5 text-sm font-semibold text-accent-foreground sm:inline-flex"
+              >
+                Browse all <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+            {filtered.length > 0 && (
+              <div className="mt-2 overflow-hidden rounded-2xl border border-border bg-background text-foreground shadow-[var(--shadow-elegant)]">
+                {filtered.map((s) => (
+                  <Link
+                    key={s.slug}
+                    to={`/${s.slug}` as never}
+                    className="flex items-center justify-between border-b border-border px-5 py-3 last:border-0 hover:bg-muted"
+                  >
+                    <div>
+                      <div className="text-sm font-semibold">{titleCase(s.keyword)}</div>
+                      <div className="text-xs text-muted-foreground">{s.category.title}</div>
+                    </div>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3.5 text-base font-semibold text-accent-foreground shadow-[var(--shadow-elegant)] transition hover:opacity-90">
+            <a
+              href={`tel:${SITE.phone}`}
+              className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3.5 text-base font-semibold text-accent-foreground shadow-[var(--shadow-elegant)] transition hover:opacity-90"
+            >
               <Phone className="h-5 w-5" /> Call {SITE.phone}
             </a>
-            <Link to="/get-quote" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20">
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-7 py-3.5 text-base font-semibold text-[var(--whatsapp-foreground)] transition hover:opacity-90"
+            >
+              <MessageCircle className="h-5 w-5" /> WhatsApp Us
+            </a>
+            <Link
+              to="/get-quote"
+              className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
+            >
               Get Free Quote <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
+
           <div className="mt-12 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
             {[
-              { n: "500+", l: "Campaigns" },
+              { n: "500+", l: "Campaigns delivered" },
               { n: "200+", l: "Brands served" },
-              { n: "11", l: "Service categories" },
+              { n: "180+", l: "Service pages" },
               { n: "25", l: "Districts covered" },
             ].map((s) => (
               <div key={s.l}>
-                <div className="text-2xl font-bold text-accent sm:text-3xl">{s.n}</div>
-                <div className="text-xs text-primary-foreground/70">{s.l}</div>
+                <div className="text-3xl font-bold text-accent sm:text-4xl">{s.n}</div>
+                <div className="mt-1 text-xs uppercase tracking-wider text-primary-foreground/70">{s.l}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-wider text-accent">Our services</div>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Advertising solutions for every brand</h2>
-          </div>
-        </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {CATEGORIES.map((c) => (
-            <Link key={c.slug} to={`/${c.slug}` as never} className="group rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)] transition hover:-translate-y-1 hover:border-primary/40">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-hero)] text-primary-foreground">
-                <Megaphone className="h-6 w-6" />
-              </div>
-              <div className="text-lg font-semibold">{c.title}</div>
-              <p className="mt-2 text-sm text-muted-foreground">{c.short}</p>
-              <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                Explore {c.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
-              </div>
-            </Link>
-          ))}
+      {/* TRUST BAR */}
+      <section className="border-y border-border bg-secondary/40">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 py-5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-accent" /> Trusted by SMEs &amp; enterprises</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Sinhala · Tamil · English</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Islandwide coverage</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Free strategy call</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Transparent reporting</span>
         </div>
       </section>
 
-      <section className="bg-secondary/40">
+      {/* CATEGORIES */}
+      <section className="mx-auto max-w-7xl px-4 py-20">
+        <div className="text-center">
+          <div className="text-sm font-semibold uppercase tracking-wider text-accent">Our services</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every advertising channel, one trusted partner</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Pick a category to explore solutions, or call us and we'll recommend the right mix for your goals and budget.
+          </p>
+        </div>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {CATEGORIES.map((c) => {
+            const Icon = ICONS[c.icon ?? "Megaphone"] ?? Megaphone;
+            return (
+              <Link
+                key={c.slug}
+                to={`/${c.slug}` as never}
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)] transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-[var(--shadow-elegant)]"
+              >
+                <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[image:var(--gradient-hero)] opacity-0 blur-2xl transition group-hover:opacity-30" />
+                <div className="relative">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-hero)] text-primary-foreground shadow-[var(--shadow-card)]">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <div className="text-lg font-semibold">{c.title}</div>
+                  <p className="mt-2 text-sm text-muted-foreground">{c.short}</p>
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {c.services.slice(0, 3).map((s) => (
+                      <span key={s.slug} className="rounded-full bg-secondary px-2.5 py-0.5 text-xs text-secondary-foreground">
+                        {titleCase(s.keyword).replace(" Sri Lanka", "")}
+                      </span>
+                    ))}
+                    {c.services.length > 3 && (
+                      <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-semibold text-accent-foreground">
+                        +{c.services.length - 3} more
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Explore {c.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* POPULAR SERVICES */}
+      <section className="bg-secondary/30">
         <div className="mx-auto max-w-7xl px-4 py-16">
-          <h2 className="text-3xl font-bold sm:text-4xl">Why advertisingsrilanka.lk?</h2>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-wider text-accent">Most requested</div>
+              <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Popular advertising services</h2>
+            </div>
+            <Link to="/services" className="text-sm font-semibold text-primary hover:underline">
+              View all 180+ services →
+            </Link>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-2">
             {[
-              { i: <Target className="h-5 w-5" />, t: "Strategy-led", d: "Every campaign starts with a clear goal and KPI." },
-              { i: <TrendingUp className="h-5 w-5" />, t: "Performance-focused", d: "Measurable ROI on every channel and rupee." },
-              { i: <Users className="h-5 w-5" />, t: "Local insight", d: "Sinhala, Tamil & English audiences understood deeply." },
-              { i: <Award className="h-5 w-5" />, t: "Full-service", d: "Strategy, creative, media, tech and reporting in one team." },
+              "google-ads-sri-lanka", "facebook-ads-sri-lanka", "tv-advertising-sri-lanka",
+              "billboard-advertising-sri-lanka", "seo-services-sri-lanka", "tiktok-ads-sri-lanka",
+              "instagram-ads-sri-lanka", "radio-advertising-sri-lanka", "youtube-ads-sri-lanka",
+              "newspaper-advertising-sri-lanka", "logo-design-sri-lanka", "web-design-sri-lanka",
+              "video-production-sri-lanka", "whatsapp-marketing-sri-lanka", "lead-generation-sri-lanka",
+              "led-screen-advertising-sri-lanka", "brand-activation-sri-lanka", "influencer-marketing-sri-lanka",
+            ].map((slug) => (
+              <Link
+                key={slug}
+                to={`/${slug}` as never}
+                className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium transition hover:border-primary hover:text-primary"
+              >
+                {titleCase(slug.replace(/-/g, " ")).replace(" Sri Lanka", "")}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY US */}
+      <section className="mx-auto max-w-7xl px-4 py-20">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <div className="text-sm font-semibold uppercase tracking-wider text-accent">Why advertisingsrilanka.lk</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">One team. Every channel. Real results.</h2>
+            <p className="mt-4 text-muted-foreground">
+              We're not just another agency. We're the advertising hub Sri Lankan businesses turn to when they need clear answers, fast execution and measurable growth.
+            </p>
+            <div className="mt-6 space-y-3">
+              {[
+                "Free strategy call — no obligation",
+                "Transparent pricing — no hidden costs",
+                "Dedicated account manager from day one",
+                "Weekly performance reports across all channels",
+                "Local-language creative (Sinhala, Tamil, English)",
+              ].map((t) => (
+                <div key={t} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-accent" />
+                  <span>{t}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground">
+                <Phone className="h-4 w-4" /> Call {SITE.phone}
+              </a>
+              <Link to="/get-quote" className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold hover:border-primary hover:text-primary">
+                Send Inquiry <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { i: <Target className="h-5 w-5" />, t: "Strategy-led", d: "Every campaign starts with clear goals & KPIs." },
+              { i: <BarChart3 className="h-5 w-5" />, t: "Performance-focused", d: "Measurable ROI on every channel & rupee." },
+              { i: <Users className="h-5 w-5" />, t: "Local insight", d: "Sinhala, Tamil & English audiences understood." },
+              { i: <Award className="h-5 w-5" />, t: "Full-service", d: "Strategy, creative, media, tech, reporting." },
             ].map((f) => (
-              <div key={f.t} className="rounded-xl bg-background p-6 shadow-[var(--shadow-card)]">
-                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-primary">{f.i}</div>
+              <div key={f.t} className="rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-card)]">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-hero)] text-primary-foreground">{f.i}</div>
                 <div className="font-semibold">{f.t}</div>
                 <p className="mt-2 text-sm text-muted-foreground">{f.d}</p>
               </div>
@@ -107,44 +308,123 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16">
-        <h2 className="text-3xl font-bold sm:text-4xl">How we work</h2>
-        <ol className="mt-10 grid gap-5 md:grid-cols-4">
-          {[
-            { t: "Brief", d: "Tell us your goals and audience." },
-            { t: "Plan", d: "We craft strategy, channels and creative." },
-            { t: "Launch", d: "Campaigns go live across selected media." },
-            { t: "Optimise", d: "We track, tune and scale weekly." },
-          ].map((s, i) => (
-            <li key={s.t} className="rounded-xl border border-border bg-card p-6">
-              <div className="text-sm font-mono text-accent">0{i + 1}</div>
-              <div className="mt-1 text-lg font-semibold">{s.t}</div>
-              <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
-            </li>
-          ))}
-        </ol>
+      {/* PROCESS */}
+      <section className="bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold uppercase tracking-wider text-accent">How we work</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">From brief to results in 4 simple steps</h2>
+          </div>
+          <ol className="mt-12 grid gap-5 md:grid-cols-4">
+            {[
+              { t: "Brief", d: "Share your goals, audience and budget." },
+              { t: "Plan", d: "We craft strategy, creative & channel mix." },
+              { t: "Launch", d: "Campaigns go live across selected media." },
+              { t: "Optimise", d: "We track, tune and scale every week." },
+            ].map((s, i) => (
+              <li key={s.t} className="relative rounded-xl border border-border bg-background p-6 shadow-[var(--shadow-card)]">
+                <div className="absolute -top-3 left-6 rounded-full bg-[image:var(--gradient-accent)] px-3 py-0.5 text-xs font-bold text-accent-foreground">
+                  STEP 0{i + 1}
+                </div>
+                <div className="mt-3 text-lg font-semibold">{s.t}</div>
+                <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
+      {/* TESTIMONIALS */}
+      <section className="mx-auto max-w-7xl px-4 py-20">
+        <div className="text-center">
+          <div className="text-sm font-semibold uppercase tracking-wider text-accent">What clients say</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Trusted by brands across Sri Lanka</h2>
+        </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {[
+            { q: "They handled our TV, billboard and Google Ads under one roof. ROI doubled in 4 months.", n: "Dilshan P.", r: "Director, Retail Brand" },
+            { q: "Best advertising team we've worked with in Colombo. Clear strategy, fast execution.", n: "Nimasha S.", r: "Marketing Manager" },
+            { q: "Our brand finally feels consistent across every touchpoint — print, digital and social.", n: "Ahmed R.", r: "CEO, B2B Services" },
+          ].map((t) => (
+            <figure key={t.n} className="rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)]">
+              <Quote className="h-6 w-6 text-accent" />
+              <blockquote className="mt-3 text-sm leading-relaxed">"{t.q}"</blockquote>
+              <figcaption className="mt-5 flex items-center gap-3">
+                <div className="grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-hero)] font-bold text-primary-foreground">
+                  {t.n[0]}
+                </div>
+                <div>
+                  <div className="text-sm font-semibold">{t.n}</div>
+                  <div className="text-xs text-muted-foreground">{t.r}</div>
+                </div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline="One call. Every advertising channel. One trusted partner."
-          sub={`Call ${SITE.phone} now or send a quick brief for a free strategy plan.`}
+          sub={`Call ${SITE.phone} now or send a quick brief — free strategy plan within 24 hours.`}
         />
       </div>
 
-      <section className="mx-auto max-w-7xl px-4 py-12">
-        <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-accent">
-          <BarChart3 className="h-4 w-4" /> Latest insights
+      {/* INSIGHTS */}
+      <section className="mx-auto max-w-7xl px-4 py-16">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-accent">
+              <BarChart3 className="h-4 w-4" /> Latest insights
+            </div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Advertising guides for Sri Lanka</h2>
+          </div>
+          <Link to="/services" className="text-sm font-semibold text-primary hover:underline">
+            See all guides →
+          </Link>
         </div>
-        <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Advertising guides for Sri Lanka</h2>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {CATEGORIES.flatMap((c) => c.blog.slice(0, 1).map((b) => ({ c, b }))).map(({ c, b }) => (
-            <Link key={b.slug} to={`/blog/${b.slug}` as never} className="rounded-lg border border-border bg-card p-5 hover:border-primary/40">
+            <Link
+              key={b.slug}
+              to={`/blog/${b.slug}` as never}
+              className="group rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40"
+            >
               <div className="text-xs font-semibold uppercase tracking-wider text-accent">{c.title}</div>
-              <div className="mt-2 font-semibold capitalize">{b.keyword}</div>
-              <div className="mt-3 text-xs text-muted-foreground">Read guide →</div>
+              <div className="mt-2 font-semibold">{titleCase(b.keyword)}</div>
+              <div className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+                Read guide <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" />
+              </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-secondary/30">
+        <div className="mx-auto max-w-3xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold uppercase tracking-wider text-accent">FAQ</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Common questions</h2>
+          </div>
+          <div className="mt-10 space-y-3">
+            {[
+              { q: "What advertising services do you offer?", a: "Everything — TV, radio, newspaper, magazine and cinema (ATL); brand activations, roadshows and retail branding (BTL); Google Ads, social media, SEO and email (digital); billboards, LED and transit (outdoor); plus branding, web design and video production. Browse all 180+ services on the services page." },
+              { q: "How do I get a quote?", a: `Call ${SITE.phone}, message us on WhatsApp, or fill out the inquiry form on our Get a Quote page. We respond within one business day with a custom plan.` },
+              { q: "Do you work with small businesses?", a: "Yes — from solo entrepreneurs to large enterprises. We tailor packages to every budget and goal." },
+              { q: "Where in Sri Lanka do you operate?", a: "All 25 districts — Colombo, Gampaha, Kandy, Galle, Jaffna, Kurunegala, Anuradhapura and beyond." },
+              { q: "How fast can a campaign go live?", a: "Digital campaigns typically launch within 3–7 days. ATL/outdoor campaigns within 2–3 weeks depending on inventory and creative." },
+            ].map((f) => (
+              <details key={f.q} className="group rounded-xl border border-border bg-background p-5">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold marker:hidden">
+                  {f.q}
+                  <span className="text-accent transition group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
     </PageShell>

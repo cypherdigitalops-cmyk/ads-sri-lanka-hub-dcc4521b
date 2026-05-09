@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
   Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, Phone, Quote,
-  Search, Share2, Sparkles, Star, Target, Tv, Users,
+  Search, Share2, Sparkles, Star, Tv, Users,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
@@ -11,7 +11,8 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 
 const TITLE = "Advertising Sri Lanka — #1 Advertising Agency for ATL, BTL, Digital, SEO & Outdoor";
-const DESC = "Every advertising solution Sri Lankan businesses need — TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video. Call 0771437707 for a free plan.";
+const TITLE_OG = "Advertising Sri Lanka — Find Every Advertising Solution in Sri Lanka";
+const DESC = "The information hub for advertising in Sri Lanka. Learn about TV, radio, press, billboards, Google Ads, social media, SEO, branding & video — and find the right solution for your business. Free guidance: 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -42,7 +43,7 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: SITE.url },
       { property: "og:image", content: SITE.url + "/og-home.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: TITLE },
+      { name: "twitter:title", content: TITLE_OG },
       { name: "twitter:description", content: DESC },
     ],
     links: [{ rel: "canonical", href: SITE.url + "/" }],
@@ -83,13 +84,13 @@ function Index() {
         <div className="pointer-events-none absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:py-28">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent backdrop-blur">
-            <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's #1 Advertising Hub
+            <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's Advertising Information Hub
           </div>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Every advertising solution your brand needs in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span>.
+            Find every advertising solution available in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
-            ATL, BTL, digital, SEO, outdoor, branding, web & video — under one expert team. From Colombo to Jaffna, we get your brand seen, heard and remembered.
+            Your one-stop guide to advertising in Sri Lanka — TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video. Explore options, compare channels and get free guidance for your next campaign.
           </p>
 
           {/* SEARCH */}
@@ -148,22 +149,8 @@ function Index() {
               to="/get-quote"
               className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
             >
-              Get Free Quote <ArrowRight className="h-5 w-5" />
+              Ask a Free Question <ArrowRight className="h-5 w-5" />
             </Link>
-          </div>
-
-          <div className="mt-12 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
-            {[
-              { n: "500+", l: "Campaigns delivered" },
-              { n: "200+", l: "Brands served" },
-              { n: "180+", l: "Service pages" },
-              { n: "25", l: "Districts covered" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="text-3xl font-bold text-accent sm:text-4xl">{s.n}</div>
-                <div className="mt-1 text-xs uppercase tracking-wider text-primary-foreground/70">{s.l}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -171,21 +158,21 @@ function Index() {
       {/* TRUST BAR */}
       <section className="border-y border-border bg-secondary/40">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 py-5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-accent" /> Trusted by SMEs &amp; enterprises</span>
+          <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-accent" /> Information hub — not just an agency</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Sinhala · Tamil · English</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Islandwide coverage</span>
-          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Free strategy call</span>
-          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Transparent reporting</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Free advice &amp; guidance</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> 180+ services explained</span>
         </div>
       </section>
 
       {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="text-center">
-          <div className="text-sm font-semibold uppercase tracking-wider text-accent">Our services</div>
-          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every advertising channel, one trusted partner</h2>
+          <div className="text-sm font-semibold uppercase tracking-wider text-accent">Explore by category</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every type of advertising in Sri Lanka — explained</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Pick a category to explore solutions, or call us and we'll recommend the right mix for your goals and budget.
+            Browse a category to learn how it works, where it fits and what to expect — or call {SITE.phone} for free guidance tailored to your business.
           </p>
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -217,7 +204,7 @@ function Index() {
                     )}
                   </div>
                   <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                    Explore {c.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                    Learn about {c.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
                   </div>
                 </div>
               </Link>
@@ -264,17 +251,17 @@ function Index() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
             <div className="text-sm font-semibold uppercase tracking-wider text-accent">Why advertisingsrilanka.lk</div>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">One team. Every channel. Real results.</h2>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">The easiest way to understand advertising in Sri Lanka</h2>
             <p className="mt-4 text-muted-foreground">
-              We're not just another agency. We're the advertising hub Sri Lankan businesses turn to when they need clear answers, fast execution and measurable growth.
+              We're an information hub — not an agency. Use this site to learn what's available, compare channels and decide what fits your business. When you're ready, we connect you with the right specialists.
             </p>
             <div className="mt-6 space-y-3">
               {[
-                "Free strategy call — no obligation",
-                "Transparent pricing — no hidden costs",
-                "Dedicated account manager from day one",
-                "Weekly performance reports across all channels",
-                "Local-language creative (Sinhala, Tamil, English)",
+                "Plain-English explanations of every advertising option",
+                "Compare ATL, BTL, digital, outdoor & more in one place",
+                "Free phone or WhatsApp guidance — no obligation",
+                "Local context: Sinhala, Tamil & English markets",
+                "Up-to-date guides for Sri Lankan businesses",
               ].map((t) => (
                 <div key={t} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-accent" />
@@ -284,19 +271,19 @@ function Index() {
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
               <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground">
-                <Phone className="h-4 w-4" /> Call {SITE.phone}
+                <Phone className="h-4 w-4" /> Ask {SITE.phone}
               </a>
               <Link to="/get-quote" className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold hover:border-primary hover:text-primary">
-                Send Inquiry <ArrowRight className="h-4 w-4" />
+                Send a Question <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { i: <Target className="h-5 w-5" />, t: "Strategy-led", d: "Every campaign starts with clear goals & KPIs." },
-              { i: <BarChart3 className="h-5 w-5" />, t: "Performance-focused", d: "Measurable ROI on every channel & rupee." },
-              { i: <Users className="h-5 w-5" />, t: "Local insight", d: "Sinhala, Tamil & English audiences understood." },
-              { i: <Award className="h-5 w-5" />, t: "Full-service", d: "Strategy, creative, media, tech, reporting." },
+              { i: <Search className="h-5 w-5" />, t: "Discover", d: "Learn what advertising channels exist in Sri Lanka." },
+              { i: <BarChart3 className="h-5 w-5" />, t: "Compare", d: "Understand strengths of each channel & approach." },
+              { i: <Users className="h-5 w-5" />, t: "Local insight", d: "Sinhala, Tamil & English market context." },
+              { i: <Award className="h-5 w-5" />, t: "Get help", d: "Free guidance — by phone, WhatsApp or email." },
             ].map((f) => (
               <div key={f.t} className="rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-card)]">
                 <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-hero)] text-primary-foreground">{f.i}</div>
@@ -305,32 +292,6 @@ function Index() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* PROCESS */}
-      <section className="bg-secondary/30">
-        <div className="mx-auto max-w-7xl px-4 py-20">
-          <div className="text-center">
-            <div className="text-sm font-semibold uppercase tracking-wider text-accent">How we work</div>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">From brief to results in 4 simple steps</h2>
-          </div>
-          <ol className="mt-12 grid gap-5 md:grid-cols-4">
-            {[
-              { t: "Brief", d: "Share your goals, audience and budget." },
-              { t: "Plan", d: "We craft strategy, creative & channel mix." },
-              { t: "Launch", d: "Campaigns go live across selected media." },
-              { t: "Optimise", d: "We track, tune and scale every week." },
-            ].map((s, i) => (
-              <li key={s.t} className="relative rounded-xl border border-border bg-background p-6 shadow-[var(--shadow-card)]">
-                <div className="absolute -top-3 left-6 rounded-full bg-[image:var(--gradient-accent)] px-3 py-0.5 text-xs font-bold text-accent-foreground">
-                  STEP 0{i + 1}
-                </div>
-                <div className="mt-3 text-lg font-semibold">{s.t}</div>
-                <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 

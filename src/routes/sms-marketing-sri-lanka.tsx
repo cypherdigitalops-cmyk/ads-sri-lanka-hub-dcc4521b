@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Sms Marketing SRI LANKA — Best Sms Marketing SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Sms Marketing Sri Lanka — Best Sms Marketing Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for sms marketing sri lanka? We deliver high-performance sms marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/sms-marketing-sri-lanka")({

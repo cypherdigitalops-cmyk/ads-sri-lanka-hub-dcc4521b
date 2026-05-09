@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Shop Branding SRI LANKA — Best Shop Branding SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Shop Branding Sri Lanka — Best Shop Branding Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for shop branding sri lanka? We deliver high-performance shop branding sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/shop-branding-sri-lanka")({

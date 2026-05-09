@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "UI UX Design SRI LANKA — Best UI UX Design SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "UI UX Design Sri Lanka — Best UI UX Design Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for ui ux design sri lanka? We deliver high-performance ui ux design sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/ui-ux-design-sri-lanka")({

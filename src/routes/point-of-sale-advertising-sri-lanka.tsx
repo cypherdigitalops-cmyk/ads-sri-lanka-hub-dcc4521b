@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Point Of Sale Advertising SRI LANKA — Best Point Of Sale Advertising SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Point Of Sale Advertising Sri Lanka — Best Point Of Sale Advertising Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for point of sale advertising sri lanka? We deliver high-performance point of sale advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/point-of-sale-advertising-sri-lanka")({

@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Brand Communication SRI LANKA — Best Brand Communication SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Brand Communication Sri Lanka — Best Brand Communication Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for brand communication sri lanka? We deliver high-performance brand communication sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/brand-communication-sri-lanka")({

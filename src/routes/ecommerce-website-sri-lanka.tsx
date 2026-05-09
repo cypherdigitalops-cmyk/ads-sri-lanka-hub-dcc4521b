@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Ecommerce Website SRI LANKA — Best Ecommerce Website SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Ecommerce Website Sri Lanka — Best Ecommerce Website Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for ecommerce website sri lanka? We deliver high-performance ecommerce website sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/ecommerce-website-sri-lanka")({

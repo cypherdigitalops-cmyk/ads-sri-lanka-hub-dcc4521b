@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Brand Identity SRI LANKA — Best Brand Identity SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Brand Identity Sri Lanka — Best Brand Identity Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for brand identity sri lanka? We deliver high-performance brand identity sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/brand-identity-sri-lanka")({

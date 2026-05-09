@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Youtube Marketing SRI LANKA — Best Youtube Marketing SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Youtube Marketing Sri Lanka — Best Youtube Marketing Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for youtube marketing sri lanka? We deliver high-performance youtube marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/youtube-marketing-sri-lanka")({

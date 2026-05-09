@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Content Creation SRI LANKA: Complete Guide for Sri Lankan Businesses";
+const TITLE = "Content Creation Sri Lanka: Complete Guide for Sri Lankan Businesses";
 const DESC = "Read our complete guide on content creation sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
 
 export const Route = createFileRoute("/blog/content-creation-sri-lanka")({

@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Website Maintenance SRI LANKA — Best Website Maintenance SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Website Maintenance Sri Lanka — Best Website Maintenance Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for website maintenance sri lanka? We deliver high-performance website maintenance sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/website-maintenance-sri-lanka")({

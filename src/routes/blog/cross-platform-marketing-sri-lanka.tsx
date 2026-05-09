@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Cross Platform Marketing SRI LANKA: Complete Guide for Sri Lankan Businesses";
+const TITLE = "Cross Platform Marketing Sri Lanka: Complete Guide for Sri Lankan Businesses";
 const DESC = "Read our complete guide on cross platform marketing sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
 
 export const Route = createFileRoute("/blog/cross-platform-marketing-sri-lanka")({

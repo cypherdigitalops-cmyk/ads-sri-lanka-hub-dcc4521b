@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Motion Graphics SRI LANKA — Best Motion Graphics SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Motion Graphics Sri Lanka — Best Motion Graphics Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for motion graphics sri lanka? We deliver high-performance motion graphics sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/motion-graphics-sri-lanka")({

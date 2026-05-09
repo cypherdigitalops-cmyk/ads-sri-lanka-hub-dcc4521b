@@ -4,7 +4,7 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Outdoor Advertising SRI LANKA — Outdoor Advertising Services in Sri Lanka | advertisingsrilanka.lk";
+const TITLE = "Outdoor Advertising Sri Lanka — Outdoor Advertising Services in Sri Lanka | advertisingsrilanka.lk";
 const DESC = "Dominate Sri Lanka's streets with high-impact outdoor advertising. We secure premium billboards, digital LEDs, transit, mobile and hoardings on Colombo's b";
 
 export const Route = createFileRoute("/outdoor-advertising-sri-lanka")({

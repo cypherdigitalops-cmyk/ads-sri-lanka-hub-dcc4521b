@@ -4,7 +4,7 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Web Design SRI LANKA — Web Design & Development Services in Sri Lanka | advertisingsrilanka.lk";
+const TITLE = "Web Design Sri Lanka — Web Design & Development Services in Sri Lanka | advertisingsrilanka.lk";
 const DESC = "Beautiful, fast, SEO-ready websites built to convert. From WordPress and e-commerce to bespoke landing pages and ongoing maintenance — engineered for the S";
 
 export const Route = createFileRoute("/web-design-sri-lanka")({

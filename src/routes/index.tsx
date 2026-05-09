@@ -92,7 +92,7 @@ function Index() {
         <div className="pointer-events-none absolute -right-32 top-10 h-96 w-96 rounded-full bg-accent/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:py-28">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent backdrop-blur">
+          <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold text-accent backdrop-blur">
             <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's #1 Advertising Information Hub
           </div>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
@@ -166,7 +166,7 @@ function Index() {
 
       {/* TRUST BAR */}
       <section className="border-y border-border bg-secondary/40">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 py-5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 py-5 text-xs font-semibold text-muted-foreground">
           <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-accent" /> Information hub — not just an agency</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Sinhala · Tamil · English</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Islandwide coverage</span>
@@ -178,7 +178,7 @@ function Index() {
       {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="text-center">
-          <div className="text-sm font-semibold uppercase tracking-wider text-accent">Explore by category</div>
+          <div className="text-sm font-semibold text-accent">Explore by category</div>
           <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every type of advertising in Sri Lanka — explained</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Browse a category to learn how it works, where it fits and what to expect — or call {SITE.phone} for free guidance tailored to your business.
@@ -227,7 +227,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-16">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wider text-accent">Most requested</div>
+              <div className="text-sm font-semibold text-accent">Most requested</div>
               <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Popular advertising services</h2>
             </div>
             <Link to="/services" className="text-sm font-semibold text-primary hover:underline">
@@ -259,7 +259,7 @@ function Index() {
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
-            <div className="text-sm font-semibold uppercase tracking-wider text-accent">Why advertisingsrilanka.lk</div>
+            <div className="text-sm font-semibold text-accent">Why advertisingsrilanka.lk</div>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">The easiest way to understand advertising in Sri Lanka</h2>
             <p className="mt-4 text-muted-foreground">
               We're an information hub — not an agency. Use this site to learn what's available, compare channels and decide what fits your business. When you're ready, we connect you with the right specialists.
@@ -317,7 +317,7 @@ function Index() {
       <section className="mx-auto max-w-7xl px-4 py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-accent">
+            <div className="flex items-center gap-2 text-sm font-semibold text-accent">
               <BarChart3 className="h-4 w-4" /> Latest insights
             </div>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Advertising guides for Sri Lanka</h2>
@@ -333,7 +333,7 @@ function Index() {
               to={`/blog/${b.slug}` as never}
               className="group rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40"
             >
-              <div className="text-xs font-semibold uppercase tracking-wider text-accent">{c.title}</div>
+              <div className="text-xs font-semibold text-accent">{c.title}</div>
               <div className="mt-2 font-semibold">{titleCase(b.keyword)}</div>
               <div className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
                 Read guide <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" />

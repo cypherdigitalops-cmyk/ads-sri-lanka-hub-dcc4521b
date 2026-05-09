@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { CATEGORIES, SITE, titleCase } from "@/data/site";
+import { CATEGORIES, SITE } from "@/data/site";
 
 export function SiteFooter() {
   return (
@@ -39,38 +39,6 @@ export function SiteFooter() {
             <li><Link to="/get-quote" className="hover:text-accent">Get a Quote</Link></li>
             <li><Link to="/contact" className="hover:text-accent">Contact</Link></li>
           </ul>
-        </div>
-      </div>
-
-      {/* Full sitemap: services + blog guides for crawlability */}
-      <div className="border-t border-primary-foreground/10">
-        <div className="mx-auto max-w-7xl px-4 py-10">
-          <div className="mb-4 text-sm font-semibold text-accent uppercase tracking-wider">All services &amp; guides</div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {CATEGORIES.map((c) => (
-              <div key={c.slug}>
-                <Link to={`/${c.slug}` as never} className="text-sm font-semibold text-primary-foreground hover:text-accent">
-                  {c.title} →
-                </Link>
-                <ul className="mt-2 space-y-1 text-xs text-primary-foreground/70">
-                  {c.services.map((s) => (
-                    <li key={s.slug}>
-                      <Link to={`/${s.slug}` as never} className="hover:text-accent">
-                        {titleCase(s.keyword)}
-                      </Link>
-                    </li>
-                  ))}
-                  {c.blog.map((b) => (
-                    <li key={b.slug}>
-                      <Link to={`/blog/${b.slug}` as never} className="hover:text-accent">
-                        Guide: {titleCase(b.keyword)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 

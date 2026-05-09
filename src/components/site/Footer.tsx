@@ -18,15 +18,33 @@ export function SiteFooter() {
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Colombo, Sri Lanka</div>
           </div>
         </div>
-        <div className="md:col-span-2 text-sm">
-          <div className="font-semibold mb-3">Browse categories</div>
-          <div className="grid grid-cols-2 gap-2">
+        <div className="text-sm">
+          <div className="font-semibold mb-3">Main services</div>
+          <ul className="space-y-2">
             {CATEGORIES.map((c) => (
-              <Link key={c.slug} to={`/${c.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
-                {c.title}
-              </Link>
+              <li key={c.slug}>
+                <Link to={`/${c.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
+                  {c.title}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
+        </div>
+        <div className="text-sm">
+          <div className="font-semibold mb-3">Blog guides</div>
+          <ul className="space-y-2">
+            {CATEGORIES.map((c) => {
+              const b = c.blog[0];
+              if (!b) return null;
+              return (
+                <li key={b.slug}>
+                  <Link to={`/blog/${b.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
+                    {c.title} guide
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <div className="text-sm">
           <div className="font-semibold mb-3">Company</div>

@@ -62,7 +62,7 @@ export function SiteFooter() {
 
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-4 py-5 text-xs text-primary-foreground/70">
-          © {new Date().getFullYear()} {SITE.domain} — Information hub. Call {SITE.phone} for free advertising guidance.
+          © 2025 {SITE.domain} — Information hub. Call {SITE.phone} for free advertising guidance.
         </div>
       </div>
     </footer>

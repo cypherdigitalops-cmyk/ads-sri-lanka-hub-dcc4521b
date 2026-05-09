@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GetQuoteRouteImport } from './routes/get-quote'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -22,6 +23,11 @@ const GetQuoteRoute = GetQuoteRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertisingPackagesRoute = AdvertisingPackagesRouteImport.update({
+  id: '/advertising-packages',
+  path: '/advertising-packages',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -38,12 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/advertising-packages': typeof AdvertisingPackagesRoute
   '/contact': typeof ContactRoute
   '/get-quote': typeof GetQuoteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/advertising-packages': typeof AdvertisingPackagesRoute
   '/contact': typeof ContactRoute
   '/get-quote': typeof GetQuoteRoute
 }
@@ -51,20 +59,33 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/advertising-packages': typeof AdvertisingPackagesRoute
   '/contact': typeof ContactRoute
   '/get-quote': typeof GetQuoteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact' | '/get-quote'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/advertising-packages'
+    | '/contact'
+    | '/get-quote'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/get-quote'
-  id: '__root__' | '/' | '/about' | '/contact' | '/get-quote'
+  to: '/' | '/about' | '/advertising-packages' | '/contact' | '/get-quote'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/advertising-packages'
+    | '/contact'
+    | '/get-quote'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   ContactRoute: typeof ContactRoute
   GetQuoteRoute: typeof GetQuoteRoute
 }
@@ -83,6 +104,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-packages': {
+      id: '/advertising-packages'
+      path: '/advertising-packages'
+      fullPath: '/advertising-packages'
+      preLoaderRoute: typeof AdvertisingPackagesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -105,6 +133,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   ContactRoute: ContactRoute,
   GetQuoteRoute: GetQuoteRoute,
 }

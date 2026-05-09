@@ -14,18 +14,21 @@ export function CTASection({ headline, sub }: { headline?: string; sub?: string 
         </p>
         <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
+            href={SITE.whatsapp}
+            target="_blank"
+            rel="noopener"
+            aria-label="Chat with us on WhatsApp"
+            className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-8 py-3.5 text-base font-bold text-[var(--whatsapp-foreground)] shadow-lg ring-2 ring-[var(--whatsapp)]/40 transition hover:scale-[1.03] hover:opacity-95"
+          >
+            <span className="absolute -inset-0.5 rounded-full bg-[var(--whatsapp)] opacity-50 blur-md transition group-hover:opacity-70" aria-hidden />
+            <MessageCircle className="relative h-5 w-5" />
+            <span className="relative">Chat on WhatsApp — reply in 5 min</span>
+          </a>
+          <a
             href={`tel:${SITE.phone}`}
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3 text-base font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90"
           >
             <Phone className="h-5 w-5" /> Call {SITE.phone}
-          </a>
-          <a
-            href={SITE.whatsapp}
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-7 py-3 text-base font-semibold text-[var(--whatsapp-foreground)] transition hover:opacity-90"
-          >
-            <MessageCircle className="h-5 w-5" /> WhatsApp
           </a>
           <Link
             to="/get-quote"
@@ -34,8 +37,38 @@ export function CTASection({ headline, sub }: { headline?: string; sub?: string 
             <Send className="h-5 w-5" /> Get Free Advertising Advice
           </Link>
         </div>
+        <p className="mt-4 text-xs text-primary-foreground/70">
+          Free consultation • No obligation • Mon–Sat 9am–7pm
+        </p>
       </div>
     </section>
+  );
+}
+
+/**
+ * Floating WhatsApp button — visible on every page, every device.
+ * Animated pulse ring draws the eye. Persistent label on desktop;
+ * compact circle on mobile (lifts above the StickyCallBar).
+ */
+export function FloatingWhatsApp() {
+  return (
+    <a
+      href={SITE.whatsapp}
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp — typically replies within 5 minutes"
+      className="group fixed right-4 z-50 inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-4 py-3 font-semibold text-[var(--whatsapp-foreground)] shadow-2xl transition hover:scale-105 sm:right-6 bottom-[70px] md:bottom-6"
+    >
+      <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[var(--whatsapp)] opacity-60" aria-hidden />
+      <span className="absolute inset-0 -z-10 rounded-full bg-[var(--whatsapp)] opacity-90" aria-hidden />
+      <MessageCircle className="relative h-6 w-6" />
+      <span className="relative hidden whitespace-nowrap text-sm sm:inline">
+        Chat on WhatsApp
+      </span>
+      <span className="relative hidden text-[10px] font-medium opacity-90 lg:inline">
+        · replies in 5 min
+      </span>
+    </a>
   );
 }
 

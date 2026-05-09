@@ -113,9 +113,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
     ],
-    scripts: [
-      { type: "application/ld+json", children: JSON.stringify(ORG_JSONLD) },
-    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -128,6 +125,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
+        />
       </head>
       <body>
         {children}

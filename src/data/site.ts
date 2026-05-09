@@ -344,15 +344,19 @@ export const CATEGORIES: Category[] = [
 ];
 
 export function titleCase(s: string) {
+  const ACRONYMS = new Set([
+    "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux",
+    "2d", "3d", "b2b", "sms", "led", "crm", "kpi", "roi", "cms", "faq", "cta",
+  ]);
   return s
     .split(" ")
-    .map((w) =>
-      ["sri", "lanka", "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux", "2d", "3d", "b2b"].includes(
-        w.toLowerCase(),
-      )
-        ? w.toUpperCase()
-        : w.charAt(0).toUpperCase() + w.slice(1),
-    )
+    .map((w) => {
+      const lo = w.toLowerCase();
+      if (ACRONYMS.has(lo)) return w.toUpperCase();
+      if (lo === "sri") return "Sri";
+      if (lo === "lanka") return "Lanka";
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    })
     .join(" ");
 }
 

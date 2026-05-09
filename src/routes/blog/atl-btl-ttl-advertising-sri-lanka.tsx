@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "ATL BTL TTL Advertising Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on atl btl ttl advertising sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Atl Btl Ttl Advertising Sri Lanka in 2026: Trends, Tactics & Real E...";
+const DESC = "Avoid the most common atl btl ttl advertising sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to f...";
 
 export const Route = createFileRoute("/blog/atl-btl-ttl-advertising-sri-lanka")({
   head: () => ({

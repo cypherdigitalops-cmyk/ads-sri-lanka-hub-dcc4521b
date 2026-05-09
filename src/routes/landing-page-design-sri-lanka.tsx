@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Landing Page Design Sri Lanka — Best Landing Page Design Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for landing page design sri lanka? We deliver high-performance landing page design sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Landing Page Design Sri Lanka Services — Get a Free Quote | adverti...";
+const DESC = "Get measurable results from landing page design sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free...";
 
 export const Route = createFileRoute("/landing-page-design-sri-lanka")({
   head: () => ({

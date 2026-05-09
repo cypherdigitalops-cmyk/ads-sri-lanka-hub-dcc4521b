@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "360 Advertising Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on 360 advertising sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "How 360 Advertising Sri Lanka Works in Sri Lanka — Strategy, Tips &...";
+const DESC = "Compare options, budgets and timelines for 360 advertising sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0771437707.";
 
 export const Route = createFileRoute("/blog/360-advertising-sri-lanka")({
   head: () => ({

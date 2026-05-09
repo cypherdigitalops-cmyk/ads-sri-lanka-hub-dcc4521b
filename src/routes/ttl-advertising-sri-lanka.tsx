@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "TTL Advertising Sri Lanka — TTL & Integrated Marketing Services in Sri Lanka | advertisingsrilanka.lk";
-const DESC = "Combine ATL reach with BTL precision through fully integrated 360° campaigns. We orchestrate consistent brand stories across TV, radio, digital, social, ou";
+const TITLE = "Sri Lanka's #1 Ttl Advertising Sri Lanka Hub — Plans, Pricing & Fre...";
+const DESC = "Through-the-line, 360° and omnichannel campaigns that connect every touchpoint. Compare options, get pricing and book a free consultation. Call 0771437707...";
 
 export const Route = createFileRoute("/ttl-advertising-sri-lanka")({
   head: () => ({

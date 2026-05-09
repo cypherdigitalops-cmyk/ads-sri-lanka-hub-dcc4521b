@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Bulk Email Sri Lanka — Best Bulk Email Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for bulk email sri lanka? We deliver high-performance bulk email sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Bulk Email Sri Lanka | Trusted Agency in Sri Lanka — advertisingsri...";
+const DESC = "Looking for bulk email sri lanka? Our Sri Lankan team plans, launches and optimises high-performing bulk email sri lanka campaigns with transparent reporti...";
 
 export const Route = createFileRoute("/bulk-email-sri-lanka")({
   head: () => ({

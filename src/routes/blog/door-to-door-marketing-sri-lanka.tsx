@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Door To Door Marketing Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on door to door marketing sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "What Is Door To Door Marketing Sri Lanka? A Practical Guide for Sri...";
+const DESC = "A practical, no-fluff guide to door to door marketing sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialis...";
 
 export const Route = createFileRoute("/blog/door-to-door-marketing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Radio Advertising Sri Lanka — Best Radio Advertising Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for radio advertising sri lanka? We deliver high-performance radio advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Radio Advertising Sri Lanka Services — Get a Free Quote | advertisi...";
+const DESC = "Get measurable results from radio advertising sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free q...";
 
 export const Route = createFileRoute("/radio-advertising-sri-lanka")({
   head: () => ({

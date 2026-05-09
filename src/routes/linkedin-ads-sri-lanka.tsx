@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Linkedin Ads Sri Lanka — Best Linkedin Ads Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for linkedin ads sri lanka? We deliver high-performance linkedin ads sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Top-Rated Linkedin Ads Sri Lanka Agency in Sri Lanka | advertisings...";
+const DESC = "Hire trusted specialists for linkedin ads sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min consultat...";
 
 export const Route = createFileRoute("/linkedin-ads-sri-lanka")({
   head: () => ({

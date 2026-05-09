@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Promotional Video Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on promotional video sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Beginner's Guide to Promotional Video Sri Lanka — From Strategy to...";
+const DESC = "An expert overview of promotional video sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
 
 export const Route = createFileRoute("/blog/promotional-video-sri-lanka")({
   head: () => ({

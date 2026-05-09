@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Marketing Materials Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on marketing materials sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "How Marketing Materials Sri Lanka Works in Sri Lanka — Strategy, Ti...";
+const DESC = "Compare options, budgets and timelines for marketing materials sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0771437...";
 
 export const Route = createFileRoute("/blog/marketing-materials-sri-lanka")({
   head: () => ({

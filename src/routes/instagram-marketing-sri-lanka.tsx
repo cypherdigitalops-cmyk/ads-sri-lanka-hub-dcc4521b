@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Instagram Marketing Sri Lanka — Best Instagram Marketing Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for instagram marketing sri lanka? We deliver high-performance instagram marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Instagram Marketing Sri Lanka Experts — Strategy, Creative & Media";
+const DESC = "Need instagram marketing sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice — Wh...";
 
 export const Route = createFileRoute("/instagram-marketing-sri-lanka")({
   head: () => ({

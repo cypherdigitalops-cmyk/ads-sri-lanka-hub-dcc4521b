@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Integrated Marketing Sri Lanka — Best Integrated Marketing Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for integrated marketing sri lanka? We deliver high-performance integrated marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Affordable Integrated Marketing Sri Lanka for Sri Lankan Brands — a...";
+const DESC = "Plan smarter integrated marketing sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team...";
 
 export const Route = createFileRoute("/integrated-marketing-sri-lanka")({
   head: () => ({

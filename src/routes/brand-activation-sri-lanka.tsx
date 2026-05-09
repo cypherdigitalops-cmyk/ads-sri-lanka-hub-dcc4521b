@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Brand Activation Sri Lanka — Best Brand Activation Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for brand activation sri lanka? We deliver high-performance brand activation sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Brand Activation Sri Lanka Services — Get a Free Quote | advertisin...";
+const DESC = "Get measurable results from brand activation sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free qu...";
 
 export const Route = createFileRoute("/brand-activation-sri-lanka")({
   head: () => ({

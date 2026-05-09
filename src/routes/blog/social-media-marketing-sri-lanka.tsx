@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Social Media Marketing Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on social media marketing sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Beginner's Guide to Social Media Marketing Sri Lanka — From Strateg...";
+const DESC = "An expert overview of social media marketing sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
 
 export const Route = createFileRoute("/blog/social-media-marketing-sri-lanka")({
   head: () => ({

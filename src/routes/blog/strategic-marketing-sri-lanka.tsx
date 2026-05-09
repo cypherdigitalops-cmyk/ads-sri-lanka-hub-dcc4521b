@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Strategic Marketing Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on strategic marketing sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Strategic Marketing Sri Lanka: Pricing, Best Practices & How to Cho...";
+const DESC = "Wondering if strategic marketing sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/strategic-marketing-sri-lanka")({
   head: () => ({

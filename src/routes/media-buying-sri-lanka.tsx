@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Media Buying Sri Lanka — Best Media Buying Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for media buying sri lanka? We deliver high-performance media buying sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Media Buying Sri Lanka Services — Get a Free Quote | advertisingsri...";
+const DESC = "Get measurable results from media buying sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free quote...";
 
 export const Route = createFileRoute("/media-buying-sri-lanka")({
   head: () => ({

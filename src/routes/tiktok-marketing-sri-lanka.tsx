@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Tiktok Marketing Sri Lanka — Best Tiktok Marketing Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for tiktok marketing sri lanka? We deliver high-performance tiktok marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Tiktok Marketing Sri Lanka Services — Get a Free Quote | advertisin...";
+const DESC = "Get measurable results from tiktok marketing sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free qu...";
 
 export const Route = createFileRoute("/tiktok-marketing-sri-lanka")({
   head: () => ({

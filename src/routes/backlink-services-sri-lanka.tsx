@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Backlink Services Sri Lanka — Best Backlink Services Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for backlink services sri lanka? We deliver high-performance backlink services sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Affordable Backlink Services Sri Lanka for Sri Lankan Brands — adve...";
+const DESC = "Plan smarter backlink services sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team. G...";
 
 export const Route = createFileRoute("/backlink-services-sri-lanka")({
   head: () => ({

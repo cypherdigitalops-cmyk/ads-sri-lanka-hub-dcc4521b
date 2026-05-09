@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Merchandising Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on merchandising sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "What Is Merchandising Sri Lanka? A Practical Guide for Sri Lanka";
+const DESC = "A practical, no-fluff guide to merchandising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on 077...";
 
 export const Route = createFileRoute("/blog/merchandising-sri-lanka")({
   head: () => ({

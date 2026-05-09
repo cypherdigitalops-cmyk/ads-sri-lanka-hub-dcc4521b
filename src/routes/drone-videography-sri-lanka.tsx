@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Drone Videography Sri Lanka — Best Drone Videography Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for drone videography sri lanka? We deliver high-performance drone videography sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Drone Videography Sri Lanka Experts — Strategy, Creative & Media";
+const DESC = "Need drone videography sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice — What...";
 
 export const Route = createFileRoute("/drone-videography-sri-lanka")({
   head: () => ({

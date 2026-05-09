@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Lead Generation Sri Lanka — Best Lead Generation Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for lead generation sri lanka? We deliver high-performance lead generation sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Lead Generation Sri Lanka That Drives Results — advertisingsrilanka.lk";
+const DESC = "From concept to campaign launch — full-service lead generation sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707...";
 
 export const Route = createFileRoute("/lead-generation-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Corporate Branding Sri Lanka — Best Corporate Branding Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for corporate branding sri lanka? We deliver high-performance corporate branding sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Corporate Branding Sri Lanka | Trusted Agency in Sri Lanka — advert...";
+const DESC = "Looking for corporate branding sri lanka? Our Sri Lankan team plans, launches and optimises high-performing corporate branding sri lanka campaigns with tra...";
 
 export const Route = createFileRoute("/corporate-branding-sri-lanka")({
   head: () => ({

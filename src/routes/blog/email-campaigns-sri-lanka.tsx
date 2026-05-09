@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Email Campaigns Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on email campaigns sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Email Campaigns Sri Lanka Explained — Costs, Channels & ROI in Sri...";
+const DESC = "Learn how email campaigns sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free advice...";
 
 export const Route = createFileRoute("/blog/email-campaigns-sri-lanka")({
   head: () => ({

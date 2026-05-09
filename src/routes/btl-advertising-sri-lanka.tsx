@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "BTL Advertising Sri Lanka — BTL Advertising Services in Sri Lanka | advertisingsrilanka.lk";
-const DESC = "Drive direct consumer engagement with high-impact BTL campaigns — brand activations, mall events, roadshows, sampling, retail branding and field marketing ";
+const TITLE = "Btl Advertising Sri Lanka Sri Lanka — Compare Services, Costs & Age...";
+const DESC = "Below-the-line activations, field marketing and on-ground promotions. Compare options, get pricing and book a free consultation. Call 0771437707 or WhatsAp...";
 
 export const Route = createFileRoute("/btl-advertising-sri-lanka")({
   head: () => ({

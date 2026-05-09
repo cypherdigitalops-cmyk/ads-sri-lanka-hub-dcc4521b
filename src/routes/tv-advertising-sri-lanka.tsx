@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "TV Advertising Sri Lanka — Best TV Advertising Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for tv advertising sri lanka? We deliver high-performance tv advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Affordable Tv Advertising Sri Lanka for Sri Lankan Brands — adverti...";
+const DESC = "Plan smarter tv advertising sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team. Get...";
 
 export const Route = createFileRoute("/tv-advertising-sri-lanka")({
   head: () => ({

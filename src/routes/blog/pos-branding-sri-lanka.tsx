@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "POS Branding Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on POS branding sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "POS Branding Sri Lanka: Pricing, Best Practices & How to Choose a P...";
+const DESC = "Wondering if POS branding sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/pos-branding-sri-lanka")({
   head: () => ({

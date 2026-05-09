@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "TV Commercials Sri Lanka — Best TV Commercials Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for tv commercials sri lanka? We deliver high-performance tv commercials sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Top-Rated Tv Commercials Sri Lanka Agency in Sri Lanka | advertisin...";
+const DESC = "Hire trusted specialists for tv commercials sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min consult...";
 
 export const Route = createFileRoute("/tv-commercials-sri-lanka")({
   head: () => ({

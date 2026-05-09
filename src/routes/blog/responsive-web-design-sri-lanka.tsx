@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Responsive Web Design Sri Lanka in 2026: Trends, Tactics & Real Exa...";
-const DESC = "Avoid the most common responsive web design sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to fin...";
+const TITLE = "Responsive Web Design Sri Lanka in 2026 — Trends & Tactics";
+const DESC = "Avoid the most common responsive web design sri lanka mistakes Sri Lankan brands make.";
 
 export const Route = createFileRoute("/blog/responsive-web-design-sri-lanka")({
   head: () => ({

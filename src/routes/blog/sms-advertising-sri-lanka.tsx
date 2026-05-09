@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "The Sri Lankan Brand's Playbook to Sms Advertising Sri Lanka";
+const TITLE = "The Sri Lankan Brand's Playbook to SMS Advertising Sri Lanka";
 const DESC = "From planning to launch — a complete walkthrough of sms advertising sri lanka for Sri Lankan businesses. Tools, tips and partner-selection checklist included.";
 
 export const Route = createFileRoute("/blog/sms-advertising-sri-lanka")({

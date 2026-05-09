@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Multi Channel Advertising Sri Lanka | Trusted Agency in Sri Lanka —...";
-const DESC = "Looking for multi channel advertising sri lanka? Our Sri Lankan team plans, launches and optimises high-performing multi channel advertising sri lanka camp...";
+const TITLE = "Multi Channel Advertising Sri Lanka — Trusted Sri Lankan Agency";
+const DESC = "Looking for multi channel advertising sri lanka? Our Sri Lankan team plans, launches and optimises high-performing multi channel advertising sri lanka";
 
 export const Route = createFileRoute("/multi-channel-advertising-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "What Is Web Design Sri Lanka? A Practical Guide for Sri Lanka";
-const DESC = "A practical, no-fluff guide to web design sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on 077143...";
+const TITLE = "What Is Web Design Sri Lanka? A Practical Sri Lankan Guide";
+const DESC = "A practical, no-fluff guide to web design sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/web-design-sri-lanka")({
   head: () => ({

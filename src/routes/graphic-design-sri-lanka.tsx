@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Best Graphic Design Sri Lanka in Sri Lanka (2026) — Call 0771437707";
-const DESC = "Affordable, ROI-focused graphic design sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end. Talk to us today...";
+const TITLE = "Best Graphic Design Sri Lanka Agency in Sri Lanka";
+const DESC = "Affordable, ROI-focused graphic design sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
 
 export const Route = createFileRoute("/graphic-design-sri-lanka")({
   head: () => ({

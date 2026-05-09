@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "3d Animation Sri Lanka That Drives Results — advertisingsrilanka.lk";
-const DESC = "From concept to campaign launch — full-service 3d animation sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 to...";
+const TITLE = "3D Animation Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service 3d animation sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
 
 export const Route = createFileRoute("/3d-animation-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Traditional Advertising Sri Lanka Explained — Costs, Channels & ROI...";
-const DESC = "Learn how traditional advertising sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free...";
+const TITLE = "Traditional Advertising Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how traditional advertising sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/traditional-advertising-sri-lanka")({
   head: () => ({

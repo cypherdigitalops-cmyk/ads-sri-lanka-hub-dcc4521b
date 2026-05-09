@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Landing Page Design Sri Lanka Services — Get a Free Quote | adverti...";
-const DESC = "Get measurable results from landing page design sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free...";
+const TITLE = "Landing Page Design Sri Lanka Services — Get a Free Quote Today";
+const DESC = "Get measurable results from landing page design sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
 
 export const Route = createFileRoute("/landing-page-design-sri-lanka")({
   head: () => ({

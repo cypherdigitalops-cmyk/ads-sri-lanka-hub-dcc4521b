@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Community Management Sri Lanka Explained — Costs, Channels & ROI in...";
-const DESC = "Learn how community management sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free ad...";
+const TITLE = "Community Management Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how community management sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/community-management-sri-lanka")({
   head: () => ({

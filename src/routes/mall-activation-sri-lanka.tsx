@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Mall Activation Sri Lanka Services — Get a Free Quote | advertising...";
-const DESC = "Get measurable results from mall activation sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free quo...";
+const TITLE = "Mall Activation Sri Lanka Services — Get a Free Quote Today";
+const DESC = "Get measurable results from mall activation sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
 
 export const Route = createFileRoute("/mall-activation-sri-lanka")({
   head: () => ({

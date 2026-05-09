@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Corporate Advertising Sri Lanka: Complete Guide for Sri Lankan Busi...";
-const DESC = "Everything Sri Lankan businesses should know about corporate advertising sri lanka — strategy, channels, costs, common mistakes and how to pick the right p...";
+const TITLE = "Corporate Advertising Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about corporate advertising sri lanka — strategy, channels, costs, common mistakes and how to pick the right";
 
 export const Route = createFileRoute("/blog/corporate-advertising-sri-lanka")({
   head: () => ({

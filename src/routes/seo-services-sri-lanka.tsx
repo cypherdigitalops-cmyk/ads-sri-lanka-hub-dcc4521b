@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Seo Services Sri Lanka in Sri Lanka — Complete Services Hub | adver...";
-const DESC = "Rank #1 on Google with proven on-page, off-page and technical SEO. Compare options, get pricing and book a free consultation. Call 0771437707 or WhatsApp a...";
+const TITLE = "SEO Services in Sri Lanka — Services Hub";
+const DESC = "Rank #1 on Google with proven on-page, off-page and technical SEO. Get pricing and free advice — call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/seo-services-sri-lanka")({
   head: () => ({

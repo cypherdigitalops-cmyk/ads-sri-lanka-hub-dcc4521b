@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "What Is Merchandising Sri Lanka? A Practical Guide for Sri Lanka";
-const DESC = "A practical, no-fluff guide to merchandising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on 077...";
+const TITLE = "What Is Merchandising Sri Lanka? A Practical Sri Lankan Guide";
+const DESC = "A practical, no-fluff guide to merchandising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/merchandising-sri-lanka")({
   head: () => ({

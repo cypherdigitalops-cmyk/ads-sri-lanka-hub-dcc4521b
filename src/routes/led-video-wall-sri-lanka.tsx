@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Led Video Wall Sri Lanka Experts — Strategy, Creative & Media";
-const DESC = "Need led video wall sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice — WhatsAp...";
+const TITLE = "LED Video Wall Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need led video wall sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/led-video-wall-sri-lanka")({
   head: () => ({

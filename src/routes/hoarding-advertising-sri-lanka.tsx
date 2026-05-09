@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Hoarding Advertising Sri Lanka Experts — Strategy, Creative & Media";
-const DESC = "Need hoarding advertising sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice — W...";
+const TITLE = "Hoarding Advertising Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need hoarding advertising sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/hoarding-advertising-sri-lanka")({
   head: () => ({

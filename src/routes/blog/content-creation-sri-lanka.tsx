@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "What Is Content Creation Sri Lanka? A Practical Guide for Sri Lanka";
-const DESC = "A practical, no-fluff guide to content creation sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on...";
+const TITLE = "What Is Content Creation Sri Lanka? A Practical Sri Lankan Guide";
+const DESC = "A practical, no-fluff guide to content creation sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/content-creation-sri-lanka")({
   head: () => ({

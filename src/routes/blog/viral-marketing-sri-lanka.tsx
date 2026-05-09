@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Viral Marketing Sri Lanka in 2026: Trends, Tactics & Real Examples...";
+const TITLE = "Viral Marketing Sri Lanka in 2026 — Trends & Tactics";
 const DESC = "Avoid the most common viral marketing sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to finish.";
 
 export const Route = createFileRoute("/blog/viral-marketing-sri-lanka")({

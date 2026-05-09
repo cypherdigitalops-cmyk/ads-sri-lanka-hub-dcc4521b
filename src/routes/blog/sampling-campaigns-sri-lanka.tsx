@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Sampling Campaigns Sri Lanka: Complete Guide for Sri Lankan Busines...";
-const DESC = "Everything Sri Lankan businesses should know about sampling campaigns sri lanka — strategy, channels, costs, common mistakes and how to pick the right part...";
+const TITLE = "Sampling Campaigns Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about sampling campaigns sri lanka — strategy, channels, costs, common mistakes and how to pick the right";
 
 export const Route = createFileRoute("/blog/sampling-campaigns-sri-lanka")({
   head: () => ({

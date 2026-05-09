@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Promotional Sms Sri Lanka: Pricing, Best Practices & How to Choose...";
+const TITLE = "Promotional SMS Sri Lanka — Pricing & Best Practices";
 const DESC = "Wondering if promotional sms sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/promotional-sms-sri-lanka")({

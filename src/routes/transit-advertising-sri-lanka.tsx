@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Affordable Transit Advertising Sri Lanka for Sri Lankan Brands — ad...";
-const DESC = "Plan smarter transit advertising sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team....";
+const TITLE = "Affordable Transit Advertising Sri Lanka for Sri Lankan Brands";
+const DESC = "Plan smarter transit advertising sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team.";
 
 export const Route = createFileRoute("/transit-advertising-sri-lanka")({
   head: () => ({

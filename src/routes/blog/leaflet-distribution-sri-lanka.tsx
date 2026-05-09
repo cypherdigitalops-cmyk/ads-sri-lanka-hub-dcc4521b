@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "How Leaflet Distribution Sri Lanka Works in Sri Lanka — Strategy, T...";
-const DESC = "Compare options, budgets and timelines for leaflet distribution sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 077143...";
+const TITLE = "How Leaflet Distribution Sri Lanka Works in Sri Lanka";
+const DESC = "Compare options, budgets and timelines for leaflet distribution sri lanka. We break down each step so you can plan with confidence.";
 
 export const Route = createFileRoute("/blog/leaflet-distribution-sri-lanka")({
   head: () => ({

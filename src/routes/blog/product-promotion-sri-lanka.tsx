@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Product Promotion Sri Lanka: Complete Guide for Sri Lankan Business...";
-const DESC = "Everything Sri Lankan businesses should know about product promotion sri lanka — strategy, channels, costs, common mistakes and how to pick the right partn...";
+const TITLE = "Product Promotion Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about product promotion sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner.";
 
 export const Route = createFileRoute("/blog/product-promotion-sri-lanka")({
   head: () => ({

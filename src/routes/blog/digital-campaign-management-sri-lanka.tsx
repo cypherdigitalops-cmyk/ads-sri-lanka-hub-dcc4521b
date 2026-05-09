@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Digital Campaign Management Sri Lanka: Pricing, Best Practices & Ho...";
-const DESC = "Wondering if digital campaign management sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation av...";
+const TITLE = "Digital Campaign Management Sri Lanka — Pricing & Best Practices";
+const DESC = "Wondering if digital campaign management sri lanka is right for your business? This guide explains pros, cons, costs and case studies.";
 
 export const Route = createFileRoute("/blog/digital-campaign-management-sri-lanka")({
   head: () => ({

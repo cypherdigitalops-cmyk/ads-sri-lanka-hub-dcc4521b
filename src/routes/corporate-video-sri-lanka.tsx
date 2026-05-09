@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Corporate Video Sri Lanka | Trusted Agency in Sri Lanka — advertisi...";
-const DESC = "Looking for corporate video sri lanka? Our Sri Lankan team plans, launches and optimises high-performing corporate video sri lanka campaigns with transpare...";
+const TITLE = "Corporate Video Sri Lanka — Trusted Sri Lankan Agency";
+const DESC = "Looking for corporate video sri lanka? Our Sri Lankan team plans, launches and optimises high-performing corporate video sri lanka campaigns with transparent";
 
 export const Route = createFileRoute("/corporate-video-sri-lanka")({
   head: () => ({

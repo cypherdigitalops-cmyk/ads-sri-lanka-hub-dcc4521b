@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Beginner's Guide to Social Media Marketing Sri Lanka — From Strateg...";
-const DESC = "An expert overview of social media marketing sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
+const TITLE = "Beginner's Guide to Social Media Marketing Sri Lanka";
+const DESC = "An expert overview of social media marketing sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/social-media-marketing-sri-lanka")({
   head: () => ({

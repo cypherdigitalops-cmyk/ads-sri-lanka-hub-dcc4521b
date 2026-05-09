@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Google Ranking Sri Lanka Explained — Costs, Channels & ROI in Sri L...";
-const DESC = "Learn how google ranking sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free advice o...";
+const TITLE = "Google Ranking Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how google ranking sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/google-ranking-sri-lanka")({
   head: () => ({

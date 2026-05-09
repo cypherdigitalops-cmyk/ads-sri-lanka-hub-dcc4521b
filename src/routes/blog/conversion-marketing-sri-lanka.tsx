@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Beginner's Guide to Conversion Marketing Sri Lanka — From Strategy...";
-const DESC = "An expert overview of conversion marketing sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
+const TITLE = "Beginner's Guide to Conversion Marketing Sri Lanka";
+const DESC = "An expert overview of conversion marketing sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/conversion-marketing-sri-lanka")({
   head: () => ({

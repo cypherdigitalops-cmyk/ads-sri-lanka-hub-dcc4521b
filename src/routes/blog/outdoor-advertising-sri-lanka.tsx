@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
 const TITLE = "The Sri Lankan Brand's Playbook to Outdoor Advertising Sri Lanka";
-const DESC = "From planning to launch — a complete walkthrough of outdoor advertising sri lanka for Sri Lankan businesses. Tools, tips and partner-selection checklist in...";
+const DESC = "From planning to launch — a complete walkthrough of outdoor advertising sri lanka for Sri Lankan businesses.";
 
 export const Route = createFileRoute("/blog/outdoor-advertising-sri-lanka")({
   head: () => ({

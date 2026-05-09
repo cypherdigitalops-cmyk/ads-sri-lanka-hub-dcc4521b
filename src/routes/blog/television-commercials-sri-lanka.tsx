@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Television Commercials Sri Lanka: Pricing, Best Practices & How to...";
+const TITLE = "Television Commercials Sri Lanka — Pricing & Best Practices";
 const DESC = "Wondering if television commercials sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/television-commercials-sri-lanka")({

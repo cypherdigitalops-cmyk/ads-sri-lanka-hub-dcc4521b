@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Creative Design Sri Lanka: Complete Guide for Sri Lankan Businesses...";
-const DESC = "Everything Sri Lankan businesses should know about creative design sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner...";
+const TITLE = "Creative Design Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about creative design sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner.";
 
 export const Route = createFileRoute("/blog/creative-design-sri-lanka")({
   head: () => ({

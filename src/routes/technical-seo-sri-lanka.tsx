@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Technical Seo Sri Lanka — Plan, Launch & Optimise with Experts";
-const DESC = "Discover how technical seo sri lanka can grow your Sri Lankan business. Compare options, costs and timelines with experts. Call 0771437707 for a free strat...";
+const TITLE = "Technical SEO Sri Lanka — Plan, Launch & Optimise";
+const DESC = "Discover how technical seo sri lanka can grow your Sri Lankan business. Compare options, costs and timelines with experts.";
 
 export const Route = createFileRoute("/technical-seo-sri-lanka")({
   head: () => ({

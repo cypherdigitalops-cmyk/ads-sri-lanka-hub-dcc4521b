@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Website Development Sri Lanka Experts — Strategy, Creative & Media";
-const DESC = "Need website development sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice — Wh...";
+const TITLE = "Website Development Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need website development sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/website-development-sri-lanka")({
   head: () => ({

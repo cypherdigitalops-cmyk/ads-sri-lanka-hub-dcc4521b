@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Beginner's Guide to Print Media Advertising Sri Lanka — From Strate...";
-const DESC = "An expert overview of print media advertising sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
+const TITLE = "Beginner's Guide to Print Media Advertising Sri Lanka";
+const DESC = "An expert overview of print media advertising sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/print-media-advertising-sri-lanka")({
   head: () => ({

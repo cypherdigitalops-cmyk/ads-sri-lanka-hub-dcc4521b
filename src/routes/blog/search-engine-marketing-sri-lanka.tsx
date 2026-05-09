@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Search Engine Marketing Sri Lanka Explained — Costs, Channels & ROI...";
-const DESC = "Learn how search engine marketing sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free...";
+const TITLE = "Search Engine Marketing Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how search engine marketing sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/search-engine-marketing-sri-lanka")({
   head: () => ({

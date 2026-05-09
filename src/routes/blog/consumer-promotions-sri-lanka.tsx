@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
 const TITLE = "The Sri Lankan Brand's Playbook to Consumer Promotions Sri Lanka";
-const DESC = "From planning to launch — a complete walkthrough of consumer promotions sri lanka for Sri Lankan businesses. Tools, tips and partner-selection checklist in...";
+const DESC = "From planning to launch — a complete walkthrough of consumer promotions sri lanka for Sri Lankan businesses.";
 
 export const Route = createFileRoute("/blog/consumer-promotions-sri-lanka")({
   head: () => ({

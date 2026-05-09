@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Affordable Youtube Ads Sri Lanka for Sri Lankan Brands — advertisin...";
-const DESC = "Plan smarter youtube ads sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team. Get a f...";
+const TITLE = "Affordable Youtube Ads Sri Lanka for Sri Lankan Brands";
+const DESC = "Plan smarter youtube ads sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team.";
 
 export const Route = createFileRoute("/youtube-ads-sri-lanka")({
   head: () => ({

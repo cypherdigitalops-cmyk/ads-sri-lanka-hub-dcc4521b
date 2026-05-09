@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Ecommerce Website Sri Lanka Services — Get a Free Quote | advertisi...";
-const DESC = "Get measurable results from ecommerce website sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team. Free q...";
+const TITLE = "Ecommerce Website Sri Lanka Services — Get a Free Quote Today";
+const DESC = "Get measurable results from ecommerce website sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
 
 export const Route = createFileRoute("/ecommerce-website-sri-lanka")({
   head: () => ({

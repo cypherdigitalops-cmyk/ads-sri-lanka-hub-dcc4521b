@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Below The Line Advertising Sri Lanka Explained — Costs, Channels &...";
-const DESC = "Learn how below the line advertising sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. F...";
+const TITLE = "Below The Line Advertising Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how below the line advertising sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/below-the-line-advertising-sri-lanka")({
   head: () => ({

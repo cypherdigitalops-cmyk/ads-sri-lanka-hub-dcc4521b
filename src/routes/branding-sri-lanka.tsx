@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Branding Sri Lanka Sri Lanka — Compare Services, Costs & Agencies";
-const DESC = "Brand identity, logo, packaging and creative design that stands out. Compare options, get pricing and book a free consultation. Call 0771437707 or WhatsApp...";
+const TITLE = "Branding Sri Lanka — Compare Services, Costs & Agencies";
+const DESC = "Brand identity, logo, packaging and creative design that stands out. Get pricing and free advice — call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/branding-sri-lanka")({
   head: () => ({

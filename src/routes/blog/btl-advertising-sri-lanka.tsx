@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Btl Advertising Sri Lanka: Pricing, Best Practices & How to Choose...";
+const TITLE = "BTL Advertising Sri Lanka — Pricing & Best Practices";
 const DESC = "Wondering if btl advertising sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/btl-advertising-sri-lanka")({

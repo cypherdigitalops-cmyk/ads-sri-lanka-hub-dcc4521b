@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Ground Activation Sri Lanka Explained — Costs, Channels & ROI in Sr...";
-const DESC = "Learn how ground activation sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free advic...";
+const TITLE = "Ground Activation Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how ground activation sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/ground-activation-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Omnichannel Marketing Sri Lanka | Trusted Agency in Sri Lanka — adv...";
-const DESC = "Looking for omnichannel marketing sri lanka? Our Sri Lankan team plans, launches and optimises high-performing omnichannel marketing sri lanka campaigns wi...";
+const TITLE = "Omnichannel Marketing Sri Lanka — Trusted Sri Lankan Agency";
+const DESC = "Looking for omnichannel marketing sri lanka? Our Sri Lankan team plans, launches and optimises high-performing omnichannel marketing sri lanka campaigns with";
 
 export const Route = createFileRoute("/omnichannel-marketing-sri-lanka")({
   head: () => ({

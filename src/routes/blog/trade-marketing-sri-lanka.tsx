@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "What Is Trade Marketing Sri Lanka? A Practical Guide for Sri Lanka";
-const DESC = "A practical, no-fluff guide to trade marketing sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on 0...";
+const TITLE = "What Is Trade Marketing Sri Lanka? A Practical Sri Lankan Guide";
+const DESC = "A practical, no-fluff guide to trade marketing sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/trade-marketing-sri-lanka")({
   head: () => ({

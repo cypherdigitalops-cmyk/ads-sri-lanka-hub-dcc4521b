@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Beginner's Guide to Email Advertising Sri Lanka — From Strategy to...";
-const DESC = "An expert overview of email advertising sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
+const TITLE = "Beginner's Guide to Email Advertising Sri Lanka";
+const DESC = "An expert overview of email advertising sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/email-advertising-sri-lanka")({
   head: () => ({

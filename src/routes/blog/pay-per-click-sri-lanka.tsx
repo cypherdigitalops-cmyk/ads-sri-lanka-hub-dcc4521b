@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "How Pay Per Click Sri Lanka Works in Sri Lanka — Strategy, Tips & M...";
+const TITLE = "How Pay Per Click Sri Lanka Works in Sri Lanka — Tips & Mistakes";
 const DESC = "Compare options, budgets and timelines for pay per click sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0771437707.";
 
 export const Route = createFileRoute("/blog/pay-per-click-sri-lanka")({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "What Is Through The Line Advertising Sri Lanka? A Practical Guide f...";
-const DESC = "A practical, no-fluff guide to through the line advertising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our spe...";
+const TITLE = "What Is Through The Line Advertising Sri Lanka? Sri Lanka Guide";
+const DESC = "A practical, no-fluff guide to through the line advertising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks.";
 
 export const Route = createFileRoute("/blog/through-the-line-advertising-sri-lanka")({
   head: () => ({

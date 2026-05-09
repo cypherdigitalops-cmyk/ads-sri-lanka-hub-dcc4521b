@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "How Led Display Advertising Sri Lanka Works in Sri Lanka — Strategy...";
-const DESC = "Compare options, budgets and timelines for led display advertising sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 077...";
+const TITLE = "How LED Display Advertising Sri Lanka Works in Sri Lanka";
+const DESC = "Compare options, budgets and timelines for led display advertising sri lanka. We break down each step so you can plan with confidence.";
 
 export const Route = createFileRoute("/blog/led-display-advertising-sri-lanka")({
   head: () => ({

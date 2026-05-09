@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "What Is Atl Advertising Sri Lanka? A Practical Guide for Sri Lanka";
-const DESC = "A practical, no-fluff guide to atl advertising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on 0...";
+const TITLE = "What Is ATL Advertising Sri Lanka? A Practical Sri Lankan Guide";
+const DESC = "A practical, no-fluff guide to atl advertising sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/atl-advertising-sri-lanka")({
   head: () => ({

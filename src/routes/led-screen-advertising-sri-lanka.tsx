@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Affordable Led Screen Advertising Sri Lanka for Sri Lankan Brands —...";
-const DESC = "Plan smarter led screen advertising sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one te...";
+const TITLE = "Affordable LED Screen Advertising Sri Lanka for Sri Lankan Brands";
+const DESC = "Plan smarter led screen advertising sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team.";
 
 export const Route = createFileRoute("/led-screen-advertising-sri-lanka")({
   head: () => ({

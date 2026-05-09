@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Whatsapp Advertising Sri Lanka in 2026: Trends, Tactics & Real Exam...";
+const TITLE = "Whatsapp Advertising Sri Lanka in 2026 — Trends & Tactics";
 const DESC = "Avoid the most common whatsapp advertising sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to finish.";
 
 export const Route = createFileRoute("/blog/whatsapp-advertising-sri-lanka")({

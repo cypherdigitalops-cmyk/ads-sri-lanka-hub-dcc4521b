@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Top-Rated Mobile Billboard Sri Lanka Agency in Sri Lanka | advertis...";
-const DESC = "Hire trusted specialists for mobile billboard sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min consu...";
+const TITLE = "Top-Rated Mobile Billboard Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for mobile billboard sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/mobile-billboard-sri-lanka")({
   head: () => ({

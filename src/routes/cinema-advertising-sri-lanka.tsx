@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Top-Rated Cinema Advertising Sri Lanka Agency in Sri Lanka | advert...";
-const DESC = "Hire trusted specialists for cinema advertising sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min con...";
+const TITLE = "Top-Rated Cinema Advertising Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for cinema advertising sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/cinema-advertising-sri-lanka")({
   head: () => ({

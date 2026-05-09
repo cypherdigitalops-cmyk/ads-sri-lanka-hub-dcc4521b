@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Seo Sri Lanka: Pricing, Best Practices & How to Choose a Partner";
+const TITLE = "SEO Sri Lanka — Pricing, Best Practices & How to Pick a Partner";
 const DESC = "Wondering if seo sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/seo-sri-lanka")({

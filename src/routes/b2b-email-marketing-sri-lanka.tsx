@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "B2b Email Marketing Sri Lanka That Drives Results — advertisingsril...";
-const DESC = "From concept to campaign launch — full-service b2b email marketing sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 077143...";
+const TITLE = "B2B Email Marketing Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service b2b email marketing sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
 
 export const Route = createFileRoute("/b2b-email-marketing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Sign Board Advertising Sri Lanka: Complete Guide for Sri Lankan Bus...";
-const DESC = "Everything Sri Lankan businesses should know about sign board advertising sri lanka — strategy, channels, costs, common mistakes and how to pick the right...";
+const TITLE = "Sign Board Advertising Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about sign board advertising sri lanka — strategy, channels, costs, common mistakes and how to pick the right";
 
 export const Route = createFileRoute("/blog/sign-board-advertising-sri-lanka")({
   head: () => ({

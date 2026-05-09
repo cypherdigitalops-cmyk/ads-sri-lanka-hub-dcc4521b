@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Best Programmatic Advertising Sri Lanka in Sri Lanka (2026) — Call...";
-const DESC = "Affordable, ROI-focused programmatic advertising sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end. Talk t...";
+const TITLE = "Best Programmatic Advertising Sri Lanka Agency in Sri Lanka";
+const DESC = "Affordable, ROI-focused programmatic advertising sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
 
 export const Route = createFileRoute("/programmatic-advertising-sri-lanka")({
   head: () => ({

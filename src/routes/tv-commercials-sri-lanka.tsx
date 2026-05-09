@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Top-Rated Tv Commercials Sri Lanka Agency in Sri Lanka | advertisin...";
-const DESC = "Hire trusted specialists for tv commercials sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min consult...";
+const TITLE = "Top-Rated TV Commercials Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for tv commercials sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/tv-commercials-sri-lanka")({
   head: () => ({

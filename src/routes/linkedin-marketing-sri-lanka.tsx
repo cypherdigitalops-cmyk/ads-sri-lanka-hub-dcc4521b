@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Best Linkedin Marketing Sri Lanka in Sri Lanka (2026) — Call 077143...";
-const DESC = "Affordable, ROI-focused linkedin marketing sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end. Talk to us t...";
+const TITLE = "Best Linkedin Marketing Sri Lanka Agency in Sri Lanka";
+const DESC = "Affordable, ROI-focused linkedin marketing sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
 
 export const Route = createFileRoute("/linkedin-marketing-sri-lanka")({
   head: () => ({

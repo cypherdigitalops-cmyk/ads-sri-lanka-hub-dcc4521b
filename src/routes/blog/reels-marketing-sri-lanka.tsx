@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Reels Marketing Sri Lanka: Complete Guide for Sri Lankan Businesses...";
-const DESC = "Everything Sri Lankan businesses should know about reels marketing sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner...";
+const TITLE = "Reels Marketing Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about reels marketing sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner.";
 
 export const Route = createFileRoute("/blog/reels-marketing-sri-lanka")({
   head: () => ({

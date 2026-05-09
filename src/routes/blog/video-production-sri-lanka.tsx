@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Video Production Sri Lanka Explained — Costs, Channels & ROI in Sri...";
-const DESC = "Learn how video production sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free advice...";
+const TITLE = "Video Production Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how video production sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/video-production-sri-lanka")({
   head: () => ({

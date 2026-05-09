@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Top-Rated Display Advertising Sri Lanka Agency in Sri Lanka | adver...";
-const DESC = "Hire trusted specialists for display advertising sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min co...";
+const TITLE = "Top-Rated Display Advertising Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for display advertising sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/display-advertising-sri-lanka")({
   head: () => ({

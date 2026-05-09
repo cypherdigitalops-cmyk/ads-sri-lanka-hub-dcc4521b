@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Instagram Ads Sri Lanka — Plan, Launch & Optimise with Experts";
-const DESC = "Discover how instagram ads sri lanka can grow your Sri Lankan business. Compare options, costs and timelines with experts. Call 0771437707 for a free strat...";
+const TITLE = "Instagram Ads Sri Lanka — Plan, Launch & Optimise";
+const DESC = "Discover how instagram ads sri lanka can grow your Sri Lankan business. Compare options, costs and timelines with experts.";
 
 export const Route = createFileRoute("/instagram-ads-sri-lanka")({
   head: () => ({

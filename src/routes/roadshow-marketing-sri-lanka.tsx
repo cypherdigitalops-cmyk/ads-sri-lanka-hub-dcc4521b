@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Best Roadshow Marketing Sri Lanka in Sri Lanka (2026) — Call 077143...";
-const DESC = "Affordable, ROI-focused roadshow marketing sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end. Talk to us t...";
+const TITLE = "Best Roadshow Marketing Sri Lanka Agency in Sri Lanka";
+const DESC = "Affordable, ROI-focused roadshow marketing sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
 
 export const Route = createFileRoute("/roadshow-marketing-sri-lanka")({
   head: () => ({

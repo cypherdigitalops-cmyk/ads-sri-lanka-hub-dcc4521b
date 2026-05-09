@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "What Is Off Page Seo Sri Lanka? A Practical Guide for Sri Lanka";
-const DESC = "A practical, no-fluff guide to off page seo sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists on 0771...";
+const TITLE = "What Is Off Page SEO Sri Lanka? A Practical Sri Lankan Guide";
+const DESC = "A practical, no-fluff guide to off page seo sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/off-page-seo-sri-lanka")({
   head: () => ({

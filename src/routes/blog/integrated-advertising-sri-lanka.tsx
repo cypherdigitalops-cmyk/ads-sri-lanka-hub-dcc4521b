@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Integrated Advertising Sri Lanka: Complete Guide for Sri Lankan Bus...";
-const DESC = "Everything Sri Lankan businesses should know about integrated advertising sri lanka — strategy, channels, costs, common mistakes and how to pick the right...";
+const TITLE = "Integrated Advertising Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about integrated advertising sri lanka — strategy, channels, costs, common mistakes and how to pick the right";
 
 export const Route = createFileRoute("/blog/integrated-advertising-sri-lanka")({
   head: () => ({

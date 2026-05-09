@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Lead Generation Sri Lanka That Drives Results — advertisingsrilanka.lk";
-const DESC = "From concept to campaign launch — full-service lead generation sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707...";
+const TITLE = "Lead Generation Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service lead generation sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
 
 export const Route = createFileRoute("/lead-generation-sri-lanka")({
   head: () => ({

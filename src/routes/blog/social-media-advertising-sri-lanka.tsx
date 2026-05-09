@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Social Media Advertising Sri Lanka Explained — Costs, Channels & RO...";
-const DESC = "Learn how social media advertising sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Fre...";
+const TITLE = "Social Media Advertising Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how social media advertising sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/social-media-advertising-sri-lanka")({
   head: () => ({

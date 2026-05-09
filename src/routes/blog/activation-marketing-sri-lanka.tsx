@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "What Is Activation Marketing Sri Lanka? A Practical Guide for Sri L...";
-const DESC = "A practical, no-fluff guide to activation marketing sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists...";
+const TITLE = "What Is Activation Marketing Sri Lanka? Sri Lanka Guide";
+const DESC = "A practical, no-fluff guide to activation marketing sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/activation-marketing-sri-lanka")({
   head: () => ({

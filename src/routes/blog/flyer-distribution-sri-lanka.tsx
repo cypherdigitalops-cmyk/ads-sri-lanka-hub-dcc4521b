@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Beginner's Guide to Flyer Distribution Sri Lanka — From Strategy to...";
-const DESC = "An expert overview of flyer distribution sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
+const TITLE = "Beginner's Guide to Flyer Distribution Sri Lanka";
+const DESC = "An expert overview of flyer distribution sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/flyer-distribution-sri-lanka")({
   head: () => ({

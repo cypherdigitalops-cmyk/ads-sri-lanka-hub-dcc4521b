@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Btl Advertising Sri Lanka Sri Lanka — Compare Services, Costs & Age...";
-const DESC = "Below-the-line activations, field marketing and on-ground promotions. Compare options, get pricing and book a free consultation. Call 0771437707 or WhatsAp...";
+const TITLE = "BTL Advertising Sri Lanka — Compare Services, Costs & Agencies";
+const DESC = "Below-the-line activations, field marketing and on-ground promotions. Get pricing and free advice — call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/btl-advertising-sri-lanka")({
   head: () => ({

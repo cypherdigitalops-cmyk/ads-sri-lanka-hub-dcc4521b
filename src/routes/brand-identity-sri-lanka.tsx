@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Affordable Brand Identity Sri Lanka for Sri Lankan Brands — adverti...";
-const DESC = "Plan smarter brand identity sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team. Get...";
+const TITLE = "Affordable Brand Identity Sri Lanka for Sri Lankan Brands";
+const DESC = "Plan smarter brand identity sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team.";
 
 export const Route = createFileRoute("/brand-identity-sri-lanka")({
   head: () => ({

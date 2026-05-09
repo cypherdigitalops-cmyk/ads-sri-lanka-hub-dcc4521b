@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Newspaper Advertising Sri Lanka Experts — Strategy, Creative & Media";
-const DESC = "Need newspaper advertising sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice —...";
+const TITLE = "Newspaper Advertising Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need newspaper advertising sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/newspaper-advertising-sri-lanka")({
   head: () => ({

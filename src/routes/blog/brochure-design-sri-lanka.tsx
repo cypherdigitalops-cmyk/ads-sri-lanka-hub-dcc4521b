@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Beginner's Guide to Brochure Design Sri Lanka — From Strategy to La...";
-const DESC = "An expert overview of brochure design sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results. Read now.";
+const TITLE = "Beginner's Guide to Brochure Design Sri Lanka";
+const DESC = "An expert overview of brochure design sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/brochure-design-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Brand Awareness Campaigns Sri Lanka in 2026: Trends, Tactics & Real...";
-const DESC = "Avoid the most common brand awareness campaigns sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to...";
+const TITLE = "Brand Awareness Campaigns Sri Lanka in 2026 — Trends & Tactics";
+const DESC = "Avoid the most common brand awareness campaigns sri lanka mistakes Sri Lankan brands make.";
 
 export const Route = createFileRoute("/blog/brand-awareness-campaigns-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Facebook Marketing Sri Lanka Experts — Strategy, Creative & Media";
-const DESC = "Need facebook marketing sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales. Free advice — Wha...";
+const TITLE = "Facebook Marketing Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need facebook marketing sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/facebook-marketing-sri-lanka")({
   head: () => ({

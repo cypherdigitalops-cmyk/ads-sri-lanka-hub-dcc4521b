@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Digital Marketing Sri Lanka: Pricing, Best Practices & How to Choos...";
+const TITLE = "Digital Marketing Sri Lanka — Pricing & Best Practices";
 const DESC = "Wondering if digital marketing sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
 
 export const Route = createFileRoute("/blog/digital-marketing-sri-lanka")({

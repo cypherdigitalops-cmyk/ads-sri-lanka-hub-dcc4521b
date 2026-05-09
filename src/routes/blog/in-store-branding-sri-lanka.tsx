@@ -4,7 +4,7 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "In Store Branding Sri Lanka in 2026: Trends, Tactics & Real Example...";
+const TITLE = "In Store Branding Sri Lanka in 2026 — Trends & Tactics";
 const DESC = "Avoid the most common in store branding sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to finish.";
 
 export const Route = createFileRoute("/blog/in-store-branding-sri-lanka")({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Neon Signs Sri Lanka: Complete Guide for Sri Lankan Businesses (2026)";
-const DESC = "Everything Sri Lankan businesses should know about neon signs sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner. Rea...";
+const TITLE = "Neon Signs Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about neon signs sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner.";
 
 export const Route = createFileRoute("/blog/neon-signs-sri-lanka")({
   head: () => ({

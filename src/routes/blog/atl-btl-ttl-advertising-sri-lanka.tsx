@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Atl Btl Ttl Advertising Sri Lanka in 2026: Trends, Tactics & Real E...";
-const DESC = "Avoid the most common atl btl ttl advertising sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to f...";
+const TITLE = "ATL BTL TTL Advertising Sri Lanka in 2026 — Trends & Tactics";
+const DESC = "Avoid the most common atl btl ttl advertising sri lanka mistakes Sri Lankan brands make.";
 
 export const Route = createFileRoute("/blog/atl-btl-ttl-advertising-sri-lanka")({
   head: () => ({

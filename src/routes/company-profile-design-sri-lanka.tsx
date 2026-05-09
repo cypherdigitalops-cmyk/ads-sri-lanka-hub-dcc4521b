@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Top-Rated Company Profile Design Sri Lanka Agency in Sri Lanka | ad...";
-const DESC = "Hire trusted specialists for company profile design sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation. Free 15-min...";
+const TITLE = "Top-Rated Company Profile Design Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for company profile design sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/company-profile-design-sri-lanka")({
   head: () => ({

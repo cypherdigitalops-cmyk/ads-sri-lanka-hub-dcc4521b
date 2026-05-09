@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Retargeting Sri Lanka Explained — Costs, Channels & ROI in Sri Lanka";
-const DESC = "Learn how retargeting sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting. Free advice on 0...";
+const TITLE = "Retargeting Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how retargeting sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/retargeting-sri-lanka")({
   head: () => ({

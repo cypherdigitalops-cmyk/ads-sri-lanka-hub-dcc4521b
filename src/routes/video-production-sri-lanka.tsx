@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Video Production Sri Lanka Sri Lanka — Compare Services, Costs & Ag...";
-const DESC = "TVCs, corporate films, animation and drone videography. Compare options, get pricing and book a free consultation. Call 0771437707 or WhatsApp anytime.";
+const TITLE = "Video Production Sri Lanka — Compare Services, Costs & Agencies";
+const DESC = "TVCs, corporate films, animation and drone videography. Get pricing and free advice — call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/video-production-sri-lanka")({
   head: () => ({

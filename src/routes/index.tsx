@@ -84,13 +84,13 @@ function Index() {
         <div className="pointer-events-none absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:py-28">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent backdrop-blur">
-            <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's #1 Advertising Hub
+            <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's Advertising Information Hub
           </div>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Every advertising solution your brand needs in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span>.
+            Find every advertising solution available in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
-            ATL, BTL, digital, SEO, outdoor, branding, web & video — under one expert team. From Colombo to Jaffna, we get your brand seen, heard and remembered.
+            Your one-stop guide to advertising in Sri Lanka — TV, radio, press, billboards, Google Ads, social media, SEO, branding, web & video. Explore options, compare channels and get free guidance for your next campaign.
           </p>
 
           {/* SEARCH */}
@@ -149,22 +149,8 @@ function Index() {
               to="/get-quote"
               className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
             >
-              Get Free Quote <ArrowRight className="h-5 w-5" />
+              Ask a Free Question <ArrowRight className="h-5 w-5" />
             </Link>
-          </div>
-
-          <div className="mt-12 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
-            {[
-              { n: "500+", l: "Campaigns delivered" },
-              { n: "200+", l: "Brands served" },
-              { n: "180+", l: "Service pages" },
-              { n: "25", l: "Districts covered" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="text-3xl font-bold text-accent sm:text-4xl">{s.n}</div>
-                <div className="mt-1 text-xs uppercase tracking-wider text-primary-foreground/70">{s.l}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -172,21 +158,21 @@ function Index() {
       {/* TRUST BAR */}
       <section className="border-y border-border bg-secondary/40">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 py-5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-accent" /> Trusted by SMEs &amp; enterprises</span>
+          <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-accent" /> Information hub — not just an agency</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Sinhala · Tamil · English</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Islandwide coverage</span>
-          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Free strategy call</span>
-          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Transparent reporting</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Free advice &amp; guidance</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> 180+ services explained</span>
         </div>
       </section>
 
       {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="text-center">
-          <div className="text-sm font-semibold uppercase tracking-wider text-accent">Our services</div>
-          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every advertising channel, one trusted partner</h2>
+          <div className="text-sm font-semibold uppercase tracking-wider text-accent">Explore by category</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every type of advertising in Sri Lanka — explained</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Pick a category to explore solutions, or call us and we'll recommend the right mix for your goals and budget.
+            Browse a category to learn how it works, where it fits and what to expect — or call {SITE.phone} for free guidance tailored to your business.
           </p>
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -218,7 +204,7 @@ function Index() {
                     )}
                   </div>
                   <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                    Explore {c.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                    Learn about {c.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
                   </div>
                 </div>
               </Link>

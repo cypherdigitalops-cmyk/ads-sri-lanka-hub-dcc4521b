@@ -4,6 +4,77 @@ import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection } from "./CTASection";
 import { SITE, titleCase, type Category } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
+import {
+  buildBlogArticle,
+  buildCategoryLongForm,
+  buildServiceLongForm,
+  faqJsonLd,
+  type Block,
+  type FAQ,
+} from "@/data/content-engine";
+
+function LongFormBlocks({ blocks }: { blocks: Block[] }) {
+  return (
+    <div className="space-y-5">
+      {blocks.map((b, i) => {
+        if (b.type === "h2") return <h2 key={i} className="mt-8 text-2xl font-bold sm:text-3xl">{b.text}</h2>;
+        if (b.type === "h3") return <h3 key={i} className="mt-6 text-xl font-semibold">{b.text}</h3>;
+        if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{b.text}</p>;
+        if (b.type === "ul")
+          return (
+            <ul key={i} className="ml-5 list-disc space-y-2 text-muted-foreground">
+              {b.items.map((it, j) => <li key={j}>{it}</li>)}
+            </ul>
+          );
+        if (b.type === "ol")
+          return (
+            <ol key={i} className="ml-5 list-decimal space-y-2 text-muted-foreground">
+              {b.items.map((it, j) => <li key={j}>{it}</li>)}
+            </ol>
+          );
+        if (b.type === "table")
+          return (
+            <div key={i} className="overflow-x-auto rounded-lg border border-border">
+              <table className="w-full text-sm">
+                <thead className="bg-secondary/60">
+                  <tr>{b.head.map((h, j) => <th key={j} className="px-3 py-2 text-left font-semibold">{h}</th>)}</tr>
+                </thead>
+                <tbody>
+                  {b.rows.map((r, j) => (
+                    <tr key={j} className="border-t border-border">
+                      {r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{c}</td>)}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        return null;
+      })}
+    </div>
+  );
+}
+
+function FaqList({ items }: { items: FAQ[] }) {
+  if (!items.length) return null;
+  return (
+    <section className="mx-auto max-w-3xl px-4 py-12">
+      <h2 className="text-2xl font-bold sm:text-3xl">Frequently asked questions</h2>
+      <div className="mt-6 space-y-3">
+        {items.map((f) => (
+          <details key={f.q} className="group rounded-lg border border-border bg-card p-5">
+            <summary className="cursor-pointer list-none font-semibold marker:hidden">{f.q}</summary>
+            <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(items)) }}
+      />
+    </section>
+  );
+}
 
 function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro: string; crumbs: Crumb[] }) {
   return (
@@ -111,6 +182,7 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 /* ========== CATEGORY HUB ========== */
 export function CategoryHubTemplate({ category }: { category: Category }) {
   const h1 = `${titleCase(category.hubKeyword)}`;
+  const longForm = buildCategoryLongForm(category);
   return (
     <>
       <Hero
@@ -133,6 +205,11 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
           ))}
         </div>
       </section>
+      {longForm.blocks.length ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={longForm.blocks} />
+        </section>
+      ) : null}
       <FeatureGrid
         title={`Why brands choose us for ${category.title.toLowerCase()}`}
         items={[
@@ -161,13 +238,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
           sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
         />
       </div>
-      <FAQ
-        items={[
-          { q: `What is ${category.hubKeyword}?`, a: `${category.intro}` },
-          { q: `How quickly can a ${category.title.toLowerCase()} campaign launch?`, a: `Most campaigns can go live within 2–3 weeks of brief approval, depending on creative and inventory availability.` },
-          { q: `Do you work with small businesses?`, a: `Yes. We have campaign frameworks for SMEs, mid-market and enterprise brands across Sri Lanka.` },
-        ]}
-      />
+      <FaqList items={longForm.faqs} />
     </>
   );
 }
@@ -181,6 +252,7 @@ export function ServicePageTemplate({
   keyword: string;
 }) {
   const title = titleCase(keyword);
+  const longForm = buildServiceLongForm(category, keyword);
   return (
     <>
       <Hero
@@ -224,6 +296,11 @@ export function ServicePageTemplate({
         ]}
       />
       <ProcessSteps />
+      {longForm.blocks.length ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={longForm.blocks} />
+        </section>
+      ) : null}
       <section className="mx-auto max-w-7xl px-4 py-12">
         <h2 className="text-2xl font-bold sm:text-3xl">Related {category.title.toLowerCase()} services</h2>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -244,14 +321,7 @@ export function ServicePageTemplate({
           sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
         />
       </div>
-      <FAQ
-        items={[
-          { q: `Who needs ${keyword}?`, a: `Any brand in Sri Lanka that wants more visibility, leads or sales can benefit from ${keyword}, from local SMEs to multinational enterprises.` },
-          { q: `How long until I see results from ${keyword}?`, a: `Performance channels (digital, SEM, social ads) typically show traction within 2–4 weeks. Brand-led channels build momentum over 1–3 months.` },
-          { q: `Do you handle the creative as well?`, a: `Yes — copy, design, video and adaptations are all handled by our in-house creative team.` },
-          { q: `How do I get started?`, a: `Call ${SITE.phone} or send us a quick brief via the inquiry form. We respond within one business day.` },
-        ]}
-      />
+      <FaqList items={longForm.faqs} />
     </>
   );
 }
@@ -265,6 +335,7 @@ export function BlogArticleTemplate({
   keyword: string;
 }) {
   const title = titleCase(keyword);
+  const article = buildBlogArticle(category, keyword);
   return (
     <>
       <Hero
@@ -277,39 +348,8 @@ export function BlogArticleTemplate({
           { label: title },
         ]}
       />
-      <article className="prose prose-slate mx-auto max-w-3xl px-4 py-12 prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-a:text-primary">
-        <p className="lead text-lg text-muted-foreground">
-          {keyword.charAt(0).toUpperCase() + keyword.slice(1)} is one of the most searched advertising topics in Sri Lanka — and for good reason. The right approach can transform a small business into a household name, or take an established brand to a new audience.
-        </p>
-        <h2>What is {keyword}?</h2>
-        <p>
-          In simple terms, {keyword} refers to the strategies, platforms and creative work used to promote products, services or ideas to the Sri Lankan market through this specific channel or approach. It sits within {category.title.toLowerCase()} — a key pillar of any modern marketing mix.
-        </p>
-        <h2>Why {keyword} matters today</h2>
-        <ul>
-          <li>Sri Lankan consumers are spending more time across multiple channels — both traditional and digital.</li>
-          <li>Buying decisions are increasingly research-led and locally relevant.</li>
-          <li>The right campaign can outperform a much bigger competitor's budget if planned well.</li>
-        </ul>
-        <h2>How to plan a winning campaign</h2>
-        <ol>
-          <li><strong>Set a clear objective.</strong> Awareness, leads, sales — the goal shapes everything.</li>
-          <li><strong>Define the audience.</strong> Demographics, language, geography, behaviour.</li>
-          <li><strong>Pick the right channels.</strong> Don't spread thin — go deep where your audience actually is.</li>
-          <li><strong>Create message-market fit.</strong> Localised creative beats translated creative every time.</li>
-          <li><strong>Measure everything.</strong> If it isn't measured, it isn't optimised.</li>
-        </ol>
-        <h2>Common mistakes to avoid</h2>
-        <p>
-          Most {keyword} budgets are wasted on three things: weak targeting, generic creative, and no follow-through. A strong partner will help you avoid all three from day one.
-        </p>
-        <h2>How we can help</h2>
-        <p>
-          Our team has delivered {category.title.toLowerCase()} campaigns for brands across Sri Lanka — from Colombo SMEs to islandwide enterprises. We bring strategy, creative, media and reporting into one transparent service.
-        </p>
-        <p>
-          <strong>Talk to a specialist:</strong> call <a href={`tel:${SITE.phone}`}>{SITE.phone}</a> or <Link to="/get-quote">request a free quote</Link>.
-        </p>
+      <article className="mx-auto max-w-3xl px-4 py-12">
+        <LongFormBlocks blocks={article.blocks} />
       </article>
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
@@ -317,6 +357,7 @@ export function BlogArticleTemplate({
           sub={`Free phone & WhatsApp guidance — talk to a real Sri Lankan advertising specialist.`}
         />
       </div>
+      <FaqList items={article.faqs} />
       <section className="mx-auto max-w-7xl px-4 py-10">
         <h2 className="text-2xl font-bold">Explore related services</h2>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -8,6 +8,7 @@ import {
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
+import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
 const TITLE = "Advertising in Sri Lanka — Information Hub for Every Advertising Solution";
@@ -69,6 +70,14 @@ function Index() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HOME_JSONLD) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(HOME_LONGFORM.faqs)) }}
       />
 
       {/* HERO */}
@@ -336,6 +345,25 @@ function Index() {
 
       {/* FAQ */}
       <section className="bg-secondary/30">
+        <div className="mx-auto max-w-3xl px-4 pb-4 pt-20">
+          <div className="space-y-5">
+            {HOME_LONGFORM.blocks.map((b, i) => {
+              if (b.type === "h2") return <h2 key={i} className="mt-8 text-2xl font-bold sm:text-3xl">{b.text}</h2>;
+              if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{b.text}</p>;
+              if (b.type === "ul") return <ul key={i} className="ml-5 list-disc space-y-2 text-muted-foreground">{b.items.map((it, j) => <li key={j}>{it}</li>)}</ul>;
+              if (b.type === "ol") return <ol key={i} className="ml-5 list-decimal space-y-2 text-muted-foreground">{b.items.map((it, j) => <li key={j}>{it}</li>)}</ol>;
+              if (b.type === "table") return (
+                <div key={i} className="overflow-x-auto rounded-lg border border-border bg-background">
+                  <table className="w-full text-sm">
+                    <thead className="bg-secondary/60"><tr>{b.head.map((h, j) => <th key={j} className="px-3 py-2 text-left font-semibold">{h}</th>)}</tr></thead>
+                    <tbody>{b.rows.map((r, j) => (<tr key={j} className="border-t border-border">{r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{c}</td>)}</tr>))}</tbody>
+                  </table>
+                </div>
+              );
+              return null;
+            })}
+          </div>
+        </div>
         <div className="mx-auto max-w-3xl px-4 py-20">
           <div className="text-center">
             <div className="text-sm font-semibold uppercase tracking-wider text-accent">FAQ</div>
@@ -343,11 +371,7 @@ function Index() {
           </div>
           <div className="mt-10 space-y-3">
             {[
-              { q: "What advertising services do you offer?", a: "Everything — TV, radio, newspaper, magazine and cinema (ATL); brand activations, roadshows and retail branding (BTL); Google Ads, social media, SEO and email (digital); billboards, LED and transit (outdoor); plus branding, web design and video production. Browse all 180+ services on the services page." },
-              { q: "How do I get a quote?", a: `Call ${SITE.phone}, message us on WhatsApp, or fill out the inquiry form on our Get a Quote page. We respond within one business day with a custom plan.` },
-              { q: "Do you work with small businesses?", a: "Yes — from solo entrepreneurs to large enterprises. We tailor packages to every budget and goal." },
-              { q: "Where in Sri Lanka do you operate?", a: "All 25 districts — Colombo, Gampaha, Kandy, Galle, Jaffna, Kurunegala, Anuradhapura and beyond." },
-              { q: "How fast can a campaign go live?", a: "Digital campaigns typically launch within 3–7 days. ATL/outdoor campaigns within 2–3 weeks depending on inventory and creative." },
+              ...HOME_LONGFORM.faqs,
             ].map((f) => (
               <details key={f.q} className="group rounded-xl border border-border bg-background p-5">
                 <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold marker:hidden">

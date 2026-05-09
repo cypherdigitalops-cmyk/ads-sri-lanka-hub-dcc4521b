@@ -172,7 +172,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Information hub for advertising in Sri Lanka. Compare TV, radio, press, billboards, Google Ads, SEO, social media, branding, web & video. Call 0771437707." },
       { name: "author", content: SITE.name },
       { name: "robots", content: "index, follow, max-image-preview:large" },
+      { name: "googlebot", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { name: "bingbot", content: "index, follow" },
       { name: "theme-color", content: "#15224a" },
+      { name: "geo.region", content: "LK" },
+      { name: "geo.country", content: "Sri Lanka" },
+      { name: "geo.placename", content: "Colombo" },
+      { name: "geo.position", content: "6.9271;79.8612" },
+      { name: "ICBM", content: "6.9271, 79.8612" },
+      { name: "language", content: "English" },
+      { httpEquiv: "content-language", content: "en-LK" },
       { property: "og:site_name", content: SITE.name },
       { property: "og:locale", content: "en_LK" },
       { property: "og:title", content: "Advertising Sri Lanka — Information Hub" },
@@ -187,6 +196,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "canonical", href: SITE.url },
+      { rel: "alternate", hrefLang: "en-LK", href: SITE.url },
+      { rel: "alternate", hrefLang: "x-default", href: SITE.url },
     ],
   }),
   shellComponent: RootShell,
@@ -197,7 +209,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-LK">
       <head>
         <HeadContent />
         <script

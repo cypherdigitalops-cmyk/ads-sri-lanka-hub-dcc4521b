@@ -30,6 +30,7 @@ import { Route as SocialMediaManagementSriLankaRouteImport } from './routes/soci
 import { Route as SocialMediaAgencySriLankaRouteImport } from './routes/social-media-agency-sri-lanka'
 import { Route as SmsMarketingSriLankaRouteImport } from './routes/sms-marketing-sri-lanka'
 import { Route as ShopBrandingSriLankaRouteImport } from './routes/shop-branding-sri-lanka'
+import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SeoServicesSriLankaRouteImport } from './routes/seo-services-sri-lanka'
 import { Route as SeoCompanySriLankaRouteImport } from './routes/seo-company-sri-lanka'
 import { Route as RoadshowMarketingSriLankaRouteImport } from './routes/roadshow-marketing-sri-lanka'
@@ -314,6 +315,11 @@ const SmsMarketingSriLankaRoute = SmsMarketingSriLankaRouteImport.update({
 const ShopBrandingSriLankaRoute = ShopBrandingSriLankaRouteImport.update({
   id: '/shop-branding-sri-lanka',
   path: '/shop-branding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SeoServicesSriLankaRoute = SeoServicesSriLankaRouteImport.update({
@@ -1366,6 +1372,7 @@ export interface FileRoutesByFullPath {
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/services': typeof ServicesRoute
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
   '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
@@ -1560,6 +1567,7 @@ export interface FileRoutesByTo {
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/services': typeof ServicesRoute
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
   '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
@@ -1755,6 +1763,7 @@ export interface FileRoutesById {
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/services': typeof ServicesRoute
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
   '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
@@ -1951,6 +1960,7 @@ export interface FileRouteTypes {
     | '/roadshow-marketing-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
+    | '/services'
     | '/shop-branding-sri-lanka'
     | '/sms-marketing-sri-lanka'
     | '/social-media-agency-sri-lanka'
@@ -2145,6 +2155,7 @@ export interface FileRouteTypes {
     | '/roadshow-marketing-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
+    | '/services'
     | '/shop-branding-sri-lanka'
     | '/sms-marketing-sri-lanka'
     | '/social-media-agency-sri-lanka'
@@ -2339,6 +2350,7 @@ export interface FileRouteTypes {
     | '/roadshow-marketing-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
+    | '/services'
     | '/shop-branding-sri-lanka'
     | '/sms-marketing-sri-lanka'
     | '/social-media-agency-sri-lanka'
@@ -2534,6 +2546,7 @@ export interface RootRouteChildren {
   RoadshowMarketingSriLankaRoute: typeof RoadshowMarketingSriLankaRoute
   SeoCompanySriLankaRoute: typeof SeoCompanySriLankaRoute
   SeoServicesSriLankaRoute: typeof SeoServicesSriLankaRoute
+  ServicesRoute: typeof ServicesRoute
   ShopBrandingSriLankaRoute: typeof ShopBrandingSriLankaRoute
   SmsMarketingSriLankaRoute: typeof SmsMarketingSriLankaRoute
   SocialMediaAgencySriLankaRoute: typeof SocialMediaAgencySriLankaRoute
@@ -2797,6 +2810,13 @@ declare module '@tanstack/react-router' {
       path: '/shop-branding-sri-lanka'
       fullPath: '/shop-branding-sri-lanka'
       preLoaderRoute: typeof ShopBrandingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/seo-services-sri-lanka': {
@@ -4078,6 +4098,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoadshowMarketingSriLankaRoute: RoadshowMarketingSriLankaRoute,
   SeoCompanySriLankaRoute: SeoCompanySriLankaRoute,
   SeoServicesSriLankaRoute: SeoServicesSriLankaRoute,
+  ServicesRoute: ServicesRoute,
   ShopBrandingSriLankaRoute: ShopBrandingSriLankaRoute,
   SmsMarketingSriLankaRoute: SmsMarketingSriLankaRoute,
   SocialMediaAgencySriLankaRoute: SocialMediaAgencySriLankaRoute,
@@ -4212,13 +4233,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

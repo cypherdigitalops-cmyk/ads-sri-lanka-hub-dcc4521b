@@ -18,10 +18,12 @@ export function SiteHeader() {
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">
+          <Link to="/services" className="hover:text-primary">All Services</Link>
           <Link to="/atl-advertising-sri-lanka" className="hover:text-primary">ATL</Link>
           <Link to="/btl-advertising-sri-lanka" className="hover:text-primary">BTL</Link>
           <Link to="/digital-marketing-sri-lanka" className="hover:text-primary">Digital</Link>
           <Link to="/seo-services-sri-lanka" className="hover:text-primary">SEO</Link>
+          <Link to="/social-media-marketing-sri-lanka" className="hover:text-primary">Social</Link>
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
           <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
           <Link to="/contact" className="hover:text-primary">Contact</Link>
@@ -47,6 +49,9 @@ export function SiteHeader() {
       {open ? (
         <div className="border-t border-border bg-background lg:hidden">
           <nav className="mx-auto grid max-w-7xl gap-1 px-4 py-3 text-sm">
+            <Link to="/services" onClick={() => setOpen(false)} className="rounded px-2 py-2 font-semibold hover:bg-muted">
+              All Services
+            </Link>
             {CATEGORIES.map((c) => (
               <Link key={c.slug} to={`/${c.slug}` as never} onClick={() => setOpen(false)} className="rounded px-2 py-2 hover:bg-muted">
                 {c.title}

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
-  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, Phone, Quote,
+ Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, Phone,
   Search, Share2, Sparkles, Star, Tv, Users,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
@@ -296,34 +296,6 @@ function Index() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="text-center">
-          <div className="text-sm font-semibold uppercase tracking-wider text-accent">What clients say</div>
-          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Trusted by brands across Sri Lanka</h2>
-        </div>
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {[
-            { q: "They handled our TV, billboard and Google Ads under one roof. ROI doubled in 4 months.", n: "Dilshan P.", r: "Director, Retail Brand" },
-            { q: "Best advertising team we've worked with in Colombo. Clear strategy, fast execution.", n: "Nimasha S.", r: "Marketing Manager" },
-            { q: "Our brand finally feels consistent across every touchpoint — print, digital and social.", n: "Ahmed R.", r: "CEO, B2B Services" },
-          ].map((t) => (
-            <figure key={t.n} className="rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)]">
-              <Quote className="h-6 w-6 text-accent" />
-              <blockquote className="mt-3 text-sm leading-relaxed">"{t.q}"</blockquote>
-              <figcaption className="mt-5 flex items-center gap-3">
-                <div className="grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-hero)] font-bold text-primary-foreground">
-                  {t.n[0]}
-                </div>
-                <div>
-                  <div className="text-sm font-semibold">{t.n}</div>
-                  <div className="text-xs text-muted-foreground">{t.r}</div>
-                </div>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
       {/* CTA */}
       <div className="mx-auto max-w-7xl px-4">
         <CTASection

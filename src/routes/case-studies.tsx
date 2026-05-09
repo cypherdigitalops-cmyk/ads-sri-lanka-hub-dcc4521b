@@ -43,7 +43,7 @@ function Cases() {
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {CASES.map((c) => (
             <div key={c.t} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)]">
-              <div className="text-sm font-semibold uppercase tracking-wider text-accent">Result</div>
+              <div className="text-sm font-semibold text-accent">Result</div>
               <div className="mt-1 text-2xl font-bold">{c.r}</div>
               <div className="mt-4 font-semibold">{c.t}</div>
               <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>

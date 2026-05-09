@@ -25,6 +25,28 @@ export type Category = {
 
 export const CATEGORIES: Category[] = [
   {
+    slug: "event-management-sri-lanka",
+    hubKeyword: "event management sri lanka",
+    title: "Event Management",
+    short:
+      "End-to-end event management — corporate events, weddings, exhibitions, conferences, brand activations and stage production.",
+    intro:
+      "Plan and execute unforgettable events anywhere in Sri Lanka. From corporate functions and conferences to weddings, exhibitions and brand activations — we manage venues, stage setup, LED screens, sound, lighting, hosts and on-ground logistics under one team.",
+    icon: "PartyPopper",
+    services: [
+      { slug: "event-planners-sri-lanka", keyword: "event planners sri lanka" },
+      { slug: "corporate-event-management-sri-lanka", keyword: "corporate event management sri lanka" },
+      { slug: "wedding-planners-sri-lanka", keyword: "wedding planners sri lanka" },
+      { slug: "exhibition-management-sri-lanka", keyword: "exhibition management sri lanka" },
+      { slug: "conference-management-sri-lanka", keyword: "conference management sri lanka" },
+      { slug: "event-marketing-sri-lanka", keyword: "event marketing sri lanka" },
+      { slug: "brand-activation-sri-lanka", keyword: "brand activation sri lanka" },
+      { slug: "stage-setup-sri-lanka", keyword: "stage setup sri lanka" },
+      { slug: "led-screen-rental-sri-lanka", keyword: "led screen rental sri lanka" },
+    ],
+    blog: [],
+  },
+  {
     slug: "atl-advertising-sri-lanka",
     hubKeyword: "atl advertising sri lanka",
     title: "ATL Advertising",

@@ -345,6 +345,25 @@ function Index() {
 
       {/* FAQ */}
       <section className="bg-secondary/30">
+        <div className="mx-auto max-w-3xl px-4 pb-4 pt-20">
+          <div className="space-y-5">
+            {HOME_LONGFORM.blocks.map((b, i) => {
+              if (b.type === "h2") return <h2 key={i} className="mt-8 text-2xl font-bold sm:text-3xl">{b.text}</h2>;
+              if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{b.text}</p>;
+              if (b.type === "ul") return <ul key={i} className="ml-5 list-disc space-y-2 text-muted-foreground">{b.items.map((it, j) => <li key={j}>{it}</li>)}</ul>;
+              if (b.type === "ol") return <ol key={i} className="ml-5 list-decimal space-y-2 text-muted-foreground">{b.items.map((it, j) => <li key={j}>{it}</li>)}</ol>;
+              if (b.type === "table") return (
+                <div key={i} className="overflow-x-auto rounded-lg border border-border bg-background">
+                  <table className="w-full text-sm">
+                    <thead className="bg-secondary/60"><tr>{b.head.map((h, j) => <th key={j} className="px-3 py-2 text-left font-semibold">{h}</th>)}</tr></thead>
+                    <tbody>{b.rows.map((r, j) => (<tr key={j} className="border-t border-border">{r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{c}</td>)}</tr>))}</tbody>
+                  </table>
+                </div>
+              );
+              return null;
+            })}
+          </div>
+        </div>
         <div className="mx-auto max-w-3xl px-4 py-20">
           <div className="text-center">
             <div className="text-sm font-semibold uppercase tracking-wider text-accent">FAQ</div>

@@ -4,7 +4,7 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Email Marketing SRI LANKA — Email & SMS Marketing Services in Sri Lanka | advertisingsrilanka.lk";
+const TITLE = "Email Marketing Sri Lanka — Email & SMS Marketing Services in Sri Lanka | advertisingsrilanka.lk";
 const DESC = "Reach customers directly with permission-based email, SMS and WhatsApp marketing — automated journeys, segmentation, A/B testing and detailed reporting tai";
 
 export const Route = createFileRoute("/email-sms-marketing-sri-lanka")({

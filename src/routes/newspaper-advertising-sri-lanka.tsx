@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Newspaper Advertising SRI LANKA — Best Newspaper Advertising SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Newspaper Advertising Sri Lanka — Best Newspaper Advertising Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for newspaper advertising sri lanka? We deliver high-performance newspaper advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/newspaper-advertising-sri-lanka")({

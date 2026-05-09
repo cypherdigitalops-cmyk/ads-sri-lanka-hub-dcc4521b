@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Whatsapp Marketing SRI LANKA — Best Whatsapp Marketing SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Whatsapp Marketing Sri Lanka — Best Whatsapp Marketing Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for whatsapp marketing sri lanka? We deliver high-performance whatsapp marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/whatsapp-marketing-sri-lanka")({

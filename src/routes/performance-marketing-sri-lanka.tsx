@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Performance Marketing SRI LANKA — Best Performance Marketing SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Performance Marketing Sri Lanka — Best Performance Marketing Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for performance marketing sri lanka? We deliver high-performance performance marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/performance-marketing-sri-lanka")({

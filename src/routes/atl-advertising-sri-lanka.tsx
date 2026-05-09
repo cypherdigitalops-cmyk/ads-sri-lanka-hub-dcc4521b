@@ -4,7 +4,7 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "ATL Advertising SRI LANKA — ATL Advertising Services in Sri Lanka | advertisingsrilanka.lk";
+const TITLE = "ATL Advertising Sri Lanka — ATL Advertising Services in Sri Lanka | advertisingsrilanka.lk";
 const DESC = "Reach millions of Sri Lankan consumers through trusted mass-media channels. We plan, buy and execute high-impact ATL campaigns on television, radio, newspa";
 
 export const Route = createFileRoute("/atl-advertising-sri-lanka")({

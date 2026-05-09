@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Hoarding Advertising SRI LANKA — Best Hoarding Advertising SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Hoarding Advertising Sri Lanka — Best Hoarding Advertising Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for hoarding advertising sri lanka? We deliver high-performance hoarding advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/hoarding-advertising-sri-lanka")({

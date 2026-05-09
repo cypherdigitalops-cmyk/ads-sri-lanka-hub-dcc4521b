@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Event Marketing SRI LANKA — Best Event Marketing SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Event Marketing Sri Lanka — Best Event Marketing Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for event marketing sri lanka? We deliver high-performance event marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/event-marketing-sri-lanka")({

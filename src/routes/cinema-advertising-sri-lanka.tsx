@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Cinema Advertising SRI LANKA — Best Cinema Advertising SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Cinema Advertising Sri Lanka — Best Cinema Advertising Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for cinema advertising sri lanka? We deliver high-performance cinema advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/cinema-advertising-sri-lanka")({

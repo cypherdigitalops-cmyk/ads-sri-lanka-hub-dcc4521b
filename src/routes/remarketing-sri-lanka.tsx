@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Remarketing SRI LANKA — Best Remarketing SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Remarketing Sri Lanka — Best Remarketing Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for remarketing sri lanka? We deliver high-performance remarketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/remarketing-sri-lanka")({

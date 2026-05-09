@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Led Screen Advertising SRI LANKA — Best Led Screen Advertising SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Led Screen Advertising Sri Lanka — Best Led Screen Advertising Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for led screen advertising sri lanka? We deliver high-performance led screen advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/led-screen-advertising-sri-lanka")({

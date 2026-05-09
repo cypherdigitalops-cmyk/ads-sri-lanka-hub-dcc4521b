@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Corporate Video SRI LANKA — Best Corporate Video SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Corporate Video Sri Lanka — Best Corporate Video Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for corporate video sri lanka? We deliver high-performance corporate video sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/corporate-video-sri-lanka")({

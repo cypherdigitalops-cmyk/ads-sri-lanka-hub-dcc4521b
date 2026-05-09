@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Logo Design SRI LANKA — Best Logo Design SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Logo Design Sri Lanka — Best Logo Design Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for logo design sri lanka? We deliver high-performance logo design sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/logo-design-sri-lanka")({

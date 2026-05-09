@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Email Automation SRI LANKA — Best Email Automation SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Email Automation Sri Lanka — Best Email Automation Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for email automation sri lanka? We deliver high-performance email automation sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/email-automation-sri-lanka")({

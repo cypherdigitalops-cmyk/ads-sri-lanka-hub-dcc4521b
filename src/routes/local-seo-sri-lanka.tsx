@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Local SEO SRI LANKA — Best Local SEO SRI LANKA Services | advertisingsrilanka.lk";
+const TITLE = "Local SEO Sri Lanka — Best Local SEO Sri Lanka Services | advertisingsrilanka.lk";
 const DESC = "Looking for local seo sri lanka? We deliver high-performance local seo sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
 
 export const Route = createFileRoute("/local-seo-sri-lanka")({

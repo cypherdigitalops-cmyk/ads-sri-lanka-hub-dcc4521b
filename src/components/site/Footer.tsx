@@ -18,7 +18,7 @@ export function SiteFooter() {
         </div>
         <div className="md:col-span-2 grid grid-cols-2 gap-6 text-sm">
           {CATEGORIES.slice(0, 8).map((c) => (
-            <Link key={c.slug} to={`/${c.slug}`} className="hover:text-accent">{c.title}</Link>
+            <Link key={c.slug} to={`/${c.slug}` as never} className="hover:text-accent">{c.title}</Link>
           ))}
         </div>
         <div className="text-sm">

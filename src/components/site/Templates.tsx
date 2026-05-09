@@ -116,7 +116,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
         <h2 className="text-2xl font-bold sm:text-3xl">Our {category.title.toLowerCase()} services</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {category.services.map((s) => (
-            <Link key={s.slug} to={`/${s.slug}`} className="group rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40">
+            <Link key={s.slug} to={`/${s.slug}` as never} className="group rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40">
               <div className="text-base font-semibold capitalize">{titleCase(s.keyword)}</div>
               <p className="mt-2 text-sm text-muted-foreground">Learn more about {s.keyword} and how we deliver results.</p>
               <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
@@ -224,7 +224,7 @@ export function ServicePageTemplate({
             .filter((s) => s.keyword !== keyword)
             .slice(0, 6)
             .map((s) => (
-              <Link key={s.slug} to={`/${s.slug}`} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
+              <Link key={s.slug} to={`/${s.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
                 <div className="font-semibold capitalize">{titleCase(s.keyword)}</div>
                 <div className="mt-1 text-xs text-muted-foreground">Explore service →</div>
               </Link>
@@ -308,7 +308,7 @@ export function BlogArticleTemplate({
         <h2 className="text-2xl font-bold">Explore related services</h2>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {category.services.slice(0, 6).map((s) => (
-            <Link key={s.slug} to={`/${s.slug}`} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
+            <Link key={s.slug} to={`/${s.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
               <div className="font-semibold capitalize">{titleCase(s.keyword)}</div>
               <div className="mt-1 text-xs text-muted-foreground">View service →</div>
             </Link>

@@ -48,7 +48,7 @@ export function SiteHeader() {
         <div className="border-t border-border bg-background lg:hidden">
           <nav className="mx-auto grid max-w-7xl gap-1 px-4 py-3 text-sm">
             {CATEGORIES.map((c) => (
-              <Link key={c.slug} to={`/${c.slug}`} onClick={() => setOpen(false)} className="rounded px-2 py-2 hover:bg-muted">
+              <Link key={c.slug} to={`/${c.slug}` as never} onClick={() => setOpen(false)} className="rounded px-2 py-2 hover:bg-muted">
                 {c.title}
               </Link>
             ))}

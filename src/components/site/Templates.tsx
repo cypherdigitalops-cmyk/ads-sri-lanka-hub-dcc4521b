@@ -13,23 +13,47 @@ import {
   type FAQ,
 } from "@/data/content-engine";
 
+/**
+ * Linkify the phrase "advertising sri lanka" / "advertising in sri lanka"
+ * (case-insensitive) inside any text content, pointing to the homepage.
+ */
+function linkifyAdSL(text: string): React.ReactNode {
+  if (!text) return text;
+  const re = /(advertising(?:\s+in)?\s+sri\s+lanka)/gi;
+  const parts = text.split(re);
+  if (parts.length === 1) return text;
+  return parts.map((part, i) =>
+    re.test(part) ? (
+      <Link
+        key={i}
+        to="/"
+        className="text-primary underline-offset-2 hover:underline"
+      >
+        {part}
+      </Link>
+    ) : (
+      <span key={i}>{part}</span>
+    ),
+  );
+}
+
 function LongFormBlocks({ blocks }: { blocks: Block[] }) {
   return (
     <div className="space-y-5">
       {blocks.map((b, i) => {
         if (b.type === "h2") return <h2 key={i} className="mt-8 text-2xl font-bold sm:text-3xl">{b.text}</h2>;
         if (b.type === "h3") return <h3 key={i} className="mt-6 text-xl font-semibold">{b.text}</h3>;
-        if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{b.text}</p>;
+        if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{linkifyAdSL(b.text)}</p>;
         if (b.type === "ul")
           return (
             <ul key={i} className="ml-5 list-disc space-y-2 text-muted-foreground">
-              {b.items.map((it, j) => <li key={j}>{it}</li>)}
+              {b.items.map((it, j) => <li key={j}>{linkifyAdSL(it)}</li>)}
             </ul>
           );
         if (b.type === "ol")
           return (
             <ol key={i} className="ml-5 list-decimal space-y-2 text-muted-foreground">
-              {b.items.map((it, j) => <li key={j}>{it}</li>)}
+              {b.items.map((it, j) => <li key={j}>{linkifyAdSL(it)}</li>)}
             </ol>
           );
         if (b.type === "table")
@@ -42,7 +66,7 @@ function LongFormBlocks({ blocks }: { blocks: Block[] }) {
                 <tbody>
                   {b.rows.map((r, j) => (
                     <tr key={j} className="border-t border-border">
-                      {r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{c}</td>)}
+                      {r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{linkifyAdSL(c)}</td>)}
                     </tr>
                   ))}
                 </tbody>
@@ -63,8 +87,8 @@ function FaqList({ items }: { items: FAQ[] }) {
       <div className="mt-6 space-y-3">
         {items.map((f) => (
           <details key={f.q} className="group rounded-lg border border-border bg-card p-5">
-            <summary className="cursor-pointer list-none font-semibold marker:hidden">{f.q}</summary>
-            <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
+            <summary className="cursor-pointer list-none font-semibold marker:hidden">{linkifyAdSL(f.q)}</summary>
+            <p className="mt-3 text-sm text-muted-foreground">{linkifyAdSL(f.a)}</p>
           </details>
         ))}
       </div>
@@ -93,7 +117,7 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
           <Sparkles className="h-3.5 w-3.5" /> {kicker}
         </div>
         <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{h1}</h1>
-        <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{intro}</p>
+        <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{linkifyAdSL(intro)}</p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90">
             <Phone className="h-4 w-4" /> Ask a Free Question — {SITE.phone}

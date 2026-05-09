@@ -102,7 +102,6 @@ import { Route as BillboardAdvertisingSriLankaRouteImport } from './routes/billb
 import { Route as BacklinkServicesSriLankaRouteImport } from './routes/backlink-services-sri-lanka'
 import { Route as B2bEmailMarketingSriLankaRouteImport } from './routes/b2b-email-marketing-sri-lanka'
 import { Route as AtlAdvertisingSriLankaRouteImport } from './routes/atl-advertising-sri-lanka'
-import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as R3dAnimationSriLankaRouteImport } from './routes/3d-animation-sri-lanka'
@@ -711,11 +710,6 @@ const AtlAdvertisingSriLankaRoute = AtlAdvertisingSriLankaRouteImport.update({
   path: '/atl-advertising-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdvertisingRatesRoute = AdvertisingRatesRouteImport.update({
-  id: '/advertising-rates',
-  path: '/advertising-rates',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AdvertisingPackagesRoute = AdvertisingPackagesRouteImport.update({
   id: '/advertising-packages',
   path: '/advertising-packages',
@@ -1300,7 +1294,6 @@ export interface FileRoutesByFullPath {
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
-  '/advertising-rates': typeof AdvertisingRatesRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
@@ -1495,7 +1488,6 @@ export interface FileRoutesByTo {
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
-  '/advertising-rates': typeof AdvertisingRatesRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
@@ -1691,7 +1683,6 @@ export interface FileRoutesById {
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
-  '/advertising-rates': typeof AdvertisingRatesRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
@@ -1888,7 +1879,6 @@ export interface FileRouteTypes {
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
-    | '/advertising-rates'
     | '/atl-advertising-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
     | '/backlink-services-sri-lanka'
@@ -2083,7 +2073,6 @@ export interface FileRouteTypes {
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
-    | '/advertising-rates'
     | '/atl-advertising-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
     | '/backlink-services-sri-lanka'
@@ -2278,7 +2267,6 @@ export interface FileRouteTypes {
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
-    | '/advertising-rates'
     | '/atl-advertising-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
     | '/backlink-services-sri-lanka'
@@ -2474,7 +2462,6 @@ export interface RootRouteChildren {
   R3dAnimationSriLankaRoute: typeof R3dAnimationSriLankaRoute
   AboutRoute: typeof AboutRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
-  AdvertisingRatesRoute: typeof AdvertisingRatesRoute
   AtlAdvertisingSriLankaRoute: typeof AtlAdvertisingSriLankaRoute
   B2bEmailMarketingSriLankaRoute: typeof B2bEmailMarketingSriLankaRoute
   BacklinkServicesSriLankaRoute: typeof BacklinkServicesSriLankaRoute
@@ -3316,13 +3303,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AtlAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/advertising-rates': {
-      id: '/advertising-rates'
-      path: '/advertising-rates'
-      fullPath: '/advertising-rates'
-      preLoaderRoute: typeof AdvertisingRatesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/advertising-packages': {
       id: '/advertising-packages'
       path: '/advertising-packages'
@@ -4026,7 +4006,6 @@ const rootRouteChildren: RootRouteChildren = {
   R3dAnimationSriLankaRoute: R3dAnimationSriLankaRoute,
   AboutRoute: AboutRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
-  AdvertisingRatesRoute: AdvertisingRatesRoute,
   AtlAdvertisingSriLankaRoute: AtlAdvertisingSriLankaRoute,
   B2bEmailMarketingSriLankaRoute: B2bEmailMarketingSriLankaRoute,
   BacklinkServicesSriLankaRoute: BacklinkServicesSriLankaRoute,

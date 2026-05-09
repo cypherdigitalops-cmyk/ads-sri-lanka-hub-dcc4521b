@@ -8,6 +8,7 @@ import {
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
+import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
 const TITLE = "Advertising in Sri Lanka — Information Hub for Every Advertising Solution";
@@ -69,6 +70,14 @@ function Index() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HOME_JSONLD) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(HOME_LONGFORM.faqs)) }}
       />
 
       {/* HERO */}
@@ -343,11 +352,7 @@ function Index() {
           </div>
           <div className="mt-10 space-y-3">
             {[
-              { q: "What advertising services do you offer?", a: "Everything — TV, radio, newspaper, magazine and cinema (ATL); brand activations, roadshows and retail branding (BTL); Google Ads, social media, SEO and email (digital); billboards, LED and transit (outdoor); plus branding, web design and video production. Browse all 180+ services on the services page." },
-              { q: "How do I get a quote?", a: `Call ${SITE.phone}, message us on WhatsApp, or fill out the inquiry form on our Get a Quote page. We respond within one business day with a custom plan.` },
-              { q: "Do you work with small businesses?", a: "Yes — from solo entrepreneurs to large enterprises. We tailor packages to every budget and goal." },
-              { q: "Where in Sri Lanka do you operate?", a: "All 25 districts — Colombo, Gampaha, Kandy, Galle, Jaffna, Kurunegala, Anuradhapura and beyond." },
-              { q: "How fast can a campaign go live?", a: "Digital campaigns typically launch within 3–7 days. ATL/outdoor campaigns within 2–3 weeks depending on inventory and creative." },
+              ...HOME_LONGFORM.faqs,
             ].map((f) => (
               <details key={f.q} className="group rounded-xl border border-border bg-background p-5">
                 <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold marker:hidden">

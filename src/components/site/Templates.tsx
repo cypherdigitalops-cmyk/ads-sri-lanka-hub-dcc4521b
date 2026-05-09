@@ -3,10 +3,17 @@ import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users } 
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection } from "./CTASection";
 import { SITE, titleCase, type Category } from "@/data/site";
+import heroImg from "@/assets/hero-advertising.jpg";
 
 function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro: string; crumbs: Crumb[] }) {
   return (
-    <section className="relative overflow-hidden bg-[image:var(--gradient-hero)] text-primary-foreground">
+    <section className="relative overflow-hidden text-primary-foreground">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImg})` }}
+        aria-hidden
+      />
+      <div className="absolute inset-0 bg-[image:var(--gradient-hero)] opacity-90" aria-hidden />
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/30 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-primary-glow/30 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-4 py-14 sm:py-20">
@@ -18,10 +25,10 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
         <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{intro}</p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90">
-            <Phone className="h-4 w-4" /> Call {SITE.phone}
+            <Phone className="h-4 w-4" /> Ask a Free Question — {SITE.phone}
           </a>
           <Link to="/get-quote" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20">
-            Get a Free Quote <ArrowRight className="h-4 w-4" />
+            Send Us an Inquiry <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>
@@ -150,8 +157,8 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
       ) : null}
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={`Get expert help with ${category.title.toLowerCase()} in Sri Lanka`}
-          sub="One call. Free strategy. Custom plan for your brand."
+          headline={`Have a question about ${category.title.toLowerCase()} in Sri Lanka?`}
+          sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
         />
       </div>
       <FAQ
@@ -232,7 +239,10 @@ export function ServicePageTemplate({
         </div>
       </section>
       <div className="mx-auto max-w-7xl px-4">
-        <CTASection headline={`Start your ${keyword} campaign today`} sub={`Free strategy call with our ${category.title.toLowerCase()} specialists.`} />
+        <CTASection
+          headline={`Want clear answers about ${keyword}?`}
+          sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
+        />
       </div>
       <FAQ
         items={[
@@ -302,7 +312,10 @@ export function BlogArticleTemplate({
         </p>
       </article>
       <div className="mx-auto max-w-7xl px-4">
-        <CTASection headline={`Need expert help with ${keyword}?`} sub="Free consultation with a senior strategist." />
+        <CTASection
+          headline={`Still have questions about ${keyword}?`}
+          sub={`Free phone & WhatsApp guidance — talk to a real Sri Lankan advertising specialist.`}
+        />
       </div>
       <section className="mx-auto max-w-7xl px-4 py-10">
         <h2 className="text-2xl font-bold">Explore related services</h2>

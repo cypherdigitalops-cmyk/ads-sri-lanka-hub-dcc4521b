@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Google Ads Sri Lanka — Best Google Ads Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for google ads sri lanka? We deliver high-performance google ads sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Best Google Ads Sri Lanka Agency in Sri Lanka — Call 0771437707";
+const DESC = "Affordable, ROI-focused google ads sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
 
 export const Route = createFileRoute("/google-ads-sri-lanka")({
   head: () => ({

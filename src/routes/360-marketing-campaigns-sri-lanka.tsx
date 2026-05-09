@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "360 Marketing Campaigns Sri Lanka — Best 360 Marketing Campaigns Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for 360 marketing campaigns sri lanka? We deliver high-performance 360 marketing campaigns sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Best 360 Marketing Campaigns Sri Lanka Agency in Sri Lanka";
+const DESC = "Affordable, ROI-focused 360 marketing campaigns sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
 
 export const Route = createFileRoute("/360-marketing-campaigns-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Social Media Agency Sri Lanka — Best Social Media Agency Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for social media agency sri lanka? We deliver high-performance social media agency sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Social Media Agency Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need social media agency sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/social-media-agency-sri-lanka")({
   head: () => ({

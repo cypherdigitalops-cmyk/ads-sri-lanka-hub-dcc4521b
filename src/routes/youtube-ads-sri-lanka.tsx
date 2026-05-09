@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Youtube Ads Sri Lanka — Best Youtube Ads Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for youtube ads sri lanka? We deliver high-performance youtube ads sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Affordable Youtube Ads Sri Lanka for Sri Lankan Brands";
+const DESC = "Plan smarter youtube ads sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team.";
 
 export const Route = createFileRoute("/youtube-ads-sri-lanka")({
   head: () => ({

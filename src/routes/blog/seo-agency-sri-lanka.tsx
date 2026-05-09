@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "SEO Agency Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on seo agency sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "SEO Agency Sri Lanka: Complete Guide for Sri Lanka";
+const DESC = "Everything Sri Lankan businesses should know about seo agency sri lanka — strategy, channels, costs, common mistakes and how to pick the right partner.";
 
 export const Route = createFileRoute("/blog/seo-agency-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Digital Advertising Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on digital advertising sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "How Digital Advertising Sri Lanka Works in Sri Lanka";
+const DESC = "Compare options, budgets and timelines for digital advertising sri lanka. We break down each step so you can plan with confidence.";
 
 export const Route = createFileRoute("/blog/digital-advertising-sri-lanka")({
   head: () => ({

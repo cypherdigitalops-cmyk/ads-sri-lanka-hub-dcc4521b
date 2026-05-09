@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Omnichannel Marketing Sri Lanka — Best Omnichannel Marketing Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for omnichannel marketing sri lanka? We deliver high-performance omnichannel marketing sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Omnichannel Marketing Sri Lanka — Trusted Sri Lankan Agency";
+const DESC = "Looking for omnichannel marketing sri lanka? Our Sri Lankan team plans, launches and optimises high-performing omnichannel marketing sri lanka campaigns with";
 
 export const Route = createFileRoute("/omnichannel-marketing-sri-lanka")({
   head: () => ({

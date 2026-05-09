@@ -1,6 +1,6 @@
 import { SiteHeader } from "./Header";
 import { SiteFooter } from "./Footer";
-import { StickyCallBar } from "./CTASection";
+import { StickyCallBar, FloatingWhatsApp } from "./CTASection";
 
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +9,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       <main className="flex-1">{children}</main>
       <SiteFooter />
       <StickyCallBar />
+      <FloatingWhatsApp />
     </div>
   );
 }

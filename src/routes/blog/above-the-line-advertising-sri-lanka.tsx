@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Above The Line Advertising Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on above the line advertising sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Above The Line Advertising Sri Lanka in 2026 — Trends & Tactics";
+const DESC = "Avoid the most common above the line advertising sri lanka mistakes Sri Lankan brands make.";
 
 export const Route = createFileRoute("/blog/above-the-line-advertising-sri-lanka")({
   head: () => ({

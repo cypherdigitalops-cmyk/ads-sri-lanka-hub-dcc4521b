@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Exhibition Branding Sri Lanka — Best Exhibition Branding Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for exhibition branding sri lanka? We deliver high-performance exhibition branding sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Exhibition Branding Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service exhibition branding sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
 
 export const Route = createFileRoute("/exhibition-branding-sri-lanka")({
   head: () => ({

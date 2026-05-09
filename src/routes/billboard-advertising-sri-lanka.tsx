@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Billboard Advertising Sri Lanka — Best Billboard Advertising Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for billboard advertising sri lanka? We deliver high-performance billboard advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Billboard Advertising Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service billboard advertising sri lanka for Sri Lankan brands. Get pricing, timelines and channel options.";
 
 export const Route = createFileRoute("/billboard-advertising-sri-lanka")({
   head: () => ({

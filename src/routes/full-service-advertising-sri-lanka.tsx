@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Full Service Advertising Sri Lanka — Best Full Service Advertising Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for full service advertising sri lanka? We deliver high-performance full service advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Full Service Advertising Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service full service advertising sri lanka for Sri Lankan brands. Get pricing, timelines and channel options.";
 
 export const Route = createFileRoute("/full-service-advertising-sri-lanka")({
   head: () => ({

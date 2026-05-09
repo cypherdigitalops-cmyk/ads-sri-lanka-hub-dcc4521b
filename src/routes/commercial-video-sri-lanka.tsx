@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "Commercial Video Sri Lanka — Best Commercial Video Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for commercial video sri lanka? We deliver high-performance commercial video sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Commercial Video Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service commercial video sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
 
 export const Route = createFileRoute("/commercial-video-sri-lanka")({
   head: () => ({

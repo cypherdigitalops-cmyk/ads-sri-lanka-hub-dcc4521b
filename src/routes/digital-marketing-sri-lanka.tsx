@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Digital Marketing Sri Lanka — Digital Marketing Services in Sri Lanka | advertisingsrilanka.lk";
-const DESC = "Generate leads, sales and growth with full-funnel digital marketing — Google Ads, Facebook, Instagram, TikTok, YouTube, LinkedIn, programmatic and remarket";
+const TITLE = "Digital Marketing in Sri Lanka — Services Hub";
+const DESC = "Performance-driven Google, Meta, TikTok and programmatic campaigns. Get pricing and free advice — call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/digital-marketing-sri-lanka")({
   head: () => ({

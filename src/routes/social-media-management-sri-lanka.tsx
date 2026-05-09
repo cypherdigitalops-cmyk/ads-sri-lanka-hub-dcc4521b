@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Social Media Management Sri Lanka — Best Social Media Management Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for social media management sri lanka? We deliver high-performance social media management sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Top-Rated Social Media Management Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for social media management sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/social-media-management-sri-lanka")({
   head: () => ({

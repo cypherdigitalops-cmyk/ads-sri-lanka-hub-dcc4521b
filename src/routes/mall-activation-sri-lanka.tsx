@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Mall Activation Sri Lanka — Best Mall Activation Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for mall activation sri lanka? We deliver high-performance mall activation sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Mall Activation Sri Lanka Services — Get a Free Quote Today";
+const DESC = "Get measurable results from mall activation sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
 
 export const Route = createFileRoute("/mall-activation-sri-lanka")({
   head: () => ({

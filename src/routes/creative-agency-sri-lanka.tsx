@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Creative Agency Sri Lanka — Best Creative Agency Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for creative agency sri lanka? We deliver high-performance creative agency sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Creative Agency Sri Lanka — Trusted Sri Lankan Agency";
+const DESC = "Looking for creative agency sri lanka? Our Sri Lankan team plans, launches and optimises high-performing creative agency sri lanka campaigns with transparent";
 
 export const Route = createFileRoute("/creative-agency-sri-lanka")({
   head: () => ({

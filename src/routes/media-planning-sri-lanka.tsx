@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Media Planning Sri Lanka — Best Media Planning Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for media planning sri lanka? We deliver high-performance media planning sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Media Planning Sri Lanka That Drives Real Results";
+const DESC = "From concept to launch — full-service media planning sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
 
 export const Route = createFileRoute("/media-planning-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Activation Marketing Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on activation marketing sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "What Is Activation Marketing Sri Lanka? Sri Lanka Guide";
+const DESC = "A practical, no-fluff guide to activation marketing sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
 
 export const Route = createFileRoute("/blog/activation-marketing-sri-lanka")({
   head: () => ({

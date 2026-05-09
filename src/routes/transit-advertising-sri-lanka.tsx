@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Transit Advertising Sri Lanka — Best Transit Advertising Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for transit advertising sri lanka? We deliver high-performance transit advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Affordable Transit Advertising Sri Lanka for Sri Lankan Brands";
+const DESC = "Plan smarter transit advertising sri lanka with Sri Lanka's #1 advertising hub. Audience research, creative, channels and weekly reports — all in one team.";
 
 export const Route = createFileRoute("/transit-advertising-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "2D Animation Sri Lanka — Best 2D Animation Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for 2d animation sri lanka? We deliver high-performance 2d animation sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "2D Animation Sri Lanka — Plan, Launch & Optimise";
+const DESC = "Discover how 2d animation sri lanka can grow your Sri Lankan business. Compare options, costs and timelines with experts.";
 
 export const Route = createFileRoute("/2d-animation-sri-lanka")({
   head: () => ({

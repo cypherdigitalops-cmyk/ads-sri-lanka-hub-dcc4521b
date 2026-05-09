@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Banner Design Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on banner design sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Beginner's Guide to Banner Design Sri Lanka";
+const DESC = "An expert overview of banner design sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
 
 export const Route = createFileRoute("/blog/banner-design-sri-lanka")({
   head: () => ({

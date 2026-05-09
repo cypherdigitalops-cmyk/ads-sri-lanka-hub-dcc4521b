@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Led Video Wall Sri Lanka — Best Led Video Wall Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for led video wall sri lanka? We deliver high-performance led video wall sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "LED Video Wall Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need led video wall sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/led-video-wall-sri-lanka")({
   head: () => ({

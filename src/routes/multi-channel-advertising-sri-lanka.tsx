@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
-const TITLE = "Multi Channel Advertising Sri Lanka — Best Multi Channel Advertising Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for multi channel advertising sri lanka? We deliver high-performance multi channel advertising sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Multi Channel Advertising Sri Lanka — Trusted Sri Lankan Agency";
+const DESC = "Looking for multi channel advertising sri lanka? Our Sri Lankan team plans, launches and optimises high-performing multi channel advertising sri lanka";
 
 export const Route = createFileRoute("/multi-channel-advertising-sri-lanka")({
   head: () => ({

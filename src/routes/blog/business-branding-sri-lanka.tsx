@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Business Branding Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on business branding sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "How Business Branding Sri Lanka Works in Sri Lanka";
+const DESC = "Compare options, budgets and timelines for business branding sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0771437707.";
 
 export const Route = createFileRoute("/blog/business-branding-sri-lanka")({
   head: () => ({

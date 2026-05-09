@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Wordpress Development Sri Lanka — Best Wordpress Development Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for wordpress development sri lanka? We deliver high-performance wordpress development sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Top-Rated Wordpress Development Sri Lanka in Sri Lanka";
+const DESC = "Hire trusted specialists for wordpress development sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
 
 export const Route = createFileRoute("/wordpress-development-sri-lanka")({
   head: () => ({

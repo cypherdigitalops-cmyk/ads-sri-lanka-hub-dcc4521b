@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Sms Advertising Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on sms advertising sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "The Sri Lankan Brand's Playbook to SMS Advertising Sri Lanka";
+const DESC = "From planning to launch — a complete walkthrough of sms advertising sri lanka for Sri Lankan businesses. Tools, tips and partner-selection checklist included.";
 
 export const Route = createFileRoute("/blog/sms-advertising-sri-lanka")({
   head: () => ({

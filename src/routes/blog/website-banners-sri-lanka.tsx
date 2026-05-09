@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Website Banners Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on website banners sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Website Banners Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how website banners sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/website-banners-sri-lanka")({
   head: () => ({

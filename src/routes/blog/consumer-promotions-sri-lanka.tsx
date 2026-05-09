@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Consumer Promotions Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on consumer promotions sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "The Sri Lankan Brand's Playbook to Consumer Promotions Sri Lanka";
+const DESC = "From planning to launch — a complete walkthrough of consumer promotions sri lanka for Sri Lankan businesses.";
 
 export const Route = createFileRoute("/blog/consumer-promotions-sri-lanka")({
   head: () => ({

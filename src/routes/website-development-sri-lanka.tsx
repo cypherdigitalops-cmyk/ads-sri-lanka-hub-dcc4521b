@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Website Development Sri Lanka — Best Website Development Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for website development sri lanka? We deliver high-performance website development sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Website Development Sri Lanka — Strategy, Creative, Media";
+const DESC = "Need website development sri lanka that actually converts? We blend local insight with proven media frameworks to deliver leads and sales.";
 
 export const Route = createFileRoute("/website-development-sri-lanka")({
   head: () => ({

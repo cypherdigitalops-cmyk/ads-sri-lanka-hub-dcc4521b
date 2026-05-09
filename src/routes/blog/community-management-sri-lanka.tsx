@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Community Management Sri Lanka: Complete Guide for Sri Lankan Businesses";
-const DESC = "Read our complete guide on community management sri lanka — strategies, channels, mistakes to avoid and how to choose the right partner. Call 0771437707 to talk to a specialist.";
+const TITLE = "Community Management Sri Lanka — Costs, Channels & ROI";
+const DESC = "Learn how community management sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
 
 export const Route = createFileRoute("/blog/community-management-sri-lanka")({
   head: () => ({

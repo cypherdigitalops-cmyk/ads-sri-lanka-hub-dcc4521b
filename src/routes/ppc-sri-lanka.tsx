@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "PPC Sri Lanka — Best PPC Sri Lanka Services | advertisingsrilanka.lk";
-const DESC = "Looking for PPC sri lanka? We deliver high-performance PPC sri lanka campaigns for Sri Lankan businesses. Strategy, creative & media in one team. Call 0771437707.";
+const TITLE = "Best PPC Sri Lanka Agency in Sri Lanka — Call 0771437707";
+const DESC = "Affordable, ROI-focused PPC sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end. Talk to us on 0771437707.";
 
 export const Route = createFileRoute("/ppc-sri-lanka")({
   head: () => ({

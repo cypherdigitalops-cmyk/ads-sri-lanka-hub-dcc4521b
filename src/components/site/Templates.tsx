@@ -207,8 +207,36 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 export function CategoryHubTemplate({ category }: { category: Category }) {
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE.url}/${category.slug}#service`,
+    name: `${category.title} in Sri Lanka`,
+    serviceType: category.title,
+    description: category.intro,
+    url: `${SITE.url}/${category.slug}`,
+    provider: { "@id": `${SITE.url}/#organization` },
+    areaServed: { "@type": "Country", name: "Sri Lanka" },
+    audience: { "@type": "BusinessAudience", name: "Sri Lankan businesses" },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `${category.title} services`,
+      itemListElement: category.services.map((s) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: titleCase(s.keyword),
+          url: `${SITE.url}/${s.slug}`,
+        },
+      })),
+    },
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Hero
         kicker={`${category.title} Sri Lanka`}
         h1={`${category.title} in Sri Lanka — ${category.short}`}
@@ -277,8 +305,27 @@ export function ServicePageTemplate({
 }) {
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
+  const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE.url}/${slug}#service`,
+    name: title,
+    serviceType: title,
+    category: category.title,
+    description: `Professional ${title} services for businesses across Sri Lanka — strategy, creative, media and reporting under one team.`,
+    url: `${SITE.url}/${slug}`,
+    provider: { "@id": `${SITE.url}/#organization` },
+    areaServed: { "@type": "Country", name: "Sri Lanka" },
+    audience: { "@type": "BusinessAudience", name: "Sri Lankan businesses" },
+    isPartOf: { "@id": `${SITE.url}/${category.slug}#service` },
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Hero
         kicker={`${category.title} • Sri Lanka`}
         h1={`${title} — Get Found, Get Customers`}
@@ -360,8 +407,30 @@ export function BlogArticleTemplate({
 }) {
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
+  const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";
+  const url = `${SITE.url}/blog/${slug}`;
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${url}#article`,
+    headline: `${title}: Complete Guide`,
+    description: `Everything Sri Lankan businesses need to know about ${title}.`,
+    inLanguage: "en-LK",
+    mainEntityOfPage: url,
+    url,
+    image: `${SITE.url}/og-home.jpg`,
+    author: { "@id": `${SITE.url}/#organization` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+    about: { "@type": "Thing", name: category.title },
+    articleSection: category.title,
+    keywords: [keyword, category.hubKeyword, "Sri Lanka", "advertising"].join(", "),
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <Hero
         kicker="Insights & Guides"
         h1={`${title}: Complete Guide`}

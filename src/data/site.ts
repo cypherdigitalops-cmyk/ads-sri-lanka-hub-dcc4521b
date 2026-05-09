@@ -31,6 +31,7 @@ export const CATEGORIES: Category[] = [
     short: "Above-the-line mass-media advertising across TV, radio, press and cinema.",
     intro:
       "Reach millions of Sri Lankan consumers through trusted mass-media channels. We plan, buy and execute high-impact ATL campaigns on television, radio, newspapers, magazines and cinema with measurable brand lift.",
+    icon: "Tv",
     services: [
       { slug: "tv-advertising-sri-lanka", keyword: "tv advertising sri lanka" },
       { slug: "radio-advertising-sri-lanka", keyword: "radio advertising sri lanka" },
@@ -59,6 +60,7 @@ export const CATEGORIES: Category[] = [
     short: "Below-the-line activations, field marketing and on-ground promotions.",
     intro:
       "Drive direct consumer engagement with high-impact BTL campaigns — brand activations, mall events, roadshows, sampling, retail branding and field marketing across all 25 districts of Sri Lanka.",
+    icon: "Megaphone",
     services: [
       { slug: "brand-activation-sri-lanka", keyword: "brand activation sri lanka" },
       { slug: "event-marketing-sri-lanka", keyword: "event marketing sri lanka" },
@@ -96,6 +98,7 @@ export const CATEGORIES: Category[] = [
     short: "Through-the-line, 360° and omnichannel campaigns that connect every touchpoint.",
     intro:
       "Combine ATL reach with BTL precision through fully integrated 360° campaigns. We orchestrate consistent brand stories across TV, radio, digital, social, outdoor and on-ground — all measured under one strategy.",
+    icon: "Layers",
     services: [
       { slug: "integrated-marketing-sri-lanka", keyword: "integrated marketing sri lanka" },
       { slug: "360-marketing-campaigns-sri-lanka", keyword: "360 marketing campaigns sri lanka" },
@@ -121,6 +124,7 @@ export const CATEGORIES: Category[] = [
     short: "Performance-driven Google, Meta, TikTok and programmatic campaigns.",
     intro:
       "Generate leads, sales and growth with full-funnel digital marketing — Google Ads, Facebook, Instagram, TikTok, YouTube, LinkedIn, programmatic and remarketing — all tracked end-to-end with transparent reporting.",
+    icon: "MousePointerClick",
     services: [
       { slug: "google-ads-sri-lanka", keyword: "google ads sri lanka" },
       { slug: "facebook-marketing-sri-lanka", keyword: "facebook marketing sri lanka" },
@@ -160,6 +164,7 @@ export const CATEGORIES: Category[] = [
     short: "Rank #1 on Google with proven on-page, off-page and technical SEO.",
     intro:
       "Win organic traffic that converts. Our SEO team delivers keyword research, technical audits, on-page optimisation, content strategy, link building and local SEO for Sri Lankan businesses targeting both local and global keywords.",
+    icon: "Search",
     services: [
       { slug: "local-seo-sri-lanka", keyword: "local seo sri lanka" },
       { slug: "technical-seo-sri-lanka", keyword: "technical seo sri lanka" },
@@ -187,6 +192,7 @@ export const CATEGORIES: Category[] = [
     short: "Grow followers, engagement and sales across every social platform.",
     intro:
       "From content creation to paid ads, we manage Facebook, Instagram, TikTok, LinkedIn and YouTube for Sri Lankan brands — building loyal communities and driving measurable business outcomes.",
+    icon: "Share2",
     services: [
       { slug: "social-media-management-sri-lanka", keyword: "social media management sri lanka" },
       { slug: "facebook-ads-sri-lanka", keyword: "facebook ads sri lanka" },
@@ -213,6 +219,7 @@ export const CATEGORIES: Category[] = [
     short: "Bulk email, SMS and WhatsApp campaigns that deliver and convert.",
     intro:
       "Reach customers directly with permission-based email, SMS and WhatsApp marketing — automated journeys, segmentation, A/B testing and detailed reporting tailored for the Sri Lankan market.",
+    icon: "Mail",
     services: [
       { slug: "bulk-email-sri-lanka", keyword: "bulk email sri lanka" },
       { slug: "email-automation-sri-lanka", keyword: "email automation sri lanka" },
@@ -238,6 +245,7 @@ export const CATEGORIES: Category[] = [
     short: "Billboards, LED screens, transit and OOH across Sri Lanka.",
     intro:
       "Dominate Sri Lanka's streets with high-impact outdoor advertising. We secure premium billboards, digital LEDs, transit, mobile and hoardings on Colombo's busiest routes and key cities islandwide.",
+    icon: "Building2",
     services: [
       { slug: "billboard-advertising-sri-lanka", keyword: "billboard advertising sri lanka" },
       { slug: "digital-billboard-sri-lanka", keyword: "digital billboard sri lanka" },
@@ -265,6 +273,7 @@ export const CATEGORIES: Category[] = [
     short: "Brand identity, logo, packaging and creative design that stands out.",
     intro:
       "Build a brand customers remember. Our creative team crafts identities, logos, packaging, brochures and corporate collateral that win hearts and shelf space across Sri Lanka.",
+    icon: "Palette",
     services: [
       { slug: "brand-identity-sri-lanka", keyword: "brand identity sri lanka" },
       { slug: "corporate-branding-sri-lanka", keyword: "corporate branding sri lanka" },
@@ -291,6 +300,7 @@ export const CATEGORIES: Category[] = [
     short: "Conversion-focused websites, e-commerce and landing pages.",
     intro:
       "Beautiful, fast, SEO-ready websites built to convert. From WordPress and e-commerce to bespoke landing pages and ongoing maintenance — engineered for the Sri Lankan audience and Google's Core Web Vitals.",
+    icon: "Monitor",
     services: [
       { slug: "website-development-sri-lanka", keyword: "website development sri lanka" },
       { slug: "ecommerce-website-sri-lanka", keyword: "ecommerce website sri lanka" },
@@ -314,6 +324,7 @@ export const CATEGORIES: Category[] = [
     short: "TVCs, corporate films, animation and drone videography.",
     intro:
       "Tell your story with cinema-grade production. We produce TV commercials, corporate videos, motion graphics, 2D/3D animation and aerial drone shoots for brands across Sri Lanka.",
+    icon: "Film",
     services: [
       { slug: "commercial-video-sri-lanka", keyword: "commercial video sri lanka" },
       { slug: "corporate-video-sri-lanka", keyword: "corporate video sri lanka" },

@@ -251,17 +251,17 @@ function Index() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
             <div className="text-sm font-semibold uppercase tracking-wider text-accent">Why advertisingsrilanka.lk</div>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">One team. Every channel. Real results.</h2>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">The easiest way to understand advertising in Sri Lanka</h2>
             <p className="mt-4 text-muted-foreground">
-              We're not just another agency. We're the advertising hub Sri Lankan businesses turn to when they need clear answers, fast execution and measurable growth.
+              We're an information hub — not an agency. Use this site to learn what's available, compare channels and decide what fits your business. When you're ready, we connect you with the right specialists.
             </p>
             <div className="mt-6 space-y-3">
               {[
-                "Free strategy call — no obligation",
-                "Transparent pricing — no hidden costs",
-                "Dedicated account manager from day one",
-                "Weekly performance reports across all channels",
-                "Local-language creative (Sinhala, Tamil, English)",
+                "Plain-English explanations of every advertising option",
+                "Compare ATL, BTL, digital, outdoor & more in one place",
+                "Free phone or WhatsApp guidance — no obligation",
+                "Local context: Sinhala, Tamil & English markets",
+                "Up-to-date guides for Sri Lankan businesses",
               ].map((t) => (
                 <div key={t} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-accent" />
@@ -271,19 +271,19 @@ function Index() {
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
               <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground">
-                <Phone className="h-4 w-4" /> Call {SITE.phone}
+                <Phone className="h-4 w-4" /> Ask {SITE.phone}
               </a>
               <Link to="/get-quote" className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold hover:border-primary hover:text-primary">
-                Send Inquiry <ArrowRight className="h-4 w-4" />
+                Send a Question <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { i: <Target className="h-5 w-5" />, t: "Strategy-led", d: "Every campaign starts with clear goals & KPIs." },
-              { i: <BarChart3 className="h-5 w-5" />, t: "Performance-focused", d: "Measurable ROI on every channel & rupee." },
-              { i: <Users className="h-5 w-5" />, t: "Local insight", d: "Sinhala, Tamil & English audiences understood." },
-              { i: <Award className="h-5 w-5" />, t: "Full-service", d: "Strategy, creative, media, tech, reporting." },
+              { i: <Search className="h-5 w-5" />, t: "Discover", d: "Learn what advertising channels exist in Sri Lanka." },
+              { i: <BarChart3 className="h-5 w-5" />, t: "Compare", d: "Understand strengths of each channel & approach." },
+              { i: <Users className="h-5 w-5" />, t: "Local insight", d: "Sinhala, Tamil & English market context." },
+              { i: <Award className="h-5 w-5" />, t: "Get help", d: "Free guidance — by phone, WhatsApp or email." },
             ].map((f) => (
               <div key={f.t} className="rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-card)]">
                 <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-hero)] text-primary-foreground">{f.i}</div>
@@ -292,32 +292,6 @@ function Index() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* PROCESS */}
-      <section className="bg-secondary/30">
-        <div className="mx-auto max-w-7xl px-4 py-20">
-          <div className="text-center">
-            <div className="text-sm font-semibold uppercase tracking-wider text-accent">How we work</div>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">From brief to results in 4 simple steps</h2>
-          </div>
-          <ol className="mt-12 grid gap-5 md:grid-cols-4">
-            {[
-              { t: "Brief", d: "Share your goals, audience and budget." },
-              { t: "Plan", d: "We craft strategy, creative & channel mix." },
-              { t: "Launch", d: "Campaigns go live across selected media." },
-              { t: "Optimise", d: "We track, tune and scale every week." },
-            ].map((s, i) => (
-              <li key={s.t} className="relative rounded-xl border border-border bg-background p-6 shadow-[var(--shadow-card)]">
-                <div className="absolute -top-3 left-6 rounded-full bg-[image:var(--gradient-accent)] px-3 py-0.5 text-xs font-bold text-accent-foreground">
-                  STEP 0{i + 1}
-                </div>
-                <div className="mt-3 text-lg font-semibold">{s.t}</div>
-                <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 

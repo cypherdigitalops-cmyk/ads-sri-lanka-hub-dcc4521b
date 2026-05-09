@@ -19,6 +19,7 @@ export function SiteHeader() {
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">
           <Link to="/services" className="hover:text-primary">All Services</Link>
+          <Link to="/event-management-sri-lanka" className="hover:text-primary">Events</Link>
           <Link to="/atl-advertising-sri-lanka" className="hover:text-primary">ATL</Link>
           <Link to="/btl-advertising-sri-lanka" className="hover:text-primary">BTL</Link>
           <Link to="/digital-marketing-sri-lanka" className="hover:text-primary">Digital</Link>

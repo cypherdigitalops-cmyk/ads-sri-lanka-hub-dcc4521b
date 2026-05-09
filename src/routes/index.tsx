@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
- Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, Phone,
+ Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
   Search, Share2, Sparkles, Star, Tv, Users,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
@@ -17,7 +17,7 @@ const DESC = "The complete guide to advertising in Sri Lanka. Learn how TV, radi
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
-  Palette, Monitor, Film,
+  Palette, Monitor, Film, PartyPopper,
 };
 
 const HOME_JSONLD = {

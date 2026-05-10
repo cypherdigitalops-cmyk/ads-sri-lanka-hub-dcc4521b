@@ -323,51 +323,6 @@ function Index() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
-        <div className="mx-auto max-w-7xl px-4 py-20">
-          <div className="text-center">
-            <div className="text-sm font-semibold text-accent">What Sri Lankan businesses say</div>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Trusted by hundreds of business owners</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-              Real feedback from people who used advertisingsrilanka.lk to plan their next campaign.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {[
-              {
-                q: "I had no idea where to start with advertising. One call explained ATL, BTL and digital in plain Sinhala. Saved me weeks of confusion.",
-                r: "Restaurant owner, Kandy",
-              },
-              {
-                q: "We compared billboards vs Google Ads here and picked the right mix. Our enquiries doubled in two months.",
-                r: "Founder, Colombo retail brand",
-              },
-              {
-                q: "Honest, friendly guidance — they pointed us to a TV package that actually fit our budget. Highly recommend.",
-                r: "Marketing manager, Galle",
-              },
-            ].map((t) => (
-              <div key={t.r} className="relative rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-accent/50">
-                <Quote className="h-7 w-7 text-accent" />
-                <p className="mt-4 text-sm leading-relaxed text-primary-foreground/90">"{t.q}"</p>
-                <div className="mt-5 flex items-center gap-3 border-t border-primary-foreground/10 pt-4">
-                  <div>
-                    <div className="text-sm font-semibold">{t.r}</div>
-                    <div className="text-xs text-primary-foreground/70">Verified business owner</div>
-                  </div>
-                  <div className="ml-auto flex gap-0.5 text-accent">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="h-3.5 w-3.5 fill-current" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* HOW IT WORKS */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="text-center">

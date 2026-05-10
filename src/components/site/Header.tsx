@@ -9,9 +9,9 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:h-24">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 md:h-16">
         <Link to="/" className="flex items-center gap-2.5">
-          <img src={logo} alt="Advertising Sri Lanka" className="h-14 w-auto md:h-20" />
+          <img src={logo} alt="Advertising Sri Lanka" className="h-8 w-auto md:h-10" />
           <span className="sr-only">Advertising Sri Lanka</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">

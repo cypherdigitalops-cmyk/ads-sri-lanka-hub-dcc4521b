@@ -1,13 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { CATEGORIES, SITE } from "@/data/site";
+import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
     <footer className="mt-16 bg-[image:var(--gradient-hero)] text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-4">
         <div>
-          <div className="text-lg font-semibold">advertisingsrilanka<span className="text-accent">.lk</span></div>
+          <img src={logo} alt="Advertising Sri Lanka" className="h-10 w-auto bg-white rounded-md p-1" />
           <p className="mt-3 text-sm text-primary-foreground/75">
             Sri Lanka's information hub for every advertising solution — ATL, BTL, digital, SEO, social media, outdoor, branding, web &amp; video. Search, learn, then call us with your question.
           </p>

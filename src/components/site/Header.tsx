@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { SITE } from "@/data/site";
 import { CATEGORIES } from "@/data/site";
+import logo from "@/assets/logo.png";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -10,12 +11,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-[image:var(--gradient-hero)] text-sm font-bold tracking-tight text-primary-foreground">
-            AS
-          </span>
-          <span className="text-base font-semibold tracking-tight">
-            Advertising Sri Lanka<span className="text-accent">.lk</span>
-          </span>
+          <img src={logo} alt="Advertising Sri Lanka" className="h-9 w-auto md:h-10" />
+          <span className="sr-only">Advertising Sri Lanka</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">
           <Link to="/services" className="hover:text-primary">All Services</Link>

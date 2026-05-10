@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
-  Search, Share2, Sparkles, Star, Tv, Users,
+  Search, Share2, Sparkles, Star, Tv, Users, Quote, Globe, Clock, TrendingUp, Zap,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
@@ -175,6 +175,25 @@ function Index() {
         </div>
       </section>
 
+      {/* STATS */}
+      <section className="mx-auto max-w-7xl px-4 pt-16">
+        <div className="grid grid-cols-2 gap-3 rounded-3xl border border-border bg-card p-4 shadow-[var(--shadow-card)] sm:gap-4 sm:p-6 md:grid-cols-4">
+          {[
+            { n: "180+", l: "Advertising services explained", i: Layers },
+            { n: "25+", l: "Channels — ATL, BTL, Digital", i: Megaphone },
+            { n: "3", l: "Languages — Sinhala, Tamil, English", i: Globe },
+            { n: "24/7", l: "Free guidance — call or WhatsApp", i: Clock },
+          ].map((s) => (
+            <div key={s.l} className="group relative overflow-hidden rounded-2xl bg-[image:var(--gradient-hero)] p-5 text-primary-foreground sm:p-6">
+              <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-accent/30 blur-2xl transition group-hover:bg-accent/50" />
+              <s.i className="relative h-5 w-5 text-accent" />
+              <div className="relative mt-3 text-3xl font-bold tracking-tight sm:text-4xl">{s.n}</div>
+              <div className="relative mt-1 text-xs text-primary-foreground/80 sm:text-sm">{s.l}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="text-center">
@@ -305,6 +324,87 @@ function Index() {
       </section>
 
       {/* TESTIMONIALS */}
+      <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold text-accent">What Sri Lankan businesses say</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Trusted by hundreds of business owners</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
+              Real feedback from people who used advertisingsrilanka.lk to plan their next campaign.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                q: "I had no idea where to start with advertising. One call explained ATL, BTL and digital in plain Sinhala. Saved me weeks of confusion.",
+                n: "Nuwan P.",
+                r: "Restaurant owner, Kandy",
+              },
+              {
+                q: "We compared billboards vs Google Ads here and picked the right mix. Our enquiries doubled in two months.",
+                n: "Shanika F.",
+                r: "Founder, Colombo retail brand",
+              },
+              {
+                q: "Honest, friendly guidance — they pointed us to a TV package that actually fit our budget. Highly recommend.",
+                n: "Tharindu R.",
+                r: "Marketing manager, Galle",
+              },
+            ].map((t) => (
+              <div key={t.n} className="relative rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-accent/50">
+                <Quote className="h-7 w-7 text-accent" />
+                <p className="mt-4 text-sm leading-relaxed text-primary-foreground/90">"{t.q}"</p>
+                <div className="mt-5 flex items-center gap-3 border-t border-primary-foreground/10 pt-4">
+                  <div className="grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-accent)] text-sm font-bold text-accent-foreground">
+                    {t.n.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">{t.n}</div>
+                    <div className="text-xs text-primary-foreground/70">{t.r}</div>
+                  </div>
+                  <div className="ml-auto flex gap-0.5 text-accent">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} className="h-3.5 w-3.5 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section className="mx-auto max-w-7xl px-4 py-20">
+        <div className="text-center">
+          <div className="text-sm font-semibold text-accent">How it works</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Find the right advertising in 3 simple steps</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            No jargon, no pressure. Learn, compare and get free guidance — all in one place.
+          </p>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {[
+            { i: Search, t: "1. Explore", d: "Browse 180+ advertising services and 13 categories — TV, radio, billboards, Google Ads, social media, SEO, branding and more.", c: "from-primary to-primary-glow" },
+            { i: TrendingUp, t: "2. Compare", d: "Read plain-English guides explaining how each channel works, what it costs, and where it fits your business.", c: "from-primary-glow to-accent" },
+            { i: Zap, t: "3. Get help", d: "Call 0771437707 or WhatsApp us for free guidance. We connect you with the right Sri Lankan specialists.", c: "from-accent to-primary-glow" },
+          ].map((s, i) => (
+            <div key={s.t} className="relative">
+              <div className="group h-full rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)] transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-[var(--shadow-elegant)]">
+                <div className={`mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${s.c} text-primary-foreground shadow-[var(--shadow-card)]`}>
+                  <s.i className="h-6 w-6" />
+                </div>
+                <div className="text-xl font-semibold">{s.t}</div>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
+              </div>
+              {i < 2 && (
+                <ArrowRight className="absolute -right-3 top-1/2 hidden h-6 w-6 -translate-y-1/2 text-accent md:block" />
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <div className="mx-auto max-w-7xl px-4">
         <CTASection

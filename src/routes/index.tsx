@@ -718,6 +718,7 @@ function Index() {
           <div className="mt-10 space-y-3">
             {[
               ...HOME_LONGFORM.faqs,
+              ...EXTRA_FAQS,
             ].map((f) => (
               <details key={f.q} className="group rounded-xl border border-border bg-background p-5">
                 <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold marker:hidden">

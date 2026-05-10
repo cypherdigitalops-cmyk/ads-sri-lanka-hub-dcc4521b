@@ -4,6 +4,7 @@ import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
   Search, Share2, Sparkles, Star, Tv, Users, Globe, Clock, TrendingUp, Zap,
+  AlertTriangle, Target, Wallet, Lightbulb,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
@@ -19,6 +20,60 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
   Palette, Monitor, Film, PartyPopper,
 };
+
+// --- SEO-rich content from full guide ---
+const CHANNEL_GUIDE: { icon: string; title: string; desc: string; tags: string[]; bestFor: string; budget: string; href: string }[] = [
+  { icon: "📺", title: "ATL — TV, Radio & Press", desc: "Above-the-line mass media reaches millions simultaneously. TV on Siyatha, Derana and TV1; radio across FM; and print in Sunday Observer, Daily Mirror and Lankadeepa give your brand immediate national coverage. Best for fast, broad awareness — FMCG launches, financial products, and brands that need to be seen everywhere.", tags: ["FMCG", "Finance", "Retail chains"], bestFor: "National awareness", budget: "From Rs 150,000/month", href: "/atl-advertising-sri-lanka" },
+  { icon: "🎯", title: "BTL — Activations & Field Marketing", desc: "Below-the-line meets your customer face-to-face — at supermarkets, malls, roadshows, exhibitions and community events. BTL drives trial, sampling and in-person conversion in ways no digital ad can replicate. Powerful for product launches, demos and trust-building.", tags: ["Product launches", "FMCG", "Events"], bestFor: "Trial & conversion", budget: "From Rs 80,000/activation", href: "/btl-advertising-sri-lanka" },
+  { icon: "🔍", title: "Google Ads — Search & Display", desc: "Google Ads places your business at the top of Google when someone in Sri Lanka searches for exactly what you offer. The highest-intent advertising channel — the prospect is actively looking for your product. Display and YouTube reach audiences while they browse and watch.", tags: ["Services", "E-commerce", "B2B"], bestFor: "High-intent leads", budget: "From Rs 40,000/month", href: "/google-ads-sri-lanka" },
+  { icon: "📱", title: "Social Media Advertising", desc: "Facebook and Instagram give precise targeting by age, location, language, interests and behaviour. TikTok is Sri Lanka's fastest-growing platform for under-35 audiences. LinkedIn is essential for B2B. Each platform requires a different creative approach.", tags: ["Retail", "Hospitality", "B2C"], bestFor: "Engagement & brand love", budget: "From Rs 30,000/month", href: "/social-media-marketing-sri-lanka" },
+  { icon: "📈", title: "SEO — Search Engine Optimisation", desc: "SEO makes your site appear at the top of Google without paying per click. The lowest cost-per-lead channel over the long term, building compounding value — unlike ads that stop the moment you stop paying. Needs 3–6 months to compound, but the returns are transformative.", tags: ["All businesses", "Lowest CPL"], bestFor: "Long-term growth", budget: "From Rs 35,000/month", href: "/seo-services-sri-lanka" },
+  { icon: "🏙️", title: "Outdoor & Billboard Advertising", desc: "Billboards on Galle Road, digital LED screens at Majestic City, transit ads on buses and three-wheelers, and lamp-post banners across provincial towns. OOH builds trust and visibility at scale, and works best when combined with a digital campaign running simultaneously.", tags: ["Local dominance", "Brand recall"], bestFor: "Visibility & trust", budget: "From Rs 60,000/month", href: "/outdoor-advertising-sri-lanka" },
+  { icon: "🎬", title: "Video Production & TVCs", desc: "Video is the most effective format on every digital platform — Facebook, Instagram, TikTok and YouTube all prioritise video. A well-produced TVC establishes credibility in seconds. Quality video production in Sri Lanka is now accessible to businesses of all sizes.", tags: ["Brand building", "Product demos"], bestFor: "Storytelling & emotion", budget: "From Rs 100,000/production", href: "/video-production-sri-lanka" },
+  { icon: "🖌️", title: "Branding & Creative Design", desc: "Your brand identity — logo, colours, typography, tone of voice, packaging — is the foundation every other channel builds on. Weak branding undermines even a generous media budget. In Sri Lanka, branding must also account for cultural colour associations and multilingual logo legibility.", tags: ["New businesses", "Rebrands"], bestFor: "Foundation & trust", budget: "From Rs 75,000/project", href: "/branding-sri-lanka" },
+  { icon: "💻", title: "Web Design & Development", desc: "Your website is the home base every advertising channel points to. A slow, outdated or confusing site destroys the return on any media spend. A conversion-optimised website built for Sri Lankan audiences and mobile turns traffic into enquiries and sales.", tags: ["All channels", "E-commerce"], bestFor: "Conversion foundation", budget: "From Rs 80,000/project", href: "/web-design-sri-lanka" },
+  { icon: "📧", title: "Email, SMS & WhatsApp Marketing", desc: "Direct messaging to your existing customer list delivers the highest ROI — typically Rs 30–50 in revenue per Rs 1 spent when lists are properly maintained. Bulk SMS achieves near-100% open rates. WhatsApp Business allows rich media and two-way conversation.", tags: ["Existing customers", "E-commerce"], bestFor: "Retention & ROI", budget: "From Rs 15,000/month", href: "/email-sms-marketing-sri-lanka" },
+  { icon: "🎪", title: "Event Management", desc: "Corporate events, product launches, exhibitions, trade shows and experiential brand activations give Sri Lankan consumers a direct, memorable encounter with your brand. Generates earned media, social sharing and word-of-mouth no paid campaign can fully replicate.", tags: ["B2B", "Launches", "Corporate"], bestFor: "Brand experience", budget: "From Rs 200,000/event", href: "/event-management-sri-lanka" },
+  { icon: "🔗", title: "TTL — Integrated 360° Campaigns", desc: "Through-the-line connects ATL, BTL and digital into a single, unified campaign — one brand message expressed consistently across every touchpoint. The approach used for major Sri Lankan brand launches and sustained brand-building programmes.", tags: ["National campaigns", "Enterprise"], bestFor: "Major launches", budget: "From Rs 500,000/month", href: "/ttl-advertising-sri-lanka" },
+];
+
+const DECISION_ROWS: [string, string, string, string, string][] = [
+  ["Google Search Ads", "High-intent leads, service businesses", "3–7 days", "Rs 40,000", "Excellent"],
+  ["Facebook / Instagram Ads", "B2C brands, retail, hospitality", "1–3 days", "Rs 30,000", "Very good"],
+  ["TikTok Ads", "Under-35 audience, brand awareness", "1–3 days", "Rs 25,000", "Good"],
+  ["SEO", "All businesses — long-term growth", "3–6 months", "Rs 35,000", "Very good"],
+  ["TV Advertising", "National FMCG, banks, telcos", "2–4 weeks", "Rs 300,000", "Limited"],
+  ["Radio Advertising", "Regional, language-market targeting", "1–2 weeks", "Rs 80,000", "Limited"],
+  ["Billboard / OOH", "Local visibility, brand trust", "2–3 weeks", "Rs 60,000", "Basic"],
+  ["Email / SMS / WhatsApp", "Existing customers, highest ROI", "Same day", "Rs 15,000", "Excellent"],
+  ["BTL Activations", "Product trial, mall & event marketing", "Same day", "Rs 80,000", "Moderate"],
+  ["YouTube Ads", "Brand storytelling, video-led brands", "2–5 days", "Rs 40,000", "Good"],
+];
+
+const BUDGET_TIERS = [
+  { tier: "Starter", range: "Rs 30,000 – 80,000 / month", desc: "Perfect for small businesses, local services and new brand launches that need measurable results immediately.", items: ["Google Search Ads (highest intent)", "Facebook / Instagram Ads", "Google Business Profile (free)", "WhatsApp Business (free)", "Basic SEO foundation"] },
+  { tier: "Growth", range: "Rs 80,000 – 300,000 / month", desc: "For businesses ready to scale with multi-channel digital strategy and early offline presence.", items: ["Google Ads (Search + Display)", "Facebook + Instagram + TikTok", "SEO (ongoing, compounding)", "Email + SMS marketing", "Radio (regional, if relevant)", "1–2 OOH sites in key locations"] },
+  { tier: "Scale", range: "Rs 300,000 – 1M / month", desc: "For established brands building national presence across digital and traditional simultaneously.", items: ["Full digital stack (Google, Meta, TikTok)", "YouTube video campaigns", "Influencer marketing partnerships", "OOH / Billboard networks", "Radio on 2–3 stations", "BTL activations at key venues", "Advanced SEO + content marketing"] },
+  { tier: "Enterprise", range: "Rs 1M+ / month", desc: "For large brands requiring integrated 360° campaigns across every touchpoint, islandwide.", items: ["TV advertising (prime-time slots)", "Full ATL media plan", "National BTL activation programme", "Premium OOH + digital billboards", "Programmatic display buying", "Full digital performance suite", "PR + earned media integration", "Event & experiential marketing"] },
+];
+
+const MISTAKES = [
+  { n: "01", t: "Boosting posts instead of running real campaigns", d: "Boosting a Facebook post is not the same as a structured campaign with proper targeting, objectives and creative testing. Properly structured campaigns with conversion objectives consistently outperform boosts by 5–10x." },
+  { n: "02", t: "Running ads with no tracking or measurement", d: "If you have no Meta Pixel, no GA4 goals, and no UTM tags, you are flying blind. Every campaign must be set up with measurement before a single rupee is spent on media." },
+  { n: "03", t: "Letting vendors own your ad accounts and data", d: "Some agencies set up ad accounts, hosting and domains under their own name. When you part ways, you lose your entire history and audience data. Always insist Google Ads, Facebook Business Manager, domain and hosting are in your business name." },
+  { n: "04", t: "One English creative for a multilingual market", d: "Sri Lanka has three distinct language markets. A single English creative — even with Sinhala subtitles — performs significantly worse than a properly localised Sinhala or Tamil version with native voiceover and adapted messaging." },
+  { n: "05", t: "Cutting the budget before it has time to work", d: "Most channels need 60–90 days of consistent spending. SEO needs 3–6 months. Even Google Ads needs 4–6 weeks for the algorithm to optimise. Cutting at week two is the single most costly mistake in Sri Lankan marketing." },
+  { n: "06", t: "Choosing channels based on what competitors do", d: "Just because a competitor is on TV does not mean TV is right for you. Channel selection should always start from where your specific target customer spends their attention — then build from there." },
+];
+
+const EXTRA_FAQS = [
+  { q: "How much does advertising cost in Sri Lanka?", a: "Costs vary enormously by channel. Digital (Google, Facebook, Instagram) starts from Rs 30,000–50,000 per month. Billboards in Colombo range Rs 60,000–250,000 per site. Radio starts around Rs 80,000 per month. TV is the most expensive ATL medium, with production from Rs 300,000–500,000 plus airtime. See our Advertising Rates page for a detailed breakdown." },
+  { q: "Do I need to run Sinhala and Tamil advertising separately?", a: "For any national campaign, yes — properly localised Sinhala and Tamil creative outperforms subtitled versions. Each language community responds significantly better to advertising that feels native. Facebook and Google allow language targeting; for TV and radio, plan separate productions." },
+  { q: "What's the difference between ATL and BTL advertising in Sri Lanka?", a: "ATL (Above-the-Line) uses mass media — TV, radio, newspapers, magazines, cinema — to broadcast widely for awareness. BTL (Below-the-Line) is targeted, on-ground and interactive — mall activations, sampling, roadshows, retail POS, sponsorships — best for trial and conversion. TTL integrates both with digital." },
+  { q: "How long does it take to see results from advertising in Sri Lanka?", a: "Google Search Ads: 3–7 days. Facebook/Instagram: hours to a week. TV/radio: 2–4 weeks for measurable brand-search lift. BTL: same day. SEO: 4–8 weeks for early movement, 3–6 months for meaningful traffic, 6–12 months for strong #1 positions. Email/SMS: immediate, if you have an opt-in list." },
+  { q: "Is advertising in Sri Lanka regulated?", a: "Yes. TV/radio is regulated by TRCSL. Product claims by the Consumer Affairs Authority. Financial services by SEC and CBSL. Pharmaceuticals by NMRA. Tobacco and alcohol carry specific restrictions. OOH requires municipal permits. Personal data in digital marketing must comply with the Personal Data Protection Act 2022." },
+  { q: "How do I measure whether my advertising is working?", a: "For digital: GA4, Meta Pixel and UTM tracking on every link. The three numbers that matter are Cost Per Lead (CPL), Return on Ad Spend (ROAS) and Customer Lifetime Value (CLV). For offline: track website search lift, use unique numbers/URLs per channel, and survey new customers. If your agency cannot report these monthly, that is a red flag." },
+];
 
 const HOME_JSONLD = {
   "@context": "https://schema.org",

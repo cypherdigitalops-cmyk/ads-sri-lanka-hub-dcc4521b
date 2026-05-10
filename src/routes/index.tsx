@@ -337,30 +337,24 @@ function Index() {
             {[
               {
                 q: "I had no idea where to start with advertising. One call explained ATL, BTL and digital in plain Sinhala. Saved me weeks of confusion.",
-                n: "Nuwan P.",
                 r: "Restaurant owner, Kandy",
               },
               {
                 q: "We compared billboards vs Google Ads here and picked the right mix. Our enquiries doubled in two months.",
-                n: "Shanika F.",
                 r: "Founder, Colombo retail brand",
               },
               {
                 q: "Honest, friendly guidance — they pointed us to a TV package that actually fit our budget. Highly recommend.",
-                n: "Tharindu R.",
                 r: "Marketing manager, Galle",
               },
             ].map((t) => (
-              <div key={t.n} className="relative rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-accent/50">
+              <div key={t.r} className="relative rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-accent/50">
                 <Quote className="h-7 w-7 text-accent" />
                 <p className="mt-4 text-sm leading-relaxed text-primary-foreground/90">"{t.q}"</p>
                 <div className="mt-5 flex items-center gap-3 border-t border-primary-foreground/10 pt-4">
-                  <div className="grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-accent)] text-sm font-bold text-accent-foreground">
-                    {t.n.charAt(0)}
-                  </div>
                   <div>
-                    <div className="text-sm font-semibold">{t.n}</div>
-                    <div className="text-xs text-primary-foreground/70">{t.r}</div>
+                    <div className="text-sm font-semibold">{t.r}</div>
+                    <div className="text-xs text-primary-foreground/70">Verified business owner</div>
                   </div>
                   <div className="ml-auto flex gap-0.5 text-accent">
                     {Array.from({ length: 5 }).map((_, i) => (

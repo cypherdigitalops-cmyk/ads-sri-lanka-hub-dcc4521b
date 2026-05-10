@@ -175,6 +175,25 @@ function Index() {
         </div>
       </section>
 
+      {/* STATS */}
+      <section className="mx-auto max-w-7xl px-4 pt-16">
+        <div className="grid grid-cols-2 gap-3 rounded-3xl border border-border bg-card p-4 shadow-[var(--shadow-card)] sm:gap-4 sm:p-6 md:grid-cols-4">
+          {[
+            { n: "180+", l: "Advertising services explained", i: Layers },
+            { n: "25+", l: "Channels — ATL, BTL, Digital", i: Megaphone },
+            { n: "3", l: "Languages — Sinhala, Tamil, English", i: Globe },
+            { n: "24/7", l: "Free guidance — call or WhatsApp", i: Clock },
+          ].map((s) => (
+            <div key={s.l} className="group relative overflow-hidden rounded-2xl bg-[image:var(--gradient-hero)] p-5 text-primary-foreground sm:p-6">
+              <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-accent/30 blur-2xl transition group-hover:bg-accent/50" />
+              <s.i className="relative h-5 w-5 text-accent" />
+              <div className="relative mt-3 text-3xl font-bold tracking-tight sm:text-4xl">{s.n}</div>
+              <div className="relative mt-1 text-xs text-primary-foreground/80 sm:text-sm">{s.l}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="text-center">

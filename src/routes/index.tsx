@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
-  Search, Share2, Sparkles, Star, Tv, Users, Quote, Globe, Clock, ShieldCheck, TrendingUp, Zap,
+  Search, Share2, Sparkles, Star, Tv, Users, Quote, Globe, Clock, TrendingUp, Zap,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";

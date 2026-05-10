@@ -987,30 +987,6 @@ export const HOME_LONGFORM: { blocks: Block[]; faqs: FAQ[] } = {
       text: "Once you have those answers, the right channels become obvious. A premium urban audience under 35? — Instagram, TikTok and Google. An islandwide FMCG launch? — TV + radio + retail branding + digital. A B2B service? — LinkedIn + SEO + email + targeted Google Search. A local restaurant? — Google Business Profile + Facebook/Instagram ads + WhatsApp.",
     },
 
-    { type: "h2", text: "What advertising costs in Sri Lanka — at a glance" },
-    {
-      type: "p",
-      text: "These are typical 2025 LKR ranges across the most-used channels. Treat them as a planning baseline; actual quotes depend on inventory, scale and creative.",
-    },
-    {
-      type: "table",
-      head: ["Channel", "Typical monthly range (LKR)", "Best for"],
-      rows: [
-        ["TV advertising (campaign)", "1,500,000 – 15,000,000+", "National awareness"],
-        ["Radio advertising", "150,000 – 2,500,000", "Regional reach, drive-time"],
-        ["Newspaper advertising", "200,000 – 3,000,000", "Trust, local SMEs, tenders"],
-        ["Outdoor billboards", "250,000 – 5,000,000", "Visibility, brand recall"],
-        ["Google Ads", "50,000 – 1,500,000+", "Lead gen, e-commerce"],
-        ["Facebook / Instagram ads", "30,000 – 1,000,000+", "Awareness + sales"],
-        ["TikTok ads", "50,000 – 800,000", "Under-35 audience"],
-        ["SEO retainer", "60,000 – 600,000", "Long-term organic traffic"],
-        ["Social media management", "35,000 – 700,000", "Brand presence"],
-        ["Email + SMS marketing", "25,000 – 250,000", "Existing customer revenue"],
-        ["Web design (one-off)", "75,000 – 1,500,000+", "Lead capture base"],
-        ["Video / TVC production", "35,000 – 8,000,000+", "All channels"],
-      ],
-    },
-
     { type: "h2", text: "How fast does advertising produce results?" },
     {
       type: "ul",
@@ -1047,14 +1023,6 @@ export const HOME_LONGFORM: { blocks: Block[]; faqs: FAQ[] } = {
     },
   ],
   faqs: [
-    {
-      q: "What is the cheapest form of advertising in Sri Lanka?",
-      a: "For most small businesses, Google Business Profile (free), local SEO (LKR 35,000–100,000/month) and targeted Facebook/Instagram ads (from LKR 30,000/month) deliver the lowest cost-per-lead. Email marketing to your existing customers is essentially free if you have a list.",
-    },
-    {
-      q: "How much should I spend on advertising as a percentage of revenue?",
-      a: "Healthy Sri Lankan SMEs typically spend 5–10% of target revenue on marketing if they're stable, and 12–20% if they're growing aggressively. New brands trying to establish themselves often spend 25–40% in the first year, then scale down.",
-    },
     {
       q: "Can I run a national campaign without TV?",
       a: "Yes — many digital-first brands in Sri Lanka have built strong national awareness using Facebook + TikTok + YouTube + outdoor + influencers, with no TV at all. TV is fastest for mass awareness but no longer essential, especially if your audience is under 40.",

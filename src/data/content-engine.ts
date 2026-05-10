@@ -873,12 +873,8 @@ export function buildCategoryLongForm(category: Category): { blocks: Block[]; fa
   blocks.push({ type: "h2", text: `${category.title} channels and formats` });
   blocks.push({ type: "ul", items: k.channels.map((c) => `${c.name} — ${c.desc}`) });
 
-  blocks.push({ type: "h2", text: `Typical ${lowName} costs in Sri Lanka (LKR)` });
-  blocks.push({
-    type: "table",
-    head: ["Item", "Typical range", "Notes"],
-    rows: k.costs.map((c) => [c.item, c.range, c.notes]),
-  });
+  blocks.push(...audienceBlocks(category, lowName));
+  blocks.push(...strategyBlocks(lowName));
 
   blocks.push({ type: "h2", text: `Who ${lowName} suits best` });
   blocks.push({ type: "ul", items: k.bestFor });
@@ -886,10 +882,17 @@ export function buildCategoryLongForm(category: Category): { blocks: Block[]; fa
   blocks.push({ type: "h2", text: `Mistakes Sri Lankan brands make with ${lowName}` });
   blocks.push({ type: "ul", items: k.mistakes });
 
+  blocks.push(...measurementBlocks(lowName));
+  blocks.push(...pitfallsBlocks(lowName));
+  blocks.push(...timelineBlocks(lowName));
+  blocks.push(...complianceBlocks(lowName));
+  blocks.push(...inHouseVsAgencyBlocks(lowName));
+  blocks.push(...trendsBlocks(lowName));
+
   blocks.push({ type: "h2", text: `How to choose the right ${lowName} partner` });
   blocks.push({ type: "ol", items: k.choosing });
 
-  return { blocks, faqs: k.faqs };
+  return { blocks, faqs: nonPricingFaqs(k.faqs) };
 }
 
 // --------- SUB-SERVICE LONG-FORM ---------
@@ -911,20 +914,23 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
     items: k.channels.slice(0, 6).map((c) => `${c.name}: ${c.desc}`),
   });
 
-  blocks.push({ type: "h2", text: `Typical investment in Sri Lanka` });
-  blocks.push({
-    type: "table",
-    head: ["Item", "Typical range (LKR)", "Notes"],
-    rows: k.costs.slice(0, 5).map((c) => [c.item, c.range, c.notes]),
-  });
+  blocks.push(...audienceBlocks(category, titled));
+  blocks.push(...strategyBlocks(titled));
 
   blocks.push({ type: "h2", text: `Common pitfalls to avoid` });
   blocks.push({ type: "ul", items: k.mistakes });
 
+  blocks.push(...measurementBlocks(titled));
+  blocks.push(...pitfallsBlocks(titled));
+  blocks.push(...timelineBlocks(titled));
+  blocks.push(...complianceBlocks(titled));
+  blocks.push(...inHouseVsAgencyBlocks(titled));
+  blocks.push(...trendsBlocks(titled));
+
   blocks.push({ type: "h2", text: `What to ask before signing` });
   blocks.push({ type: "ol", items: k.choosing });
 
-  return { blocks, faqs: k.faqs.slice(0, 5) };
+  return { blocks, faqs: nonPricingFaqs(k.faqs).slice(0, 6) };
 }
 
 // --------- HOME PAGE LONG-FORM (~2,000 words) ---------

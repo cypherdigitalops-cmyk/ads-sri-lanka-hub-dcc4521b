@@ -590,7 +590,184 @@ function kw(keyword: string) {
   return titleCase(keyword);
 }
 
-// --------- BLOG ARTICLE GENERATOR (1,200+ words real content) ---------
+// Hide pricing / cost FAQs everywhere — the site no longer publishes pricing.
+const PRICING_RE = /(cost|how much|budget|cheap|price|lkr|rate|fee)/i;
+function nonPricingFaqs(faqs: FAQ[]): FAQ[] {
+  return faqs.filter((f) => !PRICING_RE.test(f.q) && !PRICING_RE.test(f.a));
+}
+
+// Reusable extra content sections to keep every page above the 2,000-word
+// SEO benchmark without repeating the same paragraph on different pages.
+function audienceBlocks(category: Category, label: string): Block[] {
+  const lc = category.title.toLowerCase();
+  return [
+    { type: "h2", text: `Understanding the Sri Lankan audience for ${label}` },
+    {
+      type: "p",
+      text: `Sri Lanka is a tri-lingual market with sharply different media habits across Sinhala, Tamil and English communities. Roughly 75% of the country consumes content in Sinhala, around 15% in Tamil and the urban professional segment skews English. Successful ${label} campaigns recognise this from day one — they do not translate one English idea into the other languages, they re-write it. Tone, references, humour, music, festivals and even product benefits land differently in each language.`,
+    },
+    {
+      type: "p",
+      text: `Geography matters just as much. Western Province (Colombo, Gampaha, Kalutara) accounts for the bulk of national spending power, but growth opportunities for many Sri Lankan brands now sit in Kandy, Kurunegala, Galle, Matara, Jaffna, Batticaloa, Anuradhapura and Ratnapura. ${label} should be planned with district-level intent — what works on a Colombo office worker rarely works on a Kurunegala farmer or a Jaffna university student.`,
+    },
+    {
+      type: "h3", text: `Audience segments most Sri Lankan ${lc} campaigns target`,
+    },
+    {
+      type: "ul",
+      items: [
+        "Urban professionals (25–45) — high English literacy, mobile-first, premium spend, time-poor.",
+        "Aspirational middle-class families (30–55) — Sinhala dominant, TV + Facebook + WhatsApp, value-conscious.",
+        "Gen Z students and early-career (16–28) — TikTok, Instagram, YouTube Shorts, peer-influenced.",
+        "Tamil-speaking households (Northern, Eastern, Central plantation) — under-served, loyal once won.",
+        "SME owners and traders — WhatsApp groups, Facebook marketplaces, trade press, word of mouth.",
+        "Diaspora and returnees — bilingual, high spend, reachable through social and YouTube.",
+      ],
+    },
+  ];
+}
+
+function strategyBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Building a results-focused ${label} strategy` },
+    {
+      type: "p",
+      text: `A strong ${label} programme is built on four pillars — a clear business objective, a defined audience, a single brand idea and a tightly chosen channel mix. Most campaigns that disappoint did not fail at execution; they failed at the brief. Spend the first week of any project getting the brief right and the rest of the work becomes easier, faster and cheaper.`,
+    },
+    {
+      type: "ol",
+      items: [
+        "Objective — name the one outcome that matters (leads, sales, footfall, app installs, brand recall).",
+        "Audience — describe a real human, not a demographic bucket. Where they live, what language they think in, what they already believe about your category.",
+        "Insight — find the small truth about your audience that your competitors are ignoring.",
+        "Idea — express the insight as a single brand thought that can travel across every channel.",
+        "Channels — pick the two or three media that match the audience's day, not your team's preferences.",
+        "Measurement — write the success metric down before launch so optimisation is honest.",
+      ],
+    },
+    {
+      type: "p",
+      text: `Once the strategy is set, ${label} execution becomes a question of consistency. Run the same idea, in the same voice, with the same call-to-action across every touchpoint for at least 90 days before judging it. Sri Lankan audiences need repetition to trust a brand — switching message every two weeks signals a brand that does not know itself.`,
+    },
+  ];
+}
+
+function measurementBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Measuring ${label} the right way` },
+    {
+      type: "p",
+      text: `If a number does not influence a decision, it does not belong in your ${label} report. Sri Lankan businesses are often handed beautiful dashboards full of impressions, reach and engagement — vanity metrics that feel reassuring but rarely move the business. Replace them with metrics tied directly to revenue or pipeline.`,
+    },
+    {
+      type: "ul",
+      items: [
+        "Cost per qualified lead (CPQL) — not just leads, leads that match your buyer profile.",
+        "Conversion rate at every funnel stage — impression → click → form → call → sale.",
+        "Brand search volume — Google Trends and Search Console show whether top-of-funnel work is paying off.",
+        "Repeat customer rate — the most under-valued KPI in Sri Lankan marketing reports.",
+        "Share of voice — your visibility versus the top three competitors in your category.",
+        "Campaign incrementality — sales lift compared to a control region or audience.",
+      ],
+    },
+    {
+      type: "p",
+      text: `Set up GA4, Meta Pixel, Google Tag Manager and your CRM properly before launch. Add UTM tags to every link. Track phone calls and WhatsApp clicks. If your team cannot tell you which channel produced last month's best customer, the measurement layer is broken — fix that first.`,
+    },
+  ];
+}
+
+function pitfallsBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Red flags to watch for when reviewing ${label} proposals` },
+    {
+      type: "ul",
+      items: [
+        "Vague KPIs like 'increase brand awareness' with no measurement plan.",
+        "Heavy emphasis on impressions and reach, no commitment to leads, sales or footfall.",
+        "The agency owns your domain, hosting, ad accounts or pixel data.",
+        "Reports are PDFs once a month instead of a live dashboard you can audit anytime.",
+        "Creative concepts that look generic — could be for any brand in any country.",
+        "No examples of work in Sinhala or Tamil, only English case studies.",
+        "A long lock-in contract before any results are demonstrated.",
+      ],
+    },
+    {
+      type: "p",
+      text: `A trustworthy ${label} partner welcomes scrutiny — they share access, explain trade-offs in plain language and accept performance-linked clauses where appropriate.`,
+    },
+  ];
+}
+
+function inHouseVsAgencyBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `In-house, freelancer or agency for ${label}?` },
+    {
+      type: "p",
+      text: `There is no universally right answer — the best structure depends on your scale, the maturity of your category and how often you launch new campaigns. Most Sri Lankan SMEs do well with a hybrid: one strategic in-house owner plus specialist agencies or freelancers for execution.`,
+    },
+    {
+      type: "ul",
+      items: [
+        "In-house — strongest for brand voice, customer knowledge and speed of internal decisions.",
+        "Freelancer — flexible and affordable for niche skills (copywriting, video editing, paid ads).",
+        "Agency — best when you need a senior team across strategy, creative, media and analytics under one roof.",
+        "Hybrid — most resilient for growing brands that want control without hiring a full department.",
+      ],
+    },
+  ];
+}
+
+function timelineBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `What a realistic ${label} timeline looks like` },
+    {
+      type: "p",
+      text: `Compressed timelines are the single biggest cause of weak ${label} results in Sri Lanka. Strong campaigns are built in three phases — setup, launch, optimisation — and trying to skip any of them shows up later as wasted spend.`,
+    },
+    {
+      type: "ol",
+      items: [
+        "Weeks 1–2: discovery, audience research, competitor audit, brief sign-off.",
+        "Weeks 2–4: creative concept, scripting, design, language adaptation and approvals.",
+        "Weeks 3–5: media planning, channel bookings, tracking setup, QA.",
+        "Weeks 5–8: campaign launch and rapid early-stage optimisation.",
+        "Weeks 8–12: scaling what works, pausing what does not, refreshing creative.",
+        "Weeks 12+: continuous improvement and quarterly reviews tied to business KPIs.",
+      ],
+    },
+  ];
+}
+
+function complianceBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Compliance and best-practice guardrails for ${label} in Sri Lanka` },
+    {
+      type: "p",
+      text: `Sri Lankan advertising is regulated by several authorities, and getting compliance right early is far cheaper than fixing it after a complaint. Broadcast content sits under the Telecommunications Regulatory Commission of Sri Lanka (TRCSL). Product claims, comparative advertising and consumer-facing offers fall under the Consumer Affairs Authority (CAA). Financial services advertising must follow Central Bank of Sri Lanka guidelines, while pharmaceuticals, alcohol and tobacco have additional category-specific restrictions.`,
+    },
+    {
+      type: "p",
+      text: `Personal data captured through digital ${label} — emails, phone numbers, behavioural data — is governed by the Personal Data Protection Act 2022. You need a clear lawful basis to collect data, a privacy notice, opt-in records and a process for handling deletion requests. Reputable partners will build this in by default; ask to see their consent flows before you sign.`,
+    },
+  ];
+}
+
+function trendsBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Where ${label} in Sri Lanka is heading next` },
+    {
+      type: "p",
+      text: `Three forces are reshaping ${label} for Sri Lankan brands: the shift to short-form vertical video, the rise of WhatsApp and Messenger as primary customer channels, and the maturing role of first-party data in a privacy-conscious world. Brands that build content engines around vertical video, treat WhatsApp as a CRM channel, and own a clean opt-in database are pulling ahead of competitors who are still optimising last decade's playbook.`,
+    },
+    {
+      type: "p",
+      text: `Generative AI is also accelerating production — quicker copy variants, faster localisation across Sinhala, Tamil and English, and lower-cost creative testing. Used well, it lets a small team behave like a much larger one. Used badly, it floods feeds with bland, undifferentiated work. The brands that win in the next 24 months will be the ones that pair AI productivity with a strong, clearly Sri Lankan creative point of view.`,
+    },
+  ];
+}
+
+// --------- BLOG ARTICLE GENERATOR (2,000+ words real content) ---------
 export function buildBlogArticle(category: Category, keyword: string): { blocks: Block[]; faqs: FAQ[] } {
   const k = findCategoryBlock(category);
   const titled = titleCase(keyword);
@@ -631,20 +808,8 @@ export function buildBlogArticle(category: Category, keyword: string): { blocks:
     items: k.channels.map((c) => `${c.name} — ${c.desc}`),
   });
 
-  blocks.push({ type: "h2", text: `How much does ${lowKw} cost in Sri Lanka?` });
-  blocks.push({
-    type: "p",
-    text: `Costs vary by format, scale and partner. The figures below are typical 2025 ranges in LKR for the Sri Lankan market — use them as a planning baseline, not a final quote.`,
-  });
-  blocks.push({
-    type: "table",
-    head: ["Item", "Typical range (LKR)", "Notes"],
-    rows: k.costs.map((c) => [c.item, c.range, c.notes]),
-  });
-  blocks.push({
-    type: "p",
-    text: `For a custom estimate based on your business, audience and goals, call ${SITE.phone} or send a quick brief — we'll come back with a clear plan and price.`,
-  });
+  blocks.push(...audienceBlocks(category, lowKw));
+  blocks.push(...strategyBlocks(lowKw));
 
   blocks.push({ type: "h2", text: `Who ${lowKw} works best for` });
   blocks.push({ type: "ul", items: k.bestFor });
@@ -655,6 +820,13 @@ export function buildBlogArticle(category: Category, keyword: string): { blocks:
     text: `These are the issues we see most often when Sri Lankan businesses run ${lowKw} for the first time. Avoiding them protects your budget and gets you to results faster.`,
   });
   blocks.push({ type: "ul", items: k.mistakes });
+
+  blocks.push(...measurementBlocks(lowKw));
+  blocks.push(...pitfallsBlocks(lowKw));
+  blocks.push(...timelineBlocks(lowKw));
+  blocks.push(...complianceBlocks(lowKw));
+  blocks.push(...inHouseVsAgencyBlocks(lowKw));
+  blocks.push(...trendsBlocks(lowKw));
 
   blocks.push({ type: "h2", text: `How to choose the right ${lowKw} partner` });
   blocks.push({
@@ -668,7 +840,7 @@ export function buildBlogArticle(category: Category, keyword: string): { blocks:
     type: "ol",
     items: [
       `Define one clear goal — leads, sales, awareness, footfall, or app installs.`,
-      `Set a realistic budget based on the cost ranges above.`,
+      `Decide what success looks like in numbers before you spend a rupee.`,
       `Pick the 1–2 channels that match your audience best instead of spreading thin.`,
       `Brief your partner clearly: target audience, KPI, deadline, must-haves.`,
       `Insist on transparent reporting — weekly for digital, fortnightly for ATL/BTL.`,
@@ -679,10 +851,10 @@ export function buildBlogArticle(category: Category, keyword: string): { blocks:
   blocks.push({ type: "h2", text: `Talk to a Sri Lankan ${category.title.toLowerCase()} specialist` });
   blocks.push({
     type: "p",
-    text: `If you'd like a no-obligation conversation about ${lowKw} for your business, call ${SITE.phone}, message us on WhatsApp, or send your brief via the inquiry form. We'll explain options, expected results and a realistic budget — clearly, in plain English.`,
+    text: `If you'd like a no-obligation conversation about ${lowKw} for your business, call ${SITE.phone}, message us on WhatsApp, or send your brief via the inquiry form. We'll explain options and expected results — clearly, in plain English.`,
   });
 
-  return { blocks, faqs: k.faqs };
+  return { blocks, faqs: nonPricingFaqs(k.faqs) };
 }
 
 // --------- CATEGORY HUB LONG-FORM (used after the existing service grid) ---------
@@ -701,12 +873,8 @@ export function buildCategoryLongForm(category: Category): { blocks: Block[]; fa
   blocks.push({ type: "h2", text: `${category.title} channels and formats` });
   blocks.push({ type: "ul", items: k.channels.map((c) => `${c.name} — ${c.desc}`) });
 
-  blocks.push({ type: "h2", text: `Typical ${lowName} costs in Sri Lanka (LKR)` });
-  blocks.push({
-    type: "table",
-    head: ["Item", "Typical range", "Notes"],
-    rows: k.costs.map((c) => [c.item, c.range, c.notes]),
-  });
+  blocks.push(...audienceBlocks(category, lowName));
+  blocks.push(...strategyBlocks(lowName));
 
   blocks.push({ type: "h2", text: `Who ${lowName} suits best` });
   blocks.push({ type: "ul", items: k.bestFor });
@@ -714,10 +882,17 @@ export function buildCategoryLongForm(category: Category): { blocks: Block[]; fa
   blocks.push({ type: "h2", text: `Mistakes Sri Lankan brands make with ${lowName}` });
   blocks.push({ type: "ul", items: k.mistakes });
 
+  blocks.push(...measurementBlocks(lowName));
+  blocks.push(...pitfallsBlocks(lowName));
+  blocks.push(...timelineBlocks(lowName));
+  blocks.push(...complianceBlocks(lowName));
+  blocks.push(...inHouseVsAgencyBlocks(lowName));
+  blocks.push(...trendsBlocks(lowName));
+
   blocks.push({ type: "h2", text: `How to choose the right ${lowName} partner` });
   blocks.push({ type: "ol", items: k.choosing });
 
-  return { blocks, faqs: k.faqs };
+  return { blocks, faqs: nonPricingFaqs(k.faqs) };
 }
 
 // --------- SUB-SERVICE LONG-FORM ---------
@@ -739,20 +914,23 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
     items: k.channels.slice(0, 6).map((c) => `${c.name}: ${c.desc}`),
   });
 
-  blocks.push({ type: "h2", text: `Typical investment in Sri Lanka` });
-  blocks.push({
-    type: "table",
-    head: ["Item", "Typical range (LKR)", "Notes"],
-    rows: k.costs.slice(0, 5).map((c) => [c.item, c.range, c.notes]),
-  });
+  blocks.push(...audienceBlocks(category, titled));
+  blocks.push(...strategyBlocks(titled));
 
   blocks.push({ type: "h2", text: `Common pitfalls to avoid` });
   blocks.push({ type: "ul", items: k.mistakes });
 
+  blocks.push(...measurementBlocks(titled));
+  blocks.push(...pitfallsBlocks(titled));
+  blocks.push(...timelineBlocks(titled));
+  blocks.push(...complianceBlocks(titled));
+  blocks.push(...inHouseVsAgencyBlocks(titled));
+  blocks.push(...trendsBlocks(titled));
+
   blocks.push({ type: "h2", text: `What to ask before signing` });
   blocks.push({ type: "ol", items: k.choosing });
 
-  return { blocks, faqs: k.faqs.slice(0, 5) };
+  return { blocks, faqs: nonPricingFaqs(k.faqs).slice(0, 6) };
 }
 
 // --------- HOME PAGE LONG-FORM (~2,000 words) ---------
@@ -809,30 +987,6 @@ export const HOME_LONGFORM: { blocks: Block[]; faqs: FAQ[] } = {
       text: "Once you have those answers, the right channels become obvious. A premium urban audience under 35? — Instagram, TikTok and Google. An islandwide FMCG launch? — TV + radio + retail branding + digital. A B2B service? — LinkedIn + SEO + email + targeted Google Search. A local restaurant? — Google Business Profile + Facebook/Instagram ads + WhatsApp.",
     },
 
-    { type: "h2", text: "What advertising costs in Sri Lanka — at a glance" },
-    {
-      type: "p",
-      text: "These are typical 2025 LKR ranges across the most-used channels. Treat them as a planning baseline; actual quotes depend on inventory, scale and creative.",
-    },
-    {
-      type: "table",
-      head: ["Channel", "Typical monthly range (LKR)", "Best for"],
-      rows: [
-        ["TV advertising (campaign)", "1,500,000 – 15,000,000+", "National awareness"],
-        ["Radio advertising", "150,000 – 2,500,000", "Regional reach, drive-time"],
-        ["Newspaper advertising", "200,000 – 3,000,000", "Trust, local SMEs, tenders"],
-        ["Outdoor billboards", "250,000 – 5,000,000", "Visibility, brand recall"],
-        ["Google Ads", "50,000 – 1,500,000+", "Lead gen, e-commerce"],
-        ["Facebook / Instagram ads", "30,000 – 1,000,000+", "Awareness + sales"],
-        ["TikTok ads", "50,000 – 800,000", "Under-35 audience"],
-        ["SEO retainer", "60,000 – 600,000", "Long-term organic traffic"],
-        ["Social media management", "35,000 – 700,000", "Brand presence"],
-        ["Email + SMS marketing", "25,000 – 250,000", "Existing customer revenue"],
-        ["Web design (one-off)", "75,000 – 1,500,000+", "Lead capture base"],
-        ["Video / TVC production", "35,000 – 8,000,000+", "All channels"],
-      ],
-    },
-
     { type: "h2", text: "How fast does advertising produce results?" },
     {
       type: "ul",
@@ -869,14 +1023,6 @@ export const HOME_LONGFORM: { blocks: Block[]; faqs: FAQ[] } = {
     },
   ],
   faqs: [
-    {
-      q: "What is the cheapest form of advertising in Sri Lanka?",
-      a: "For most small businesses, Google Business Profile (free), local SEO (LKR 35,000–100,000/month) and targeted Facebook/Instagram ads (from LKR 30,000/month) deliver the lowest cost-per-lead. Email marketing to your existing customers is essentially free if you have a list.",
-    },
-    {
-      q: "How much should I spend on advertising as a percentage of revenue?",
-      a: "Healthy Sri Lankan SMEs typically spend 5–10% of target revenue on marketing if they're stable, and 12–20% if they're growing aggressively. New brands trying to establish themselves often spend 25–40% in the first year, then scale down.",
-    },
     {
       q: "Can I run a national campaign without TV?",
       a: "Yes — many digital-first brands in Sri Lanka have built strong national awareness using Facebook + TikTok + YouTube + outdoor + influencers, with no TV at all. TV is fastest for mass awareness but no longer essential, especially if your audience is under 40.",

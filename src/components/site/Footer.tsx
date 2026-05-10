@@ -8,7 +8,7 @@ export function SiteFooter() {
     <footer className="mt-16 bg-[image:var(--gradient-hero)] text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-4">
         <div>
-          <img src={logo} alt="Advertising Sri Lanka" className="h-20 w-auto bg-white rounded-lg p-3 md:h-24" />
+          <img src={logo} alt="Advertising Sri Lanka" className="h-12 w-auto md:h-14" />
           <p className="mt-3 text-sm text-primary-foreground/75">
             Sri Lanka's information hub for every advertising solution — ATL, BTL, digital, SEO, social media, outdoor, branding, web &amp; video. Search, learn, then call us with your question.
           </p>

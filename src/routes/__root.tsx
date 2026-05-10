@@ -168,7 +168,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Advertising Sri Lanka — Information Hub for Advertising Solutions" },
+      { title: "Advertising Sri Lanka — Information about Advertising" },
       { name: "description", content: "Information hub for advertising in Sri Lanka. Compare TV, radio, press, billboards, Google Ads, SEO, social media, branding, web & video. Call 0771437707." },
       { name: "author", content: SITE.name },
       { name: "robots", content: "index, follow, max-image-preview:large" },
@@ -184,12 +184,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { httpEquiv: "content-language", content: "en-LK" },
       { property: "og:site_name", content: SITE.name },
       { property: "og:locale", content: "en_LK" },
-      { property: "og:title", content: "Advertising Sri Lanka — Information Hub" },
-      { property: "og:description", content: "Find every advertising solution in Sri Lanka in one place. Call 0771437707 for free guidance." },
+      { property: "og:title", content: "Advertising Sri Lanka — Information about Advertising" },
+      { property: "og:description", content: "Information hub for advertising in Sri Lanka. Compare TV, radio, press, billboards, Google Ads, SEO, social media, branding, web & video. Call 0771437707." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Advertising Sri Lanka — Information Hub" },
-      { name: "twitter:description", content: "Find every advertising solution in Sri Lanka. Call 0771437707." },
+      { name: "twitter:title", content: "Advertising Sri Lanka — Information about Advertising" },
+      { name: "twitter:description", content: "Information hub for advertising in Sri Lanka. Compare TV, radio, press, billboards, Google Ads, SEO, social media, branding, web & video. Call 0771437707." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bbd9938c-b026-4c41-bba4-c4870c09d62e/id-preview-52c6737f--8df064ce-8f53-4ab1-9287-19dfd35da584.lovable.app-1778356070854.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bbd9938c-b026-4c41-bba4-c4870c09d62e/id-preview-52c6737f--8df064ce-8f53-4ab1-9287-19dfd35da584.lovable.app-1778356070854.png" },
     ],
     links: [
       {

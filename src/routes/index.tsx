@@ -4,6 +4,7 @@ import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
   Search, Share2, Sparkles, Star, Tv, Users, Globe, Clock, TrendingUp, Zap,
+  AlertTriangle, Target, Wallet, Lightbulb,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
@@ -19,6 +20,60 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
   Palette, Monitor, Film, PartyPopper,
 };
+
+// --- SEO-rich content from full guide ---
+const CHANNEL_GUIDE: { icon: string; title: string; desc: string; tags: string[]; bestFor: string; budget: string; href: string }[] = [
+  { icon: "📺", title: "ATL — TV, Radio & Press", desc: "Above-the-line mass media reaches millions simultaneously. TV on Siyatha, Derana and TV1; radio across FM; and print in Sunday Observer, Daily Mirror and Lankadeepa give your brand immediate national coverage. Best for fast, broad awareness — FMCG launches, financial products, and brands that need to be seen everywhere.", tags: ["FMCG", "Finance", "Retail chains"], bestFor: "National awareness", budget: "From Rs 150,000/month", href: "/atl-advertising-sri-lanka" },
+  { icon: "🎯", title: "BTL — Activations & Field Marketing", desc: "Below-the-line meets your customer face-to-face — at supermarkets, malls, roadshows, exhibitions and community events. BTL drives trial, sampling and in-person conversion in ways no digital ad can replicate. Powerful for product launches, demos and trust-building.", tags: ["Product launches", "FMCG", "Events"], bestFor: "Trial & conversion", budget: "From Rs 80,000/activation", href: "/btl-advertising-sri-lanka" },
+  { icon: "🔍", title: "Google Ads — Search & Display", desc: "Google Ads places your business at the top of Google when someone in Sri Lanka searches for exactly what you offer. The highest-intent advertising channel — the prospect is actively looking for your product. Display and YouTube reach audiences while they browse and watch.", tags: ["Services", "E-commerce", "B2B"], bestFor: "High-intent leads", budget: "From Rs 40,000/month", href: "/google-ads-sri-lanka" },
+  { icon: "📱", title: "Social Media Advertising", desc: "Facebook and Instagram give precise targeting by age, location, language, interests and behaviour. TikTok is Sri Lanka's fastest-growing platform for under-35 audiences. LinkedIn is essential for B2B. Each platform requires a different creative approach.", tags: ["Retail", "Hospitality", "B2C"], bestFor: "Engagement & brand love", budget: "From Rs 30,000/month", href: "/social-media-marketing-sri-lanka" },
+  { icon: "📈", title: "SEO — Search Engine Optimisation", desc: "SEO makes your site appear at the top of Google without paying per click. The lowest cost-per-lead channel over the long term, building compounding value — unlike ads that stop the moment you stop paying. Needs 3–6 months to compound, but the returns are transformative.", tags: ["All businesses", "Lowest CPL"], bestFor: "Long-term growth", budget: "From Rs 35,000/month", href: "/seo-services-sri-lanka" },
+  { icon: "🏙️", title: "Outdoor & Billboard Advertising", desc: "Billboards on Galle Road, digital LED screens at Majestic City, transit ads on buses and three-wheelers, and lamp-post banners across provincial towns. OOH builds trust and visibility at scale, and works best when combined with a digital campaign running simultaneously.", tags: ["Local dominance", "Brand recall"], bestFor: "Visibility & trust", budget: "From Rs 60,000/month", href: "/outdoor-advertising-sri-lanka" },
+  { icon: "🎬", title: "Video Production & TVCs", desc: "Video is the most effective format on every digital platform — Facebook, Instagram, TikTok and YouTube all prioritise video. A well-produced TVC establishes credibility in seconds. Quality video production in Sri Lanka is now accessible to businesses of all sizes.", tags: ["Brand building", "Product demos"], bestFor: "Storytelling & emotion", budget: "From Rs 100,000/production", href: "/video-production-sri-lanka" },
+  { icon: "🖌️", title: "Branding & Creative Design", desc: "Your brand identity — logo, colours, typography, tone of voice, packaging — is the foundation every other channel builds on. Weak branding undermines even a generous media budget. In Sri Lanka, branding must also account for cultural colour associations and multilingual logo legibility.", tags: ["New businesses", "Rebrands"], bestFor: "Foundation & trust", budget: "From Rs 75,000/project", href: "/branding-sri-lanka" },
+  { icon: "💻", title: "Web Design & Development", desc: "Your website is the home base every advertising channel points to. A slow, outdated or confusing site destroys the return on any media spend. A conversion-optimised website built for Sri Lankan audiences and mobile turns traffic into enquiries and sales.", tags: ["All channels", "E-commerce"], bestFor: "Conversion foundation", budget: "From Rs 80,000/project", href: "/web-design-sri-lanka" },
+  { icon: "📧", title: "Email, SMS & WhatsApp Marketing", desc: "Direct messaging to your existing customer list delivers the highest ROI — typically Rs 30–50 in revenue per Rs 1 spent when lists are properly maintained. Bulk SMS achieves near-100% open rates. WhatsApp Business allows rich media and two-way conversation.", tags: ["Existing customers", "E-commerce"], bestFor: "Retention & ROI", budget: "From Rs 15,000/month", href: "/email-sms-marketing-sri-lanka" },
+  { icon: "🎪", title: "Event Management", desc: "Corporate events, product launches, exhibitions, trade shows and experiential brand activations give Sri Lankan consumers a direct, memorable encounter with your brand. Generates earned media, social sharing and word-of-mouth no paid campaign can fully replicate.", tags: ["B2B", "Launches", "Corporate"], bestFor: "Brand experience", budget: "From Rs 200,000/event", href: "/event-management-sri-lanka" },
+  { icon: "🔗", title: "TTL — Integrated 360° Campaigns", desc: "Through-the-line connects ATL, BTL and digital into a single, unified campaign — one brand message expressed consistently across every touchpoint. The approach used for major Sri Lankan brand launches and sustained brand-building programmes.", tags: ["National campaigns", "Enterprise"], bestFor: "Major launches", budget: "From Rs 500,000/month", href: "/ttl-advertising-sri-lanka" },
+];
+
+const DECISION_ROWS: [string, string, string, string, string][] = [
+  ["Google Search Ads", "High-intent leads, service businesses", "3–7 days", "Rs 40,000", "Excellent"],
+  ["Facebook / Instagram Ads", "B2C brands, retail, hospitality", "1–3 days", "Rs 30,000", "Very good"],
+  ["TikTok Ads", "Under-35 audience, brand awareness", "1–3 days", "Rs 25,000", "Good"],
+  ["SEO", "All businesses — long-term growth", "3–6 months", "Rs 35,000", "Very good"],
+  ["TV Advertising", "National FMCG, banks, telcos", "2–4 weeks", "Rs 300,000", "Limited"],
+  ["Radio Advertising", "Regional, language-market targeting", "1–2 weeks", "Rs 80,000", "Limited"],
+  ["Billboard / OOH", "Local visibility, brand trust", "2–3 weeks", "Rs 60,000", "Basic"],
+  ["Email / SMS / WhatsApp", "Existing customers, highest ROI", "Same day", "Rs 15,000", "Excellent"],
+  ["BTL Activations", "Product trial, mall & event marketing", "Same day", "Rs 80,000", "Moderate"],
+  ["YouTube Ads", "Brand storytelling, video-led brands", "2–5 days", "Rs 40,000", "Good"],
+];
+
+const BUDGET_TIERS = [
+  { tier: "Starter", range: "Rs 30,000 – 80,000 / month", desc: "Perfect for small businesses, local services and new brand launches that need measurable results immediately.", items: ["Google Search Ads (highest intent)", "Facebook / Instagram Ads", "Google Business Profile (free)", "WhatsApp Business (free)", "Basic SEO foundation"] },
+  { tier: "Growth", range: "Rs 80,000 – 300,000 / month", desc: "For businesses ready to scale with multi-channel digital strategy and early offline presence.", items: ["Google Ads (Search + Display)", "Facebook + Instagram + TikTok", "SEO (ongoing, compounding)", "Email + SMS marketing", "Radio (regional, if relevant)", "1–2 OOH sites in key locations"] },
+  { tier: "Scale", range: "Rs 300,000 – 1M / month", desc: "For established brands building national presence across digital and traditional simultaneously.", items: ["Full digital stack (Google, Meta, TikTok)", "YouTube video campaigns", "Influencer marketing partnerships", "OOH / Billboard networks", "Radio on 2–3 stations", "BTL activations at key venues", "Advanced SEO + content marketing"] },
+  { tier: "Enterprise", range: "Rs 1M+ / month", desc: "For large brands requiring integrated 360° campaigns across every touchpoint, islandwide.", items: ["TV advertising (prime-time slots)", "Full ATL media plan", "National BTL activation programme", "Premium OOH + digital billboards", "Programmatic display buying", "Full digital performance suite", "PR + earned media integration", "Event & experiential marketing"] },
+];
+
+const MISTAKES = [
+  { n: "01", t: "Boosting posts instead of running real campaigns", d: "Boosting a Facebook post is not the same as a structured campaign with proper targeting, objectives and creative testing. Properly structured campaigns with conversion objectives consistently outperform boosts by 5–10x." },
+  { n: "02", t: "Running ads with no tracking or measurement", d: "If you have no Meta Pixel, no GA4 goals, and no UTM tags, you are flying blind. Every campaign must be set up with measurement before a single rupee is spent on media." },
+  { n: "03", t: "Letting vendors own your ad accounts and data", d: "Some agencies set up ad accounts, hosting and domains under their own name. When you part ways, you lose your entire history and audience data. Always insist Google Ads, Facebook Business Manager, domain and hosting are in your business name." },
+  { n: "04", t: "One English creative for a multilingual market", d: "Sri Lanka has three distinct language markets. A single English creative — even with Sinhala subtitles — performs significantly worse than a properly localised Sinhala or Tamil version with native voiceover and adapted messaging." },
+  { n: "05", t: "Cutting the budget before it has time to work", d: "Most channels need 60–90 days of consistent spending. SEO needs 3–6 months. Even Google Ads needs 4–6 weeks for the algorithm to optimise. Cutting at week two is the single most costly mistake in Sri Lankan marketing." },
+  { n: "06", t: "Choosing channels based on what competitors do", d: "Just because a competitor is on TV does not mean TV is right for you. Channel selection should always start from where your specific target customer spends their attention — then build from there." },
+];
+
+const EXTRA_FAQS = [
+  { q: "How much does advertising cost in Sri Lanka?", a: "Costs vary enormously by channel. Digital (Google, Facebook, Instagram) starts from Rs 30,000–50,000 per month. Billboards in Colombo range Rs 60,000–250,000 per site. Radio starts around Rs 80,000 per month. TV is the most expensive ATL medium, with production from Rs 300,000–500,000 plus airtime. See our Advertising Rates page for a detailed breakdown." },
+  { q: "Do I need to run Sinhala and Tamil advertising separately?", a: "For any national campaign, yes — properly localised Sinhala and Tamil creative outperforms subtitled versions. Each language community responds significantly better to advertising that feels native. Facebook and Google allow language targeting; for TV and radio, plan separate productions." },
+  { q: "What's the difference between ATL and BTL advertising in Sri Lanka?", a: "ATL (Above-the-Line) uses mass media — TV, radio, newspapers, magazines, cinema — to broadcast widely for awareness. BTL (Below-the-Line) is targeted, on-ground and interactive — mall activations, sampling, roadshows, retail POS, sponsorships — best for trial and conversion. TTL integrates both with digital." },
+  { q: "How long does it take to see results from advertising in Sri Lanka?", a: "Google Search Ads: 3–7 days. Facebook/Instagram: hours to a week. TV/radio: 2–4 weeks for measurable brand-search lift. BTL: same day. SEO: 4–8 weeks for early movement, 3–6 months for meaningful traffic, 6–12 months for strong #1 positions. Email/SMS: immediate, if you have an opt-in list." },
+  { q: "Is advertising in Sri Lanka regulated?", a: "Yes. TV/radio is regulated by TRCSL. Product claims by the Consumer Affairs Authority. Financial services by SEC and CBSL. Pharmaceuticals by NMRA. Tobacco and alcohol carry specific restrictions. OOH requires municipal permits. Personal data in digital marketing must comply with the Personal Data Protection Act 2022." },
+  { q: "How do I measure whether my advertising is working?", a: "For digital: GA4, Meta Pixel and UTM tracking on every link. The three numbers that matter are Cost Per Lead (CPL), Return on Ad Spend (ROAS) and Customer Lifetime Value (CLV). For offline: track website search lift, use unique numbers/URLs per channel, and survey new customers. If your agency cannot report these monthly, that is a red flag." },
+];
 
 const HOME_JSONLD = {
   "@context": "https://schema.org",
@@ -77,7 +132,7 @@ function Index() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(HOME_LONGFORM.faqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd([...HOME_LONGFORM.faqs, ...EXTRA_FAQS])) }}
       />
 
       {/* HERO */}
@@ -238,6 +293,248 @@ function Index() {
               </Link>
             );
           })}
+        </div>
+      </section>
+
+      {/* WHAT IS ADVERTISING IN SRI LANKA — long-form SEO */}
+      <section className="bg-secondary/20">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold text-accent">Understanding the Landscape</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">What is Advertising in Sri Lanka?</h2>
+          </div>
+          <div className="mt-12 grid gap-10 lg:grid-cols-2">
+            <div className="space-y-4 leading-relaxed text-muted-foreground">
+              <p>Advertising in Sri Lanka is the full set of tools businesses use to reach customers across the country — from a 30-second TV commercial on Siyatha or Derana, to a Google Search ad that appears when someone types "best hotel in Kandy," a billboard on Galle Road, a TikTok reel targeting Colombo youth, a bulk SMS to your customer list, or a live brand activation at One Galle Face Mall.</p>
+              <p>The advertising ecosystem in Sri Lanka is divided into three broad families:</p>
+              <ul className="ml-5 list-disc space-y-1.5">
+                <li><strong className="text-foreground">ATL (Above-the-Line)</strong> — mass media: TV, radio, newspapers, magazines, cinema</li>
+                <li><strong className="text-foreground">BTL (Below-the-Line)</strong> — on-ground activations, retail displays, events, roadshows, sampling</li>
+                <li><strong className="text-foreground">Digital</strong> — Google Ads, Facebook, Instagram, TikTok, SEO, email, WhatsApp, YouTube, programmatic</li>
+              </ul>
+              <p>Most successful campaigns use a combination — the exact mix depends on your target audience, budget and business goals. A local bakery in Nugegoda and a national bank have completely different needs.</p>
+              <h3 className="mt-6 text-xl font-bold text-foreground">What Makes Advertising in Sri Lanka Unique?</h3>
+              <p>Three language markets — Sinhala (~75%), Tamil (~15%), and English (dominant among Colombo's urban professionals) — mean content must often be produced in multiple versions. Sri Lanka also has exceptionally high mobile penetration at over 140% and one of the highest social media usage rates in South Asia, making digital — particularly Facebook, Instagram, TikTok and YouTube — disproportionately powerful.</p>
+              <p>At the same time, traditional media retains strong reach in regional and rural areas. Radio is highly influential in the North, East and upcountry. Sinhala newspapers maintain loyal readerships. TV commands prime-time attention across income segments that digital alone cannot yet reach.</p>
+            </div>
+            <div className="space-y-4 leading-relaxed text-muted-foreground">
+              <h3 className="text-xl font-bold text-foreground">How the Sri Lankan Consumer Sees Advertising</h3>
+              <p>Sri Lankan consumers are increasingly media-savvy. They skip pre-roll ads, use ad blockers, and trust peer recommendations far more than brand claims. Effectiveness today requires relevance, creativity and cultural authenticity — not just spend.</p>
+              <p>The fastest-growing channels right now are TikTok (especially under-35), Google Search (high intent, measurable), YouTube pre-roll, WhatsApp marketing, and influencer partnerships with local creators.</p>
+              <h3 className="mt-6 text-xl font-bold text-foreground">Who Uses This Guide?</h3>
+              <ul className="ml-5 list-disc space-y-1.5">
+                <li>Business owners who want to understand their options before spending money</li>
+                <li>Marketing managers who need to justify channel choices to leadership</li>
+                <li>Entrepreneurs launching a new brand and building a first advertising plan from scratch</li>
+              </ul>
+              <p>Whether you run a small restaurant in Galle, a garment factory in Katunayake, a tech startup in Colombo or a regional chain of pharmacies, this guide gives you the same level of information that an experienced advertising professional would use to advise you — without the sales pitch.</p>
+              <div className="mt-6 rounded-xl bg-[image:var(--gradient-hero)] p-6 text-primary-foreground">
+                <p className="text-sm leading-relaxed">We cover <strong className="text-accent">every advertising channel available in Sri Lanka</strong> — how it works, what it costs, what results to expect, and how to avoid common mistakes. When you're ready to execute, call <strong className="text-accent">{SITE.phone}</strong> and we'll connect you with the right specialists for your brief.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CHANNEL GUIDE — 12 detailed cards */}
+      <section id="channels" className="mx-auto max-w-7xl px-4 py-20">
+        <div className="text-center">
+          <div className="text-sm font-semibold text-accent">All Advertising Options</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Every Type of Advertising Available in Sri Lanka</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">Browse all 12 categories to understand how each works, who it suits and what results to expect.</p>
+        </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {CHANNEL_GUIDE.map((c) => (
+            <Link key={c.title} to={c.href as never} className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-[var(--shadow-elegant)]">
+              <div className="text-3xl">{c.icon}</div>
+              <div className="mt-3 text-lg font-semibold">{c.title}</div>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{c.desc}</p>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-semibold text-accent-foreground">Best for: {c.bestFor}</span>
+                {c.tags.map((t) => (
+                  <span key={t} className="rounded-full bg-secondary px-2.5 py-0.5 text-xs text-secondary-foreground">{t}</span>
+                ))}
+              </div>
+              <div className="mt-4 flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
+                <span>{c.budget}</span>
+                <span className="font-semibold text-primary">Full guide →</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* DECISION TABLE */}
+      <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold text-accent">Quick Comparison</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Which Advertising Channel Is Right for Your Business?</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">Compare channels at a glance. For a personalised recommendation, call {SITE.phone}.</p>
+          </div>
+          <div className="mt-10 overflow-x-auto rounded-xl border border-primary-foreground/10 bg-primary-foreground/5">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-accent/15 text-accent">
+                  <th className="px-4 py-3 text-left font-semibold uppercase tracking-wider">Channel</th>
+                  <th className="px-4 py-3 text-left font-semibold uppercase tracking-wider">Best For</th>
+                  <th className="px-4 py-3 text-left font-semibold uppercase tracking-wider">Speed</th>
+                  <th className="px-4 py-3 text-left font-semibold uppercase tracking-wider">Min. Budget</th>
+                  <th className="px-4 py-3 text-left font-semibold uppercase tracking-wider">Measurability</th>
+                </tr>
+              </thead>
+              <tbody>
+                {DECISION_ROWS.map((row) => (
+                  <tr key={row[0]} className="border-t border-primary-foreground/10 hover:bg-primary-foreground/5">
+                    <td className="px-4 py-3 font-semibold text-accent">{row[0]}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row[1]}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row[2]}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row[3]}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row[4]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* BUDGET GUIDE */}
+      <section className="mx-auto max-w-7xl px-4 py-20">
+        <div className="text-center">
+          <div className="text-sm font-semibold text-accent">Budget Planning</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">How to Plan Your Advertising Budget in Sri Lanka</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">What Sri Lankan businesses at different budget levels typically invest in, and why those combinations make sense.</p>
+        </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {BUDGET_TIERS.map((b) => (
+            <div key={b.tier} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)]">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent">
+                <Wallet className="h-4 w-4" /> {b.tier}
+              </div>
+              <div className="mt-2 text-lg font-bold">{b.range}</div>
+              <p className="mt-2 text-sm text-muted-foreground">{b.desc}</p>
+              <ul className="mt-4 space-y-1.5 text-sm">
+                {b.items.map((it) => (
+                  <li key={it} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-accent" /><span className="text-muted-foreground">{it}</span></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* MISTAKES */}
+      <section className="bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold text-accent">Avoid These Pitfalls</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">6 Reasons Advertising Budgets Get Wasted in Sri Lanka</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">These six mistakes account for the majority of failed campaigns. Knowing them before you start is worth more than any tactic.</p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {MISTAKES.map((m) => (
+              <div key={m.n} className="rounded-2xl border border-destructive/20 bg-destructive/5 p-6">
+                <div className="flex items-center gap-2">
+                  <AlertTriangle className="h-5 w-5 text-destructive" />
+                  <span className="text-2xl font-black text-destructive/40">{m.n}</span>
+                </div>
+                <div className="mt-2 font-bold text-destructive">{m.t}</div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{m.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* DECISION FRAMEWORK */}
+      <section className="mx-auto max-w-7xl px-4 py-20">
+        <div className="text-center">
+          <div className="text-sm font-semibold text-accent">Decision Framework</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">How to Choose the Right Advertising Mix for Your Business</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">A four-question framework that helps any Sri Lankan business build a plan that avoids wasted spend from day one.</p>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {[
+            { i: Target, t: "Step 1: Define Your Customer Precisely", d: "Before spending a rupee, answer specifically: How old are your best customers? What language at home? Where — Colombo, provincial, rural? Income bracket? What do they do online and offline daily? The more precisely you answer, the more accurately you can pick channels." },
+            { i: Users, t: "Step 2: Map Your Audience's Attention", d: "Where does your customer actually spend their attention? For Sri Lankans under 40 in urban areas — smartphone (3–5 hrs/day), primarily YouTube, TikTok, Facebook, Instagram. Regional and rural — FM radio during commute, evening TV. B2B — LinkedIn, Google Search, email and WhatsApp." },
+            { i: Lightbulb, t: "Step 3: Match Goal to Channel Type", d: "Awareness → TV, radio, OOH, YouTube, TikTok, Facebook reach. Consideration → Google Display, Instagram, retargeting, content, SEO. Conversion / Leads → Google Search, Facebook Lead Ads, landing pages, WhatsApp. Retention → Email, SMS, WhatsApp, loyalty, remarketing." },
+            { i: Wallet, t: "Step 4: Set a Realistic Budget", d: "Most failed campaigns are under-funded — Rs 20,000 of Google Ads, then 'Google doesn't work.' Industry averages: 3–5% of revenue for established businesses, 10–20% for new brands. Set as a percentage of target revenue, not a residual after other costs." },
+          ].map((s) => (
+            <div key={s.t} className="rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)]">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-hero)] text-primary-foreground"><s.i className="h-6 w-6" /></div>
+              <div className="mt-4 text-lg font-bold">{s.t}</div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)]">
+          <div className="text-lg font-bold">Most Effective Channel Combinations in Sri Lanka</div>
+          <ul className="mt-4 grid gap-2 text-sm md:grid-cols-2">
+            {[
+              "Local service business (plumber, salon, clinic): Google Business Profile + Google Search Ads + Facebook/Instagram + WhatsApp",
+              "E-commerce brand: Meta Ads + Google Shopping + SEO + Email automation + TikTok",
+              "Restaurant or hospitality: Instagram + Google Business Profile + Facebook Ads + influencer partnerships",
+              "B2B service or tech: LinkedIn + Google Search + SEO + email nurturing + webinars",
+              "FMCG product launch: TV + radio + BTL activations + Facebook/Instagram + OOH",
+              "Real estate: Google Search + Facebook Lead Ads + WhatsApp + OOH + property portals",
+            ].map((it) => (
+              <li key={it} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-accent" /><span>{it}</span></li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* DIGITAL VS TRADITIONAL */}
+      <section className="bg-secondary/20">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-sm font-semibold text-accent">Deep Dive</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Digital Advertising vs Traditional Advertising in Sri Lanka</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">Should you invest in digital or traditional? The honest answer is nuanced.</p>
+          </div>
+          <div className="mt-12 grid gap-10 lg:grid-cols-2">
+            <div className="space-y-4 leading-relaxed text-muted-foreground">
+              <h3 className="text-xl font-bold text-foreground">The Case for Digital</h3>
+              <p>Digital is measurable — you see exactly who clicked, visited, filled a form or called. It's precise — target by age, language, location, income, interest, behaviour. It's flexible — budgets shift in real time. And it's accessible — Rs 30,000/month runs professional campaigns competing directly with much larger brands.</p>
+              <p>Sri Lanka's digital advertising market grows 20–25% per year. Facebook and Instagram remain dominant by reach; TikTok has grown explosively under 35; Google Search captures the highest-intent queries; YouTube reaches 85%+ of internet users.</p>
+              <h3 className="mt-6 text-xl font-bold text-foreground">The Case for Traditional</h3>
+              <p>TV — particularly prime-time Sinhala drama on Siyatha, Derana and Hiru TV — still reaches millions simultaneously in a high-attention environment. Radio on Shaa FM, Yes FM, TNL and Rangiri reaches commuters and regional audiences during drive time. OOH builds physical-world brand presence that signals permanence and investment.</p>
+              <h3 className="mt-6 text-xl font-bold text-foreground">The Integrated Answer</h3>
+              <p>The most effective advertising in Sri Lanka in 2024–2025 is integrated. TV builds awareness. Google captures the searches awareness generates. Social sustains the conversation. Email and WhatsApp convert and retain. Brands that dominate are the ones that designed that journey intentionally.</p>
+            </div>
+            <div className="space-y-4 leading-relaxed text-muted-foreground">
+              <h3 className="text-xl font-bold text-foreground">Sri Lanka Digital Landscape — Key Facts</h3>
+              <ul className="ml-5 list-disc space-y-1.5">
+                <li>~8 million active social media users</li>
+                <li>Facebook is the largest social platform by monthly active users</li>
+                <li>TikTok is the fastest-growing platform among 16–35</li>
+                <li>YouTube penetration exceeds 85% among active internet users</li>
+                <li>Mobile accounts for 78%+ of all web traffic</li>
+                <li>WhatsApp has near-universal smartphone penetration</li>
+                <li>Google commands 95%+ of the Sri Lankan search market</li>
+                <li>Average Sri Lankan spends 4.2 hours/day on smartphone</li>
+              </ul>
+              <h3 className="mt-6 text-xl font-bold text-foreground">When Traditional Wins</h3>
+              <ul className="ml-5 list-disc space-y-1.5">
+                <li>Reaching audiences over 55 with limited digital engagement</li>
+                <li>Building rapid trust for new brands in conservative categories</li>
+                <li>Reaching regional, rural and upcountry efficiently</li>
+                <li>Mass simultaneous awareness for FMCG launches</li>
+                <li>Dominating a local market with high-visibility OOH</li>
+              </ul>
+              <h3 className="mt-6 text-xl font-bold text-foreground">When Digital Wins</h3>
+              <ul className="ml-5 list-disc space-y-1.5">
+                <li>Targeting demographics, locations and behaviours precisely</li>
+                <li>Generating measurable leads with full attribution</li>
+                <li>Reaching under-45 urban audiences in Colombo and provincial cities</li>
+                <li>Scaling up or down based on real-time performance data</li>
+                <li>Building retargeting audiences over time</li>
+                <li>Competing on a limited budget against larger brands</li>
+              </ul>
+              <p className="pt-2 text-sm">Studies consistently show campaigns running digital and traditional simultaneously produce 40–60% better results than either alone.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -421,6 +718,7 @@ function Index() {
           <div className="mt-10 space-y-3">
             {[
               ...HOME_LONGFORM.faqs,
+              ...EXTRA_FAQS,
             ].map((f) => (
               <details key={f.q} className="group rounded-xl border border-border bg-background p-5">
                 <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold marker:hidden">

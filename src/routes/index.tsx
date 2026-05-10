@@ -132,7 +132,7 @@ function Index() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(HOME_LONGFORM.faqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd([...HOME_LONGFORM.faqs, ...EXTRA_FAQS])) }}
       />
 
       {/* HERO */}

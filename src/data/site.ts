@@ -93,6 +93,7 @@ export const CATEGORIES: Category[] = [
       { slug: "field-marketing-sri-lanka", keyword: "field marketing sri lanka" },
       { slug: "point-of-sale-advertising-sri-lanka", keyword: "point of sale advertising sri lanka" },
       { slug: "retail-branding-sri-lanka", keyword: "retail branding sri lanka" },
+      { slug: "loyalty-programs-sri-lanka", keyword: "loyalty programs sri lanka" },
     ],
     blog: [
       { slug: "btl-advertising-sri-lanka", keyword: "btl advertising sri lanka" },
@@ -160,6 +161,10 @@ export const CATEGORIES: Category[] = [
       { slug: "programmatic-advertising-sri-lanka", keyword: "programmatic advertising sri lanka" },
       { slug: "lead-generation-sri-lanka", keyword: "lead generation sri lanka" },
       { slug: "performance-marketing-sri-lanka", keyword: "performance marketing sri lanka" },
+      { slug: "linkedin-ads-sri-lanka", keyword: "linkedin ads sri lanka" },
+      { slug: "google-shopping-sri-lanka", keyword: "google shopping sri lanka" },
+      { slug: "content-marketing-sri-lanka", keyword: "content marketing sri lanka" },
+      { slug: "reputation-management-sri-lanka", keyword: "reputation management sri lanka" },
     ],
     blog: [
       { slug: "digital-marketing-sri-lanka", keyword: "digital marketing sri lanka" },
@@ -304,6 +309,7 @@ export const CATEGORIES: Category[] = [
       { slug: "creative-agency-sri-lanka", keyword: "creative agency sri lanka" },
       { slug: "packaging-design-sri-lanka", keyword: "packaging design sri lanka" },
       { slug: "company-profile-design-sri-lanka", keyword: "company profile design sri lanka" },
+      { slug: "photography-sri-lanka", keyword: "commercial photography sri lanka" },
     ],
     blog: [
       { slug: "branding-sri-lanka", keyword: "branding sri lanka" },
@@ -365,10 +371,26 @@ export const CATEGORIES: Category[] = [
   },
 ];
 
+CATEGORIES.push({
+  slug: "pr-communications-sri-lanka",
+  hubKeyword: "pr and communications sri lanka",
+  title: "PR & Communications",
+  short:
+    "Public relations, media coverage, press releases, influencer partnerships and market research for Sri Lankan brands.",
+  intro:
+    "Build credibility and reputation through earned media, press releases, journalist relations, market research and media planning. We help Sri Lankan brands tell their story to the right audience through the right channels.",
+  icon: "Megaphone",
+  services: [
+    { slug: "pr-sri-lanka", keyword: "pr and public relations sri lanka" },
+    { slug: "market-research-sri-lanka", keyword: "market research and media planning sri lanka" },
+  ],
+  blog: [],
+});
+
 export function titleCase(s: string) {
   const ACRONYMS = new Set([
     "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux",
-    "2d", "3d", "b2b", "sms", "led", "crm", "kpi", "roi", "cms", "faq", "cta",
+    "2d", "3d", "b2b", "sms", "led", "crm", "kpi", "roi", "cms", "faq", "cta", "pr",
   ]);
   return s
     .split(" ")

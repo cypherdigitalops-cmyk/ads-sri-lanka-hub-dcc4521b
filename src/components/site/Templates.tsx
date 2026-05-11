@@ -310,6 +310,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
         <CTASection
           headline={`Have a question about ${category.title.toLowerCase()} in Sri Lanka?`}
           sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
+          service={category.title}
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
@@ -413,6 +414,7 @@ export function ServicePageTemplate({
         <CTASection
           headline={`Want clear answers about ${title}?`}
           sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
+          service={title}
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
@@ -472,6 +474,7 @@ export function BlogArticleTemplate({
         <CTASection
           headline={`Still have questions about ${title}?`}
           sub={`Free phone & WhatsApp guidance — talk to a real Sri Lankan advertising specialist.`}
+          service={title}
         />
       </div>
       <FaqList items={article.faqs} />

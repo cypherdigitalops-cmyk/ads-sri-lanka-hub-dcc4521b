@@ -1,6 +1,28 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { MessageCircle, Phone, Send } from "lucide-react";
-import { SITE } from "@/data/site";
+import { CATEGORIES, SITE, titleCase } from "@/data/site";
+
+/**
+ * Derive the human-readable service/category name from the current URL path
+ * so floating CTAs can tell us exactly what the visitor is inquiring about.
+ */
+function useCurrentService(): string | undefined {
+  const { pathname } = useLocation();
+  const slug = pathname.replace(/^\/+|\/+$/g, "");
+  if (!slug) return undefined;
+  for (const cat of CATEGORIES) {
+    if (cat.slug === slug) return titleCase(cat.hubKeyword);
+    const svc = cat.services.find((s) => s.slug === slug);
+    if (svc) return titleCase(svc.keyword);
+  }
+  return undefined;
+}
+
+function waLink(service?: string) {
+  if (!service) return SITE.whatsapp;
+  const msg = `Hi, I'm inquiring about ${service}. Please share more details.`;
+  return `${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
 
 export function CTASection({ headline, sub, service }: { headline?: string; sub?: string; service?: string }) {
   const waHref = service
@@ -63,19 +85,21 @@ export function CTASection({ headline, sub, service }: { headline?: string; sub?
  * compact circle on mobile (lifts above the StickyCallBar).
  */
 export function FloatingWhatsApp() {
+  const service = useCurrentService();
+  const label = service ? `WhatsApp about ${service}` : "Chat on WhatsApp";
   return (
     <a
-      href={SITE.whatsapp}
+      href={waLink(service)}
       target="_blank"
       rel="noopener"
-      aria-label="Chat on WhatsApp — typically replies within 5 minutes"
+      aria-label={service ? `Chat on WhatsApp about ${service}` : "Chat on WhatsApp — typically replies within 5 minutes"}
       className="group fixed right-4 z-50 inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-4 py-3 font-semibold text-[var(--whatsapp-foreground)] shadow-2xl transition hover:scale-105 sm:right-6 bottom-[70px] md:bottom-6"
     >
       <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[var(--whatsapp)] opacity-60" aria-hidden />
       <span className="absolute inset-0 -z-10 rounded-full bg-[var(--whatsapp)] opacity-90" aria-hidden />
       <MessageCircle className="relative h-6 w-6" />
       <span className="relative hidden whitespace-nowrap text-sm sm:inline">
-        Chat on WhatsApp
+        {label}
       </span>
       <span className="relative hidden text-[10px] font-medium opacity-90 lg:inline">
         · replies in 5 min
@@ -85,6 +109,7 @@ export function FloatingWhatsApp() {
 }
 
 export function StickyCallBar() {
+  const service = useCurrentService();
   return (
     <>
       {/* Spacer so content is not hidden behind the fixed bar on mobile */}
@@ -101,13 +126,13 @@ export function StickyCallBar() {
           <Phone className="h-4 w-4" /> Call {SITE.phone}
         </a>
         <a
-          href={SITE.whatsapp}
+          href={waLink(service)}
           target="_blank"
           rel="noopener"
           className="flex flex-1 items-center justify-center gap-2 text-white"
           style={{ fontSize: 14, fontWeight: 500, borderLeft: "1px solid rgba(255,255,255,0.12)" }}
         >
-          <MessageCircle className="h-4 w-4" /> WhatsApp Us
+          <MessageCircle className="h-4 w-4" /> {service ? `Ask about ${service}` : "WhatsApp Us"}
         </a>
       </div>
     </>

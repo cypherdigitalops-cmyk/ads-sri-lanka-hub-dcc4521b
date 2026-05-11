@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection } from "./CTASection";
-import { SITE, titleCase, type Category } from "@/data/site";
+import { RELATED_CATEGORIES, SITE, titleCase, type Category } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 import {
   buildBlogArticle,

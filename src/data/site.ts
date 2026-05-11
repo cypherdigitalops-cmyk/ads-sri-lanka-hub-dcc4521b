@@ -93,6 +93,7 @@ export const CATEGORIES: Category[] = [
       { slug: "field-marketing-sri-lanka", keyword: "field marketing sri lanka" },
       { slug: "point-of-sale-advertising-sri-lanka", keyword: "point of sale advertising sri lanka" },
       { slug: "retail-branding-sri-lanka", keyword: "retail branding sri lanka" },
+      { slug: "loyalty-programs-sri-lanka", keyword: "loyalty programs sri lanka" },
     ],
     blog: [
       { slug: "btl-advertising-sri-lanka", keyword: "btl advertising sri lanka" },

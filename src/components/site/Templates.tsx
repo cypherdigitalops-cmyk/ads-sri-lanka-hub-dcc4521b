@@ -12,6 +12,7 @@ import {
   type Block,
   type FAQ,
 } from "@/data/content-engine";
+import { getPageFaqs } from "@/data/page-faqs";
 
 /**
  * Linkify the phrase "advertising sri lanka" / "advertising in sri lanka"
@@ -330,6 +331,8 @@ export function ServicePageTemplate({
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
+  const overrideFaqs = getPageFaqs(slug);
+  const faqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -410,6 +413,7 @@ export function ServicePageTemplate({
             ))}
         </div>
       </section>
+      <FaqList items={faqs} />
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={`Want clear answers about ${title}?`}
@@ -418,7 +422,6 @@ export function ServicePageTemplate({
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
-      <FaqList items={longForm.faqs} />
     </>
   );
 }

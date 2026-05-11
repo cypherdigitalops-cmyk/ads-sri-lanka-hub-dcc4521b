@@ -312,6 +312,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
           sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
         />
       </div>
+      <RelatedCategories categorySlug={category.slug} />
       <FaqList items={longForm.faqs} />
     </>
   );

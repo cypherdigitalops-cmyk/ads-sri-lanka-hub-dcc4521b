@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useSearch } from "@tanstack/react-router";
 import { useState } from "react";
 import { CheckCircle2, Mail, MessageCircle, Phone } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
@@ -9,6 +9,9 @@ const TITLE = "Get a Free Advertising Quote in Sri Lanka | advertisingsrilanka.l
 const DESC = "Request a custom advertising plan and free quote for your business in Sri Lanka. ATL, BTL, digital, SEO, outdoor & more. Call 0771437707.";
 
 export const Route = createFileRoute("/get-quote")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    service: typeof search.service === "string" ? search.service : undefined,
+  }),
   head: () => ({
     meta: [
       { title: TITLE },
@@ -23,6 +26,7 @@ export const Route = createFileRoute("/get-quote")({
 
 function GetQuote() {
   const [submitted, setSubmitted] = useState(false);
+  const { service } = useSearch({ from: "/get-quote" });
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
@@ -39,6 +43,11 @@ function GetQuote() {
           <p className="mt-4 max-w-2xl text-primary-foreground/85">
             Tell us about your business. We'll come back with a custom plan and recommended channels — usually within one business day.
           </p>
+          {service ? (
+            <p className="mt-4 inline-block rounded-full bg-primary-foreground/15 px-4 py-1.5 text-sm font-semibold">
+              Inquiring about: {service}
+            </p>
+          ) : null}
         </div>
       </section>
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-14 lg:grid-cols-[1.2fr,1fr]">
@@ -67,7 +76,8 @@ function GetQuote() {
               </div>
               <div className="grid gap-2">
                 <label className="text-sm font-medium">Interested in</label>
-                <select name="service" className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary">
+                <select name="service" defaultValue={service ?? undefined} className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary">
+                  {service ? <option value={service}>{service}</option> : null}
                   <option>ATL Advertising (TV, Radio, Press)</option>
                   <option>BTL & Activations</option>
                   <option>Digital Marketing & Google Ads</option>

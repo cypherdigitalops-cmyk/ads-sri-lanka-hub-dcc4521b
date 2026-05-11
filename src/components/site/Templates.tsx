@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection } from "./CTASection";
-import { SITE, titleCase, type Category } from "@/data/site";
+import { RELATED_CATEGORIES, SITE, titleCase, type Category } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 import {
   buildBlogArticle,
@@ -96,6 +96,28 @@ function FaqList({ items }: { items: FAQ[] }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(items)) }}
       />
+    </section>
+  );
+}
+
+function RelatedCategories({ categorySlug }: { categorySlug: string }) {
+  const items = RELATED_CATEGORIES[categorySlug];
+  if (!items || items.length === 0) return null;
+  return (
+    <section className="mx-auto max-w-7xl px-4 py-12">
+      <h2 className="text-2xl font-bold sm:text-3xl">Explore related services</h2>
+      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {items.map((r) => (
+          <Link
+            key={r.slug}
+            to={`/${r.slug}` as never}
+            className="rounded-lg border border-border bg-card p-4 hover:border-primary/40"
+          >
+            <div className="text-sm font-semibold">{titleCase(r.anchor)}</div>
+            <div className="mt-1 text-xs text-muted-foreground">Learn more →</div>
+          </Link>
+        ))}
+      </div>
     </section>
   );
 }
@@ -290,6 +312,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
           sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
         />
       </div>
+      <RelatedCategories categorySlug={category.slug} />
       <FaqList items={longForm.faqs} />
     </>
   );
@@ -392,6 +415,7 @@ export function ServicePageTemplate({
           sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
         />
       </div>
+      <RelatedCategories categorySlug={category.slug} />
       <FaqList items={longForm.faqs} />
     </>
   );

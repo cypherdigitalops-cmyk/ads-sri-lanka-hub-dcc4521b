@@ -419,3 +419,97 @@ export function findCategoryBySubSlug(slug: string) {
 export function findCategoryByBlogSlug(slug: string) {
   return CATEGORIES.find((c) => c.blog.some((b) => b.slug === slug));
 }
+
+// Cross-category related links for internal linking strategy.
+// Keyed by category slug — each entry is a list of related target slugs
+// (either another category hub OR a specific service page).
+export const RELATED_CATEGORIES: Record<string, { slug: string; anchor: string }[]> = {
+  "event-management-sri-lanka": [
+    { slug: "video-production-sri-lanka", anchor: "event video production sri lanka" },
+    { slug: "photography-sri-lanka", anchor: "event photography sri lanka" },
+    { slug: "btl-advertising-sri-lanka", anchor: "brand activations sri lanka" },
+    { slug: "outdoor-advertising-sri-lanka", anchor: "event outdoor advertising sri lanka" },
+  ],
+  "atl-advertising-sri-lanka": [
+    { slug: "btl-advertising-sri-lanka", anchor: "btl advertising sri lanka" },
+    { slug: "ttl-advertising-sri-lanka", anchor: "integrated marketing sri lanka" },
+    { slug: "outdoor-advertising-sri-lanka", anchor: "outdoor advertising sri lanka" },
+    { slug: "video-production-sri-lanka", anchor: "tvc production sri lanka" },
+  ],
+  "btl-advertising-sri-lanka": [
+    { slug: "atl-advertising-sri-lanka", anchor: "atl advertising sri lanka" },
+    { slug: "ttl-advertising-sri-lanka", anchor: "integrated marketing sri lanka" },
+    { slug: "event-management-sri-lanka", anchor: "event management sri lanka" },
+    { slug: "outdoor-advertising-sri-lanka", anchor: "outdoor advertising sri lanka" },
+  ],
+  "ttl-advertising-sri-lanka": [
+    { slug: "atl-advertising-sri-lanka", anchor: "atl advertising sri lanka" },
+    { slug: "btl-advertising-sri-lanka", anchor: "btl advertising sri lanka" },
+    { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
+    { slug: "branding-sri-lanka", anchor: "branding sri lanka" },
+  ],
+  "digital-marketing-sri-lanka": [
+    { slug: "seo-services-sri-lanka", anchor: "seo services sri lanka" },
+    { slug: "social-media-marketing-sri-lanka", anchor: "social media marketing sri lanka" },
+    { slug: "web-design-sri-lanka", anchor: "web design sri lanka" },
+    { slug: "email-sms-marketing-sri-lanka", anchor: "email marketing sri lanka" },
+  ],
+  "seo-services-sri-lanka": [
+    { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
+    { slug: "web-design-sri-lanka", anchor: "web design sri lanka" },
+    { slug: "google-ads-sri-lanka", anchor: "google ads sri lanka" },
+    { slug: "reputation-management-sri-lanka", anchor: "online reputation management sri lanka" },
+  ],
+  "social-media-marketing-sri-lanka": [
+    { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
+    { slug: "content-marketing-sri-lanka", anchor: "content marketing sri lanka" },
+    { slug: "video-production-sri-lanka", anchor: "social media video sri lanka" },
+    { slug: "email-sms-marketing-sri-lanka", anchor: "email marketing sri lanka" },
+  ],
+  "email-sms-marketing-sri-lanka": [
+    { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
+    { slug: "social-media-marketing-sri-lanka", anchor: "social media marketing sri lanka" },
+    { slug: "lead-generation-sri-lanka", anchor: "lead generation sri lanka" },
+    { slug: "loyalty-programs-sri-lanka", anchor: "loyalty programs sri lanka" },
+  ],
+  "outdoor-advertising-sri-lanka": [
+    { slug: "atl-advertising-sri-lanka", anchor: "atl advertising sri lanka" },
+    { slug: "btl-advertising-sri-lanka", anchor: "btl advertising sri lanka" },
+    { slug: "event-management-sri-lanka", anchor: "event management sri lanka" },
+    { slug: "led-screen-rental-sri-lanka", anchor: "led screen rental sri lanka" },
+  ],
+  "branding-sri-lanka": [
+    { slug: "web-design-sri-lanka", anchor: "web design sri lanka" },
+    { slug: "video-production-sri-lanka", anchor: "video production sri lanka" },
+    { slug: "content-marketing-sri-lanka", anchor: "content marketing sri lanka" },
+    { slug: "pr-sri-lanka", anchor: "pr sri lanka" },
+  ],
+  "web-design-sri-lanka": [
+    { slug: "seo-services-sri-lanka", anchor: "seo sri lanka" },
+    { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
+    { slug: "branding-sri-lanka", anchor: "branding sri lanka" },
+    { slug: "ecommerce-seo-sri-lanka", anchor: "ecommerce seo sri lanka" },
+  ],
+  "video-production-sri-lanka": [
+    { slug: "photography-sri-lanka", anchor: "commercial photography sri lanka" },
+    { slug: "event-management-sri-lanka", anchor: "event management sri lanka" },
+    { slug: "social-media-marketing-sri-lanka", anchor: "social media video sri lanka" },
+    { slug: "branding-sri-lanka", anchor: "branding sri lanka" },
+    { slug: "atl-advertising-sri-lanka", anchor: "tvc sri lanka" },
+  ],
+  "pr-communications-sri-lanka": [
+    { slug: "branding-sri-lanka", anchor: "branding sri lanka" },
+    { slug: "content-marketing-sri-lanka", anchor: "content marketing sri lanka" },
+    { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
+    { slug: "influencer-marketing-sri-lanka", anchor: "influencer marketing sri lanka" },
+  ],
+};
+
+export const FOOTER_RENTALS: { slug: string; label: string }[] = [
+  { slug: "sound-system-rental-sri-lanka", label: "Sound System Rental" },
+  { slug: "stage-rental-sri-lanka", label: "Stage Rental" },
+  { slug: "led-screen-rental-sri-lanka", label: "LED Screen Rental" },
+  { slug: "photo-booth-rental-sri-lanka", label: "Photo Booth Rental" },
+  { slug: "drone-rental-sri-lanka", label: "Drone Rental" },
+  { slug: "tent-marquee-rental-sri-lanka", label: "Tent & Marquee Rental" },
+];

@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { CATEGORIES, SITE } from "@/data/site";
+import { CATEGORIES, FOOTER_RENTALS, SITE } from "@/data/site";
 import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
     <footer className="mt-16 bg-[image:var(--gradient-hero)] text-primary-foreground">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-5">
         <div>
           <img src={logo} alt="Advertising Sri Lanka" className="h-12 w-auto md:h-14" />
           <p className="mt-3 text-sm text-primary-foreground/75">
@@ -26,6 +26,18 @@ export function SiteFooter() {
               <li key={c.slug}>
                 <Link to={`/${c.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
                   {c.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="text-sm">
+          <div className="font-semibold mb-3">Event rentals</div>
+          <ul className="space-y-2">
+            {FOOTER_RENTALS.map((r) => (
+              <li key={r.slug}>
+                <Link to={`/${r.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
+                  {r.label}
                 </Link>
               </li>
             ))}

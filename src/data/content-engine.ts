@@ -580,6 +580,68 @@ export const KNOWLEDGE: Record<string, CategoryKnowledge> = {
   },
 };
 
+KNOWLEDGE["pr-communications-sri-lanka"] = {
+  slug: "pr-communications-sri-lanka",
+  definition:
+    "PR & Communications in Sri Lanka covers public relations, press releases, journalist relations, crisis communication, influencer partnerships, corporate communications, market research and media planning. Unlike paid advertising, PR earns coverage by giving Sri Lankan journalists, editors and influencers a story worth telling. Done well, it builds credibility that no paid ad can replicate — third-party endorsement from titles like Daily Mirror, Sunday Times, Lankadeepa, EconomyNext, Roar Media, Ada Derana, Newsfirst and trusted creators on YouTube, TikTok and Instagram.",
+  whyItMatters:
+    "Sri Lankan consumers and B2B buyers trust earned media at a fundamentally different level than paid ads — a feature in the business pages still moves opinion in boardrooms, and a Roar Media or Ada Derana feature reshapes a brand's reputation overnight. Strong communications also de-risks a business: a clear PR playbook is what stands between a difficult news cycle and a brand-defining crisis. Market research and media planning sit alongside PR because both are about understanding the audience deeply enough to communicate with them honestly — which channels they consume, what they believe, what language and tone earns their trust.",
+  channels: [
+    { name: "Press releases", desc: "Newsroom-ready announcements distributed to print, broadcast and digital newsrooms in Sinhala, Tamil and English." },
+    { name: "Media relations", desc: "Ongoing journalist relationships at Daily Mirror, Sunday Times, Lankadeepa, EconomyNext, Daily FT, Ada Derana, Hiru and trade press." },
+    { name: "Press conferences & launches", desc: "On-record briefings, product unveilings, partnership announcements and CSR events for the Sri Lankan media." },
+    { name: "Crisis communication", desc: "Rapid-response statements, holding lines, spokesperson coaching and stakeholder briefings when issues break." },
+    { name: "Influencer partnerships", desc: "Long-form collaborations with Sri Lankan creators on YouTube, TikTok, Instagram and podcasts — beyond one-off paid posts." },
+    { name: "Thought leadership", desc: "Op-eds, expert commentary, conference keynotes and white papers that position executives as category authorities." },
+    { name: "Corporate communications", desc: "Annual reports, sustainability disclosures, employee communications and investor relations content." },
+    { name: "Market research", desc: "Quantitative surveys, qualitative focus groups, mystery shopping and consumer panels — Colombo and islandwide." },
+    { name: "Media planning", desc: "Audience-first plans across TV, radio, press, OOH, digital and social, with reach-and-frequency modelling for Sri Lankan media." },
+  ],
+  costs: [
+    { item: "Monthly PR retainer (SME)", range: "LKR 150,000 – 400,000", notes: "Includes 4–6 outreach pieces, 1 release per month, media monitoring." },
+    { item: "Monthly PR retainer (enterprise)", range: "LKR 400,000 – 1,500,000", notes: "Multi-language coverage, crisis cover, executive thought-leadership." },
+    { item: "Single press release + distribution", range: "LKR 60,000 – 250,000", notes: "Includes writing, translation and outreach to relevant beat reporters." },
+    { item: "Press conference / launch event", range: "LKR 400,000 – 2,500,000", notes: "Venue, media kits, refreshments, photography, video, follow-up." },
+    { item: "Crisis communication retainer", range: "LKR 200,000 – 1,000,000 / month", notes: "24/7 spokesperson, holding statements, stakeholder briefings." },
+    { item: "Influencer partnership programme", range: "LKR 150,000 – 2,000,000 / campaign", notes: "Depends on creator tier and content volume." },
+    { item: "Brand tracking survey (national, n=400)", range: "LKR 350,000 – 900,000", notes: "Sinhala/Tamil/English fieldwork, dashboard delivery." },
+    { item: "Focus group (8 respondents, 1 session)", range: "LKR 120,000 – 250,000", notes: "Recruitment, venue, moderation, transcript, report." },
+  ],
+  bestFor: [
+    "Brands launching in Sri Lanka and needing immediate credibility",
+    "Companies in regulated sectors (banking, finance, pharma, telco) where trust drives sales",
+    "Founders and CEOs who want to build personal authority alongside the brand",
+    "Organisations exposed to reputational risk (food safety, data, ESG, public spending)",
+    "Marketers building integrated campaigns where PR validates paid media claims",
+    "Businesses entering a new product category that needs audience research before launch",
+  ],
+  mistakes: [
+    "Treating PR as press-release distribution rather than ongoing journalist relationships",
+    "Pitching the brand instead of pitching a genuinely newsworthy story",
+    "Ignoring Tamil and Sinhala press because the leadership team reads English papers",
+    "Mixing paid coverage with editorial without disclosing it — destroys long-term media trust",
+    "Hiring influencers by follower count alone, without checking engagement and audience match",
+    "No crisis plan in place until the crisis is already on Newsfirst",
+    "Skipping market research and assuming the founder's instinct represents the consumer",
+  ],
+  choosing: [
+    "Ask for a media list with the actual journalists they have placed stories with in the last 12 months",
+    "Request three named client references you can call — not anonymous case studies",
+    "Check coverage samples in Sinhala and Tamil, not just English business press",
+    "Confirm they retain senior counsel for crisis work, not only junior account executives",
+    "Look for in-house research capability or vetted research partners (LMRB, AC Nielsen, Kantar)",
+    "Insist on a monthly coverage report with reach, sentiment and share-of-voice metrics",
+  ],
+  faqs: [
+    { q: "What is the difference between PR and advertising in Sri Lanka?", a: "Advertising is paid space where you control the message exactly — a TVC, a billboard, a sponsored post. PR is earned coverage where a journalist or creator chooses to tell your story because it has news value. PR delivers more credibility and longer-lasting impact, but you give up some control over the final message. Most strong Sri Lankan brands use both — advertising for reach and PR for trust." },
+    { q: "How long before PR shows results?", a: "First placements typically appear within 30–60 days of a properly briefed programme. Meaningful share-of-voice shifts take 3–6 months of consistent activity. Reputation building is a 12–24 month commitment — there are no shortcuts that hold up under scrutiny." },
+    { q: "Can small businesses in Sri Lanka use PR effectively?", a: "Yes — local trade press, regional papers, niche podcasts and category-specific creators are very accessible for SMEs with a genuine story to tell. The cheapest and most powerful PR for small businesses is consistent expert commentary in their own category — answering journalist queries on platforms like LinkedIn and HARO-style services." },
+    { q: "What is included in a market research project?", a: "A typical project includes the research brief, sample design, questionnaire or discussion guide, fieldwork (door-to-door, telephone, online, or face-to-face focus groups), data processing, analysis and a final report with clear recommendations. Sri Lankan fieldwork should always cover Sinhala, Tamil and English audiences when the brand is national." },
+    { q: "How do you handle a PR crisis in Sri Lanka?", a: "A clear crisis playbook has four parts: a named spokesperson, pre-approved holding statements in three languages, a stakeholder map (regulators, media, customers, staff, investors) and a decision-tree for escalation. Speed and honesty matter more than spin — Sri Lankan media and social audiences punish evasive responses harder than the original issue." },
+    { q: "What is media planning, and how is it different from media buying?", a: "Media planning decides which channels, slots and audiences you should be in and why — based on research, behaviour and reach-and-frequency modelling. Media buying is the negotiation and execution of those bookings with channels and vendors. Strong campaigns separate the two so the plan is built on audience truth, not on which vendor gives the best margin." },
+  ],
+};
+
 // --------- HELPERS ---------
 function findCategoryBlock(category: Category): CategoryKnowledge | null {
   return KNOWLEDGE[category.slug] ?? null;

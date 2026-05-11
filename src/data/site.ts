@@ -309,6 +309,7 @@ export const CATEGORIES: Category[] = [
       { slug: "creative-agency-sri-lanka", keyword: "creative agency sri lanka" },
       { slug: "packaging-design-sri-lanka", keyword: "packaging design sri lanka" },
       { slug: "company-profile-design-sri-lanka", keyword: "company profile design sri lanka" },
+      { slug: "photography-sri-lanka", keyword: "commercial photography sri lanka" },
     ],
     blog: [
       { slug: "branding-sri-lanka", keyword: "branding sri lanka" },

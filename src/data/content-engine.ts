@@ -37,6 +37,67 @@ export type CategoryKnowledge = {
 
 // --------- KNOWLEDGE BASE ---------
 export const KNOWLEDGE: Record<string, CategoryKnowledge> = {
+  "event-management-sri-lanka": {
+    slug: "event-management-sri-lanka",
+    definition:
+      "Event management in Sri Lanka is the end-to-end planning, production and on-the-day execution of corporate events, brand activations, weddings, conferences, exhibitions, product launches, dealer meets, AGMs, roadshows and entertainment shows. It covers concept design, venue sourcing, stage and AV production, lighting, sound, LED video walls, generators, tents and marquees, crowd management, hosts and entertainment, photography and videography, permits, logistics and post-event reporting. Sri Lanka's event industry is concentrated around Colombo, Negombo, Kandy and Galle but extends islandwide for roadshows, dealer activations and rural mega-events.",
+    whyItMatters:
+      "Events are still one of the most powerful brand-building tools in Sri Lanka because they create direct, in-person experience that no TVC, billboard or Facebook ad can match. A well-run launch, dealer conference or activation produces media coverage, social content, salesforce energy and customer trust in a single day. With Sri Lanka's relationship-driven business culture, decision-makers still expect face-to-face engagement — which is why corporate, BFSI, telco, FMCG and automotive brands continue to invest heavily in flagship events every year.",
+    channels: [
+      { name: "Corporate events & conferences", desc: "AGMs, dealer meets, annual conferences, awards nights, kick-offs and town halls at BMICH, Shangri-La, Cinnamon Grand, Galle Face Hotel, Kingsbury, Waters Edge and similar venues." },
+      { name: "Product launches & brand activations", desc: "Reveal events, mall activations, sampling days and PR launches engineered for media coverage and social amplification." },
+      { name: "Weddings & private functions", desc: "Full-service wedding planning including decor, stage, lighting, sound, photography and coordination across multiple venues." },
+      { name: "Exhibitions & trade shows", desc: "Booth design and fabrication for BMICH, Sirasa Lakshapathi, Ideal Home, EDEX, Construct, and category trade fairs." },
+      { name: "Stage, sound, lighting & LED video walls", desc: "Truss stages, line-array sound systems, intelligent lighting and indoor/outdoor LED screens supplied as a turnkey package." },
+      { name: "Tent, marquee & furniture rental", desc: "Pagoda, frame and stretch tents, chairs, round and rectangular tables, cocktail furniture and VIP lounges." },
+      { name: "Power, generators & technical infrastructure", desc: "Silent diesel generators, distribution boards, cabling and backup power planned for zero downtime." },
+      { name: "Photo booth, drone, bouncy castle & entertainment", desc: "Add-on experiences that lift engagement, social shares and family appeal at activations and weddings." },
+    ],
+    costs: [
+      { item: "Corporate conference (200 pax, half-day)", range: "LKR 800,000 – 3,500,000", notes: "Venue, AV, stage, F&B, hosting, photography." },
+      { item: "Product launch event (300 pax, evening)", range: "LKR 1,500,000 – 7,000,000", notes: "Concept, stage, LED, lighting, sound, MC, entertainment, PR." },
+      { item: "Dealer / sales conference (1 day, 500 pax)", range: "LKR 3,000,000 – 12,000,000", notes: "Venue, AV production, transport, accommodation, gifting." },
+      { item: "Wedding (300 pax, full setup)", range: "LKR 1,200,000 – 8,000,000", notes: "Decor, stage, lighting, sound, photography, videography." },
+      { item: "Exhibition stand (3 days, 36 sqm)", range: "LKR 450,000 – 2,500,000", notes: "Booth fabrication, branding, lighting, promoters." },
+      { item: "Stage rental (12ft x 16ft, 1 day)", range: "LKR 45,000 – 150,000", notes: "Includes truss, skirting, basic lighting and crew." },
+      { item: "LED video wall (per sqm / day)", range: "LKR 8,000 – 18,000", notes: "Indoor P3/P4 panels with processor and operator." },
+      { item: "Generator rental (60kVA, 8 hours)", range: "LKR 25,000 – 60,000", notes: "Silent, with fuel and operator." },
+    ],
+    bestFor: [
+      "Corporate annual conferences, AGMs and dealer meets",
+      "Product launches that need both live impact and PR coverage",
+      "Weddings and private functions requiring full coordination",
+      "Exhibitions, expos and category trade shows",
+      "Brand activations at malls, schools, universities and public spaces",
+      "Multi-city roadshows for FMCG, telco and financial services",
+    ],
+    mistakes: [
+      "Booking the venue before fixing the creative concept — leads to costly redesign of the stage and flow",
+      "Underestimating power load and ending up with a tripped generator mid-event",
+      "Hiring separate vendors for stage, sound, lighting and LED that don't talk to each other on the day",
+      "Skipping a technical rehearsal and finding out about feedback, dead mics or lighting cues live",
+      "No permits — CMC, Police, fire safety and venue clearances take 7–14 days and cannot be rushed",
+      "Forgetting on-site internet, backup laptops and a backup show file when running a hybrid or live-streamed event",
+      "Treating photography and video as an afterthought — there is no campaign content after the event ends",
+    ],
+    choosing: [
+      "Ask to visit a live event they are producing in the next 2–3 weeks before signing",
+      "Confirm they own (not sub-rent) the core stage, sound, lighting and LED inventory you need",
+      "Check their licensed electricians, riggers and fire safety paperwork — not optional for indoor events",
+      "Look for a single producer / show-caller who runs the run-of-show, not a committee",
+      "Ask for a Plan B for rain, power failure and key-vendor no-show — proper agencies will have one written down",
+      "Insist on a detailed costed BOQ — line items, not lump sums — so you can compare quotes fairly",
+    ],
+    faqs: [
+      { q: "What does an event management company in Sri Lanka actually do?", a: "A full-service event management company handles concept, budgeting, venue sourcing, stage and AV production, lighting and sound, decor, hosting and entertainment, photography and videography, permits, logistics, on-day coordination and post-event reporting. You give them an objective and a budget; they deliver the whole experience and the content that comes out of it." },
+      { q: "How far in advance should I plan a corporate event in Sri Lanka?", a: "For a standard 100–300 pax corporate event, plan 6–8 weeks ahead. For a large dealer conference, product launch or wedding requiring premium venues like Shangri-La or Cinnamon Grand, plan 3–6 months ahead — top venues and AV inventory get booked very early, especially between November and April." },
+      { q: "Do I need permits for an event in Sri Lanka?", a: "Yes for most public-facing events. Indoor venues handle their own venue permits, but anything outdoor, on public land, involving amplified sound, large crowds or temporary structures needs clearances from the local Municipal Council (e.g. CMC for Colombo), Police, and sometimes fire and electrical inspectors. Reputable event companies include permit handling in their fee." },
+      { q: "Can one company supply stage, sound, lighting, LED and generators together?", a: "The best event production companies in Sri Lanka own most of this inventory in-house — which gives you a single point of accountability, faster setup, and fewer vendor coordination headaches. If a company sub-rents everything, ask who actually owns each component and whether they have backups on standby." },
+      { q: "What is the difference between an event planner and an event production company?", a: "An event planner focuses on concept, coordination, decor and guest experience — the creative and logistical layer. An event production company focuses on the technical layer — stage, sound, lighting, video, power and rigging. Full-service event management combines both under one roof." },
+      { q: "Can you live-stream a Sri Lankan event globally?", a: "Yes — multi-camera live streams to YouTube, Facebook, Zoom or a private platform are now standard for AGMs, conferences and product launches with overseas stakeholders. You'll need a managed switcher, redundant internet (dedicated line plus 4G/5G backup) and a streaming operator separate from your in-room AV team." },
+      { q: "How is event success measured?", a: "Beyond attendance and feedback scores, modern Sri Lankan brands measure earned media coverage, social reach, content output (photos, reels, recap films), leads or registrations captured, sales pipeline influenced and post-event brand search lift on Google. A good event company helps you set these KPIs in the brief and reports against them after." },
+    ],
+  },
   "atl-advertising-sri-lanka": {
     slug: "atl-advertising-sri-lanka",
     definition:

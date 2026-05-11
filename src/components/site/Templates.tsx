@@ -415,6 +415,7 @@ export function ServicePageTemplate({
           sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
         />
       </div>
+      <RelatedCategories categorySlug={category.slug} />
       <FaqList items={longForm.faqs} />
     </>
   );

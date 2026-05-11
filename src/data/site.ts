@@ -371,6 +371,22 @@ export const CATEGORIES: Category[] = [
   },
 ];
 
+CATEGORIES.push({
+  slug: "pr-communications-sri-lanka",
+  hubKeyword: "pr and communications sri lanka",
+  title: "PR & Communications",
+  short:
+    "Public relations, media coverage, press releases, influencer partnerships and market research for Sri Lankan brands.",
+  intro:
+    "Build credibility and reputation through earned media, press releases, journalist relations, market research and media planning. We help Sri Lankan brands tell their story to the right audience through the right channels.",
+  icon: "Megaphone",
+  services: [
+    { slug: "pr-sri-lanka", keyword: "pr and public relations sri lanka" },
+    { slug: "market-research-sri-lanka", keyword: "market research and media planning sri lanka" },
+  ],
+  blog: [],
+});
+
 export function titleCase(s: string) {
   const ACRONYMS = new Set([
     "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux",

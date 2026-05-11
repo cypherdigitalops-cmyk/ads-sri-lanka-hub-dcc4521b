@@ -20,6 +20,7 @@ import { Route as WebDesignSriLankaRouteImport } from './routes/web-design-sri-l
 import { Route as VideoProductionSriLankaRouteImport } from './routes/video-production-sri-lanka'
 import { Route as UiUxDesignSriLankaRouteImport } from './routes/ui-ux-design-sri-lanka'
 import { Route as TvCommercialsSriLankaRouteImport } from './routes/tv-commercials-sri-lanka'
+import { Route as TvCommercialSriLankaRouteImport } from './routes/tv-commercial-sri-lanka'
 import { Route as TvAdvertisingSriLankaRouteImport } from './routes/tv-advertising-sri-lanka'
 import { Route as TtlAdvertisingSriLankaRouteImport } from './routes/ttl-advertising-sri-lanka'
 import { Route as TransitAdvertisingSriLankaRouteImport } from './routes/transit-advertising-sri-lanka'
@@ -39,6 +40,7 @@ import { Route as ShopBrandingSriLankaRouteImport } from './routes/shop-branding
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SeoServicesSriLankaRouteImport } from './routes/seo-services-sri-lanka'
 import { Route as SeoCompanySriLankaRouteImport } from './routes/seo-company-sri-lanka'
+import { Route as RoadshowSriLankaRouteImport } from './routes/roadshow-sri-lanka'
 import { Route as RoadshowMarketingSriLankaRouteImport } from './routes/roadshow-marketing-sri-lanka'
 import { Route as RetailBrandingSriLankaRouteImport } from './routes/retail-branding-sri-lanka'
 import { Route as RemarketingSriLankaRouteImport } from './routes/remarketing-sri-lanka'
@@ -70,6 +72,7 @@ import { Route as LedVideoWallSriLankaRouteImport } from './routes/led-video-wal
 import { Route as LedScreenRentalSriLankaRouteImport } from './routes/led-screen-rental-sri-lanka'
 import { Route as LedScreenAdvertisingSriLankaRouteImport } from './routes/led-screen-advertising-sri-lanka'
 import { Route as LeadGenerationSriLankaRouteImport } from './routes/lead-generation-sri-lanka'
+import { Route as LandingPageSriLankaRouteImport } from './routes/landing-page-sri-lanka'
 import { Route as LandingPageDesignSriLankaRouteImport } from './routes/landing-page-design-sri-lanka'
 import { Route as IntegratedMarketingSriLankaRouteImport } from './routes/integrated-marketing-sri-lanka'
 import { Route as InstagramMarketingSriLankaRouteImport } from './routes/instagram-marketing-sri-lanka'
@@ -121,10 +124,12 @@ import { Route as BillboardAdvertisingSriLankaRouteImport } from './routes/billb
 import { Route as BacklinkServicesSriLankaRouteImport } from './routes/backlink-services-sri-lanka'
 import { Route as B2bEmailMarketingSriLankaRouteImport } from './routes/b2b-email-marketing-sri-lanka'
 import { Route as AtlAdvertisingSriLankaRouteImport } from './routes/atl-advertising-sri-lanka'
+import { Route as AnimationSriLankaRouteImport } from './routes/animation-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as R3dAnimationSriLankaRouteImport } from './routes/3d-animation-sri-lanka'
+import { Route as R360MarketingSriLankaRouteImport } from './routes/360-marketing-sri-lanka'
 import { Route as R360MarketingCampaignsSriLankaRouteImport } from './routes/360-marketing-campaigns-sri-lanka'
 import { Route as R2dAnimationSriLankaRouteImport } from './routes/2d-animation-sri-lanka'
 import { Route as IndexRouteImport } from './routes/index'
@@ -282,6 +287,11 @@ const TvCommercialsSriLankaRoute = TvCommercialsSriLankaRouteImport.update({
   path: '/tv-commercials-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TvCommercialSriLankaRoute = TvCommercialSriLankaRouteImport.update({
+  id: '/tv-commercial-sri-lanka',
+  path: '/tv-commercial-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TvAdvertisingSriLankaRoute = TvAdvertisingSriLankaRouteImport.update({
   id: '/tv-advertising-sri-lanka',
   path: '/tv-advertising-sri-lanka',
@@ -382,6 +392,11 @@ const SeoServicesSriLankaRoute = SeoServicesSriLankaRouteImport.update({
 const SeoCompanySriLankaRoute = SeoCompanySriLankaRouteImport.update({
   id: '/seo-company-sri-lanka',
   path: '/seo-company-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoadshowSriLankaRoute = RoadshowSriLankaRouteImport.update({
+  id: '/roadshow-sri-lanka',
+  path: '/roadshow-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RoadshowMarketingSriLankaRoute =
@@ -551,6 +566,11 @@ const LedScreenAdvertisingSriLankaRoute =
 const LeadGenerationSriLankaRoute = LeadGenerationSriLankaRouteImport.update({
   id: '/lead-generation-sri-lanka',
   path: '/lead-generation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LandingPageSriLankaRoute = LandingPageSriLankaRouteImport.update({
+  id: '/landing-page-sri-lanka',
+  path: '/landing-page-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LandingPageDesignSriLankaRoute =
@@ -834,6 +854,11 @@ const AtlAdvertisingSriLankaRoute = AtlAdvertisingSriLankaRouteImport.update({
   path: '/atl-advertising-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AnimationSriLankaRoute = AnimationSriLankaRouteImport.update({
+  id: '/animation-sri-lanka',
+  path: '/animation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdvertisingRatesRoute = AdvertisingRatesRouteImport.update({
   id: '/advertising-rates',
   path: '/advertising-rates',
@@ -852,6 +877,11 @@ const AboutRoute = AboutRouteImport.update({
 const R3dAnimationSriLankaRoute = R3dAnimationSriLankaRouteImport.update({
   id: '/3d-animation-sri-lanka',
   path: '/3d-animation-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R360MarketingSriLankaRoute = R360MarketingSriLankaRouteImport.update({
+  id: '/360-marketing-sri-lanka',
+  path: '/360-marketing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const R360MarketingCampaignsSriLankaRoute =
@@ -1420,10 +1450,12 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
   '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
+  '/360-marketing-sri-lanka': typeof R360MarketingSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
@@ -1475,6 +1507,7 @@ export interface FileRoutesByFullPath {
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
   '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
   '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
+  '/landing-page-sri-lanka': typeof LandingPageSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
@@ -1506,6 +1539,7 @@ export interface FileRoutesByFullPath {
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
+  '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
   '/services': typeof ServicesRoute
@@ -1525,6 +1559,7 @@ export interface FileRoutesByFullPath {
   '/transit-advertising-sri-lanka': typeof TransitAdvertisingSriLankaRoute
   '/ttl-advertising-sri-lanka': typeof TtlAdvertisingSriLankaRoute
   '/tv-advertising-sri-lanka': typeof TvAdvertisingSriLankaRoute
+  '/tv-commercial-sri-lanka': typeof TvCommercialSriLankaRoute
   '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
   '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
   '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
@@ -1634,10 +1669,12 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
   '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
+  '/360-marketing-sri-lanka': typeof R360MarketingSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
@@ -1689,6 +1726,7 @@ export interface FileRoutesByTo {
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
   '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
   '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
+  '/landing-page-sri-lanka': typeof LandingPageSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
@@ -1720,6 +1758,7 @@ export interface FileRoutesByTo {
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
+  '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
   '/services': typeof ServicesRoute
@@ -1739,6 +1778,7 @@ export interface FileRoutesByTo {
   '/transit-advertising-sri-lanka': typeof TransitAdvertisingSriLankaRoute
   '/ttl-advertising-sri-lanka': typeof TtlAdvertisingSriLankaRoute
   '/tv-advertising-sri-lanka': typeof TvAdvertisingSriLankaRoute
+  '/tv-commercial-sri-lanka': typeof TvCommercialSriLankaRoute
   '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
   '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
   '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
@@ -1849,10 +1889,12 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
   '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
+  '/360-marketing-sri-lanka': typeof R360MarketingSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
@@ -1904,6 +1946,7 @@ export interface FileRoutesById {
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
   '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
   '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
+  '/landing-page-sri-lanka': typeof LandingPageSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
@@ -1935,6 +1978,7 @@ export interface FileRoutesById {
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
+  '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
   '/services': typeof ServicesRoute
@@ -1954,6 +1998,7 @@ export interface FileRoutesById {
   '/transit-advertising-sri-lanka': typeof TransitAdvertisingSriLankaRoute
   '/ttl-advertising-sri-lanka': typeof TtlAdvertisingSriLankaRoute
   '/tv-advertising-sri-lanka': typeof TvAdvertisingSriLankaRoute
+  '/tv-commercial-sri-lanka': typeof TvCommercialSriLankaRoute
   '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
   '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
   '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
@@ -2065,10 +2110,12 @@ export interface FileRouteTypes {
     | '/'
     | '/2d-animation-sri-lanka'
     | '/360-marketing-campaigns-sri-lanka'
+    | '/360-marketing-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/animation-sri-lanka'
     | '/atl-advertising-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
     | '/backlink-services-sri-lanka'
@@ -2120,6 +2167,7 @@ export interface FileRouteTypes {
     | '/instagram-marketing-sri-lanka'
     | '/integrated-marketing-sri-lanka'
     | '/landing-page-design-sri-lanka'
+    | '/landing-page-sri-lanka'
     | '/lead-generation-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
@@ -2151,6 +2199,7 @@ export interface FileRouteTypes {
     | '/remarketing-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
+    | '/roadshow-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
     | '/services'
@@ -2170,6 +2219,7 @@ export interface FileRouteTypes {
     | '/transit-advertising-sri-lanka'
     | '/ttl-advertising-sri-lanka'
     | '/tv-advertising-sri-lanka'
+    | '/tv-commercial-sri-lanka'
     | '/tv-commercials-sri-lanka'
     | '/ui-ux-design-sri-lanka'
     | '/video-production-sri-lanka'
@@ -2279,10 +2329,12 @@ export interface FileRouteTypes {
     | '/'
     | '/2d-animation-sri-lanka'
     | '/360-marketing-campaigns-sri-lanka'
+    | '/360-marketing-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/animation-sri-lanka'
     | '/atl-advertising-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
     | '/backlink-services-sri-lanka'
@@ -2334,6 +2386,7 @@ export interface FileRouteTypes {
     | '/instagram-marketing-sri-lanka'
     | '/integrated-marketing-sri-lanka'
     | '/landing-page-design-sri-lanka'
+    | '/landing-page-sri-lanka'
     | '/lead-generation-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
@@ -2365,6 +2418,7 @@ export interface FileRouteTypes {
     | '/remarketing-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
+    | '/roadshow-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
     | '/services'
@@ -2384,6 +2438,7 @@ export interface FileRouteTypes {
     | '/transit-advertising-sri-lanka'
     | '/ttl-advertising-sri-lanka'
     | '/tv-advertising-sri-lanka'
+    | '/tv-commercial-sri-lanka'
     | '/tv-commercials-sri-lanka'
     | '/ui-ux-design-sri-lanka'
     | '/video-production-sri-lanka'
@@ -2493,10 +2548,12 @@ export interface FileRouteTypes {
     | '/'
     | '/2d-animation-sri-lanka'
     | '/360-marketing-campaigns-sri-lanka'
+    | '/360-marketing-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/animation-sri-lanka'
     | '/atl-advertising-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
     | '/backlink-services-sri-lanka'
@@ -2548,6 +2605,7 @@ export interface FileRouteTypes {
     | '/instagram-marketing-sri-lanka'
     | '/integrated-marketing-sri-lanka'
     | '/landing-page-design-sri-lanka'
+    | '/landing-page-sri-lanka'
     | '/lead-generation-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
@@ -2579,6 +2637,7 @@ export interface FileRouteTypes {
     | '/remarketing-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
+    | '/roadshow-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
     | '/services'
@@ -2598,6 +2657,7 @@ export interface FileRouteTypes {
     | '/transit-advertising-sri-lanka'
     | '/ttl-advertising-sri-lanka'
     | '/tv-advertising-sri-lanka'
+    | '/tv-commercial-sri-lanka'
     | '/tv-commercials-sri-lanka'
     | '/ui-ux-design-sri-lanka'
     | '/video-production-sri-lanka'
@@ -2708,10 +2768,12 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R2dAnimationSriLankaRoute: typeof R2dAnimationSriLankaRoute
   R360MarketingCampaignsSriLankaRoute: typeof R360MarketingCampaignsSriLankaRoute
+  R360MarketingSriLankaRoute: typeof R360MarketingSriLankaRoute
   R3dAnimationSriLankaRoute: typeof R3dAnimationSriLankaRoute
   AboutRoute: typeof AboutRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
+  AnimationSriLankaRoute: typeof AnimationSriLankaRoute
   AtlAdvertisingSriLankaRoute: typeof AtlAdvertisingSriLankaRoute
   B2bEmailMarketingSriLankaRoute: typeof B2bEmailMarketingSriLankaRoute
   BacklinkServicesSriLankaRoute: typeof BacklinkServicesSriLankaRoute
@@ -2763,6 +2825,7 @@ export interface RootRouteChildren {
   InstagramMarketingSriLankaRoute: typeof InstagramMarketingSriLankaRoute
   IntegratedMarketingSriLankaRoute: typeof IntegratedMarketingSriLankaRoute
   LandingPageDesignSriLankaRoute: typeof LandingPageDesignSriLankaRoute
+  LandingPageSriLankaRoute: typeof LandingPageSriLankaRoute
   LeadGenerationSriLankaRoute: typeof LeadGenerationSriLankaRoute
   LedScreenAdvertisingSriLankaRoute: typeof LedScreenAdvertisingSriLankaRoute
   LedScreenRentalSriLankaRoute: typeof LedScreenRentalSriLankaRoute
@@ -2794,6 +2857,7 @@ export interface RootRouteChildren {
   RemarketingSriLankaRoute: typeof RemarketingSriLankaRoute
   RetailBrandingSriLankaRoute: typeof RetailBrandingSriLankaRoute
   RoadshowMarketingSriLankaRoute: typeof RoadshowMarketingSriLankaRoute
+  RoadshowSriLankaRoute: typeof RoadshowSriLankaRoute
   SeoCompanySriLankaRoute: typeof SeoCompanySriLankaRoute
   SeoServicesSriLankaRoute: typeof SeoServicesSriLankaRoute
   ServicesRoute: typeof ServicesRoute
@@ -2813,6 +2877,7 @@ export interface RootRouteChildren {
   TransitAdvertisingSriLankaRoute: typeof TransitAdvertisingSriLankaRoute
   TtlAdvertisingSriLankaRoute: typeof TtlAdvertisingSriLankaRoute
   TvAdvertisingSriLankaRoute: typeof TvAdvertisingSriLankaRoute
+  TvCommercialSriLankaRoute: typeof TvCommercialSriLankaRoute
   TvCommercialsSriLankaRoute: typeof TvCommercialsSriLankaRoute
   UiUxDesignSriLankaRoute: typeof UiUxDesignSriLankaRoute
   VideoProductionSriLankaRoute: typeof VideoProductionSriLankaRoute
@@ -2998,6 +3063,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TvCommercialsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tv-commercial-sri-lanka': {
+      id: '/tv-commercial-sri-lanka'
+      path: '/tv-commercial-sri-lanka'
+      fullPath: '/tv-commercial-sri-lanka'
+      preLoaderRoute: typeof TvCommercialSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tv-advertising-sri-lanka': {
       id: '/tv-advertising-sri-lanka'
       path: '/tv-advertising-sri-lanka'
@@ -3129,6 +3201,13 @@ declare module '@tanstack/react-router' {
       path: '/seo-company-sri-lanka'
       fullPath: '/seo-company-sri-lanka'
       preLoaderRoute: typeof SeoCompanySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/roadshow-sri-lanka': {
+      id: '/roadshow-sri-lanka'
+      path: '/roadshow-sri-lanka'
+      fullPath: '/roadshow-sri-lanka'
+      preLoaderRoute: typeof RoadshowSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/roadshow-marketing-sri-lanka': {
@@ -3346,6 +3425,13 @@ declare module '@tanstack/react-router' {
       path: '/lead-generation-sri-lanka'
       fullPath: '/lead-generation-sri-lanka'
       preLoaderRoute: typeof LeadGenerationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/landing-page-sri-lanka': {
+      id: '/landing-page-sri-lanka'
+      path: '/landing-page-sri-lanka'
+      fullPath: '/landing-page-sri-lanka'
+      preLoaderRoute: typeof LandingPageSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/landing-page-design-sri-lanka': {
@@ -3705,6 +3791,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AtlAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/animation-sri-lanka': {
+      id: '/animation-sri-lanka'
+      path: '/animation-sri-lanka'
+      fullPath: '/animation-sri-lanka'
+      preLoaderRoute: typeof AnimationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/advertising-rates': {
       id: '/advertising-rates'
       path: '/advertising-rates'
@@ -3731,6 +3824,13 @@ declare module '@tanstack/react-router' {
       path: '/3d-animation-sri-lanka'
       fullPath: '/3d-animation-sri-lanka'
       preLoaderRoute: typeof R3dAnimationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/360-marketing-sri-lanka': {
+      id: '/360-marketing-sri-lanka'
+      path: '/360-marketing-sri-lanka'
+      fullPath: '/360-marketing-sri-lanka'
+      preLoaderRoute: typeof R360MarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/360-marketing-campaigns-sri-lanka': {
@@ -4412,10 +4512,12 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   R2dAnimationSriLankaRoute: R2dAnimationSriLankaRoute,
   R360MarketingCampaignsSriLankaRoute: R360MarketingCampaignsSriLankaRoute,
+  R360MarketingSriLankaRoute: R360MarketingSriLankaRoute,
   R3dAnimationSriLankaRoute: R3dAnimationSriLankaRoute,
   AboutRoute: AboutRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
+  AnimationSriLankaRoute: AnimationSriLankaRoute,
   AtlAdvertisingSriLankaRoute: AtlAdvertisingSriLankaRoute,
   B2bEmailMarketingSriLankaRoute: B2bEmailMarketingSriLankaRoute,
   BacklinkServicesSriLankaRoute: BacklinkServicesSriLankaRoute,
@@ -4467,6 +4569,7 @@ const rootRouteChildren: RootRouteChildren = {
   InstagramMarketingSriLankaRoute: InstagramMarketingSriLankaRoute,
   IntegratedMarketingSriLankaRoute: IntegratedMarketingSriLankaRoute,
   LandingPageDesignSriLankaRoute: LandingPageDesignSriLankaRoute,
+  LandingPageSriLankaRoute: LandingPageSriLankaRoute,
   LeadGenerationSriLankaRoute: LeadGenerationSriLankaRoute,
   LedScreenAdvertisingSriLankaRoute: LedScreenAdvertisingSriLankaRoute,
   LedScreenRentalSriLankaRoute: LedScreenRentalSriLankaRoute,
@@ -4498,6 +4601,7 @@ const rootRouteChildren: RootRouteChildren = {
   RemarketingSriLankaRoute: RemarketingSriLankaRoute,
   RetailBrandingSriLankaRoute: RetailBrandingSriLankaRoute,
   RoadshowMarketingSriLankaRoute: RoadshowMarketingSriLankaRoute,
+  RoadshowSriLankaRoute: RoadshowSriLankaRoute,
   SeoCompanySriLankaRoute: SeoCompanySriLankaRoute,
   SeoServicesSriLankaRoute: SeoServicesSriLankaRoute,
   ServicesRoute: ServicesRoute,
@@ -4517,6 +4621,7 @@ const rootRouteChildren: RootRouteChildren = {
   TransitAdvertisingSriLankaRoute: TransitAdvertisingSriLankaRoute,
   TtlAdvertisingSriLankaRoute: TtlAdvertisingSriLankaRoute,
   TvAdvertisingSriLankaRoute: TvAdvertisingSriLankaRoute,
+  TvCommercialSriLankaRoute: TvCommercialSriLankaRoute,
   TvCommercialsSriLankaRoute: TvCommercialsSriLankaRoute,
   UiUxDesignSriLankaRoute: UiUxDesignSriLankaRoute,
   VideoProductionSriLankaRoute: VideoProductionSriLankaRoute,
@@ -4641,3 +4746,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

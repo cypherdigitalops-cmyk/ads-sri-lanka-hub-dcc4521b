@@ -88,23 +88,33 @@ export function FloatingWhatsApp() {
   const service = useCurrentService();
   const label = service ? `WhatsApp about ${service}` : "Chat on WhatsApp";
   return (
-    <a
-      href={waLink(service)}
-      target="_blank"
-      rel="noopener"
-      aria-label={service ? `Chat on WhatsApp about ${service}` : "Chat on WhatsApp — typically replies within 5 minutes"}
-      className="group fixed right-4 z-50 inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-4 py-3 font-semibold text-[var(--whatsapp-foreground)] shadow-2xl transition hover:scale-105 sm:right-6 bottom-[70px] md:bottom-6"
-    >
-      <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[var(--whatsapp)] opacity-60" aria-hidden />
-      <span className="absolute inset-0 -z-10 rounded-full bg-[var(--whatsapp)] opacity-90" aria-hidden />
-      <MessageCircle className="relative h-6 w-6" />
-      <span className="relative hidden whitespace-nowrap text-sm sm:inline">
-        {label}
-      </span>
-      <span className="relative hidden text-[10px] font-medium opacity-90 lg:inline">
-        · replies in 5 min
-      </span>
-    </a>
+    <div className="fixed right-4 z-50 flex flex-col items-end gap-2 sm:right-6 bottom-[70px] md:bottom-6">
+      {service ? (
+        <span
+          className="max-w-[78vw] truncate rounded-full bg-foreground/90 px-3 py-1 text-[11px] font-semibold text-background shadow-lg ring-1 ring-foreground/10 sm:max-w-xs sm:text-xs"
+          aria-hidden
+        >
+          Inquiring about: {service}
+        </span>
+      ) : null}
+      <a
+        href={waLink(service)}
+        target="_blank"
+        rel="noopener"
+        aria-label={service ? `Chat on WhatsApp about ${service}` : "Chat on WhatsApp — typically replies within 5 minutes"}
+        className="group relative inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-4 py-3 font-semibold text-[var(--whatsapp-foreground)] shadow-2xl transition hover:scale-105"
+      >
+        <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[var(--whatsapp)] opacity-60" aria-hidden />
+        <span className="absolute inset-0 -z-10 rounded-full bg-[var(--whatsapp)] opacity-90" aria-hidden />
+        <MessageCircle className="relative h-6 w-6" />
+        <span className="relative hidden whitespace-nowrap text-sm sm:inline">
+          {label}
+        </span>
+        <span className="relative hidden text-[10px] font-medium opacity-90 lg:inline">
+          · replies in 5 min
+        </span>
+      </a>
+    </div>
   );
 }
 

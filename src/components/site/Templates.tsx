@@ -100,6 +100,28 @@ function FaqList({ items }: { items: FAQ[] }) {
   );
 }
 
+function RelatedCategories({ categorySlug }: { categorySlug: string }) {
+  const items = RELATED_CATEGORIES[categorySlug];
+  if (!items || items.length === 0) return null;
+  return (
+    <section className="mx-auto max-w-7xl px-4 py-12">
+      <h2 className="text-2xl font-bold sm:text-3xl">Explore related services</h2>
+      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {items.map((r) => (
+          <Link
+            key={r.slug}
+            to={`/${r.slug}` as never}
+            className="rounded-lg border border-border bg-card p-4 hover:border-primary/40"
+          >
+            <div className="text-sm font-semibold">{titleCase(r.anchor)}</div>
+            <div className="mt-1 text-xs text-muted-foreground">Learn more →</div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro: string; crumbs: Crumb[] }) {
   return (
     <section className="relative overflow-hidden text-primary-foreground">

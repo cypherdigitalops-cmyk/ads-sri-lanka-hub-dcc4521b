@@ -2,7 +2,11 @@ import { Link } from "@tanstack/react-router";
 import { MessageCircle, Phone, Send } from "lucide-react";
 import { SITE } from "@/data/site";
 
-export function CTASection({ headline, sub }: { headline?: string; sub?: string }) {
+export function CTASection({ headline, sub, service }: { headline?: string; sub?: string; service?: string }) {
+  const waHref = service
+    ? `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm inquiring about ${service}. Please share more details.`)}`
+    : SITE.whatsapp;
+  const quoteHref = service ? `/get-quote?service=${encodeURIComponent(service)}` : "/get-quote";
   return (
     <section className="my-12 rounded-2xl bg-[image:var(--gradient-hero)] p-8 text-primary-foreground shadow-[var(--shadow-elegant)] sm:p-12">
       <div className="mx-auto max-w-3xl text-center">
@@ -12,17 +16,24 @@ export function CTASection({ headline, sub }: { headline?: string; sub?: string 
         <p className="mt-3 text-primary-foreground/85">
           {sub ?? "Speak to advertising specialists for free guidance on the right channel for your business."}
         </p>
+        {service ? (
+          <p className="mt-3 inline-block rounded-full bg-primary-foreground/15 px-4 py-1 text-sm font-semibold text-primary-foreground">
+            Inquiring about: {service}
+          </p>
+        ) : null}
         <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href={SITE.whatsapp}
+            href={waHref}
             target="_blank"
             rel="noopener"
-            aria-label="Chat with us on WhatsApp"
+            aria-label={service ? `Chat on WhatsApp about ${service}` : "Chat with us on WhatsApp"}
             className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-8 py-3.5 text-base font-bold text-[var(--whatsapp-foreground)] shadow-lg ring-2 ring-[var(--whatsapp)]/40 transition hover:scale-[1.03] hover:opacity-95"
           >
             <span className="absolute -inset-0.5 rounded-full bg-[var(--whatsapp)] opacity-50 blur-md transition group-hover:opacity-70" aria-hidden />
             <MessageCircle className="relative h-5 w-5" />
-            <span className="relative">Chat on WhatsApp — reply in 5 min</span>
+            <span className="relative">
+              {service ? `WhatsApp about ${service}` : "Chat on WhatsApp — reply in 5 min"}
+            </span>
           </a>
           <a
             href={`tel:${SITE.phone}`}
@@ -31,10 +42,11 @@ export function CTASection({ headline, sub }: { headline?: string; sub?: string 
             <Phone className="h-5 w-5" /> Call {SITE.phone}
           </a>
           <Link
-            to="/get-quote"
+            to={quoteHref as never}
             className="inline-flex items-center justify-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
           >
-            <Send className="h-5 w-5" /> Get Free Advertising Advice
+            <Send className="h-5 w-5" />
+            {service ? `Get a quote for ${service}` : "Get Free Advertising Advice"}
           </Link>
         </div>
         <p className="mt-4 text-xs text-primary-foreground/70">

@@ -160,6 +160,10 @@ export const CATEGORIES: Category[] = [
       { slug: "programmatic-advertising-sri-lanka", keyword: "programmatic advertising sri lanka" },
       { slug: "lead-generation-sri-lanka", keyword: "lead generation sri lanka" },
       { slug: "performance-marketing-sri-lanka", keyword: "performance marketing sri lanka" },
+      { slug: "linkedin-ads-sri-lanka", keyword: "linkedin ads sri lanka" },
+      { slug: "google-shopping-sri-lanka", keyword: "google shopping sri lanka" },
+      { slug: "content-marketing-sri-lanka", keyword: "content marketing sri lanka" },
+      { slug: "reputation-management-sri-lanka", keyword: "reputation management sri lanka" },
     ],
     blog: [
       { slug: "digital-marketing-sri-lanka", keyword: "digital marketing sri lanka" },

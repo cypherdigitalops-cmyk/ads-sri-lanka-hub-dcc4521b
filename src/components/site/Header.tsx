@@ -24,6 +24,7 @@ export function SiteHeader() {
           <Link to="/social-media-marketing-sri-lanka" className="hover:text-primary">Social</Link>
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
           <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
+          <Link to="/pr-communications-sri-lanka" className="hover:text-primary">PR</Link>
           <Link to="/contact" className="hover:text-primary">Contact</Link>
         </nav>
         <div className="flex items-center gap-2">

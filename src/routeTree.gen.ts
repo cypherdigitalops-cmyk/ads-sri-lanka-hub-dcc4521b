@@ -40,6 +40,7 @@ import { Route as RetailBrandingSriLankaRouteImport } from './routes/retail-bran
 import { Route as RemarketingSriLankaRouteImport } from './routes/remarketing-sri-lanka'
 import { Route as RadioAdvertisingSriLankaRouteImport } from './routes/radio-advertising-sri-lanka'
 import { Route as ProgrammaticAdvertisingSriLankaRouteImport } from './routes/programmatic-advertising-sri-lanka'
+import { Route as PrSriLankaRouteImport } from './routes/pr-sri-lanka'
 import { Route as PrCommunicationsSriLankaRouteImport } from './routes/pr-communications-sri-lanka'
 import { Route as PpcSriLankaRouteImport } from './routes/ppc-sri-lanka'
 import { Route as PointOfSaleAdvertisingSriLankaRouteImport } from './routes/point-of-sale-advertising-sri-lanka'
@@ -379,6 +380,11 @@ const ProgrammaticAdvertisingSriLankaRoute =
     path: '/programmatic-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PrSriLankaRoute = PrSriLankaRouteImport.update({
+  id: '/pr-sri-lanka',
+  path: '/pr-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrCommunicationsSriLankaRoute =
   PrCommunicationsSriLankaRouteImport.update({
     id: '/pr-communications-sri-lanka',
@@ -1430,6 +1436,7 @@ export interface FileRoutesByFullPath {
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
+  '/pr-sri-lanka': typeof PrSriLankaRoute
   '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
@@ -1634,6 +1641,7 @@ export interface FileRoutesByTo {
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
+  '/pr-sri-lanka': typeof PrSriLankaRoute
   '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
@@ -1839,6 +1847,7 @@ export interface FileRoutesById {
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
+  '/pr-sri-lanka': typeof PrSriLankaRoute
   '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
@@ -2045,6 +2054,7 @@ export interface FileRouteTypes {
     | '/point-of-sale-advertising-sri-lanka'
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
+    | '/pr-sri-lanka'
     | '/programmatic-advertising-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
@@ -2249,6 +2259,7 @@ export interface FileRouteTypes {
     | '/point-of-sale-advertising-sri-lanka'
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
+    | '/pr-sri-lanka'
     | '/programmatic-advertising-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
@@ -2453,6 +2464,7 @@ export interface FileRouteTypes {
     | '/point-of-sale-advertising-sri-lanka'
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
+    | '/pr-sri-lanka'
     | '/programmatic-advertising-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
@@ -2658,6 +2670,7 @@ export interface RootRouteChildren {
   PointOfSaleAdvertisingSriLankaRoute: typeof PointOfSaleAdvertisingSriLankaRoute
   PpcSriLankaRoute: typeof PpcSriLankaRoute
   PrCommunicationsSriLankaRoute: typeof PrCommunicationsSriLankaRoute
+  PrSriLankaRoute: typeof PrSriLankaRoute
   ProgrammaticAdvertisingSriLankaRoute: typeof ProgrammaticAdvertisingSriLankaRoute
   RadioAdvertisingSriLankaRoute: typeof RadioAdvertisingSriLankaRoute
   RemarketingSriLankaRoute: typeof RemarketingSriLankaRoute
@@ -3001,6 +3014,13 @@ declare module '@tanstack/react-router' {
       path: '/programmatic-advertising-sri-lanka'
       fullPath: '/programmatic-advertising-sri-lanka'
       preLoaderRoute: typeof ProgrammaticAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pr-sri-lanka': {
+      id: '/pr-sri-lanka'
+      path: '/pr-sri-lanka'
+      fullPath: '/pr-sri-lanka'
+      preLoaderRoute: typeof PrSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pr-communications-sri-lanka': {
@@ -4282,6 +4302,7 @@ const rootRouteChildren: RootRouteChildren = {
   PointOfSaleAdvertisingSriLankaRoute: PointOfSaleAdvertisingSriLankaRoute,
   PpcSriLankaRoute: PpcSriLankaRoute,
   PrCommunicationsSriLankaRoute: PrCommunicationsSriLankaRoute,
+  PrSriLankaRoute: PrSriLankaRoute,
   ProgrammaticAdvertisingSriLankaRoute: ProgrammaticAdvertisingSriLankaRoute,
   RadioAdvertisingSriLankaRoute: RadioAdvertisingSriLankaRoute,
   RemarketingSriLankaRoute: RemarketingSriLankaRoute,

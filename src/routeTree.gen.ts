@@ -51,6 +51,7 @@ import { Route as PrSriLankaRouteImport } from './routes/pr-sri-lanka'
 import { Route as PrCommunicationsSriLankaRouteImport } from './routes/pr-communications-sri-lanka'
 import { Route as PpcSriLankaRouteImport } from './routes/ppc-sri-lanka'
 import { Route as PointOfSaleAdvertisingSriLankaRouteImport } from './routes/point-of-sale-advertising-sri-lanka'
+import { Route as PhotographySriLankaRouteImport } from './routes/photography-sri-lanka'
 import { Route as PhotoBoothRentalSriLankaRouteImport } from './routes/photo-booth-rental-sri-lanka'
 import { Route as PerformanceMarketingSriLankaRouteImport } from './routes/performance-marketing-sri-lanka'
 import { Route as PackagingDesignSriLankaRouteImport } from './routes/packaging-design-sri-lanka'
@@ -454,6 +455,11 @@ const PointOfSaleAdvertisingSriLankaRoute =
     path: '/point-of-sale-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PhotographySriLankaRoute = PhotographySriLankaRouteImport.update({
+  id: '/photography-sri-lanka',
+  path: '/photography-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PhotoBoothRentalSriLankaRoute =
   PhotoBoothRentalSriLankaRouteImport.update({
     id: '/photo-booth-rental-sri-lanka',
@@ -1529,6 +1535,7 @@ export interface FileRoutesByFullPath {
   '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
   '/photo-booth-rental-sri-lanka': typeof PhotoBoothRentalSriLankaRoute
+  '/photography-sri-lanka': typeof PhotographySriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
@@ -1748,6 +1755,7 @@ export interface FileRoutesByTo {
   '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
   '/photo-booth-rental-sri-lanka': typeof PhotoBoothRentalSriLankaRoute
+  '/photography-sri-lanka': typeof PhotographySriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
@@ -1968,6 +1976,7 @@ export interface FileRoutesById {
   '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
   '/photo-booth-rental-sri-lanka': typeof PhotoBoothRentalSriLankaRoute
+  '/photography-sri-lanka': typeof PhotographySriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
@@ -2189,6 +2198,7 @@ export interface FileRouteTypes {
     | '/packaging-design-sri-lanka'
     | '/performance-marketing-sri-lanka'
     | '/photo-booth-rental-sri-lanka'
+    | '/photography-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
@@ -2408,6 +2418,7 @@ export interface FileRouteTypes {
     | '/packaging-design-sri-lanka'
     | '/performance-marketing-sri-lanka'
     | '/photo-booth-rental-sri-lanka'
+    | '/photography-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
@@ -2627,6 +2638,7 @@ export interface FileRouteTypes {
     | '/packaging-design-sri-lanka'
     | '/performance-marketing-sri-lanka'
     | '/photo-booth-rental-sri-lanka'
+    | '/photography-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
@@ -2847,6 +2859,7 @@ export interface RootRouteChildren {
   PackagingDesignSriLankaRoute: typeof PackagingDesignSriLankaRoute
   PerformanceMarketingSriLankaRoute: typeof PerformanceMarketingSriLankaRoute
   PhotoBoothRentalSriLankaRoute: typeof PhotoBoothRentalSriLankaRoute
+  PhotographySriLankaRoute: typeof PhotographySriLankaRoute
   PointOfSaleAdvertisingSriLankaRoute: typeof PointOfSaleAdvertisingSriLankaRoute
   PpcSriLankaRoute: typeof PpcSriLankaRoute
   PrCommunicationsSriLankaRoute: typeof PrCommunicationsSriLankaRoute
@@ -3278,6 +3291,13 @@ declare module '@tanstack/react-router' {
       path: '/point-of-sale-advertising-sri-lanka'
       fullPath: '/point-of-sale-advertising-sri-lanka'
       preLoaderRoute: typeof PointOfSaleAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/photography-sri-lanka': {
+      id: '/photography-sri-lanka'
+      path: '/photography-sri-lanka'
+      fullPath: '/photography-sri-lanka'
+      preLoaderRoute: typeof PhotographySriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/photo-booth-rental-sri-lanka': {
@@ -4591,6 +4611,7 @@ const rootRouteChildren: RootRouteChildren = {
   PackagingDesignSriLankaRoute: PackagingDesignSriLankaRoute,
   PerformanceMarketingSriLankaRoute: PerformanceMarketingSriLankaRoute,
   PhotoBoothRentalSriLankaRoute: PhotoBoothRentalSriLankaRoute,
+  PhotographySriLankaRoute: PhotographySriLankaRoute,
   PointOfSaleAdvertisingSriLankaRoute: PointOfSaleAdvertisingSriLankaRoute,
   PpcSriLankaRoute: PpcSriLankaRoute,
   PrCommunicationsSriLankaRoute: PrCommunicationsSriLankaRoute,
@@ -4746,3 +4767,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

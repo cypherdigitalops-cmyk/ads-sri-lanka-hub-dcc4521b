@@ -609,6 +609,12 @@ export const RELATED_CATEGORIES: Record<string, { slug: string; anchor: string }
     { slug: "btl-advertising-sri-lanka", anchor: "btl advertising sri lanka" },
     { slug: "exhibition-management-sri-lanka", anchor: "exhibition management sri lanka" },
   ],
+  "printing-services-sri-lanka": [
+    { slug: "outdoor-advertising-sri-lanka", anchor: "outdoor advertising sri lanka" },
+    { slug: "branding-sri-lanka", anchor: "branding sri lanka" },
+    { slug: "exhibition-management-sri-lanka", anchor: "exhibition management sri lanka" },
+    { slug: "btl-advertising-sri-lanka", anchor: "btl advertising sri lanka" },
+  ],
 };
 
 export const FOOTER_RENTALS: { slug: string; label: string }[] = [

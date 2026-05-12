@@ -499,7 +499,7 @@ export function titleCase(s: string) {
   const ACRONYMS = new Set([
     "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux",
     "2d", "3d", "b2b", "sms", "led", "crm", "kpi", "roi", "cms", "faq", "cta", "pr",
-    "usb", "id",
+    "usb", "id", "uv",
   ]);
   return s
     .split(" ")

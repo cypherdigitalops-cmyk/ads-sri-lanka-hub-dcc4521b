@@ -15,27 +15,41 @@ import {
 import { getPageFaqs } from "@/data/page-faqs";
 
 /**
- * Linkify the phrase "advertising sri lanka" / "advertising in sri lanka"
- * (case-insensitive) inside any text content, pointing to the homepage.
+ * Linkify variants of the brand keyword to the homepage.
+ * Matches: "advertising in sri lanka", "advertising sri lanka",
+ * "sri lanka advertising" (case-insensitive). Only the FIRST match
+ * encountered during a page render becomes a link — one keyword per page.
  */
+let __adLinkUsed = false;
+function resetHomeAnchor() {
+  __adLinkUsed = false;
+}
 function linkifyAdSL(text: string): React.ReactNode {
   if (!text) return text;
-  const re = /(advertising(?:\s+in)?\s+sri\s+lanka)/gi;
-  const parts = text.split(re);
-  if (parts.length === 1) return text;
-  return parts.map((part, i) =>
-    re.test(part) ? (
+  const re = /(advertising\s+in\s+sri\s+lanka|advertising\s+sri\s+lanka|sri\s+lanka\s+advertising)/gi;
+  if (__adLinkUsed || !re.test(text)) return text;
+  re.lastIndex = 0;
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    if (__adLinkUsed) break;
+    parts.push(text.slice(last, m.index));
+    parts.push(
       <Link
-        key={i}
+        key={m.index}
         to="/"
         className="text-primary underline-offset-2 hover:underline"
       >
-        {part}
-      </Link>
-    ) : (
-      <span key={i}>{part}</span>
-    ),
-  );
+        {m[0]}
+      </Link>,
+    );
+    __adLinkUsed = true;
+    last = m.index + m[0].length;
+    break;
+  }
+  parts.push(text.slice(last));
+  return parts;
 }
 
 function LongFormBlocks({ blocks }: { blocks: Block[] }) {
@@ -228,6 +242,7 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 
 /* ========== CATEGORY HUB ========== */
 export function CategoryHubTemplate({ category }: { category: Category }) {
+  resetHomeAnchor();
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
   const serviceJsonLd = {
@@ -328,6 +343,7 @@ export function ServicePageTemplate({
   category: Category;
   keyword: string;
 }) {
+  resetHomeAnchor();
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
@@ -434,6 +450,7 @@ export function BlogArticleTemplate({
   category: Category;
   keyword: string;
 }) {
+  resetHomeAnchor();
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";

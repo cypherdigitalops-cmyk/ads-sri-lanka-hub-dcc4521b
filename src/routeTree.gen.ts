@@ -14,10 +14,18 @@ import { Route as YoutubeAdsSriLankaRouteImport } from './routes/youtube-ads-sri
 import { Route as WordpressDevelopmentSriLankaRouteImport } from './routes/wordpress-development-sri-lanka'
 import { Route as WhatsappMarketingSriLankaRouteImport } from './routes/whatsapp-marketing-sri-lanka'
 import { Route as WeddingPlannersSriLankaRouteImport } from './routes/wedding-planners-sri-lanka'
+import { Route as WeddingPlannersColomboRouteImport } from './routes/wedding-planners-colombo'
+import { Route as WeddingDecorSriLankaRouteImport } from './routes/wedding-decor-sri-lanka'
+import { Route as WeddingCateringSriLankaRouteImport } from './routes/wedding-catering-sri-lanka'
 import { Route as WebsiteMaintenanceSriLankaRouteImport } from './routes/website-maintenance-sri-lanka'
 import { Route as WebsiteDevelopmentSriLankaRouteImport } from './routes/website-development-sri-lanka'
 import { Route as WebDesignSriLankaRouteImport } from './routes/web-design-sri-lanka'
+import { Route as VirtualEventSriLankaRouteImport } from './routes/virtual-event-sri-lanka'
 import { Route as VideoProductionSriLankaRouteImport } from './routes/video-production-sri-lanka'
+import { Route as VenueFindingSriLankaRouteImport } from './routes/venue-finding-sri-lanka'
+import { Route as ValetParkingSriLankaRouteImport } from './routes/valet-parking-sri-lanka'
+import { Route as UplightingSriLankaRouteImport } from './routes/uplighting-sri-lanka'
+import { Route as UniversityEventsSriLankaRouteImport } from './routes/university-events-sri-lanka'
 import { Route as UiUxDesignSriLankaRouteImport } from './routes/ui-ux-design-sri-lanka'
 import { Route as TvCommercialsSriLankaRouteImport } from './routes/tv-commercials-sri-lanka'
 import { Route as TvCommercialSriLankaRouteImport } from './routes/tv-commercial-sri-lanka'
@@ -40,14 +48,18 @@ import { Route as ShopBrandingSriLankaRouteImport } from './routes/shop-branding
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SeoServicesSriLankaRouteImport } from './routes/seo-services-sri-lanka'
 import { Route as SeoCompanySriLankaRouteImport } from './routes/seo-company-sri-lanka'
+import { Route as SelfieMirrorRentalSriLankaRouteImport } from './routes/selfie-mirror-rental-sri-lanka'
+import { Route as SchoolEventsSriLankaRouteImport } from './routes/school-events-sri-lanka'
 import { Route as RoadshowSriLankaRouteImport } from './routes/roadshow-sri-lanka'
 import { Route as RoadshowMarketingSriLankaRouteImport } from './routes/roadshow-marketing-sri-lanka'
 import { Route as RetailBrandingSriLankaRouteImport } from './routes/retail-branding-sri-lanka'
 import { Route as ReputationManagementSriLankaRouteImport } from './routes/reputation-management-sri-lanka'
 import { Route as RemarketingSriLankaRouteImport } from './routes/remarketing-sri-lanka'
 import { Route as RadioAdvertisingSriLankaRouteImport } from './routes/radio-advertising-sri-lanka'
+import { Route as PyrotechnicsSriLankaRouteImport } from './routes/pyrotechnics-sri-lanka'
 import { Route as ProjectorRentalSriLankaRouteImport } from './routes/projector-rental-sri-lanka'
 import { Route as ProgrammaticAdvertisingSriLankaRouteImport } from './routes/programmatic-advertising-sri-lanka'
+import { Route as ProductLaunchSriLankaRouteImport } from './routes/product-launch-sri-lanka'
 import { Route as PrSriLankaRouteImport } from './routes/pr-sri-lanka'
 import { Route as PrCommunicationsSriLankaRouteImport } from './routes/pr-communications-sri-lanka'
 import { Route as PpcSriLankaRouteImport } from './routes/ppc-sri-lanka'
@@ -59,19 +71,23 @@ import { Route as PackagingDesignSriLankaRouteImport } from './routes/packaging-
 import { Route as OutdoorAdvertisingSriLankaRouteImport } from './routes/outdoor-advertising-sri-lanka'
 import { Route as OmnichannelMarketingSriLankaRouteImport } from './routes/omnichannel-marketing-sri-lanka'
 import { Route as NewspaperAdvertisingSriLankaRouteImport } from './routes/newspaper-advertising-sri-lanka'
+import { Route as NeonSignRentalSriLankaRouteImport } from './routes/neon-sign-rental-sri-lanka'
 import { Route as MultiChannelAdvertisingSriLankaRouteImport } from './routes/multi-channel-advertising-sri-lanka'
 import { Route as MotionGraphicsSriLankaRouteImport } from './routes/motion-graphics-sri-lanka'
 import { Route as MobileBillboardSriLankaRouteImport } from './routes/mobile-billboard-sri-lanka'
 import { Route as MediaPlanningSriLankaRouteImport } from './routes/media-planning-sri-lanka'
 import { Route as MediaBuyingSriLankaRouteImport } from './routes/media-buying-sri-lanka'
+import { Route as McHostHireSriLankaRouteImport } from './routes/mc-host-hire-sri-lanka'
 import { Route as MarketResearchSriLankaRouteImport } from './routes/market-research-sri-lanka'
 import { Route as MallActivationSriLankaRouteImport } from './routes/mall-activation-sri-lanka'
 import { Route as MagazineAdvertisingSriLankaRouteImport } from './routes/magazine-advertising-sri-lanka'
 import { Route as LoyaltyProgramsSriLankaRouteImport } from './routes/loyalty-programs-sri-lanka'
 import { Route as LogoDesignSriLankaRouteImport } from './routes/logo-design-sri-lanka'
 import { Route as LocalSeoSriLankaRouteImport } from './routes/local-seo-sri-lanka'
+import { Route as LiveBandHireSriLankaRouteImport } from './routes/live-band-hire-sri-lanka'
 import { Route as LinkedinMarketingSriLankaRouteImport } from './routes/linkedin-marketing-sri-lanka'
 import { Route as LinkedinAdsSriLankaRouteImport } from './routes/linkedin-ads-sri-lanka'
+import { Route as LightingRentalSriLankaRouteImport } from './routes/lighting-rental-sri-lanka'
 import { Route as LedVideoWallSriLankaRouteImport } from './routes/led-video-wall-sri-lanka'
 import { Route as LedScreenRentalSriLankaRouteImport } from './routes/led-screen-rental-sri-lanka'
 import { Route as LedScreenAdvertisingSriLankaRouteImport } from './routes/led-screen-advertising-sri-lanka'
@@ -82,40 +98,69 @@ import { Route as IntegratedMarketingSriLankaRouteImport } from './routes/integr
 import { Route as InstagramMarketingSriLankaRouteImport } from './routes/instagram-marketing-sri-lanka'
 import { Route as InstagramAdsSriLankaRouteImport } from './routes/instagram-ads-sri-lanka'
 import { Route as InfluencerMarketingSriLankaRouteImport } from './routes/influencer-marketing-sri-lanka'
+import { Route as IceSculptureSriLankaRouteImport } from './routes/ice-sculpture-sri-lanka'
+import { Route as HybridEventSriLankaRouteImport } from './routes/hybrid-event-sri-lanka'
 import { Route as HoardingAdvertisingSriLankaRouteImport } from './routes/hoarding-advertising-sri-lanka'
 import { Route as GraphicDesignSriLankaRouteImport } from './routes/graphic-design-sri-lanka'
 import { Route as GoogleShoppingSriLankaRouteImport } from './routes/google-shopping-sri-lanka'
 import { Route as GoogleAdsSriLankaRouteImport } from './routes/google-ads-sri-lanka'
 import { Route as GetQuoteRouteImport } from './routes/get-quote'
 import { Route as GeneratorRentalSriLankaRouteImport } from './routes/generator-rental-sri-lanka'
+import { Route as GalaDinnerSriLankaRouteImport } from './routes/gala-dinner-sri-lanka'
 import { Route as FullServiceAdvertisingSriLankaRouteImport } from './routes/full-service-advertising-sri-lanka'
+import { Route as FogMachineRentalSriLankaRouteImport } from './routes/fog-machine-rental-sri-lanka'
+import { Route as FlowerWallRentalSriLankaRouteImport } from './routes/flower-wall-rental-sri-lanka'
+import { Route as FlowerDecorationSriLankaRouteImport } from './routes/flower-decoration-sri-lanka'
 import { Route as FieldMarketingSriLankaRouteImport } from './routes/field-marketing-sri-lanka'
 import { Route as FacebookMarketingSriLankaRouteImport } from './routes/facebook-marketing-sri-lanka'
 import { Route as FacebookAdsSriLankaRouteImport } from './routes/facebook-ads-sri-lanka'
 import { Route as ExhibitionManagementSriLankaRouteImport } from './routes/exhibition-management-sri-lanka'
 import { Route as ExhibitionBrandingSriLankaRouteImport } from './routes/exhibition-branding-sri-lanka'
+import { Route as EventVideographySriLankaRouteImport } from './routes/event-videography-sri-lanka'
+import { Route as EventVenueColomboRouteImport } from './routes/event-venue-colombo'
+import { Route as EventTicketingSriLankaRouteImport } from './routes/event-ticketing-sri-lanka'
+import { Route as EventSecuritySriLankaRouteImport } from './routes/event-security-sri-lanka'
+import { Route as EventRegistrationSriLankaRouteImport } from './routes/event-registration-sri-lanka'
 import { Route as EventPlannersSriLankaRouteImport } from './routes/event-planners-sri-lanka'
+import { Route as EventPhotographySriLankaRouteImport } from './routes/event-photography-sri-lanka'
 import { Route as EventMarketingSriLankaRouteImport } from './routes/event-marketing-sri-lanka'
 import { Route as EventManagementSriLankaRouteImport } from './routes/event-management-sri-lanka'
+import { Route as EventManagementNegomboRouteImport } from './routes/event-management-negombo'
+import { Route as EventManagementKandyRouteImport } from './routes/event-management-kandy'
+import { Route as EventManagementJaffnaRouteImport } from './routes/event-management-jaffna'
+import { Route as EventManagementGalleRouteImport } from './routes/event-management-galle'
+import { Route as EventManagementColomboRouteImport } from './routes/event-management-colombo'
+import { Route as EventLiveStreamingSriLankaRouteImport } from './routes/event-live-streaming-sri-lanka'
+import { Route as EventEntertainmentSriLankaRouteImport } from './routes/event-entertainment-sri-lanka'
+import { Route as EventDecorSriLankaRouteImport } from './routes/event-decor-sri-lanka'
+import { Route as EventCleaningSriLankaRouteImport } from './routes/event-cleaning-sri-lanka'
+import { Route as EventCateringSriLankaRouteImport } from './routes/event-catering-sri-lanka'
 import { Route as EmailSmsMarketingSriLankaRouteImport } from './routes/email-sms-marketing-sri-lanka'
 import { Route as EmailAutomationSriLankaRouteImport } from './routes/email-automation-sri-lanka'
 import { Route as EcommerceWebsiteSriLankaRouteImport } from './routes/ecommerce-website-sri-lanka'
 import { Route as EcommerceSeoSriLankaRouteImport } from './routes/ecommerce-seo-sri-lanka'
 import { Route as DroneVideographySriLankaRouteImport } from './routes/drone-videography-sri-lanka'
 import { Route as DroneRentalSriLankaRouteImport } from './routes/drone-rental-sri-lanka'
+import { Route as DjHireSriLankaRouteImport } from './routes/dj-hire-sri-lanka'
 import { Route as DisplayAdvertisingSriLankaRouteImport } from './routes/display-advertising-sri-lanka'
 import { Route as DigitalMarketingSriLankaRouteImport } from './routes/digital-marketing-sri-lanka'
 import { Route as DigitalBillboardSriLankaRouteImport } from './routes/digital-billboard-sri-lanka'
+import { Route as DancerHireSriLankaRouteImport } from './routes/dancer-hire-sri-lanka'
+import { Route as CrowdManagementSriLankaRouteImport } from './routes/crowd-management-sri-lanka'
 import { Route as CreativeAgencySriLankaRouteImport } from './routes/creative-agency-sri-lanka'
 import { Route as CorporateVideoSriLankaRouteImport } from './routes/corporate-video-sri-lanka'
+import { Route as CorporateEventsColomboRouteImport } from './routes/corporate-events-colombo'
 import { Route as CorporateEventManagementSriLankaRouteImport } from './routes/corporate-event-management-sri-lanka'
 import { Route as CorporateBrandingSriLankaRouteImport } from './routes/corporate-branding-sri-lanka'
 import { Route as ContentMarketingSriLankaRouteImport } from './routes/content-marketing-sri-lanka'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ConfettiCannonSriLankaRouteImport } from './routes/confetti-cannon-sri-lanka'
 import { Route as ConferenceManagementSriLankaRouteImport } from './routes/conference-management-sri-lanka'
 import { Route as CompanyProfileDesignSriLankaRouteImport } from './routes/company-profile-design-sri-lanka'
 import { Route as CommercialVideoSriLankaRouteImport } from './routes/commercial-video-sri-lanka'
+import { Route as ColdSparkMachineRentalSriLankaRouteImport } from './routes/cold-spark-machine-rental-sri-lanka'
 import { Route as CinemaAdvertisingSriLankaRouteImport } from './routes/cinema-advertising-sri-lanka'
+import { Route as CharityEventsSriLankaRouteImport } from './routes/charity-events-sri-lanka'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as BulkSmsSriLankaRouteImport } from './routes/bulk-sms-sri-lanka'
 import { Route as BulkEmailSriLankaRouteImport } from './routes/bulk-email-sri-lanka'
@@ -126,14 +171,18 @@ import { Route as BrandCommunicationSriLankaRouteImport } from './routes/brand-c
 import { Route as BrandActivationSriLankaRouteImport } from './routes/brand-activation-sri-lanka'
 import { Route as BouncyCastleRentalSriLankaRouteImport } from './routes/bouncy-castle-rental-sri-lanka'
 import { Route as BillboardAdvertisingSriLankaRouteImport } from './routes/billboard-advertising-sri-lanka'
+import { Route as BalloonDecorationSriLankaRouteImport } from './routes/balloon-decoration-sri-lanka'
 import { Route as BacklinkServicesSriLankaRouteImport } from './routes/backlink-services-sri-lanka'
+import { Route as BackdropDesignSriLankaRouteImport } from './routes/backdrop-design-sri-lanka'
 import { Route as B2bEmailMarketingSriLankaRouteImport } from './routes/b2b-email-marketing-sri-lanka'
+import { Route as AwardsCeremonySriLankaRouteImport } from './routes/awards-ceremony-sri-lanka'
 import { Route as AtlAdvertisingSriLankaRouteImport } from './routes/atl-advertising-sri-lanka'
 import { Route as AnimationSriLankaRouteImport } from './routes/animation-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as R3dAnimationSriLankaRouteImport } from './routes/3d-animation-sri-lanka'
+import { Route as R360PhotoBoothRentalSriLankaRouteImport } from './routes/360-photo-booth-rental-sri-lanka'
 import { Route as R360MarketingSriLankaRouteImport } from './routes/360-marketing-sri-lanka'
 import { Route as R360MarketingCampaignsSriLankaRouteImport } from './routes/360-marketing-campaigns-sri-lanka'
 import { Route as R2dAnimationSriLankaRouteImport } from './routes/2d-animation-sri-lanka'
@@ -260,6 +309,21 @@ const WeddingPlannersSriLankaRoute = WeddingPlannersSriLankaRouteImport.update({
   path: '/wedding-planners-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WeddingPlannersColomboRoute = WeddingPlannersColomboRouteImport.update({
+  id: '/wedding-planners-colombo',
+  path: '/wedding-planners-colombo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeddingDecorSriLankaRoute = WeddingDecorSriLankaRouteImport.update({
+  id: '/wedding-decor-sri-lanka',
+  path: '/wedding-decor-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeddingCateringSriLankaRoute = WeddingCateringSriLankaRouteImport.update({
+  id: '/wedding-catering-sri-lanka',
+  path: '/wedding-catering-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WebsiteMaintenanceSriLankaRoute =
   WebsiteMaintenanceSriLankaRouteImport.update({
     id: '/website-maintenance-sri-lanka',
@@ -277,11 +341,37 @@ const WebDesignSriLankaRoute = WebDesignSriLankaRouteImport.update({
   path: '/web-design-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VirtualEventSriLankaRoute = VirtualEventSriLankaRouteImport.update({
+  id: '/virtual-event-sri-lanka',
+  path: '/virtual-event-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const VideoProductionSriLankaRoute = VideoProductionSriLankaRouteImport.update({
   id: '/video-production-sri-lanka',
   path: '/video-production-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VenueFindingSriLankaRoute = VenueFindingSriLankaRouteImport.update({
+  id: '/venue-finding-sri-lanka',
+  path: '/venue-finding-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ValetParkingSriLankaRoute = ValetParkingSriLankaRouteImport.update({
+  id: '/valet-parking-sri-lanka',
+  path: '/valet-parking-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UplightingSriLankaRoute = UplightingSriLankaRouteImport.update({
+  id: '/uplighting-sri-lanka',
+  path: '/uplighting-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UniversityEventsSriLankaRoute =
+  UniversityEventsSriLankaRouteImport.update({
+    id: '/university-events-sri-lanka',
+    path: '/university-events-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const UiUxDesignSriLankaRoute = UiUxDesignSriLankaRouteImport.update({
   id: '/ui-ux-design-sri-lanka',
   path: '/ui-ux-design-sri-lanka',
@@ -399,6 +489,17 @@ const SeoCompanySriLankaRoute = SeoCompanySriLankaRouteImport.update({
   path: '/seo-company-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SelfieMirrorRentalSriLankaRoute =
+  SelfieMirrorRentalSriLankaRouteImport.update({
+    id: '/selfie-mirror-rental-sri-lanka',
+    path: '/selfie-mirror-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SchoolEventsSriLankaRoute = SchoolEventsSriLankaRouteImport.update({
+  id: '/school-events-sri-lanka',
+  path: '/school-events-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RoadshowSriLankaRoute = RoadshowSriLankaRouteImport.update({
   id: '/roadshow-sri-lanka',
   path: '/roadshow-sri-lanka',
@@ -432,6 +533,11 @@ const RadioAdvertisingSriLankaRoute =
     path: '/radio-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PyrotechnicsSriLankaRoute = PyrotechnicsSriLankaRouteImport.update({
+  id: '/pyrotechnics-sri-lanka',
+  path: '/pyrotechnics-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjectorRentalSriLankaRoute = ProjectorRentalSriLankaRouteImport.update({
   id: '/projector-rental-sri-lanka',
   path: '/projector-rental-sri-lanka',
@@ -443,6 +549,11 @@ const ProgrammaticAdvertisingSriLankaRoute =
     path: '/programmatic-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProductLaunchSriLankaRoute = ProductLaunchSriLankaRouteImport.update({
+  id: '/product-launch-sri-lanka',
+  path: '/product-launch-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrSriLankaRoute = PrSriLankaRouteImport.update({
   id: '/pr-sri-lanka',
   path: '/pr-sri-lanka',
@@ -505,6 +616,11 @@ const NewspaperAdvertisingSriLankaRoute =
     path: '/newspaper-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NeonSignRentalSriLankaRoute = NeonSignRentalSriLankaRouteImport.update({
+  id: '/neon-sign-rental-sri-lanka',
+  path: '/neon-sign-rental-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MultiChannelAdvertisingSriLankaRoute =
   MultiChannelAdvertisingSriLankaRouteImport.update({
     id: '/multi-channel-advertising-sri-lanka',
@@ -529,6 +645,11 @@ const MediaPlanningSriLankaRoute = MediaPlanningSriLankaRouteImport.update({
 const MediaBuyingSriLankaRoute = MediaBuyingSriLankaRouteImport.update({
   id: '/media-buying-sri-lanka',
   path: '/media-buying-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McHostHireSriLankaRoute = McHostHireSriLankaRouteImport.update({
+  id: '/mc-host-hire-sri-lanka',
+  path: '/mc-host-hire-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MarketResearchSriLankaRoute = MarketResearchSriLankaRouteImport.update({
@@ -562,6 +683,11 @@ const LocalSeoSriLankaRoute = LocalSeoSriLankaRouteImport.update({
   path: '/local-seo-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LiveBandHireSriLankaRoute = LiveBandHireSriLankaRouteImport.update({
+  id: '/live-band-hire-sri-lanka',
+  path: '/live-band-hire-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LinkedinMarketingSriLankaRoute =
   LinkedinMarketingSriLankaRouteImport.update({
     id: '/linkedin-marketing-sri-lanka',
@@ -571,6 +697,11 @@ const LinkedinMarketingSriLankaRoute =
 const LinkedinAdsSriLankaRoute = LinkedinAdsSriLankaRouteImport.update({
   id: '/linkedin-ads-sri-lanka',
   path: '/linkedin-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LightingRentalSriLankaRoute = LightingRentalSriLankaRouteImport.update({
+  id: '/lighting-rental-sri-lanka',
+  path: '/lighting-rental-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LedVideoWallSriLankaRoute = LedVideoWallSriLankaRouteImport.update({
@@ -628,6 +759,16 @@ const InfluencerMarketingSriLankaRoute =
     path: '/influencer-marketing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const IceSculptureSriLankaRoute = IceSculptureSriLankaRouteImport.update({
+  id: '/ice-sculpture-sri-lanka',
+  path: '/ice-sculpture-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HybridEventSriLankaRoute = HybridEventSriLankaRouteImport.update({
+  id: '/hybrid-event-sri-lanka',
+  path: '/hybrid-event-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const HoardingAdvertisingSriLankaRoute =
   HoardingAdvertisingSriLankaRouteImport.update({
     id: '/hoarding-advertising-sri-lanka',
@@ -659,10 +800,33 @@ const GeneratorRentalSriLankaRoute = GeneratorRentalSriLankaRouteImport.update({
   path: '/generator-rental-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GalaDinnerSriLankaRoute = GalaDinnerSriLankaRouteImport.update({
+  id: '/gala-dinner-sri-lanka',
+  path: '/gala-dinner-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FullServiceAdvertisingSriLankaRoute =
   FullServiceAdvertisingSriLankaRouteImport.update({
     id: '/full-service-advertising-sri-lanka',
     path: '/full-service-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FogMachineRentalSriLankaRoute =
+  FogMachineRentalSriLankaRouteImport.update({
+    id: '/fog-machine-rental-sri-lanka',
+    path: '/fog-machine-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FlowerWallRentalSriLankaRoute =
+  FlowerWallRentalSriLankaRouteImport.update({
+    id: '/flower-wall-rental-sri-lanka',
+    path: '/flower-wall-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FlowerDecorationSriLankaRoute =
+  FlowerDecorationSriLankaRouteImport.update({
+    id: '/flower-decoration-sri-lanka',
+    path: '/flower-decoration-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const FieldMarketingSriLankaRoute = FieldMarketingSriLankaRouteImport.update({
@@ -693,11 +857,44 @@ const ExhibitionBrandingSriLankaRoute =
     path: '/exhibition-branding-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const EventVideographySriLankaRoute =
+  EventVideographySriLankaRouteImport.update({
+    id: '/event-videography-sri-lanka',
+    path: '/event-videography-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventVenueColomboRoute = EventVenueColomboRouteImport.update({
+  id: '/event-venue-colombo',
+  path: '/event-venue-colombo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventTicketingSriLankaRoute = EventTicketingSriLankaRouteImport.update({
+  id: '/event-ticketing-sri-lanka',
+  path: '/event-ticketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventSecuritySriLankaRoute = EventSecuritySriLankaRouteImport.update({
+  id: '/event-security-sri-lanka',
+  path: '/event-security-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventRegistrationSriLankaRoute =
+  EventRegistrationSriLankaRouteImport.update({
+    id: '/event-registration-sri-lanka',
+    path: '/event-registration-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const EventPlannersSriLankaRoute = EventPlannersSriLankaRouteImport.update({
   id: '/event-planners-sri-lanka',
   path: '/event-planners-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EventPhotographySriLankaRoute =
+  EventPhotographySriLankaRouteImport.update({
+    id: '/event-photography-sri-lanka',
+    path: '/event-photography-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const EventMarketingSriLankaRoute = EventMarketingSriLankaRouteImport.update({
   id: '/event-marketing-sri-lanka',
   path: '/event-marketing-sri-lanka',
@@ -706,6 +903,58 @@ const EventMarketingSriLankaRoute = EventMarketingSriLankaRouteImport.update({
 const EventManagementSriLankaRoute = EventManagementSriLankaRouteImport.update({
   id: '/event-management-sri-lanka',
   path: '/event-management-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventManagementNegomboRoute = EventManagementNegomboRouteImport.update({
+  id: '/event-management-negombo',
+  path: '/event-management-negombo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventManagementKandyRoute = EventManagementKandyRouteImport.update({
+  id: '/event-management-kandy',
+  path: '/event-management-kandy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventManagementJaffnaRoute = EventManagementJaffnaRouteImport.update({
+  id: '/event-management-jaffna',
+  path: '/event-management-jaffna',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventManagementGalleRoute = EventManagementGalleRouteImport.update({
+  id: '/event-management-galle',
+  path: '/event-management-galle',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventManagementColomboRoute = EventManagementColomboRouteImport.update({
+  id: '/event-management-colombo',
+  path: '/event-management-colombo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventLiveStreamingSriLankaRoute =
+  EventLiveStreamingSriLankaRouteImport.update({
+    id: '/event-live-streaming-sri-lanka',
+    path: '/event-live-streaming-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventEntertainmentSriLankaRoute =
+  EventEntertainmentSriLankaRouteImport.update({
+    id: '/event-entertainment-sri-lanka',
+    path: '/event-entertainment-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventDecorSriLankaRoute = EventDecorSriLankaRouteImport.update({
+  id: '/event-decor-sri-lanka',
+  path: '/event-decor-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventCleaningSriLankaRoute = EventCleaningSriLankaRouteImport.update({
+  id: '/event-cleaning-sri-lanka',
+  path: '/event-cleaning-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventCateringSriLankaRoute = EventCateringSriLankaRouteImport.update({
+  id: '/event-catering-sri-lanka',
+  path: '/event-catering-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EmailSmsMarketingSriLankaRoute =
@@ -741,6 +990,11 @@ const DroneRentalSriLankaRoute = DroneRentalSriLankaRouteImport.update({
   path: '/drone-rental-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DjHireSriLankaRoute = DjHireSriLankaRouteImport.update({
+  id: '/dj-hire-sri-lanka',
+  path: '/dj-hire-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DisplayAdvertisingSriLankaRoute =
   DisplayAdvertisingSriLankaRouteImport.update({
     id: '/display-advertising-sri-lanka',
@@ -759,6 +1013,16 @@ const DigitalBillboardSriLankaRoute =
     path: '/digital-billboard-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const DancerHireSriLankaRoute = DancerHireSriLankaRouteImport.update({
+  id: '/dancer-hire-sri-lanka',
+  path: '/dancer-hire-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CrowdManagementSriLankaRoute = CrowdManagementSriLankaRouteImport.update({
+  id: '/crowd-management-sri-lanka',
+  path: '/crowd-management-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CreativeAgencySriLankaRoute = CreativeAgencySriLankaRouteImport.update({
   id: '/creative-agency-sri-lanka',
   path: '/creative-agency-sri-lanka',
@@ -767,6 +1031,11 @@ const CreativeAgencySriLankaRoute = CreativeAgencySriLankaRouteImport.update({
 const CorporateVideoSriLankaRoute = CorporateVideoSriLankaRouteImport.update({
   id: '/corporate-video-sri-lanka',
   path: '/corporate-video-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateEventsColomboRoute = CorporateEventsColomboRouteImport.update({
+  id: '/corporate-events-colombo',
+  path: '/corporate-events-colombo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CorporateEventManagementSriLankaRoute =
@@ -792,6 +1061,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConfettiCannonSriLankaRoute = ConfettiCannonSriLankaRouteImport.update({
+  id: '/confetti-cannon-sri-lanka',
+  path: '/confetti-cannon-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ConferenceManagementSriLankaRoute =
   ConferenceManagementSriLankaRouteImport.update({
     id: '/conference-management-sri-lanka',
@@ -809,12 +1083,23 @@ const CommercialVideoSriLankaRoute = CommercialVideoSriLankaRouteImport.update({
   path: '/commercial-video-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ColdSparkMachineRentalSriLankaRoute =
+  ColdSparkMachineRentalSriLankaRouteImport.update({
+    id: '/cold-spark-machine-rental-sri-lanka',
+    path: '/cold-spark-machine-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const CinemaAdvertisingSriLankaRoute =
   CinemaAdvertisingSriLankaRouteImport.update({
     id: '/cinema-advertising-sri-lanka',
     path: '/cinema-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const CharityEventsSriLankaRoute = CharityEventsSriLankaRouteImport.update({
+  id: '/charity-events-sri-lanka',
+  path: '/charity-events-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CaseStudiesRoute = CaseStudiesRouteImport.update({
   id: '/case-studies',
   path: '/case-studies',
@@ -868,18 +1153,34 @@ const BillboardAdvertisingSriLankaRoute =
     path: '/billboard-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BalloonDecorationSriLankaRoute =
+  BalloonDecorationSriLankaRouteImport.update({
+    id: '/balloon-decoration-sri-lanka',
+    path: '/balloon-decoration-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BacklinkServicesSriLankaRoute =
   BacklinkServicesSriLankaRouteImport.update({
     id: '/backlink-services-sri-lanka',
     path: '/backlink-services-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BackdropDesignSriLankaRoute = BackdropDesignSriLankaRouteImport.update({
+  id: '/backdrop-design-sri-lanka',
+  path: '/backdrop-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const B2bEmailMarketingSriLankaRoute =
   B2bEmailMarketingSriLankaRouteImport.update({
     id: '/b2b-email-marketing-sri-lanka',
     path: '/b2b-email-marketing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const AwardsCeremonySriLankaRoute = AwardsCeremonySriLankaRouteImport.update({
+  id: '/awards-ceremony-sri-lanka',
+  path: '/awards-ceremony-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AtlAdvertisingSriLankaRoute = AtlAdvertisingSriLankaRouteImport.update({
   id: '/atl-advertising-sri-lanka',
   path: '/atl-advertising-sri-lanka',
@@ -910,6 +1211,12 @@ const R3dAnimationSriLankaRoute = R3dAnimationSriLankaRouteImport.update({
   path: '/3d-animation-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R360PhotoBoothRentalSriLankaRoute =
+  R360PhotoBoothRentalSriLankaRouteImport.update({
+    id: '/360-photo-booth-rental-sri-lanka',
+    path: '/360-photo-booth-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const R360MarketingSriLankaRoute = R360MarketingSriLankaRouteImport.update({
   id: '/360-marketing-sri-lanka',
   path: '/360-marketing-sri-lanka',
@@ -1482,14 +1789,18 @@ export interface FileRoutesByFullPath {
   '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
   '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
   '/360-marketing-sri-lanka': typeof R360MarketingSriLankaRoute
+  '/360-photo-booth-rental-sri-lanka': typeof R360PhotoBoothRentalSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
+  '/awards-ceremony-sri-lanka': typeof AwardsCeremonySriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
+  '/backdrop-design-sri-lanka': typeof BackdropDesignSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
+  '/balloon-decoration-sri-lanka': typeof BalloonDecorationSriLankaRoute
   '/billboard-advertising-sri-lanka': typeof BillboardAdvertisingSriLankaRoute
   '/bouncy-castle-rental-sri-lanka': typeof BouncyCastleRentalSriLankaRoute
   '/brand-activation-sri-lanka': typeof BrandActivationSriLankaRoute
@@ -1500,40 +1811,69 @@ export interface FileRoutesByFullPath {
   '/bulk-email-sri-lanka': typeof BulkEmailSriLankaRoute
   '/bulk-sms-sri-lanka': typeof BulkSmsSriLankaRoute
   '/case-studies': typeof CaseStudiesRoute
+  '/charity-events-sri-lanka': typeof CharityEventsSriLankaRoute
   '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/cold-spark-machine-rental-sri-lanka': typeof ColdSparkMachineRentalSriLankaRoute
   '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
   '/company-profile-design-sri-lanka': typeof CompanyProfileDesignSriLankaRoute
   '/conference-management-sri-lanka': typeof ConferenceManagementSriLankaRoute
+  '/confetti-cannon-sri-lanka': typeof ConfettiCannonSriLankaRoute
   '/contact': typeof ContactRoute
   '/content-marketing-sri-lanka': typeof ContentMarketingSriLankaRoute
   '/corporate-branding-sri-lanka': typeof CorporateBrandingSriLankaRoute
   '/corporate-event-management-sri-lanka': typeof CorporateEventManagementSriLankaRoute
+  '/corporate-events-colombo': typeof CorporateEventsColomboRoute
   '/corporate-video-sri-lanka': typeof CorporateVideoSriLankaRoute
   '/creative-agency-sri-lanka': typeof CreativeAgencySriLankaRoute
+  '/crowd-management-sri-lanka': typeof CrowdManagementSriLankaRoute
+  '/dancer-hire-sri-lanka': typeof DancerHireSriLankaRoute
   '/digital-billboard-sri-lanka': typeof DigitalBillboardSriLankaRoute
   '/digital-marketing-sri-lanka': typeof DigitalMarketingSriLankaRoute
   '/display-advertising-sri-lanka': typeof DisplayAdvertisingSriLankaRoute
+  '/dj-hire-sri-lanka': typeof DjHireSriLankaRoute
   '/drone-rental-sri-lanka': typeof DroneRentalSriLankaRoute
   '/drone-videography-sri-lanka': typeof DroneVideographySriLankaRoute
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
+  '/event-catering-sri-lanka': typeof EventCateringSriLankaRoute
+  '/event-cleaning-sri-lanka': typeof EventCleaningSriLankaRoute
+  '/event-decor-sri-lanka': typeof EventDecorSriLankaRoute
+  '/event-entertainment-sri-lanka': typeof EventEntertainmentSriLankaRoute
+  '/event-live-streaming-sri-lanka': typeof EventLiveStreamingSriLankaRoute
+  '/event-management-colombo': typeof EventManagementColomboRoute
+  '/event-management-galle': typeof EventManagementGalleRoute
+  '/event-management-jaffna': typeof EventManagementJaffnaRoute
+  '/event-management-kandy': typeof EventManagementKandyRoute
+  '/event-management-negombo': typeof EventManagementNegomboRoute
   '/event-management-sri-lanka': typeof EventManagementSriLankaRoute
   '/event-marketing-sri-lanka': typeof EventMarketingSriLankaRoute
+  '/event-photography-sri-lanka': typeof EventPhotographySriLankaRoute
   '/event-planners-sri-lanka': typeof EventPlannersSriLankaRoute
+  '/event-registration-sri-lanka': typeof EventRegistrationSriLankaRoute
+  '/event-security-sri-lanka': typeof EventSecuritySriLankaRoute
+  '/event-ticketing-sri-lanka': typeof EventTicketingSriLankaRoute
+  '/event-venue-colombo': typeof EventVenueColomboRoute
+  '/event-videography-sri-lanka': typeof EventVideographySriLankaRoute
   '/exhibition-branding-sri-lanka': typeof ExhibitionBrandingSriLankaRoute
   '/exhibition-management-sri-lanka': typeof ExhibitionManagementSriLankaRoute
   '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
   '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
   '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
+  '/flower-wall-rental-sri-lanka': typeof FlowerWallRentalSriLankaRoute
+  '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
   '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
+  '/gala-dinner-sri-lanka': typeof GalaDinnerSriLankaRoute
   '/generator-rental-sri-lanka': typeof GeneratorRentalSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
   '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
   '/google-shopping-sri-lanka': typeof GoogleShoppingSriLankaRoute
   '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
   '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
+  '/hybrid-event-sri-lanka': typeof HybridEventSriLankaRoute
+  '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
@@ -1544,19 +1884,23 @@ export interface FileRoutesByFullPath {
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
   '/led-video-wall-sri-lanka': typeof LedVideoWallSriLankaRoute
+  '/lighting-rental-sri-lanka': typeof LightingRentalSriLankaRoute
   '/linkedin-ads-sri-lanka': typeof LinkedinAdsSriLankaRoute
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
+  '/live-band-hire-sri-lanka': typeof LiveBandHireSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
   '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
+  '/mc-host-hire-sri-lanka': typeof McHostHireSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/neon-sign-rental-sri-lanka': typeof NeonSignRentalSriLankaRoute
   '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
@@ -1568,14 +1912,18 @@ export interface FileRoutesByFullPath {
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
   '/pr-sri-lanka': typeof PrSriLankaRoute
+  '/product-launch-sri-lanka': typeof ProductLaunchSriLankaRoute
   '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
+  '/pyrotechnics-sri-lanka': typeof PyrotechnicsSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
+  '/school-events-sri-lanka': typeof SchoolEventsSriLankaRoute
+  '/selfie-mirror-rental-sri-lanka': typeof SelfieMirrorRentalSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
   '/services': typeof ServicesRoute
@@ -1598,10 +1946,18 @@ export interface FileRoutesByFullPath {
   '/tv-commercial-sri-lanka': typeof TvCommercialSriLankaRoute
   '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
   '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
+  '/university-events-sri-lanka': typeof UniversityEventsSriLankaRoute
+  '/uplighting-sri-lanka': typeof UplightingSriLankaRoute
+  '/valet-parking-sri-lanka': typeof ValetParkingSriLankaRoute
+  '/venue-finding-sri-lanka': typeof VenueFindingSriLankaRoute
   '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
+  '/virtual-event-sri-lanka': typeof VirtualEventSriLankaRoute
   '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
   '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
   '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
+  '/wedding-catering-sri-lanka': typeof WeddingCateringSriLankaRoute
+  '/wedding-decor-sri-lanka': typeof WeddingDecorSriLankaRoute
+  '/wedding-planners-colombo': typeof WeddingPlannersColomboRoute
   '/wedding-planners-sri-lanka': typeof WeddingPlannersSriLankaRoute
   '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
   '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
@@ -1706,14 +2062,18 @@ export interface FileRoutesByTo {
   '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
   '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
   '/360-marketing-sri-lanka': typeof R360MarketingSriLankaRoute
+  '/360-photo-booth-rental-sri-lanka': typeof R360PhotoBoothRentalSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
+  '/awards-ceremony-sri-lanka': typeof AwardsCeremonySriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
+  '/backdrop-design-sri-lanka': typeof BackdropDesignSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
+  '/balloon-decoration-sri-lanka': typeof BalloonDecorationSriLankaRoute
   '/billboard-advertising-sri-lanka': typeof BillboardAdvertisingSriLankaRoute
   '/bouncy-castle-rental-sri-lanka': typeof BouncyCastleRentalSriLankaRoute
   '/brand-activation-sri-lanka': typeof BrandActivationSriLankaRoute
@@ -1724,40 +2084,69 @@ export interface FileRoutesByTo {
   '/bulk-email-sri-lanka': typeof BulkEmailSriLankaRoute
   '/bulk-sms-sri-lanka': typeof BulkSmsSriLankaRoute
   '/case-studies': typeof CaseStudiesRoute
+  '/charity-events-sri-lanka': typeof CharityEventsSriLankaRoute
   '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/cold-spark-machine-rental-sri-lanka': typeof ColdSparkMachineRentalSriLankaRoute
   '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
   '/company-profile-design-sri-lanka': typeof CompanyProfileDesignSriLankaRoute
   '/conference-management-sri-lanka': typeof ConferenceManagementSriLankaRoute
+  '/confetti-cannon-sri-lanka': typeof ConfettiCannonSriLankaRoute
   '/contact': typeof ContactRoute
   '/content-marketing-sri-lanka': typeof ContentMarketingSriLankaRoute
   '/corporate-branding-sri-lanka': typeof CorporateBrandingSriLankaRoute
   '/corporate-event-management-sri-lanka': typeof CorporateEventManagementSriLankaRoute
+  '/corporate-events-colombo': typeof CorporateEventsColomboRoute
   '/corporate-video-sri-lanka': typeof CorporateVideoSriLankaRoute
   '/creative-agency-sri-lanka': typeof CreativeAgencySriLankaRoute
+  '/crowd-management-sri-lanka': typeof CrowdManagementSriLankaRoute
+  '/dancer-hire-sri-lanka': typeof DancerHireSriLankaRoute
   '/digital-billboard-sri-lanka': typeof DigitalBillboardSriLankaRoute
   '/digital-marketing-sri-lanka': typeof DigitalMarketingSriLankaRoute
   '/display-advertising-sri-lanka': typeof DisplayAdvertisingSriLankaRoute
+  '/dj-hire-sri-lanka': typeof DjHireSriLankaRoute
   '/drone-rental-sri-lanka': typeof DroneRentalSriLankaRoute
   '/drone-videography-sri-lanka': typeof DroneVideographySriLankaRoute
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
+  '/event-catering-sri-lanka': typeof EventCateringSriLankaRoute
+  '/event-cleaning-sri-lanka': typeof EventCleaningSriLankaRoute
+  '/event-decor-sri-lanka': typeof EventDecorSriLankaRoute
+  '/event-entertainment-sri-lanka': typeof EventEntertainmentSriLankaRoute
+  '/event-live-streaming-sri-lanka': typeof EventLiveStreamingSriLankaRoute
+  '/event-management-colombo': typeof EventManagementColomboRoute
+  '/event-management-galle': typeof EventManagementGalleRoute
+  '/event-management-jaffna': typeof EventManagementJaffnaRoute
+  '/event-management-kandy': typeof EventManagementKandyRoute
+  '/event-management-negombo': typeof EventManagementNegomboRoute
   '/event-management-sri-lanka': typeof EventManagementSriLankaRoute
   '/event-marketing-sri-lanka': typeof EventMarketingSriLankaRoute
+  '/event-photography-sri-lanka': typeof EventPhotographySriLankaRoute
   '/event-planners-sri-lanka': typeof EventPlannersSriLankaRoute
+  '/event-registration-sri-lanka': typeof EventRegistrationSriLankaRoute
+  '/event-security-sri-lanka': typeof EventSecuritySriLankaRoute
+  '/event-ticketing-sri-lanka': typeof EventTicketingSriLankaRoute
+  '/event-venue-colombo': typeof EventVenueColomboRoute
+  '/event-videography-sri-lanka': typeof EventVideographySriLankaRoute
   '/exhibition-branding-sri-lanka': typeof ExhibitionBrandingSriLankaRoute
   '/exhibition-management-sri-lanka': typeof ExhibitionManagementSriLankaRoute
   '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
   '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
   '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
+  '/flower-wall-rental-sri-lanka': typeof FlowerWallRentalSriLankaRoute
+  '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
   '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
+  '/gala-dinner-sri-lanka': typeof GalaDinnerSriLankaRoute
   '/generator-rental-sri-lanka': typeof GeneratorRentalSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
   '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
   '/google-shopping-sri-lanka': typeof GoogleShoppingSriLankaRoute
   '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
   '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
+  '/hybrid-event-sri-lanka': typeof HybridEventSriLankaRoute
+  '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
@@ -1768,19 +2157,23 @@ export interface FileRoutesByTo {
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
   '/led-video-wall-sri-lanka': typeof LedVideoWallSriLankaRoute
+  '/lighting-rental-sri-lanka': typeof LightingRentalSriLankaRoute
   '/linkedin-ads-sri-lanka': typeof LinkedinAdsSriLankaRoute
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
+  '/live-band-hire-sri-lanka': typeof LiveBandHireSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
   '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
+  '/mc-host-hire-sri-lanka': typeof McHostHireSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/neon-sign-rental-sri-lanka': typeof NeonSignRentalSriLankaRoute
   '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
@@ -1792,14 +2185,18 @@ export interface FileRoutesByTo {
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
   '/pr-sri-lanka': typeof PrSriLankaRoute
+  '/product-launch-sri-lanka': typeof ProductLaunchSriLankaRoute
   '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
+  '/pyrotechnics-sri-lanka': typeof PyrotechnicsSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
+  '/school-events-sri-lanka': typeof SchoolEventsSriLankaRoute
+  '/selfie-mirror-rental-sri-lanka': typeof SelfieMirrorRentalSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
   '/services': typeof ServicesRoute
@@ -1822,10 +2219,18 @@ export interface FileRoutesByTo {
   '/tv-commercial-sri-lanka': typeof TvCommercialSriLankaRoute
   '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
   '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
+  '/university-events-sri-lanka': typeof UniversityEventsSriLankaRoute
+  '/uplighting-sri-lanka': typeof UplightingSriLankaRoute
+  '/valet-parking-sri-lanka': typeof ValetParkingSriLankaRoute
+  '/venue-finding-sri-lanka': typeof VenueFindingSriLankaRoute
   '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
+  '/virtual-event-sri-lanka': typeof VirtualEventSriLankaRoute
   '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
   '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
   '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
+  '/wedding-catering-sri-lanka': typeof WeddingCateringSriLankaRoute
+  '/wedding-decor-sri-lanka': typeof WeddingDecorSriLankaRoute
+  '/wedding-planners-colombo': typeof WeddingPlannersColomboRoute
   '/wedding-planners-sri-lanka': typeof WeddingPlannersSriLankaRoute
   '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
   '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
@@ -1931,14 +2336,18 @@ export interface FileRoutesById {
   '/2d-animation-sri-lanka': typeof R2dAnimationSriLankaRoute
   '/360-marketing-campaigns-sri-lanka': typeof R360MarketingCampaignsSriLankaRoute
   '/360-marketing-sri-lanka': typeof R360MarketingSriLankaRoute
+  '/360-photo-booth-rental-sri-lanka': typeof R360PhotoBoothRentalSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/about': typeof AboutRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/atl-advertising-sri-lanka': typeof AtlAdvertisingSriLankaRoute
+  '/awards-ceremony-sri-lanka': typeof AwardsCeremonySriLankaRoute
   '/b2b-email-marketing-sri-lanka': typeof B2bEmailMarketingSriLankaRoute
+  '/backdrop-design-sri-lanka': typeof BackdropDesignSriLankaRoute
   '/backlink-services-sri-lanka': typeof BacklinkServicesSriLankaRoute
+  '/balloon-decoration-sri-lanka': typeof BalloonDecorationSriLankaRoute
   '/billboard-advertising-sri-lanka': typeof BillboardAdvertisingSriLankaRoute
   '/bouncy-castle-rental-sri-lanka': typeof BouncyCastleRentalSriLankaRoute
   '/brand-activation-sri-lanka': typeof BrandActivationSriLankaRoute
@@ -1949,40 +2358,69 @@ export interface FileRoutesById {
   '/bulk-email-sri-lanka': typeof BulkEmailSriLankaRoute
   '/bulk-sms-sri-lanka': typeof BulkSmsSriLankaRoute
   '/case-studies': typeof CaseStudiesRoute
+  '/charity-events-sri-lanka': typeof CharityEventsSriLankaRoute
   '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/cold-spark-machine-rental-sri-lanka': typeof ColdSparkMachineRentalSriLankaRoute
   '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
   '/company-profile-design-sri-lanka': typeof CompanyProfileDesignSriLankaRoute
   '/conference-management-sri-lanka': typeof ConferenceManagementSriLankaRoute
+  '/confetti-cannon-sri-lanka': typeof ConfettiCannonSriLankaRoute
   '/contact': typeof ContactRoute
   '/content-marketing-sri-lanka': typeof ContentMarketingSriLankaRoute
   '/corporate-branding-sri-lanka': typeof CorporateBrandingSriLankaRoute
   '/corporate-event-management-sri-lanka': typeof CorporateEventManagementSriLankaRoute
+  '/corporate-events-colombo': typeof CorporateEventsColomboRoute
   '/corporate-video-sri-lanka': typeof CorporateVideoSriLankaRoute
   '/creative-agency-sri-lanka': typeof CreativeAgencySriLankaRoute
+  '/crowd-management-sri-lanka': typeof CrowdManagementSriLankaRoute
+  '/dancer-hire-sri-lanka': typeof DancerHireSriLankaRoute
   '/digital-billboard-sri-lanka': typeof DigitalBillboardSriLankaRoute
   '/digital-marketing-sri-lanka': typeof DigitalMarketingSriLankaRoute
   '/display-advertising-sri-lanka': typeof DisplayAdvertisingSriLankaRoute
+  '/dj-hire-sri-lanka': typeof DjHireSriLankaRoute
   '/drone-rental-sri-lanka': typeof DroneRentalSriLankaRoute
   '/drone-videography-sri-lanka': typeof DroneVideographySriLankaRoute
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
+  '/event-catering-sri-lanka': typeof EventCateringSriLankaRoute
+  '/event-cleaning-sri-lanka': typeof EventCleaningSriLankaRoute
+  '/event-decor-sri-lanka': typeof EventDecorSriLankaRoute
+  '/event-entertainment-sri-lanka': typeof EventEntertainmentSriLankaRoute
+  '/event-live-streaming-sri-lanka': typeof EventLiveStreamingSriLankaRoute
+  '/event-management-colombo': typeof EventManagementColomboRoute
+  '/event-management-galle': typeof EventManagementGalleRoute
+  '/event-management-jaffna': typeof EventManagementJaffnaRoute
+  '/event-management-kandy': typeof EventManagementKandyRoute
+  '/event-management-negombo': typeof EventManagementNegomboRoute
   '/event-management-sri-lanka': typeof EventManagementSriLankaRoute
   '/event-marketing-sri-lanka': typeof EventMarketingSriLankaRoute
+  '/event-photography-sri-lanka': typeof EventPhotographySriLankaRoute
   '/event-planners-sri-lanka': typeof EventPlannersSriLankaRoute
+  '/event-registration-sri-lanka': typeof EventRegistrationSriLankaRoute
+  '/event-security-sri-lanka': typeof EventSecuritySriLankaRoute
+  '/event-ticketing-sri-lanka': typeof EventTicketingSriLankaRoute
+  '/event-venue-colombo': typeof EventVenueColomboRoute
+  '/event-videography-sri-lanka': typeof EventVideographySriLankaRoute
   '/exhibition-branding-sri-lanka': typeof ExhibitionBrandingSriLankaRoute
   '/exhibition-management-sri-lanka': typeof ExhibitionManagementSriLankaRoute
   '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
   '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
   '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
+  '/flower-wall-rental-sri-lanka': typeof FlowerWallRentalSriLankaRoute
+  '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
   '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
+  '/gala-dinner-sri-lanka': typeof GalaDinnerSriLankaRoute
   '/generator-rental-sri-lanka': typeof GeneratorRentalSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
   '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
   '/google-shopping-sri-lanka': typeof GoogleShoppingSriLankaRoute
   '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
   '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
+  '/hybrid-event-sri-lanka': typeof HybridEventSriLankaRoute
+  '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
@@ -1993,19 +2431,23 @@ export interface FileRoutesById {
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
   '/led-video-wall-sri-lanka': typeof LedVideoWallSriLankaRoute
+  '/lighting-rental-sri-lanka': typeof LightingRentalSriLankaRoute
   '/linkedin-ads-sri-lanka': typeof LinkedinAdsSriLankaRoute
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
+  '/live-band-hire-sri-lanka': typeof LiveBandHireSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
   '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
+  '/mc-host-hire-sri-lanka': typeof McHostHireSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/neon-sign-rental-sri-lanka': typeof NeonSignRentalSriLankaRoute
   '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
@@ -2017,14 +2459,18 @@ export interface FileRoutesById {
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
   '/pr-communications-sri-lanka': typeof PrCommunicationsSriLankaRoute
   '/pr-sri-lanka': typeof PrSriLankaRoute
+  '/product-launch-sri-lanka': typeof ProductLaunchSriLankaRoute
   '/programmatic-advertising-sri-lanka': typeof ProgrammaticAdvertisingSriLankaRoute
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
+  '/pyrotechnics-sri-lanka': typeof PyrotechnicsSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
+  '/school-events-sri-lanka': typeof SchoolEventsSriLankaRoute
+  '/selfie-mirror-rental-sri-lanka': typeof SelfieMirrorRentalSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
   '/services': typeof ServicesRoute
@@ -2047,10 +2493,18 @@ export interface FileRoutesById {
   '/tv-commercial-sri-lanka': typeof TvCommercialSriLankaRoute
   '/tv-commercials-sri-lanka': typeof TvCommercialsSriLankaRoute
   '/ui-ux-design-sri-lanka': typeof UiUxDesignSriLankaRoute
+  '/university-events-sri-lanka': typeof UniversityEventsSriLankaRoute
+  '/uplighting-sri-lanka': typeof UplightingSriLankaRoute
+  '/valet-parking-sri-lanka': typeof ValetParkingSriLankaRoute
+  '/venue-finding-sri-lanka': typeof VenueFindingSriLankaRoute
   '/video-production-sri-lanka': typeof VideoProductionSriLankaRoute
+  '/virtual-event-sri-lanka': typeof VirtualEventSriLankaRoute
   '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
   '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
   '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
+  '/wedding-catering-sri-lanka': typeof WeddingCateringSriLankaRoute
+  '/wedding-decor-sri-lanka': typeof WeddingDecorSriLankaRoute
+  '/wedding-planners-colombo': typeof WeddingPlannersColomboRoute
   '/wedding-planners-sri-lanka': typeof WeddingPlannersSriLankaRoute
   '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
   '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
@@ -2157,14 +2611,18 @@ export interface FileRouteTypes {
     | '/2d-animation-sri-lanka'
     | '/360-marketing-campaigns-sri-lanka'
     | '/360-marketing-sri-lanka'
+    | '/360-photo-booth-rental-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/animation-sri-lanka'
     | '/atl-advertising-sri-lanka'
+    | '/awards-ceremony-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
+    | '/backdrop-design-sri-lanka'
     | '/backlink-services-sri-lanka'
+    | '/balloon-decoration-sri-lanka'
     | '/billboard-advertising-sri-lanka'
     | '/bouncy-castle-rental-sri-lanka'
     | '/brand-activation-sri-lanka'
@@ -2175,40 +2633,69 @@ export interface FileRouteTypes {
     | '/bulk-email-sri-lanka'
     | '/bulk-sms-sri-lanka'
     | '/case-studies'
+    | '/charity-events-sri-lanka'
     | '/cinema-advertising-sri-lanka'
+    | '/cold-spark-machine-rental-sri-lanka'
     | '/commercial-video-sri-lanka'
     | '/company-profile-design-sri-lanka'
     | '/conference-management-sri-lanka'
+    | '/confetti-cannon-sri-lanka'
     | '/contact'
     | '/content-marketing-sri-lanka'
     | '/corporate-branding-sri-lanka'
     | '/corporate-event-management-sri-lanka'
+    | '/corporate-events-colombo'
     | '/corporate-video-sri-lanka'
     | '/creative-agency-sri-lanka'
+    | '/crowd-management-sri-lanka'
+    | '/dancer-hire-sri-lanka'
     | '/digital-billboard-sri-lanka'
     | '/digital-marketing-sri-lanka'
     | '/display-advertising-sri-lanka'
+    | '/dj-hire-sri-lanka'
     | '/drone-rental-sri-lanka'
     | '/drone-videography-sri-lanka'
     | '/ecommerce-seo-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
+    | '/event-catering-sri-lanka'
+    | '/event-cleaning-sri-lanka'
+    | '/event-decor-sri-lanka'
+    | '/event-entertainment-sri-lanka'
+    | '/event-live-streaming-sri-lanka'
+    | '/event-management-colombo'
+    | '/event-management-galle'
+    | '/event-management-jaffna'
+    | '/event-management-kandy'
+    | '/event-management-negombo'
     | '/event-management-sri-lanka'
     | '/event-marketing-sri-lanka'
+    | '/event-photography-sri-lanka'
     | '/event-planners-sri-lanka'
+    | '/event-registration-sri-lanka'
+    | '/event-security-sri-lanka'
+    | '/event-ticketing-sri-lanka'
+    | '/event-venue-colombo'
+    | '/event-videography-sri-lanka'
     | '/exhibition-branding-sri-lanka'
     | '/exhibition-management-sri-lanka'
     | '/facebook-ads-sri-lanka'
     | '/facebook-marketing-sri-lanka'
     | '/field-marketing-sri-lanka'
+    | '/flower-decoration-sri-lanka'
+    | '/flower-wall-rental-sri-lanka'
+    | '/fog-machine-rental-sri-lanka'
     | '/full-service-advertising-sri-lanka'
+    | '/gala-dinner-sri-lanka'
     | '/generator-rental-sri-lanka'
     | '/get-quote'
     | '/google-ads-sri-lanka'
     | '/google-shopping-sri-lanka'
     | '/graphic-design-sri-lanka'
     | '/hoarding-advertising-sri-lanka'
+    | '/hybrid-event-sri-lanka'
+    | '/ice-sculpture-sri-lanka'
     | '/influencer-marketing-sri-lanka'
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
@@ -2219,19 +2706,23 @@ export interface FileRouteTypes {
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
     | '/led-video-wall-sri-lanka'
+    | '/lighting-rental-sri-lanka'
     | '/linkedin-ads-sri-lanka'
     | '/linkedin-marketing-sri-lanka'
+    | '/live-band-hire-sri-lanka'
     | '/local-seo-sri-lanka'
     | '/logo-design-sri-lanka'
     | '/loyalty-programs-sri-lanka'
     | '/magazine-advertising-sri-lanka'
     | '/mall-activation-sri-lanka'
     | '/market-research-sri-lanka'
+    | '/mc-host-hire-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/multi-channel-advertising-sri-lanka'
+    | '/neon-sign-rental-sri-lanka'
     | '/newspaper-advertising-sri-lanka'
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
@@ -2243,14 +2734,18 @@ export interface FileRouteTypes {
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
     | '/pr-sri-lanka'
+    | '/product-launch-sri-lanka'
     | '/programmatic-advertising-sri-lanka'
     | '/projector-rental-sri-lanka'
+    | '/pyrotechnics-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
     | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
     | '/roadshow-sri-lanka'
+    | '/school-events-sri-lanka'
+    | '/selfie-mirror-rental-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
     | '/services'
@@ -2273,10 +2768,18 @@ export interface FileRouteTypes {
     | '/tv-commercial-sri-lanka'
     | '/tv-commercials-sri-lanka'
     | '/ui-ux-design-sri-lanka'
+    | '/university-events-sri-lanka'
+    | '/uplighting-sri-lanka'
+    | '/valet-parking-sri-lanka'
+    | '/venue-finding-sri-lanka'
     | '/video-production-sri-lanka'
+    | '/virtual-event-sri-lanka'
     | '/web-design-sri-lanka'
     | '/website-development-sri-lanka'
     | '/website-maintenance-sri-lanka'
+    | '/wedding-catering-sri-lanka'
+    | '/wedding-decor-sri-lanka'
+    | '/wedding-planners-colombo'
     | '/wedding-planners-sri-lanka'
     | '/whatsapp-marketing-sri-lanka'
     | '/wordpress-development-sri-lanka'
@@ -2381,14 +2884,18 @@ export interface FileRouteTypes {
     | '/2d-animation-sri-lanka'
     | '/360-marketing-campaigns-sri-lanka'
     | '/360-marketing-sri-lanka'
+    | '/360-photo-booth-rental-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/animation-sri-lanka'
     | '/atl-advertising-sri-lanka'
+    | '/awards-ceremony-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
+    | '/backdrop-design-sri-lanka'
     | '/backlink-services-sri-lanka'
+    | '/balloon-decoration-sri-lanka'
     | '/billboard-advertising-sri-lanka'
     | '/bouncy-castle-rental-sri-lanka'
     | '/brand-activation-sri-lanka'
@@ -2399,40 +2906,69 @@ export interface FileRouteTypes {
     | '/bulk-email-sri-lanka'
     | '/bulk-sms-sri-lanka'
     | '/case-studies'
+    | '/charity-events-sri-lanka'
     | '/cinema-advertising-sri-lanka'
+    | '/cold-spark-machine-rental-sri-lanka'
     | '/commercial-video-sri-lanka'
     | '/company-profile-design-sri-lanka'
     | '/conference-management-sri-lanka'
+    | '/confetti-cannon-sri-lanka'
     | '/contact'
     | '/content-marketing-sri-lanka'
     | '/corporate-branding-sri-lanka'
     | '/corporate-event-management-sri-lanka'
+    | '/corporate-events-colombo'
     | '/corporate-video-sri-lanka'
     | '/creative-agency-sri-lanka'
+    | '/crowd-management-sri-lanka'
+    | '/dancer-hire-sri-lanka'
     | '/digital-billboard-sri-lanka'
     | '/digital-marketing-sri-lanka'
     | '/display-advertising-sri-lanka'
+    | '/dj-hire-sri-lanka'
     | '/drone-rental-sri-lanka'
     | '/drone-videography-sri-lanka'
     | '/ecommerce-seo-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
+    | '/event-catering-sri-lanka'
+    | '/event-cleaning-sri-lanka'
+    | '/event-decor-sri-lanka'
+    | '/event-entertainment-sri-lanka'
+    | '/event-live-streaming-sri-lanka'
+    | '/event-management-colombo'
+    | '/event-management-galle'
+    | '/event-management-jaffna'
+    | '/event-management-kandy'
+    | '/event-management-negombo'
     | '/event-management-sri-lanka'
     | '/event-marketing-sri-lanka'
+    | '/event-photography-sri-lanka'
     | '/event-planners-sri-lanka'
+    | '/event-registration-sri-lanka'
+    | '/event-security-sri-lanka'
+    | '/event-ticketing-sri-lanka'
+    | '/event-venue-colombo'
+    | '/event-videography-sri-lanka'
     | '/exhibition-branding-sri-lanka'
     | '/exhibition-management-sri-lanka'
     | '/facebook-ads-sri-lanka'
     | '/facebook-marketing-sri-lanka'
     | '/field-marketing-sri-lanka'
+    | '/flower-decoration-sri-lanka'
+    | '/flower-wall-rental-sri-lanka'
+    | '/fog-machine-rental-sri-lanka'
     | '/full-service-advertising-sri-lanka'
+    | '/gala-dinner-sri-lanka'
     | '/generator-rental-sri-lanka'
     | '/get-quote'
     | '/google-ads-sri-lanka'
     | '/google-shopping-sri-lanka'
     | '/graphic-design-sri-lanka'
     | '/hoarding-advertising-sri-lanka'
+    | '/hybrid-event-sri-lanka'
+    | '/ice-sculpture-sri-lanka'
     | '/influencer-marketing-sri-lanka'
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
@@ -2443,19 +2979,23 @@ export interface FileRouteTypes {
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
     | '/led-video-wall-sri-lanka'
+    | '/lighting-rental-sri-lanka'
     | '/linkedin-ads-sri-lanka'
     | '/linkedin-marketing-sri-lanka'
+    | '/live-band-hire-sri-lanka'
     | '/local-seo-sri-lanka'
     | '/logo-design-sri-lanka'
     | '/loyalty-programs-sri-lanka'
     | '/magazine-advertising-sri-lanka'
     | '/mall-activation-sri-lanka'
     | '/market-research-sri-lanka'
+    | '/mc-host-hire-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/multi-channel-advertising-sri-lanka'
+    | '/neon-sign-rental-sri-lanka'
     | '/newspaper-advertising-sri-lanka'
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
@@ -2467,14 +3007,18 @@ export interface FileRouteTypes {
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
     | '/pr-sri-lanka'
+    | '/product-launch-sri-lanka'
     | '/programmatic-advertising-sri-lanka'
     | '/projector-rental-sri-lanka'
+    | '/pyrotechnics-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
     | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
     | '/roadshow-sri-lanka'
+    | '/school-events-sri-lanka'
+    | '/selfie-mirror-rental-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
     | '/services'
@@ -2497,10 +3041,18 @@ export interface FileRouteTypes {
     | '/tv-commercial-sri-lanka'
     | '/tv-commercials-sri-lanka'
     | '/ui-ux-design-sri-lanka'
+    | '/university-events-sri-lanka'
+    | '/uplighting-sri-lanka'
+    | '/valet-parking-sri-lanka'
+    | '/venue-finding-sri-lanka'
     | '/video-production-sri-lanka'
+    | '/virtual-event-sri-lanka'
     | '/web-design-sri-lanka'
     | '/website-development-sri-lanka'
     | '/website-maintenance-sri-lanka'
+    | '/wedding-catering-sri-lanka'
+    | '/wedding-decor-sri-lanka'
+    | '/wedding-planners-colombo'
     | '/wedding-planners-sri-lanka'
     | '/whatsapp-marketing-sri-lanka'
     | '/wordpress-development-sri-lanka'
@@ -2605,14 +3157,18 @@ export interface FileRouteTypes {
     | '/2d-animation-sri-lanka'
     | '/360-marketing-campaigns-sri-lanka'
     | '/360-marketing-sri-lanka'
+    | '/360-photo-booth-rental-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/about'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/animation-sri-lanka'
     | '/atl-advertising-sri-lanka'
+    | '/awards-ceremony-sri-lanka'
     | '/b2b-email-marketing-sri-lanka'
+    | '/backdrop-design-sri-lanka'
     | '/backlink-services-sri-lanka'
+    | '/balloon-decoration-sri-lanka'
     | '/billboard-advertising-sri-lanka'
     | '/bouncy-castle-rental-sri-lanka'
     | '/brand-activation-sri-lanka'
@@ -2623,40 +3179,69 @@ export interface FileRouteTypes {
     | '/bulk-email-sri-lanka'
     | '/bulk-sms-sri-lanka'
     | '/case-studies'
+    | '/charity-events-sri-lanka'
     | '/cinema-advertising-sri-lanka'
+    | '/cold-spark-machine-rental-sri-lanka'
     | '/commercial-video-sri-lanka'
     | '/company-profile-design-sri-lanka'
     | '/conference-management-sri-lanka'
+    | '/confetti-cannon-sri-lanka'
     | '/contact'
     | '/content-marketing-sri-lanka'
     | '/corporate-branding-sri-lanka'
     | '/corporate-event-management-sri-lanka'
+    | '/corporate-events-colombo'
     | '/corporate-video-sri-lanka'
     | '/creative-agency-sri-lanka'
+    | '/crowd-management-sri-lanka'
+    | '/dancer-hire-sri-lanka'
     | '/digital-billboard-sri-lanka'
     | '/digital-marketing-sri-lanka'
     | '/display-advertising-sri-lanka'
+    | '/dj-hire-sri-lanka'
     | '/drone-rental-sri-lanka'
     | '/drone-videography-sri-lanka'
     | '/ecommerce-seo-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
+    | '/event-catering-sri-lanka'
+    | '/event-cleaning-sri-lanka'
+    | '/event-decor-sri-lanka'
+    | '/event-entertainment-sri-lanka'
+    | '/event-live-streaming-sri-lanka'
+    | '/event-management-colombo'
+    | '/event-management-galle'
+    | '/event-management-jaffna'
+    | '/event-management-kandy'
+    | '/event-management-negombo'
     | '/event-management-sri-lanka'
     | '/event-marketing-sri-lanka'
+    | '/event-photography-sri-lanka'
     | '/event-planners-sri-lanka'
+    | '/event-registration-sri-lanka'
+    | '/event-security-sri-lanka'
+    | '/event-ticketing-sri-lanka'
+    | '/event-venue-colombo'
+    | '/event-videography-sri-lanka'
     | '/exhibition-branding-sri-lanka'
     | '/exhibition-management-sri-lanka'
     | '/facebook-ads-sri-lanka'
     | '/facebook-marketing-sri-lanka'
     | '/field-marketing-sri-lanka'
+    | '/flower-decoration-sri-lanka'
+    | '/flower-wall-rental-sri-lanka'
+    | '/fog-machine-rental-sri-lanka'
     | '/full-service-advertising-sri-lanka'
+    | '/gala-dinner-sri-lanka'
     | '/generator-rental-sri-lanka'
     | '/get-quote'
     | '/google-ads-sri-lanka'
     | '/google-shopping-sri-lanka'
     | '/graphic-design-sri-lanka'
     | '/hoarding-advertising-sri-lanka'
+    | '/hybrid-event-sri-lanka'
+    | '/ice-sculpture-sri-lanka'
     | '/influencer-marketing-sri-lanka'
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
@@ -2667,19 +3252,23 @@ export interface FileRouteTypes {
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
     | '/led-video-wall-sri-lanka'
+    | '/lighting-rental-sri-lanka'
     | '/linkedin-ads-sri-lanka'
     | '/linkedin-marketing-sri-lanka'
+    | '/live-band-hire-sri-lanka'
     | '/local-seo-sri-lanka'
     | '/logo-design-sri-lanka'
     | '/loyalty-programs-sri-lanka'
     | '/magazine-advertising-sri-lanka'
     | '/mall-activation-sri-lanka'
     | '/market-research-sri-lanka'
+    | '/mc-host-hire-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/multi-channel-advertising-sri-lanka'
+    | '/neon-sign-rental-sri-lanka'
     | '/newspaper-advertising-sri-lanka'
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
@@ -2691,14 +3280,18 @@ export interface FileRouteTypes {
     | '/ppc-sri-lanka'
     | '/pr-communications-sri-lanka'
     | '/pr-sri-lanka'
+    | '/product-launch-sri-lanka'
     | '/programmatic-advertising-sri-lanka'
     | '/projector-rental-sri-lanka'
+    | '/pyrotechnics-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
     | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
     | '/roadshow-sri-lanka'
+    | '/school-events-sri-lanka'
+    | '/selfie-mirror-rental-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
     | '/services'
@@ -2721,10 +3314,18 @@ export interface FileRouteTypes {
     | '/tv-commercial-sri-lanka'
     | '/tv-commercials-sri-lanka'
     | '/ui-ux-design-sri-lanka'
+    | '/university-events-sri-lanka'
+    | '/uplighting-sri-lanka'
+    | '/valet-parking-sri-lanka'
+    | '/venue-finding-sri-lanka'
     | '/video-production-sri-lanka'
+    | '/virtual-event-sri-lanka'
     | '/web-design-sri-lanka'
     | '/website-development-sri-lanka'
     | '/website-maintenance-sri-lanka'
+    | '/wedding-catering-sri-lanka'
+    | '/wedding-decor-sri-lanka'
+    | '/wedding-planners-colombo'
     | '/wedding-planners-sri-lanka'
     | '/whatsapp-marketing-sri-lanka'
     | '/wordpress-development-sri-lanka'
@@ -2830,14 +3431,18 @@ export interface RootRouteChildren {
   R2dAnimationSriLankaRoute: typeof R2dAnimationSriLankaRoute
   R360MarketingCampaignsSriLankaRoute: typeof R360MarketingCampaignsSriLankaRoute
   R360MarketingSriLankaRoute: typeof R360MarketingSriLankaRoute
+  R360PhotoBoothRentalSriLankaRoute: typeof R360PhotoBoothRentalSriLankaRoute
   R3dAnimationSriLankaRoute: typeof R3dAnimationSriLankaRoute
   AboutRoute: typeof AboutRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
   AnimationSriLankaRoute: typeof AnimationSriLankaRoute
   AtlAdvertisingSriLankaRoute: typeof AtlAdvertisingSriLankaRoute
+  AwardsCeremonySriLankaRoute: typeof AwardsCeremonySriLankaRoute
   B2bEmailMarketingSriLankaRoute: typeof B2bEmailMarketingSriLankaRoute
+  BackdropDesignSriLankaRoute: typeof BackdropDesignSriLankaRoute
   BacklinkServicesSriLankaRoute: typeof BacklinkServicesSriLankaRoute
+  BalloonDecorationSriLankaRoute: typeof BalloonDecorationSriLankaRoute
   BillboardAdvertisingSriLankaRoute: typeof BillboardAdvertisingSriLankaRoute
   BouncyCastleRentalSriLankaRoute: typeof BouncyCastleRentalSriLankaRoute
   BrandActivationSriLankaRoute: typeof BrandActivationSriLankaRoute
@@ -2848,40 +3453,69 @@ export interface RootRouteChildren {
   BulkEmailSriLankaRoute: typeof BulkEmailSriLankaRoute
   BulkSmsSriLankaRoute: typeof BulkSmsSriLankaRoute
   CaseStudiesRoute: typeof CaseStudiesRoute
+  CharityEventsSriLankaRoute: typeof CharityEventsSriLankaRoute
   CinemaAdvertisingSriLankaRoute: typeof CinemaAdvertisingSriLankaRoute
+  ColdSparkMachineRentalSriLankaRoute: typeof ColdSparkMachineRentalSriLankaRoute
   CommercialVideoSriLankaRoute: typeof CommercialVideoSriLankaRoute
   CompanyProfileDesignSriLankaRoute: typeof CompanyProfileDesignSriLankaRoute
   ConferenceManagementSriLankaRoute: typeof ConferenceManagementSriLankaRoute
+  ConfettiCannonSriLankaRoute: typeof ConfettiCannonSriLankaRoute
   ContactRoute: typeof ContactRoute
   ContentMarketingSriLankaRoute: typeof ContentMarketingSriLankaRoute
   CorporateBrandingSriLankaRoute: typeof CorporateBrandingSriLankaRoute
   CorporateEventManagementSriLankaRoute: typeof CorporateEventManagementSriLankaRoute
+  CorporateEventsColomboRoute: typeof CorporateEventsColomboRoute
   CorporateVideoSriLankaRoute: typeof CorporateVideoSriLankaRoute
   CreativeAgencySriLankaRoute: typeof CreativeAgencySriLankaRoute
+  CrowdManagementSriLankaRoute: typeof CrowdManagementSriLankaRoute
+  DancerHireSriLankaRoute: typeof DancerHireSriLankaRoute
   DigitalBillboardSriLankaRoute: typeof DigitalBillboardSriLankaRoute
   DigitalMarketingSriLankaRoute: typeof DigitalMarketingSriLankaRoute
   DisplayAdvertisingSriLankaRoute: typeof DisplayAdvertisingSriLankaRoute
+  DjHireSriLankaRoute: typeof DjHireSriLankaRoute
   DroneRentalSriLankaRoute: typeof DroneRentalSriLankaRoute
   DroneVideographySriLankaRoute: typeof DroneVideographySriLankaRoute
   EcommerceSeoSriLankaRoute: typeof EcommerceSeoSriLankaRoute
   EcommerceWebsiteSriLankaRoute: typeof EcommerceWebsiteSriLankaRoute
   EmailAutomationSriLankaRoute: typeof EmailAutomationSriLankaRoute
   EmailSmsMarketingSriLankaRoute: typeof EmailSmsMarketingSriLankaRoute
+  EventCateringSriLankaRoute: typeof EventCateringSriLankaRoute
+  EventCleaningSriLankaRoute: typeof EventCleaningSriLankaRoute
+  EventDecorSriLankaRoute: typeof EventDecorSriLankaRoute
+  EventEntertainmentSriLankaRoute: typeof EventEntertainmentSriLankaRoute
+  EventLiveStreamingSriLankaRoute: typeof EventLiveStreamingSriLankaRoute
+  EventManagementColomboRoute: typeof EventManagementColomboRoute
+  EventManagementGalleRoute: typeof EventManagementGalleRoute
+  EventManagementJaffnaRoute: typeof EventManagementJaffnaRoute
+  EventManagementKandyRoute: typeof EventManagementKandyRoute
+  EventManagementNegomboRoute: typeof EventManagementNegomboRoute
   EventManagementSriLankaRoute: typeof EventManagementSriLankaRoute
   EventMarketingSriLankaRoute: typeof EventMarketingSriLankaRoute
+  EventPhotographySriLankaRoute: typeof EventPhotographySriLankaRoute
   EventPlannersSriLankaRoute: typeof EventPlannersSriLankaRoute
+  EventRegistrationSriLankaRoute: typeof EventRegistrationSriLankaRoute
+  EventSecuritySriLankaRoute: typeof EventSecuritySriLankaRoute
+  EventTicketingSriLankaRoute: typeof EventTicketingSriLankaRoute
+  EventVenueColomboRoute: typeof EventVenueColomboRoute
+  EventVideographySriLankaRoute: typeof EventVideographySriLankaRoute
   ExhibitionBrandingSriLankaRoute: typeof ExhibitionBrandingSriLankaRoute
   ExhibitionManagementSriLankaRoute: typeof ExhibitionManagementSriLankaRoute
   FacebookAdsSriLankaRoute: typeof FacebookAdsSriLankaRoute
   FacebookMarketingSriLankaRoute: typeof FacebookMarketingSriLankaRoute
   FieldMarketingSriLankaRoute: typeof FieldMarketingSriLankaRoute
+  FlowerDecorationSriLankaRoute: typeof FlowerDecorationSriLankaRoute
+  FlowerWallRentalSriLankaRoute: typeof FlowerWallRentalSriLankaRoute
+  FogMachineRentalSriLankaRoute: typeof FogMachineRentalSriLankaRoute
   FullServiceAdvertisingSriLankaRoute: typeof FullServiceAdvertisingSriLankaRoute
+  GalaDinnerSriLankaRoute: typeof GalaDinnerSriLankaRoute
   GeneratorRentalSriLankaRoute: typeof GeneratorRentalSriLankaRoute
   GetQuoteRoute: typeof GetQuoteRoute
   GoogleAdsSriLankaRoute: typeof GoogleAdsSriLankaRoute
   GoogleShoppingSriLankaRoute: typeof GoogleShoppingSriLankaRoute
   GraphicDesignSriLankaRoute: typeof GraphicDesignSriLankaRoute
   HoardingAdvertisingSriLankaRoute: typeof HoardingAdvertisingSriLankaRoute
+  HybridEventSriLankaRoute: typeof HybridEventSriLankaRoute
+  IceSculptureSriLankaRoute: typeof IceSculptureSriLankaRoute
   InfluencerMarketingSriLankaRoute: typeof InfluencerMarketingSriLankaRoute
   InstagramAdsSriLankaRoute: typeof InstagramAdsSriLankaRoute
   InstagramMarketingSriLankaRoute: typeof InstagramMarketingSriLankaRoute
@@ -2892,19 +3526,23 @@ export interface RootRouteChildren {
   LedScreenAdvertisingSriLankaRoute: typeof LedScreenAdvertisingSriLankaRoute
   LedScreenRentalSriLankaRoute: typeof LedScreenRentalSriLankaRoute
   LedVideoWallSriLankaRoute: typeof LedVideoWallSriLankaRoute
+  LightingRentalSriLankaRoute: typeof LightingRentalSriLankaRoute
   LinkedinAdsSriLankaRoute: typeof LinkedinAdsSriLankaRoute
   LinkedinMarketingSriLankaRoute: typeof LinkedinMarketingSriLankaRoute
+  LiveBandHireSriLankaRoute: typeof LiveBandHireSriLankaRoute
   LocalSeoSriLankaRoute: typeof LocalSeoSriLankaRoute
   LogoDesignSriLankaRoute: typeof LogoDesignSriLankaRoute
   LoyaltyProgramsSriLankaRoute: typeof LoyaltyProgramsSriLankaRoute
   MagazineAdvertisingSriLankaRoute: typeof MagazineAdvertisingSriLankaRoute
   MallActivationSriLankaRoute: typeof MallActivationSriLankaRoute
   MarketResearchSriLankaRoute: typeof MarketResearchSriLankaRoute
+  McHostHireSriLankaRoute: typeof McHostHireSriLankaRoute
   MediaBuyingSriLankaRoute: typeof MediaBuyingSriLankaRoute
   MediaPlanningSriLankaRoute: typeof MediaPlanningSriLankaRoute
   MobileBillboardSriLankaRoute: typeof MobileBillboardSriLankaRoute
   MotionGraphicsSriLankaRoute: typeof MotionGraphicsSriLankaRoute
   MultiChannelAdvertisingSriLankaRoute: typeof MultiChannelAdvertisingSriLankaRoute
+  NeonSignRentalSriLankaRoute: typeof NeonSignRentalSriLankaRoute
   NewspaperAdvertisingSriLankaRoute: typeof NewspaperAdvertisingSriLankaRoute
   OmnichannelMarketingSriLankaRoute: typeof OmnichannelMarketingSriLankaRoute
   OutdoorAdvertisingSriLankaRoute: typeof OutdoorAdvertisingSriLankaRoute
@@ -2916,14 +3554,18 @@ export interface RootRouteChildren {
   PpcSriLankaRoute: typeof PpcSriLankaRoute
   PrCommunicationsSriLankaRoute: typeof PrCommunicationsSriLankaRoute
   PrSriLankaRoute: typeof PrSriLankaRoute
+  ProductLaunchSriLankaRoute: typeof ProductLaunchSriLankaRoute
   ProgrammaticAdvertisingSriLankaRoute: typeof ProgrammaticAdvertisingSriLankaRoute
   ProjectorRentalSriLankaRoute: typeof ProjectorRentalSriLankaRoute
+  PyrotechnicsSriLankaRoute: typeof PyrotechnicsSriLankaRoute
   RadioAdvertisingSriLankaRoute: typeof RadioAdvertisingSriLankaRoute
   RemarketingSriLankaRoute: typeof RemarketingSriLankaRoute
   ReputationManagementSriLankaRoute: typeof ReputationManagementSriLankaRoute
   RetailBrandingSriLankaRoute: typeof RetailBrandingSriLankaRoute
   RoadshowMarketingSriLankaRoute: typeof RoadshowMarketingSriLankaRoute
   RoadshowSriLankaRoute: typeof RoadshowSriLankaRoute
+  SchoolEventsSriLankaRoute: typeof SchoolEventsSriLankaRoute
+  SelfieMirrorRentalSriLankaRoute: typeof SelfieMirrorRentalSriLankaRoute
   SeoCompanySriLankaRoute: typeof SeoCompanySriLankaRoute
   SeoServicesSriLankaRoute: typeof SeoServicesSriLankaRoute
   ServicesRoute: typeof ServicesRoute
@@ -2946,10 +3588,18 @@ export interface RootRouteChildren {
   TvCommercialSriLankaRoute: typeof TvCommercialSriLankaRoute
   TvCommercialsSriLankaRoute: typeof TvCommercialsSriLankaRoute
   UiUxDesignSriLankaRoute: typeof UiUxDesignSriLankaRoute
+  UniversityEventsSriLankaRoute: typeof UniversityEventsSriLankaRoute
+  UplightingSriLankaRoute: typeof UplightingSriLankaRoute
+  ValetParkingSriLankaRoute: typeof ValetParkingSriLankaRoute
+  VenueFindingSriLankaRoute: typeof VenueFindingSriLankaRoute
   VideoProductionSriLankaRoute: typeof VideoProductionSriLankaRoute
+  VirtualEventSriLankaRoute: typeof VirtualEventSriLankaRoute
   WebDesignSriLankaRoute: typeof WebDesignSriLankaRoute
   WebsiteDevelopmentSriLankaRoute: typeof WebsiteDevelopmentSriLankaRoute
   WebsiteMaintenanceSriLankaRoute: typeof WebsiteMaintenanceSriLankaRoute
+  WeddingCateringSriLankaRoute: typeof WeddingCateringSriLankaRoute
+  WeddingDecorSriLankaRoute: typeof WeddingDecorSriLankaRoute
+  WeddingPlannersColomboRoute: typeof WeddingPlannersColomboRoute
   WeddingPlannersSriLankaRoute: typeof WeddingPlannersSriLankaRoute
   WhatsappMarketingSriLankaRoute: typeof WhatsappMarketingSriLankaRoute
   WordpressDevelopmentSriLankaRoute: typeof WordpressDevelopmentSriLankaRoute
@@ -3087,6 +3737,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WeddingPlannersSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/wedding-planners-colombo': {
+      id: '/wedding-planners-colombo'
+      path: '/wedding-planners-colombo'
+      fullPath: '/wedding-planners-colombo'
+      preLoaderRoute: typeof WeddingPlannersColomboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wedding-decor-sri-lanka': {
+      id: '/wedding-decor-sri-lanka'
+      path: '/wedding-decor-sri-lanka'
+      fullPath: '/wedding-decor-sri-lanka'
+      preLoaderRoute: typeof WeddingDecorSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wedding-catering-sri-lanka': {
+      id: '/wedding-catering-sri-lanka'
+      path: '/wedding-catering-sri-lanka'
+      fullPath: '/wedding-catering-sri-lanka'
+      preLoaderRoute: typeof WeddingCateringSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/website-maintenance-sri-lanka': {
       id: '/website-maintenance-sri-lanka'
       path: '/website-maintenance-sri-lanka'
@@ -3108,11 +3779,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WebDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/virtual-event-sri-lanka': {
+      id: '/virtual-event-sri-lanka'
+      path: '/virtual-event-sri-lanka'
+      fullPath: '/virtual-event-sri-lanka'
+      preLoaderRoute: typeof VirtualEventSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/video-production-sri-lanka': {
       id: '/video-production-sri-lanka'
       path: '/video-production-sri-lanka'
       fullPath: '/video-production-sri-lanka'
       preLoaderRoute: typeof VideoProductionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/venue-finding-sri-lanka': {
+      id: '/venue-finding-sri-lanka'
+      path: '/venue-finding-sri-lanka'
+      fullPath: '/venue-finding-sri-lanka'
+      preLoaderRoute: typeof VenueFindingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/valet-parking-sri-lanka': {
+      id: '/valet-parking-sri-lanka'
+      path: '/valet-parking-sri-lanka'
+      fullPath: '/valet-parking-sri-lanka'
+      preLoaderRoute: typeof ValetParkingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/uplighting-sri-lanka': {
+      id: '/uplighting-sri-lanka'
+      path: '/uplighting-sri-lanka'
+      fullPath: '/uplighting-sri-lanka'
+      preLoaderRoute: typeof UplightingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/university-events-sri-lanka': {
+      id: '/university-events-sri-lanka'
+      path: '/university-events-sri-lanka'
+      fullPath: '/university-events-sri-lanka'
+      preLoaderRoute: typeof UniversityEventsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ui-ux-design-sri-lanka': {
@@ -3269,6 +3975,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SeoCompanySriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/selfie-mirror-rental-sri-lanka': {
+      id: '/selfie-mirror-rental-sri-lanka'
+      path: '/selfie-mirror-rental-sri-lanka'
+      fullPath: '/selfie-mirror-rental-sri-lanka'
+      preLoaderRoute: typeof SelfieMirrorRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/school-events-sri-lanka': {
+      id: '/school-events-sri-lanka'
+      path: '/school-events-sri-lanka'
+      fullPath: '/school-events-sri-lanka'
+      preLoaderRoute: typeof SchoolEventsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/roadshow-sri-lanka': {
       id: '/roadshow-sri-lanka'
       path: '/roadshow-sri-lanka'
@@ -3311,6 +4031,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RadioAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pyrotechnics-sri-lanka': {
+      id: '/pyrotechnics-sri-lanka'
+      path: '/pyrotechnics-sri-lanka'
+      fullPath: '/pyrotechnics-sri-lanka'
+      preLoaderRoute: typeof PyrotechnicsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projector-rental-sri-lanka': {
       id: '/projector-rental-sri-lanka'
       path: '/projector-rental-sri-lanka'
@@ -3323,6 +4050,13 @@ declare module '@tanstack/react-router' {
       path: '/programmatic-advertising-sri-lanka'
       fullPath: '/programmatic-advertising-sri-lanka'
       preLoaderRoute: typeof ProgrammaticAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product-launch-sri-lanka': {
+      id: '/product-launch-sri-lanka'
+      path: '/product-launch-sri-lanka'
+      fullPath: '/product-launch-sri-lanka'
+      preLoaderRoute: typeof ProductLaunchSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pr-sri-lanka': {
@@ -3402,6 +4136,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NewspaperAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/neon-sign-rental-sri-lanka': {
+      id: '/neon-sign-rental-sri-lanka'
+      path: '/neon-sign-rental-sri-lanka'
+      fullPath: '/neon-sign-rental-sri-lanka'
+      preLoaderRoute: typeof NeonSignRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/multi-channel-advertising-sri-lanka': {
       id: '/multi-channel-advertising-sri-lanka'
       path: '/multi-channel-advertising-sri-lanka'
@@ -3435,6 +4176,13 @@ declare module '@tanstack/react-router' {
       path: '/media-buying-sri-lanka'
       fullPath: '/media-buying-sri-lanka'
       preLoaderRoute: typeof MediaBuyingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mc-host-hire-sri-lanka': {
+      id: '/mc-host-hire-sri-lanka'
+      path: '/mc-host-hire-sri-lanka'
+      fullPath: '/mc-host-hire-sri-lanka'
+      preLoaderRoute: typeof McHostHireSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/market-research-sri-lanka': {
@@ -3479,6 +4227,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocalSeoSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/live-band-hire-sri-lanka': {
+      id: '/live-band-hire-sri-lanka'
+      path: '/live-band-hire-sri-lanka'
+      fullPath: '/live-band-hire-sri-lanka'
+      preLoaderRoute: typeof LiveBandHireSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/linkedin-marketing-sri-lanka': {
       id: '/linkedin-marketing-sri-lanka'
       path: '/linkedin-marketing-sri-lanka'
@@ -3491,6 +4246,13 @@ declare module '@tanstack/react-router' {
       path: '/linkedin-ads-sri-lanka'
       fullPath: '/linkedin-ads-sri-lanka'
       preLoaderRoute: typeof LinkedinAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lighting-rental-sri-lanka': {
+      id: '/lighting-rental-sri-lanka'
+      path: '/lighting-rental-sri-lanka'
+      fullPath: '/lighting-rental-sri-lanka'
+      preLoaderRoute: typeof LightingRentalSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/led-video-wall-sri-lanka': {
@@ -3563,6 +4325,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InfluencerMarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ice-sculpture-sri-lanka': {
+      id: '/ice-sculpture-sri-lanka'
+      path: '/ice-sculpture-sri-lanka'
+      fullPath: '/ice-sculpture-sri-lanka'
+      preLoaderRoute: typeof IceSculptureSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hybrid-event-sri-lanka': {
+      id: '/hybrid-event-sri-lanka'
+      path: '/hybrid-event-sri-lanka'
+      fullPath: '/hybrid-event-sri-lanka'
+      preLoaderRoute: typeof HybridEventSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/hoarding-advertising-sri-lanka': {
       id: '/hoarding-advertising-sri-lanka'
       path: '/hoarding-advertising-sri-lanka'
@@ -3605,11 +4381,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GeneratorRentalSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gala-dinner-sri-lanka': {
+      id: '/gala-dinner-sri-lanka'
+      path: '/gala-dinner-sri-lanka'
+      fullPath: '/gala-dinner-sri-lanka'
+      preLoaderRoute: typeof GalaDinnerSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/full-service-advertising-sri-lanka': {
       id: '/full-service-advertising-sri-lanka'
       path: '/full-service-advertising-sri-lanka'
       fullPath: '/full-service-advertising-sri-lanka'
       preLoaderRoute: typeof FullServiceAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fog-machine-rental-sri-lanka': {
+      id: '/fog-machine-rental-sri-lanka'
+      path: '/fog-machine-rental-sri-lanka'
+      fullPath: '/fog-machine-rental-sri-lanka'
+      preLoaderRoute: typeof FogMachineRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flower-wall-rental-sri-lanka': {
+      id: '/flower-wall-rental-sri-lanka'
+      path: '/flower-wall-rental-sri-lanka'
+      fullPath: '/flower-wall-rental-sri-lanka'
+      preLoaderRoute: typeof FlowerWallRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flower-decoration-sri-lanka': {
+      id: '/flower-decoration-sri-lanka'
+      path: '/flower-decoration-sri-lanka'
+      fullPath: '/flower-decoration-sri-lanka'
+      preLoaderRoute: typeof FlowerDecorationSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/field-marketing-sri-lanka': {
@@ -3647,11 +4451,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExhibitionBrandingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/event-videography-sri-lanka': {
+      id: '/event-videography-sri-lanka'
+      path: '/event-videography-sri-lanka'
+      fullPath: '/event-videography-sri-lanka'
+      preLoaderRoute: typeof EventVideographySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-venue-colombo': {
+      id: '/event-venue-colombo'
+      path: '/event-venue-colombo'
+      fullPath: '/event-venue-colombo'
+      preLoaderRoute: typeof EventVenueColomboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-ticketing-sri-lanka': {
+      id: '/event-ticketing-sri-lanka'
+      path: '/event-ticketing-sri-lanka'
+      fullPath: '/event-ticketing-sri-lanka'
+      preLoaderRoute: typeof EventTicketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-security-sri-lanka': {
+      id: '/event-security-sri-lanka'
+      path: '/event-security-sri-lanka'
+      fullPath: '/event-security-sri-lanka'
+      preLoaderRoute: typeof EventSecuritySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-registration-sri-lanka': {
+      id: '/event-registration-sri-lanka'
+      path: '/event-registration-sri-lanka'
+      fullPath: '/event-registration-sri-lanka'
+      preLoaderRoute: typeof EventRegistrationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/event-planners-sri-lanka': {
       id: '/event-planners-sri-lanka'
       path: '/event-planners-sri-lanka'
       fullPath: '/event-planners-sri-lanka'
       preLoaderRoute: typeof EventPlannersSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-photography-sri-lanka': {
+      id: '/event-photography-sri-lanka'
+      path: '/event-photography-sri-lanka'
+      fullPath: '/event-photography-sri-lanka'
+      preLoaderRoute: typeof EventPhotographySriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/event-marketing-sri-lanka': {
@@ -3666,6 +4512,76 @@ declare module '@tanstack/react-router' {
       path: '/event-management-sri-lanka'
       fullPath: '/event-management-sri-lanka'
       preLoaderRoute: typeof EventManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-management-negombo': {
+      id: '/event-management-negombo'
+      path: '/event-management-negombo'
+      fullPath: '/event-management-negombo'
+      preLoaderRoute: typeof EventManagementNegomboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-management-kandy': {
+      id: '/event-management-kandy'
+      path: '/event-management-kandy'
+      fullPath: '/event-management-kandy'
+      preLoaderRoute: typeof EventManagementKandyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-management-jaffna': {
+      id: '/event-management-jaffna'
+      path: '/event-management-jaffna'
+      fullPath: '/event-management-jaffna'
+      preLoaderRoute: typeof EventManagementJaffnaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-management-galle': {
+      id: '/event-management-galle'
+      path: '/event-management-galle'
+      fullPath: '/event-management-galle'
+      preLoaderRoute: typeof EventManagementGalleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-management-colombo': {
+      id: '/event-management-colombo'
+      path: '/event-management-colombo'
+      fullPath: '/event-management-colombo'
+      preLoaderRoute: typeof EventManagementColomboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-live-streaming-sri-lanka': {
+      id: '/event-live-streaming-sri-lanka'
+      path: '/event-live-streaming-sri-lanka'
+      fullPath: '/event-live-streaming-sri-lanka'
+      preLoaderRoute: typeof EventLiveStreamingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-entertainment-sri-lanka': {
+      id: '/event-entertainment-sri-lanka'
+      path: '/event-entertainment-sri-lanka'
+      fullPath: '/event-entertainment-sri-lanka'
+      preLoaderRoute: typeof EventEntertainmentSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-decor-sri-lanka': {
+      id: '/event-decor-sri-lanka'
+      path: '/event-decor-sri-lanka'
+      fullPath: '/event-decor-sri-lanka'
+      preLoaderRoute: typeof EventDecorSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-cleaning-sri-lanka': {
+      id: '/event-cleaning-sri-lanka'
+      path: '/event-cleaning-sri-lanka'
+      fullPath: '/event-cleaning-sri-lanka'
+      preLoaderRoute: typeof EventCleaningSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-catering-sri-lanka': {
+      id: '/event-catering-sri-lanka'
+      path: '/event-catering-sri-lanka'
+      fullPath: '/event-catering-sri-lanka'
+      preLoaderRoute: typeof EventCateringSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/email-sms-marketing-sri-lanka': {
@@ -3710,6 +4626,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DroneRentalSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dj-hire-sri-lanka': {
+      id: '/dj-hire-sri-lanka'
+      path: '/dj-hire-sri-lanka'
+      fullPath: '/dj-hire-sri-lanka'
+      preLoaderRoute: typeof DjHireSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/display-advertising-sri-lanka': {
       id: '/display-advertising-sri-lanka'
       path: '/display-advertising-sri-lanka'
@@ -3731,6 +4654,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DigitalBillboardSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dancer-hire-sri-lanka': {
+      id: '/dancer-hire-sri-lanka'
+      path: '/dancer-hire-sri-lanka'
+      fullPath: '/dancer-hire-sri-lanka'
+      preLoaderRoute: typeof DancerHireSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/crowd-management-sri-lanka': {
+      id: '/crowd-management-sri-lanka'
+      path: '/crowd-management-sri-lanka'
+      fullPath: '/crowd-management-sri-lanka'
+      preLoaderRoute: typeof CrowdManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/creative-agency-sri-lanka': {
       id: '/creative-agency-sri-lanka'
       path: '/creative-agency-sri-lanka'
@@ -3743,6 +4680,13 @@ declare module '@tanstack/react-router' {
       path: '/corporate-video-sri-lanka'
       fullPath: '/corporate-video-sri-lanka'
       preLoaderRoute: typeof CorporateVideoSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate-events-colombo': {
+      id: '/corporate-events-colombo'
+      path: '/corporate-events-colombo'
+      fullPath: '/corporate-events-colombo'
+      preLoaderRoute: typeof CorporateEventsColomboRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/corporate-event-management-sri-lanka': {
@@ -3773,6 +4717,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/confetti-cannon-sri-lanka': {
+      id: '/confetti-cannon-sri-lanka'
+      path: '/confetti-cannon-sri-lanka'
+      fullPath: '/confetti-cannon-sri-lanka'
+      preLoaderRoute: typeof ConfettiCannonSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/conference-management-sri-lanka': {
       id: '/conference-management-sri-lanka'
       path: '/conference-management-sri-lanka'
@@ -3794,11 +4745,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CommercialVideoSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cold-spark-machine-rental-sri-lanka': {
+      id: '/cold-spark-machine-rental-sri-lanka'
+      path: '/cold-spark-machine-rental-sri-lanka'
+      fullPath: '/cold-spark-machine-rental-sri-lanka'
+      preLoaderRoute: typeof ColdSparkMachineRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cinema-advertising-sri-lanka': {
       id: '/cinema-advertising-sri-lanka'
       path: '/cinema-advertising-sri-lanka'
       fullPath: '/cinema-advertising-sri-lanka'
       preLoaderRoute: typeof CinemaAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/charity-events-sri-lanka': {
+      id: '/charity-events-sri-lanka'
+      path: '/charity-events-sri-lanka'
+      fullPath: '/charity-events-sri-lanka'
+      preLoaderRoute: typeof CharityEventsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/case-studies': {
@@ -3871,6 +4836,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BillboardAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/balloon-decoration-sri-lanka': {
+      id: '/balloon-decoration-sri-lanka'
+      path: '/balloon-decoration-sri-lanka'
+      fullPath: '/balloon-decoration-sri-lanka'
+      preLoaderRoute: typeof BalloonDecorationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/backlink-services-sri-lanka': {
       id: '/backlink-services-sri-lanka'
       path: '/backlink-services-sri-lanka'
@@ -3878,11 +4850,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BacklinkServicesSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/backdrop-design-sri-lanka': {
+      id: '/backdrop-design-sri-lanka'
+      path: '/backdrop-design-sri-lanka'
+      fullPath: '/backdrop-design-sri-lanka'
+      preLoaderRoute: typeof BackdropDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/b2b-email-marketing-sri-lanka': {
       id: '/b2b-email-marketing-sri-lanka'
       path: '/b2b-email-marketing-sri-lanka'
       fullPath: '/b2b-email-marketing-sri-lanka'
       preLoaderRoute: typeof B2bEmailMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/awards-ceremony-sri-lanka': {
+      id: '/awards-ceremony-sri-lanka'
+      path: '/awards-ceremony-sri-lanka'
+      fullPath: '/awards-ceremony-sri-lanka'
+      preLoaderRoute: typeof AwardsCeremonySriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/atl-advertising-sri-lanka': {
@@ -3925,6 +4911,13 @@ declare module '@tanstack/react-router' {
       path: '/3d-animation-sri-lanka'
       fullPath: '/3d-animation-sri-lanka'
       preLoaderRoute: typeof R3dAnimationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/360-photo-booth-rental-sri-lanka': {
+      id: '/360-photo-booth-rental-sri-lanka'
+      path: '/360-photo-booth-rental-sri-lanka'
+      fullPath: '/360-photo-booth-rental-sri-lanka'
+      preLoaderRoute: typeof R360PhotoBoothRentalSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/360-marketing-sri-lanka': {
@@ -4614,14 +5607,18 @@ const rootRouteChildren: RootRouteChildren = {
   R2dAnimationSriLankaRoute: R2dAnimationSriLankaRoute,
   R360MarketingCampaignsSriLankaRoute: R360MarketingCampaignsSriLankaRoute,
   R360MarketingSriLankaRoute: R360MarketingSriLankaRoute,
+  R360PhotoBoothRentalSriLankaRoute: R360PhotoBoothRentalSriLankaRoute,
   R3dAnimationSriLankaRoute: R3dAnimationSriLankaRoute,
   AboutRoute: AboutRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
   AnimationSriLankaRoute: AnimationSriLankaRoute,
   AtlAdvertisingSriLankaRoute: AtlAdvertisingSriLankaRoute,
+  AwardsCeremonySriLankaRoute: AwardsCeremonySriLankaRoute,
   B2bEmailMarketingSriLankaRoute: B2bEmailMarketingSriLankaRoute,
+  BackdropDesignSriLankaRoute: BackdropDesignSriLankaRoute,
   BacklinkServicesSriLankaRoute: BacklinkServicesSriLankaRoute,
+  BalloonDecorationSriLankaRoute: BalloonDecorationSriLankaRoute,
   BillboardAdvertisingSriLankaRoute: BillboardAdvertisingSriLankaRoute,
   BouncyCastleRentalSriLankaRoute: BouncyCastleRentalSriLankaRoute,
   BrandActivationSriLankaRoute: BrandActivationSriLankaRoute,
@@ -4632,40 +5629,69 @@ const rootRouteChildren: RootRouteChildren = {
   BulkEmailSriLankaRoute: BulkEmailSriLankaRoute,
   BulkSmsSriLankaRoute: BulkSmsSriLankaRoute,
   CaseStudiesRoute: CaseStudiesRoute,
+  CharityEventsSriLankaRoute: CharityEventsSriLankaRoute,
   CinemaAdvertisingSriLankaRoute: CinemaAdvertisingSriLankaRoute,
+  ColdSparkMachineRentalSriLankaRoute: ColdSparkMachineRentalSriLankaRoute,
   CommercialVideoSriLankaRoute: CommercialVideoSriLankaRoute,
   CompanyProfileDesignSriLankaRoute: CompanyProfileDesignSriLankaRoute,
   ConferenceManagementSriLankaRoute: ConferenceManagementSriLankaRoute,
+  ConfettiCannonSriLankaRoute: ConfettiCannonSriLankaRoute,
   ContactRoute: ContactRoute,
   ContentMarketingSriLankaRoute: ContentMarketingSriLankaRoute,
   CorporateBrandingSriLankaRoute: CorporateBrandingSriLankaRoute,
   CorporateEventManagementSriLankaRoute: CorporateEventManagementSriLankaRoute,
+  CorporateEventsColomboRoute: CorporateEventsColomboRoute,
   CorporateVideoSriLankaRoute: CorporateVideoSriLankaRoute,
   CreativeAgencySriLankaRoute: CreativeAgencySriLankaRoute,
+  CrowdManagementSriLankaRoute: CrowdManagementSriLankaRoute,
+  DancerHireSriLankaRoute: DancerHireSriLankaRoute,
   DigitalBillboardSriLankaRoute: DigitalBillboardSriLankaRoute,
   DigitalMarketingSriLankaRoute: DigitalMarketingSriLankaRoute,
   DisplayAdvertisingSriLankaRoute: DisplayAdvertisingSriLankaRoute,
+  DjHireSriLankaRoute: DjHireSriLankaRoute,
   DroneRentalSriLankaRoute: DroneRentalSriLankaRoute,
   DroneVideographySriLankaRoute: DroneVideographySriLankaRoute,
   EcommerceSeoSriLankaRoute: EcommerceSeoSriLankaRoute,
   EcommerceWebsiteSriLankaRoute: EcommerceWebsiteSriLankaRoute,
   EmailAutomationSriLankaRoute: EmailAutomationSriLankaRoute,
   EmailSmsMarketingSriLankaRoute: EmailSmsMarketingSriLankaRoute,
+  EventCateringSriLankaRoute: EventCateringSriLankaRoute,
+  EventCleaningSriLankaRoute: EventCleaningSriLankaRoute,
+  EventDecorSriLankaRoute: EventDecorSriLankaRoute,
+  EventEntertainmentSriLankaRoute: EventEntertainmentSriLankaRoute,
+  EventLiveStreamingSriLankaRoute: EventLiveStreamingSriLankaRoute,
+  EventManagementColomboRoute: EventManagementColomboRoute,
+  EventManagementGalleRoute: EventManagementGalleRoute,
+  EventManagementJaffnaRoute: EventManagementJaffnaRoute,
+  EventManagementKandyRoute: EventManagementKandyRoute,
+  EventManagementNegomboRoute: EventManagementNegomboRoute,
   EventManagementSriLankaRoute: EventManagementSriLankaRoute,
   EventMarketingSriLankaRoute: EventMarketingSriLankaRoute,
+  EventPhotographySriLankaRoute: EventPhotographySriLankaRoute,
   EventPlannersSriLankaRoute: EventPlannersSriLankaRoute,
+  EventRegistrationSriLankaRoute: EventRegistrationSriLankaRoute,
+  EventSecuritySriLankaRoute: EventSecuritySriLankaRoute,
+  EventTicketingSriLankaRoute: EventTicketingSriLankaRoute,
+  EventVenueColomboRoute: EventVenueColomboRoute,
+  EventVideographySriLankaRoute: EventVideographySriLankaRoute,
   ExhibitionBrandingSriLankaRoute: ExhibitionBrandingSriLankaRoute,
   ExhibitionManagementSriLankaRoute: ExhibitionManagementSriLankaRoute,
   FacebookAdsSriLankaRoute: FacebookAdsSriLankaRoute,
   FacebookMarketingSriLankaRoute: FacebookMarketingSriLankaRoute,
   FieldMarketingSriLankaRoute: FieldMarketingSriLankaRoute,
+  FlowerDecorationSriLankaRoute: FlowerDecorationSriLankaRoute,
+  FlowerWallRentalSriLankaRoute: FlowerWallRentalSriLankaRoute,
+  FogMachineRentalSriLankaRoute: FogMachineRentalSriLankaRoute,
   FullServiceAdvertisingSriLankaRoute: FullServiceAdvertisingSriLankaRoute,
+  GalaDinnerSriLankaRoute: GalaDinnerSriLankaRoute,
   GeneratorRentalSriLankaRoute: GeneratorRentalSriLankaRoute,
   GetQuoteRoute: GetQuoteRoute,
   GoogleAdsSriLankaRoute: GoogleAdsSriLankaRoute,
   GoogleShoppingSriLankaRoute: GoogleShoppingSriLankaRoute,
   GraphicDesignSriLankaRoute: GraphicDesignSriLankaRoute,
   HoardingAdvertisingSriLankaRoute: HoardingAdvertisingSriLankaRoute,
+  HybridEventSriLankaRoute: HybridEventSriLankaRoute,
+  IceSculptureSriLankaRoute: IceSculptureSriLankaRoute,
   InfluencerMarketingSriLankaRoute: InfluencerMarketingSriLankaRoute,
   InstagramAdsSriLankaRoute: InstagramAdsSriLankaRoute,
   InstagramMarketingSriLankaRoute: InstagramMarketingSriLankaRoute,
@@ -4676,19 +5702,23 @@ const rootRouteChildren: RootRouteChildren = {
   LedScreenAdvertisingSriLankaRoute: LedScreenAdvertisingSriLankaRoute,
   LedScreenRentalSriLankaRoute: LedScreenRentalSriLankaRoute,
   LedVideoWallSriLankaRoute: LedVideoWallSriLankaRoute,
+  LightingRentalSriLankaRoute: LightingRentalSriLankaRoute,
   LinkedinAdsSriLankaRoute: LinkedinAdsSriLankaRoute,
   LinkedinMarketingSriLankaRoute: LinkedinMarketingSriLankaRoute,
+  LiveBandHireSriLankaRoute: LiveBandHireSriLankaRoute,
   LocalSeoSriLankaRoute: LocalSeoSriLankaRoute,
   LogoDesignSriLankaRoute: LogoDesignSriLankaRoute,
   LoyaltyProgramsSriLankaRoute: LoyaltyProgramsSriLankaRoute,
   MagazineAdvertisingSriLankaRoute: MagazineAdvertisingSriLankaRoute,
   MallActivationSriLankaRoute: MallActivationSriLankaRoute,
   MarketResearchSriLankaRoute: MarketResearchSriLankaRoute,
+  McHostHireSriLankaRoute: McHostHireSriLankaRoute,
   MediaBuyingSriLankaRoute: MediaBuyingSriLankaRoute,
   MediaPlanningSriLankaRoute: MediaPlanningSriLankaRoute,
   MobileBillboardSriLankaRoute: MobileBillboardSriLankaRoute,
   MotionGraphicsSriLankaRoute: MotionGraphicsSriLankaRoute,
   MultiChannelAdvertisingSriLankaRoute: MultiChannelAdvertisingSriLankaRoute,
+  NeonSignRentalSriLankaRoute: NeonSignRentalSriLankaRoute,
   NewspaperAdvertisingSriLankaRoute: NewspaperAdvertisingSriLankaRoute,
   OmnichannelMarketingSriLankaRoute: OmnichannelMarketingSriLankaRoute,
   OutdoorAdvertisingSriLankaRoute: OutdoorAdvertisingSriLankaRoute,
@@ -4700,14 +5730,18 @@ const rootRouteChildren: RootRouteChildren = {
   PpcSriLankaRoute: PpcSriLankaRoute,
   PrCommunicationsSriLankaRoute: PrCommunicationsSriLankaRoute,
   PrSriLankaRoute: PrSriLankaRoute,
+  ProductLaunchSriLankaRoute: ProductLaunchSriLankaRoute,
   ProgrammaticAdvertisingSriLankaRoute: ProgrammaticAdvertisingSriLankaRoute,
   ProjectorRentalSriLankaRoute: ProjectorRentalSriLankaRoute,
+  PyrotechnicsSriLankaRoute: PyrotechnicsSriLankaRoute,
   RadioAdvertisingSriLankaRoute: RadioAdvertisingSriLankaRoute,
   RemarketingSriLankaRoute: RemarketingSriLankaRoute,
   ReputationManagementSriLankaRoute: ReputationManagementSriLankaRoute,
   RetailBrandingSriLankaRoute: RetailBrandingSriLankaRoute,
   RoadshowMarketingSriLankaRoute: RoadshowMarketingSriLankaRoute,
   RoadshowSriLankaRoute: RoadshowSriLankaRoute,
+  SchoolEventsSriLankaRoute: SchoolEventsSriLankaRoute,
+  SelfieMirrorRentalSriLankaRoute: SelfieMirrorRentalSriLankaRoute,
   SeoCompanySriLankaRoute: SeoCompanySriLankaRoute,
   SeoServicesSriLankaRoute: SeoServicesSriLankaRoute,
   ServicesRoute: ServicesRoute,
@@ -4730,10 +5764,18 @@ const rootRouteChildren: RootRouteChildren = {
   TvCommercialSriLankaRoute: TvCommercialSriLankaRoute,
   TvCommercialsSriLankaRoute: TvCommercialsSriLankaRoute,
   UiUxDesignSriLankaRoute: UiUxDesignSriLankaRoute,
+  UniversityEventsSriLankaRoute: UniversityEventsSriLankaRoute,
+  UplightingSriLankaRoute: UplightingSriLankaRoute,
+  ValetParkingSriLankaRoute: ValetParkingSriLankaRoute,
+  VenueFindingSriLankaRoute: VenueFindingSriLankaRoute,
   VideoProductionSriLankaRoute: VideoProductionSriLankaRoute,
+  VirtualEventSriLankaRoute: VirtualEventSriLankaRoute,
   WebDesignSriLankaRoute: WebDesignSriLankaRoute,
   WebsiteDevelopmentSriLankaRoute: WebsiteDevelopmentSriLankaRoute,
   WebsiteMaintenanceSriLankaRoute: WebsiteMaintenanceSriLankaRoute,
+  WeddingCateringSriLankaRoute: WeddingCateringSriLankaRoute,
+  WeddingDecorSriLankaRoute: WeddingDecorSriLankaRoute,
+  WeddingPlannersColomboRoute: WeddingPlannersColomboRoute,
   WeddingPlannersSriLankaRoute: WeddingPlannersSriLankaRoute,
   WhatsappMarketingSriLankaRoute: WhatsappMarketingSriLankaRoute,
   WordpressDevelopmentSriLankaRoute: WordpressDevelopmentSriLankaRoute,
@@ -4852,3 +5894,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

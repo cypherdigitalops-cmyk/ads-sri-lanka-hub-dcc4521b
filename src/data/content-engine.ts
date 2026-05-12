@@ -767,6 +767,70 @@ KNOWLEDGE["corporate-gifting-sri-lanka"] = {
   ],
 };
 
+KNOWLEDGE["printing-services-sri-lanka"] = {
+  slug: "printing-services-sri-lanka",
+  definition:
+    "Printing services in Sri Lanka covers the full spectrum of outdoor and large format printing — hoarding printing, flex printing, banner and billboard printing, vinyl, fabric and mesh banners, backdrops for events and stages, roll-up and pop-up banners, exhibition stall and booth branding, shop and retail branding, window and glass stickers, foam and forex boards, canvas printing, sign boards (LED, acrylic, neon), full vehicle branding and car wraps, plus the underlying print technologies — eco solvent, UV printing, digital printing and dye sublimation. It is the production layer that turns brand identity into the physical surfaces customers actually see — on the road, on shopfronts, at events, on vehicles and inside retail spaces across the island.",
+  whyItMatters:
+    "Outdoor and large format printing is still the workhorse of brand visibility in Sri Lanka. Hoardings on Galle Road, flex banners along Kandy and Negombo highways, branded shop fronts in Pettah and Colombo 03, exhibition stalls at BMICH and Sirimavo Bandaranaike Memorial Hall, and fully wrapped delivery vans clocking 30,000+ km a year — these surfaces deliver impressions at a fraction of the cost-per-eyeball of digital media, and they keep working 24/7 without an ad budget. Quality matters: cheap inks fade in 3–6 months under Sri Lankan sun and monsoon, poorly laminated vehicle wraps peel within a year, and badly cut shop stickers quietly damage your brand image. Investing in weather-rated materials, proper installation and the right print technology for each surface protects both your spend and your reputation.",
+  channels: [
+    { name: "Hoardings, flex & billboard printing", desc: "Large-format flex up to 16ft x 50ft for highway hoardings, mall facades and billboard sites, printed on premium 440–610 GSM coated flex with eco solvent or UV inks." },
+    { name: "Banners — vinyl, fabric, mesh & display", desc: "Vinyl banners for shops and events, fabric banners for indoor stages, mesh banners for high-wind sites, and roll-up, pop-up and display banners for exhibitions and trade shows." },
+    { name: "Backdrops & event signage", desc: "Stage and event backdrops, step-and-repeat panels, exhibition banners, trade show graphics and full event signage printed on flex, fabric or canvas." },
+    { name: "Exhibition stall, booth & stage branding", desc: "Custom-built exhibition stalls, modular booths and full stage branding for product launches, AGMs, dealer conferences and trade fairs." },
+    { name: "Shop & retail branding", desc: "Shop front sticker printing, window and glass stickers, internal signage, foam board and forex board displays for retail outlets, banks, showrooms and clinics." },
+    { name: "Vehicle branding & car wraps", desc: "Full vehicle branding, car wraps, van and bus branding, vehicle stickers and partial wraps using cast vinyl with overlaminate for 3–5 year outdoor life." },
+    { name: "Sign boards — LED, acrylic & neon", desc: "Illuminated LED sign boards, edge-lit acrylic letter signs, traditional and LED neon signs and 3D channel letters for shopfronts, offices and showrooms." },
+    { name: "Specialty printing — canvas, foam, forex", desc: "Canvas printing for art and decor, foam board mounting for displays, forex (PVC) board signage and rigid substrate printing." },
+    { name: "Print technologies", desc: "Eco solvent printing for outdoor durability, UV printing for rigid substrates, high-resolution digital printing for short runs and dye sublimation for fabric." },
+  ],
+  costs: [
+    { item: "Hoarding / flex printing (premium 440 GSM)", range: "LKR 60 – 140 per sq ft", notes: "Eco solvent print. Volume discounts above 500 sq ft. Installation extra." },
+    { item: "Vinyl banner printing", range: "LKR 80 – 160 per sq ft", notes: "Frontlit vinyl with eyelets. Heavier 510 GSM for high-wind sites." },
+    { item: "Mesh banner printing", range: "LKR 110 – 180 per sq ft", notes: "Wind-permeable mesh for tall hoardings and building wraps." },
+    { item: "Roll-up banner (standard 33in x 80in)", range: "LKR 4,500 – 9,500 per unit", notes: "Includes stand, carry bag and printed graphic." },
+    { item: "Vehicle branding / car wrap (full)", range: "LKR 65,000 – 250,000 per vehicle", notes: "Depends on car/van/bus size, partial vs full wrap and overlaminate." },
+    { item: "Shop front sticker / window graphics", range: "LKR 120 – 280 per sq ft", notes: "Cast or calendared vinyl with optional one-way vision film." },
+    { item: "LED sign board", range: "LKR 18,000 – 75,000+ per sq ft", notes: "Depends on module density (P3 / P5 / P10), front-lit acrylic vs full-colour LED screen." },
+    { item: "Foam board / forex board printing", range: "LKR 380 – 950 per sq ft", notes: "5 mm or 10 mm board, UV print, mounted ready to install." },
+  ],
+  bestFor: [
+    "FMCG and telco brands running highway hoarding and billboard campaigns islandwide",
+    "Retail chains, banks and showrooms needing shopfront branding, signage and window graphics",
+    "Event organisers producing backdrops, stage branding and exhibition stalls at BMICH, Sirimavo and hotels",
+    "Logistics, distribution and delivery brands branding fleets of vans, lorries and buses",
+    "Real estate, automotive and hospitality brands launching new sites that need full signage and wayfinding",
+    "Schools, hospitals and government projects needing durable outdoor signage and large-format prints",
+  ],
+  mistakes: [
+    "Choosing the cheapest flex without checking GSM — thin material tears in 2–3 months under sun and rain",
+    "Using indoor inks for outdoor jobs — colours fade visibly within 90 days in Sri Lankan UV",
+    "Skipping overlaminate on vehicle wraps — wraps lift, scratch and lose colour within a year",
+    "Wrong substrate for the location — paper-based foam board melts in humid outdoor conditions; mesh needed for high-wind hoardings",
+    "Approving print without a colour-accurate proof — Pantone shifts can ruin brand colour consistency across hoardings",
+    "Last-minute orders that skip site survey, structural checks and proper installation permits",
+    "No file format / resolution standards — small JPEGs scaled to 40ft hoarding produce pixelated results",
+  ],
+  choosing: [
+    "Ask to see live work — sites, vehicles, stalls — not just print samples in a studio",
+    "Confirm in-house printing equipment (eco solvent, UV, digital) and substrate inventory rather than full sub-contracting",
+    "Check warranty on prints, vehicle wraps and sign boards in writing — at least 12 months for outdoor flex, 3 years for vehicle wraps",
+    "Verify they handle site survey, structural fabrication, installation and removal — not only print supply",
+    "Ask for clear file format guidance (CDR, AI, PDF at 300 dpi or proportional vector) before quoting",
+    "Insist on a printed colour proof for any campaign with multiple hoardings or high brand-colour sensitivity",
+  ],
+  faqs: [
+    { q: "What printing services do you provide in Sri Lanka?", a: "We provide a full range of outdoor and large format printing — hoarding printing, flex printing, banner printing, billboard printing, vinyl printing, backdrop printing, roll-up and pop-up banners, exhibition stall and booth branding, shop and retail branding, vehicle branding and car wraps, LED, acrylic and neon sign boards, foam and forex boards, canvas printing, plus the underlying technologies — eco solvent, UV, digital and dye sublimation." },
+    { q: "How much does hoarding printing cost in Sri Lanka?", a: "Hoarding printing on premium 440 GSM flex typically ranges from LKR 60 to LKR 140 per square foot, with volume discounts above 500 sq ft. Mesh banners for high-wind sites run LKR 110 – 180 per sq ft. Final cost depends on material GSM, print resolution, ink type (eco solvent vs UV), finishing (eyelets, hemming) and installation height and access." },
+    { q: "What is the difference between flex printing and vinyl printing?", a: "Flex printing uses a coated PVC banner material (typically 280–610 GSM) ideal for hoardings, billboards and large outdoor banners — printed with eco solvent inks for weather durability. Vinyl printing uses a self-adhesive vinyl film applied to surfaces — shopfronts, windows, vehicles, walls and rigid boards — and can be printed in cast or calendared grades, with or without overlaminate." },
+    { q: "Do you provide vehicle branding and car wraps islandwide?", a: "Yes. We provide full and partial vehicle branding for cars, vans, buses, lorries and three-wheelers — including design, cast vinyl printing, overlaminate, professional installation and post-installation care advice. Wraps typically last 3–5 years outdoors when installed correctly with overlaminate. Site visits and fleet branding for 5+ vehicles can be arranged across Colombo and the island." },
+    { q: "What sign boards are available — LED, acrylic, neon?", a: "We produce illuminated LED sign boards (front-lit acrylic letters, edge-lit signs and full-colour LED screens at P3, P5 and P10 pixel pitch), acrylic sign boards in laser-cut letters with vinyl or LED back-lighting, and traditional and LED neon signs for shopfronts, restaurants, offices and showrooms. Each is engineered for outdoor weather resistance with appropriate IP-rated power supplies." },
+    { q: "Can you handle exhibition stall branding and booth branding?", a: "Yes. We design, fabricate and brand modular and custom-built exhibition stalls and booths for trade fairs, AGMs, product launches and dealer conferences at BMICH, Sirimavo Bandaranaike Memorial Hall, Galle Face Hotel, Cinnamon Grand and other Sri Lankan venues — including stage branding, backdrops, banners, counters, lighting and on-site installation and dismantling." },
+    { q: "What is eco solvent printing and where is it used?", a: "Eco solvent printing uses low-VOC, weather-resistant inks designed for outdoor durability — 2–3 years unlaminated, 5+ years laminated under Sri Lankan sun. It is the standard for hoardings, vehicle wraps, banners, building wraps and shop fronts where prints must survive UV, rain, dust and humidity. UV printing is typically reserved for rigid substrates like foam, forex, acrylic and metal." },
+    { q: "What file formats do you accept and what resolution is needed?", a: "We accept vector files in CDR, AI, EPS or PDF (with fonts converted to outlines) for the sharpest results, and high-resolution TIFF, PSD or JPEG at 100–150 dpi at final print size for raster artwork. For very large hoardings (40ft+), proportional vector files are strongly preferred. We can also redraw or upscale low-resolution artwork at design rates if needed." },
+  ],
+};
+
 // --------- HELPERS ---------
 function findCategoryBlock(category: Category): CategoryKnowledge | null {
   return KNOWLEDGE[category.slug] ?? null;

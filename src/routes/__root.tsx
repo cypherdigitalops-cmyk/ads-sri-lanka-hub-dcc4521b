@@ -220,6 +220,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKDQ7RSP8L" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-TKDQ7RSP8L');`,
+          }}
+        />
       </head>
       <body>
         {children}

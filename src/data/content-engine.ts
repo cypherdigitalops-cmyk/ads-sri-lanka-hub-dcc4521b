@@ -1021,6 +1021,101 @@ function trendsBlocks(label: string): Block[] {
   ];
 }
 
+function deliveryProcessBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Our end-to-end delivery process for ${label}` },
+    {
+      type: "p",
+      text: `Every ${label} project follows a structured six-step workflow that has been refined across hundreds of Sri Lankan campaigns. The process exists to remove the most common causes of disappointment — late delivery, off-brand colour, poor installation and surprise add-on charges. Each step has a named owner, a written deliverable and a sign-off gate before the next step starts.`,
+    },
+    {
+      type: "ol",
+      items: [
+        `Discovery & brief — a 30-minute consultation to understand your objective for ${label}, audience, brand guidelines, locations, deadlines and budget envelope. We capture everything in writing so nothing is lost in translation.`,
+        `Site survey & technical scoping — for any work involving installation, our team visits the site (or reviews photos and measurements you supply) to confirm dimensions, mounting surface, power access, structural anchoring, line-of-sight and any permits required from local councils, landlords or estate management.`,
+        `Concept, design & artwork — our in-house design team prepares concepts, refines based on your feedback, and produces print-ready artwork in the correct format, colour profile and resolution. We share digital proofs and, where it matters, printed colour proofs before mass production.`,
+        `Production & quality control — production runs on calibrated equipment with batch checks at start, middle and end. Every job is reviewed against the approved proof, brand colours are checked under daylight, and any out-of-tolerance output is reprinted at our cost — not yours.`,
+        `Installation & commissioning — our installation crews handle delivery, mounting, electrical commissioning (for illuminated work), waste removal and a walk-through with you on completion. Heights, traffic, weather windows and venue access are all planned in advance.`,
+        `Aftercare, warranty & maintenance — every job is documented with installation photos, batch numbers and warranty terms. We hold spare materials for major rollouts so repairs can be done within 48 hours, and we offer scheduled cleaning and inspection contracts for long-running ${label} campaigns.`,
+      ],
+    },
+    {
+      type: "p",
+      text: `Throughout the project, you have a single named project manager as your point of contact — not a generic helpdesk. That person owns timing, quality, communication and any escalation. For multi-site rollouts and high-profile launches we provide a daily WhatsApp update with photos so stakeholders can see progress without chasing.`,
+    },
+  ];
+}
+
+function qualityAssuranceBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Quality, materials and warranty for ${label}` },
+    {
+      type: "p",
+      text: `Quality in ${label} is decided long before the print head moves — it starts with material selection, ink choice, calibration and the discipline to reject anything that does not meet specification. Our quality system is built around three principles: use materials proven for Sri Lankan conditions, inspect every job against a written checklist, and stand behind the work with a written warranty.`,
+    },
+    {
+      type: "ul",
+      items: [
+        `Material selection — branded substrates from established global manufacturers, chosen specifically for tropical UV, monsoon humidity and coastal salt exposure. We do not chase the cheapest roll on the market.`,
+        `Ink and finishing — eco solvent and UV inks with documented outdoor durability, plus laminate and protective coatings where the application demands it (vehicle wraps, high-touch shop graphics, premium sign boards).`,
+        `Calibration — printers are colour-profiled regularly so brand colours stay consistent batch-to-batch and across multiple machines, which matters for islandwide ${label} rollouts.`,
+        `Inspection — every output is reviewed for colour accuracy, registration, banding, scratches and trim before it leaves the workshop, with reprints absorbed by us when in-house QC catches an issue.`,
+        `Installation standards — trained installers using proper tools (squeegees, heat guns, harnesses, torque-controlled fixings) so the finished result lasts as long as the print itself.`,
+        `Warranty — written warranty terms covering material defects, ink fade and installation workmanship, with clear coverage periods so there are no arguments later.`,
+      ],
+    },
+    {
+      type: "p",
+      text: `For ${label} work that fails inside the warranty period due to material or workmanship defect, we repair or replace at no charge. Damage from accidents, vandalism, third-party modification or extreme weather events is excluded — but in those cases we still respond fast with replacement options and clear documentation for any insurance claim you need to make.`,
+    },
+  ];
+}
+
+function verticalUseCasesBlocks(category: Category, label: string): Block[] {
+  const lc = category.title.toLowerCase();
+  return [
+    { type: "h2", text: `Real-world ${label} use cases across Sri Lankan industries` },
+    {
+      type: "p",
+      text: `${label} looks different depending on the industry it serves. Below are the patterns we see most often across Sri Lankan ${lc} projects, with a note on what tends to make each one succeed. Use these as a starting point when scoping your own brief.`,
+    },
+    {
+      type: "ul",
+      items: [
+        `Retail and FMCG brands use ${label} to drive trial, footfall and shelf visibility — winning campaigns combine sharp creative with disciplined repetition over a 60–90 day window rather than one-off bursts.`,
+        `Banks, finance and insurance companies use ${label} to build trust and explain complex products — clarity, compliance and consistent brand presentation matter more than novelty.`,
+        `Telcos, internet providers and tech brands use ${label} to launch tariffs, devices and bundles fast — speed of execution and tight integration with digital follow-up are decisive.`,
+        `Hospitality, travel and lifestyle brands use ${label} to drive seasonal demand — high-quality imagery and bilingual creative typically outperform discount-led messaging.`,
+        `Real estate, automotive and construction brands use ${label} to support high-ticket, considered purchases — build long-form content into the campaign so prospects can self-educate before a sales call.`,
+        `Healthcare, education and government bodies use ${label} for awareness, public information and behaviour change — accuracy, source credibility and respectful tone are non-negotiable.`,
+        `Export-oriented manufacturers use ${label} to support trade shows, distributor relationships and B2B buyer meetings — consistency between local Sri Lankan presence and international touchpoints reinforces credibility.`,
+      ],
+    },
+    {
+      type: "p",
+      text: `In every vertical, the brands that get the most out of ${label} treat it as part of an integrated programme rather than a stand-alone purchase. They tie it to their digital funnel, brief their sales and customer-service teams on the campaign, and review the results against business outcomes — not just media metrics.`,
+    },
+  ];
+}
+
+function localCoverageBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Islandwide coverage and local execution for ${label}` },
+    {
+      type: "p",
+      text: `${label} in Sri Lanka does not stop at Colombo. The brands growing fastest are the ones investing in district-level activation across the Western, Central, Southern, Northern, Eastern, North Western, North Central, Uva and Sabaragamuwa provinces. We support that with production capacity in Colombo and field teams that work routinely in Gampaha, Kandy, Kurunegala, Galle, Matara, Hambantota, Jaffna, Batticaloa, Trincomalee, Anuradhapura, Polonnaruwa, Ratnapura and Badulla.`,
+    },
+    {
+      type: "p",
+      text: `Operating ${label} outside the Western Province has its own realities — different audience habits, weather windows, transport timings, public-holiday calendars and local relationships with landlords, councils and venue operators. Our regional approach combines a Colombo-based project lead with vetted on-ground partners in each district, so the brief is interpreted consistently while the execution respects local context. For brands rolling out across multiple districts, we provide a master schedule, photo evidence per location and a single consolidated invoice rather than a separate bill from each town.`,
+    },
+    {
+      type: "p",
+      text: `For clients targeting the Sri Lankan diaspora — particularly in the UAE, UK, Australia, Canada, Singapore and Italy — we coordinate with international shipping and on-ground partners so ${label} assets, premiums and campaign collateral arrive on time and on brief. Documentation, customs paperwork and consolidated freight options keep per-unit cost reasonable even on smaller export-grade orders.`,
+    },
+  ];
+}
+
 // --------- BLOG ARTICLE GENERATOR (2,000+ words real content) ---------
 export function buildBlogArticle(category: Category, keyword: string): { blocks: Block[]; faqs: FAQ[] } {
   const k = findCategoryBlock(category);

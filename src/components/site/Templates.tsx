@@ -242,6 +242,7 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 
 /* ========== CATEGORY HUB ========== */
 export function CategoryHubTemplate({ category }: { category: Category }) {
+  resetHomeAnchor();
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
   const serviceJsonLd = {
@@ -342,6 +343,7 @@ export function ServicePageTemplate({
   category: Category;
   keyword: string;
 }) {
+  resetHomeAnchor();
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
@@ -448,6 +450,7 @@ export function BlogArticleTemplate({
   category: Category;
   keyword: string;
 }) {
+  resetHomeAnchor();
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";

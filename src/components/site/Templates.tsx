@@ -420,7 +420,6 @@ export function ServicePageTemplate({
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {category.services
             .filter((s) => s.keyword !== keyword)
-            .slice(0, 6)
             .map((s) => (
               <Link key={s.slug} to={`/${s.slug}` as never} className="rounded-lg border border-border bg-card p-4 hover:border-primary/40">
                 <div className="font-semibold">{titleCase(s.keyword)}</div>

@@ -703,6 +703,70 @@ KNOWLEDGE["pr-communications-sri-lanka"] = {
   ],
 };
 
+KNOWLEDGE["corporate-gifting-sri-lanka"] = {
+  slug: "corporate-gifting-sri-lanka",
+  definition:
+    "Corporate gifting in Sri Lanka covers branded merchandise, promotional products, customised executive gifts, conference and delegate packs, event giveaways, awards and trophies, and a full spectrum of printing services — t-shirts, mugs, bags, water bottles, pens, notebooks, caps, lanyards, ID cards, USBs, power banks, umbrellas, diaries, gift boxes and hampers. The category sits at the intersection of branding, BTL marketing and HR — every gift carries your logo, your story and your relationship with the recipient. From a 50-piece welcome kit for new joiners to a 5,000-piece dealer giveaway for an islandwide roadshow, professionally produced gifts strengthen client loyalty, recognise employees, energise channel partners and amplify brand recall long after the event ends.",
+  whyItMatters:
+    "Sri Lankan business culture is deeply relationship-driven. A thoughtful, well-branded gift handed over personally still moves the needle on client retention, dealer loyalty and employee engagement in a way that no email campaign or paid ad can match. With over 50,000 corporate events, conferences, exhibitions, AGMs, weddings and product launches happening across the island every year, branded merchandise and promotional items are one of the highest-touch, highest-recall channels available — recipients use a printed mug or umbrella for months or years, turning every use into a brand impression. Done well, corporate gifting also signals the quality and seriousness of your brand: cheap, generic giveaways quietly damage reputation, while considered, on-brand gifts elevate it.",
+  channels: [
+    { name: "Branded merchandise & promotional products", desc: "T-shirts, polo shirts, caps, bags, mugs, bottles, pens, notebooks and umbrellas printed or embroidered with your logo for events, dealers and staff." },
+    { name: "Customised & executive corporate gifts", desc: "Premium leather diaries, engraved pen sets, desk accessories, photo frames and personalised gift boxes for senior clients and partners." },
+    { name: "Conference & delegate gift packs", desc: "Pre-packed kits with notebook, pen, USB, lanyard, ID card holder and conference-themed merchandise for AGMs, summits and dealer meets." },
+    { name: "Event giveaways & exhibition merchandise", desc: "High-volume, lower-cost branded items for booths at BMICH, Lakshapathi, Ideal Home, EDEX and trade fairs — designed to be picked up, used and remembered." },
+    { name: "Awards, trophies & plaques", desc: "Crystal awards, acrylic awards, wood and metal plaques and engraved trophies for awards nights, long-service recognition and channel-partner programmes." },
+    { name: "Printing services", desc: "Screen printing, sublimation, embroidery, UV printing, laser engraving and digital printing on garments, glass, metal, wood and plastic." },
+    { name: "Eco-friendly & sustainable gifting", desc: "Bamboo bottles, jute bags, recycled-paper notebooks, plantable seed pens and other sustainable items for ESG-conscious brands." },
+    { name: "Gift hampers & curated boxes", desc: "Themed hampers blending Ceylon tea, spices, snacks, branded stationery and personal-care items — ideal for season's greetings, client thank-yous and onboarding." },
+    { name: "Employee welcome kits & client appreciation gifts", desc: "Joiner kits, anniversary gifts, festive hampers and milestone rewards designed to deepen retention." },
+  ],
+  costs: [
+    { item: "Branded t-shirt (cotton, 1-colour print)", range: "LKR 650 – 1,800", notes: "MOQ 50 pcs. Embroidery and multi-colour print add 20–60%." },
+    { item: "Branded ceramic mug (full-colour print)", range: "LKR 350 – 950", notes: "MOQ 100 pcs. Sublimation print, dishwasher-safe options available." },
+    { item: "Non-woven branded bag", range: "LKR 80 – 350", notes: "MOQ 500 pcs. Eco-friendly jute and canvas options higher." },
+    { item: "Branded pen (plastic / metal)", range: "LKR 35 – 450", notes: "MOQ 200 pcs. Metal twist pens and gift-box options at the upper end." },
+    { item: "Conference delegate pack (notebook + pen + USB + lanyard)", range: "LKR 850 – 3,500", notes: "Per pack. Volume discounts above 200 units." },
+    { item: "Crystal award (engraved, mid-size)", range: "LKR 3,500 – 18,000", notes: "Per piece. Custom shapes and 3D engraving extra." },
+    { item: "Executive gift box (premium leather diary, pen set, card holder)", range: "LKR 4,500 – 22,000", notes: "Per box. Personal monogramming optional." },
+    { item: "Corporate gift hamper (festive, mid-tier)", range: "LKR 5,000 – 25,000", notes: "Curated mix of Ceylon tea, snacks, branded items, packaging." },
+  ],
+  bestFor: [
+    "Annual dealer conferences, AGMs, sales kick-offs and channel-partner meets",
+    "Product launches and exhibition booths needing high-volume giveaways",
+    "Client appreciation programmes — Sinhala/Tamil New Year, Christmas, Vesak",
+    "Employee onboarding kits, long-service awards and HR recognition programmes",
+    "ESG-led brands looking to switch to sustainable, eco-friendly merchandise",
+    "Schools, universities and NGOs running fund-raisers, ceremonies and events",
+  ],
+  mistakes: [
+    "Choosing the cheapest supplier and ending up with peeling prints, faded fabrics and a damaged brand image",
+    "Approving artwork without a physical pre-production sample — colours and fits often look different in real life",
+    "Leaving production to the last 7 days before an event and paying premium rush fees with no time for QC",
+    "Generic, untargeted gifts (yet another mug) that recipients quietly throw away",
+    "Ignoring sizing for apparel — buying mostly Medium when staff need a Sri Lankan-fit size mix from S to XXL",
+    "Forgetting packaging — even a great gift loses impact when handed over in a plain polythene bag",
+    "No tracking on what was distributed, to whom, and on which date — making future relationship gifting impossible",
+  ],
+  choosing: [
+    "Ask to see physical samples of work delivered to past clients — not just photos on a website",
+    "Confirm in-house printing/embroidery capacity vs sub-contracting — owning production means tighter QC and faster turnarounds",
+    "Check minimum order quantities (MOQs) and whether they can scale from 50 pieces to 5,000+ without quality loss",
+    "Insist on a pre-production sample for every new artwork before mass production starts",
+    "Verify they handle artwork design, colour matching (Pantone), packaging and islandwide delivery as one service",
+    "Ask about lead times in writing — standard production should be 7–14 working days for most items, with rush options clearly priced",
+  ],
+  faqs: [
+    { q: "What is corporate gifting and why do Sri Lankan companies invest in it?", a: "Corporate gifting is the planned use of branded merchandise, promotional products, awards and curated gifts to strengthen relationships with clients, employees, dealers and partners. Sri Lankan companies invest in it because relationships still drive business here — a thoughtful gift handed over at the right moment outperforms most digital touchpoints in retention, recall and goodwill, and a printed mug or umbrella keeps your logo in front of the recipient for months." },
+    { q: "What is the minimum order quantity for branded merchandise in Sri Lanka?", a: "Most items have an MOQ between 50 and 500 pieces. Apparel like t-shirts and polos typically start at 50 pieces, mugs and notebooks at 100, pens and lanyards at 200, and lower-cost giveaway items like non-woven bags from 500. Premium executive gifts (crystal awards, leather diaries, gift hampers) can often be produced from as few as 10–25 pieces." },
+    { q: "How long does corporate gifting production take?", a: "Standard turnaround for printed items in Sri Lanka is 7–14 working days from artwork sign-off and advance payment. Embroidery, large-volume orders (1,000+ pieces) and gift-box assembly may need 14–21 days. Always build in a 3–5 day buffer before your event date for QC and delivery, and confirm rush options (3–5 day production) and any premium charges in writing." },
+    { q: "Which printing methods work best for which items?", a: "Screen printing is best for t-shirts and bags in 1–4 colours at high volumes. Sublimation is best for full-colour mugs, polyester garments and lanyards. Embroidery suits polos, caps and premium uniforms. UV printing works on metal, glass and acrylic items like bottles, USBs and power banks. Laser engraving is ideal for crystal awards, metal pens and wooden plaques where you want a permanent, premium finish." },
+    { q: "Can you produce eco-friendly and sustainable corporate gifts in Sri Lanka?", a: "Yes. Eco-friendly options include jute and canvas bags, bamboo bottles and pens, recycled-paper notebooks and diaries, plantable seed pens, organic cotton t-shirts and Ceylon tea hampers in biodegradable packaging. These are increasingly requested by ESG-conscious corporates, banks and multinationals operating in Sri Lanka." },
+    { q: "Do you handle artwork design, packaging and delivery?", a: "A full-service corporate gifting partner handles end-to-end execution — concept and artwork design, Pantone colour matching, pre-production samples, mass production with quality control, custom packaging, gift wrapping, addressed labelling and islandwide delivery to one or many addresses. Always confirm which of these are included in the quote so there are no surprises later." },
+    { q: "Can you brand items for international shipping or diaspora gifting?", a: "Yes — many Sri Lankan brands now ship branded gifts to dealers, partners and diaspora customers in the Middle East, UK, Australia, Canada and Singapore. We can advise on packaging that survives international courier handling, appropriate documentation and consolidated shipping options to keep per-unit cost reasonable." },
+    { q: "How do I choose the right gift for my audience?", a: "Start with the recipient, not the catalogue. For senior clients and partners, choose premium, personalised items (engraved pen, leather diary, crystal award). For dealer conferences and exhibitions, choose useful, high-visibility items (printed t-shirts, caps, water bottles). For employees, mix practical (welcome kit, branded backpack) with experiential (festive hampers, anniversary gifts). The best gift is one the recipient genuinely uses — that is what keeps your brand visible." },
+  ],
+};
+
 // --------- HELPERS ---------
 function findCategoryBlock(category: Category): CategoryKnowledge | null {
   return KNOWLEDGE[category.slug] ?? null;

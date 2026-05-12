@@ -821,13 +821,16 @@ KNOWLEDGE["printing-services-sri-lanka"] = {
   ],
   faqs: [
     { q: "What printing services do you provide in Sri Lanka?", a: "We provide a full range of outdoor and large format printing — hoarding printing, flex printing, banner printing, billboard printing, vinyl printing, backdrop printing, roll-up and pop-up banners, exhibition stall and booth branding, shop and retail branding, vehicle branding and car wraps, LED, acrylic and neon sign boards, foam and forex boards, canvas printing, plus the underlying technologies — eco solvent, UV, digital and dye sublimation." },
-    { q: "How much does hoarding printing cost in Sri Lanka?", a: "Hoarding printing on premium 440 GSM flex typically ranges from LKR 60 to LKR 140 per square foot, with volume discounts above 500 sq ft. Mesh banners for high-wind sites run LKR 110 – 180 per sq ft. Final cost depends on material GSM, print resolution, ink type (eco solvent vs UV), finishing (eyelets, hemming) and installation height and access." },
+    { q: "How long does printing turnaround take in Sri Lanka?", a: "Standard turnaround for most large-format jobs is 2–4 working days from artwork sign-off — flex hoardings, banners, roll-ups, foam boards and shop stickers usually complete inside this window. Vehicle wraps need 4–7 days because installation is precise. Sign boards (LED, acrylic, neon) typically need 7–14 days for fabrication and assembly. Rush production is available with extra capacity for time-sensitive launches and event deadlines." },
     { q: "What is the difference between flex printing and vinyl printing?", a: "Flex printing uses a coated PVC banner material (typically 280–610 GSM) ideal for hoardings, billboards and large outdoor banners — printed with eco solvent inks for weather durability. Vinyl printing uses a self-adhesive vinyl film applied to surfaces — shopfronts, windows, vehicles, walls and rigid boards — and can be printed in cast or calendared grades, with or without overlaminate." },
     { q: "Do you provide vehicle branding and car wraps islandwide?", a: "Yes. We provide full and partial vehicle branding for cars, vans, buses, lorries and three-wheelers — including design, cast vinyl printing, overlaminate, professional installation and post-installation care advice. Wraps typically last 3–5 years outdoors when installed correctly with overlaminate. Site visits and fleet branding for 5+ vehicles can be arranged across Colombo and the island." },
-    { q: "What sign boards are available — LED, acrylic, neon?", a: "We produce illuminated LED sign boards (front-lit acrylic letters, edge-lit signs and full-colour LED screens at P3, P5 and P10 pixel pitch), acrylic sign boards in laser-cut letters with vinyl or LED back-lighting, and traditional and LED neon signs for shopfronts, restaurants, offices and showrooms. Each is engineered for outdoor weather resistance with appropriate IP-rated power supplies." },
+    { q: "What sign boards are available — LED, acrylic, neon?", a: "We produce illuminated LED sign boards (front-lit acrylic letters, edge-lit signs and full-colour LED screens at P3, P5 and P10 pixel pitch), acrylic sign boards in laser-cut letters with vinyl or LED back-lighting, and traditional and LED neon signs for shopfronts, restaurants, offices and showrooms. Each is engineered for outdoor weather resistance with weatherproof power supplies and proper enclosures." },
     { q: "Can you handle exhibition stall branding and booth branding?", a: "Yes. We design, fabricate and brand modular and custom-built exhibition stalls and booths for trade fairs, AGMs, product launches and dealer conferences at BMICH, Sirimavo Bandaranaike Memorial Hall, Galle Face Hotel, Cinnamon Grand and other Sri Lankan venues — including stage branding, backdrops, banners, counters, lighting and on-site installation and dismantling." },
     { q: "What is eco solvent printing and where is it used?", a: "Eco solvent printing uses low-VOC, weather-resistant inks designed for outdoor durability — 2–3 years unlaminated, 5+ years laminated under Sri Lankan sun. It is the standard for hoardings, vehicle wraps, banners, building wraps and shop fronts where prints must survive UV, rain, dust and humidity. UV printing is typically reserved for rigid substrates like foam, forex, acrylic and metal." },
-    { q: "What file formats do you accept and what resolution is needed?", a: "We accept vector files in CDR, AI, EPS or PDF (with fonts converted to outlines) for the sharpest results, and high-resolution TIFF, PSD or JPEG at 100–150 dpi at final print size for raster artwork. For very large hoardings (40ft+), proportional vector files are strongly preferred. We can also redraw or upscale low-resolution artwork at design rates if needed." },
+    { q: "What file formats do you accept and what resolution is needed?", a: "We accept vector files in CDR, AI, EPS or PDF (with fonts converted to outlines) for the sharpest results, and high-resolution TIFF, PSD or JPEG at 100–150 dpi at final print size for raster artwork. For very large hoardings (40ft+), proportional vector files are strongly preferred. Our in-house design team can also redraw or upscale low-resolution artwork when source files are not available." },
+    { q: "How do you install hoardings, banners and sign boards?", a: "Installation is handled by our own teams across Sri Lanka — we conduct a site survey, confirm structural anchoring, secure permissions where needed and install with proper safety equipment including harnesses and scaffolding for height work. Hoardings are stretched on welded steel frames, banners are eyeleted and tied at all corners, vehicle wraps are squeegee-applied with heat finishing, and sign boards are mounted with weatherproof brackets and concealed wiring." },
+    { q: "What materials do you use for outdoor durability in Sri Lanka?", a: "Our outdoor jobs use weather-tested materials chosen for Sri Lankan UV, monsoon and humidity conditions — premium 440–610 GSM coated flex for hoardings, cast vinyl with overlaminate for vehicle wraps, polycarbonate or 5mm acrylic for sign boards, marine-grade aluminium composite (ACP) for backing, and eco solvent or UV inks for fade resistance. We avoid thin domestic flex and uncoated substrates that fail within a single monsoon season." },
+    { q: "Can you brand multiple shop locations or franchise outlets?", a: "Yes. We regularly handle islandwide rollouts for retail chains, banks, telcos, restaurant franchises and showroom networks — managing colour-consistent production, batch installation across districts, project tracking by location, and standardised brand books so every outlet looks identical from Jaffna to Matara. A single project manager owns the rollout end-to-end, coordinating shop owners, landlords and our local installation teams." },
   ],
 };
 
@@ -1018,6 +1021,101 @@ function trendsBlocks(label: string): Block[] {
   ];
 }
 
+function deliveryProcessBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Our end-to-end delivery process for ${label}` },
+    {
+      type: "p",
+      text: `Every ${label} project follows a structured six-step workflow that has been refined across hundreds of Sri Lankan campaigns. The process exists to remove the most common causes of disappointment — late delivery, off-brand colour, poor installation and surprise add-on charges. Each step has a named owner, a written deliverable and a sign-off gate before the next step starts.`,
+    },
+    {
+      type: "ol",
+      items: [
+        `Discovery & brief — a 30-minute consultation to understand your objective for ${label}, audience, brand guidelines, locations, deadlines and budget envelope. We capture everything in writing so nothing is lost in translation.`,
+        `Site survey & technical scoping — for any work involving installation, our team visits the site (or reviews photos and measurements you supply) to confirm dimensions, mounting surface, power access, structural anchoring, line-of-sight and any permits required from local councils, landlords or estate management.`,
+        `Concept, design & artwork — our in-house design team prepares concepts, refines based on your feedback, and produces print-ready artwork in the correct format, colour profile and resolution. We share digital proofs and, where it matters, printed colour proofs before mass production.`,
+        `Production & quality control — production runs on calibrated equipment with batch checks at start, middle and end. Every job is reviewed against the approved proof, brand colours are checked under daylight, and any out-of-tolerance output is reprinted at our cost — not yours.`,
+        `Installation & commissioning — our installation crews handle delivery, mounting, electrical commissioning (for illuminated work), waste removal and a walk-through with you on completion. Heights, traffic, weather windows and venue access are all planned in advance.`,
+        `Aftercare, warranty & maintenance — every job is documented with installation photos, batch numbers and warranty terms. We hold spare materials for major rollouts so repairs can be done within 48 hours, and we offer scheduled cleaning and inspection contracts for long-running ${label} campaigns.`,
+      ],
+    },
+    {
+      type: "p",
+      text: `Throughout the project, you have a single named project manager as your point of contact — not a generic helpdesk. That person owns timing, quality, communication and any escalation. For multi-site rollouts and high-profile launches we provide a daily WhatsApp update with photos so stakeholders can see progress without chasing.`,
+    },
+  ];
+}
+
+function qualityAssuranceBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Quality, materials and warranty for ${label}` },
+    {
+      type: "p",
+      text: `Quality in ${label} is decided long before the print head moves — it starts with material selection, ink choice, calibration and the discipline to reject anything that does not meet specification. Our quality system is built around three principles: use materials proven for Sri Lankan conditions, inspect every job against a written checklist, and stand behind the work with a written warranty.`,
+    },
+    {
+      type: "ul",
+      items: [
+        `Material selection — branded substrates from established global manufacturers, chosen specifically for tropical UV, monsoon humidity and coastal salt exposure. We do not chase the cheapest roll on the market.`,
+        `Ink and finishing — eco solvent and UV inks with documented outdoor durability, plus laminate and protective coatings where the application demands it (vehicle wraps, high-touch shop graphics, premium sign boards).`,
+        `Calibration — printers are colour-profiled regularly so brand colours stay consistent batch-to-batch and across multiple machines, which matters for islandwide ${label} rollouts.`,
+        `Inspection — every output is reviewed for colour accuracy, registration, banding, scratches and trim before it leaves the workshop, with reprints absorbed by us when in-house QC catches an issue.`,
+        `Installation standards — trained installers using proper tools (squeegees, heat guns, harnesses, torque-controlled fixings) so the finished result lasts as long as the print itself.`,
+        `Warranty — written warranty terms covering material defects, ink fade and installation workmanship, with clear coverage periods so there are no arguments later.`,
+      ],
+    },
+    {
+      type: "p",
+      text: `For ${label} work that fails inside the warranty period due to material or workmanship defect, we repair or replace at no charge. Damage from accidents, vandalism, third-party modification or extreme weather events is excluded — but in those cases we still respond fast with replacement options and clear documentation for any insurance claim you need to make.`,
+    },
+  ];
+}
+
+function verticalUseCasesBlocks(category: Category, label: string): Block[] {
+  const lc = category.title.toLowerCase();
+  return [
+    { type: "h2", text: `Real-world ${label} use cases across Sri Lankan industries` },
+    {
+      type: "p",
+      text: `${label} looks different depending on the industry it serves. Below are the patterns we see most often across Sri Lankan ${lc} projects, with a note on what tends to make each one succeed. Use these as a starting point when scoping your own brief.`,
+    },
+    {
+      type: "ul",
+      items: [
+        `Retail and FMCG brands use ${label} to drive trial, footfall and shelf visibility — winning campaigns combine sharp creative with disciplined repetition over a 60–90 day window rather than one-off bursts.`,
+        `Banks, finance and insurance companies use ${label} to build trust and explain complex products — clarity, compliance and consistent brand presentation matter more than novelty.`,
+        `Telcos, internet providers and tech brands use ${label} to launch tariffs, devices and bundles fast — speed of execution and tight integration with digital follow-up are decisive.`,
+        `Hospitality, travel and lifestyle brands use ${label} to drive seasonal demand — high-quality imagery and bilingual creative typically outperform discount-led messaging.`,
+        `Real estate, automotive and construction brands use ${label} to support high-ticket, considered purchases — build long-form content into the campaign so prospects can self-educate before a sales call.`,
+        `Healthcare, education and government bodies use ${label} for awareness, public information and behaviour change — accuracy, source credibility and respectful tone are non-negotiable.`,
+        `Export-oriented manufacturers use ${label} to support trade shows, distributor relationships and B2B buyer meetings — consistency between local Sri Lankan presence and international touchpoints reinforces credibility.`,
+      ],
+    },
+    {
+      type: "p",
+      text: `In every vertical, the brands that get the most out of ${label} treat it as part of an integrated programme rather than a stand-alone purchase. They tie it to their digital funnel, brief their sales and customer-service teams on the campaign, and review the results against business outcomes — not just media metrics.`,
+    },
+  ];
+}
+
+function localCoverageBlocks(label: string): Block[] {
+  return [
+    { type: "h2", text: `Islandwide coverage and local execution for ${label}` },
+    {
+      type: "p",
+      text: `${label} in Sri Lanka does not stop at Colombo. The brands growing fastest are the ones investing in district-level activation across the Western, Central, Southern, Northern, Eastern, North Western, North Central, Uva and Sabaragamuwa provinces. We support that with production capacity in Colombo and field teams that work routinely in Gampaha, Kandy, Kurunegala, Galle, Matara, Hambantota, Jaffna, Batticaloa, Trincomalee, Anuradhapura, Polonnaruwa, Ratnapura and Badulla.`,
+    },
+    {
+      type: "p",
+      text: `Operating ${label} outside the Western Province has its own realities — different audience habits, weather windows, transport timings, public-holiday calendars and local relationships with landlords, councils and venue operators. Our regional approach combines a Colombo-based project lead with vetted on-ground partners in each district, so the brief is interpreted consistently while the execution respects local context. For brands rolling out across multiple districts, we provide a master schedule, photo evidence per location and a single consolidated invoice rather than a separate bill from each town.`,
+    },
+    {
+      type: "p",
+      text: `For clients targeting the Sri Lankan diaspora — particularly in the UAE, UK, Australia, Canada, Singapore and Italy — we coordinate with international shipping and on-ground partners so ${label} assets, premiums and campaign collateral arrive on time and on brief. Documentation, customs paperwork and consolidated freight options keep per-unit cost reasonable even on smaller export-grade orders.`,
+    },
+  ];
+}
+
 // --------- BLOG ARTICLE GENERATOR (2,000+ words real content) ---------
 export function buildBlogArticle(category: Category, keyword: string): { blocks: Block[]; faqs: FAQ[] } {
   const k = findCategoryBlock(category);
@@ -1162,7 +1260,7 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
   blocks.push({ type: "h2", text: `What's involved in delivering ${titled}` });
   blocks.push({
     type: "ul",
-    items: k.channels.slice(0, 6).map((c) => `${c.name}: ${c.desc}`),
+    items: k.channels.map((c) => `${c.name}: ${c.desc}`),
   });
 
   blocks.push(...audienceBlocks(category, titled));
@@ -1177,11 +1275,16 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
   blocks.push(...complianceBlocks(titled));
   blocks.push(...inHouseVsAgencyBlocks(titled));
   blocks.push(...trendsBlocks(titled));
+  blocks.push(...deliveryProcessBlocks(titled));
+  blocks.push(...qualityAssuranceBlocks(titled));
+  blocks.push(...verticalUseCasesBlocks(category, titled));
+  blocks.push(...localCoverageBlocks(titled));
 
   blocks.push({ type: "h2", text: `What to ask before signing` });
   blocks.push({ type: "ol", items: k.choosing });
 
-  return { blocks, faqs: nonPricingFaqs(k.faqs).slice(0, 6) };
+  const cleanFaqs = nonPricingFaqs(k.faqs);
+  return { blocks, faqs: cleanFaqs.slice(0, Math.max(6, Math.min(cleanFaqs.length, 8))) };
 }
 
 // --------- HOME PAGE LONG-FORM (~2,000 words) ---------

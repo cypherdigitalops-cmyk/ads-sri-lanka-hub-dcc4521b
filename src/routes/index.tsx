@@ -12,9 +12,9 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising in Sri Lanka — Complete Guide to Every Advertising Option | advertisingsrilanka.lk";
-const TITLE_OG = "Advertising in Sri Lanka — Complete Guide to Every Option";
-const DESC = "The complete guide to advertising in Sri Lanka. Learn how TV, radio, billboards, Google Ads, social media, SEO, branding and video advertising work — and get free advice for your business. Call 0771437707.";
+const TITLE = "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub";
+const TITLE_OG = "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub";
+const DESC = "Advertising information hub for advertising in Sri Lanka with ATL, BTL, digital marketing, SEO, branding, outdoor advertising and media insights.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,

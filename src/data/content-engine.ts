@@ -1165,7 +1165,7 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
   blocks.push({ type: "h2", text: `What's involved in delivering ${titled}` });
   blocks.push({
     type: "ul",
-    items: k.channels.slice(0, 6).map((c) => `${c.name}: ${c.desc}`),
+    items: k.channels.map((c) => `${c.name}: ${c.desc}`),
   });
 
   blocks.push(...audienceBlocks(category, titled));
@@ -1180,11 +1180,16 @@ export function buildServiceLongForm(category: Category, keyword: string): { blo
   blocks.push(...complianceBlocks(titled));
   blocks.push(...inHouseVsAgencyBlocks(titled));
   blocks.push(...trendsBlocks(titled));
+  blocks.push(...deliveryProcessBlocks(titled));
+  blocks.push(...qualityAssuranceBlocks(titled));
+  blocks.push(...verticalUseCasesBlocks(category, titled));
+  blocks.push(...localCoverageBlocks(titled));
 
   blocks.push({ type: "h2", text: `What to ask before signing` });
   blocks.push({ type: "ol", items: k.choosing });
 
-  return { blocks, faqs: nonPricingFaqs(k.faqs).slice(0, 6) };
+  const cleanFaqs = nonPricingFaqs(k.faqs);
+  return { blocks, faqs: cleanFaqs.slice(0, Math.max(6, Math.min(cleanFaqs.length, 8))) };
 }
 
 // --------- HOME PAGE LONG-FORM (~2,000 words) ---------

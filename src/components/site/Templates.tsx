@@ -315,7 +315,7 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
-      <FaqList items={longForm.faqs} />
+      <FaqList items={getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs} />
     </>
   );
 }

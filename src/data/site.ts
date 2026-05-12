@@ -445,6 +445,56 @@ CATEGORIES.push({
   blog: [],
 });
 
+CATEGORIES.push({
+  slug: "corporate-gifting-sri-lanka",
+  hubKeyword: "corporate gifting sri lanka",
+  title: "Corporate Gifting",
+  short:
+    "Branded merchandise, promotional products, customized gifts, awards and 30+ printing services for Sri Lankan brands.",
+  intro:
+    "Sri Lanka's most complete corporate gifting service. From branded merchandise and promotional products to executive gifts, conference packs, awards, trophies and a full range of printing services — we source, brand and deliver gifts that strengthen client relationships, reward employees and amplify your brand at every event.",
+  icon: "Gift",
+  services: [
+    { slug: "branded-merchandise-sri-lanka", keyword: "branded merchandise sri lanka" },
+    { slug: "promotional-products-sri-lanka", keyword: "promotional products sri lanka" },
+    { slug: "customized-corporate-gifts-sri-lanka", keyword: "customized corporate gifts sri lanka" },
+    { slug: "executive-gifts-sri-lanka", keyword: "executive gifts sri lanka" },
+    { slug: "conference-gift-packs-sri-lanka", keyword: "conference gift packs sri lanka" },
+    { slug: "event-giveaway-items-sri-lanka", keyword: "event giveaway items sri lanka" },
+    { slug: "corporate-event-merchandise-sri-lanka", keyword: "corporate event merchandise sri lanka" },
+    { slug: "luxury-corporate-gifts-sri-lanka", keyword: "luxury corporate gifts sri lanka" },
+    { slug: "awards-trophies-sri-lanka", keyword: "awards and trophies sri lanka" },
+    { slug: "crystal-awards-sri-lanka", keyword: "crystal awards sri lanka" },
+    { slug: "acrylic-awards-sri-lanka", keyword: "acrylic awards sri lanka" },
+    { slug: "plaque-printing-sri-lanka", keyword: "plaque printing sri lanka" },
+    { slug: "t-shirt-printing-sri-lanka", keyword: "t shirt printing sri lanka" },
+    { slug: "mug-printing-sri-lanka", keyword: "mug printing sri lanka" },
+    { slug: "bag-printing-sri-lanka", keyword: "bag printing sri lanka" },
+    { slug: "water-bottle-printing-sri-lanka", keyword: "water bottle printing sri lanka" },
+    { slug: "pen-printing-sri-lanka", keyword: "pen printing sri lanka" },
+    { slug: "notebook-printing-sri-lanka", keyword: "notebook printing sri lanka" },
+    { slug: "cap-printing-sri-lanka", keyword: "cap printing sri lanka" },
+    { slug: "lanyard-printing-sri-lanka", keyword: "lanyard printing sri lanka" },
+    { slug: "id-card-printing-sri-lanka", keyword: "id card printing sri lanka" },
+    { slug: "usb-printing-sri-lanka", keyword: "usb printing sri lanka" },
+    { slug: "power-bank-printing-sri-lanka", keyword: "power bank printing sri lanka" },
+    { slug: "umbrella-printing-sri-lanka", keyword: "umbrella printing sri lanka" },
+    { slug: "diary-printing-sri-lanka", keyword: "diary printing sri lanka" },
+    { slug: "eco-friendly-corporate-gifts-sri-lanka", keyword: "eco friendly corporate gifts sri lanka" },
+    { slug: "gift-box-printing-sri-lanka", keyword: "gift box printing sri lanka" },
+    { slug: "corporate-gift-hampers-sri-lanka", keyword: "corporate gift hampers sri lanka" },
+    { slug: "exhibition-giveaway-items-sri-lanka", keyword: "exhibition giveaway items sri lanka" },
+    { slug: "conference-merchandise-sri-lanka", keyword: "conference merchandise sri lanka" },
+    { slug: "promotional-items-sri-lanka", keyword: "promotional items sri lanka" },
+    { slug: "event-branding-merchandise-sri-lanka", keyword: "event branding merchandise sri lanka" },
+    { slug: "delegate-gift-packs-sri-lanka", keyword: "delegate gift packs sri lanka" },
+    { slug: "launch-event-gifts-sri-lanka", keyword: "launch event gifts sri lanka" },
+    { slug: "employee-welcome-kits-sri-lanka", keyword: "employee welcome kits sri lanka" },
+    { slug: "client-appreciation-gifts-sri-lanka", keyword: "client appreciation gifts sri lanka" },
+  ],
+  blog: [],
+});
+
 export function titleCase(s: string) {
   const ACRONYMS = new Set([
     "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux",
@@ -551,6 +601,12 @@ export const RELATED_CATEGORIES: Record<string, { slug: string; anchor: string }
     { slug: "content-marketing-sri-lanka", anchor: "content marketing sri lanka" },
     { slug: "digital-marketing-sri-lanka", anchor: "digital marketing sri lanka" },
     { slug: "influencer-marketing-sri-lanka", anchor: "influencer marketing sri lanka" },
+  ],
+  "corporate-gifting-sri-lanka": [
+    { slug: "event-management-sri-lanka", anchor: "event management sri lanka" },
+    { slug: "branding-sri-lanka", anchor: "branding sri lanka" },
+    { slug: "btl-advertising-sri-lanka", anchor: "btl advertising sri lanka" },
+    { slug: "exhibition-management-sri-lanka", anchor: "exhibition management sri lanka" },
   ],
 };
 

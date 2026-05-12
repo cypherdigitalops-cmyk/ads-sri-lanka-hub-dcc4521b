@@ -43,6 +43,7 @@ import { Route as SeoCompanySriLankaRouteImport } from './routes/seo-company-sri
 import { Route as RoadshowSriLankaRouteImport } from './routes/roadshow-sri-lanka'
 import { Route as RoadshowMarketingSriLankaRouteImport } from './routes/roadshow-marketing-sri-lanka'
 import { Route as RetailBrandingSriLankaRouteImport } from './routes/retail-branding-sri-lanka'
+import { Route as ReputationManagementSriLankaRouteImport } from './routes/reputation-management-sri-lanka'
 import { Route as RemarketingSriLankaRouteImport } from './routes/remarketing-sri-lanka'
 import { Route as RadioAdvertisingSriLankaRouteImport } from './routes/radio-advertising-sri-lanka'
 import { Route as ProjectorRentalSriLankaRouteImport } from './routes/projector-rental-sri-lanka'
@@ -63,8 +64,10 @@ import { Route as MotionGraphicsSriLankaRouteImport } from './routes/motion-grap
 import { Route as MobileBillboardSriLankaRouteImport } from './routes/mobile-billboard-sri-lanka'
 import { Route as MediaPlanningSriLankaRouteImport } from './routes/media-planning-sri-lanka'
 import { Route as MediaBuyingSriLankaRouteImport } from './routes/media-buying-sri-lanka'
+import { Route as MarketResearchSriLankaRouteImport } from './routes/market-research-sri-lanka'
 import { Route as MallActivationSriLankaRouteImport } from './routes/mall-activation-sri-lanka'
 import { Route as MagazineAdvertisingSriLankaRouteImport } from './routes/magazine-advertising-sri-lanka'
+import { Route as LoyaltyProgramsSriLankaRouteImport } from './routes/loyalty-programs-sri-lanka'
 import { Route as LogoDesignSriLankaRouteImport } from './routes/logo-design-sri-lanka'
 import { Route as LocalSeoSriLankaRouteImport } from './routes/local-seo-sri-lanka'
 import { Route as LinkedinMarketingSriLankaRouteImport } from './routes/linkedin-marketing-sri-lanka'
@@ -81,6 +84,7 @@ import { Route as InstagramAdsSriLankaRouteImport } from './routes/instagram-ads
 import { Route as InfluencerMarketingSriLankaRouteImport } from './routes/influencer-marketing-sri-lanka'
 import { Route as HoardingAdvertisingSriLankaRouteImport } from './routes/hoarding-advertising-sri-lanka'
 import { Route as GraphicDesignSriLankaRouteImport } from './routes/graphic-design-sri-lanka'
+import { Route as GoogleShoppingSriLankaRouteImport } from './routes/google-shopping-sri-lanka'
 import { Route as GoogleAdsSriLankaRouteImport } from './routes/google-ads-sri-lanka'
 import { Route as GetQuoteRouteImport } from './routes/get-quote'
 import { Route as GeneratorRentalSriLankaRouteImport } from './routes/generator-rental-sri-lanka'
@@ -411,6 +415,12 @@ const RetailBrandingSriLankaRoute = RetailBrandingSriLankaRouteImport.update({
   path: '/retail-branding-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReputationManagementSriLankaRoute =
+  ReputationManagementSriLankaRouteImport.update({
+    id: '/reputation-management-sri-lanka',
+    path: '/reputation-management-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const RemarketingSriLankaRoute = RemarketingSriLankaRouteImport.update({
   id: '/remarketing-sri-lanka',
   path: '/remarketing-sri-lanka',
@@ -521,6 +531,11 @@ const MediaBuyingSriLankaRoute = MediaBuyingSriLankaRouteImport.update({
   path: '/media-buying-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MarketResearchSriLankaRoute = MarketResearchSriLankaRouteImport.update({
+  id: '/market-research-sri-lanka',
+  path: '/market-research-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MallActivationSriLankaRoute = MallActivationSriLankaRouteImport.update({
   id: '/mall-activation-sri-lanka',
   path: '/mall-activation-sri-lanka',
@@ -532,6 +547,11 @@ const MagazineAdvertisingSriLankaRoute =
     path: '/magazine-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const LoyaltyProgramsSriLankaRoute = LoyaltyProgramsSriLankaRouteImport.update({
+  id: '/loyalty-programs-sri-lanka',
+  path: '/loyalty-programs-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LogoDesignSriLankaRoute = LogoDesignSriLankaRouteImport.update({
   id: '/logo-design-sri-lanka',
   path: '/logo-design-sri-lanka',
@@ -617,6 +637,11 @@ const HoardingAdvertisingSriLankaRoute =
 const GraphicDesignSriLankaRoute = GraphicDesignSriLankaRouteImport.update({
   id: '/graphic-design-sri-lanka',
   path: '/graphic-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoogleShoppingSriLankaRoute = GoogleShoppingSriLankaRouteImport.update({
+  id: '/google-shopping-sri-lanka',
+  path: '/google-shopping-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GoogleAdsSriLankaRoute = GoogleAdsSriLankaRouteImport.update({
@@ -1506,6 +1531,7 @@ export interface FileRoutesByFullPath {
   '/generator-rental-sri-lanka': typeof GeneratorRentalSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
   '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
+  '/google-shopping-sri-lanka': typeof GoogleShoppingSriLankaRoute
   '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
   '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
@@ -1522,8 +1548,10 @@ export interface FileRoutesByFullPath {
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
+  '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
+  '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
@@ -1544,6 +1572,7 @@ export interface FileRoutesByFullPath {
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
+  '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
@@ -1726,6 +1755,7 @@ export interface FileRoutesByTo {
   '/generator-rental-sri-lanka': typeof GeneratorRentalSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
   '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
+  '/google-shopping-sri-lanka': typeof GoogleShoppingSriLankaRoute
   '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
   '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
@@ -1742,8 +1772,10 @@ export interface FileRoutesByTo {
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
+  '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
+  '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
@@ -1764,6 +1796,7 @@ export interface FileRoutesByTo {
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
+  '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
@@ -1947,6 +1980,7 @@ export interface FileRoutesById {
   '/generator-rental-sri-lanka': typeof GeneratorRentalSriLankaRoute
   '/get-quote': typeof GetQuoteRoute
   '/google-ads-sri-lanka': typeof GoogleAdsSriLankaRoute
+  '/google-shopping-sri-lanka': typeof GoogleShoppingSriLankaRoute
   '/graphic-design-sri-lanka': typeof GraphicDesignSriLankaRoute
   '/hoarding-advertising-sri-lanka': typeof HoardingAdvertisingSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
@@ -1963,8 +1997,10 @@ export interface FileRoutesById {
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
+  '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
+  '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
@@ -1985,6 +2021,7 @@ export interface FileRoutesById {
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
+  '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
   '/roadshow-marketing-sri-lanka': typeof RoadshowMarketingSriLankaRoute
   '/roadshow-sri-lanka': typeof RoadshowSriLankaRoute
@@ -2169,6 +2206,7 @@ export interface FileRouteTypes {
     | '/generator-rental-sri-lanka'
     | '/get-quote'
     | '/google-ads-sri-lanka'
+    | '/google-shopping-sri-lanka'
     | '/graphic-design-sri-lanka'
     | '/hoarding-advertising-sri-lanka'
     | '/influencer-marketing-sri-lanka'
@@ -2185,8 +2223,10 @@ export interface FileRouteTypes {
     | '/linkedin-marketing-sri-lanka'
     | '/local-seo-sri-lanka'
     | '/logo-design-sri-lanka'
+    | '/loyalty-programs-sri-lanka'
     | '/magazine-advertising-sri-lanka'
     | '/mall-activation-sri-lanka'
+    | '/market-research-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
     | '/mobile-billboard-sri-lanka'
@@ -2207,6 +2247,7 @@ export interface FileRouteTypes {
     | '/projector-rental-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
+    | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
     | '/roadshow-sri-lanka'
@@ -2389,6 +2430,7 @@ export interface FileRouteTypes {
     | '/generator-rental-sri-lanka'
     | '/get-quote'
     | '/google-ads-sri-lanka'
+    | '/google-shopping-sri-lanka'
     | '/graphic-design-sri-lanka'
     | '/hoarding-advertising-sri-lanka'
     | '/influencer-marketing-sri-lanka'
@@ -2405,8 +2447,10 @@ export interface FileRouteTypes {
     | '/linkedin-marketing-sri-lanka'
     | '/local-seo-sri-lanka'
     | '/logo-design-sri-lanka'
+    | '/loyalty-programs-sri-lanka'
     | '/magazine-advertising-sri-lanka'
     | '/mall-activation-sri-lanka'
+    | '/market-research-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
     | '/mobile-billboard-sri-lanka'
@@ -2427,6 +2471,7 @@ export interface FileRouteTypes {
     | '/projector-rental-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
+    | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
     | '/roadshow-sri-lanka'
@@ -2609,6 +2654,7 @@ export interface FileRouteTypes {
     | '/generator-rental-sri-lanka'
     | '/get-quote'
     | '/google-ads-sri-lanka'
+    | '/google-shopping-sri-lanka'
     | '/graphic-design-sri-lanka'
     | '/hoarding-advertising-sri-lanka'
     | '/influencer-marketing-sri-lanka'
@@ -2625,8 +2671,10 @@ export interface FileRouteTypes {
     | '/linkedin-marketing-sri-lanka'
     | '/local-seo-sri-lanka'
     | '/logo-design-sri-lanka'
+    | '/loyalty-programs-sri-lanka'
     | '/magazine-advertising-sri-lanka'
     | '/mall-activation-sri-lanka'
+    | '/market-research-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
     | '/mobile-billboard-sri-lanka'
@@ -2647,6 +2695,7 @@ export interface FileRouteTypes {
     | '/projector-rental-sri-lanka'
     | '/radio-advertising-sri-lanka'
     | '/remarketing-sri-lanka'
+    | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
     | '/roadshow-marketing-sri-lanka'
     | '/roadshow-sri-lanka'
@@ -2830,6 +2879,7 @@ export interface RootRouteChildren {
   GeneratorRentalSriLankaRoute: typeof GeneratorRentalSriLankaRoute
   GetQuoteRoute: typeof GetQuoteRoute
   GoogleAdsSriLankaRoute: typeof GoogleAdsSriLankaRoute
+  GoogleShoppingSriLankaRoute: typeof GoogleShoppingSriLankaRoute
   GraphicDesignSriLankaRoute: typeof GraphicDesignSriLankaRoute
   HoardingAdvertisingSriLankaRoute: typeof HoardingAdvertisingSriLankaRoute
   InfluencerMarketingSriLankaRoute: typeof InfluencerMarketingSriLankaRoute
@@ -2846,8 +2896,10 @@ export interface RootRouteChildren {
   LinkedinMarketingSriLankaRoute: typeof LinkedinMarketingSriLankaRoute
   LocalSeoSriLankaRoute: typeof LocalSeoSriLankaRoute
   LogoDesignSriLankaRoute: typeof LogoDesignSriLankaRoute
+  LoyaltyProgramsSriLankaRoute: typeof LoyaltyProgramsSriLankaRoute
   MagazineAdvertisingSriLankaRoute: typeof MagazineAdvertisingSriLankaRoute
   MallActivationSriLankaRoute: typeof MallActivationSriLankaRoute
+  MarketResearchSriLankaRoute: typeof MarketResearchSriLankaRoute
   MediaBuyingSriLankaRoute: typeof MediaBuyingSriLankaRoute
   MediaPlanningSriLankaRoute: typeof MediaPlanningSriLankaRoute
   MobileBillboardSriLankaRoute: typeof MobileBillboardSriLankaRoute
@@ -2868,6 +2920,7 @@ export interface RootRouteChildren {
   ProjectorRentalSriLankaRoute: typeof ProjectorRentalSriLankaRoute
   RadioAdvertisingSriLankaRoute: typeof RadioAdvertisingSriLankaRoute
   RemarketingSriLankaRoute: typeof RemarketingSriLankaRoute
+  ReputationManagementSriLankaRoute: typeof ReputationManagementSriLankaRoute
   RetailBrandingSriLankaRoute: typeof RetailBrandingSriLankaRoute
   RoadshowMarketingSriLankaRoute: typeof RoadshowMarketingSriLankaRoute
   RoadshowSriLankaRoute: typeof RoadshowSriLankaRoute
@@ -3237,6 +3290,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RetailBrandingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/reputation-management-sri-lanka': {
+      id: '/reputation-management-sri-lanka'
+      path: '/reputation-management-sri-lanka'
+      fullPath: '/reputation-management-sri-lanka'
+      preLoaderRoute: typeof ReputationManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/remarketing-sri-lanka': {
       id: '/remarketing-sri-lanka'
       path: '/remarketing-sri-lanka'
@@ -3377,6 +3437,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MediaBuyingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/market-research-sri-lanka': {
+      id: '/market-research-sri-lanka'
+      path: '/market-research-sri-lanka'
+      fullPath: '/market-research-sri-lanka'
+      preLoaderRoute: typeof MarketResearchSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mall-activation-sri-lanka': {
       id: '/mall-activation-sri-lanka'
       path: '/mall-activation-sri-lanka'
@@ -3389,6 +3456,13 @@ declare module '@tanstack/react-router' {
       path: '/magazine-advertising-sri-lanka'
       fullPath: '/magazine-advertising-sri-lanka'
       preLoaderRoute: typeof MagazineAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/loyalty-programs-sri-lanka': {
+      id: '/loyalty-programs-sri-lanka'
+      path: '/loyalty-programs-sri-lanka'
+      fullPath: '/loyalty-programs-sri-lanka'
+      preLoaderRoute: typeof LoyaltyProgramsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/logo-design-sri-lanka': {
@@ -3501,6 +3575,13 @@ declare module '@tanstack/react-router' {
       path: '/graphic-design-sri-lanka'
       fullPath: '/graphic-design-sri-lanka'
       preLoaderRoute: typeof GraphicDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/google-shopping-sri-lanka': {
+      id: '/google-shopping-sri-lanka'
+      path: '/google-shopping-sri-lanka'
+      fullPath: '/google-shopping-sri-lanka'
+      preLoaderRoute: typeof GoogleShoppingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/google-ads-sri-lanka': {
@@ -4582,6 +4663,7 @@ const rootRouteChildren: RootRouteChildren = {
   GeneratorRentalSriLankaRoute: GeneratorRentalSriLankaRoute,
   GetQuoteRoute: GetQuoteRoute,
   GoogleAdsSriLankaRoute: GoogleAdsSriLankaRoute,
+  GoogleShoppingSriLankaRoute: GoogleShoppingSriLankaRoute,
   GraphicDesignSriLankaRoute: GraphicDesignSriLankaRoute,
   HoardingAdvertisingSriLankaRoute: HoardingAdvertisingSriLankaRoute,
   InfluencerMarketingSriLankaRoute: InfluencerMarketingSriLankaRoute,
@@ -4598,8 +4680,10 @@ const rootRouteChildren: RootRouteChildren = {
   LinkedinMarketingSriLankaRoute: LinkedinMarketingSriLankaRoute,
   LocalSeoSriLankaRoute: LocalSeoSriLankaRoute,
   LogoDesignSriLankaRoute: LogoDesignSriLankaRoute,
+  LoyaltyProgramsSriLankaRoute: LoyaltyProgramsSriLankaRoute,
   MagazineAdvertisingSriLankaRoute: MagazineAdvertisingSriLankaRoute,
   MallActivationSriLankaRoute: MallActivationSriLankaRoute,
+  MarketResearchSriLankaRoute: MarketResearchSriLankaRoute,
   MediaBuyingSriLankaRoute: MediaBuyingSriLankaRoute,
   MediaPlanningSriLankaRoute: MediaPlanningSriLankaRoute,
   MobileBillboardSriLankaRoute: MobileBillboardSriLankaRoute,
@@ -4620,6 +4704,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectorRentalSriLankaRoute: ProjectorRentalSriLankaRoute,
   RadioAdvertisingSriLankaRoute: RadioAdvertisingSriLankaRoute,
   RemarketingSriLankaRoute: RemarketingSriLankaRoute,
+  ReputationManagementSriLankaRoute: ReputationManagementSriLankaRoute,
   RetailBrandingSriLankaRoute: RetailBrandingSriLankaRoute,
   RoadshowMarketingSriLankaRoute: RoadshowMarketingSriLankaRoute,
   RoadshowSriLankaRoute: RoadshowSriLankaRoute,

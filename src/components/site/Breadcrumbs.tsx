@@ -8,12 +8,18 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((c, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: c.label,
-      ...(c.to ? { item: `${SITE.url}${c.to.startsWith("/") ? c.to : `/${c.to}`}` } : {}),
-    })),
+    itemListElement: items.map((c, i) => {
+      const path = c.to ?? (i === 0 ? "/" : "");
+      const item = path
+        ? `${SITE.url}${path.startsWith("/") ? path : `/${path}`}`
+        : SITE.url;
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name: c.label,
+        item,
+      };
+    }),
   };
   return (
     <nav aria-label="Breadcrumb" className="text-sm text-white/80">

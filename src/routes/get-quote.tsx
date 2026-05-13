@@ -30,8 +30,15 @@ function GetQuote() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
-    const body = `Name: ${f.get("name")}%0DPhone: ${f.get("phone")}%0DEmail: ${f.get("email")}%0DService: ${f.get("service")}%0D%0D${f.get("message")}`;
-    window.location.href = `mailto:${SITE.email}?subject=Advertising Inquiry&body=${body}`;
+    const text =
+      `New advertising inquiry from advertisingsrilanka.lk\n\n` +
+      `Name: ${f.get("name")}\n` +
+      `Phone: ${f.get("phone")}\n` +
+      `Email: ${f.get("email")}\n` +
+      `Service: ${f.get("service")}\n\n` +
+      `${f.get("message")}`;
+    const waUrl = `${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, "_blank", "noopener");
     setSubmitted(true);
   };
   return (
@@ -95,10 +102,10 @@ function GetQuote() {
                 <label className="text-sm font-medium">Tell us about your business & goals</label>
                 <textarea name="message" rows={5} required className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
               </div>
-              <button type="submit" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)]">
-                Send my inquiry
+              <button type="submit" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-7 py-3 text-sm font-semibold text-[var(--whatsapp-foreground)] shadow-[var(--shadow-card)]">
+                <MessageCircle className="h-4 w-4" /> Send via WhatsApp
               </button>
-              <p className="text-xs text-muted-foreground">By submitting, you agree to be contacted by our advertising team.</p>
+              <p className="text-xs text-muted-foreground">Opens WhatsApp with your details pre-filled — just hit send.</p>
             </div>
           )}
         </form>

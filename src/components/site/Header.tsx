@@ -26,10 +26,9 @@ export function SiteHeader() {
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
           <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
           <Link to="/pr-communications-sri-lanka" className="hover:text-primary">PR</Link>
-          <Link to="/contact" className="hover:text-primary">Contact</Link>
         </nav>
         <div className="flex items-center gap-2">
-          <div className="hidden md:block w-56 xl:w-72">
+          <div className="block w-40 sm:w-56 xl:w-72">
             <GlobalSearch compact />
           </div>
           <a

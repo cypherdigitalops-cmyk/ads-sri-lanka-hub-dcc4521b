@@ -1,9 +1,9 @@
 import { createFileRoute, useSearch } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CheckCircle2, Mail, MessageCircle, Phone } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { SITE } from "@/data/site";
+import { CATEGORIES, SITE, titleCase } from "@/data/site";
 
 const TITLE = "Get a Free Advertising Quote in Sri Lanka | advertisingsrilanka.lk";
 const DESC = "Request a custom advertising plan and free quote for your business in Sri Lanka. ATL, BTL, digital, SEO, outdoor & more. Call 0771437707.";
@@ -24,12 +24,77 @@ export const Route = createFileRoute("/get-quote")({
   component: GetQuote,
 });
 
+const SERVICE_OPTIONS = [
+  "ATL Advertising (TV, Radio, Press)",
+  "BTL & Activations",
+  "Digital Marketing & Google Ads",
+  "SEO Services",
+  "Social Media Marketing",
+  "Outdoor / Billboards / LED",
+  "Branding & Creative",
+  "Web Design & Development",
+  "Video Production",
+  "Email / SMS / WhatsApp",
+  "Not sure — recommend the best mix",
+];
+
+/** Look up the service name for any /<slug> on this site. */
+function lookupServiceFromPath(pathname: string): string | undefined {
+  const slug = pathname.replace(/^\/+|\/+$/g, "").split("/")[0];
+  if (!slug) return undefined;
+  for (const cat of CATEGORIES) {
+    if (cat.slug === slug) return titleCase(cat.hubKeyword);
+    const svc = cat.services.find((s) => s.slug === slug);
+    if (svc) return titleCase(svc.keyword);
+  }
+  return undefined;
+}
+
+const LS_KEY = "asl_lead_v1";
+type SavedLead = { name?: string; phone?: string; email?: string };
+
 function GetQuote() {
   const [submitted, setSubmitted] = useState(false);
-  const { service } = useSearch({ from: "/get-quote" });
+  const { service: searchService } = useSearch({ from: "/get-quote" });
+  const [referrerService, setReferrerService] = useState<string | undefined>();
+  const [saved, setSaved] = useState<SavedLead>({});
+
+  // Detect the service from the previous page on the same site,
+  // and restore any previously entered contact details.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (!searchService) {
+      try {
+        const ref = document.referrer ? new URL(document.referrer) : null;
+        if (ref && ref.host === window.location.host) {
+          const detected = lookupServiceFromPath(ref.pathname);
+          if (detected) setReferrerService(detected);
+        }
+      } catch { /* ignore */ }
+    }
+    try {
+      const raw = localStorage.getItem(LS_KEY);
+      if (raw) setSaved(JSON.parse(raw));
+    } catch { /* ignore */ }
+  }, [searchService]);
+
+  const service = searchService ?? referrerService;
+
+  const serviceOptions = useMemo(() => {
+    if (!service || SERVICE_OPTIONS.includes(service)) return SERVICE_OPTIONS;
+    return [service, ...SERVICE_OPTIONS];
+  }, [service]);
+
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify({
+        name: String(f.get("name") ?? ""),
+        phone: String(f.get("phone") ?? ""),
+        email: String(f.get("email") ?? ""),
+      }));
+    } catch { /* ignore */ }
     const text =
       `New advertising inquiry from advertisingsrilanka.lk\n\n` +
       `Name: ${f.get("name")}\n` +
@@ -69,33 +134,32 @@ function GetQuote() {
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <label className="text-sm font-medium">Your name</label>
-                <input required name="name" className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
+                <input required name="name" defaultValue={saved.name ?? ""} className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
               </div>
               <div className="grid gap-2 sm:grid-cols-2">
                 <div className="grid gap-2">
                   <label className="text-sm font-medium">Phone</label>
-                  <input required name="phone" type="tel" className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
+                  <input required name="phone" type="tel" defaultValue={saved.phone ?? ""} className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
                 </div>
                 <div className="grid gap-2">
                   <label className="text-sm font-medium">Email</label>
-                  <input required name="email" type="email" className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
+                  <input required name="email" type="email" defaultValue={saved.email ?? ""} className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary" />
                 </div>
               </div>
               <div className="grid gap-2">
-                <label className="text-sm font-medium">Interested in</label>
-                <select name="service" defaultValue={service ?? undefined} className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary">
-                  {service ? <option value={service}>{service}</option> : null}
-                  <option>ATL Advertising (TV, Radio, Press)</option>
-                  <option>BTL & Activations</option>
-                  <option>Digital Marketing & Google Ads</option>
-                  <option>SEO Services</option>
-                  <option>Social Media Marketing</option>
-                  <option>Outdoor / Billboards / LED</option>
-                  <option>Branding & Creative</option>
-                  <option>Web Design & Development</option>
-                  <option>Video Production</option>
-                  <option>Email / SMS / WhatsApp</option>
-                  <option>Not sure — recommend the best mix</option>
+                <label className="text-sm font-medium">
+                  Interested in
+                  {service ? <span className="ml-2 rounded-full bg-accent/15 px-2 py-0.5 text-[11px] font-semibold text-accent">auto-detected</span> : null}
+                </label>
+                <select
+                  key={service ?? "none"}
+                  name="service"
+                  defaultValue={service ?? undefined}
+                  className="rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary"
+                >
+                  {serviceOptions.map((opt) => (
+                    <option key={opt} value={opt}>{opt}</option>
+                  ))}
                 </select>
               </div>
               <div className="grid gap-2">

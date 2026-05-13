@@ -4,6 +4,7 @@ import { Menu, Phone, X } from "lucide-react";
 import { SITE } from "@/data/site";
 import { CATEGORIES } from "@/data/site";
 import logo from "@/assets/logo.png";
+import { GlobalSearch } from "./GlobalSearch";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,7 @@ export function SiteHeader() {
           <img src={logo} alt="Advertising Sri Lanka" className="h-8 w-auto md:h-10" />
           <span className="sr-only">Advertising Sri Lanka</span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">
+        <nav className="hidden items-center gap-5 text-sm font-medium lg:flex">
           <Link to="/services" className="hover:text-primary">All Services</Link>
           <Link to="/event-management-sri-lanka" className="hover:text-primary">Events</Link>
           <Link to="/atl-advertising-sri-lanka" className="hover:text-primary">ATL</Link>
@@ -28,6 +29,9 @@ export function SiteHeader() {
           <Link to="/contact" className="hover:text-primary">Contact</Link>
         </nav>
         <div className="flex items-center gap-2">
+          <div className="hidden md:block w-56 xl:w-72">
+            <GlobalSearch compact />
+          </div>
           <a
             href={`tel:${SITE.phone}`}
             className="hidden items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-4 py-2 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90 sm:inline-flex"
@@ -48,6 +52,9 @@ export function SiteHeader() {
       {open ? (
         <div className="border-t border-border bg-background lg:hidden">
           <nav className="mx-auto grid max-w-7xl gap-1 px-4 py-3 text-sm">
+            <div className="px-1 pb-2 md:hidden">
+              <GlobalSearch compact />
+            </div>
             <Link to="/services" onClick={() => setOpen(false)} className="rounded px-2 py-2 font-semibold hover:bg-muted">
               All Services
             </Link>

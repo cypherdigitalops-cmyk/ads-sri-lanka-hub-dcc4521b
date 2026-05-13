@@ -21,14 +21,13 @@ export function SiteHeader() {
           <Link to="/atl-advertising-sri-lanka" className="hover:text-primary">ATL</Link>
           <Link to="/btl-advertising-sri-lanka" className="hover:text-primary">BTL</Link>
           <Link to="/digital-marketing-sri-lanka" className="hover:text-primary">Digital</Link>
-          <Link to="/seo-services-sri-lanka" className="hover:text-primary">SEO</Link>
           <Link to="/social-media-marketing-sri-lanka" className="hover:text-primary">Social</Link>
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
           <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
           <Link to="/pr-communications-sri-lanka" className="hover:text-primary">PR</Link>
         </nav>
         <div className="flex items-center gap-2">
-          <div className="block w-40 sm:w-56 xl:w-72">
+          <div className="block w-48 sm:w-64 md:w-72 xl:w-80">
             <GlobalSearch compact />
           </div>
           <a

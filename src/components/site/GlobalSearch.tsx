@@ -66,7 +66,7 @@ export function GlobalSearch({ compact = false }: { compact?: boolean }) {
         onKeyDown={onKey}
         placeholder="Search 180+ services..."
         aria-label="Search services"
-        className="h-9 w-full rounded-full border border-border bg-background pl-9 pr-8 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+        className="h-10 w-full rounded-full border-2 border-primary/40 bg-background pl-9 pr-8 text-sm font-medium shadow-sm outline-none placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/30"
       />
       {q && (
         <button

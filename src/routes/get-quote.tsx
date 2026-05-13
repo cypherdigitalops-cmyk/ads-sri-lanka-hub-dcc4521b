@@ -63,7 +63,7 @@ function GetQuote() {
             <div className="flex flex-col items-center gap-3 py-10 text-center">
               <CheckCircle2 className="h-12 w-12 text-accent" />
               <div className="text-xl font-bold">Thanks! Your inquiry is on the way.</div>
-              <p className="text-sm text-muted-foreground">If your email client didn't open, please call us on {SITE.phone}.</p>
+              <p className="text-sm text-muted-foreground">If WhatsApp didn't open, please call us on {SITE.phone}.</p>
             </div>
           ) : (
             <div className="grid gap-4">

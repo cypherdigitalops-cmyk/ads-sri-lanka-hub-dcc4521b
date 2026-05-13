@@ -15,7 +15,6 @@ export function SiteFooter() {
           <div className="mt-5 space-y-2 text-sm">
             <a href={`tel:${SITE.phone}`} className="flex items-center gap-2 hover:text-accent"><Phone className="h-4 w-4" /> {SITE.phone}</a>
             <a href={SITE.whatsapp} target="_blank" rel="noopener" className="flex items-center gap-2 hover:text-accent"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
-            <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 hover:text-accent"><Mail className="h-4 w-4" /> {SITE.email}</a>
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Colombo, Sri Lanka</div>
           </div>
         </div>

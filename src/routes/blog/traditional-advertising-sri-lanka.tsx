@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/traditional-advertising-sri-lanka")(
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/traditional-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="traditional advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="traditional advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising","anchor":"ATL advertising Sri Lanka"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising","anchor":"outdoor advertising Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)","anchor":"advertising Sri Lanka"}]} /></PageShell>),
 });

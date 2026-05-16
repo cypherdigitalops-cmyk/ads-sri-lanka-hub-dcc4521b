@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/video-production-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/video-production-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="video production sri lanka" extraLinks={[{"href":"/video-production-sri-lanka","label":"Video Production"},{"href":"/branding-sri-lanka","label":"Branding & Creative"},{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="video production sri lanka" extraLinks={[{"href":"/video-production-sri-lanka","label":"Video Production","anchor":"video production Sri Lanka"},{"href":"/branding-sri-lanka","label":"Branding & Creative","anchor":"branding Sri Lanka"},{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing","anchor":"digital marketing Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)","anchor":"advertising Sri Lanka"}]} /></PageShell>),
 });

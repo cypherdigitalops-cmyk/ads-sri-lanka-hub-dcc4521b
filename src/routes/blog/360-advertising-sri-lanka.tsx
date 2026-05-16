@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/360-advertising-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/360-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="360 advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising"},{"href":"/ttl-advertising-sri-lanka","label":"TTL & Integrated Marketing"},{"href":"/","label":"Advertising Sri Lanka (Home)"},{"href":"/360-marketing-campaigns-sri-lanka","label":"360 Marketing Campaigns"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="360 advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising","anchor":"ATL advertising Sri Lanka"},{"href":"/ttl-advertising-sri-lanka","label":"TTL & Integrated Marketing","anchor":"integrated advertising Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)","anchor":"advertising Sri Lanka"},{"href":"/360-marketing-campaigns-sri-lanka","label":"360 Marketing Campaigns","anchor":"360 marketing campaigns Sri Lanka"}]} /></PageShell>),
 });

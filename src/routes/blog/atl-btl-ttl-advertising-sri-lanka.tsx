@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/atl-btl-ttl-advertising-sri-lanka")(
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/atl-btl-ttl-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="atl btl ttl advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising"},{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising"},{"href":"/ttl-advertising-sri-lanka","label":"TTL & Integrated Marketing"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="atl btl ttl advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising","anchor":"ATL advertising Sri Lanka"},{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising","anchor":"BTL advertising Sri Lanka"},{"href":"/ttl-advertising-sri-lanka","label":"TTL & Integrated Marketing","anchor":"integrated advertising Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)","anchor":"advertising Sri Lanka"}]} /></PageShell>),
 });

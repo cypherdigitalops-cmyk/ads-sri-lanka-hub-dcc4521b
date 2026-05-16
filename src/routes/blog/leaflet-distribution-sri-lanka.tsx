@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/leaflet-distribution-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/leaflet-distribution-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="leaflet distribution sri lanka" extraLinks={[{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising"},{"href":"/field-marketing-sri-lanka","label":"Field Marketing"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="leaflet distribution sri lanka" extraLinks={[{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising","anchor":"BTL advertising Sri Lanka"},{"href":"/field-marketing-sri-lanka","label":"Field Marketing","anchor":"field marketing Sri Lanka"}]} /></PageShell>),
 });

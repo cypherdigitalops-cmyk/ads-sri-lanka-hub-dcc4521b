@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/national-advertising-campaigns-sri-l
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/national-advertising-campaigns-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="national advertising campaigns sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising"},{"href":"/media-buying-sri-lanka","label":"Media Buying"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="national advertising campaigns sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising","anchor":"ATL advertising Sri Lanka"},{"href":"/media-buying-sri-lanka","label":"Media Buying","anchor":"media buying Sri Lanka"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising","anchor":"outdoor advertising Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)","anchor":"advertising Sri Lanka"}]} /></PageShell>),
 });

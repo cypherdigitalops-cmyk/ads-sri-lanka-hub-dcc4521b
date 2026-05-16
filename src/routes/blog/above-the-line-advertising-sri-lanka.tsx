@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/above-the-line-advertising-sri-lanka
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/above-the-line-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="above the line advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising"},{"href":"/tv-advertising-sri-lanka","label":"TV Advertising"},{"href":"/radio-advertising-sri-lanka","label":"Radio Advertising"},{"href":"/newspaper-advertising-sri-lanka","label":"Newspaper Advertising"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="above the line advertising sri lanka" extraLinks={[{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising","anchor":"ATL advertising Sri Lanka"},{"href":"/tv-advertising-sri-lanka","label":"TV Advertising","anchor":"TV advertising Sri Lanka"},{"href":"/radio-advertising-sri-lanka","label":"Radio Advertising","anchor":"radio advertising Sri Lanka"},{"href":"/newspaper-advertising-sri-lanka","label":"Newspaper Advertising","anchor":"newspaper advertising Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)","anchor":"advertising Sri Lanka"}]} /></PageShell>),
 });

@@ -53,6 +53,15 @@ function linkifyLedRental(text: string): React.ReactNode {
 }
 
 function applyLinks(text: string): React.ReactNode {
+  const extra = linkifyExtra(text);
+  if (typeof extra !== "string") {
+    return (extra as React.ReactNode[]).map((n, i) =>
+      typeof n === "string" ? <span key={`e${i}`}>{applyLinksInner(n)}</span> : n,
+    );
+  }
+  return applyLinksInner(extra);
+}
+function applyLinksInner(text: string): React.ReactNode {
   const led = linkifyLedRental(text);
   if (typeof led === "string") return linkifyAdSL(led);
   // led replaced part of text; linkifyAdSL only on the unlinked string segments
@@ -62,6 +71,37 @@ function applyLinks(text: string): React.ReactNode {
     );
   }
   return led;
+}
+
+type ExtraLink = { href: string; label: string; anchor?: string };
+let __extraLinks: ExtraLink[] = [];
+const __extraUsed = new Set<string>();
+function setExtraLinks(links: ExtraLink[]) {
+  __extraLinks = links.filter((l) => l.anchor);
+  __extraUsed.clear();
+}
+function escapeRe(s: string) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+function linkifyExtra(text: string): React.ReactNode {
+  if (!text || !__extraLinks.length) return text;
+  for (const l of __extraLinks) {
+    if (__extraUsed.has(l.href)) continue;
+    const re = new RegExp(`(${escapeRe(l.anchor!).replace(/\\ /g, "\\s+")})`, "i");
+    const m = re.exec(text);
+    if (!m) continue;
+    __extraUsed.add(l.href);
+    const before = text.slice(0, m.index);
+    const after = text.slice(m.index + m[0].length);
+    const linkNode = (
+      <Link key={`ex-${l.href}-${m.index}`} to={l.href as never} className="text-primary underline-offset-2 hover:underline">
+        {m[0]}
+      </Link>
+    );
+    // Recurse on the remaining "after" segment so multiple extras can link in same paragraph
+    const tail = linkifyExtra(after);
+    const tailNodes = typeof tail === "string" ? [tail] : (tail as React.ReactNode[]);
+    return [before, linkNode, ...tailNodes];
+  }
+  return text;
 }
 function linkifyAdSL(text: string): React.ReactNode {
   if (!text) return text;

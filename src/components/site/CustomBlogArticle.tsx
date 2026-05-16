@@ -18,6 +18,24 @@ export type FAQ = { q: string; a: string };
 
 export type RelatedLink = { href: string; label: string };
 
+export type PrimaryAnchor = {
+  href: string;
+  regex: RegExp;
+  fallbackText: string;
+  ctaLabel: string;
+  ctaHeadline?: string;
+  ctaService?: string;
+};
+
+const DEFAULT_ANCHOR: PrimaryAnchor = {
+  href: "/led-screen-rental-sri-lanka",
+  regex: /(LED\s+screen\s+rent(?:al)?s?)/i,
+  fallbackText: "LED screen rent",
+  ctaLabel: "See LED screen rent packages",
+  ctaHeadline: "Planning an event? Get a same-day quote for LED screen rent",
+  ctaService: "LED Screen Rental Sri Lanka",
+};
+
 export type CustomBlogProps = {
   slug: string; // e.g. blog/led-screen-rent-colombo-guide
   title: string;
@@ -29,21 +47,20 @@ export type CustomBlogProps = {
   blocks: ContentBlock[];
   faqs?: FAQ[];
   related?: RelatedLink[];
+  primaryAnchor?: PrimaryAnchor;
 };
 
-const TARGET_ANCHOR = "LED screen rent";
-const TARGET_HREF = "/led-screen-rental-sri-lanka";
-
 /**
- * Linkifies the FIRST occurrence of "LED screen rent" (and close variants)
- * in a string into a link to the LED screen rental service page. Used to
- * guarantee each paragraph carries a clean keyword anchor to the target page
- * without manual HTML in every article file.
+ * Linkifies the FIRST occurrence of the configured anchor keyword in a string
+ * into a link to the target service page.
  */
-const ANCHOR_RE = /(LED\s+screen\s+rent(?:al)?s?)/i;
-function withAnchor(text: string, used: { value: boolean }): React.ReactNode {
+function withAnchor(
+  text: string,
+  used: { value: boolean },
+  anchor: PrimaryAnchor,
+): React.ReactNode {
   if (used.value) return text;
-  const m = ANCHOR_RE.exec(text);
+  const m = anchor.regex.exec(text);
   if (!m) return text;
   used.value = true;
   const before = text.slice(0, m.index);
@@ -51,7 +68,7 @@ function withAnchor(text: string, used: { value: boolean }): React.ReactNode {
   return (
     <>
       {before}
-      <Link to={TARGET_HREF} className="font-semibold text-primary underline-offset-2 hover:underline">
+      <Link to={anchor.href as never} className="font-semibold text-primary underline-offset-2 hover:underline">
         {m[0]}
       </Link>
       {after}
@@ -59,7 +76,7 @@ function withAnchor(text: string, used: { value: boolean }): React.ReactNode {
   );
 }
 
-function Blocks({ blocks }: { blocks: ContentBlock[] }) {
+function Blocks({ blocks, anchor }: { blocks: ContentBlock[]; anchor: PrimaryAnchor }) {
   // We let the first matching paragraph become the keyword anchor.
   const used = { value: false };
   return (
@@ -80,7 +97,7 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         if (b.type === "p")
           return (
             <p key={i} className="text-muted-foreground leading-relaxed">
-              {withAnchor(b.text, used)}
+              {withAnchor(b.text, used, anchor)}
             </p>
           );
         if (b.type === "callout")
@@ -91,7 +108,7 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
             >
               <div className="flex items-start gap-3">
                 <Sparkles className="mt-0.5 h-4 w-4 flex-none text-primary" />
-                <p className="leading-relaxed">{withAnchor(b.text, used)}</p>
+                <p className="leading-relaxed">{withAnchor(b.text, used, anchor)}</p>
               </div>
             </div>
           );
@@ -99,7 +116,7 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
           return (
             <ul key={i} className="ml-5 list-disc space-y-2 text-muted-foreground">
               {b.items.map((it, j) => (
-                <li key={j}>{withAnchor(it, used)}</li>
+                <li key={j}>{withAnchor(it, used, anchor)}</li>
               ))}
             </ul>
           );
@@ -107,7 +124,7 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
           return (
             <ol key={i} className="ml-5 list-decimal space-y-2 text-muted-foreground">
               {b.items.map((it, j) => (
-                <li key={j}>{withAnchor(it, used)}</li>
+                <li key={j}>{withAnchor(it, used, anchor)}</li>
               ))}
             </ol>
           );
@@ -129,7 +146,7 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
                     <tr key={j} className="border-t border-border">
                       {r.map((c, k) => (
                         <td key={k} className="px-3 py-2 align-top text-muted-foreground">
-                          {withAnchor(c, used)}
+                          {withAnchor(c, used, anchor)}
                         </td>
                       ))}
                     </tr>
@@ -147,10 +164,10 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         <p className="text-muted-foreground leading-relaxed">
           See our full pricing, sizes and booking process on the{" "}
           <Link
-            to={TARGET_HREF}
+            to={anchor.href as never}
             className="font-semibold text-primary underline-offset-2 hover:underline"
           >
-            {TARGET_ANCHOR}
+            {anchor.fallbackText}
           </Link>{" "}
           service page.
         </p>
@@ -200,7 +217,9 @@ export function CustomBlogArticle({
   blocks,
   faqs = [],
   related = [],
+  primaryAnchor,
 }: CustomBlogProps) {
+  const anchor = primaryAnchor ?? DEFAULT_ANCHOR;
   const url = `${SITE.url}/${slug}`;
   const articleJsonLd = {
     "@context": "https://schema.org",

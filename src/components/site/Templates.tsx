@@ -528,6 +528,22 @@ export function BlogArticleTemplate({
         ]}
       />
       <article className="mx-auto max-w-3xl px-4 py-12">
+        {extraLinks && extraLinks.length ? (
+          <div className="mb-8 rounded-lg border border-border bg-muted/30 p-5">
+            <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Related on this site
+            </div>
+            <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              {extraLinks.map((l) => (
+                <li key={l.href}>
+                  <Link to={l.href as never} className="text-primary underline-offset-4 hover:underline">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
         <LongFormBlocks blocks={article.blocks} />
       </article>
       <div className="mx-auto max-w-7xl px-4">

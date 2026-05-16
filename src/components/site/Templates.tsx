@@ -281,7 +281,7 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 
 /* ========== CATEGORY HUB ========== */
 export function CategoryHubTemplate({ category }: { category: Category }) {
-  resetHomeAnchor();
+  resetHomeAnchor(category.slug);
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
   const serviceJsonLd = {
@@ -382,10 +382,10 @@ export function ServicePageTemplate({
   category: Category;
   keyword: string;
 }) {
-  resetHomeAnchor();
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
+  resetHomeAnchor(slug);
   const overrideFaqs = getPageFaqs(slug);
   const faqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
   const serviceJsonLd = {
@@ -488,10 +488,10 @@ export function BlogArticleTemplate({
   category: Category;
   keyword: string;
 }) {
-  resetHomeAnchor();
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";
+  resetHomeAnchor(`blog/${slug}`);
   const url = `${SITE.url}/blog/${slug}`;
   const articleJsonLd = {
     "@context": "https://schema.org",

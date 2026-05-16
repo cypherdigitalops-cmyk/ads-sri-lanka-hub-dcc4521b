@@ -120,11 +120,7 @@ export const Route = createFileRoute("/blog/outdoor-led-screen-rent-sri-lanka")(
             a: "IP65-rated panels keep running through normal rain — the issue is wind. Above the supplier's safe-wind threshold (usually 40–45 km/h), the screen must be dropped to ground level immediately. Always have this protocol agreed before the event.",
           },
         ]}
-        related={[
-          { href: "/blog/how-much-does-led-screen-rent-cost-sri-lanka", label: "How much does LED screen rent cost in Sri Lanka? 2025 breakdown" },
-          { href: "/blog/pixel-pitch-explained-led-screen-rent-sri-lanka", label: "Pixel pitch explained — choosing the right LED screen" },
-          { href: "/blog/event-stage-setup-av-package-sri-lanka", label: "What's in a full event stage & AV package in Sri Lanka?" },
-        ]}
+        related={[{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"How much does LED screen rent cost in Sri Lanka? 2025 breakdown"},{"href":"/blog/pixel-pitch-explained-led-screen-rent-sri-lanka","label":"Pixel pitch explained — choosing the right LED screen"},{"href":"/blog/event-stage-setup-av-package-sri-lanka","label":"What's in a full event stage & AV package in Sri Lanka?"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
       />
     </PageShell>
   ),

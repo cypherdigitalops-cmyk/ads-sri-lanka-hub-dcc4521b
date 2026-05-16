@@ -140,11 +140,7 @@ export const Route = createFileRoute("/blog/event-stage-setup-av-package-sri-lan
             a: "Sometimes — most Sri Lankan AV suppliers offer it as a separate line item rather than bundling. Always clarify in the quote. Content design is typically LKR 25,000–150,000 depending on slide complexity, animation and video editing.",
           },
         ]}
-        related={[
-          { href: "/blog/corporate-event-av-checklist-sri-lanka", label: "Corporate event AV checklist for Sri Lanka" },
-          { href: "/blog/led-screen-rent-for-weddings-sri-lanka", label: "LED screen rent for weddings — what couples need to know" },
-          { href: "/blog/pixel-pitch-explained-led-screen-rent-sri-lanka", label: "Pixel pitch explained — choosing the right LED screen" },
-        ]}
+        related={[{"href":"/blog/corporate-event-av-checklist-sri-lanka","label":"Corporate event AV checklist for Sri Lanka"},{"href":"/blog/led-screen-rent-for-weddings-sri-lanka","label":"LED screen rent for weddings — what couples need to know"},{"href":"/blog/pixel-pitch-explained-led-screen-rent-sri-lanka","label":"Pixel pitch explained — choosing the right LED screen"},{"href":"/stage-setup-sri-lanka","label":"Stage Setup Sri Lanka"},{"href":"/stage-rental-sri-lanka","label":"Stage Rental"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/sound-system-rental-sri-lanka","label":"Sound System Rental"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
       />
     </PageShell>
   ),

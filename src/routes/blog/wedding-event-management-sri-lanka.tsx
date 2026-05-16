@@ -111,12 +111,7 @@ export const Route = createFileRoute("/blog/wedding-event-management-sri-lanka")
             a: "Choosing on Instagram aesthetic alone without checking event-day reliability. Always ask for two recent references from couples whose weddings were similar in scale to yours — not the headline brand-name weddings the vendor leads with.",
           },
         ]}
-        related={[
-          { href: "/blog/event-management-cost-sri-lanka", label: "Event management cost in Sri Lanka — 2025 price guide" },
-          { href: "/blog/event-venues-sri-lanka-colombo", label: "Best event venues in Sri Lanka" },
-          { href: "/blog/event-planning-checklist-sri-lanka", label: "Ultimate event planning checklist" },
-          { href: "/wedding-planners-sri-lanka", label: "Wedding planners Sri Lanka — service page" },
-        ]}
+        related={[{"href":"/blog/event-management-cost-sri-lanka","label":"Event management cost in Sri Lanka — 2025 price guide"},{"href":"/blog/event-venues-sri-lanka-colombo","label":"Best event venues in Sri Lanka"},{"href":"/blog/event-planning-checklist-sri-lanka","label":"Ultimate event planning checklist"},{"href":"/wedding-planners-sri-lanka","label":"Wedding planners Sri Lanka — service page"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/wedding-decor-sri-lanka","label":"Wedding Decor"},{"href":"/event-photography-sri-lanka","label":"Event Photography"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
     </PageShell>

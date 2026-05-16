@@ -122,11 +122,7 @@ export const Route = createFileRoute("/blog/led-screen-rent-for-weddings-sri-lan
             a: "Not always — one large central LED can switch from monogram backdrop to live camera feed during speeches and back. But flanking live-feed screens give better sightlines for guests at side tables, which matters for receptions above 300 guests.",
           },
         ]}
-        related={[
-          { href: "/blog/event-stage-setup-av-package-sri-lanka", label: "What's in a full event stage & AV package in Sri Lanka?" },
-          { href: "/blog/led-screen-rent-colombo-guide", label: "LED screen rent in Colombo — sizes, prices and venue notes" },
-          { href: "/blog/corporate-event-av-checklist-sri-lanka", label: "Corporate event AV checklist for Sri Lanka" },
-        ]}
+        related={[{"href":"/blog/event-stage-setup-av-package-sri-lanka","label":"What's in a full event stage & AV package in Sri Lanka?"},{"href":"/blog/led-screen-rent-colombo-guide","label":"LED screen rent in Colombo — sizes, prices and venue notes"},{"href":"/blog/corporate-event-av-checklist-sri-lanka","label":"Corporate event AV checklist for Sri Lanka"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/wedding-planners-sri-lanka","label":"Wedding Planners Sri Lanka"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
       />
     </PageShell>
   ),

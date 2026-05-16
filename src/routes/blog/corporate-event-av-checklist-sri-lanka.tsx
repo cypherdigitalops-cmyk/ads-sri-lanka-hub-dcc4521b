@@ -142,11 +142,7 @@ export const Route = createFileRoute("/blog/corporate-event-av-checklist-sri-lan
             a: "For events with more than 4 microphones, multiple presenters or any music playback, a dedicated sound engineer pays for itself in cleaner audio and faster recovery from any issue. Hotel in-house teams are usually generalists who also have other rooms to attend to.",
           },
         ]}
-        related={[
-          { href: "/blog/event-stage-setup-av-package-sri-lanka", label: "What's in a full event stage & AV package in Sri Lanka?" },
-          { href: "/blog/led-screen-rent-vs-projector-events-sri-lanka", label: "LED screen rent vs projector hire — which wins?" },
-          { href: "/blog/how-much-does-led-screen-rent-cost-sri-lanka", label: "How much does LED screen rent cost in Sri Lanka?" },
-        ]}
+        related={[{"href":"/blog/event-stage-setup-av-package-sri-lanka","label":"What's in a full event stage & AV package in Sri Lanka?"},{"href":"/blog/led-screen-rent-vs-projector-events-sri-lanka","label":"LED screen rent vs projector hire — which wins?"},{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"How much does LED screen rent cost in Sri Lanka?"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/corporate-event-management-sri-lanka","label":"Corporate Event Management"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/sound-system-rental-sri-lanka","label":"Sound System Rental"},{"href":"/stage-setup-sri-lanka","label":"Stage Setup"}]}
       />
     </PageShell>
   ),

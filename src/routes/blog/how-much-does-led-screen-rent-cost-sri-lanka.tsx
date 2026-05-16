@@ -129,11 +129,7 @@ export const Route = createFileRoute("/blog/how-much-does-led-screen-rent-cost-s
             a: "Yes — multi-day events, off-peak dates, and bundled packages (screen + sound + lighting from one supplier) all create room to negotiate 10–20%. Single-day weekend rentals at peak times have almost no flex.",
           },
         ]}
-        related={[
-          { href: "/blog/led-screen-rent-colombo-guide", label: "LED screen rent in Colombo — sizes, prices and venue notes" },
-          { href: "/blog/pixel-pitch-explained-led-screen-rent-sri-lanka", label: "Pixel pitch explained — pick the right LED screen" },
-          { href: "/blog/outdoor-led-screen-rent-sri-lanka", label: "Outdoor LED screen rent — brightness, weather and setup" },
-        ]}
+        related={[{"href":"/blog/led-screen-rent-colombo-guide","label":"LED screen rent in Colombo — sizes, prices and venue notes"},{"href":"/blog/pixel-pitch-explained-led-screen-rent-sri-lanka","label":"Pixel pitch explained — pick the right LED screen"},{"href":"/blog/outdoor-led-screen-rent-sri-lanka","label":"Outdoor LED screen rent — brightness, weather and setup"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/stage-setup-sri-lanka","label":"Stage Setup"}]}
       />
     </PageShell>
   ),

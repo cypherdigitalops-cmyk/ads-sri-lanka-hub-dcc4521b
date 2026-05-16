@@ -254,10 +254,10 @@ export function CustomBlogArticle({
           <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{intro}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              to={TARGET_HREF}
+              to={anchor.href as never}
               className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90"
             >
-              See {TARGET_ANCHOR} packages <ArrowRight className="h-4 w-4" />
+              {anchor.ctaLabel} <ArrowRight className="h-4 w-4" />
             </Link>
             <a
               href={`tel:${SITE.phone}`}
@@ -270,14 +270,14 @@ export function CustomBlogArticle({
       </section>
 
       <article className="mx-auto max-w-3xl px-4 py-12">
-        <Blocks blocks={blocks} />
+        <Blocks blocks={blocks} anchor={anchor} />
       </article>
 
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={`Planning an event? Get a same-day quote for ${TARGET_ANCHOR}`}
+          headline={anchor.ctaHeadline ?? `Get expert help with ${anchor.fallbackText}`}
           sub={`Free advice on screen size, pixel pitch and budget — call ${SITE.phone} or WhatsApp.`}
-          service="LED Screen Rental Sri Lanka"
+          service={anchor.ctaService ?? anchor.fallbackText}
         />
       </div>
 

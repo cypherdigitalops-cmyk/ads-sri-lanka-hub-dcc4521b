@@ -417,13 +417,15 @@ function Index() {
                 </tr>
               </thead>
               <tbody>
-                {DECISION_ROWS.map((row) => (
-                  <tr key={row[0]} className="border-t border-primary-foreground/10 hover:bg-primary-foreground/5">
-                    <td className="px-4 py-3 font-semibold text-accent">{row[0]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[1]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[2]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[3]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[4]}</td>
+                {DECISION_TABLE.map((row) => (
+                  <tr key={row.channel} className="border-t border-primary-foreground/10 hover:bg-primary-foreground/5">
+                    <td className="px-4 py-3 font-semibold">
+                      <Link to={row.href as never} className="text-accent underline-offset-4 hover:underline">{row.channel}</Link>
+                    </td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.bestFor}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.speed}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.budget}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.measure}</td>
                   </tr>
                 ))}
               </tbody>
@@ -449,7 +451,10 @@ function Index() {
               <p className="mt-2 text-sm text-muted-foreground">{b.desc}</p>
               <ul className="mt-4 space-y-1.5 text-sm">
                 {b.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-accent" /><span className="text-muted-foreground">{it}</span></li>
+                  <li key={it.label} className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-accent" />
+                    <Link to={it.href as never} className="text-muted-foreground hover:text-primary hover:underline">{it.label}</Link>
+                  </li>
                 ))}
               </ul>
             </div>

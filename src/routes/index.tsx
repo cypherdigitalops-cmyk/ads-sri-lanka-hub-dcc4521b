@@ -439,7 +439,9 @@ function Index() {
         <div className="text-center">
           <div className="text-sm font-semibold text-accent">Budget Planning</div>
           <h2 className="mt-2 text-3xl font-bold sm:text-4xl">How to Plan Your Advertising Budget in Sri Lanka</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">What Sri Lankan businesses at different budget levels typically invest in, and why those combinations make sense.</p>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            What Sri Lankan businesses at different budget levels typically invest in, and why those combinations make sense. <Link to="/services" className="font-semibold text-primary hover:underline">Browse all 180+ advertising services</Link> or <Link to="/contact" className="font-semibold text-primary hover:underline">contact us</Link> for a tailored plan.
+          </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {BUDGET_TIERS.map((b) => (
@@ -468,7 +470,9 @@ function Index() {
           <div className="text-center">
             <div className="text-sm font-semibold text-accent">Avoid These Pitfalls</div>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">6 Reasons Advertising Budgets Get Wasted in Sri Lanka</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">These six mistakes account for the majority of failed campaigns. Knowing them before you start is worth more than any tactic.</p>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              These six mistakes account for the majority of failed campaigns — from poor <Link to="/facebook-marketing-sri-lanka" className="font-semibold text-primary hover:underline">Facebook campaign structure</Link> and missing <Link to="/digital-marketing-sri-lanka" className="font-semibold text-primary hover:underline">tracking</Link> to cutting <Link to="/seo-services-sri-lanka" className="font-semibold text-primary hover:underline">SEO</Link> before it compounds.
+            </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {MISTAKES.map((m) => (

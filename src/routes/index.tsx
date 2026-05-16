@@ -595,7 +595,7 @@ function Index() {
               "instagram-ads-sri-lanka", "radio-advertising-sri-lanka", "youtube-ads-sri-lanka",
               "newspaper-advertising-sri-lanka", "logo-design-sri-lanka", "web-design-sri-lanka",
               "video-production-sri-lanka", "whatsapp-marketing-sri-lanka", "lead-generation-sri-lanka",
-              "led-screen-advertising-sri-lanka", "brand-activation-sri-lanka", "influencer-marketing-sri-lanka",
+              "led-screen-advertising-sri-lanka", "led-screen-rental-sri-lanka", "brand-activation-sri-lanka", "influencer-marketing-sri-lanka",
             ].map((slug) => (
               <Link
                 key={slug}

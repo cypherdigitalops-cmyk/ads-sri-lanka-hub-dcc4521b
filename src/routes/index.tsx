@@ -38,16 +38,19 @@ const CHANNEL_GUIDE: { icon: string; title: string; desc: string; tags: string[]
 ];
 
 const DECISION_ROWS: [string, string, string, string, string][] = [
-  ["Google Search Ads", "High-intent leads, service businesses", "3–7 days", "Rs 40,000", "Excellent"],
-  ["Facebook / Instagram Ads", "B2C brands, retail, hospitality", "1–3 days", "Rs 30,000", "Very good"],
-  ["TikTok Ads", "Under-35 audience, brand awareness", "1–3 days", "Rs 25,000", "Good"],
-  ["SEO", "All businesses — long-term growth", "3–6 months", "Rs 35,000", "Very good"],
-  ["TV Advertising", "National FMCG, banks, telcos", "2–4 weeks", "Rs 300,000", "Limited"],
-  ["Radio Advertising", "Regional, language-market targeting", "1–2 weeks", "Rs 80,000", "Limited"],
-  ["Billboard / OOH", "Local visibility, brand trust", "2–3 weeks", "Rs 60,000", "Basic"],
-  ["Email / SMS / WhatsApp", "Existing customers, highest ROI", "Same day", "Rs 15,000", "Excellent"],
-  ["BTL Activations", "Product trial, mall & event marketing", "Same day", "Rs 80,000", "Moderate"],
-  ["YouTube Ads", "Brand storytelling, video-led brands", "2–5 days", "Rs 40,000", "Good"],
+];
+
+const DECISION_TABLE: { channel: string; href: string; bestFor: string; speed: string; budget: string; measure: string }[] = [
+  { channel: "Google Search Ads", href: "/google-ads-sri-lanka", bestFor: "High-intent leads, service businesses", speed: "3–7 days", budget: "Rs 40,000", measure: "Excellent" },
+  { channel: "Facebook / Instagram Ads", href: "/facebook-marketing-sri-lanka", bestFor: "B2C brands, retail, hospitality", speed: "1–3 days", budget: "Rs 30,000", measure: "Very good" },
+  { channel: "TikTok Ads", href: "/tiktok-ads-sri-lanka", bestFor: "Under-35 audience, brand awareness", speed: "1–3 days", budget: "Rs 25,000", measure: "Good" },
+  { channel: "SEO", href: "/seo-services-sri-lanka", bestFor: "All businesses — long-term growth", speed: "3–6 months", budget: "Rs 35,000", measure: "Very good" },
+  { channel: "TV Advertising", href: "/tv-advertising-sri-lanka", bestFor: "National FMCG, banks, telcos", speed: "2–4 weeks", budget: "Rs 300,000", measure: "Limited" },
+  { channel: "Radio Advertising", href: "/radio-advertising-sri-lanka", bestFor: "Regional, language-market targeting", speed: "1–2 weeks", budget: "Rs 80,000", measure: "Limited" },
+  { channel: "Billboard / OOH", href: "/outdoor-advertising-sri-lanka", bestFor: "Local visibility, brand trust", speed: "2–3 weeks", budget: "Rs 60,000", measure: "Basic" },
+  { channel: "Email / SMS / WhatsApp", href: "/email-sms-marketing-sri-lanka", bestFor: "Existing customers, highest ROI", speed: "Same day", budget: "Rs 15,000", measure: "Excellent" },
+  { channel: "BTL Activations", href: "/btl-advertising-sri-lanka", bestFor: "Product trial, mall & event marketing", speed: "Same day", budget: "Rs 80,000", measure: "Moderate" },
+  { channel: "YouTube Ads", href: "/youtube-ads-sri-lanka", bestFor: "Brand storytelling, video-led brands", speed: "2–5 days", budget: "Rs 40,000", measure: "Good" },
 ];
 
 const BUDGET_TIERS = [

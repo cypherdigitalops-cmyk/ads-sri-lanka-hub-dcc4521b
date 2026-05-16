@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/promotional-sms-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/promotional-sms-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="promotional sms sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="promotional sms sri lanka" extraLinks={[{"href":"/email-sms-marketing-sri-lanka","label":"Email & SMS Marketing"},{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising"}]} /></PageShell>),
 });

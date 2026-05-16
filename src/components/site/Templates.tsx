@@ -21,8 +21,47 @@ import { getPageFaqs } from "@/data/page-faqs";
  * encountered during a page render becomes a link — one keyword per page.
  */
 let __adLinkUsed = false;
-function resetHomeAnchor() {
+let __ledLinkUsed = false;
+let __currentSlug = "";
+function resetHomeAnchor(currentSlug = "") {
   __adLinkUsed = false;
+  __ledLinkUsed = false;
+  __currentSlug = currentSlug;
+}
+
+const LED_TARGET_SLUG = "led-screen-rental-sri-lanka";
+const LED_REGEX = /(led\s+screen\s+(?:rentals?|hires?|on\s+rent)|(?:rent|hire|rents|hires|renting|hiring)\s+(?:an?\s+|the\s+)?led\s+screens?|led\s+video\s+wall\s+(?:rentals?|hires?))/i;
+
+function linkifyLedRental(text: string): React.ReactNode {
+  if (!text || __ledLinkUsed || __currentSlug === LED_TARGET_SLUG) return text;
+  const m = LED_REGEX.exec(text);
+  if (!m) return text;
+  __ledLinkUsed = true;
+  const before = text.slice(0, m.index);
+  const after = text.slice(m.index + m[0].length);
+  return [
+    before,
+    <Link
+      key={`led-${m.index}`}
+      to={`/${LED_TARGET_SLUG}` as never}
+      className="text-primary underline-offset-2 hover:underline"
+    >
+      {m[0]}
+    </Link>,
+    after,
+  ];
+}
+
+function applyLinks(text: string): React.ReactNode {
+  const led = linkifyLedRental(text);
+  if (typeof led === "string") return linkifyAdSL(led);
+  // led replaced part of text; linkifyAdSL only on the unlinked string segments
+  if (Array.isArray(led)) {
+    return led.map((node, i) =>
+      typeof node === "string" ? <span key={`s${i}`}>{linkifyAdSL(node)}</span> : node,
+    );
+  }
+  return led;
 }
 function linkifyAdSL(text: string): React.ReactNode {
   if (!text) return text;
@@ -58,17 +97,17 @@ function LongFormBlocks({ blocks }: { blocks: Block[] }) {
       {blocks.map((b, i) => {
         if (b.type === "h2") return <h2 key={i} className="mt-8 text-2xl font-bold sm:text-3xl">{b.text}</h2>;
         if (b.type === "h3") return <h3 key={i} className="mt-6 text-xl font-semibold">{b.text}</h3>;
-        if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{linkifyAdSL(b.text)}</p>;
+        if (b.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed">{applyLinks(b.text)}</p>;
         if (b.type === "ul")
           return (
             <ul key={i} className="ml-5 list-disc space-y-2 text-muted-foreground">
-              {b.items.map((it, j) => <li key={j}>{linkifyAdSL(it)}</li>)}
+              {b.items.map((it, j) => <li key={j}>{applyLinks(it)}</li>)}
             </ul>
           );
         if (b.type === "ol")
           return (
             <ol key={i} className="ml-5 list-decimal space-y-2 text-muted-foreground">
-              {b.items.map((it, j) => <li key={j}>{linkifyAdSL(it)}</li>)}
+              {b.items.map((it, j) => <li key={j}>{applyLinks(it)}</li>)}
             </ol>
           );
         if (b.type === "table")
@@ -81,7 +120,7 @@ function LongFormBlocks({ blocks }: { blocks: Block[] }) {
                 <tbody>
                   {b.rows.map((r, j) => (
                     <tr key={j} className="border-t border-border">
-                      {r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{linkifyAdSL(c)}</td>)}
+                      {r.map((c, k) => <td key={k} className="px-3 py-2 align-top text-muted-foreground">{applyLinks(c)}</td>)}
                     </tr>
                   ))}
                 </tbody>
@@ -102,8 +141,8 @@ function FaqList({ items }: { items: FAQ[] }) {
       <div className="mt-6 space-y-3">
         {items.map((f) => (
           <details key={f.q} className="group rounded-lg border border-border bg-card p-5">
-            <summary className="cursor-pointer list-none font-semibold marker:hidden">{linkifyAdSL(f.q)}</summary>
-            <p className="mt-3 text-sm text-muted-foreground">{linkifyAdSL(f.a)}</p>
+            <summary className="cursor-pointer list-none font-semibold marker:hidden">{applyLinks(f.q)}</summary>
+            <p className="mt-3 text-sm text-muted-foreground">{applyLinks(f.a)}</p>
           </details>
         ))}
       </div>
@@ -154,7 +193,7 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
           <Sparkles className="h-3.5 w-3.5" /> {kicker}
         </div>
         <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{h1}</h1>
-        <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{linkifyAdSL(intro)}</p>
+        <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{applyLinks(intro)}</p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90">
             <Phone className="h-4 w-4" /> Ask a Free Question — {SITE.phone}
@@ -242,7 +281,7 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 
 /* ========== CATEGORY HUB ========== */
 export function CategoryHubTemplate({ category }: { category: Category }) {
-  resetHomeAnchor();
+  resetHomeAnchor(category.slug);
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
   const serviceJsonLd = {
@@ -343,10 +382,10 @@ export function ServicePageTemplate({
   category: Category;
   keyword: string;
 }) {
-  resetHomeAnchor();
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
+  resetHomeAnchor(slug);
   const overrideFaqs = getPageFaqs(slug);
   const faqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
   const serviceJsonLd = {
@@ -449,10 +488,10 @@ export function BlogArticleTemplate({
   category: Category;
   keyword: string;
 }) {
-  resetHomeAnchor();
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";
+  resetHomeAnchor(`blog/${slug}`);
   const url = `${SITE.url}/blog/${slug}`;
   const articleJsonLd = {
     "@context": "https://schema.org",

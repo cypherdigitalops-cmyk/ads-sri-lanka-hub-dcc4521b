@@ -305,7 +305,9 @@ import { Route as BlogPromotionalSmsSriLankaRouteImport } from './routes/blog/pr
 import { Route as BlogProductPromotionSriLankaRouteImport } from './routes/blog/product-promotion-sri-lanka'
 import { Route as BlogPrintMediaAdvertisingSriLankaRouteImport } from './routes/blog/print-media-advertising-sri-lanka'
 import { Route as BlogPosBrandingSriLankaRouteImport } from './routes/blog/pos-branding-sri-lanka'
+import { Route as BlogPixelPitchExplainedLedScreenRentSriLankaRouteImport } from './routes/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
 import { Route as BlogPayPerClickSriLankaRouteImport } from './routes/blog/pay-per-click-sri-lanka'
+import { Route as BlogOutdoorLedScreenRentSriLankaRouteImport } from './routes/blog/outdoor-led-screen-rent-sri-lanka'
 import { Route as BlogOutdoorAdvertisingSriLankaRouteImport } from './routes/blog/outdoor-advertising-sri-lanka'
 import { Route as BlogOrganicTrafficSriLankaRouteImport } from './routes/blog/organic-traffic-sri-lanka'
 import { Route as BlogOnlineMarketingSriLankaRouteImport } from './routes/blog/online-marketing-sri-lanka'
@@ -317,6 +319,9 @@ import { Route as BlogNationalAdvertisingCampaignsSriLankaRouteImport } from './
 import { Route as BlogMerchandisingSriLankaRouteImport } from './routes/blog/merchandising-sri-lanka'
 import { Route as BlogMassMediaAdvertisingSriLankaRouteImport } from './routes/blog/mass-media-advertising-sri-lanka'
 import { Route as BlogMarketingMaterialsSriLankaRouteImport } from './routes/blog/marketing-materials-sri-lanka'
+import { Route as BlogLedScreenRentVsProjectorEventsSriLankaRouteImport } from './routes/blog/led-screen-rent-vs-projector-events-sri-lanka'
+import { Route as BlogLedScreenRentForWeddingsSriLankaRouteImport } from './routes/blog/led-screen-rent-for-weddings-sri-lanka'
+import { Route as BlogLedScreenRentColomboGuideRouteImport } from './routes/blog/led-screen-rent-colombo-guide'
 import { Route as BlogLedDisplayAdvertisingSriLankaRouteImport } from './routes/blog/led-display-advertising-sri-lanka'
 import { Route as BlogLeafletDistributionSriLankaRouteImport } from './routes/blog/leaflet-distribution-sri-lanka'
 import { Route as BlogLampPostAdvertisingSriLankaRouteImport } from './routes/blog/lamp-post-advertising-sri-lanka'
@@ -325,12 +330,14 @@ import { Route as BlogInternetMarketingSriLankaRouteImport } from './routes/blog
 import { Route as BlogIntegratedAdvertisingSriLankaRouteImport } from './routes/blog/integrated-advertising-sri-lanka'
 import { Route as BlogInstagramAdvertisingSriLankaRouteImport } from './routes/blog/instagram-advertising-sri-lanka'
 import { Route as BlogInStoreBrandingSriLankaRouteImport } from './routes/blog/in-store-branding-sri-lanka'
+import { Route as BlogHowMuchDoesLedScreenRentCostSriLankaRouteImport } from './routes/blog/how-much-does-led-screen-rent-cost-sri-lanka'
 import { Route as BlogGroundActivationSriLankaRouteImport } from './routes/blog/ground-activation-sri-lanka'
 import { Route as BlogGoogleRankingSriLankaRouteImport } from './routes/blog/google-ranking-sri-lanka'
 import { Route as BlogGoogleAdvertisingSriLankaRouteImport } from './routes/blog/google-advertising-sri-lanka'
 import { Route as BlogFlyerDistributionSriLankaRouteImport } from './routes/blog/flyer-distribution-sri-lanka'
 import { Route as BlogFlyerDesignSriLankaRouteImport } from './routes/blog/flyer-design-sri-lanka'
 import { Route as BlogFacebookAdvertisingSriLankaRouteImport } from './routes/blog/facebook-advertising-sri-lanka'
+import { Route as BlogEventStageSetupAvPackageSriLankaRouteImport } from './routes/blog/event-stage-setup-av-package-sri-lanka'
 import { Route as BlogEventPromotionSriLankaRouteImport } from './routes/blog/event-promotion-sri-lanka'
 import { Route as BlogEmailMarketingSriLankaRouteImport } from './routes/blog/email-marketing-sri-lanka'
 import { Route as BlogEmailCampaignsSriLankaRouteImport } from './routes/blog/email-campaigns-sri-lanka'
@@ -341,6 +348,7 @@ import { Route as BlogDigitalCampaignManagementSriLankaRouteImport } from './rou
 import { Route as BlogDigitalAdvertisingSriLankaRouteImport } from './routes/blog/digital-advertising-sri-lanka'
 import { Route as BlogCrossPlatformMarketingSriLankaRouteImport } from './routes/blog/cross-platform-marketing-sri-lanka'
 import { Route as BlogCreativeDesignSriLankaRouteImport } from './routes/blog/creative-design-sri-lanka'
+import { Route as BlogCorporateEventAvChecklistSriLankaRouteImport } from './routes/blog/corporate-event-av-checklist-sri-lanka'
 import { Route as BlogCorporateAdvertisingSriLankaRouteImport } from './routes/blog/corporate-advertising-sri-lanka'
 import { Route as BlogConversionMarketingSriLankaRouteImport } from './routes/blog/conversion-marketing-sri-lanka'
 import { Route as BlogContentCreationSriLankaRouteImport } from './routes/blog/content-creation-sri-lanka'
@@ -1991,11 +1999,23 @@ const BlogPosBrandingSriLankaRoute = BlogPosBrandingSriLankaRouteImport.update({
   path: '/blog/pos-branding-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogPixelPitchExplainedLedScreenRentSriLankaRoute =
+  BlogPixelPitchExplainedLedScreenRentSriLankaRouteImport.update({
+    id: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka',
+    path: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogPayPerClickSriLankaRoute = BlogPayPerClickSriLankaRouteImport.update({
   id: '/blog/pay-per-click-sri-lanka',
   path: '/blog/pay-per-click-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogOutdoorLedScreenRentSriLankaRoute =
+  BlogOutdoorLedScreenRentSriLankaRouteImport.update({
+    id: '/blog/outdoor-led-screen-rent-sri-lanka',
+    path: '/blog/outdoor-led-screen-rent-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogOutdoorAdvertisingSriLankaRoute =
   BlogOutdoorAdvertisingSriLankaRouteImport.update({
     id: '/blog/outdoor-advertising-sri-lanka',
@@ -2059,6 +2079,24 @@ const BlogMarketingMaterialsSriLankaRoute =
     path: '/blog/marketing-materials-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogLedScreenRentVsProjectorEventsSriLankaRoute =
+  BlogLedScreenRentVsProjectorEventsSriLankaRouteImport.update({
+    id: '/blog/led-screen-rent-vs-projector-events-sri-lanka',
+    path: '/blog/led-screen-rent-vs-projector-events-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogLedScreenRentForWeddingsSriLankaRoute =
+  BlogLedScreenRentForWeddingsSriLankaRouteImport.update({
+    id: '/blog/led-screen-rent-for-weddings-sri-lanka',
+    path: '/blog/led-screen-rent-for-weddings-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogLedScreenRentColomboGuideRoute =
+  BlogLedScreenRentColomboGuideRouteImport.update({
+    id: '/blog/led-screen-rent-colombo-guide',
+    path: '/blog/led-screen-rent-colombo-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogLedDisplayAdvertisingSriLankaRoute =
   BlogLedDisplayAdvertisingSriLankaRouteImport.update({
     id: '/blog/led-display-advertising-sri-lanka',
@@ -2107,6 +2145,12 @@ const BlogInStoreBrandingSriLankaRoute =
     path: '/blog/in-store-branding-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogHowMuchDoesLedScreenRentCostSriLankaRoute =
+  BlogHowMuchDoesLedScreenRentCostSriLankaRouteImport.update({
+    id: '/blog/how-much-does-led-screen-rent-cost-sri-lanka',
+    path: '/blog/how-much-does-led-screen-rent-cost-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogGroundActivationSriLankaRoute =
   BlogGroundActivationSriLankaRouteImport.update({
     id: '/blog/ground-activation-sri-lanka',
@@ -2140,6 +2184,12 @@ const BlogFacebookAdvertisingSriLankaRoute =
   BlogFacebookAdvertisingSriLankaRouteImport.update({
     id: '/blog/facebook-advertising-sri-lanka',
     path: '/blog/facebook-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEventStageSetupAvPackageSriLankaRoute =
+  BlogEventStageSetupAvPackageSriLankaRouteImport.update({
+    id: '/blog/event-stage-setup-av-package-sri-lanka',
+    path: '/blog/event-stage-setup-av-package-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const BlogEventPromotionSriLankaRoute =
@@ -2200,6 +2250,12 @@ const BlogCreativeDesignSriLankaRoute =
   BlogCreativeDesignSriLankaRouteImport.update({
     id: '/blog/creative-design-sri-lanka',
     path: '/blog/creative-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCorporateEventAvChecklistSriLankaRoute =
+  BlogCorporateEventAvChecklistSriLankaRouteImport.update({
+    id: '/blog/corporate-event-av-checklist-sri-lanka',
+    path: '/blog/corporate-event-av-checklist-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const BlogCorporateAdvertisingSriLankaRoute =
@@ -2594,6 +2650,7 @@ export interface FileRoutesByFullPath {
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
   '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/corporate-event-av-checklist-sri-lanka': typeof BlogCorporateEventAvChecklistSriLankaRoute
   '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
   '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
   '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
@@ -2604,12 +2661,14 @@ export interface FileRoutesByFullPath {
   '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
   '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
   '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
   '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
   '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
   '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/how-much-does-led-screen-rent-cost-sri-lanka': typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -2618,6 +2677,9 @@ export interface FileRoutesByFullPath {
   '/blog/lamp-post-advertising-sri-lanka': typeof BlogLampPostAdvertisingSriLankaRoute
   '/blog/leaflet-distribution-sri-lanka': typeof BlogLeafletDistributionSriLankaRoute
   '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
+  '/blog/led-screen-rent-colombo-guide': typeof BlogLedScreenRentColomboGuideRoute
+  '/blog/led-screen-rent-for-weddings-sri-lanka': typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  '/blog/led-screen-rent-vs-projector-events-sri-lanka': typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
   '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
   '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
@@ -2629,7 +2691,9 @@ export interface FileRoutesByFullPath {
   '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
   '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
   '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
@@ -2947,6 +3011,7 @@ export interface FileRoutesByTo {
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
   '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/corporate-event-av-checklist-sri-lanka': typeof BlogCorporateEventAvChecklistSriLankaRoute
   '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
   '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
   '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
@@ -2957,12 +3022,14 @@ export interface FileRoutesByTo {
   '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
   '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
   '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
   '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
   '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
   '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/how-much-does-led-screen-rent-cost-sri-lanka': typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -2971,6 +3038,9 @@ export interface FileRoutesByTo {
   '/blog/lamp-post-advertising-sri-lanka': typeof BlogLampPostAdvertisingSriLankaRoute
   '/blog/leaflet-distribution-sri-lanka': typeof BlogLeafletDistributionSriLankaRoute
   '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
+  '/blog/led-screen-rent-colombo-guide': typeof BlogLedScreenRentColomboGuideRoute
+  '/blog/led-screen-rent-for-weddings-sri-lanka': typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  '/blog/led-screen-rent-vs-projector-events-sri-lanka': typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
   '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
   '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
@@ -2982,7 +3052,9 @@ export interface FileRoutesByTo {
   '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
   '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
   '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
@@ -3301,6 +3373,7 @@ export interface FileRoutesById {
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
   '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/corporate-event-av-checklist-sri-lanka': typeof BlogCorporateEventAvChecklistSriLankaRoute
   '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
   '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
   '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
@@ -3311,12 +3384,14 @@ export interface FileRoutesById {
   '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
   '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
   '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
   '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
   '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
   '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/how-much-does-led-screen-rent-cost-sri-lanka': typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -3325,6 +3400,9 @@ export interface FileRoutesById {
   '/blog/lamp-post-advertising-sri-lanka': typeof BlogLampPostAdvertisingSriLankaRoute
   '/blog/leaflet-distribution-sri-lanka': typeof BlogLeafletDistributionSriLankaRoute
   '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
+  '/blog/led-screen-rent-colombo-guide': typeof BlogLedScreenRentColomboGuideRoute
+  '/blog/led-screen-rent-for-weddings-sri-lanka': typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  '/blog/led-screen-rent-vs-projector-events-sri-lanka': typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
   '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
   '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
@@ -3336,7 +3414,9 @@ export interface FileRoutesById {
   '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
   '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
   '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
@@ -3656,6 +3736,7 @@ export interface FileRouteTypes {
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
     | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/corporate-event-av-checklist-sri-lanka'
     | '/blog/creative-design-sri-lanka'
     | '/blog/cross-platform-marketing-sri-lanka'
     | '/blog/digital-advertising-sri-lanka'
@@ -3666,12 +3747,14 @@ export interface FileRouteTypes {
     | '/blog/email-campaigns-sri-lanka'
     | '/blog/email-marketing-sri-lanka'
     | '/blog/event-promotion-sri-lanka'
+    | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
     | '/blog/flyer-distribution-sri-lanka'
     | '/blog/google-advertising-sri-lanka'
     | '/blog/google-ranking-sri-lanka'
     | '/blog/ground-activation-sri-lanka'
+    | '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
@@ -3680,6 +3763,9 @@ export interface FileRouteTypes {
     | '/blog/lamp-post-advertising-sri-lanka'
     | '/blog/leaflet-distribution-sri-lanka'
     | '/blog/led-display-advertising-sri-lanka'
+    | '/blog/led-screen-rent-colombo-guide'
+    | '/blog/led-screen-rent-for-weddings-sri-lanka'
+    | '/blog/led-screen-rent-vs-projector-events-sri-lanka'
     | '/blog/marketing-materials-sri-lanka'
     | '/blog/mass-media-advertising-sri-lanka'
     | '/blog/merchandising-sri-lanka'
@@ -3691,7 +3777,9 @@ export interface FileRouteTypes {
     | '/blog/online-marketing-sri-lanka'
     | '/blog/organic-traffic-sri-lanka'
     | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
     | '/blog/product-promotion-sri-lanka'
@@ -4009,6 +4097,7 @@ export interface FileRouteTypes {
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
     | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/corporate-event-av-checklist-sri-lanka'
     | '/blog/creative-design-sri-lanka'
     | '/blog/cross-platform-marketing-sri-lanka'
     | '/blog/digital-advertising-sri-lanka'
@@ -4019,12 +4108,14 @@ export interface FileRouteTypes {
     | '/blog/email-campaigns-sri-lanka'
     | '/blog/email-marketing-sri-lanka'
     | '/blog/event-promotion-sri-lanka'
+    | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
     | '/blog/flyer-distribution-sri-lanka'
     | '/blog/google-advertising-sri-lanka'
     | '/blog/google-ranking-sri-lanka'
     | '/blog/ground-activation-sri-lanka'
+    | '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
@@ -4033,6 +4124,9 @@ export interface FileRouteTypes {
     | '/blog/lamp-post-advertising-sri-lanka'
     | '/blog/leaflet-distribution-sri-lanka'
     | '/blog/led-display-advertising-sri-lanka'
+    | '/blog/led-screen-rent-colombo-guide'
+    | '/blog/led-screen-rent-for-weddings-sri-lanka'
+    | '/blog/led-screen-rent-vs-projector-events-sri-lanka'
     | '/blog/marketing-materials-sri-lanka'
     | '/blog/mass-media-advertising-sri-lanka'
     | '/blog/merchandising-sri-lanka'
@@ -4044,7 +4138,9 @@ export interface FileRouteTypes {
     | '/blog/online-marketing-sri-lanka'
     | '/blog/organic-traffic-sri-lanka'
     | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
     | '/blog/product-promotion-sri-lanka'
@@ -4362,6 +4458,7 @@ export interface FileRouteTypes {
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
     | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/corporate-event-av-checklist-sri-lanka'
     | '/blog/creative-design-sri-lanka'
     | '/blog/cross-platform-marketing-sri-lanka'
     | '/blog/digital-advertising-sri-lanka'
@@ -4372,12 +4469,14 @@ export interface FileRouteTypes {
     | '/blog/email-campaigns-sri-lanka'
     | '/blog/email-marketing-sri-lanka'
     | '/blog/event-promotion-sri-lanka'
+    | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
     | '/blog/flyer-distribution-sri-lanka'
     | '/blog/google-advertising-sri-lanka'
     | '/blog/google-ranking-sri-lanka'
     | '/blog/ground-activation-sri-lanka'
+    | '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
@@ -4386,6 +4485,9 @@ export interface FileRouteTypes {
     | '/blog/lamp-post-advertising-sri-lanka'
     | '/blog/leaflet-distribution-sri-lanka'
     | '/blog/led-display-advertising-sri-lanka'
+    | '/blog/led-screen-rent-colombo-guide'
+    | '/blog/led-screen-rent-for-weddings-sri-lanka'
+    | '/blog/led-screen-rent-vs-projector-events-sri-lanka'
     | '/blog/marketing-materials-sri-lanka'
     | '/blog/mass-media-advertising-sri-lanka'
     | '/blog/merchandising-sri-lanka'
@@ -4397,7 +4499,9 @@ export interface FileRouteTypes {
     | '/blog/online-marketing-sri-lanka'
     | '/blog/organic-traffic-sri-lanka'
     | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
     | '/blog/product-promotion-sri-lanka'
@@ -4716,6 +4820,7 @@ export interface RootRouteChildren {
   BlogContentCreationSriLankaRoute: typeof BlogContentCreationSriLankaRoute
   BlogConversionMarketingSriLankaRoute: typeof BlogConversionMarketingSriLankaRoute
   BlogCorporateAdvertisingSriLankaRoute: typeof BlogCorporateAdvertisingSriLankaRoute
+  BlogCorporateEventAvChecklistSriLankaRoute: typeof BlogCorporateEventAvChecklistSriLankaRoute
   BlogCreativeDesignSriLankaRoute: typeof BlogCreativeDesignSriLankaRoute
   BlogCrossPlatformMarketingSriLankaRoute: typeof BlogCrossPlatformMarketingSriLankaRoute
   BlogDigitalAdvertisingSriLankaRoute: typeof BlogDigitalAdvertisingSriLankaRoute
@@ -4726,12 +4831,14 @@ export interface RootRouteChildren {
   BlogEmailCampaignsSriLankaRoute: typeof BlogEmailCampaignsSriLankaRoute
   BlogEmailMarketingSriLankaRoute: typeof BlogEmailMarketingSriLankaRoute
   BlogEventPromotionSriLankaRoute: typeof BlogEventPromotionSriLankaRoute
+  BlogEventStageSetupAvPackageSriLankaRoute: typeof BlogEventStageSetupAvPackageSriLankaRoute
   BlogFacebookAdvertisingSriLankaRoute: typeof BlogFacebookAdvertisingSriLankaRoute
   BlogFlyerDesignSriLankaRoute: typeof BlogFlyerDesignSriLankaRoute
   BlogFlyerDistributionSriLankaRoute: typeof BlogFlyerDistributionSriLankaRoute
   BlogGoogleAdvertisingSriLankaRoute: typeof BlogGoogleAdvertisingSriLankaRoute
   BlogGoogleRankingSriLankaRoute: typeof BlogGoogleRankingSriLankaRoute
   BlogGroundActivationSriLankaRoute: typeof BlogGroundActivationSriLankaRoute
+  BlogHowMuchDoesLedScreenRentCostSriLankaRoute: typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   BlogInStoreBrandingSriLankaRoute: typeof BlogInStoreBrandingSriLankaRoute
   BlogInstagramAdvertisingSriLankaRoute: typeof BlogInstagramAdvertisingSriLankaRoute
   BlogIntegratedAdvertisingSriLankaRoute: typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -4740,6 +4847,9 @@ export interface RootRouteChildren {
   BlogLampPostAdvertisingSriLankaRoute: typeof BlogLampPostAdvertisingSriLankaRoute
   BlogLeafletDistributionSriLankaRoute: typeof BlogLeafletDistributionSriLankaRoute
   BlogLedDisplayAdvertisingSriLankaRoute: typeof BlogLedDisplayAdvertisingSriLankaRoute
+  BlogLedScreenRentColomboGuideRoute: typeof BlogLedScreenRentColomboGuideRoute
+  BlogLedScreenRentForWeddingsSriLankaRoute: typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  BlogLedScreenRentVsProjectorEventsSriLankaRoute: typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   BlogMarketingMaterialsSriLankaRoute: typeof BlogMarketingMaterialsSriLankaRoute
   BlogMassMediaAdvertisingSriLankaRoute: typeof BlogMassMediaAdvertisingSriLankaRoute
   BlogMerchandisingSriLankaRoute: typeof BlogMerchandisingSriLankaRoute
@@ -4751,7 +4861,9 @@ export interface RootRouteChildren {
   BlogOnlineMarketingSriLankaRoute: typeof BlogOnlineMarketingSriLankaRoute
   BlogOrganicTrafficSriLankaRoute: typeof BlogOrganicTrafficSriLankaRoute
   BlogOutdoorAdvertisingSriLankaRoute: typeof BlogOutdoorAdvertisingSriLankaRoute
+  BlogOutdoorLedScreenRentSriLankaRoute: typeof BlogOutdoorLedScreenRentSriLankaRoute
   BlogPayPerClickSriLankaRoute: typeof BlogPayPerClickSriLankaRoute
+  BlogPixelPitchExplainedLedScreenRentSriLankaRoute: typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   BlogPosBrandingSriLankaRoute: typeof BlogPosBrandingSriLankaRoute
   BlogPrintMediaAdvertisingSriLankaRoute: typeof BlogPrintMediaAdvertisingSriLankaRoute
   BlogProductPromotionSriLankaRoute: typeof BlogProductPromotionSriLankaRoute
@@ -6866,11 +6978,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogPosBrandingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': {
+      id: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
+      path: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
+      fullPath: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
+      preLoaderRoute: typeof BlogPixelPitchExplainedLedScreenRentSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/pay-per-click-sri-lanka': {
       id: '/blog/pay-per-click-sri-lanka'
       path: '/blog/pay-per-click-sri-lanka'
       fullPath: '/blog/pay-per-click-sri-lanka'
       preLoaderRoute: typeof BlogPayPerClickSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/outdoor-led-screen-rent-sri-lanka': {
+      id: '/blog/outdoor-led-screen-rent-sri-lanka'
+      path: '/blog/outdoor-led-screen-rent-sri-lanka'
+      fullPath: '/blog/outdoor-led-screen-rent-sri-lanka'
+      preLoaderRoute: typeof BlogOutdoorLedScreenRentSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/outdoor-advertising-sri-lanka': {
@@ -6950,6 +7076,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogMarketingMaterialsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/led-screen-rent-vs-projector-events-sri-lanka': {
+      id: '/blog/led-screen-rent-vs-projector-events-sri-lanka'
+      path: '/blog/led-screen-rent-vs-projector-events-sri-lanka'
+      fullPath: '/blog/led-screen-rent-vs-projector-events-sri-lanka'
+      preLoaderRoute: typeof BlogLedScreenRentVsProjectorEventsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/led-screen-rent-for-weddings-sri-lanka': {
+      id: '/blog/led-screen-rent-for-weddings-sri-lanka'
+      path: '/blog/led-screen-rent-for-weddings-sri-lanka'
+      fullPath: '/blog/led-screen-rent-for-weddings-sri-lanka'
+      preLoaderRoute: typeof BlogLedScreenRentForWeddingsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/led-screen-rent-colombo-guide': {
+      id: '/blog/led-screen-rent-colombo-guide'
+      path: '/blog/led-screen-rent-colombo-guide'
+      fullPath: '/blog/led-screen-rent-colombo-guide'
+      preLoaderRoute: typeof BlogLedScreenRentColomboGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/led-display-advertising-sri-lanka': {
       id: '/blog/led-display-advertising-sri-lanka'
       path: '/blog/led-display-advertising-sri-lanka'
@@ -7006,6 +7153,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogInStoreBrandingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/how-much-does-led-screen-rent-cost-sri-lanka': {
+      id: '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
+      path: '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
+      fullPath: '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
+      preLoaderRoute: typeof BlogHowMuchDoesLedScreenRentCostSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/ground-activation-sri-lanka': {
       id: '/blog/ground-activation-sri-lanka'
       path: '/blog/ground-activation-sri-lanka'
@@ -7046,6 +7200,13 @@ declare module '@tanstack/react-router' {
       path: '/blog/facebook-advertising-sri-lanka'
       fullPath: '/blog/facebook-advertising-sri-lanka'
       preLoaderRoute: typeof BlogFacebookAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/event-stage-setup-av-package-sri-lanka': {
+      id: '/blog/event-stage-setup-av-package-sri-lanka'
+      path: '/blog/event-stage-setup-av-package-sri-lanka'
+      fullPath: '/blog/event-stage-setup-av-package-sri-lanka'
+      preLoaderRoute: typeof BlogEventStageSetupAvPackageSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/event-promotion-sri-lanka': {
@@ -7116,6 +7277,13 @@ declare module '@tanstack/react-router' {
       path: '/blog/creative-design-sri-lanka'
       fullPath: '/blog/creative-design-sri-lanka'
       preLoaderRoute: typeof BlogCreativeDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/corporate-event-av-checklist-sri-lanka': {
+      id: '/blog/corporate-event-av-checklist-sri-lanka'
+      path: '/blog/corporate-event-av-checklist-sri-lanka'
+      fullPath: '/blog/corporate-event-av-checklist-sri-lanka'
+      preLoaderRoute: typeof BlogCorporateEventAvChecklistSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/corporate-advertising-sri-lanka': {
@@ -7537,6 +7705,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogContentCreationSriLankaRoute: BlogContentCreationSriLankaRoute,
   BlogConversionMarketingSriLankaRoute: BlogConversionMarketingSriLankaRoute,
   BlogCorporateAdvertisingSriLankaRoute: BlogCorporateAdvertisingSriLankaRoute,
+  BlogCorporateEventAvChecklistSriLankaRoute:
+    BlogCorporateEventAvChecklistSriLankaRoute,
   BlogCreativeDesignSriLankaRoute: BlogCreativeDesignSriLankaRoute,
   BlogCrossPlatformMarketingSriLankaRoute:
     BlogCrossPlatformMarketingSriLankaRoute,
@@ -7549,12 +7719,16 @@ const rootRouteChildren: RootRouteChildren = {
   BlogEmailCampaignsSriLankaRoute: BlogEmailCampaignsSriLankaRoute,
   BlogEmailMarketingSriLankaRoute: BlogEmailMarketingSriLankaRoute,
   BlogEventPromotionSriLankaRoute: BlogEventPromotionSriLankaRoute,
+  BlogEventStageSetupAvPackageSriLankaRoute:
+    BlogEventStageSetupAvPackageSriLankaRoute,
   BlogFacebookAdvertisingSriLankaRoute: BlogFacebookAdvertisingSriLankaRoute,
   BlogFlyerDesignSriLankaRoute: BlogFlyerDesignSriLankaRoute,
   BlogFlyerDistributionSriLankaRoute: BlogFlyerDistributionSriLankaRoute,
   BlogGoogleAdvertisingSriLankaRoute: BlogGoogleAdvertisingSriLankaRoute,
   BlogGoogleRankingSriLankaRoute: BlogGoogleRankingSriLankaRoute,
   BlogGroundActivationSriLankaRoute: BlogGroundActivationSriLankaRoute,
+  BlogHowMuchDoesLedScreenRentCostSriLankaRoute:
+    BlogHowMuchDoesLedScreenRentCostSriLankaRoute,
   BlogInStoreBrandingSriLankaRoute: BlogInStoreBrandingSriLankaRoute,
   BlogInstagramAdvertisingSriLankaRoute: BlogInstagramAdvertisingSriLankaRoute,
   BlogIntegratedAdvertisingSriLankaRoute:
@@ -7565,6 +7739,11 @@ const rootRouteChildren: RootRouteChildren = {
   BlogLeafletDistributionSriLankaRoute: BlogLeafletDistributionSriLankaRoute,
   BlogLedDisplayAdvertisingSriLankaRoute:
     BlogLedDisplayAdvertisingSriLankaRoute,
+  BlogLedScreenRentColomboGuideRoute: BlogLedScreenRentColomboGuideRoute,
+  BlogLedScreenRentForWeddingsSriLankaRoute:
+    BlogLedScreenRentForWeddingsSriLankaRoute,
+  BlogLedScreenRentVsProjectorEventsSriLankaRoute:
+    BlogLedScreenRentVsProjectorEventsSriLankaRoute,
   BlogMarketingMaterialsSriLankaRoute: BlogMarketingMaterialsSriLankaRoute,
   BlogMassMediaAdvertisingSriLankaRoute: BlogMassMediaAdvertisingSriLankaRoute,
   BlogMerchandisingSriLankaRoute: BlogMerchandisingSriLankaRoute,
@@ -7577,7 +7756,10 @@ const rootRouteChildren: RootRouteChildren = {
   BlogOnlineMarketingSriLankaRoute: BlogOnlineMarketingSriLankaRoute,
   BlogOrganicTrafficSriLankaRoute: BlogOrganicTrafficSriLankaRoute,
   BlogOutdoorAdvertisingSriLankaRoute: BlogOutdoorAdvertisingSriLankaRoute,
+  BlogOutdoorLedScreenRentSriLankaRoute: BlogOutdoorLedScreenRentSriLankaRoute,
   BlogPayPerClickSriLankaRoute: BlogPayPerClickSriLankaRoute,
+  BlogPixelPitchExplainedLedScreenRentSriLankaRoute:
+    BlogPixelPitchExplainedLedScreenRentSriLankaRoute,
   BlogPosBrandingSriLankaRoute: BlogPosBrandingSriLankaRoute,
   BlogPrintMediaAdvertisingSriLankaRoute:
     BlogPrintMediaAdvertisingSriLankaRoute,

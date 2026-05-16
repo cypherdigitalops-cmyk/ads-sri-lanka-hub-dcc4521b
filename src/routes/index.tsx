@@ -85,7 +85,7 @@ const BUDGET_TIERS = [
     { label: "Premium OOH + digital billboards", href: "/led-screen-rental-sri-lanka" },
     { label: "Programmatic display buying", href: "/digital-marketing-sri-lanka" },
     { label: "Full digital performance suite", href: "/digital-marketing-sri-lanka" },
-    { label: "PR + earned media integration", href: "/public-relations-sri-lanka" },
+    { label: "PR + earned media integration", href: "/pr-sri-lanka" },
     { label: "Event & experiential marketing", href: "/event-management-sri-lanka" },
   ] },
 ];

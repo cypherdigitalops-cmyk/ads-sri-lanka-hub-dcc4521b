@@ -54,10 +54,40 @@ const DECISION_TABLE: { channel: string; href: string; bestFor: string; speed: s
 ];
 
 const BUDGET_TIERS = [
-  { tier: "Starter", range: "Rs 30,000 – 80,000 / month", desc: "Perfect for small businesses, local services and new brand launches that need measurable results immediately.", items: ["Google Search Ads (highest intent)", "Facebook / Instagram Ads", "Google Business Profile (free)", "WhatsApp Business (free)", "Basic SEO foundation"] },
-  { tier: "Growth", range: "Rs 80,000 – 300,000 / month", desc: "For businesses ready to scale with multi-channel digital strategy and early offline presence.", items: ["Google Ads (Search + Display)", "Facebook + Instagram + TikTok", "SEO (ongoing, compounding)", "Email + SMS marketing", "Radio (regional, if relevant)", "1–2 OOH sites in key locations"] },
-  { tier: "Scale", range: "Rs 300,000 – 1M / month", desc: "For established brands building national presence across digital and traditional simultaneously.", items: ["Full digital stack (Google, Meta, TikTok)", "YouTube video campaigns", "Influencer marketing partnerships", "OOH / Billboard networks", "Radio on 2–3 stations", "BTL activations at key venues", "Advanced SEO + content marketing"] },
-  { tier: "Enterprise", range: "Rs 1M+ / month", desc: "For large brands requiring integrated 360° campaigns across every touchpoint, islandwide.", items: ["TV advertising (prime-time slots)", "Full ATL media plan", "National BTL activation programme", "Premium OOH + digital billboards", "Programmatic display buying", "Full digital performance suite", "PR + earned media integration", "Event & experiential marketing"] },
+  { tier: "Starter", range: "Rs 30,000 – 80,000 / month", desc: "Perfect for small businesses, local services and new brand launches that need measurable results immediately.", items: [
+    { label: "Google Search Ads (highest intent)", href: "/google-ads-sri-lanka" },
+    { label: "Facebook / Instagram Ads", href: "/facebook-marketing-sri-lanka" },
+    { label: "Google Business Profile (free)", href: "/seo-services-sri-lanka" },
+    { label: "WhatsApp Business (free)", href: "/whatsapp-marketing-sri-lanka" },
+    { label: "Basic SEO foundation", href: "/seo-services-sri-lanka" },
+  ] },
+  { tier: "Growth", range: "Rs 80,000 – 300,000 / month", desc: "For businesses ready to scale with multi-channel digital strategy and early offline presence.", items: [
+    { label: "Google Ads (Search + Display)", href: "/google-ads-sri-lanka" },
+    { label: "Facebook + Instagram + TikTok", href: "/social-media-marketing-sri-lanka" },
+    { label: "SEO (ongoing, compounding)", href: "/seo-services-sri-lanka" },
+    { label: "Email + SMS marketing", href: "/email-sms-marketing-sri-lanka" },
+    { label: "Radio (regional, if relevant)", href: "/radio-advertising-sri-lanka" },
+    { label: "1–2 OOH sites in key locations", href: "/outdoor-advertising-sri-lanka" },
+  ] },
+  { tier: "Scale", range: "Rs 300,000 – 1M / month", desc: "For established brands building national presence across digital and traditional simultaneously.", items: [
+    { label: "Full digital stack (Google, Meta, TikTok)", href: "/digital-marketing-sri-lanka" },
+    { label: "YouTube video campaigns", href: "/youtube-ads-sri-lanka" },
+    { label: "Influencer marketing partnerships", href: "/influencer-marketing-sri-lanka" },
+    { label: "OOH / Billboard networks", href: "/billboard-advertising-sri-lanka" },
+    { label: "Radio on 2–3 stations", href: "/radio-advertising-sri-lanka" },
+    { label: "BTL activations at key venues", href: "/btl-advertising-sri-lanka" },
+    { label: "Advanced SEO + content marketing", href: "/seo-services-sri-lanka" },
+  ] },
+  { tier: "Enterprise", range: "Rs 1M+ / month", desc: "For large brands requiring integrated 360° campaigns across every touchpoint, islandwide.", items: [
+    { label: "TV advertising (prime-time slots)", href: "/tv-advertising-sri-lanka" },
+    { label: "Full ATL media plan", href: "/atl-advertising-sri-lanka" },
+    { label: "National BTL activation programme", href: "/btl-advertising-sri-lanka" },
+    { label: "Premium OOH + digital billboards", href: "/led-screen-rental-sri-lanka" },
+    { label: "Programmatic display buying", href: "/digital-marketing-sri-lanka" },
+    { label: "Full digital performance suite", href: "/digital-marketing-sri-lanka" },
+    { label: "PR + earned media integration", href: "/public-relations-sri-lanka" },
+    { label: "Event & experiential marketing", href: "/event-management-sri-lanka" },
+  ] },
 ];
 
 const MISTAKES = [

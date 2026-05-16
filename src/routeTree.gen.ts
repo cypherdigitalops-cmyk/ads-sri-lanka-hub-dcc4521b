@@ -326,6 +326,7 @@ import { Route as BlogInternetMarketingSriLankaRouteImport } from './routes/blog
 import { Route as BlogIntegratedAdvertisingSriLankaRouteImport } from './routes/blog/integrated-advertising-sri-lanka'
 import { Route as BlogInstagramAdvertisingSriLankaRouteImport } from './routes/blog/instagram-advertising-sri-lanka'
 import { Route as BlogInStoreBrandingSriLankaRouteImport } from './routes/blog/in-store-branding-sri-lanka'
+import { Route as BlogHowMuchDoesLedScreenRentCostSriLankaRouteImport } from './routes/blog/how-much-does-led-screen-rent-cost-sri-lanka'
 import { Route as BlogGroundActivationSriLankaRouteImport } from './routes/blog/ground-activation-sri-lanka'
 import { Route as BlogGoogleRankingSriLankaRouteImport } from './routes/blog/google-ranking-sri-lanka'
 import { Route as BlogGoogleAdvertisingSriLankaRouteImport } from './routes/blog/google-advertising-sri-lanka'
@@ -2114,6 +2115,12 @@ const BlogInStoreBrandingSriLankaRoute =
     path: '/blog/in-store-branding-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogHowMuchDoesLedScreenRentCostSriLankaRoute =
+  BlogHowMuchDoesLedScreenRentCostSriLankaRouteImport.update({
+    id: '/blog/how-much-does-led-screen-rent-cost-sri-lanka',
+    path: '/blog/how-much-does-led-screen-rent-cost-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogGroundActivationSriLankaRoute =
   BlogGroundActivationSriLankaRouteImport.update({
     id: '/blog/ground-activation-sri-lanka',
@@ -2617,6 +2624,7 @@ export interface FileRoutesByFullPath {
   '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
   '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
   '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/how-much-does-led-screen-rent-cost-sri-lanka': typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -2971,6 +2979,7 @@ export interface FileRoutesByTo {
   '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
   '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
   '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/how-much-does-led-screen-rent-cost-sri-lanka': typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -3326,6 +3335,7 @@ export interface FileRoutesById {
   '/blog/google-advertising-sri-lanka': typeof BlogGoogleAdvertisingSriLankaRoute
   '/blog/google-ranking-sri-lanka': typeof BlogGoogleRankingSriLankaRoute
   '/blog/ground-activation-sri-lanka': typeof BlogGroundActivationSriLankaRoute
+  '/blog/how-much-does-led-screen-rent-cost-sri-lanka': typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -3682,6 +3692,7 @@ export interface FileRouteTypes {
     | '/blog/google-advertising-sri-lanka'
     | '/blog/google-ranking-sri-lanka'
     | '/blog/ground-activation-sri-lanka'
+    | '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
@@ -4036,6 +4047,7 @@ export interface FileRouteTypes {
     | '/blog/google-advertising-sri-lanka'
     | '/blog/google-ranking-sri-lanka'
     | '/blog/ground-activation-sri-lanka'
+    | '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
@@ -4390,6 +4402,7 @@ export interface FileRouteTypes {
     | '/blog/google-advertising-sri-lanka'
     | '/blog/google-ranking-sri-lanka'
     | '/blog/ground-activation-sri-lanka'
+    | '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
@@ -4745,6 +4758,7 @@ export interface RootRouteChildren {
   BlogGoogleAdvertisingSriLankaRoute: typeof BlogGoogleAdvertisingSriLankaRoute
   BlogGoogleRankingSriLankaRoute: typeof BlogGoogleRankingSriLankaRoute
   BlogGroundActivationSriLankaRoute: typeof BlogGroundActivationSriLankaRoute
+  BlogHowMuchDoesLedScreenRentCostSriLankaRoute: typeof BlogHowMuchDoesLedScreenRentCostSriLankaRoute
   BlogInStoreBrandingSriLankaRoute: typeof BlogInStoreBrandingSriLankaRoute
   BlogInstagramAdvertisingSriLankaRoute: typeof BlogInstagramAdvertisingSriLankaRoute
   BlogIntegratedAdvertisingSriLankaRoute: typeof BlogIntegratedAdvertisingSriLankaRoute
@@ -7027,6 +7041,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogInStoreBrandingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/how-much-does-led-screen-rent-cost-sri-lanka': {
+      id: '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
+      path: '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
+      fullPath: '/blog/how-much-does-led-screen-rent-cost-sri-lanka'
+      preLoaderRoute: typeof BlogHowMuchDoesLedScreenRentCostSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/ground-activation-sri-lanka': {
       id: '/blog/ground-activation-sri-lanka'
       path: '/blog/ground-activation-sri-lanka'
@@ -7576,6 +7597,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogGoogleAdvertisingSriLankaRoute: BlogGoogleAdvertisingSriLankaRoute,
   BlogGoogleRankingSriLankaRoute: BlogGoogleRankingSriLankaRoute,
   BlogGroundActivationSriLankaRoute: BlogGroundActivationSriLankaRoute,
+  BlogHowMuchDoesLedScreenRentCostSriLankaRoute:
+    BlogHowMuchDoesLedScreenRentCostSriLankaRoute,
   BlogInStoreBrandingSriLankaRoute: BlogInStoreBrandingSriLankaRoute,
   BlogInstagramAdvertisingSriLankaRoute: BlogInstagramAdvertisingSriLankaRoute,
   BlogIntegratedAdvertisingSriLankaRoute:

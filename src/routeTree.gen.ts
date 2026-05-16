@@ -318,6 +318,7 @@ import { Route as BlogNationalAdvertisingCampaignsSriLankaRouteImport } from './
 import { Route as BlogMerchandisingSriLankaRouteImport } from './routes/blog/merchandising-sri-lanka'
 import { Route as BlogMassMediaAdvertisingSriLankaRouteImport } from './routes/blog/mass-media-advertising-sri-lanka'
 import { Route as BlogMarketingMaterialsSriLankaRouteImport } from './routes/blog/marketing-materials-sri-lanka'
+import { Route as BlogLedScreenRentVsProjectorEventsSriLankaRouteImport } from './routes/blog/led-screen-rent-vs-projector-events-sri-lanka'
 import { Route as BlogLedScreenRentForWeddingsSriLankaRouteImport } from './routes/blog/led-screen-rent-for-weddings-sri-lanka'
 import { Route as BlogLedScreenRentColomboGuideRouteImport } from './routes/blog/led-screen-rent-colombo-guide'
 import { Route as BlogLedDisplayAdvertisingSriLankaRouteImport } from './routes/blog/led-display-advertising-sri-lanka'
@@ -2069,6 +2070,12 @@ const BlogMarketingMaterialsSriLankaRoute =
     path: '/blog/marketing-materials-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogLedScreenRentVsProjectorEventsSriLankaRoute =
+  BlogLedScreenRentVsProjectorEventsSriLankaRouteImport.update({
+    id: '/blog/led-screen-rent-vs-projector-events-sri-lanka',
+    path: '/blog/led-screen-rent-vs-projector-events-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogLedScreenRentForWeddingsSriLankaRoute =
   BlogLedScreenRentForWeddingsSriLankaRouteImport.update({
     id: '/blog/led-screen-rent-for-weddings-sri-lanka',
@@ -2649,6 +2656,7 @@ export interface FileRoutesByFullPath {
   '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
   '/blog/led-screen-rent-colombo-guide': typeof BlogLedScreenRentColomboGuideRoute
   '/blog/led-screen-rent-for-weddings-sri-lanka': typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  '/blog/led-screen-rent-vs-projector-events-sri-lanka': typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
   '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
   '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
@@ -3006,6 +3014,7 @@ export interface FileRoutesByTo {
   '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
   '/blog/led-screen-rent-colombo-guide': typeof BlogLedScreenRentColomboGuideRoute
   '/blog/led-screen-rent-for-weddings-sri-lanka': typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  '/blog/led-screen-rent-vs-projector-events-sri-lanka': typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
   '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
   '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
@@ -3364,6 +3373,7 @@ export interface FileRoutesById {
   '/blog/led-display-advertising-sri-lanka': typeof BlogLedDisplayAdvertisingSriLankaRoute
   '/blog/led-screen-rent-colombo-guide': typeof BlogLedScreenRentColomboGuideRoute
   '/blog/led-screen-rent-for-weddings-sri-lanka': typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  '/blog/led-screen-rent-vs-projector-events-sri-lanka': typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   '/blog/marketing-materials-sri-lanka': typeof BlogMarketingMaterialsSriLankaRoute
   '/blog/mass-media-advertising-sri-lanka': typeof BlogMassMediaAdvertisingSriLankaRoute
   '/blog/merchandising-sri-lanka': typeof BlogMerchandisingSriLankaRoute
@@ -3723,6 +3733,7 @@ export interface FileRouteTypes {
     | '/blog/led-display-advertising-sri-lanka'
     | '/blog/led-screen-rent-colombo-guide'
     | '/blog/led-screen-rent-for-weddings-sri-lanka'
+    | '/blog/led-screen-rent-vs-projector-events-sri-lanka'
     | '/blog/marketing-materials-sri-lanka'
     | '/blog/mass-media-advertising-sri-lanka'
     | '/blog/merchandising-sri-lanka'
@@ -4080,6 +4091,7 @@ export interface FileRouteTypes {
     | '/blog/led-display-advertising-sri-lanka'
     | '/blog/led-screen-rent-colombo-guide'
     | '/blog/led-screen-rent-for-weddings-sri-lanka'
+    | '/blog/led-screen-rent-vs-projector-events-sri-lanka'
     | '/blog/marketing-materials-sri-lanka'
     | '/blog/mass-media-advertising-sri-lanka'
     | '/blog/merchandising-sri-lanka'
@@ -4437,6 +4449,7 @@ export interface FileRouteTypes {
     | '/blog/led-display-advertising-sri-lanka'
     | '/blog/led-screen-rent-colombo-guide'
     | '/blog/led-screen-rent-for-weddings-sri-lanka'
+    | '/blog/led-screen-rent-vs-projector-events-sri-lanka'
     | '/blog/marketing-materials-sri-lanka'
     | '/blog/mass-media-advertising-sri-lanka'
     | '/blog/merchandising-sri-lanka'
@@ -4795,6 +4808,7 @@ export interface RootRouteChildren {
   BlogLedDisplayAdvertisingSriLankaRoute: typeof BlogLedDisplayAdvertisingSriLankaRoute
   BlogLedScreenRentColomboGuideRoute: typeof BlogLedScreenRentColomboGuideRoute
   BlogLedScreenRentForWeddingsSriLankaRoute: typeof BlogLedScreenRentForWeddingsSriLankaRoute
+  BlogLedScreenRentVsProjectorEventsSriLankaRoute: typeof BlogLedScreenRentVsProjectorEventsSriLankaRoute
   BlogMarketingMaterialsSriLankaRoute: typeof BlogMarketingMaterialsSriLankaRoute
   BlogMassMediaAdvertisingSriLankaRoute: typeof BlogMassMediaAdvertisingSriLankaRoute
   BlogMerchandisingSriLankaRoute: typeof BlogMerchandisingSriLankaRoute
@@ -7013,6 +7027,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogMarketingMaterialsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/led-screen-rent-vs-projector-events-sri-lanka': {
+      id: '/blog/led-screen-rent-vs-projector-events-sri-lanka'
+      path: '/blog/led-screen-rent-vs-projector-events-sri-lanka'
+      fullPath: '/blog/led-screen-rent-vs-projector-events-sri-lanka'
+      preLoaderRoute: typeof BlogLedScreenRentVsProjectorEventsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/led-screen-rent-for-weddings-sri-lanka': {
       id: '/blog/led-screen-rent-for-weddings-sri-lanka'
       path: '/blog/led-screen-rent-for-weddings-sri-lanka'
@@ -7654,6 +7675,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogLedScreenRentColomboGuideRoute: BlogLedScreenRentColomboGuideRoute,
   BlogLedScreenRentForWeddingsSriLankaRoute:
     BlogLedScreenRentForWeddingsSriLankaRoute,
+  BlogLedScreenRentVsProjectorEventsSriLankaRoute:
+    BlogLedScreenRentVsProjectorEventsSriLankaRoute,
   BlogMarketingMaterialsSriLankaRoute: BlogMarketingMaterialsSriLankaRoute,
   BlogMassMediaAdvertisingSriLankaRoute: BlogMassMediaAdvertisingSriLankaRoute,
   BlogMerchandisingSriLankaRoute: BlogMerchandisingSriLankaRoute,

@@ -711,6 +711,16 @@ function Index() {
           </Link>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Link
+            to={"/blog/corporate-event-management-sri-lanka-guide" as never}
+            className="group rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40"
+          >
+            <div className="text-xs font-semibold text-accent">Event Management</div>
+            <div className="mt-2 font-semibold">Corporate Event Management Sri Lanka — Complete Guide</div>
+            <div className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+              Read guide <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" />
+            </div>
+          </Link>
           {CATEGORIES.flatMap((c) => c.blog.slice(0, 1).map((b) => ({ c, b }))).map(({ c, b }) => (
             <Link
               key={b.slug}

@@ -346,6 +346,7 @@ import { Route as BlogDigitalCampaignManagementSriLankaRouteImport } from './rou
 import { Route as BlogDigitalAdvertisingSriLankaRouteImport } from './routes/blog/digital-advertising-sri-lanka'
 import { Route as BlogCrossPlatformMarketingSriLankaRouteImport } from './routes/blog/cross-platform-marketing-sri-lanka'
 import { Route as BlogCreativeDesignSriLankaRouteImport } from './routes/blog/creative-design-sri-lanka'
+import { Route as BlogCorporateEventAvChecklistSriLankaRouteImport } from './routes/blog/corporate-event-av-checklist-sri-lanka'
 import { Route as BlogCorporateAdvertisingSriLankaRouteImport } from './routes/blog/corporate-advertising-sri-lanka'
 import { Route as BlogConversionMarketingSriLankaRouteImport } from './routes/blog/conversion-marketing-sri-lanka'
 import { Route as BlogContentCreationSriLankaRouteImport } from './routes/blog/content-creation-sri-lanka'
@@ -2237,6 +2238,12 @@ const BlogCreativeDesignSriLankaRoute =
     path: '/blog/creative-design-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogCorporateEventAvChecklistSriLankaRoute =
+  BlogCorporateEventAvChecklistSriLankaRouteImport.update({
+    id: '/blog/corporate-event-av-checklist-sri-lanka',
+    path: '/blog/corporate-event-av-checklist-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogCorporateAdvertisingSriLankaRoute =
   BlogCorporateAdvertisingSriLankaRouteImport.update({
     id: '/blog/corporate-advertising-sri-lanka',
@@ -2629,6 +2636,7 @@ export interface FileRoutesByFullPath {
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
   '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/corporate-event-av-checklist-sri-lanka': typeof BlogCorporateEventAvChecklistSriLankaRoute
   '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
   '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
   '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
@@ -2987,6 +2995,7 @@ export interface FileRoutesByTo {
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
   '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/corporate-event-av-checklist-sri-lanka': typeof BlogCorporateEventAvChecklistSriLankaRoute
   '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
   '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
   '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
@@ -3346,6 +3355,7 @@ export interface FileRoutesById {
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
   '/blog/corporate-advertising-sri-lanka': typeof BlogCorporateAdvertisingSriLankaRoute
+  '/blog/corporate-event-av-checklist-sri-lanka': typeof BlogCorporateEventAvChecklistSriLankaRoute
   '/blog/creative-design-sri-lanka': typeof BlogCreativeDesignSriLankaRoute
   '/blog/cross-platform-marketing-sri-lanka': typeof BlogCrossPlatformMarketingSriLankaRoute
   '/blog/digital-advertising-sri-lanka': typeof BlogDigitalAdvertisingSriLankaRoute
@@ -3706,6 +3716,7 @@ export interface FileRouteTypes {
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
     | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/corporate-event-av-checklist-sri-lanka'
     | '/blog/creative-design-sri-lanka'
     | '/blog/cross-platform-marketing-sri-lanka'
     | '/blog/digital-advertising-sri-lanka'
@@ -4064,6 +4075,7 @@ export interface FileRouteTypes {
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
     | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/corporate-event-av-checklist-sri-lanka'
     | '/blog/creative-design-sri-lanka'
     | '/blog/cross-platform-marketing-sri-lanka'
     | '/blog/digital-advertising-sri-lanka'
@@ -4422,6 +4434,7 @@ export interface FileRouteTypes {
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
     | '/blog/corporate-advertising-sri-lanka'
+    | '/blog/corporate-event-av-checklist-sri-lanka'
     | '/blog/creative-design-sri-lanka'
     | '/blog/cross-platform-marketing-sri-lanka'
     | '/blog/digital-advertising-sri-lanka'
@@ -4781,6 +4794,7 @@ export interface RootRouteChildren {
   BlogContentCreationSriLankaRoute: typeof BlogContentCreationSriLankaRoute
   BlogConversionMarketingSriLankaRoute: typeof BlogConversionMarketingSriLankaRoute
   BlogCorporateAdvertisingSriLankaRoute: typeof BlogCorporateAdvertisingSriLankaRoute
+  BlogCorporateEventAvChecklistSriLankaRoute: typeof BlogCorporateEventAvChecklistSriLankaRoute
   BlogCreativeDesignSriLankaRoute: typeof BlogCreativeDesignSriLankaRoute
   BlogCrossPlatformMarketingSriLankaRoute: typeof BlogCrossPlatformMarketingSriLankaRoute
   BlogDigitalAdvertisingSriLankaRoute: typeof BlogDigitalAdvertisingSriLankaRoute
@@ -7223,6 +7237,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogCreativeDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/corporate-event-av-checklist-sri-lanka': {
+      id: '/blog/corporate-event-av-checklist-sri-lanka'
+      path: '/blog/corporate-event-av-checklist-sri-lanka'
+      fullPath: '/blog/corporate-event-av-checklist-sri-lanka'
+      preLoaderRoute: typeof BlogCorporateEventAvChecklistSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/corporate-advertising-sri-lanka': {
       id: '/blog/corporate-advertising-sri-lanka'
       path: '/blog/corporate-advertising-sri-lanka'
@@ -7642,6 +7663,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogContentCreationSriLankaRoute: BlogContentCreationSriLankaRoute,
   BlogConversionMarketingSriLankaRoute: BlogConversionMarketingSriLankaRoute,
   BlogCorporateAdvertisingSriLankaRoute: BlogCorporateAdvertisingSriLankaRoute,
+  BlogCorporateEventAvChecklistSriLankaRoute:
+    BlogCorporateEventAvChecklistSriLankaRoute,
   BlogCreativeDesignSriLankaRoute: BlogCreativeDesignSriLankaRoute,
   BlogCrossPlatformMarketingSriLankaRoute:
     BlogCrossPlatformMarketingSriLankaRoute,

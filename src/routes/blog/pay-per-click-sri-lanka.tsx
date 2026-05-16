@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/pay-per-click-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/pay-per-click-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="pay per click sri lanka" extraLinks={[{"href":"/ppc-sri-lanka","label":"PPC Sri Lanka"},{"href":"/google-ads-sri-lanka","label":"Google Ads"},{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="pay per click sri lanka" extraLinks={[{"href":"/ppc-sri-lanka","label":"PPC Sri Lanka","anchor":"PPC Sri Lanka"},{"href":"/google-ads-sri-lanka","label":"Google Ads","anchor":"Google Ads Sri Lanka"},{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing","anchor":"digital marketing Sri Lanka"}]} /></PageShell>),
 });

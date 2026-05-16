@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/digital-campaign-management-sri-lank
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/digital-campaign-management-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="digital campaign management sri lanka" extraLinks={[{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing"},{"href":"/performance-marketing-sri-lanka","label":"Performance Marketing"},{"href":"/programmatic-advertising-sri-lanka","label":"Programmatic Advertising"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="digital campaign management sri lanka" extraLinks={[{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing","anchor":"digital marketing Sri Lanka"},{"href":"/performance-marketing-sri-lanka","label":"Performance Marketing","anchor":"performance marketing Sri Lanka"},{"href":"/programmatic-advertising-sri-lanka","label":"Programmatic Advertising","anchor":"programmatic advertising Sri Lanka"}]} /></PageShell>),
 });

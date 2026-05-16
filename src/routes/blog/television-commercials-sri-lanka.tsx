@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/television-commercials-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/television-commercials-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="television commercials sri lanka" extraLinks={[{"href":"/tv-advertising-sri-lanka","label":"TV Advertising"},{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising"},{"href":"/video-production-sri-lanka","label":"Video Production"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="television commercials sri lanka" extraLinks={[{"href":"/tv-advertising-sri-lanka","label":"TV Advertising","anchor":"TV advertising Sri Lanka"},{"href":"/atl-advertising-sri-lanka","label":"ATL Advertising","anchor":"ATL advertising Sri Lanka"},{"href":"/video-production-sri-lanka","label":"Video Production","anchor":"video production Sri Lanka"}]} /></PageShell>),
 });

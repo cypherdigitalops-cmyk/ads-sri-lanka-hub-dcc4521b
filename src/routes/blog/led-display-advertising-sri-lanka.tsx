@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/led-display-advertising-sri-lanka")(
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/led-display-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="led display advertising sri lanka" extraLinks={[{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="led display advertising sri lanka" extraLinks={[{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental","anchor":"LED screen rent"},{"href":"/outdoor-advertising-sri-lanka","label":"Outdoor Advertising","anchor":"outdoor advertising Sri Lanka"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka","anchor":"event management Sri Lanka"}]} /></PageShell>),
 });

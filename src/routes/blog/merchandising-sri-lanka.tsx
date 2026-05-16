@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/merchandising-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/merchandising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="merchandising sri lanka" extraLinks={[{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising"},{"href":"/retail-branding-sri-lanka","label":"Retail Branding"},{"href":"/corporate-gifting-sri-lanka","label":"Corporate Gifting"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="merchandising sri lanka" extraLinks={[{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising","anchor":"BTL advertising Sri Lanka"},{"href":"/retail-branding-sri-lanka","label":"Retail Branding","anchor":"retail branding Sri Lanka"},{"href":"/corporate-gifting-sri-lanka","label":"Corporate Gifting","anchor":"corporate gifting Sri Lanka"}]} /></PageShell>),
 });

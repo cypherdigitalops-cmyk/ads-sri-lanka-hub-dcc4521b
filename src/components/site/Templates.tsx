@@ -30,7 +30,7 @@ function resetHomeAnchor(currentSlug = "") {
 }
 
 const LED_TARGET_SLUG = "led-screen-rental-sri-lanka";
-const LED_REGEX = /(led\s+screen\s+(?:rentals?|hires?|on\s+rent))/i;
+const LED_REGEX = /(led\s+screen\s+(?:rentals?|hires?|on\s+rent)|(?:rent|hire|rents|hires|renting|hiring)\s+(?:an?\s+|the\s+)?led\s+screens?|led\s+video\s+wall\s+(?:rentals?|hires?))/i;
 
 function linkifyLedRental(text: string): React.ReactNode {
   if (!text || __ledLinkUsed || __currentSlug === LED_TARGET_SLUG) return text;

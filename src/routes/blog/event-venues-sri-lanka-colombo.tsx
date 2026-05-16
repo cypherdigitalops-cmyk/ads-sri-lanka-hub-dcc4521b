@@ -81,11 +81,7 @@ export const Route = createFileRoute("/blog/event-venues-sri-lanka-colombo")({
           { q: "Can outdoor wedding venues handle 400+ guests?", a: "Yes — Waters Edge, Galle Face Hotel lawn and Cinnamon Bey beach all do, with proper tenting and contingency for rain." },
           { q: "How early do top Colombo venues book out?", a: "Peak wedding dates (December–February Saturdays) book 14–18 months ahead at premium hotels. Corporate AGM season (March–April) books 4–6 months out." },
         ]}
-        related={[
-          { href: "/blog/wedding-event-management-sri-lanka", label: "Wedding event management — what full-service covers" },
-          { href: "/blog/corporate-event-management-sri-lanka-guide", label: "Corporate event management — complete planning guide" },
-          { href: "/blog/event-management-cost-sri-lanka", label: "Event management cost in Sri Lanka — 2025 price guide" },
-        ]}
+        related={[{"href":"/blog/wedding-event-management-sri-lanka","label":"Wedding event management — what full-service covers"},{"href":"/blog/corporate-event-management-sri-lanka-guide","label":"Corporate event management — complete planning guide"},{"href":"/blog/event-management-cost-sri-lanka","label":"Event management cost in Sri Lanka — 2025 price guide"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/conference-management-sri-lanka","label":"Conference Management"},{"href":"/wedding-planners-sri-lanka","label":"Wedding Planners Sri Lanka"},{"href":"/event-venue-colombo","label":"Event Venue Colombo"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
     </PageShell>

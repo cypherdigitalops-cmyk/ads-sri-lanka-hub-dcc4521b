@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/neon-signs-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/neon-signs-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="neon signs sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="neon signs sri lanka" extraLinks={[{"href":"/neon-sign-rental-sri-lanka","label":"Neon Sign Rental"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]} /></PageShell>),
 });

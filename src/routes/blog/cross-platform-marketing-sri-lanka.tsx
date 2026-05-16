@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/cross-platform-marketing-sri-lanka")
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/cross-platform-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="cross platform marketing sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="cross platform marketing sri lanka" extraLinks={[{"href":"/ttl-advertising-sri-lanka","label":"TTL & Integrated Marketing"},{"href":"/omnichannel-marketing-sri-lanka","label":"Omnichannel Marketing"},{"href":"/multi-channel-advertising-sri-lanka","label":"Multi Channel Advertising"}]} /></PageShell>),
 });

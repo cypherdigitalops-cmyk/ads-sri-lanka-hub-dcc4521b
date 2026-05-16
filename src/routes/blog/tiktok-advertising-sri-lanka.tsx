@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/tiktok-advertising-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/tiktok-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="tiktok advertising sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="tiktok advertising sri lanka" extraLinks={[{"href":"/tiktok-marketing-sri-lanka","label":"Tiktok Marketing"},{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing"},{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing"}]} /></PageShell>),
 });

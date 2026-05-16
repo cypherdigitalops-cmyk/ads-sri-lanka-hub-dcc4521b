@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/whatsapp-advertising-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/whatsapp-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="whatsapp advertising sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="whatsapp advertising sri lanka" extraLinks={[{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing"},{"href":"/email-sms-marketing-sri-lanka","label":"Email & SMS Marketing"},{"href":"/digital-marketing-sri-lanka","label":"Digital Marketing"}]} /></PageShell>),
 });

@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/below-the-line-advertising-sri-lanka
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/below-the-line-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="below the line advertising sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="below the line advertising sri lanka" extraLinks={[{"href":"/btl-advertising-sri-lanka","label":"BTL Advertising"},{"href":"/brand-activation-sri-lanka","label":"Brand Activation"},{"href":"/field-marketing-sri-lanka","label":"Field Marketing"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
 });

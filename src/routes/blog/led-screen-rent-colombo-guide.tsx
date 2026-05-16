@@ -121,20 +121,7 @@ export const Route = createFileRoute("/blog/led-screen-rent-colombo-guide")({
             a: "A P4 indoor wall around 3m × 2m from a mid-tier supplier, ground-stacked (no truss), single-day install. Expect LKR 70,000–90,000 all-in with a basic technician.",
           },
         ]}
-        related={[
-          {
-            href: "/blog/how-much-does-led-screen-rent-cost-sri-lanka",
-            label: "How much does LED screen rent cost in Sri Lanka? 2025 breakdown",
-          },
-          {
-            href: "/blog/pixel-pitch-explained-led-screen-rent-sri-lanka",
-            label: "Pixel pitch explained — choosing the right LED screen rent",
-          },
-          {
-            href: "/blog/led-screen-rent-vs-projector-events-sri-lanka",
-            label: "LED screen rent vs projector hire — which wins?",
-          },
-        ]}
+        related={[{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"How much does LED screen rent cost in Sri Lanka? 2025 breakdown"},{"href":"/blog/pixel-pitch-explained-led-screen-rent-sri-lanka","label":"Pixel pitch explained — choosing the right LED screen rent"},{"href":"/blog/led-screen-rent-vs-projector-events-sri-lanka","label":"LED screen rent vs projector hire — which wins?"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/event-management-colombo","label":"Event Management Colombo"},{"href":"/stage-setup-sri-lanka","label":"Stage Setup"}]}
       />
     </PageShell>
   ),

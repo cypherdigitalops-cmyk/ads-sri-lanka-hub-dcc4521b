@@ -484,9 +484,11 @@ export function ServicePageTemplate({
 export function BlogArticleTemplate({
   category,
   keyword,
+  extraLinks,
 }: {
   category: Category;
   keyword: string;
+  extraLinks?: { href: string; label: string }[];
 }) {
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
@@ -536,6 +538,23 @@ export function BlogArticleTemplate({
         />
       </div>
       <FaqList items={article.faqs} />
+      {extraLinks && extraLinks.length ? (
+        <section className="mx-auto max-w-7xl px-4 py-10">
+          <h2 className="text-2xl font-bold">Recommended reading</h2>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {extraLinks.map((l) => (
+              <Link
+                key={l.href}
+                to={l.href as never}
+                className="rounded-lg border border-border bg-card p-4 hover:border-primary/40"
+              >
+                <div className="font-semibold">{l.label}</div>
+                <div className="mt-1 text-xs text-muted-foreground">Learn more →</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
       <section className="mx-auto max-w-7xl px-4 py-10">
         <h2 className="text-2xl font-bold">Explore related services</h2>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -115,12 +115,7 @@ export const Route = createFileRoute("/blog/corporate-event-management-sri-lanka
             a: "A dedicated PR/communications agency handles invites, press kits and follow-up coverage. The event manager handles their on-site experience — press zone, photo opportunity, refreshments. Confusing the two creates coverage gaps.",
           },
         ]}
-        related={[
-          { href: "/blog/event-management-cost-sri-lanka", label: "How much does event management cost in Sri Lanka? 2025 price guide" },
-          { href: "/blog/event-venues-sri-lanka-colombo", label: "Best event venues in Sri Lanka — corporate, wedding, conference" },
-          { href: "/blog/event-planning-checklist-sri-lanka", label: "The ultimate event planning checklist for Sri Lanka" },
-          { href: "/corporate-event-management-sri-lanka", label: "Corporate event management — service page" },
-        ]}
+        related={[{"href":"/blog/event-management-cost-sri-lanka","label":"How much does event management cost in Sri Lanka? 2025 price guide"},{"href":"/blog/event-venues-sri-lanka-colombo","label":"Best event venues in Sri Lanka — corporate, wedding, conference"},{"href":"/blog/event-planning-checklist-sri-lanka","label":"The ultimate event planning checklist for Sri Lanka"},{"href":"/corporate-event-management-sri-lanka","label":"Corporate event management — service page"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/conference-management-sri-lanka","label":"Conference Management"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
     </PageShell>

@@ -122,11 +122,7 @@ export const Route = createFileRoute("/blog/led-screen-rent-vs-projector-events-
             a: "Most established Sri Lankan AV suppliers stock both. Asking for a comparison quote — same content, two display options — is a fair request and helps you see the real cost difference for your specific event.",
           },
         ]}
-        related={[
-          { href: "/blog/how-much-does-led-screen-rent-cost-sri-lanka", label: "How much does LED screen rent cost in Sri Lanka?" },
-          { href: "/blog/corporate-event-av-checklist-sri-lanka", label: "Corporate event AV checklist for Sri Lanka" },
-          { href: "/blog/outdoor-led-screen-rent-sri-lanka", label: "Outdoor LED screen rent — brightness, weather and setup" },
-        ]}
+        related={[{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"How much does LED screen rent cost in Sri Lanka?"},{"href":"/blog/corporate-event-av-checklist-sri-lanka","label":"Corporate event AV checklist for Sri Lanka"},{"href":"/blog/outdoor-led-screen-rent-sri-lanka","label":"Outdoor LED screen rent — brightness, weather and setup"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/projector-rental-sri-lanka","label":"Projector Rental"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
       />
     </PageShell>
   ),

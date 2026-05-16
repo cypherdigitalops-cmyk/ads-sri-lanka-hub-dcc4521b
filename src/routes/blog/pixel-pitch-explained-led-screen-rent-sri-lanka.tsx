@@ -128,11 +128,7 @@ export const Route = createFileRoute("/blog/pixel-pitch-explained-led-screen-ren
             a: "Ask for the panel brand and model number — e.g. Absen A3 Pro, Unilumin UpadIIIH5, ROE Ruby 2.6. Then verify the pitch on the manufacturer's datasheet. Bait-and-switch (quoting P3, delivering P4) is rare among reputable Sri Lankan suppliers but happens at the cheapest end of the market.",
           },
         ]}
-        related={[
-          { href: "/blog/how-much-does-led-screen-rent-cost-sri-lanka", label: "How much does LED screen rent cost in Sri Lanka?" },
-          { href: "/blog/outdoor-led-screen-rent-sri-lanka", label: "Outdoor LED screen rent — brightness, weather and setup" },
-          { href: "/blog/led-screen-rent-colombo-guide", label: "LED screen rent in Colombo — sizes, prices and venue notes" },
-        ]}
+        related={[{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"How much does LED screen rent cost in Sri Lanka?"},{"href":"/blog/outdoor-led-screen-rent-sri-lanka","label":"Outdoor LED screen rent — brightness, weather and setup"},{"href":"/blog/led-screen-rent-colombo-guide","label":"LED screen rent in Colombo — sizes, prices and venue notes"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
       />
     </PageShell>
   ),

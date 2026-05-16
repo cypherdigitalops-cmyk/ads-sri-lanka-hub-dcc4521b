@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/youtube-video-marketing-sri-lanka")(
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/youtube-video-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="youtube video marketing sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="youtube video marketing sri lanka" extraLinks={[{"href":"/youtube-marketing-sri-lanka","label":"Youtube Marketing"},{"href":"/video-production-sri-lanka","label":"Video Production"},{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing"}]} /></PageShell>),
 });

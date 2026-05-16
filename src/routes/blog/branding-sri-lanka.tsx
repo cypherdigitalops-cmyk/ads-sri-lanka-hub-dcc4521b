@@ -19,5 +19,5 @@ export const Route = createFileRoute("/blog/branding-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/branding-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="branding sri lanka" /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="branding sri lanka" extraLinks={[{"href":"/branding-sri-lanka","label":"Branding & Creative"},{"href":"/web-design-sri-lanka","label":"Web Design"},{"href":"/pr-communications-sri-lanka","label":"PR & Communications"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]} /></PageShell>),
 });

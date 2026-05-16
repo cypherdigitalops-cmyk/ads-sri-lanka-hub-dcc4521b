@@ -336,6 +336,7 @@ import { Route as BlogGoogleAdvertisingSriLankaRouteImport } from './routes/blog
 import { Route as BlogFlyerDistributionSriLankaRouteImport } from './routes/blog/flyer-distribution-sri-lanka'
 import { Route as BlogFlyerDesignSriLankaRouteImport } from './routes/blog/flyer-design-sri-lanka'
 import { Route as BlogFacebookAdvertisingSriLankaRouteImport } from './routes/blog/facebook-advertising-sri-lanka'
+import { Route as BlogEventStageSetupAvPackageSriLankaRouteImport } from './routes/blog/event-stage-setup-av-package-sri-lanka'
 import { Route as BlogEventPromotionSriLankaRouteImport } from './routes/blog/event-promotion-sri-lanka'
 import { Route as BlogEmailMarketingSriLankaRouteImport } from './routes/blog/email-marketing-sri-lanka'
 import { Route as BlogEmailCampaignsSriLankaRouteImport } from './routes/blog/email-campaigns-sri-lanka'
@@ -2178,6 +2179,12 @@ const BlogFacebookAdvertisingSriLankaRoute =
     path: '/blog/facebook-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogEventStageSetupAvPackageSriLankaRoute =
+  BlogEventStageSetupAvPackageSriLankaRouteImport.update({
+    id: '/blog/event-stage-setup-av-package-sri-lanka',
+    path: '/blog/event-stage-setup-av-package-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogEventPromotionSriLankaRoute =
   BlogEventPromotionSriLankaRouteImport.update({
     id: '/blog/event-promotion-sri-lanka',
@@ -2647,6 +2654,7 @@ export interface FileRoutesByFullPath {
   '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
   '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
   '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
@@ -3006,6 +3014,7 @@ export interface FileRoutesByTo {
   '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
   '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
   '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
@@ -3366,6 +3375,7 @@ export interface FileRoutesById {
   '/blog/email-campaigns-sri-lanka': typeof BlogEmailCampaignsSriLankaRoute
   '/blog/email-marketing-sri-lanka': typeof BlogEmailMarketingSriLankaRoute
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
+  '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
   '/blog/flyer-distribution-sri-lanka': typeof BlogFlyerDistributionSriLankaRoute
@@ -3727,6 +3737,7 @@ export interface FileRouteTypes {
     | '/blog/email-campaigns-sri-lanka'
     | '/blog/email-marketing-sri-lanka'
     | '/blog/event-promotion-sri-lanka'
+    | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
     | '/blog/flyer-distribution-sri-lanka'
@@ -4086,6 +4097,7 @@ export interface FileRouteTypes {
     | '/blog/email-campaigns-sri-lanka'
     | '/blog/email-marketing-sri-lanka'
     | '/blog/event-promotion-sri-lanka'
+    | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
     | '/blog/flyer-distribution-sri-lanka'
@@ -4445,6 +4457,7 @@ export interface FileRouteTypes {
     | '/blog/email-campaigns-sri-lanka'
     | '/blog/email-marketing-sri-lanka'
     | '/blog/event-promotion-sri-lanka'
+    | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
     | '/blog/flyer-distribution-sri-lanka'
@@ -4805,6 +4818,7 @@ export interface RootRouteChildren {
   BlogEmailCampaignsSriLankaRoute: typeof BlogEmailCampaignsSriLankaRoute
   BlogEmailMarketingSriLankaRoute: typeof BlogEmailMarketingSriLankaRoute
   BlogEventPromotionSriLankaRoute: typeof BlogEventPromotionSriLankaRoute
+  BlogEventStageSetupAvPackageSriLankaRoute: typeof BlogEventStageSetupAvPackageSriLankaRoute
   BlogFacebookAdvertisingSriLankaRoute: typeof BlogFacebookAdvertisingSriLankaRoute
   BlogFlyerDesignSriLankaRoute: typeof BlogFlyerDesignSriLankaRoute
   BlogFlyerDistributionSriLankaRoute: typeof BlogFlyerDistributionSriLankaRoute
@@ -7167,6 +7181,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogFacebookAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/event-stage-setup-av-package-sri-lanka': {
+      id: '/blog/event-stage-setup-av-package-sri-lanka'
+      path: '/blog/event-stage-setup-av-package-sri-lanka'
+      fullPath: '/blog/event-stage-setup-av-package-sri-lanka'
+      preLoaderRoute: typeof BlogEventStageSetupAvPackageSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/event-promotion-sri-lanka': {
       id: '/blog/event-promotion-sri-lanka'
       path: '/blog/event-promotion-sri-lanka'
@@ -7677,6 +7698,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogEmailCampaignsSriLankaRoute: BlogEmailCampaignsSriLankaRoute,
   BlogEmailMarketingSriLankaRoute: BlogEmailMarketingSriLankaRoute,
   BlogEventPromotionSriLankaRoute: BlogEventPromotionSriLankaRoute,
+  BlogEventStageSetupAvPackageSriLankaRoute:
+    BlogEventStageSetupAvPackageSriLankaRoute,
   BlogFacebookAdvertisingSriLankaRoute: BlogFacebookAdvertisingSriLankaRoute,
   BlogFlyerDesignSriLankaRoute: BlogFlyerDesignSriLankaRoute,
   BlogFlyerDistributionSriLankaRoute: BlogFlyerDistributionSriLankaRoute,

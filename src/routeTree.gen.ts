@@ -267,6 +267,7 @@ import { Route as R360MarketingSriLankaRouteImport } from './routes/360-marketin
 import { Route as R360MarketingCampaignsSriLankaRouteImport } from './routes/360-marketing-campaigns-sri-lanka'
 import { Route as R2dAnimationSriLankaRouteImport } from './routes/2d-animation-sri-lanka'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
 import { Route as BlogYoutubeVideoMarketingSriLankaRouteImport } from './routes/blog/youtube-video-marketing-sri-lanka'
 import { Route as BlogWhatsappAdvertisingSriLankaRouteImport } from './routes/blog/whatsapp-advertising-sri-lanka'
 import { Route as BlogWeddingEventManagementSriLankaRouteImport } from './routes/blog/wedding-event-management-sri-lanka'
@@ -1790,6 +1791,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogYoutubeVideoMarketingSriLankaRoute =
   BlogYoutubeVideoMarketingSriLankaRouteImport.update({
     id: '/blog/youtube-video-marketing-sri-lanka',
@@ -2828,6 +2834,7 @@ export interface FileRoutesByFullPath {
   '/blog/wedding-event-management-sri-lanka': typeof BlogWeddingEventManagementSriLankaRoute
   '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
   '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -3201,6 +3208,7 @@ export interface FileRoutesByTo {
   '/blog/wedding-event-management-sri-lanka': typeof BlogWeddingEventManagementSriLankaRoute
   '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
   '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -3575,6 +3583,7 @@ export interface FileRoutesById {
   '/blog/wedding-event-management-sri-lanka': typeof BlogWeddingEventManagementSriLankaRoute
   '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
   '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -3950,6 +3959,7 @@ export interface FileRouteTypes {
     | '/blog/wedding-event-management-sri-lanka'
     | '/blog/whatsapp-advertising-sri-lanka'
     | '/blog/youtube-video-marketing-sri-lanka'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -4323,6 +4333,7 @@ export interface FileRouteTypes {
     | '/blog/wedding-event-management-sri-lanka'
     | '/blog/whatsapp-advertising-sri-lanka'
     | '/blog/youtube-video-marketing-sri-lanka'
+    | '/blog'
   id:
     | '__root__'
     | '/'
@@ -4696,6 +4707,7 @@ export interface FileRouteTypes {
     | '/blog/wedding-event-management-sri-lanka'
     | '/blog/whatsapp-advertising-sri-lanka'
     | '/blog/youtube-video-marketing-sri-lanka'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -5070,6 +5082,7 @@ export interface RootRouteChildren {
   BlogWeddingEventManagementSriLankaRoute: typeof BlogWeddingEventManagementSriLankaRoute
   BlogWhatsappAdvertisingSriLankaRoute: typeof BlogWhatsappAdvertisingSriLankaRoute
   BlogYoutubeVideoMarketingSriLankaRoute: typeof BlogYoutubeVideoMarketingSriLankaRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -6880,6 +6893,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/youtube-video-marketing-sri-lanka': {
       id: '/blog/youtube-video-marketing-sri-lanka'
       path: '/blog/youtube-video-marketing-sri-lanka'
@@ -8079,17 +8099,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogWhatsappAdvertisingSriLankaRoute: BlogWhatsappAdvertisingSriLankaRoute,
   BlogYoutubeVideoMarketingSriLankaRoute:
     BlogYoutubeVideoMarketingSriLankaRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

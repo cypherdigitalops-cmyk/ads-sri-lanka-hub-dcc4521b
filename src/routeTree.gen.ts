@@ -305,6 +305,7 @@ import { Route as BlogPromotionalSmsSriLankaRouteImport } from './routes/blog/pr
 import { Route as BlogProductPromotionSriLankaRouteImport } from './routes/blog/product-promotion-sri-lanka'
 import { Route as BlogPrintMediaAdvertisingSriLankaRouteImport } from './routes/blog/print-media-advertising-sri-lanka'
 import { Route as BlogPosBrandingSriLankaRouteImport } from './routes/blog/pos-branding-sri-lanka'
+import { Route as BlogPixelPitchExplainedLedScreenRentSriLankaRouteImport } from './routes/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
 import { Route as BlogPayPerClickSriLankaRouteImport } from './routes/blog/pay-per-click-sri-lanka'
 import { Route as BlogOutdoorLedScreenRentSriLankaRouteImport } from './routes/blog/outdoor-led-screen-rent-sri-lanka'
 import { Route as BlogOutdoorAdvertisingSriLankaRouteImport } from './routes/blog/outdoor-advertising-sri-lanka'
@@ -1998,6 +1999,12 @@ const BlogPosBrandingSriLankaRoute = BlogPosBrandingSriLankaRouteImport.update({
   path: '/blog/pos-branding-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogPixelPitchExplainedLedScreenRentSriLankaRoute =
+  BlogPixelPitchExplainedLedScreenRentSriLankaRouteImport.update({
+    id: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka',
+    path: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogPayPerClickSriLankaRoute = BlogPayPerClickSriLankaRouteImport.update({
   id: '/blog/pay-per-click-sri-lanka',
   path: '/blog/pay-per-click-sri-lanka',
@@ -2686,6 +2693,7 @@ export interface FileRoutesByFullPath {
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
   '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
   '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
@@ -3046,6 +3054,7 @@ export interface FileRoutesByTo {
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
   '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
   '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
@@ -3407,6 +3416,7 @@ export interface FileRoutesById {
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
   '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
+  '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
   '/blog/product-promotion-sri-lanka': typeof BlogProductPromotionSriLankaRoute
@@ -3769,6 +3779,7 @@ export interface FileRouteTypes {
     | '/blog/outdoor-advertising-sri-lanka'
     | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
     | '/blog/product-promotion-sri-lanka'
@@ -4129,6 +4140,7 @@ export interface FileRouteTypes {
     | '/blog/outdoor-advertising-sri-lanka'
     | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
     | '/blog/product-promotion-sri-lanka'
@@ -4489,6 +4501,7 @@ export interface FileRouteTypes {
     | '/blog/outdoor-advertising-sri-lanka'
     | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
+    | '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
     | '/blog/product-promotion-sri-lanka'
@@ -4850,6 +4863,7 @@ export interface RootRouteChildren {
   BlogOutdoorAdvertisingSriLankaRoute: typeof BlogOutdoorAdvertisingSriLankaRoute
   BlogOutdoorLedScreenRentSriLankaRoute: typeof BlogOutdoorLedScreenRentSriLankaRoute
   BlogPayPerClickSriLankaRoute: typeof BlogPayPerClickSriLankaRoute
+  BlogPixelPitchExplainedLedScreenRentSriLankaRoute: typeof BlogPixelPitchExplainedLedScreenRentSriLankaRoute
   BlogPosBrandingSriLankaRoute: typeof BlogPosBrandingSriLankaRoute
   BlogPrintMediaAdvertisingSriLankaRoute: typeof BlogPrintMediaAdvertisingSriLankaRoute
   BlogProductPromotionSriLankaRoute: typeof BlogProductPromotionSriLankaRoute
@@ -6964,6 +6978,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogPosBrandingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka': {
+      id: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
+      path: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
+      fullPath: '/blog/pixel-pitch-explained-led-screen-rent-sri-lanka'
+      preLoaderRoute: typeof BlogPixelPitchExplainedLedScreenRentSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/pay-per-click-sri-lanka': {
       id: '/blog/pay-per-click-sri-lanka'
       path: '/blog/pay-per-click-sri-lanka'
@@ -7737,6 +7758,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogOutdoorAdvertisingSriLankaRoute: BlogOutdoorAdvertisingSriLankaRoute,
   BlogOutdoorLedScreenRentSriLankaRoute: BlogOutdoorLedScreenRentSriLankaRoute,
   BlogPayPerClickSriLankaRoute: BlogPayPerClickSriLankaRoute,
+  BlogPixelPitchExplainedLedScreenRentSriLankaRoute:
+    BlogPixelPitchExplainedLedScreenRentSriLankaRoute,
   BlogPosBrandingSriLankaRoute: BlogPosBrandingSriLankaRoute,
   BlogPrintMediaAdvertisingSriLankaRoute:
     BlogPrintMediaAdvertisingSriLankaRoute,

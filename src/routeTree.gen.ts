@@ -269,6 +269,7 @@ import { Route as R2dAnimationSriLankaRouteImport } from './routes/2d-animation-
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogYoutubeVideoMarketingSriLankaRouteImport } from './routes/blog/youtube-video-marketing-sri-lanka'
 import { Route as BlogWhatsappAdvertisingSriLankaRouteImport } from './routes/blog/whatsapp-advertising-sri-lanka'
+import { Route as BlogWeddingEventManagementSriLankaRouteImport } from './routes/blog/wedding-event-management-sri-lanka'
 import { Route as BlogWebsiteRedesignSriLankaRouteImport } from './routes/blog/website-redesign-sri-lanka'
 import { Route as BlogWebsiteRankingSriLankaRouteImport } from './routes/blog/website-ranking-sri-lanka'
 import { Route as BlogWebsiteBannersSriLankaRouteImport } from './routes/blog/website-banners-sri-lanka'
@@ -1791,6 +1792,12 @@ const BlogWhatsappAdvertisingSriLankaRoute =
     path: '/blog/whatsapp-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogWeddingEventManagementSriLankaRoute =
+  BlogWeddingEventManagementSriLankaRouteImport.update({
+    id: '/blog/wedding-event-management-sri-lanka',
+    path: '/blog/wedding-event-management-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogWebsiteRedesignSriLankaRoute =
   BlogWebsiteRedesignSriLankaRouteImport.update({
     id: '/blog/website-redesign-sri-lanka',
@@ -2738,6 +2745,7 @@ export interface FileRoutesByFullPath {
   '/blog/website-banners-sri-lanka': typeof BlogWebsiteBannersSriLankaRoute
   '/blog/website-ranking-sri-lanka': typeof BlogWebsiteRankingSriLankaRoute
   '/blog/website-redesign-sri-lanka': typeof BlogWebsiteRedesignSriLankaRoute
+  '/blog/wedding-event-management-sri-lanka': typeof BlogWeddingEventManagementSriLankaRoute
   '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
   '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
@@ -3100,6 +3108,7 @@ export interface FileRoutesByTo {
   '/blog/website-banners-sri-lanka': typeof BlogWebsiteBannersSriLankaRoute
   '/blog/website-ranking-sri-lanka': typeof BlogWebsiteRankingSriLankaRoute
   '/blog/website-redesign-sri-lanka': typeof BlogWebsiteRedesignSriLankaRoute
+  '/blog/wedding-event-management-sri-lanka': typeof BlogWeddingEventManagementSriLankaRoute
   '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
   '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
@@ -3463,6 +3472,7 @@ export interface FileRoutesById {
   '/blog/website-banners-sri-lanka': typeof BlogWebsiteBannersSriLankaRoute
   '/blog/website-ranking-sri-lanka': typeof BlogWebsiteRankingSriLankaRoute
   '/blog/website-redesign-sri-lanka': typeof BlogWebsiteRedesignSriLankaRoute
+  '/blog/wedding-event-management-sri-lanka': typeof BlogWeddingEventManagementSriLankaRoute
   '/blog/whatsapp-advertising-sri-lanka': typeof BlogWhatsappAdvertisingSriLankaRoute
   '/blog/youtube-video-marketing-sri-lanka': typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
@@ -3827,6 +3837,7 @@ export interface FileRouteTypes {
     | '/blog/website-banners-sri-lanka'
     | '/blog/website-ranking-sri-lanka'
     | '/blog/website-redesign-sri-lanka'
+    | '/blog/wedding-event-management-sri-lanka'
     | '/blog/whatsapp-advertising-sri-lanka'
     | '/blog/youtube-video-marketing-sri-lanka'
   fileRoutesByTo: FileRoutesByTo
@@ -4189,6 +4200,7 @@ export interface FileRouteTypes {
     | '/blog/website-banners-sri-lanka'
     | '/blog/website-ranking-sri-lanka'
     | '/blog/website-redesign-sri-lanka'
+    | '/blog/wedding-event-management-sri-lanka'
     | '/blog/whatsapp-advertising-sri-lanka'
     | '/blog/youtube-video-marketing-sri-lanka'
   id:
@@ -4551,6 +4563,7 @@ export interface FileRouteTypes {
     | '/blog/website-banners-sri-lanka'
     | '/blog/website-ranking-sri-lanka'
     | '/blog/website-redesign-sri-lanka'
+    | '/blog/wedding-event-management-sri-lanka'
     | '/blog/whatsapp-advertising-sri-lanka'
     | '/blog/youtube-video-marketing-sri-lanka'
   fileRoutesById: FileRoutesById
@@ -4914,6 +4927,7 @@ export interface RootRouteChildren {
   BlogWebsiteBannersSriLankaRoute: typeof BlogWebsiteBannersSriLankaRoute
   BlogWebsiteRankingSriLankaRoute: typeof BlogWebsiteRankingSriLankaRoute
   BlogWebsiteRedesignSriLankaRoute: typeof BlogWebsiteRedesignSriLankaRoute
+  BlogWeddingEventManagementSriLankaRoute: typeof BlogWeddingEventManagementSriLankaRoute
   BlogWhatsappAdvertisingSriLankaRoute: typeof BlogWhatsappAdvertisingSriLankaRoute
   BlogYoutubeVideoMarketingSriLankaRoute: typeof BlogYoutubeVideoMarketingSriLankaRoute
 }
@@ -6740,6 +6754,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogWhatsappAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/wedding-event-management-sri-lanka': {
+      id: '/blog/wedding-event-management-sri-lanka'
+      path: '/blog/wedding-event-management-sri-lanka'
+      fullPath: '/blog/wedding-event-management-sri-lanka'
+      preLoaderRoute: typeof BlogWeddingEventManagementSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/website-redesign-sri-lanka': {
       id: '/blog/website-redesign-sri-lanka'
       path: '/blog/website-redesign-sri-lanka'
@@ -7826,6 +7847,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogWebsiteBannersSriLankaRoute: BlogWebsiteBannersSriLankaRoute,
   BlogWebsiteRankingSriLankaRoute: BlogWebsiteRankingSriLankaRoute,
   BlogWebsiteRedesignSriLankaRoute: BlogWebsiteRedesignSriLankaRoute,
+  BlogWeddingEventManagementSriLankaRoute:
+    BlogWeddingEventManagementSriLankaRoute,
   BlogWhatsappAdvertisingSriLankaRoute: BlogWhatsappAdvertisingSriLankaRoute,
   BlogYoutubeVideoMarketingSriLankaRoute:
     BlogYoutubeVideoMarketingSriLankaRoute,

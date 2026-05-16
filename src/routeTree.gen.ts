@@ -306,6 +306,7 @@ import { Route as BlogProductPromotionSriLankaRouteImport } from './routes/blog/
 import { Route as BlogPrintMediaAdvertisingSriLankaRouteImport } from './routes/blog/print-media-advertising-sri-lanka'
 import { Route as BlogPosBrandingSriLankaRouteImport } from './routes/blog/pos-branding-sri-lanka'
 import { Route as BlogPayPerClickSriLankaRouteImport } from './routes/blog/pay-per-click-sri-lanka'
+import { Route as BlogOutdoorLedScreenRentSriLankaRouteImport } from './routes/blog/outdoor-led-screen-rent-sri-lanka'
 import { Route as BlogOutdoorAdvertisingSriLankaRouteImport } from './routes/blog/outdoor-advertising-sri-lanka'
 import { Route as BlogOrganicTrafficSriLankaRouteImport } from './routes/blog/organic-traffic-sri-lanka'
 import { Route as BlogOnlineMarketingSriLankaRouteImport } from './routes/blog/online-marketing-sri-lanka'
@@ -1998,6 +1999,12 @@ const BlogPayPerClickSriLankaRoute = BlogPayPerClickSriLankaRouteImport.update({
   path: '/blog/pay-per-click-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogOutdoorLedScreenRentSriLankaRoute =
+  BlogOutdoorLedScreenRentSriLankaRouteImport.update({
+    id: '/blog/outdoor-led-screen-rent-sri-lanka',
+    path: '/blog/outdoor-led-screen-rent-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogOutdoorAdvertisingSriLankaRoute =
   BlogOutdoorAdvertisingSriLankaRouteImport.update({
     id: '/blog/outdoor-advertising-sri-lanka',
@@ -2645,6 +2652,7 @@ export interface FileRoutesByFullPath {
   '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
   '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
@@ -3000,6 +3008,7 @@ export interface FileRoutesByTo {
   '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
   '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
@@ -3356,6 +3365,7 @@ export interface FileRoutesById {
   '/blog/online-marketing-sri-lanka': typeof BlogOnlineMarketingSriLankaRoute
   '/blog/organic-traffic-sri-lanka': typeof BlogOrganicTrafficSriLankaRoute
   '/blog/outdoor-advertising-sri-lanka': typeof BlogOutdoorAdvertisingSriLankaRoute
+  '/blog/outdoor-led-screen-rent-sri-lanka': typeof BlogOutdoorLedScreenRentSriLankaRoute
   '/blog/pay-per-click-sri-lanka': typeof BlogPayPerClickSriLankaRoute
   '/blog/pos-branding-sri-lanka': typeof BlogPosBrandingSriLankaRoute
   '/blog/print-media-advertising-sri-lanka': typeof BlogPrintMediaAdvertisingSriLankaRoute
@@ -3713,6 +3723,7 @@ export interface FileRouteTypes {
     | '/blog/online-marketing-sri-lanka'
     | '/blog/organic-traffic-sri-lanka'
     | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
@@ -4068,6 +4079,7 @@ export interface FileRouteTypes {
     | '/blog/online-marketing-sri-lanka'
     | '/blog/organic-traffic-sri-lanka'
     | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
@@ -4423,6 +4435,7 @@ export interface FileRouteTypes {
     | '/blog/online-marketing-sri-lanka'
     | '/blog/organic-traffic-sri-lanka'
     | '/blog/outdoor-advertising-sri-lanka'
+    | '/blog/outdoor-led-screen-rent-sri-lanka'
     | '/blog/pay-per-click-sri-lanka'
     | '/blog/pos-branding-sri-lanka'
     | '/blog/print-media-advertising-sri-lanka'
@@ -4779,6 +4792,7 @@ export interface RootRouteChildren {
   BlogOnlineMarketingSriLankaRoute: typeof BlogOnlineMarketingSriLankaRoute
   BlogOrganicTrafficSriLankaRoute: typeof BlogOrganicTrafficSriLankaRoute
   BlogOutdoorAdvertisingSriLankaRoute: typeof BlogOutdoorAdvertisingSriLankaRoute
+  BlogOutdoorLedScreenRentSriLankaRoute: typeof BlogOutdoorLedScreenRentSriLankaRoute
   BlogPayPerClickSriLankaRoute: typeof BlogPayPerClickSriLankaRoute
   BlogPosBrandingSriLankaRoute: typeof BlogPosBrandingSriLankaRoute
   BlogPrintMediaAdvertisingSriLankaRoute: typeof BlogPrintMediaAdvertisingSriLankaRoute
@@ -6901,6 +6915,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogPayPerClickSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/outdoor-led-screen-rent-sri-lanka': {
+      id: '/blog/outdoor-led-screen-rent-sri-lanka'
+      path: '/blog/outdoor-led-screen-rent-sri-lanka'
+      fullPath: '/blog/outdoor-led-screen-rent-sri-lanka'
+      preLoaderRoute: typeof BlogOutdoorLedScreenRentSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/outdoor-advertising-sri-lanka': {
       id: '/blog/outdoor-advertising-sri-lanka'
       path: '/blog/outdoor-advertising-sri-lanka'
@@ -7622,6 +7643,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogOnlineMarketingSriLankaRoute: BlogOnlineMarketingSriLankaRoute,
   BlogOrganicTrafficSriLankaRoute: BlogOrganicTrafficSriLankaRoute,
   BlogOutdoorAdvertisingSriLankaRoute: BlogOutdoorAdvertisingSriLankaRoute,
+  BlogOutdoorLedScreenRentSriLankaRoute: BlogOutdoorLedScreenRentSriLankaRoute,
   BlogPayPerClickSriLankaRoute: BlogPayPerClickSriLankaRoute,
   BlogPosBrandingSriLankaRoute: BlogPosBrandingSriLankaRoute,
   BlogPrintMediaAdvertisingSriLankaRoute:

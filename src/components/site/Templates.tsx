@@ -532,7 +532,10 @@ export function BlogArticleTemplate({
 }) {
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
-  setExtraLinks(extraLinks ?? []);
+  const filteredExtra = (extraLinks ?? []).filter(
+    (l) => l.href !== "/" && !/\(home\)/i.test(l.label),
+  );
+  setExtraLinks(filteredExtra);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";
   resetHomeAnchor(`blog/${slug}`);
   const url = `${SITE.url}/blog/${slug}`;

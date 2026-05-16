@@ -532,9 +532,10 @@ export function BlogArticleTemplate({
 }) {
   const title = titleCase(keyword);
   const article = buildBlogArticle(category, keyword);
-  const filteredExtra = (extraLinks ?? []).filter(
-    (l) => l.href !== "/" && !/\(home\)/i.test(l.label),
-  );
+  const filteredExtra = (extraLinks ?? []).map((l) => ({
+    ...l,
+    label: l.label.replace(/\s*\(home\)\s*/i, "").trim(),
+  }));
   setExtraLinks(filteredExtra);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";
   resetHomeAnchor(`blog/${slug}`);

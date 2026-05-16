@@ -21,8 +21,47 @@ import { getPageFaqs } from "@/data/page-faqs";
  * encountered during a page render becomes a link — one keyword per page.
  */
 let __adLinkUsed = false;
-function resetHomeAnchor() {
+let __ledLinkUsed = false;
+let __currentSlug = "";
+function resetHomeAnchor(currentSlug = "") {
   __adLinkUsed = false;
+  __ledLinkUsed = false;
+  __currentSlug = currentSlug;
+}
+
+const LED_TARGET_SLUG = "led-screen-rental-sri-lanka";
+const LED_REGEX = /(led\s+screen\s+(?:rentals?|hires?|on\s+rent))/i;
+
+function linkifyLedRental(text: string): React.ReactNode {
+  if (!text || __ledLinkUsed || __currentSlug === LED_TARGET_SLUG) return text;
+  const m = LED_REGEX.exec(text);
+  if (!m) return text;
+  __ledLinkUsed = true;
+  const before = text.slice(0, m.index);
+  const after = text.slice(m.index + m[0].length);
+  return [
+    before,
+    <Link
+      key={`led-${m.index}`}
+      to={`/${LED_TARGET_SLUG}` as never}
+      className="text-primary underline-offset-2 hover:underline"
+    >
+      {m[0]}
+    </Link>,
+    after,
+  ];
+}
+
+function applyLinks(text: string): React.ReactNode {
+  const led = linkifyLedRental(text);
+  if (typeof led === "string") return linkifyAdSL(led);
+  // led replaced part of text; linkifyAdSL only on the unlinked string segments
+  if (Array.isArray(led)) {
+    return led.map((node, i) =>
+      typeof node === "string" ? <span key={`s${i}`}>{linkifyAdSL(node)}</span> : node,
+    );
+  }
+  return led;
 }
 function linkifyAdSL(text: string): React.ReactNode {
   if (!text) return text;

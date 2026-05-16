@@ -38,23 +38,56 @@ const CHANNEL_GUIDE: { icon: string; title: string; desc: string; tags: string[]
 ];
 
 const DECISION_ROWS: [string, string, string, string, string][] = [
-  ["Google Search Ads", "High-intent leads, service businesses", "3–7 days", "Rs 40,000", "Excellent"],
-  ["Facebook / Instagram Ads", "B2C brands, retail, hospitality", "1–3 days", "Rs 30,000", "Very good"],
-  ["TikTok Ads", "Under-35 audience, brand awareness", "1–3 days", "Rs 25,000", "Good"],
-  ["SEO", "All businesses — long-term growth", "3–6 months", "Rs 35,000", "Very good"],
-  ["TV Advertising", "National FMCG, banks, telcos", "2–4 weeks", "Rs 300,000", "Limited"],
-  ["Radio Advertising", "Regional, language-market targeting", "1–2 weeks", "Rs 80,000", "Limited"],
-  ["Billboard / OOH", "Local visibility, brand trust", "2–3 weeks", "Rs 60,000", "Basic"],
-  ["Email / SMS / WhatsApp", "Existing customers, highest ROI", "Same day", "Rs 15,000", "Excellent"],
-  ["BTL Activations", "Product trial, mall & event marketing", "Same day", "Rs 80,000", "Moderate"],
-  ["YouTube Ads", "Brand storytelling, video-led brands", "2–5 days", "Rs 40,000", "Good"],
+];
+
+const DECISION_TABLE: { channel: string; href: string; bestFor: string; speed: string; budget: string; measure: string }[] = [
+  { channel: "Google Search Ads", href: "/google-ads-sri-lanka", bestFor: "High-intent leads, service businesses", speed: "3–7 days", budget: "Rs 40,000", measure: "Excellent" },
+  { channel: "Facebook / Instagram Ads", href: "/facebook-marketing-sri-lanka", bestFor: "B2C brands, retail, hospitality", speed: "1–3 days", budget: "Rs 30,000", measure: "Very good" },
+  { channel: "TikTok Ads", href: "/tiktok-ads-sri-lanka", bestFor: "Under-35 audience, brand awareness", speed: "1–3 days", budget: "Rs 25,000", measure: "Good" },
+  { channel: "SEO", href: "/seo-services-sri-lanka", bestFor: "All businesses — long-term growth", speed: "3–6 months", budget: "Rs 35,000", measure: "Very good" },
+  { channel: "TV Advertising", href: "/tv-advertising-sri-lanka", bestFor: "National FMCG, banks, telcos", speed: "2–4 weeks", budget: "Rs 300,000", measure: "Limited" },
+  { channel: "Radio Advertising", href: "/radio-advertising-sri-lanka", bestFor: "Regional, language-market targeting", speed: "1–2 weeks", budget: "Rs 80,000", measure: "Limited" },
+  { channel: "Billboard / OOH", href: "/outdoor-advertising-sri-lanka", bestFor: "Local visibility, brand trust", speed: "2–3 weeks", budget: "Rs 60,000", measure: "Basic" },
+  { channel: "Email / SMS / WhatsApp", href: "/email-sms-marketing-sri-lanka", bestFor: "Existing customers, highest ROI", speed: "Same day", budget: "Rs 15,000", measure: "Excellent" },
+  { channel: "BTL Activations", href: "/btl-advertising-sri-lanka", bestFor: "Product trial, mall & event marketing", speed: "Same day", budget: "Rs 80,000", measure: "Moderate" },
+  { channel: "YouTube Ads", href: "/youtube-ads-sri-lanka", bestFor: "Brand storytelling, video-led brands", speed: "2–5 days", budget: "Rs 40,000", measure: "Good" },
 ];
 
 const BUDGET_TIERS = [
-  { tier: "Starter", range: "Rs 30,000 – 80,000 / month", desc: "Perfect for small businesses, local services and new brand launches that need measurable results immediately.", items: ["Google Search Ads (highest intent)", "Facebook / Instagram Ads", "Google Business Profile (free)", "WhatsApp Business (free)", "Basic SEO foundation"] },
-  { tier: "Growth", range: "Rs 80,000 – 300,000 / month", desc: "For businesses ready to scale with multi-channel digital strategy and early offline presence.", items: ["Google Ads (Search + Display)", "Facebook + Instagram + TikTok", "SEO (ongoing, compounding)", "Email + SMS marketing", "Radio (regional, if relevant)", "1–2 OOH sites in key locations"] },
-  { tier: "Scale", range: "Rs 300,000 – 1M / month", desc: "For established brands building national presence across digital and traditional simultaneously.", items: ["Full digital stack (Google, Meta, TikTok)", "YouTube video campaigns", "Influencer marketing partnerships", "OOH / Billboard networks", "Radio on 2–3 stations", "BTL activations at key venues", "Advanced SEO + content marketing"] },
-  { tier: "Enterprise", range: "Rs 1M+ / month", desc: "For large brands requiring integrated 360° campaigns across every touchpoint, islandwide.", items: ["TV advertising (prime-time slots)", "Full ATL media plan", "National BTL activation programme", "Premium OOH + digital billboards", "Programmatic display buying", "Full digital performance suite", "PR + earned media integration", "Event & experiential marketing"] },
+  { tier: "Starter", range: "Rs 30,000 – 80,000 / month", desc: "Perfect for small businesses, local services and new brand launches that need measurable results immediately.", items: [
+    { label: "Google Search Ads (highest intent)", href: "/google-ads-sri-lanka" },
+    { label: "Facebook / Instagram Ads", href: "/facebook-marketing-sri-lanka" },
+    { label: "Google Business Profile (free)", href: "/seo-services-sri-lanka" },
+    { label: "WhatsApp Business (free)", href: "/whatsapp-marketing-sri-lanka" },
+    { label: "Basic SEO foundation", href: "/seo-services-sri-lanka" },
+  ] },
+  { tier: "Growth", range: "Rs 80,000 – 300,000 / month", desc: "For businesses ready to scale with multi-channel digital strategy and early offline presence.", items: [
+    { label: "Google Ads (Search + Display)", href: "/google-ads-sri-lanka" },
+    { label: "Facebook + Instagram + TikTok", href: "/social-media-marketing-sri-lanka" },
+    { label: "SEO (ongoing, compounding)", href: "/seo-services-sri-lanka" },
+    { label: "Email + SMS marketing", href: "/email-sms-marketing-sri-lanka" },
+    { label: "Radio (regional, if relevant)", href: "/radio-advertising-sri-lanka" },
+    { label: "1–2 OOH sites in key locations", href: "/outdoor-advertising-sri-lanka" },
+  ] },
+  { tier: "Scale", range: "Rs 300,000 – 1M / month", desc: "For established brands building national presence across digital and traditional simultaneously.", items: [
+    { label: "Full digital stack (Google, Meta, TikTok)", href: "/digital-marketing-sri-lanka" },
+    { label: "YouTube video campaigns", href: "/youtube-ads-sri-lanka" },
+    { label: "Influencer marketing partnerships", href: "/influencer-marketing-sri-lanka" },
+    { label: "OOH / Billboard networks", href: "/billboard-advertising-sri-lanka" },
+    { label: "Radio on 2–3 stations", href: "/radio-advertising-sri-lanka" },
+    { label: "BTL activations at key venues", href: "/btl-advertising-sri-lanka" },
+    { label: "Advanced SEO + content marketing", href: "/seo-services-sri-lanka" },
+  ] },
+  { tier: "Enterprise", range: "Rs 1M+ / month", desc: "For large brands requiring integrated 360° campaigns across every touchpoint, islandwide.", items: [
+    { label: "TV advertising (prime-time slots)", href: "/tv-advertising-sri-lanka" },
+    { label: "Full ATL media plan", href: "/atl-advertising-sri-lanka" },
+    { label: "National BTL activation programme", href: "/btl-advertising-sri-lanka" },
+    { label: "Premium OOH + digital billboards", href: "/led-screen-rental-sri-lanka" },
+    { label: "Programmatic display buying", href: "/digital-marketing-sri-lanka" },
+    { label: "Full digital performance suite", href: "/digital-marketing-sri-lanka" },
+    { label: "PR + earned media integration", href: "/pr-sri-lanka" },
+    { label: "Event & experiential marketing", href: "/event-management-sri-lanka" },
+  ] },
 ];
 
 const MISTAKES = [
@@ -384,13 +417,15 @@ function Index() {
                 </tr>
               </thead>
               <tbody>
-                {DECISION_ROWS.map((row) => (
-                  <tr key={row[0]} className="border-t border-primary-foreground/10 hover:bg-primary-foreground/5">
-                    <td className="px-4 py-3 font-semibold text-accent">{row[0]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[1]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[2]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[3]}</td>
-                    <td className="px-4 py-3 text-primary-foreground/85">{row[4]}</td>
+                {DECISION_TABLE.map((row) => (
+                  <tr key={row.channel} className="border-t border-primary-foreground/10 hover:bg-primary-foreground/5">
+                    <td className="px-4 py-3 font-semibold">
+                      <Link to={row.href as never} className="text-accent underline-offset-4 hover:underline">{row.channel}</Link>
+                    </td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.bestFor}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.speed}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.budget}</td>
+                    <td className="px-4 py-3 text-primary-foreground/85">{row.measure}</td>
                   </tr>
                 ))}
               </tbody>
@@ -404,7 +439,9 @@ function Index() {
         <div className="text-center">
           <div className="text-sm font-semibold text-accent">Budget Planning</div>
           <h2 className="mt-2 text-3xl font-bold sm:text-4xl">How to Plan Your Advertising Budget in Sri Lanka</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">What Sri Lankan businesses at different budget levels typically invest in, and why those combinations make sense.</p>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            What Sri Lankan businesses at different budget levels typically invest in, and why those combinations make sense. <Link to="/services" className="font-semibold text-primary hover:underline">Browse all 180+ advertising services</Link> or <Link to="/contact" className="font-semibold text-primary hover:underline">contact us</Link> for a tailored plan.
+          </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {BUDGET_TIERS.map((b) => (
@@ -416,7 +453,10 @@ function Index() {
               <p className="mt-2 text-sm text-muted-foreground">{b.desc}</p>
               <ul className="mt-4 space-y-1.5 text-sm">
                 {b.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-accent" /><span className="text-muted-foreground">{it}</span></li>
+                  <li key={it.label} className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-accent" />
+                    <Link to={it.href as never} className="text-muted-foreground hover:text-primary hover:underline">{it.label}</Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -430,7 +470,9 @@ function Index() {
           <div className="text-center">
             <div className="text-sm font-semibold text-accent">Avoid These Pitfalls</div>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">6 Reasons Advertising Budgets Get Wasted in Sri Lanka</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">These six mistakes account for the majority of failed campaigns. Knowing them before you start is worth more than any tactic.</p>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              These six mistakes account for the majority of failed campaigns — from poor <Link to="/facebook-marketing-sri-lanka" className="font-semibold text-primary hover:underline">Facebook campaign structure</Link> and missing <Link to="/digital-marketing-sri-lanka" className="font-semibold text-primary hover:underline">tracking</Link> to cutting <Link to="/seo-services-sri-lanka" className="font-semibold text-primary hover:underline">SEO</Link> before it compounds.
+            </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {MISTAKES.map((m) => (
@@ -496,12 +538,12 @@ function Index() {
           <div className="mt-12 grid gap-10 lg:grid-cols-2">
             <div className="space-y-4 leading-relaxed text-muted-foreground">
               <h3 className="text-xl font-bold text-foreground">The Case for Digital</h3>
-              <p>Digital is measurable — you see exactly who clicked, visited, filled a form or called. It's precise — target by age, language, location, income, interest, behaviour. It's flexible — budgets shift in real time. And it's accessible — Rs 30,000/month runs professional campaigns competing directly with much larger brands.</p>
-              <p>Sri Lanka's digital advertising market grows 20–25% per year. Facebook and Instagram remain dominant by reach; TikTok has grown explosively under 35; Google Search captures the highest-intent queries; YouTube reaches 85%+ of internet users.</p>
+              <p><Link to="/digital-marketing-sri-lanka" className="font-semibold text-primary hover:underline">Digital</Link> is measurable — you see exactly who clicked, visited, filled a form or called. It's precise — target by age, language, location, income, interest, behaviour. It's flexible — budgets shift in real time. And it's accessible — Rs 30,000/month runs professional campaigns competing directly with much larger brands.</p>
+              <p>Sri Lanka's digital advertising market grows 20–25% per year. <Link to="/facebook-marketing-sri-lanka" className="font-semibold text-primary hover:underline">Facebook and Instagram</Link> remain dominant by reach; <Link to="/tiktok-ads-sri-lanka" className="font-semibold text-primary hover:underline">TikTok</Link> has grown explosively under 35; <Link to="/google-ads-sri-lanka" className="font-semibold text-primary hover:underline">Google Search</Link> captures the highest-intent queries; <Link to="/youtube-ads-sri-lanka" className="font-semibold text-primary hover:underline">YouTube</Link> reaches 85%+ of internet users.</p>
               <h3 className="mt-6 text-xl font-bold text-foreground">The Case for Traditional</h3>
-              <p>TV — particularly prime-time Sinhala drama on Siyatha, Derana and Hiru TV — still reaches millions simultaneously in a high-attention environment. Radio on Shaa FM, Yes FM, TNL and Rangiri reaches commuters and regional audiences during drive time. OOH builds physical-world brand presence that signals permanence and investment.</p>
+              <p><Link to="/tv-advertising-sri-lanka" className="font-semibold text-primary hover:underline">TV</Link> — particularly prime-time Sinhala drama on Siyatha, Derana and Hiru TV — still reaches millions simultaneously in a high-attention environment. <Link to="/radio-advertising-sri-lanka" className="font-semibold text-primary hover:underline">Radio</Link> on Shaa FM, Yes FM, TNL and Rangiri reaches commuters and regional audiences during drive time. <Link to="/outdoor-advertising-sri-lanka" className="font-semibold text-primary hover:underline">OOH</Link> builds physical-world brand presence that signals permanence and investment.</p>
               <h3 className="mt-6 text-xl font-bold text-foreground">The Integrated Answer</h3>
-              <p>The most effective advertising in Sri Lanka in 2024–2025 is integrated. TV builds awareness. Google captures the searches awareness generates. Social sustains the conversation. Email and WhatsApp convert and retain. Brands that dominate are the ones that designed that journey intentionally.</p>
+              <p>The most effective advertising in Sri Lanka in 2024–2025 is <Link to="/ttl-advertising-sri-lanka" className="font-semibold text-primary hover:underline">integrated</Link>. <Link to="/tv-advertising-sri-lanka" className="font-semibold text-primary hover:underline">TV</Link> builds awareness. <Link to="/google-ads-sri-lanka" className="font-semibold text-primary hover:underline">Google</Link> captures the searches awareness generates. <Link to="/social-media-marketing-sri-lanka" className="font-semibold text-primary hover:underline">Social</Link> sustains the conversation. <Link to="/email-sms-marketing-sri-lanka" className="font-semibold text-primary hover:underline">Email and WhatsApp</Link> convert and retain. Brands that dominate are the ones that designed that journey intentionally.</p>
             </div>
             <div className="space-y-4 leading-relaxed text-muted-foreground">
               <h3 className="text-xl font-bold text-foreground">Sri Lanka Digital Landscape — Key Facts</h3>
@@ -557,7 +599,7 @@ function Index() {
               "instagram-ads-sri-lanka", "radio-advertising-sri-lanka", "youtube-ads-sri-lanka",
               "newspaper-advertising-sri-lanka", "logo-design-sri-lanka", "web-design-sri-lanka",
               "video-production-sri-lanka", "whatsapp-marketing-sri-lanka", "lead-generation-sri-lanka",
-              "led-screen-advertising-sri-lanka", "brand-activation-sri-lanka", "influencer-marketing-sri-lanka",
+              "led-screen-advertising-sri-lanka", "led-screen-rental-sri-lanka", "brand-activation-sri-lanka", "influencer-marketing-sri-lanka",
             ].map((slug) => (
               <Link
                 key={slug}
@@ -673,6 +715,16 @@ function Index() {
           </Link>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Link
+            to={"/blog/corporate-event-management-sri-lanka-guide" as never}
+            className="group rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40"
+          >
+            <div className="text-xs font-semibold text-accent">Event Management</div>
+            <div className="mt-2 font-semibold">Corporate Event Management Sri Lanka — Complete Guide</div>
+            <div className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+              Read guide <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" />
+            </div>
+          </Link>
           {CATEGORIES.flatMap((c) => c.blog.slice(0, 1).map((b) => ({ c, b }))).map(({ c, b }) => (
             <Link
               key={b.slug}

@@ -320,8 +320,20 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 }
 
 /* ========== CATEGORY HUB ========== */
-export function CategoryHubTemplate({ category }: { category: Category }) {
+export function CategoryHubTemplate({
+  category,
+  extraLinks,
+}: {
+  category: Category;
+  extraLinks?: { href: string; label: string; anchor?: string }[];
+}) {
   resetHomeAnchor(category.slug);
+  setExtraLinks(
+    (extraLinks ?? []).map((l) => ({
+      ...l,
+      label: l.label.replace(/\s*\(home\)\s*/i, "").trim(),
+    })),
+  );
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
   const serviceJsonLd = {

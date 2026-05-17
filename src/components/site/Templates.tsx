@@ -83,12 +83,14 @@ function setExtraLinks(links: ExtraLink[]) {
 function escapeRe(s: string) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 function linkifyExtra(text: string): React.ReactNode {
   if (!text || !__extraLinks.length) return text;
-  for (const l of __extraLinks) {
-    if (__extraUsed.has(l.href)) continue;
+  for (let i = 0; i < __extraLinks.length; i++) {
+    const l = __extraLinks[i];
+    const key = `${i}:${l.anchor}:${l.href}`;
+    if (__extraUsed.has(key)) continue;
     const re = new RegExp(`(${escapeRe(l.anchor!).replace(/\\ /g, "\\s+")})`, "i");
     const m = re.exec(text);
     if (!m) continue;
-    __extraUsed.add(l.href);
+    __extraUsed.add(key);
     const before = text.slice(0, m.index);
     const after = text.slice(m.index + m[0].length);
     const linkNode = (

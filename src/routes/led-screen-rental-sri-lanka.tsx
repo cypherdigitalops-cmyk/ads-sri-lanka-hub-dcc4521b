@@ -48,7 +48,7 @@ export const Route = createFileRoute("/led-screen-rental-sri-lanka")({
   ),
 });
 
-const FAQS = [
+const FAQ_TECH = [
   {
     q: "What's the difference between indoor and outdoor LED screens?",
     a: "Indoor screens (typically P2.8) deliver sharper visuals at close viewing distances and are designed for controlled lighting — perfect for weddings, conferences and ballrooms. Outdoor screens (P4–P6 and above) use higher brightness (5,000+ nits), weatherproof cabinets and tougher pixel pitch to stay visible in direct sunlight and survive rain or dust at concerts, activations and roadshows.",
@@ -61,6 +61,9 @@ const FAQS = [
     q: "What power supply does an LED screen need?",
     a: "A 10×6.5 ft P2.8 wall draws roughly 3–5 kW; a 20×13 ft wall needs 8–12 kW. Most venues can supply this from a dedicated 16A or 32A circuit. For outdoor events or unreliable mains we provide a silent diesel generator and a stabilised power distribution board (included in every package) to protect the LED modules.",
   },
+];
+
+const FAQ_BOOKING = [
   {
     q: "Do you provide cables, video processor and an operator?",
     a: "Yes — every rental includes the LED wall, video processor, power distribution board, all signal and power cables, a trained operator and a laptop for content playback. You only need to send us your content files (MP4, JPG, PNG or PPT). Delivery, setup and dismantle islandwide are also included.",
@@ -75,11 +78,13 @@ const FAQS = [
   },
 ];
 
+const ALL_FAQS = [...FAQ_TECH, ...FAQ_BOOKING];
+
 function LedFaq() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: FAQS.map((f) => ({
+    mainEntity: ALL_FAQS.map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -90,8 +95,20 @@ function LedFaq() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <h2 className="text-2xl font-bold sm:text-3xl">LED Screen Rental Sri Lanka — FAQ</h2>
       <p className="mt-2 text-sm text-muted-foreground">The questions our clients ask most often before booking.</p>
-      <div className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
-        {FAQS.map((f) => (
+      <div className="mt-8 grid gap-8 md:grid-cols-2">
+        <FaqGroup title="Technical & setup" items={FAQ_TECH} />
+        <FaqGroup title="Booking & delivery" items={FAQ_BOOKING} />
+      </div>
+    </section>
+  );
+}
+
+function FaqGroup({ title, items }: { title: string; items: { q: string; a: string }[] }) {
+  return (
+    <div>
+      <h3 className="text-lg font-semibold">{title}</h3>
+      <div className="mt-3 divide-y divide-border rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
+        {items.map((f) => (
           <details key={f.q} className="group p-5">
             <summary className="cursor-pointer list-none font-semibold marker:hidden flex items-start justify-between gap-4">
               <span>{f.q}</span>
@@ -101,7 +118,7 @@ function LedFaq() {
           </details>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 

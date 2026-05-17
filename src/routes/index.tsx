@@ -613,6 +613,56 @@ function Index() {
         </div>
       </section>
 
+      {/* EVENT RENTALS — HIGH DEMAND */}
+      <section className="mx-auto max-w-7xl px-4 py-16">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div className="text-sm font-semibold text-accent">High demand</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Event rentals in Sri Lanka</h2>
+            <p className="mt-3 max-w-2xl text-muted-foreground">
+              The most-requested rental categories for corporate events, brand activations, product launches and weddings — all delivered as a single AV and production package.
+            </p>
+          </div>
+          <Link to="/event-management-sri-lanka" className="text-sm font-semibold text-primary hover:underline">
+            View all event services →
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { href: "/led-screen-rental-sri-lanka", title: "LED Screen Rental", desc: "Indoor & outdoor LED video walls — P3, P4 and high-brightness panels." },
+            { href: "/sound-system-rental-sri-lanka", title: "Sound System Rental", desc: "Line-array, monitors, wireless mics and engineers for any room size." },
+            { href: "/stage-rental-sri-lanka", title: "Stage Rental", desc: "Modular truss decks, skirting, steps and rigging for events of every scale." },
+            { href: "/stage-setup-sri-lanka", title: "Stage Setup & AV Production", desc: "Turnkey stage, lighting, LED and crew under one show-caller." },
+            { href: "/lighting-rental-sri-lanka", title: "Event Lighting Rental", desc: "Intelligent lighting, par cans, follow-spots and programmable rigs." },
+            { href: "/generator-rental-sri-lanka", title: "Generator Rental", desc: "Silent diesel generators with distribution and fuel for zero downtime." },
+            { href: "/tent-marquee-rental-sri-lanka", title: "Tent & Marquee Rental", desc: "Pagoda, frame and stretch tents for outdoor functions and roadshows." },
+            { href: "/table-chair-rental-sri-lanka", title: "Table & Chair Rental", desc: "Banquet, cocktail, conference and VIP lounge furniture islandwide." },
+            { href: "/photo-booth-rental-sri-lanka", title: "Photo Booth Rental", desc: "Branded photo booths with instant prints and social sharing." },
+            { href: "/360-photo-booth-rental-sri-lanka", title: "360 Photo Booth Rental", desc: "Slow-motion 360° video booth — top-performing activation content." },
+            { href: "/selfie-mirror-rental-sri-lanka", title: "Selfie Mirror Rental", desc: "Interactive mirror booth with custom branded overlays and prints." },
+            { href: "/projector-rental-sri-lanka", title: "Projector Rental", desc: "HD and laser projectors with screens for conferences and screenings." },
+            { href: "/drone-rental-sri-lanka", title: "Drone Rental", desc: "Licensed aerial drone capture for events, launches and venues." },
+            { href: "/bouncy-castle-rental-sri-lanka", title: "Bouncy Castle Rental", desc: "Family-day favourites — safe, certified inflatables with attendants." },
+            { href: "/flower-wall-rental-sri-lanka", title: "Flower Wall Rental", desc: "Premium floral backdrops for weddings, launches and red-carpet moments." },
+            { href: "/neon-sign-rental-sri-lanka", title: "Neon Sign Rental", desc: "Custom and stock neon signs for photo backdrops and styled events." },
+            { href: "/fog-machine-rental-sri-lanka", title: "Fog Machine Rental", desc: "Haze and low-fog effects for stage reveals and entrance moments." },
+            { href: "/cold-spark-machine-rental-sri-lanka", title: "Cold Spark Machine Rental", desc: "Indoor-safe cold sparks for grand entries, first dances and reveals." },
+          ].map((r) => (
+            <Link
+              key={r.href}
+              to={r.href as never}
+              className="group rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[var(--shadow-card)]"
+            >
+              <div className="flex items-start justify-between gap-3">
+                <div className="font-semibold">{r.title}</div>
+                <ArrowRight className="h-4 w-4 flex-none text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-primary" />
+              </div>
+              <p className="mt-2 text-sm text-muted-foreground">{r.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* WHY US */}
       <section className="mx-auto max-w-7xl px-4 py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">

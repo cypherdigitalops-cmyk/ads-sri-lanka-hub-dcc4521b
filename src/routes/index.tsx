@@ -12,9 +12,9 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka — #1 Guide to Every Channel, Cost & Option";
-const TITLE_OG = "Advertising Sri Lanka — #1 Guide to Every Channel, Cost & Option";
-const DESC = "Advertising Sri Lanka — your free guide to every channel. Compare ATL, BTL, digital, outdoor & more. Call 0771437707 for a free plan.";
+const TITLE = "Advertising Sri Lanka — ATL, BTL, Digital & Free Guidance";
+const TITLE_OG = "Advertising Sri Lanka — ATL, BTL, Digital & Free Guidance";
+const DESC = "Advertising Sri Lanka — compare every channel. ATL, BTL, digital, outdoor, SEO, branding & more. Free guidance islandwide. Call 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,

@@ -19,5 +19,16 @@ export const Route = createFileRoute("/event-management-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/event-management-sri-lanka` }],
   }),
-  component: () => (<PageShell><CategoryHubTemplate category={CAT} /></PageShell>),
+  component: () => (
+    <PageShell>
+      <CategoryHubTemplate
+        category={CAT}
+        extraLinks={[
+          { href: "/led-screen-rental-sri-lanka", label: "LED Screen Rental Sri Lanka", anchor: "indoor/outdoor LED screens" },
+          { href: "/sound-system-rental-sri-lanka", label: "Sound System Rental Sri Lanka", anchor: "line-array sound systems" },
+          { href: "/stage-setup-sri-lanka", label: "Stage Setup Sri Lanka", anchor: "Truss stages" },
+        ]}
+      />
+    </PageShell>
+  ),
 });

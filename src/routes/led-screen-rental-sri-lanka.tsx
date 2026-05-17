@@ -19,5 +19,17 @@ export const Route = createFileRoute("/led-screen-rental-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/led-screen-rental-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="led screen rental sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate
+        category={CAT}
+        keyword="led screen rental sri lanka"
+        extraLinks={[
+          { href: "/sound-system-rental-sri-lanka", label: "Sound System Rental Sri Lanka", anchor: "line-array sound systems" },
+          { href: "/stage-setup-sri-lanka", label: "Stage Setup Sri Lanka", anchor: "Truss stages" },
+          { href: "/event-management-sri-lanka", label: "Event Management Sri Lanka", anchor: "turnkey package" },
+        ]}
+      />
+    </PageShell>
+  ),
 });

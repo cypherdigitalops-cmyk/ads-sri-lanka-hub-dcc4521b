@@ -320,8 +320,20 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 }
 
 /* ========== CATEGORY HUB ========== */
-export function CategoryHubTemplate({ category }: { category: Category }) {
+export function CategoryHubTemplate({
+  category,
+  extraLinks,
+}: {
+  category: Category;
+  extraLinks?: { href: string; label: string; anchor?: string }[];
+}) {
   resetHomeAnchor(category.slug);
+  setExtraLinks(
+    (extraLinks ?? []).map((l) => ({
+      ...l,
+      label: l.label.replace(/\s*\(home\)\s*/i, "").trim(),
+    })),
+  );
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
   const serviceJsonLd = {
@@ -418,14 +430,22 @@ export function CategoryHubTemplate({ category }: { category: Category }) {
 export function ServicePageTemplate({
   category,
   keyword,
+  extraLinks,
 }: {
   category: Category;
   keyword: string;
+  extraLinks?: { href: string; label: string; anchor?: string }[];
 }) {
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
   resetHomeAnchor(slug);
+  setExtraLinks(
+    (extraLinks ?? []).map((l) => ({
+      ...l,
+      label: l.label.replace(/\s*\(home\)\s*/i, "").trim(),
+    })),
+  );
   const overrideFaqs = getPageFaqs(slug);
   const faqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
   const serviceJsonLd = {

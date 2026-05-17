@@ -19,5 +19,17 @@ export const Route = createFileRoute("/stage-setup-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/stage-setup-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="stage setup sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate
+        category={CAT}
+        keyword="stage setup sri lanka"
+        extraLinks={[
+          { href: "/sound-system-rental-sri-lanka", label: "Sound System Rental Sri Lanka", anchor: "line-array sound systems" },
+          { href: "/led-screen-rental-sri-lanka", label: "LED Screen Rental Sri Lanka", anchor: "indoor/outdoor LED screens" },
+          { href: "/event-management-sri-lanka", label: "Event Management Sri Lanka", anchor: "turnkey package" },
+        ]}
+      />
+    </PageShell>
+  ),
 });

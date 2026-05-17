@@ -48,27 +48,25 @@ export const Route = createFileRoute("/led-screen-rental-sri-lanka")({
 });
 
 const SIZES = [
-  { pkg: "Starter Indoor", size: "2m × 1.5m", pitch: "P3", dist: "Up to 5m", best: "Boardrooms, small meetings", avail: "Call to check" },
-  { pkg: "Standard Indoor", size: "4m × 3m", pitch: "P3 / P4", dist: "Up to 15m", best: "Conferences, weddings, dinners", avail: "Call to check" },
-  { pkg: "Large Indoor", size: "6m × 4m", pitch: "P3 / P4", dist: "Up to 25m", best: "Concerts, large conferences", avail: "Call to check" },
-  { pkg: "Extra Large Indoor", size: "8m × 5m", pitch: "P3", dist: "Up to 35m", best: "Arena events, exhibitions", avail: "Call to check" },
-  { pkg: "Outdoor Standard", size: "4m × 3m", pitch: "P6", dist: "Up to 30m", best: "Activations, outdoor events", avail: "Call to check" },
-  { pkg: "Outdoor Large", size: "6m × 4m", pitch: "P6 / P10", dist: "Up to 60m", best: "Concerts, festivals, roadshows", avail: "Call to check" },
-  { pkg: "Custom Build", size: "Any size", pitch: "P2 – P10", dist: "Any distance", best: "Any requirement", avail: "Call for quote" },
+  { size: "10 × 6.5 feet", pitch: "P2.8", type: "Indoor", dist: "Up to 15 feet", best: "Weddings, corporate events, dinners", avail: "Call to check" },
+  { size: "10 × 6.5 feet + 2 pillars", pitch: "P2.8", type: "Indoor", dist: "Up to 15 feet", best: "Weddings with side pillars, stage setups", avail: "Call to check" },
+  { size: "20 × 10 feet", pitch: "P2.8", type: "Indoor / Outdoor", dist: "Up to 30 feet", best: "Large conferences, concerts, product launches", avail: "Call to check" },
+  { size: "20 × 13 feet", pitch: "P2.8", type: "Indoor / Outdoor", dist: "Up to 40 feet", best: "Arena events, large weddings, festivals", avail: "Call to check" },
+  { size: "Custom size", pitch: "P2.8 – P6", type: "Indoor / Outdoor", dist: "Any distance", best: "Any requirement", avail: "Call for quote" },
 ];
 
 function LedSizeTable() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-12">
       <h2 className="text-2xl font-bold sm:text-3xl">LED Screen Rental Sizes — Sri Lanka</h2>
-      <p className="mt-2 text-sm text-muted-foreground">Pick the size that fits your venue. Pixel pitch and viewing distance help us recommend the sharpest screen for your audience.</p>
+      <p className="mt-2 text-sm text-muted-foreground">All packages include: LED wall · video processor · power distribution board · operator · laptop · delivery &amp; setup</p>
       <div className="mt-6 overflow-x-auto rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
         <table className="w-full text-left text-sm">
           <thead className="bg-muted/60 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
-              <th className="px-4 py-3">Package</th>
               <th className="px-4 py-3">Screen Size</th>
               <th className="px-4 py-3">Pixel Pitch</th>
+              <th className="px-4 py-3">Type</th>
               <th className="px-4 py-3">Viewing Distance</th>
               <th className="px-4 py-3">Best For</th>
               <th className="px-4 py-3">Availability</th>
@@ -76,10 +74,10 @@ function LedSizeTable() {
           </thead>
           <tbody>
             {SIZES.map((r) => (
-              <tr key={r.pkg} className="border-t border-border align-top">
-                <td className="px-4 py-3 font-semibold">{r.pkg}</td>
-                <td className="px-4 py-3">{r.size}</td>
+              <tr key={r.size} className="border-t border-border align-top">
+                <td className="px-4 py-3 font-semibold">{r.size}</td>
                 <td className="px-4 py-3">{r.pitch}</td>
+                <td className="px-4 py-3">{r.type}</td>
                 <td className="px-4 py-3">{r.dist}</td>
                 <td className="px-4 py-3">{r.best}</td>
                 <td className="px-4 py-3">{r.avail}</td>
@@ -89,9 +87,11 @@ function LedSizeTable() {
         </table>
       </div>
       <div className="mt-6 rounded-2xl border border-border bg-muted/30 p-5 text-sm">
-        <strong>Not sure what size you need?</strong> Tell us your venue dimensions and expected audience size — we will recommend the right screen and pixel pitch for free. Call{" "}
-        <a href={`tel:${SITE.phone}`} className="font-semibold text-primary">{SITE.phone}</a> or{" "}
-        <a href={`https://wa.me/${SITE.phone.replace(/[^0-9]/g, "")}`} className="font-semibold text-primary">WhatsApp</a>.
+        All sizes available islandwide across Sri Lanka — Colombo, Kandy, Galle, Negombo, Jaffna and beyond. Not sure what size fits your venue? Tell us your hall dimensions and guest count — we will recommend the right screen for free.
+        <div className="mt-4 flex flex-wrap gap-3">
+          <a href={`tel:${SITE.phone}`} className="inline-flex items-center justify-center rounded-full bg-[image:var(--gradient-accent)] px-5 py-3 text-sm font-semibold text-accent-foreground">Call {SITE.phone}</a>
+          <a href="https://wa.me/94771437707?text=Hi,%20I%20need%20help%20choosing%20the%20right%20LED%20screen%20size%20for%20my%20event%20in%20Sri%20Lanka" className="inline-flex items-center justify-center rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold">WhatsApp for Size Guide</a>
+        </div>
       </div>
     </section>
   );

@@ -43,9 +43,67 @@ export const Route = createFileRoute("/led-screen-rental-sri-lanka")({
         ]}
       />
       <LedSizeTable />
+      <LedFaq />
     </PageShell>
   ),
 });
+
+const FAQS = [
+  {
+    q: "What's the difference between indoor and outdoor LED screens?",
+    a: "Indoor screens (typically P2.8) deliver sharper visuals at close viewing distances and are designed for controlled lighting — perfect for weddings, conferences and ballrooms. Outdoor screens (P4–P6 and above) use higher brightness (5,000+ nits), weatherproof cabinets and tougher pixel pitch to stay visible in direct sunlight and survive rain or dust at concerts, activations and roadshows.",
+  },
+  {
+    q: "How do I choose the right viewing distance for my event?",
+    a: "A simple rule: minimum viewing distance in metres ≈ pixel pitch in mm. So a P2.8 screen looks crisp from about 3 metres back, P6 from 6 metres, P10 from 10 metres. Then match the screen size to your furthest audience member — for a 100-guest dinner a 10×6.5 ft screen is plenty; for a 1,000-person concert you'll want 20×13 ft or larger.",
+  },
+  {
+    q: "What power supply does an LED screen need?",
+    a: "A 10×6.5 ft P2.8 wall draws roughly 3–5 kW; a 20×13 ft wall needs 8–12 kW. Most venues can supply this from a dedicated 16A or 32A circuit. For outdoor events or unreliable mains we provide a silent diesel generator and a stabilised power distribution board (included in every package) to protect the LED modules.",
+  },
+  {
+    q: "Do you provide cables, video processor and an operator?",
+    a: "Yes — every rental includes the LED wall, video processor, power distribution board, all signal and power cables, a trained operator and a laptop for content playback. You only need to send us your content files (MP4, JPG, PNG or PPT). Delivery, setup and dismantle islandwide are also included.",
+  },
+  {
+    q: "How early should I book an LED screen for my event?",
+    a: "For weddings and corporate events in Colombo we recommend booking at least 2–3 weeks ahead. Peak season (December–February and April) and large outdoor concerts often need 4–6 weeks. Last-minute bookings are sometimes possible — call 0771437707 to check current availability.",
+  },
+  {
+    q: "Can you supply LED screens outside Colombo?",
+    a: "Yes — we deliver and install islandwide including Kandy, Galle, Negombo, Jaffna, Kurunegala, Anuradhapura and Trincomalee. Transport and crew accommodation for out-of-Colombo events are quoted with the package.",
+  },
+];
+
+function LedFaq() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+  return (
+    <section className="mx-auto max-w-7xl px-4 pb-14">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <h2 className="text-2xl font-bold sm:text-3xl">LED Screen Rental Sri Lanka — FAQ</h2>
+      <p className="mt-2 text-sm text-muted-foreground">The questions our clients ask most often before booking.</p>
+      <div className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
+        {FAQS.map((f) => (
+          <details key={f.q} className="group p-5">
+            <summary className="cursor-pointer list-none font-semibold marker:hidden flex items-start justify-between gap-4">
+              <span>{f.q}</span>
+              <span className="ml-2 flex-none text-primary transition group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
+}
 
 const SIZES = [
   { size: "10 × 6.5 feet", pitch: "P2.8", type: "Indoor", dist: "Up to 15 feet", best: "Weddings, corporate events, dinners", avail: "Call to check" },

@@ -95,20 +95,8 @@ function LedFaq() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <h2 className="text-2xl font-bold sm:text-3xl">LED Screen Rental Sri Lanka — FAQ</h2>
       <p className="mt-2 text-sm text-muted-foreground">The questions our clients ask most often before booking.</p>
-      <div className="mt-8 grid gap-8 md:grid-cols-2">
-        <FaqGroup title="Technical & setup" items={FAQ_TECH} />
-        <FaqGroup title="Booking & delivery" items={FAQ_BOOKING} />
-      </div>
-    </section>
-  );
-}
-
-function FaqGroup({ title, items }: { title: string; items: { q: string; a: string }[] }) {
-  return (
-    <div>
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <div className="mt-3 divide-y divide-border rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
-        {items.map((f) => (
+      <div className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
+        {ALL_FAQS.map((f) => (
           <details key={f.q} className="group p-5">
             <summary className="cursor-pointer list-none font-semibold marker:hidden flex items-start justify-between gap-4">
               <span>{f.q}</span>
@@ -118,7 +106,7 @@ function FaqGroup({ title, items }: { title: string; items: { q: string; a: stri
           </details>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -120,6 +120,49 @@ const HOME_JSONLD = {
   },
 };
 
+const LOCAL_BUSINESS_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Advertising Sri Lanka",
+  url: SITE.url,
+  image: SITE.url + "/og-home.jpg",
+  description: "Sri Lanka's #1 advertising information hub — learn how every advertising channel works, compare options and get free guidance for your next campaign.",
+  telephone: "+94771437707",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Colombo",
+    addressRegion: "Western Province",
+    addressCountry: "LK",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 6.9271, longitude: 79.8612 },
+  areaServed: { "@type": "Country", name: "Sri Lanka" },
+  openingHours: "Mo-Sa 09:00-19:00",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+94771437707",
+    contactType: "customer service",
+    availableLanguage: ["English", "Sinhala", "Tamil"],
+  },
+  sameAs: ["https://wa.me/94771437707"],
+};
+
+const ITEM_LIST_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Advertising Sri Lanka — All Services",
+  description: "Complete list of advertising services available in Sri Lanka",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ATL Advertising Sri Lanka", url: SITE.url + "/atl-advertising-sri-lanka" },
+    { "@type": "ListItem", position: 2, name: "Digital Marketing Sri Lanka", url: SITE.url + "/digital-marketing-sri-lanka" },
+    { "@type": "ListItem", position: 3, name: "Outdoor Advertising Sri Lanka", url: SITE.url + "/outdoor-advertising-sri-lanka" },
+    { "@type": "ListItem", position: 4, name: "SEO Services Sri Lanka", url: SITE.url + "/seo-services-sri-lanka" },
+    { "@type": "ListItem", position: 5, name: "BTL Advertising Sri Lanka", url: SITE.url + "/btl-advertising-sri-lanka" },
+    { "@type": "ListItem", position: 6, name: "Social Media Marketing Sri Lanka", url: SITE.url + "/social-media-marketing-sri-lanka" },
+    { "@type": "ListItem", position: 7, name: "Event Management Sri Lanka", url: SITE.url + "/event-management-sri-lanka" },
+    { "@type": "ListItem", position: 8, name: "LED Screen Rental Sri Lanka", url: SITE.url + "/led-screen-rental-sri-lanka" },
+  ],
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -166,6 +209,14 @@ function Index() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd([...HOME_LONGFORM.faqs, ...EXTRA_FAQS])) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_JSONLD) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ITEM_LIST_JSONLD) }}
       />
 
       {/* HERO */}

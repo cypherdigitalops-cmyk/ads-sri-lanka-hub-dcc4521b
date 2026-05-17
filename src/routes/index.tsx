@@ -12,9 +12,9 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub";
-const TITLE_OG = "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub";
-const DESC = "Advertising information hub for advertising in Sri Lanka with ATL, BTL, digital marketing, SEO, branding, outdoor advertising and media insights.";
+const TITLE = "Advertising Sri Lanka — #1 Guide to Every Channel, Cost & Option";
+const TITLE_OG = "Advertising Sri Lanka — #1 Guide to Every Channel, Cost & Option";
+const DESC = "Advertising Sri Lanka — your free guide to every channel. Compare ATL, BTL, digital, outdoor & more. Call 0771437707 for a free plan.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -120,12 +120,55 @@ const HOME_JSONLD = {
   },
 };
 
+const LOCAL_BUSINESS_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Advertising Sri Lanka",
+  url: SITE.url,
+  image: SITE.url + "/og-home.jpg",
+  description: "Sri Lanka's #1 advertising information hub — learn how every advertising channel works, compare options and get free guidance for your next campaign.",
+  telephone: "+94771437707",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Colombo",
+    addressRegion: "Western Province",
+    addressCountry: "LK",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 6.9271, longitude: 79.8612 },
+  areaServed: { "@type": "Country", name: "Sri Lanka" },
+  openingHours: "Mo-Sa 09:00-19:00",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+94771437707",
+    contactType: "customer service",
+    availableLanguage: ["English", "Sinhala", "Tamil"],
+  },
+  sameAs: ["https://wa.me/94771437707"],
+};
+
+const ITEM_LIST_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Advertising Sri Lanka — All Services",
+  description: "Complete list of advertising services available in Sri Lanka",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ATL Advertising Sri Lanka", url: SITE.url + "/atl-advertising-sri-lanka" },
+    { "@type": "ListItem", position: 2, name: "Digital Marketing Sri Lanka", url: SITE.url + "/digital-marketing-sri-lanka" },
+    { "@type": "ListItem", position: 3, name: "Outdoor Advertising Sri Lanka", url: SITE.url + "/outdoor-advertising-sri-lanka" },
+    { "@type": "ListItem", position: 4, name: "SEO Services Sri Lanka", url: SITE.url + "/seo-services-sri-lanka" },
+    { "@type": "ListItem", position: 5, name: "BTL Advertising Sri Lanka", url: SITE.url + "/btl-advertising-sri-lanka" },
+    { "@type": "ListItem", position: 6, name: "Social Media Marketing Sri Lanka", url: SITE.url + "/social-media-marketing-sri-lanka" },
+    { "@type": "ListItem", position: 7, name: "Event Management Sri Lanka", url: SITE.url + "/event-management-sri-lanka" },
+    { "@type": "ListItem", position: 8, name: "LED Screen Rental Sri Lanka", url: SITE.url + "/led-screen-rental-sri-lanka" },
+  ],
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "advertising sri lanka, advertising agency sri lanka, atl, btl, digital marketing sri lanka, seo sri lanka, billboard advertising, tv advertising, radio advertising, social media marketing sri lanka" },
+      { name: "keywords", content: "advertising Sri Lanka, advertising agency Sri Lanka, advertising in Sri Lanka, ATL advertising Sri Lanka, BTL advertising Sri Lanka, digital marketing Sri Lanka, outdoor advertising Sri Lanka, billboard advertising Sri Lanka, TV advertising Sri Lanka, radio advertising Sri Lanka, social media marketing Sri Lanka, SEO Sri Lanka, Colombo advertising" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
@@ -166,6 +209,14 @@ function Index() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd([...HOME_LONGFORM.faqs, ...EXTRA_FAQS])) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_JSONLD) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ITEM_LIST_JSONLD) }}
       />
 
       {/* HERO */}

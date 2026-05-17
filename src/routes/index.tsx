@@ -12,9 +12,9 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub";
-const TITLE_OG = "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub";
-const DESC = "Advertising information hub for advertising in Sri Lanka with ATL, BTL, digital marketing, SEO, branding, outdoor advertising and media insights.";
+const TITLE = "Advertising Sri Lanka — #1 Guide to Every Channel, Cost & Option";
+const TITLE_OG = "Advertising Sri Lanka — #1 Guide to Every Channel, Cost & Option";
+const DESC = "Advertising Sri Lanka — your free guide to every channel. Compare ATL, BTL, digital, outdoor & more. Call 0771437707 for a free plan.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "advertising sri lanka, advertising agency sri lanka, atl, btl, digital marketing sri lanka, seo sri lanka, billboard advertising, tv advertising, radio advertising, social media marketing sri lanka" },
+      { name: "keywords", content: "advertising Sri Lanka, advertising agency Sri Lanka, advertising in Sri Lanka, ATL advertising Sri Lanka, BTL advertising Sri Lanka, digital marketing Sri Lanka, outdoor advertising Sri Lanka, billboard advertising Sri Lanka, TV advertising Sri Lanka, radio advertising Sri Lanka, social media marketing Sri Lanka, SEO Sri Lanka, Colombo advertising" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },

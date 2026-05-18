@@ -43,7 +43,7 @@ export const Route = createFileRoute("/social-media-marketing-sri-lanka")({
             rel="noopener"
             className="text-primary underline-offset-2 hover:underline"
           >
-            Social Media Marketing in Sri Lanka
+            Social Media Marketing Sri Lanka
           </a>{" "}
           for additional context on managing brand presence across platforms.
         </p>

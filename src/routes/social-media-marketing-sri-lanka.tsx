@@ -19,5 +19,5 @@ export const Route = createFileRoute("/social-media-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/social-media-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><CategoryHubTemplate category={CAT} /></PageShell>),
+  component: () => (<PageShell><CategoryHubTemplate category={CAT} extraLinks={[{ href: "https://cypherdigital.lk/advertising-in-sri-lanka", label: "advertising sri lanka", anchor: "advertising sri lanka" }]} /></PageShell>),
 });

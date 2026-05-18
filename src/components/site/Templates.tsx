@@ -93,7 +93,12 @@ function linkifyExtra(text: string): React.ReactNode {
     __extraUsed.add(key);
     const before = text.slice(0, m.index);
     const after = text.slice(m.index + m[0].length);
-    const linkNode = (
+    const isExternal = /^https?:\/\//i.test(l.href);
+    const linkNode = isExternal ? (
+      <a key={`ex-${l.href}-${m.index}`} href={l.href} target="_blank" rel="noopener" className="text-primary underline-offset-2 hover:underline">
+        {m[0]}
+      </a>
+    ) : (
       <Link key={`ex-${l.href}-${m.index}`} to={l.href as never} className="text-primary underline-offset-2 hover:underline">
         {m[0]}
       </Link>

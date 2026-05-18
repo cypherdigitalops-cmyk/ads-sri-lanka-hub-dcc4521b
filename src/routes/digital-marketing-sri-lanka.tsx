@@ -19,5 +19,23 @@ export const Route = createFileRoute("/digital-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/digital-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><CategoryHubTemplate category={CAT} /></PageShell>),
+  component: () => (
+    <PageShell>
+      <CategoryHubTemplate category={CAT} />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Comparing partners? See this{" "}
+          <a
+            href="https://cypherdigital.lk/"
+            target="_blank"
+            rel="noopener"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            digital marketing agency sri lanka
+          </a>{" "}
+          for another perspective on full-funnel growth services in the local market.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

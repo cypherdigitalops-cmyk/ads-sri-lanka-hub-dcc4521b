@@ -35,6 +35,18 @@ export const Route = createFileRoute("/social-media-marketing-sri-lanka")({
           </a>{" "}
             for a wider perspective on the local advertising landscape.
         </p>
+        <p className="mt-3">
+          Need ongoing channel management? Explore this resource on{" "}
+          <a
+            href="https://cypherdigital.lk/social-media-management-sri-lanka"
+            target="_blank"
+            rel="noopener"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            Social Media Marketing in Sri Lanka
+          </a>{" "}
+          for additional context on managing brand presence across platforms.
+        </p>
       </section>
     </PageShell>
   ),

@@ -19,5 +19,23 @@ export const Route = createFileRoute("/social-media-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/social-media-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><CategoryHubTemplate category={CAT} extraLinks={[{ href: "https://cypherdigital.lk/advertising-in-sri-lanka", label: "advertising sri lanka", anchor: "advertising sri lanka" }]} /></PageShell>),
+  component: () => (
+    <PageShell>
+      <CategoryHubTemplate category={CAT} />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Looking for a broader view of the market? Read this guide on{" "}
+          <a
+            href="https://cypherdigital.lk/advertising-in-sri-lanka"
+            target="_blank"
+            rel="noopener"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            advertising sri lanka
+          </a>{" "}
+            for a wider perspective on the local advertising landscape.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

@@ -19,5 +19,23 @@ export const Route = createFileRoute("/linkedin-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/linkedin-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="linkedin marketing sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate category={CAT} keyword="linkedin marketing sri lanka" />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Looking for expert support? Check out{" "}
+          <a
+            href="https://cypherdigital.lk/linkedin-marketing-sri-lanka"
+            target="_blank"
+            rel="noopener"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            linkedin marketing sri lanka
+          </a>{" "}
+          on Cypher Digital for more details.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

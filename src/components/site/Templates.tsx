@@ -13,6 +13,7 @@ import {
   type FAQ,
 } from "@/data/content-engine";
 import { getPageFaqs } from "@/data/page-faqs";
+import { getPrintingServiceContent } from "@/data/printing-service-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.

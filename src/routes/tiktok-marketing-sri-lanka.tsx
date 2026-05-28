@@ -19,5 +19,23 @@ export const Route = createFileRoute("/tiktok-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/tiktok-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="tiktok marketing sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate category={CAT} keyword="tiktok marketing sri lanka" />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Looking for expert support? Explore{" "}
+          <a
+            href="https://cypherdigital.lk/tiktok-marketing-sri-lanka"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            Tiktok Marketing Sri Lanka
+          </a>{" "}
+          services from a trusted digital partner.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

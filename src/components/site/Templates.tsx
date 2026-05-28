@@ -13,6 +13,7 @@ import {
   type FAQ,
 } from "@/data/content-engine";
 import { getPageFaqs } from "@/data/page-faqs";
+import { getPrintingServiceContent } from "@/data/printing-service-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -521,6 +522,14 @@ export function ServicePageTemplate({
           <LongFormBlocks blocks={longForm.blocks} />
         </section>
       ) : null}
+      {(() => {
+        const unique = getPrintingServiceContent(slug);
+        return unique.length ? (
+          <section className="mx-auto max-w-3xl px-4 py-8">
+            <LongFormBlocks blocks={unique} />
+          </section>
+        ) : null;
+      })()}
       <section className="mx-auto max-w-7xl px-4 py-12">
         <h2 className="text-2xl font-bold sm:text-3xl">Related {category.title.toLowerCase()} services</h2>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

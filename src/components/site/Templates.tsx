@@ -399,14 +399,6 @@ export function CategoryHubTemplate({
           <LongFormBlocks blocks={longForm.blocks} />
         </section>
       ) : null}
-      {(() => {
-        const unique = getPrintingServiceContent(slug);
-        return unique.length ? (
-          <section className="mx-auto max-w-3xl px-4 py-8">
-            <LongFormBlocks blocks={unique} />
-          </section>
-        ) : null;
-      })()}
       <FeatureGrid
         title={`Why brands choose us for ${category.title.toLowerCase()}`}
         items={[

@@ -19,5 +19,23 @@ export const Route = createFileRoute("/google-ads-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/google-ads-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="google ads sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate category={CAT} keyword="google ads sri lanka" />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Looking for another angle on paid search? See this resource on{" "}
+          <a
+            href="https://cypherdigital.lk/google-ads-sri-lanka"
+            target="_blank"
+            rel="noopener"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            google ads sri lanka
+          </a>{" "}
+          for additional local campaign insights.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

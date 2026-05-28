@@ -19,5 +19,23 @@ export const Route = createFileRoute("/facebook-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/facebook-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="facebook marketing sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate category={CAT} keyword="facebook marketing sri lanka" />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Looking for broader channel coverage? See our guide to{" "}
+          <a
+            href="https://cypherdigital.lk/social-media-management-sri-lanka"
+            className="text-primary underline-offset-2 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            social media marketing sri lanka
+          </a>{" "}
+          for more.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

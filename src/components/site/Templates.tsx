@@ -508,6 +508,7 @@ export function ServicePageTemplate({
           "Dedicated account manager",
         ]}
       />
+      <MidContentWhatsAppCTA service={title} />
       <FeatureGrid
         title={`Why choose us for ${title}`}
         items={[
@@ -552,6 +553,7 @@ export function ServicePageTemplate({
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
+      <InlineInquiryForm service={title} />
     </>
   );
 }

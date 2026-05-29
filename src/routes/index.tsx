@@ -4,7 +4,7 @@ import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
   Search, Share2, Sparkles, Star, Tv, Users, Globe, Clock, TrendingUp, Zap,
-  AlertTriangle, Target, Wallet, Lightbulb, Printer, Image as ImageIcon, Sticker, Car, Tent, Music2, Mic2, FileText, Send,
+  AlertTriangle, Target, Wallet, Lightbulb, Printer, Image as ImageIcon, Sticker, Car, Umbrella, Music2, Mic2, FileText, Send, Rocket, Eye, Headphones, Award as AwardIcon,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";

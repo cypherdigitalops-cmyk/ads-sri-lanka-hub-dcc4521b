@@ -675,6 +675,54 @@ function Index() {
 
       {/* POPULAR SERVICES */}
       <section className="bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-4 pt-16">
+          <div className="text-center">
+            <div className="text-xs font-bold uppercase tracking-widest text-accent">🔥 Trending Now</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Trending Advertising Services in Sri Lanka</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+              The most-requested services on advertisingsrilanka.lk this month. Tap to request pricing.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { slug: "banner-printing-sri-lanka", title: "Banner Printing", icon: <ImageIcon className="h-5 w-5" /> },
+              { slug: "backdrop-printing-sri-lanka", title: "Backdrop Printing", icon: <FileText className="h-5 w-5" /> },
+              { slug: "sticker-printing-sri-lanka", title: "Sticker Printing", icon: <Sticker className="h-5 w-5" /> },
+              { slug: "vehicle-branding-sri-lanka", title: "Vehicle Branding", icon: <Car className="h-5 w-5" /> },
+              { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", icon: <Monitor className="h-5 w-5" /> },
+              { slug: "tent-marquee-rental-sri-lanka", title: "Tent & Marquee Rental", icon: <Umbrella className="h-5 w-5" /> },
+              { slug: "sound-system-rental-sri-lanka", title: "Sound System Rental", icon: <Headphones className="h-5 w-5" /> },
+              { slug: "stage-rental-sri-lanka", title: "Stage Rental", icon: <Mic2 className="h-5 w-5" /> },
+            ].map((s) => (
+              <div key={s.slug} className="group rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40">
+                <div className="flex items-center gap-3">
+                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-hero)] text-primary-foreground">
+                    {s.icon}
+                  </div>
+                  <Link to={`/${s.slug}` as never} className="text-base font-bold hover:text-primary">
+                    {s.title}
+                  </Link>
+                </div>
+                <div className="mt-4 flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => openQuoteModal(s.title)}
+                    className="flex-1 rounded-full bg-[image:var(--gradient-accent)] px-3 py-1.5 text-xs font-bold text-accent-foreground shadow"
+                  >
+                    Request Pricing
+                  </button>
+                  <Link
+                    to={`/${s.slug}` as never}
+                    className="rounded-full border border-border px-3 py-1.5 text-xs font-semibold hover:border-primary hover:text-primary"
+                    aria-label={`Learn more about ${s.title}`}
+                  >
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="mx-auto max-w-7xl px-4 py-16">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>

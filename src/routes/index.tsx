@@ -304,6 +304,47 @@ function Index() {
         </div>
       </section>
 
+      {/* MOST REQUESTED SERVICES — directly below the hero */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto max-w-7xl px-4 py-14">
+          <div className="text-center">
+            <div className="text-xs font-bold uppercase tracking-widest text-accent">⭐ Most Requested Services</div>
+            <h2 className="mt-2 text-2xl font-bold sm:text-3xl">The 4 services Sri Lankan businesses ask for most</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+              Highest-value, fastest-turnaround inquiries on the site. Tap any card to get an instant free quote.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { slug: "printing-services-sri-lanka", title: "Printing Services", desc: "Banners, stickers, backdrops, sign boards & 35+ printing services.", icon: <Printer className="h-6 w-6" />, ring: "ring-accent" },
+              { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", desc: "Indoor & outdoor LED video walls for any event size.", icon: <Monitor className="h-6 w-6" />, ring: "ring-accent" },
+              { slug: "event-management-sri-lanka", title: "Event Management", desc: "Corporate events, weddings, exhibitions — full production.", icon: <PartyPopper className="h-6 w-6" />, ring: "ring-primary/30" },
+              { slug: "outdoor-advertising-sri-lanka", title: "Outdoor Advertising", desc: "Billboards, LED screens, transit & OOH across Sri Lanka.", icon: <Megaphone className="h-6 w-6" />, ring: "ring-primary/30" },
+            ].map((s) => (
+              <div key={s.slug} className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] ring-1 ${s.ring} transition hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]`}>
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-accent)] text-accent-foreground shadow-md">
+                  {s.icon}
+                </div>
+                <h3 className="text-lg font-bold">{s.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    onClick={() => openQuoteModal(s.title)}
+                    className="inline-flex items-center gap-1 rounded-full bg-[image:var(--gradient-accent)] px-4 py-2 text-xs font-bold text-accent-foreground shadow"
+                  >
+                    <Send className="h-3.5 w-3.5" /> Get Free Quote
+                  </button>
+                  <Link to={`/${s.slug}` as never} className="inline-flex items-center gap-1 rounded-full border border-border px-4 py-2 text-xs font-semibold hover:border-primary hover:text-primary">
+                    Learn more <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* TRUST BAR */}
       <section className="border-y border-border bg-secondary/40">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 py-5 text-xs font-semibold text-muted-foreground">

@@ -408,6 +408,7 @@ export function CategoryHubTemplate({
         ]}
       />
       <ProcessSteps />
+      <MidContentWhatsAppCTA service={category.title} />
       {category.blog.length ? (
         <section className="mx-auto max-w-7xl px-4 py-12">
           <h2 className="text-2xl font-bold sm:text-3xl">{category.title} insights & guides</h2>
@@ -430,6 +431,7 @@ export function CategoryHubTemplate({
       </div>
       <RelatedCategories categorySlug={category.slug} />
       <FaqList items={getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs} />
+      <InlineInquiryForm service={category.title} />
     </>
   );
 }

@@ -4,10 +4,11 @@ import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
   Search, Share2, Sparkles, Star, Tv, Users, Globe, Clock, TrendingUp, Zap,
-  AlertTriangle, Target, Wallet, Lightbulb,
+  AlertTriangle, Target, Wallet, Lightbulb, Printer, Image as ImageIcon, Sticker, Car, Umbrella, Music2, Mic2, FileText, Send, Rocket, Eye, Headphones, Award as AwardIcon,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
+import { openQuoteModal } from "@/components/site/QuoteModal";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
@@ -299,6 +300,47 @@ function Index() {
             >
               Ask a Free Question <ArrowRight className="h-5 w-5" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* MOST REQUESTED SERVICES — directly below the hero */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto max-w-7xl px-4 py-14">
+          <div className="text-center">
+            <div className="text-xs font-bold uppercase tracking-widest text-accent">⭐ Most Requested Services</div>
+            <h2 className="mt-2 text-2xl font-bold sm:text-3xl">The 4 services Sri Lankan businesses ask for most</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+              Highest-value, fastest-turnaround inquiries on the site. Tap any card to get an instant free quote.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { slug: "printing-services-sri-lanka", title: "Printing Services", desc: "Banners, stickers, backdrops, sign boards & 35+ printing services.", icon: <Printer className="h-6 w-6" />, ring: "ring-accent" },
+              { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", desc: "Indoor & outdoor LED video walls for any event size.", icon: <Monitor className="h-6 w-6" />, ring: "ring-accent" },
+              { slug: "event-management-sri-lanka", title: "Event Management", desc: "Corporate events, weddings, exhibitions — full production.", icon: <PartyPopper className="h-6 w-6" />, ring: "ring-primary/30" },
+              { slug: "outdoor-advertising-sri-lanka", title: "Outdoor Advertising", desc: "Billboards, LED screens, transit & OOH across Sri Lanka.", icon: <Megaphone className="h-6 w-6" />, ring: "ring-primary/30" },
+            ].map((s) => (
+              <div key={s.slug} className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] ring-1 ${s.ring} transition hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]`}>
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-accent)] text-accent-foreground shadow-md">
+                  {s.icon}
+                </div>
+                <h3 className="text-lg font-bold">{s.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    onClick={() => openQuoteModal(s.title)}
+                    className="inline-flex items-center gap-1 rounded-full bg-[image:var(--gradient-accent)] px-4 py-2 text-xs font-bold text-accent-foreground shadow"
+                  >
+                    <Send className="h-3.5 w-3.5" /> Get Free Quote
+                  </button>
+                  <Link to={`/${s.slug}` as never} className="inline-flex items-center gap-1 rounded-full border border-border px-4 py-2 text-xs font-semibold hover:border-primary hover:text-primary">
+                    Learn more <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -633,6 +675,54 @@ function Index() {
 
       {/* POPULAR SERVICES */}
       <section className="bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-4 pt-16">
+          <div className="text-center">
+            <div className="text-xs font-bold uppercase tracking-widest text-accent">🔥 Trending Now</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Trending Advertising Services in Sri Lanka</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+              The most-requested services on advertisingsrilanka.lk this month. Tap to request pricing.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { slug: "banner-printing-sri-lanka", title: "Banner Printing", icon: <ImageIcon className="h-5 w-5" /> },
+              { slug: "backdrop-printing-sri-lanka", title: "Backdrop Printing", icon: <FileText className="h-5 w-5" /> },
+              { slug: "sticker-printing-sri-lanka", title: "Sticker Printing", icon: <Sticker className="h-5 w-5" /> },
+              { slug: "vehicle-branding-sri-lanka", title: "Vehicle Branding", icon: <Car className="h-5 w-5" /> },
+              { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", icon: <Monitor className="h-5 w-5" /> },
+              { slug: "tent-marquee-rental-sri-lanka", title: "Tent & Marquee Rental", icon: <Umbrella className="h-5 w-5" /> },
+              { slug: "sound-system-rental-sri-lanka", title: "Sound System Rental", icon: <Headphones className="h-5 w-5" /> },
+              { slug: "stage-rental-sri-lanka", title: "Stage Rental", icon: <Mic2 className="h-5 w-5" /> },
+            ].map((s) => (
+              <div key={s.slug} className="group rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40">
+                <div className="flex items-center gap-3">
+                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-hero)] text-primary-foreground">
+                    {s.icon}
+                  </div>
+                  <Link to={`/${s.slug}` as never} className="text-base font-bold hover:text-primary">
+                    {s.title}
+                  </Link>
+                </div>
+                <div className="mt-4 flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => openQuoteModal(s.title)}
+                    className="flex-1 rounded-full bg-[image:var(--gradient-accent)] px-3 py-1.5 text-xs font-bold text-accent-foreground shadow"
+                  >
+                    Request Pricing
+                  </button>
+                  <Link
+                    to={`/${s.slug}` as never}
+                    className="rounded-full border border-border px-3 py-1.5 text-xs font-semibold hover:border-primary hover:text-primary"
+                    aria-label={`Learn more about ${s.title}`}
+                  >
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="mx-auto max-w-7xl px-4 py-16">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -801,6 +891,54 @@ function Index() {
           sub={`Call ${SITE.phone} now or send a quick brief — free strategy plan within 24 hours.`}
         />
       </div>
+
+      {/* WHY BUSINESSES USE ADVERTISING SRI LANKA */}
+      <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-xs font-bold uppercase tracking-widest text-accent">Why advertisingsrilanka.lk</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Why Businesses Use Advertising Sri Lanka</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/85">
+              Five reasons Sri Lankan businesses make us their first stop for advertising decisions — before they speak to any agency or supplier.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { i: <FileText className="h-6 w-6" />, t: "Comprehensive Advertising Information", d: "180+ services explained in plain English — costs, timelines, what to expect, common mistakes. Same depth a senior advertising consultant would give you, free." },
+              { i: <Layers className="h-6 w-6" />, t: "Multiple Advertising Categories", d: "ATL, BTL, Digital, Outdoor, Printing, LED, Events, Branding, Web, SEO, Social. Every category, every channel, every option — all in one place." },
+              { i: <Rocket className="h-6 w-6" />, t: "Fast Quotation Requests", d: "Sticky quote button on every page. WhatsApp replies in 5 minutes. Most quotes go out the same business day — not days later." },
+              { i: <Globe className="h-6 w-6" />, t: "Sri Lanka Focused Content", d: "Rates in LKR, vendors in Colombo/Kandy/Galle/Jaffna, Sinhala–Tamil–English market guidance. Not recycled global content — built for Sri Lankan brands." },
+              { i: <AwardIcon className="h-6 w-6" />, t: "Expert Advertising Resources", d: "Decision frameworks, budget tiers, channel comparisons and mistake checklists used by Sri Lanka's most data-driven marketers." },
+              { i: <Eye className="h-6 w-6" />, t: "Independent Information Hub", d: "We're an information hub — not an agency pushing one channel. You get unbiased guidance, then choose what fits your business and budget." },
+            ].map((w) => (
+              <div key={w.t} className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur transition hover:bg-primary-foreground/10">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-accent)] text-accent-foreground shadow-md">
+                  {w.i}
+                </div>
+                <h3 className="mt-4 text-lg font-bold">{w.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-primary-foreground/80">{w.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => openQuoteModal()}
+              className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3 text-sm font-bold text-accent-foreground shadow-lg transition hover:scale-[1.03]"
+            >
+              <Send className="h-4 w-4" /> Get Free Quote
+            </button>
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-7 py-3 text-sm font-bold text-[var(--whatsapp-foreground)] shadow-lg"
+            >
+              <MessageCircle className="h-4 w-4" /> Discuss Your Requirement
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* INSIGHTS */}
       <section className="mx-auto max-w-7xl px-4 py-16">

@@ -2,6 +2,7 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { Mail, MessageCircle, Phone, Send } from "lucide-react";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { useState } from "react";
+import { openQuoteModal } from "./QuoteModal";
 
 /**
  * Derive the human-readable service/category name from the current URL path
@@ -72,16 +73,16 @@ export function TopContactBar() {
  */
 export function FloatingQuoteButton() {
   const service = useCurrentService();
-  const href = service ? `/get-quote?service=${encodeURIComponent(service)}` : "/get-quote";
   return (
-    <Link
-      to={href as never}
+    <button
+      type="button"
+      onClick={() => openQuoteModal(service)}
       aria-label={service ? `Get a free quote for ${service}` : "Get a free quote"}
       className="fixed left-4 bottom-6 z-50 hidden items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-5 py-3 text-sm font-bold text-accent-foreground shadow-2xl ring-2 ring-accent/40 transition hover:scale-105 md:inline-flex"
     >
       <Send className="h-4 w-4" />
       Get Free Quote
-    </Link>
+    </button>
   );
 }
 
@@ -314,7 +315,6 @@ export function FloatingWhatsApp() {
 
 export function StickyCallBar() {
   const service = useCurrentService();
-  const quoteHref = service ? `/get-quote?service=${encodeURIComponent(service)}` : "/get-quote";
   return (
     <>
       {/* Spacer so content is not hidden behind the fixed bar on mobile */}
@@ -339,13 +339,14 @@ export function StickyCallBar() {
         >
           <MessageCircle className="h-4 w-4" /> WhatsApp
         </a>
-        <Link
-          to={quoteHref as never}
+        <button
+          type="button"
+          onClick={() => openQuoteModal(service)}
           className="flex flex-1 items-center justify-center gap-2 font-semibold text-accent-foreground"
           style={{ fontSize: 14, fontWeight: 700, background: "var(--accent, #f59e0b)", borderLeft: "1px solid rgba(255,255,255,0.12)" }}
         >
           <Send className="h-4 w-4" /> Free Quote
-        </Link>
+        </button>
       </div>
     </>
   );

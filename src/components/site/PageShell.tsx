@@ -1,6 +1,7 @@
 import { SiteHeader } from "./Header";
 import { SiteFooter } from "./Footer";
 import { StickyCallBar, FloatingWhatsApp, FloatingQuoteButton, TopContactBar } from "./CTASection";
+import { QuoteModal } from "./QuoteModal";
 
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       <StickyCallBar />
       <FloatingWhatsApp />
       <FloatingQuoteButton />
+      <QuoteModal />
     </div>
   );
 }

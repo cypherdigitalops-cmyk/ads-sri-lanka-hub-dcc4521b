@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users, Building2, GraduationCap, Mic2, PartyPopper, Presentation, Heart, Image as ImageIcon, Sticker, Layout, Car, Square, ScrollText, Tag } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection, InlineInquiryForm, MidContentWhatsAppCTA } from "./CTASection";
+import { openQuoteModal } from "./QuoteModal";
 import { RELATED_CATEGORIES, SITE, titleCase, type Category } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 import {
@@ -244,12 +245,101 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
         <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{applyLinks(intro)}</p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90">
-            <Phone className="h-4 w-4" /> Ask a Free Question — {SITE.phone}
+            <Phone className="h-4 w-4" /> Call {SITE.phone}
           </a>
-          <Link to="/get-quote" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20">
-            Send Us an Inquiry <ArrowRight className="h-4 w-4" />
-          </Link>
+          <button
+            type="button"
+            onClick={() => openQuoteModal(kicker)}
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-semibold text-[var(--whatsapp-foreground)] shadow-[var(--shadow-card)] transition hover:opacity-90"
+          >
+            Get Free Quote <ArrowRight className="h-4 w-4" />
+          </button>
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* ========== PRINTING TOP-OF-PAGE CATEGORY CARDS ========== */
+const PRINTING_TOP_CATEGORIES: { slug: string; label: string; desc: string; icon: React.ReactNode }[] = [
+  { slug: "banner-printing-sri-lanka", label: "Banner Printing", desc: "Flex, vinyl & fabric banners — any size, fast turnaround.", icon: <Layout className="h-5 w-5" /> },
+  { slug: "sticker-printing-sri-lanka", label: "Sticker Printing", desc: "Vinyl, transparent, die-cut & label stickers.", icon: <Sticker className="h-5 w-5" /> },
+  { slug: "backdrop-printing-sri-lanka", label: "Backdrop Printing", desc: "Event, stage & media wall backdrops.", icon: <ImageIcon className="h-5 w-5" /> },
+  { slug: "vehicle-branding-sri-lanka", label: "Vehicle Branding", desc: "Full wraps, partial wraps, lettering & graphics.", icon: <Car className="h-5 w-5" /> },
+  { slug: "acrylic-sign-board-sri-lanka", label: "Sign Boards", desc: "Acrylic, 3D letter, LED & lightbox sign boards.", icon: <Square className="h-5 w-5" /> },
+  { slug: "roll-up-banner-printing-sri-lanka", label: "Roll-Up Banners", desc: "Pull-up stands, X-banners & retractable displays.", icon: <ScrollText className="h-5 w-5" /> },
+  { slug: "exhibition-banner-printing-sri-lanka", label: "Exhibition Printing", desc: "Booth graphics, fabric walls, pop-up displays.", icon: <Tag className="h-5 w-5" /> },
+];
+
+function PrintingTopCategoryCards() {
+  return (
+    <section className="mx-auto max-w-7xl px-4 pt-10">
+      <div className="text-center">
+        <div className="text-xs font-bold uppercase tracking-widest text-accent">Most Requested</div>
+        <h2 className="mt-2 text-2xl font-bold sm:text-3xl">Popular Printing Service Categories</h2>
+      </div>
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {PRINTING_TOP_CATEGORIES.map((c) => (
+          <Link
+            key={c.slug}
+            to={`/${c.slug}` as never}
+            className="group rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40"
+          >
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-hero)] text-primary-foreground">
+              {c.icon}
+            </div>
+            <div className="mt-3 text-base font-bold">{c.label}</div>
+            <p className="mt-1 text-xs text-muted-foreground">{c.desc}</p>
+            <div className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+              Get Free Quote <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/* ========== LED EVENT TYPES ========== */
+const LED_EVENT_TYPES: { label: string; icon: React.ReactNode; desc: string }[] = [
+  { label: "Corporate Events", icon: <Building2 className="h-5 w-5" />, desc: "AGMs, town halls, kickoffs & sales conventions." },
+  { label: "Conferences", icon: <Presentation className="h-5 w-5" />, desc: "Stage screens, side screens & speaker confidence monitors." },
+  { label: "Exhibitions", icon: <Tag className="h-5 w-5" />, desc: "Booth LED walls & looping brand content." },
+  { label: "Concerts", icon: <Mic2 className="h-5 w-5" />, desc: "Outdoor high-bright LED walls for live music." },
+  { label: "Weddings", icon: <Heart className="h-5 w-5" />, desc: "Stage backdrops, photo loops & live ceremony streams." },
+  { label: "School Events", icon: <GraduationCap className="h-5 w-5" />, desc: "Prize-givings, sports days & cultural shows." },
+];
+
+function LedEventTypesSection() {
+  return (
+    <section className="mx-auto max-w-7xl px-4 py-12">
+      <div className="text-center">
+        <div className="text-xs font-bold uppercase tracking-widest text-accent">Event Types We Cover</div>
+        <h2 className="mt-2 text-2xl font-bold sm:text-3xl">LED Screen Rental for Every Event in Sri Lanka</h2>
+        <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+          From boardroom-size indoor screens to outdoor stadium walls — we deliver, install, operate and dismantle islandwide.
+        </p>
+      </div>
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {LED_EVENT_TYPES.map((e) => (
+          <button
+            key={e.label}
+            type="button"
+            onClick={() => openQuoteModal(`LED Screen Rental — ${e.label}`)}
+            className="group flex items-start gap-3 rounded-2xl border border-border bg-card p-5 text-left shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40"
+          >
+            <div className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-[image:var(--gradient-accent)] text-accent-foreground">
+              {e.icon}
+            </div>
+            <div>
+              <div className="font-bold">{e.label}</div>
+              <p className="mt-1 text-xs text-muted-foreground">{e.desc}</p>
+              <div className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+                Check Availability <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+              </div>
+            </div>
+          </button>
+        ))}
       </div>
     </section>
   );
@@ -380,6 +470,8 @@ export function CategoryHubTemplate({
         intro={category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
+      {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
+      {category.slug === "event-management-sri-lanka" ? <LedEventTypesSection /> : null}
       <section className="mx-auto max-w-7xl px-4 py-14">
         <h2 className="text-2xl font-bold sm:text-3xl">Our {category.title.toLowerCase()} services</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -488,6 +580,8 @@ export function ServicePageTemplate({
           { label: title },
         ]}
       />
+      {slug === "led-screen-rental-sri-lanka" ? <LedEventTypesSection /> : null}
+      {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
       <section className="mx-auto max-w-3xl px-4 py-12">
         <h2 className="text-2xl font-bold sm:text-3xl">Why {title} works in Sri Lanka</h2>
         <p className="mt-4 text-muted-foreground">

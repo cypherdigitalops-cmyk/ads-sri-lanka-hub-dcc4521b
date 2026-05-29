@@ -4,10 +4,11 @@ import {
   ArrowRight, Award, BarChart3, Building2, CheckCircle2, Film, Layers, Mail,
  Megaphone, MessageCircle, Monitor, MousePointerClick, Palette, PartyPopper, Phone,
   Search, Share2, Sparkles, Star, Tv, Users, Globe, Clock, TrendingUp, Zap,
-  AlertTriangle, Target, Wallet, Lightbulb,
+  AlertTriangle, Target, Wallet, Lightbulb, Printer, Image as ImageIcon, Sticker, Car, Tent, Music2, Mic2, FileText, Send,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
+import { openQuoteModal } from "@/components/site/QuoteModal";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";

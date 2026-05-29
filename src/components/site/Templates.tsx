@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
-import { CTASection } from "./CTASection";
+import { CTASection, InlineInquiryForm, MidContentWhatsAppCTA } from "./CTASection";
 import { RELATED_CATEGORIES, SITE, titleCase, type Category } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
 import {
@@ -408,6 +408,7 @@ export function CategoryHubTemplate({
         ]}
       />
       <ProcessSteps />
+      <MidContentWhatsAppCTA service={category.title} />
       {category.blog.length ? (
         <section className="mx-auto max-w-7xl px-4 py-12">
           <h2 className="text-2xl font-bold sm:text-3xl">{category.title} insights & guides</h2>
@@ -430,6 +431,7 @@ export function CategoryHubTemplate({
       </div>
       <RelatedCategories categorySlug={category.slug} />
       <FaqList items={getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs} />
+      <InlineInquiryForm service={category.title} />
     </>
   );
 }
@@ -508,6 +510,7 @@ export function ServicePageTemplate({
           "Dedicated account manager",
         ]}
       />
+      <MidContentWhatsAppCTA service={title} />
       <FeatureGrid
         title={`Why choose us for ${title}`}
         items={[
@@ -552,6 +555,7 @@ export function ServicePageTemplate({
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
+      <InlineInquiryForm service={title} />
     </>
   );
 }

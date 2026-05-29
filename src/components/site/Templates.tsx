@@ -470,6 +470,8 @@ export function CategoryHubTemplate({
         intro={category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
+      {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
+      {category.slug === "event-management-sri-lanka" ? <LedEventTypesSection /> : null}
       <section className="mx-auto max-w-7xl px-4 py-14">
         <h2 className="text-2xl font-bold sm:text-3xl">Our {category.title.toLowerCase()} services</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -578,6 +580,8 @@ export function ServicePageTemplate({
           { label: title },
         ]}
       />
+      {slug === "led-screen-rental-sri-lanka" ? <LedEventTypesSection /> : null}
+      {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
       <section className="mx-auto max-w-3xl px-4 py-12">
         <h2 className="text-2xl font-bold sm:text-3xl">Why {title} works in Sri Lanka</h2>
         <p className="mt-4 text-muted-foreground">

@@ -892,6 +892,54 @@ function Index() {
         />
       </div>
 
+      {/* WHY BUSINESSES USE ADVERTISING SRI LANKA */}
+      <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="text-center">
+            <div className="text-xs font-bold uppercase tracking-widest text-accent">Why advertisingsrilanka.lk</div>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Why Businesses Use Advertising Sri Lanka</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/85">
+              Five reasons Sri Lankan businesses make us their first stop for advertising decisions — before they speak to any agency or supplier.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { i: <FileText className="h-6 w-6" />, t: "Comprehensive Advertising Information", d: "180+ services explained in plain English — costs, timelines, what to expect, common mistakes. Same depth a senior advertising consultant would give you, free." },
+              { i: <Layers className="h-6 w-6" />, t: "Multiple Advertising Categories", d: "ATL, BTL, Digital, Outdoor, Printing, LED, Events, Branding, Web, SEO, Social. Every category, every channel, every option — all in one place." },
+              { i: <Rocket className="h-6 w-6" />, t: "Fast Quotation Requests", d: "Sticky quote button on every page. WhatsApp replies in 5 minutes. Most quotes go out the same business day — not days later." },
+              { i: <Globe className="h-6 w-6" />, t: "Sri Lanka Focused Content", d: "Rates in LKR, vendors in Colombo/Kandy/Galle/Jaffna, Sinhala–Tamil–English market guidance. Not recycled global content — built for Sri Lankan brands." },
+              { i: <AwardIcon className="h-6 w-6" />, t: "Expert Advertising Resources", d: "Decision frameworks, budget tiers, channel comparisons and mistake checklists used by Sri Lanka's most data-driven marketers." },
+              { i: <Eye className="h-6 w-6" />, t: "Independent Information Hub", d: "We're an information hub — not an agency pushing one channel. You get unbiased guidance, then choose what fits your business and budget." },
+            ].map((w) => (
+              <div key={w.t} className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur transition hover:bg-primary-foreground/10">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-accent)] text-accent-foreground shadow-md">
+                  {w.i}
+                </div>
+                <h3 className="mt-4 text-lg font-bold">{w.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-primary-foreground/80">{w.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => openQuoteModal()}
+              className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3 text-sm font-bold text-accent-foreground shadow-lg transition hover:scale-[1.03]"
+            >
+              <Send className="h-4 w-4" /> Get Free Quote
+            </button>
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-7 py-3 text-sm font-bold text-[var(--whatsapp-foreground)] shadow-lg"
+            >
+              <MessageCircle className="h-4 w-4" /> Discuss Your Requirement
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* INSIGHTS */}
       <section className="mx-auto max-w-7xl px-4 py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">

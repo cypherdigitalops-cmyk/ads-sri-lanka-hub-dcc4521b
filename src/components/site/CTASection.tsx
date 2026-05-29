@@ -1,6 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { MessageCircle, Phone, Send } from "lucide-react";
+import { Mail, MessageCircle, Phone, Send } from "lucide-react";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
+import { useState } from "react";
 
 /**
  * Derive the human-readable service/category name from the current URL path
@@ -22,6 +23,199 @@ function waLink(service?: string) {
   if (!service) return SITE.whatsapp;
   const msg = `Hi, I'm inquiring about ${service}. Please share more details.`;
   return `${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
+
+/**
+ * Always-visible thin top contact bar — phone, WhatsApp and email
+ * shown above the main header on every page.
+ */
+export function TopContactBar() {
+  return (
+    <div
+      className="w-full text-white"
+      style={{ background: "#15224A" }}
+    >
+      <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-3 px-4 text-[12px] font-medium">
+        <a
+          href={`tel:${SITE.phone}`}
+          className="inline-flex items-center gap-1.5 hover:text-accent"
+        >
+          <Phone className="h-3.5 w-3.5" />
+          <span className="hidden xs:inline">Call</span> {SITE.phone}
+        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href={SITE.whatsapp}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-1.5 hover:text-accent"
+          >
+            <MessageCircle className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">WhatsApp</span>
+            <span className="sm:hidden">Chat</span>
+          </a>
+          <a
+            href={`mailto:${SITE.email}`}
+            className="hidden items-center gap-1.5 hover:text-accent md:inline-flex"
+          >
+            <Mail className="h-3.5 w-3.5" /> {SITE.email}
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Desktop-only floating "Get Free Quote" button — pinned to the left
+ * edge so it complements the WhatsApp button on the right.
+ */
+export function FloatingQuoteButton() {
+  const service = useCurrentService();
+  const href = service ? `/get-quote?service=${encodeURIComponent(service)}` : "/get-quote";
+  return (
+    <Link
+      to={href as never}
+      aria-label={service ? `Get a free quote for ${service}` : "Get a free quote"}
+      className="fixed left-4 bottom-6 z-50 hidden items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-5 py-3 text-sm font-bold text-accent-foreground shadow-2xl ring-2 ring-accent/40 transition hover:scale-105 md:inline-flex"
+    >
+      <Send className="h-4 w-4" />
+      Get Free Quote
+    </Link>
+  );
+}
+
+/**
+ * Mid-content WhatsApp CTA — drop into long-form pages roughly halfway
+ * down so visitors can jump straight into a conversation.
+ */
+export function MidContentWhatsAppCTA({ service }: { service?: string }) {
+  const href = service
+    ? `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${service}. Can you share pricing and timelines?`)}`
+    : SITE.whatsapp;
+  return (
+    <section className="mx-auto my-10 max-w-3xl px-4">
+      <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-[var(--whatsapp)]/30 bg-[var(--whatsapp)]/5 p-6 sm:flex-row sm:p-7">
+        <div className="text-center sm:text-left">
+          <div className="text-base font-bold sm:text-lg">
+            Talking to a specialist is faster than reading.
+          </div>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {service ? `Get instant pricing & samples for ${service} on WhatsApp.` : "Get instant pricing & answers on WhatsApp — usually within 5 minutes."}
+          </p>
+        </div>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener"
+          className="inline-flex flex-none items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-bold text-[var(--whatsapp-foreground)] shadow-lg transition hover:scale-105"
+        >
+          <MessageCircle className="h-5 w-5" /> WhatsApp Us Now
+        </a>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Inline inquiry form — submission opens WhatsApp with the user's
+ * details pre-filled. No backend required and works on every page.
+ */
+export function InlineInquiryForm({ service }: { service?: string }) {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const lines = [
+      `Hi, I'd like to inquire about ${service ?? "your services"}.`,
+      "",
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+      email ? `Email: ${email}` : "",
+      "",
+      message ? `Message: ${message}` : "",
+    ].filter(Boolean);
+    const url = `${SITE.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
+    window.open(url, "_blank", "noopener");
+  }
+
+  return (
+    <section id="inquiry" className="mx-auto max-w-3xl px-4 py-14">
+      <div className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
+        <h2 className="text-2xl font-bold sm:text-3xl">
+          {service ? `Request a free quote for ${service}` : "Send us an inquiry"}
+        </h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Fill in your details and we'll reply on WhatsApp within minutes (Mon–Sat 9am–7pm).
+        </p>
+        <form onSubmit={handleSubmit} className="mt-6 grid gap-4">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <label className="block text-sm">
+              <span className="font-semibold">Your name *</span>
+              <input
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-ring"
+                placeholder="e.g. Nimal Perera"
+              />
+            </label>
+            <label className="block text-sm">
+              <span className="font-semibold">Phone / WhatsApp *</span>
+              <input
+                required
+                type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-ring"
+                placeholder="07X XXX XXXX"
+              />
+            </label>
+          </div>
+          <label className="block text-sm">
+            <span className="font-semibold">Email (optional)</span>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-ring"
+              placeholder="you@company.lk"
+            />
+          </label>
+          <label className="block text-sm">
+            <span className="font-semibold">Tell us about your project</span>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows={4}
+              className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-ring"
+              placeholder={service ? `Quantity, sizes, deadline for ${service}…` : "Goals, timeline, budget…"}
+            />
+          </label>
+          <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+            <button
+              type="submit"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-bold text-[var(--whatsapp-foreground)] shadow-lg transition hover:scale-[1.02]"
+            >
+              <MessageCircle className="h-5 w-5" /> Send via WhatsApp
+            </button>
+            <a
+              href={`tel:${SITE.phone}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold hover:bg-muted"
+            >
+              <Phone className="h-4 w-4" /> Or call {SITE.phone}
+            </a>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            By submitting, you agree to be contacted about your inquiry. We never share your details.
+          </p>
+        </form>
+      </div>
+    </section>
+  );
 }
 
 export function CTASection({ headline, sub, service }: { headline?: string; sub?: string; service?: string }) {
@@ -120,6 +314,7 @@ export function FloatingWhatsApp() {
 
 export function StickyCallBar() {
   const service = useCurrentService();
+  const quoteHref = service ? `/get-quote?service=${encodeURIComponent(service)}` : "/get-quote";
   return (
     <>
       {/* Spacer so content is not hidden behind the fixed bar on mobile */}
@@ -133,7 +328,7 @@ export function StickyCallBar() {
           className="flex flex-1 items-center justify-center gap-2 text-white"
           style={{ fontSize: 14, fontWeight: 500 }}
         >
-          <Phone className="h-4 w-4" /> Call {SITE.phone}
+          <Phone className="h-4 w-4" /> Call
         </a>
         <a
           href={waLink(service)}
@@ -142,8 +337,15 @@ export function StickyCallBar() {
           className="flex flex-1 items-center justify-center gap-2 text-white"
           style={{ fontSize: 14, fontWeight: 500, borderLeft: "1px solid rgba(255,255,255,0.12)" }}
         >
-          <MessageCircle className="h-4 w-4" /> {service ? `Ask about ${service}` : "WhatsApp Us"}
+          <MessageCircle className="h-4 w-4" /> WhatsApp
         </a>
+        <Link
+          to={quoteHref as never}
+          className="flex flex-1 items-center justify-center gap-2 font-semibold text-accent-foreground"
+          style={{ fontSize: 14, fontWeight: 700, background: "var(--accent, #f59e0b)", borderLeft: "1px solid rgba(255,255,255,0.12)" }}
+        >
+          <Send className="h-4 w-4" /> Free Quote
+        </Link>
       </div>
     </>
   );

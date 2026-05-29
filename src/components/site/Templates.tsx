@@ -266,9 +266,9 @@ const PRINTING_TOP_CATEGORIES: { slug: string; label: string; desc: string; icon
   { slug: "sticker-printing-sri-lanka", label: "Sticker Printing", desc: "Vinyl, transparent, die-cut & label stickers.", icon: <Sticker className="h-5 w-5" /> },
   { slug: "backdrop-printing-sri-lanka", label: "Backdrop Printing", desc: "Event, stage & media wall backdrops.", icon: <ImageIcon className="h-5 w-5" /> },
   { slug: "vehicle-branding-sri-lanka", label: "Vehicle Branding", desc: "Full wraps, partial wraps, lettering & graphics.", icon: <Car className="h-5 w-5" /> },
-  { slug: "sign-board-sri-lanka", label: "Sign Boards", desc: "Acrylic, 3D letter, LED & lightbox sign boards.", icon: <Square className="h-5 w-5" /> },
-  { slug: "roll-up-banner-sri-lanka", label: "Roll-Up Banners", desc: "Pull-up stands, X-banners & retractable displays.", icon: <ScrollText className="h-5 w-5" /> },
-  { slug: "exhibition-printing-sri-lanka", label: "Exhibition Printing", desc: "Booth graphics, fabric walls, pop-up displays.", icon: <Tag className="h-5 w-5" /> },
+  { slug: "acrylic-sign-board-sri-lanka", label: "Sign Boards", desc: "Acrylic, 3D letter, LED & lightbox sign boards.", icon: <Square className="h-5 w-5" /> },
+  { slug: "roll-up-banner-printing-sri-lanka", label: "Roll-Up Banners", desc: "Pull-up stands, X-banners & retractable displays.", icon: <ScrollText className="h-5 w-5" /> },
+  { slug: "exhibition-banner-printing-sri-lanka", label: "Exhibition Printing", desc: "Booth graphics, fabric walls, pop-up displays.", icon: <Tag className="h-5 w-5" /> },
 ];
 
 function PrintingTopCategoryCards() {

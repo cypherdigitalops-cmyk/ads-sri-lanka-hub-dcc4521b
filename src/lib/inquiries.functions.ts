@@ -124,7 +124,7 @@ export const updateInquiry = createServerFn({ method: "POST" })
     const isAdmin = (roleRows ?? []).some((r) => r.role === "admin");
     if (!isAdmin) throw new Error("Forbidden: admin only");
 
-    const patch: Record<string, unknown> = {};
+    const patch: { status?: "new" | "contacted" | "quoted" | "won" | "lost"; admin_notes?: string } = {};
     if (data.status) patch.status = data.status;
     if (typeof data.admin_notes === "string") patch.admin_notes = data.admin_notes;
     if (Object.keys(patch).length === 0) return { ok: true };

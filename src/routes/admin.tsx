@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/lib/inquiries.functions";
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { toast } from "sonner";
-import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, type LucideIcon } from "lucide-react";
+import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
@@ -478,6 +478,8 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             barColor="#639922"
           />
         </div>
+
+        <PagePerformanceMatrix inquiries={inquiries} clicks={clicks} shortPath={shortPath} />
 
         {/* Top services */}
         {topServices.length > 0 && (

@@ -15,50 +15,6 @@ const InquiryInput = z.object({
   user_agent: z.string().trim().max(500).optional().or(z.literal("")),
 });
 
-async function notifyWhatsApp(inquiry: {
-  name: string;
-  phone: string;
-  service?: string | null;
-  company?: string | null;
-  message?: string | null;
-  email?: string | null;
-  page_url?: string | null;
-}) {
-  const token = process.env.WHATSAPP_CLOUD_API_TOKEN;
-  const phoneId = process.env.WHATSAPP_PHONE_NUMBER_ID;
-  const to = process.env.WHATSAPP_NOTIFY_TO; // e.g. 94771437707 (no +)
-  if (!token || !phoneId || !to) return; // not configured
-
-  const text =
-    `🔔 New Inquiry — Advertising Sri Lanka\n\n` +
-    `Service: ${inquiry.service || "—"}\n` +
-    `Name: ${inquiry.name}\n` +
-    `Phone: ${inquiry.phone}\n` +
-    (inquiry.email ? `Email: ${inquiry.email}\n` : "") +
-    (inquiry.company ? `Company: ${inquiry.company}\n` : "") +
-    (inquiry.message ? `Message: ${inquiry.message}\n` : "") +
-    (inquiry.page_url ? `Page: ${inquiry.page_url}\n` : "") +
-    `\nOpen admin: https://advertisingsrilanka.lk/admin`;
-
-  try {
-    await fetch(`https://graph.facebook.com/v20.0/${phoneId}/messages`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        messaging_product: "whatsapp",
-        to,
-        type: "text",
-        text: { body: text },
-      }),
-    });
-  } catch (err) {
-    console.error("WhatsApp notify failed", err);
-  }
-}
-
 export const submitInquiry = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => InquiryInput.parse(input))
   .handler(async ({ data }) => {
@@ -79,9 +35,6 @@ export const submitInquiry = createServerFn({ method: "POST" })
       .select("id")
       .single();
     if (error) throw new Error(error.message);
-
-    // Fire-and-forget WhatsApp notification
-    await notifyWhatsApp(row);
 
     return { id: inserted.id };
   });

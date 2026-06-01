@@ -22,7 +22,6 @@ export function SiteHeader() {
           <Link to="/atl-advertising-sri-lanka" className="hover:text-primary">ATL</Link>
           <Link to="/btl-advertising-sri-lanka" className="hover:text-primary">BTL</Link>
           <Link to="/digital-marketing-sri-lanka" className="hover:text-primary">Digital</Link>
-          <Link to="/social-media-marketing-sri-lanka" className="hover:text-primary">Social</Link>
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
           <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
           <Link to="/pr-communications-sri-lanka" className="hover:text-primary">PR</Link>

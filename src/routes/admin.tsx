@@ -1132,7 +1132,7 @@ function MatrixRow({
   r: { page: string; form: number; wa: number; call: number; quote: number; email: number };
   title: string;
   pageCell: React.ReactNode;
-  Num: (props: { v: number; color: string }) => JSX.Element;
+  Num: (props: { v: number; color: string }) => React.ReactElement;
 }) {
   return (
     <tr style={{ borderTop: "0.5px solid #e5e4de" }}>

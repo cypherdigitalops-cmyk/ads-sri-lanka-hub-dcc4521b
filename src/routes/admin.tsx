@@ -35,19 +35,19 @@ type Inquiry = {
 
 const STATUS_OPTIONS = ["new", "contacted", "quoted", "won", "lost"] as const;
 const STATUS_PILL: Record<string, { bg: string; fg: string }> = {
-  new:       { bg: "#E6F1FB", fg: "#185FA5" },
-  contacted: { bg: "#FAEEDA", fg: "#854F0B" },
+  new:       { bg: "#CCE3F8", fg: "#1D4ED8" },
+  contacted: { bg: "#FDE4B5", fg: "#B45309" },
   quoted:    { bg: "#EEEDFE", fg: "#3C3489" },
-  won:       { bg: "#EAF3DE", fg: "#3B6D11" },
-  lost:      { bg: "#FCEBEB", fg: "#A32D2D" },
+  won:       { bg: "#D6EBB6", fg: "#3F6212" },
+  lost:      { bg: "#FBD0D0", fg: "#B91C1C" },
 };
 
 const AVATAR_PALETTE: { bg: string; fg: string }[] = [
-  { bg: "#E6F1FB", fg: "#185FA5" },
-  { bg: "#EAF3DE", fg: "#3B6D11" },
-  { bg: "#FAEEDA", fg: "#854F0B" },
+  { bg: "#CCE3F8", fg: "#1D4ED8" },
+  { bg: "#D6EBB6", fg: "#3F6212" },
+  { bg: "#FDE4B5", fg: "#B45309" },
   { bg: "#EEEDFE", fg: "#3C3489" },
-  { bg: "#E1F5EE", fg: "#0F6E56" },
+  { bg: "#C7F0DF", fg: "#047857" },
 ];
 
 const CARD_STYLE: React.CSSProperties = {
@@ -291,7 +291,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
     return (
       <div className="mx-auto max-w-2xl px-6 py-16" style={{ color: "#1a1a1a" }}>
         <h1 className="text-2xl" style={{ fontWeight: 500 }}>Admin</h1>
-        <p className="mt-4 text-sm" style={{ color: "#A32D2D" }}>{msg}</p>
+        <p className="mt-4 text-sm" style={{ color: "#B91C1C" }}>{msg}</p>
         {isForbidden && (
           <p className="mt-2 text-sm" style={{ color: "#6b6b68" }}>
             You're signed in as <strong>{userEmail}</strong>, but this email isn't the configured admin.
@@ -387,41 +387,41 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             label="WhatsApp clicks"
             value={ctaTotals.whatsapp}
             icon={MessageCircle}
-            iconBg="#E1F5EE"
-            color="#0F6E56"
+            iconBg="#C7F0DF"
+            color="#047857"
             badgeLabel="Top CTA"
-            badgeBg="#EAF3DE"
-            badgeFg="#3B6D11"
+            badgeBg="#D6EBB6"
+            badgeFg="#3F6212"
           />
           <KpiCard
             label="Call clicks"
             value={ctaTotals.call}
             icon={Phone}
-            iconBg="#EAF3DE"
-            color="#3B6D11"
+            iconBg="#D6EBB6"
+            color="#3F6212"
             badgeLabel="High intent"
-            badgeBg="#EAF3DE"
-            badgeFg="#3B6D11"
+            badgeBg="#D6EBB6"
+            badgeFg="#3F6212"
           />
           <KpiCard
             label="Quote opens"
             value={ctaTotals.quote}
             icon={FileText}
-            iconBg="#FAEEDA"
-            color="#854F0B"
+            iconBg="#FDE4B5"
+            color="#B45309"
             badgeLabel="Follow up"
-            badgeBg="#FAEEDA"
-            badgeFg="#854F0B"
+            badgeBg="#FDE4B5"
+            badgeFg="#B45309"
           />
           <KpiCard
             label="Email clicks"
             value={ctaTotals.email}
             icon={Mail}
-            iconBg="#FCEBEB"
-            color="#A32D2D"
+            iconBg="#FBD0D0"
+            color="#B91C1C"
             badgeLabel="Fix CTA"
-            badgeBg="#FCEBEB"
-            badgeFg="#A32D2D"
+            badgeBg="#FBD0D0"
+            badgeFg="#B91C1C"
           />
         </div>
 
@@ -432,9 +432,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
               <div className="flex items-center gap-3">
                 <div
                   className="flex items-center justify-center"
-                  style={{ width: 32, height: 32, borderRadius: 9, background: "#FAEEDA" }}
+                  style={{ width: 32, height: 32, borderRadius: 9, background: "#FDE4B5" }}
                 >
-                  <Trophy size={16} color="#854F0B" />
+                  <Trophy size={16} color="#B45309" />
                 </div>
                 <div>
                   <div style={{ fontSize: 12, color: "#6b6b68" }}>Best performing page</div>
@@ -444,11 +444,11 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                 </div>
               </div>
               <div className="flex flex-wrap items-center gap-2">
-                <StatPill label="Inquiries" value={bestPage[1].inq} bg="#E6F1FB" fg="#185FA5" />
-                <StatPill label="WhatsApp" value={bestPage[1].wa} bg="#E1F5EE" fg="#0F6E56" />
-                <StatPill label="Calls" value={bestPage[1].call} bg="#EAF3DE" fg="#3B6D11" />
-                <StatPill label="Quotes" value={bestPage[1].quote} bg="#FAEEDA" fg="#854F0B" />
-                <StatPill label="Emails" value={bestPage[1].email} bg="#FCEBEB" fg="#A32D2D" />
+                <StatPill label="Inquiries" value={bestPage[1].inq} bg="#CCE3F8" fg="#1D4ED8" />
+                <StatPill label="WhatsApp" value={bestPage[1].wa} bg="#C7F0DF" fg="#047857" />
+                <StatPill label="Calls" value={bestPage[1].call} bg="#D6EBB6" fg="#3F6212" />
+                <StatPill label="Quotes" value={bestPage[1].quote} bg="#FDE4B5" fg="#B45309" />
+                <StatPill label="Emails" value={bestPage[1].email} bg="#FBD0D0" fg="#B91C1C" />
               </div>
             </div>
           </div>
@@ -461,21 +461,21 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             subtitle="Pages that drove form submissions"
             rows={topPagesByInquiry}
             empty="No inquiries yet."
-            barColor="#378ADD"
+            barColor="#2563EB"
           />
           <TopPagesCard
             title="Top pages — WhatsApp clicks"
             subtitle="Pages where visitors tap WhatsApp"
             rows={topPagesByWhatsApp}
             empty="No WhatsApp clicks tracked yet."
-            barColor="#1D9E75"
+            barColor="#059669"
           />
           <TopPagesCard
             title="Top pages — Call clicks"
             subtitle="Pages where visitors tap to call"
             rows={topPagesByCall}
             empty="No call clicks tracked yet."
-            barColor="#639922"
+            barColor="#65A30D"
           />
         </div>
 
@@ -511,9 +511,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                       </button>
                       <div className="flex shrink-0 items-center gap-3 text-xs" style={{ color: "#6b6b68" }}>
                         <span style={{ color: "#1a1a1a", fontWeight: 500 }}>{s.total}</span>
-                        <span style={{ color: "#3B6D11" }}>{s.won}W</span>
-                        <span style={{ color: "#A32D2D" }}>{s.lost}L</span>
-                        <span style={{ color: "#854F0B" }}>{s.open} open</span>
+                        <span style={{ color: "#3F6212" }}>{s.won}W</span>
+                        <span style={{ color: "#B91C1C" }}>{s.lost}L</span>
+                        <span style={{ color: "#B45309" }}>{s.open} open</span>
                         <span className="w-12 text-right" style={{ color: "#1a1a1a", fontWeight: 500 }}>
                           {s.winRate === null ? "—" : `${s.winRate}%`}
                         </span>
@@ -521,7 +521,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                     </div>
                     <div className="mt-2 overflow-hidden" style={{ height: 4, borderRadius: 2, background: "#e5e4de" }}>
                       <div
-                        style={{ width: `${pct}%`, height: "100%", background: "#378ADD" }}
+                        style={{ width: `${pct}%`, height: "100%", background: "#2563EB" }}
                       />
                     </div>
                   </li>
@@ -1016,11 +1016,11 @@ function PagePerformanceMatrix({
 
   function PageCellSignals({ r }: { r: typeof rows[number] }) {
     const items: { bg: string; fg: string; icon: LucideIcon; key: string }[] = [];
-    if (r.form > 0) items.push({ key: "form", bg: "#E6F1FB", fg: "#185FA5", icon: FileText });
-    if (r.wa > 0) items.push({ key: "wa", bg: "#E1F5EE", fg: "#0F6E56", icon: MessageCircle });
-    if (r.call > 0) items.push({ key: "call", bg: "#EAF3DE", fg: "#3B6D11", icon: Phone });
-    if (r.quote > 0) items.push({ key: "quote", bg: "#FAEEDA", fg: "#854F0B", icon: FileText });
-    if (r.email > 0) items.push({ key: "email", bg: "#FCEBEB", fg: "#A32D2D", icon: Mail });
+    if (r.form > 0) items.push({ key: "form", bg: "#CCE3F8", fg: "#1D4ED8", icon: FileText });
+    if (r.wa > 0) items.push({ key: "wa", bg: "#C7F0DF", fg: "#047857", icon: MessageCircle });
+    if (r.call > 0) items.push({ key: "call", bg: "#D6EBB6", fg: "#3F6212", icon: Phone });
+    if (r.quote > 0) items.push({ key: "quote", bg: "#FDE4B5", fg: "#B45309", icon: FileText });
+    if (r.email > 0) items.push({ key: "email", bg: "#FBD0D0", fg: "#B91C1C", icon: Mail });
     if (items.length === 0) return <span style={{ color: "#9e9d97" }}>—</span>;
     return (
       <div className="flex flex-wrap gap-1.5">
@@ -1054,20 +1054,20 @@ function PagePerformanceMatrix({
       </div>
 
       <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <MatrixKpi label="Active pages" value={kpis.active} icon={Star} iconBg="#EAF3DE" color="#3B6D11" badgeLabel="Generating leads" badgeBg="#EAF3DE" badgeFg="#3B6D11" />
-        <MatrixKpi label="WhatsApp taps" value={kpis.whatsapp} icon={MessageCircle} iconBg="#E1F5EE" color="#0F6E56" badgeLabel="Top CTA" badgeBg="#E1F5EE" badgeFg="#0F6E56" />
-        <MatrixKpi label="Pages need fix" value={kpis.needFix} icon={AlertTriangle} iconBg="#FAEEDA" color="#854F0B" badgeLabel="Missing CTAs" badgeBg="#FAEEDA" badgeFg="#854F0B" />
-        <MatrixKpi label="Ghost pages" value={kpis.ghost} icon={Ghost} iconBg="#FCEBEB" color="#A32D2D" badgeLabel="Zero engagement" badgeBg="#FCEBEB" badgeFg="#A32D2D" />
+        <MatrixKpi label="Active pages" value={kpis.active} icon={Star} iconBg="#D6EBB6" color="#3F6212" badgeLabel="Generating leads" badgeBg="#D6EBB6" badgeFg="#3F6212" />
+        <MatrixKpi label="WhatsApp taps" value={kpis.whatsapp} icon={MessageCircle} iconBg="#C7F0DF" color="#047857" badgeLabel="Top CTA" badgeBg="#C7F0DF" badgeFg="#047857" />
+        <MatrixKpi label="Pages need fix" value={kpis.needFix} icon={AlertTriangle} iconBg="#FDE4B5" color="#B45309" badgeLabel="Missing CTAs" badgeBg="#FDE4B5" badgeFg="#B45309" />
+        <MatrixKpi label="Ghost pages" value={kpis.ghost} icon={Ghost} iconBg="#FBD0D0" color="#B91C1C" badgeLabel="Zero engagement" badgeBg="#FBD0D0" badgeFg="#B91C1C" />
       </div>
 
       <div className="overflow-hidden" style={CARD_STYLE}>
         <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
           <h3 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>Page performance matrix</h3>
           <div className="flex flex-wrap items-center gap-3 text-xs" style={{ color: "#6b6b68" }}>
-            <LegendDot color="#185FA5" label="form" />
-            <LegendDot color="#0F6E56" label="WhatsApp" />
-            <LegendDot color="#3B6D11" label="call" />
-            <LegendDot color="#854F0B" label="quote" />
+            <LegendDot color="#1D4ED8" label="form" />
+            <LegendDot color="#047857" label="WhatsApp" />
+            <LegendDot color="#3F6212" label="call" />
+            <LegendDot color="#B45309" label="quote" />
             <LegendDot color="#9e9d97" label="none" />
           </div>
         </div>
@@ -1094,7 +1094,7 @@ function PagePerformanceMatrix({
               <tbody>
                 {stars.length > 0 && (
                   <tr>
-                    <td colSpan={8} className="px-3 py-2 text-xs uppercase tracking-wider" style={{ color: "#3B6D11", background: "#FAFAF7", borderTop: "0.5px solid #e5e4de", letterSpacing: "0.04em" }}>
+                    <td colSpan={8} className="px-3 py-2 text-xs uppercase tracking-wider" style={{ color: "#3F6212", background: "#FAFAF7", borderTop: "0.5px solid #e5e4de", letterSpacing: "0.04em" }}>
                       Star pages — generating real leads
                     </td>
                   </tr>
@@ -1104,7 +1104,7 @@ function PagePerformanceMatrix({
                 ))}
                 {opps.length > 0 && (
                   <tr>
-                    <td colSpan={8} className="px-3 py-2 text-xs uppercase tracking-wider" style={{ color: "#854F0B", background: "#FAFAF7", borderTop: "0.5px solid #e5e4de", letterSpacing: "0.04em" }}>
+                    <td colSpan={8} className="px-3 py-2 text-xs uppercase tracking-wider" style={{ color: "#B45309", background: "#FAFAF7", borderTop: "0.5px solid #e5e4de", letterSpacing: "0.04em" }}>
                       Opportunity pages — traffic but missing form
                     </td>
                   </tr>
@@ -1142,11 +1142,11 @@ function MatrixRow({
         <div className="text-xs" style={{ color: "#9e9d97" }}>{r.page}</div>
       </td>
       <td className="px-3 py-3">{pageCell}</td>
-      <td className="px-3 py-3 text-right"><Num v={r.form} color="#185FA5" /></td>
-      <td className="px-3 py-3 text-right"><Num v={r.wa} color="#0F6E56" /></td>
-      <td className="px-3 py-3 text-right"><Num v={r.call} color="#3B6D11" /></td>
-      <td className="px-3 py-3 text-right"><Num v={r.quote} color="#854F0B" /></td>
-      <td className="px-3 py-3 text-right"><Num v={r.email} color="#A32D2D" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.form} color="#1D4ED8" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.wa} color="#047857" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.call} color="#3F6212" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.quote} color="#B45309" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.email} color="#B91C1C" /></td>
     </tr>
   );
 }

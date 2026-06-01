@@ -139,6 +139,30 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
     return c;
   }, [inquiries]);
 
+  const topServices = useMemo(() => {
+    const map = new Map<string, { total: number; won: number; lost: number; open: number }>();
+    for (const i of inquiries) {
+      const key = (i.service || "").trim();
+      if (!key) continue;
+      const cur = map.get(key) ?? { total: 0, won: 0, lost: 0, open: 0 };
+      cur.total += 1;
+      if (i.status === "won") cur.won += 1;
+      else if (i.status === "lost") cur.lost += 1;
+      else cur.open += 1;
+      map.set(key, cur);
+    }
+    return Array.from(map.entries())
+      .map(([service, s]) => ({
+        service,
+        ...s,
+        winRate: s.won + s.lost > 0 ? Math.round((s.won / (s.won + s.lost)) * 100) : null,
+      }))
+      .sort((a, b) => b.total - a.total)
+      .slice(0, 8);
+  }, [inquiries]);
+
+  const maxServiceTotal = topServices[0]?.total ?? 0;
+
   async function handleLogout() {
     await supabase.auth.signOut();
     navigate({ to: "/login", replace: true });
@@ -190,6 +214,56 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+        {/* Top services */}
+        {topServices.length > 0 && (
+          <div className="mb-6 overflow-hidden rounded-xl border border-border bg-card">
+            <div className="flex items-center justify-between border-b border-border px-4 py-3">
+              <div>
+                <h2 className="text-sm font-bold">Top services by inquiries</h2>
+                <p className="text-xs text-muted-foreground">
+                  Where demand is concentrated and how it's converting
+                </p>
+              </div>
+              <span className="text-xs text-muted-foreground">
+                {topServices.length} of {new Set(inquiries.map(i => i.service).filter(Boolean)).size}
+              </span>
+            </div>
+            <ul className="divide-y divide-border">
+              {topServices.map((s) => {
+                const pct = maxServiceTotal ? (s.total / maxServiceTotal) * 100 : 0;
+                return (
+                  <li key={s.service} className="px-4 py-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <button
+                        onClick={() => setSearch(s.service)}
+                        className="truncate text-left text-sm font-semibold hover:underline"
+                        title="Filter by this service"
+                      >
+                        {s.service}
+                      </button>
+                      <div className="flex shrink-0 items-center gap-3 text-xs text-muted-foreground">
+                        <span className="font-semibold text-foreground">{s.total}</span>
+                        <span className="text-emerald-600">{s.won}W</span>
+                        <span className="text-rose-600">{s.lost}L</span>
+                        <span className="text-amber-600">{s.open} open</span>
+                        <span className="w-12 text-right font-semibold text-foreground">
+                          {s.winRate === null ? "—" : `${s.winRate}%`}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted">
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: `${pct}%` }}
+                      />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+
         {/* Filters */}
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <button

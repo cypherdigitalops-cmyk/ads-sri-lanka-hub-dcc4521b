@@ -134,6 +134,7 @@ import { Route as LuxuryCorporateGiftsSriLankaRouteImport } from './routes/luxur
 import { Route as LoyaltyProgramsSriLankaRouteImport } from './routes/loyalty-programs-sri-lanka'
 import { Route as LorryBrandingSriLankaRouteImport } from './routes/lorry-branding-sri-lanka'
 import { Route as LogoDesignSriLankaRouteImport } from './routes/logo-design-sri-lanka'
+import { Route as LoginRouteImport } from './routes/login'
 import { Route as LocalSeoSriLankaRouteImport } from './routes/local-seo-sri-lanka'
 import { Route as LiveBandHireSriLankaRouteImport } from './routes/live-band-hire-sri-lanka'
 import { Route as LinkedinMarketingSriLankaRouteImport } from './routes/linkedin-marketing-sri-lanka'
@@ -308,6 +309,7 @@ import { Route as AnnualReportPrintingSriLankaRouteImport } from './routes/annua
 import { Route as AnimationSriLankaRouteImport } from './routes/animation-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AcrylicSignBoardSriLankaRouteImport } from './routes/acrylic-sign-board-sri-lanka'
 import { Route as AcrylicAwardsSriLankaRouteImport } from './routes/acrylic-awards-sri-lanka'
 import { Route as AboutRouteImport } from './routes/about'
@@ -1112,6 +1114,11 @@ const LorryBrandingSriLankaRoute = LorryBrandingSriLankaRouteImport.update({
 const LogoDesignSriLankaRoute = LogoDesignSriLankaRouteImport.update({
   id: '/logo-design-sri-lanka',
   path: '/logo-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LocalSeoSriLankaRoute = LocalSeoSriLankaRouteImport.update({
@@ -2069,6 +2076,11 @@ const AdvertisingPackagesRoute = AdvertisingPackagesRouteImport.update({
   path: '/advertising-packages',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AcrylicSignBoardSriLankaRoute =
   AcrylicSignBoardSriLankaRouteImport.update({
     id: '/acrylic-sign-board-sri-lanka',
@@ -2810,6 +2822,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
   '/acrylic-sign-board-sri-lanka': typeof AcrylicSignBoardSriLankaRoute
+  '/admin': typeof AdminRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
@@ -2984,6 +2997,7 @@ export interface FileRoutesByFullPath {
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
   '/live-band-hire-sri-lanka': typeof LiveBandHireSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
+  '/login': typeof LoginRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
   '/lorry-branding-sri-lanka': typeof LorryBrandingSriLankaRoute
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
@@ -3236,6 +3250,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
   '/acrylic-sign-board-sri-lanka': typeof AcrylicSignBoardSriLankaRoute
+  '/admin': typeof AdminRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
@@ -3410,6 +3425,7 @@ export interface FileRoutesByTo {
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
   '/live-band-hire-sri-lanka': typeof LiveBandHireSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
+  '/login': typeof LoginRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
   '/lorry-branding-sri-lanka': typeof LorryBrandingSriLankaRoute
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
@@ -3663,6 +3679,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
   '/acrylic-sign-board-sri-lanka': typeof AcrylicSignBoardSriLankaRoute
+  '/admin': typeof AdminRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
@@ -3837,6 +3854,7 @@ export interface FileRoutesById {
   '/linkedin-marketing-sri-lanka': typeof LinkedinMarketingSriLankaRoute
   '/live-band-hire-sri-lanka': typeof LiveBandHireSriLankaRoute
   '/local-seo-sri-lanka': typeof LocalSeoSriLankaRoute
+  '/login': typeof LoginRoute
   '/logo-design-sri-lanka': typeof LogoDesignSriLankaRoute
   '/lorry-branding-sri-lanka': typeof LorryBrandingSriLankaRoute
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
@@ -4091,6 +4109,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/acrylic-awards-sri-lanka'
     | '/acrylic-sign-board-sri-lanka'
+    | '/admin'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/animation-sri-lanka'
@@ -4265,6 +4284,7 @@ export interface FileRouteTypes {
     | '/linkedin-marketing-sri-lanka'
     | '/live-band-hire-sri-lanka'
     | '/local-seo-sri-lanka'
+    | '/login'
     | '/logo-design-sri-lanka'
     | '/lorry-branding-sri-lanka'
     | '/loyalty-programs-sri-lanka'
@@ -4517,6 +4537,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/acrylic-awards-sri-lanka'
     | '/acrylic-sign-board-sri-lanka'
+    | '/admin'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/animation-sri-lanka'
@@ -4691,6 +4712,7 @@ export interface FileRouteTypes {
     | '/linkedin-marketing-sri-lanka'
     | '/live-band-hire-sri-lanka'
     | '/local-seo-sri-lanka'
+    | '/login'
     | '/logo-design-sri-lanka'
     | '/lorry-branding-sri-lanka'
     | '/loyalty-programs-sri-lanka'
@@ -4943,6 +4965,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/acrylic-awards-sri-lanka'
     | '/acrylic-sign-board-sri-lanka'
+    | '/admin'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/animation-sri-lanka'
@@ -5117,6 +5140,7 @@ export interface FileRouteTypes {
     | '/linkedin-marketing-sri-lanka'
     | '/live-band-hire-sri-lanka'
     | '/local-seo-sri-lanka'
+    | '/login'
     | '/logo-design-sri-lanka'
     | '/lorry-branding-sri-lanka'
     | '/loyalty-programs-sri-lanka'
@@ -5370,6 +5394,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AcrylicAwardsSriLankaRoute: typeof AcrylicAwardsSriLankaRoute
   AcrylicSignBoardSriLankaRoute: typeof AcrylicSignBoardSriLankaRoute
+  AdminRoute: typeof AdminRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
   AnimationSriLankaRoute: typeof AnimationSriLankaRoute
@@ -5544,6 +5569,7 @@ export interface RootRouteChildren {
   LinkedinMarketingSriLankaRoute: typeof LinkedinMarketingSriLankaRoute
   LiveBandHireSriLankaRoute: typeof LiveBandHireSriLankaRoute
   LocalSeoSriLankaRoute: typeof LocalSeoSriLankaRoute
+  LoginRoute: typeof LoginRoute
   LogoDesignSriLankaRoute: typeof LogoDesignSriLankaRoute
   LorryBrandingSriLankaRoute: typeof LorryBrandingSriLankaRoute
   LoyaltyProgramsSriLankaRoute: typeof LoyaltyProgramsSriLankaRoute
@@ -6660,6 +6686,13 @@ declare module '@tanstack/react-router' {
       path: '/logo-design-sri-lanka'
       fullPath: '/logo-design-sri-lanka'
       preLoaderRoute: typeof LogoDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/local-seo-sri-lanka': {
@@ -7880,6 +7913,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdvertisingPackagesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/acrylic-sign-board-sri-lanka': {
       id: '/acrylic-sign-board-sri-lanka'
       path: '/acrylic-sign-board-sri-lanka'
@@ -8770,6 +8810,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AcrylicAwardsSriLankaRoute: AcrylicAwardsSriLankaRoute,
   AcrylicSignBoardSriLankaRoute: AcrylicSignBoardSriLankaRoute,
+  AdminRoute: AdminRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
   AnimationSriLankaRoute: AnimationSriLankaRoute,
@@ -8946,6 +8987,7 @@ const rootRouteChildren: RootRouteChildren = {
   LinkedinMarketingSriLankaRoute: LinkedinMarketingSriLankaRoute,
   LiveBandHireSriLankaRoute: LiveBandHireSriLankaRoute,
   LocalSeoSriLankaRoute: LocalSeoSriLankaRoute,
+  LoginRoute: LoginRoute,
   LogoDesignSriLankaRoute: LogoDesignSriLankaRoute,
   LorryBrandingSriLankaRoute: LorryBrandingSriLankaRoute,
   LoyaltyProgramsSriLankaRoute: LoyaltyProgramsSriLankaRoute,
@@ -9221,13 +9263,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

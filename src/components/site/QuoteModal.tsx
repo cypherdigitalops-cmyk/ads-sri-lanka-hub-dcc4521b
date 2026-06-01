@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, Phone, Send, X } from "lucide-react";
 import { SITE, CATEGORIES, titleCase } from "@/data/site";
+import { useServerFn } from "@tanstack/react-start";
+import { submitInquiry } from "@/lib/inquiries.functions";
 
 export type QuoteOpenDetail = { service?: string };
 
@@ -47,6 +49,8 @@ export function QuoteModal() {
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const submit = useServerFn(submitInquiry);
 
   useEffect(() => {
     function handler(e: Event) {
@@ -70,8 +74,27 @@ export function QuoteModal() {
     };
   }, [open]);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    // Save inquiry to backend first (don't block WhatsApp on failure)
+    try {
+      await submit({
+        data: {
+          name,
+          phone,
+          service,
+          company,
+          message,
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          referrer: typeof document !== "undefined" ? document.referrer : "",
+          user_agent: typeof navigator !== "undefined" ? navigator.userAgent.slice(0, 500) : "",
+        },
+      });
+    } catch (err) {
+      console.error("Inquiry save failed", err);
+    }
     const lines = [
       `New Quote Request — ${service || "General Inquiry"}`,
       "",
@@ -84,6 +107,7 @@ export function QuoteModal() {
     const url = `${SITE.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
     window.open(url, "_blank", "noopener");
     setSent(true);
+    setSubmitting(false);
   }
 
   if (!open) return null;
@@ -211,9 +235,10 @@ export function QuoteModal() {
               <div className="flex flex-col gap-3 pt-1 sm:flex-row">
                 <button
                   type="submit"
+                  disabled={submitting}
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-bold text-accent-foreground shadow-lg transition hover:scale-[1.02]"
                 >
-                  <Send className="h-4 w-4" /> Send Free Quote Request
+                  <Send className="h-4 w-4" /> {submitting ? "Sending…" : "Send Free Quote Request"}
                 </button>
                 <a
                   href={`tel:${SITE.phone}`}

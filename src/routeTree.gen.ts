@@ -389,6 +389,7 @@ import { Route as BlogKeywordResearchSriLankaRouteImport } from './routes/blog/k
 import { Route as BlogInternetMarketingSriLankaRouteImport } from './routes/blog/internet-marketing-sri-lanka'
 import { Route as BlogIntegratedAdvertisingSriLankaRouteImport } from './routes/blog/integrated-advertising-sri-lanka'
 import { Route as BlogInstagramAdvertisingSriLankaRouteImport } from './routes/blog/instagram-advertising-sri-lanka'
+import { Route as BlogIndoorOutdoorLedScreenRentalSriLankaRouteImport } from './routes/blog/indoor-outdoor-led-screen-rental-sri-lanka'
 import { Route as BlogInStoreBrandingSriLankaRouteImport } from './routes/blog/in-store-branding-sri-lanka'
 import { Route as BlogHybridVirtualEventManagementSriLankaRouteImport } from './routes/blog/hybrid-virtual-event-management-sri-lanka'
 import { Route as BlogHowToChooseEventManagementCompanySriLankaRouteImport } from './routes/blog/how-to-choose-event-management-company-sri-lanka'
@@ -2537,6 +2538,12 @@ const BlogInstagramAdvertisingSriLankaRoute =
     path: '/blog/instagram-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogIndoorOutdoorLedScreenRentalSriLankaRoute =
+  BlogIndoorOutdoorLedScreenRentalSriLankaRouteImport.update({
+    id: '/blog/indoor-outdoor-led-screen-rental-sri-lanka',
+    path: '/blog/indoor-outdoor-led-screen-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogInStoreBrandingSriLankaRoute =
   BlogInStoreBrandingSriLankaRouteImport.update({
     id: '/blog/in-store-branding-sri-lanka',
@@ -3193,6 +3200,7 @@ export interface FileRoutesByFullPath {
   '/blog/how-to-choose-event-management-company-sri-lanka': typeof BlogHowToChooseEventManagementCompanySriLankaRoute
   '/blog/hybrid-virtual-event-management-sri-lanka': typeof BlogHybridVirtualEventManagementSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
+  '/blog/indoor-outdoor-led-screen-rental-sri-lanka': typeof BlogIndoorOutdoorLedScreenRentalSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
   '/blog/internet-marketing-sri-lanka': typeof BlogInternetMarketingSriLankaRoute
@@ -3624,6 +3632,7 @@ export interface FileRoutesByTo {
   '/blog/how-to-choose-event-management-company-sri-lanka': typeof BlogHowToChooseEventManagementCompanySriLankaRoute
   '/blog/hybrid-virtual-event-management-sri-lanka': typeof BlogHybridVirtualEventManagementSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
+  '/blog/indoor-outdoor-led-screen-rental-sri-lanka': typeof BlogIndoorOutdoorLedScreenRentalSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
   '/blog/internet-marketing-sri-lanka': typeof BlogInternetMarketingSriLankaRoute
@@ -4056,6 +4065,7 @@ export interface FileRoutesById {
   '/blog/how-to-choose-event-management-company-sri-lanka': typeof BlogHowToChooseEventManagementCompanySriLankaRoute
   '/blog/hybrid-virtual-event-management-sri-lanka': typeof BlogHybridVirtualEventManagementSriLankaRoute
   '/blog/in-store-branding-sri-lanka': typeof BlogInStoreBrandingSriLankaRoute
+  '/blog/indoor-outdoor-led-screen-rental-sri-lanka': typeof BlogIndoorOutdoorLedScreenRentalSriLankaRoute
   '/blog/instagram-advertising-sri-lanka': typeof BlogInstagramAdvertisingSriLankaRoute
   '/blog/integrated-advertising-sri-lanka': typeof BlogIntegratedAdvertisingSriLankaRoute
   '/blog/internet-marketing-sri-lanka': typeof BlogInternetMarketingSriLankaRoute
@@ -4489,6 +4499,7 @@ export interface FileRouteTypes {
     | '/blog/how-to-choose-event-management-company-sri-lanka'
     | '/blog/hybrid-virtual-event-management-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
+    | '/blog/indoor-outdoor-led-screen-rental-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
     | '/blog/internet-marketing-sri-lanka'
@@ -4920,6 +4931,7 @@ export interface FileRouteTypes {
     | '/blog/how-to-choose-event-management-company-sri-lanka'
     | '/blog/hybrid-virtual-event-management-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
+    | '/blog/indoor-outdoor-led-screen-rental-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
     | '/blog/internet-marketing-sri-lanka'
@@ -5351,6 +5363,7 @@ export interface FileRouteTypes {
     | '/blog/how-to-choose-event-management-company-sri-lanka'
     | '/blog/hybrid-virtual-event-management-sri-lanka'
     | '/blog/in-store-branding-sri-lanka'
+    | '/blog/indoor-outdoor-led-screen-rental-sri-lanka'
     | '/blog/instagram-advertising-sri-lanka'
     | '/blog/integrated-advertising-sri-lanka'
     | '/blog/internet-marketing-sri-lanka'
@@ -5783,6 +5796,7 @@ export interface RootRouteChildren {
   BlogHowToChooseEventManagementCompanySriLankaRoute: typeof BlogHowToChooseEventManagementCompanySriLankaRoute
   BlogHybridVirtualEventManagementSriLankaRoute: typeof BlogHybridVirtualEventManagementSriLankaRoute
   BlogInStoreBrandingSriLankaRoute: typeof BlogInStoreBrandingSriLankaRoute
+  BlogIndoorOutdoorLedScreenRentalSriLankaRoute: typeof BlogIndoorOutdoorLedScreenRentalSriLankaRoute
   BlogInstagramAdvertisingSriLankaRoute: typeof BlogInstagramAdvertisingSriLankaRoute
   BlogIntegratedAdvertisingSriLankaRoute: typeof BlogIntegratedAdvertisingSriLankaRoute
   BlogInternetMarketingSriLankaRoute: typeof BlogInternetMarketingSriLankaRoute
@@ -8514,6 +8528,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogInstagramAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/indoor-outdoor-led-screen-rental-sri-lanka': {
+      id: '/blog/indoor-outdoor-led-screen-rental-sri-lanka'
+      path: '/blog/indoor-outdoor-led-screen-rental-sri-lanka'
+      fullPath: '/blog/indoor-outdoor-led-screen-rental-sri-lanka'
+      preLoaderRoute: typeof BlogIndoorOutdoorLedScreenRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/in-store-branding-sri-lanka': {
       id: '/blog/in-store-branding-sri-lanka'
       path: '/blog/in-store-branding-sri-lanka'
@@ -9241,6 +9262,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogHybridVirtualEventManagementSriLankaRoute:
     BlogHybridVirtualEventManagementSriLankaRoute,
   BlogInStoreBrandingSriLankaRoute: BlogInStoreBrandingSriLankaRoute,
+  BlogIndoorOutdoorLedScreenRentalSriLankaRoute:
+    BlogIndoorOutdoorLedScreenRentalSriLankaRoute,
   BlogInstagramAdvertisingSriLankaRoute: BlogInstagramAdvertisingSriLankaRoute,
   BlogIntegratedAdvertisingSriLankaRoute:
     BlogIntegratedAdvertisingSriLankaRoute,

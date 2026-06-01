@@ -63,6 +63,7 @@ export function SiteFooter() {
           <ul className="space-y-2">
             <li><Link to="/about" className="hover:text-accent">About</Link></li>
             <li><Link to="/services" className="hover:text-accent">All Services</Link></li>
+            <li><Link to="/social-media-marketing-sri-lanka" className="hover:text-accent">Social Media Marketing</Link></li>
             <li><Link to="/blog" className="hover:text-accent">Blog</Link></li>
             <li><Link to="/seo-services-sri-lanka" className="hover:text-accent">SEO Services</Link></li>
             <li><Link to="/case-studies" className="hover:text-accent">Case Studies</Link></li>

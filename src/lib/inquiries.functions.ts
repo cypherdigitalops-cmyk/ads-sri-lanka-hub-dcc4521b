@@ -111,7 +111,7 @@ export const claimAdminRole = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }) => {
     const { claims, userId } = context;
-    const adminEmail = (process.env.ADMIN_EMAIL || "info.buzzconnect@gmail.com").trim().toLowerCase();
+    const adminEmail = (process.env.ADMIN_EMAIL || "infobuzzconnect@gmail.com").trim().toLowerCase();
     if (!adminEmail) {
       return { ok: false, reason: "ADMIN_EMAIL not configured" };
     }

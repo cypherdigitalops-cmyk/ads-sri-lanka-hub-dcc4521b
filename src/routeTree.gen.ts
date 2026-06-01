@@ -399,6 +399,7 @@ import { Route as BlogFlyerDistributionSriLankaRouteImport } from './routes/blog
 import { Route as BlogFlyerDesignSriLankaRouteImport } from './routes/blog/flyer-design-sri-lanka'
 import { Route as BlogFacebookAdvertisingSriLankaRouteImport } from './routes/blog/facebook-advertising-sri-lanka'
 import { Route as BlogExhibitionManagementSriLankaBmichRouteImport } from './routes/blog/exhibition-management-sri-lanka-bmich'
+import { Route as BlogEventsThatNeedLedScreenRentalSriLankaRouteImport } from './routes/blog/events-that-need-led-screen-rental-sri-lanka'
 import { Route as BlogEventVenuesSriLankaColomboRouteImport } from './routes/blog/event-venues-sri-lanka-colombo'
 import { Route as BlogEventStageSetupAvPackageSriLankaRouteImport } from './routes/blog/event-stage-setup-av-package-sri-lanka'
 import { Route as BlogEventPromotionSriLankaRouteImport } from './routes/blog/event-promotion-sri-lanka'
@@ -2594,6 +2595,12 @@ const BlogExhibitionManagementSriLankaBmichRoute =
     path: '/blog/exhibition-management-sri-lanka-bmich',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogEventsThatNeedLedScreenRentalSriLankaRoute =
+  BlogEventsThatNeedLedScreenRentalSriLankaRouteImport.update({
+    id: '/blog/events-that-need-led-screen-rental-sri-lanka',
+    path: '/blog/events-that-need-led-screen-rental-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogEventVenuesSriLankaColomboRoute =
   BlogEventVenuesSriLankaColomboRouteImport.update({
     id: '/blog/event-venues-sri-lanka-colombo',
@@ -3167,6 +3174,7 @@ export interface FileRoutesByFullPath {
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
   '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/event-venues-sri-lanka-colombo': typeof BlogEventVenuesSriLankaColomboRoute
+  '/blog/events-that-need-led-screen-rental-sri-lanka': typeof BlogEventsThatNeedLedScreenRentalSriLankaRoute
   '/blog/exhibition-management-sri-lanka-bmich': typeof BlogExhibitionManagementSriLankaBmichRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
@@ -3596,6 +3604,7 @@ export interface FileRoutesByTo {
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
   '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/event-venues-sri-lanka-colombo': typeof BlogEventVenuesSriLankaColomboRoute
+  '/blog/events-that-need-led-screen-rental-sri-lanka': typeof BlogEventsThatNeedLedScreenRentalSriLankaRoute
   '/blog/exhibition-management-sri-lanka-bmich': typeof BlogExhibitionManagementSriLankaBmichRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
@@ -4026,6 +4035,7 @@ export interface FileRoutesById {
   '/blog/event-promotion-sri-lanka': typeof BlogEventPromotionSriLankaRoute
   '/blog/event-stage-setup-av-package-sri-lanka': typeof BlogEventStageSetupAvPackageSriLankaRoute
   '/blog/event-venues-sri-lanka-colombo': typeof BlogEventVenuesSriLankaColomboRoute
+  '/blog/events-that-need-led-screen-rental-sri-lanka': typeof BlogEventsThatNeedLedScreenRentalSriLankaRoute
   '/blog/exhibition-management-sri-lanka-bmich': typeof BlogExhibitionManagementSriLankaBmichRoute
   '/blog/facebook-advertising-sri-lanka': typeof BlogFacebookAdvertisingSriLankaRoute
   '/blog/flyer-design-sri-lanka': typeof BlogFlyerDesignSriLankaRoute
@@ -4457,6 +4467,7 @@ export interface FileRouteTypes {
     | '/blog/event-promotion-sri-lanka'
     | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/event-venues-sri-lanka-colombo'
+    | '/blog/events-that-need-led-screen-rental-sri-lanka'
     | '/blog/exhibition-management-sri-lanka-bmich'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
@@ -4886,6 +4897,7 @@ export interface FileRouteTypes {
     | '/blog/event-promotion-sri-lanka'
     | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/event-venues-sri-lanka-colombo'
+    | '/blog/events-that-need-led-screen-rental-sri-lanka'
     | '/blog/exhibition-management-sri-lanka-bmich'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
@@ -5315,6 +5327,7 @@ export interface FileRouteTypes {
     | '/blog/event-promotion-sri-lanka'
     | '/blog/event-stage-setup-av-package-sri-lanka'
     | '/blog/event-venues-sri-lanka-colombo'
+    | '/blog/events-that-need-led-screen-rental-sri-lanka'
     | '/blog/exhibition-management-sri-lanka-bmich'
     | '/blog/facebook-advertising-sri-lanka'
     | '/blog/flyer-design-sri-lanka'
@@ -5745,6 +5758,7 @@ export interface RootRouteChildren {
   BlogEventPromotionSriLankaRoute: typeof BlogEventPromotionSriLankaRoute
   BlogEventStageSetupAvPackageSriLankaRoute: typeof BlogEventStageSetupAvPackageSriLankaRoute
   BlogEventVenuesSriLankaColomboRoute: typeof BlogEventVenuesSriLankaColomboRoute
+  BlogEventsThatNeedLedScreenRentalSriLankaRoute: typeof BlogEventsThatNeedLedScreenRentalSriLankaRoute
   BlogExhibitionManagementSriLankaBmichRoute: typeof BlogExhibitionManagementSriLankaBmichRoute
   BlogFacebookAdvertisingSriLankaRoute: typeof BlogFacebookAdvertisingSriLankaRoute
   BlogFlyerDesignSriLankaRoute: typeof BlogFlyerDesignSriLankaRoute
@@ -8556,6 +8570,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogExhibitionManagementSriLankaBmichRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/events-that-need-led-screen-rental-sri-lanka': {
+      id: '/blog/events-that-need-led-screen-rental-sri-lanka'
+      path: '/blog/events-that-need-led-screen-rental-sri-lanka'
+      fullPath: '/blog/events-that-need-led-screen-rental-sri-lanka'
+      preLoaderRoute: typeof BlogEventsThatNeedLedScreenRentalSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/event-venues-sri-lanka-colombo': {
       id: '/blog/event-venues-sri-lanka-colombo'
       path: '/blog/event-venues-sri-lanka-colombo'
@@ -9182,6 +9203,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogEventStageSetupAvPackageSriLankaRoute:
     BlogEventStageSetupAvPackageSriLankaRoute,
   BlogEventVenuesSriLankaColomboRoute: BlogEventVenuesSriLankaColomboRoute,
+  BlogEventsThatNeedLedScreenRentalSriLankaRoute:
+    BlogEventsThatNeedLedScreenRentalSriLankaRoute,
   BlogExhibitionManagementSriLankaBmichRoute:
     BlogExhibitionManagementSriLankaBmichRoute,
   BlogFacebookAdvertisingSriLankaRoute: BlogFacebookAdvertisingSriLankaRoute,
@@ -9284,13 +9307,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

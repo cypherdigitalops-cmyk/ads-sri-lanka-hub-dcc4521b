@@ -762,19 +762,25 @@ function InquiryDrawer({
               Status
             </label>
             <div className="mt-2 flex flex-wrap gap-2">
-              {STATUS_OPTIONS.map((s) => (
-                <button
-                  key={s}
-                  onClick={() => onUpdate({ status: s })}
-                  className={`rounded-full border px-3 py-1 text-xs font-semibold capitalize ${
-                    inquiry.status === s
-                      ? STATUS_COLORS[s]
-                      : "border-border bg-background"
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
+              {STATUS_OPTIONS.map((s) => {
+                const active = inquiry.status === s;
+                const pill = STATUS_PILL[s];
+                return (
+                  <button
+                    key={s}
+                    onClick={() => onUpdate({ status: s })}
+                    className="rounded-full px-3 py-1 text-xs capitalize"
+                    style={{
+                      fontWeight: 500,
+                      border: "0.5px solid #e5e4de",
+                      background: active ? pill.bg : "#FFFFFF",
+                      color: active ? pill.fg : "#1a1a1a",
+                    }}
+                  >
+                    {s}
+                  </button>
+                );
+              })}
             </div>
           </div>
 

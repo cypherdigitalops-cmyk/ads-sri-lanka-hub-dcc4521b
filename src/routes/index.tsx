@@ -490,6 +490,49 @@ function Index() {
         </div>
       </section>
 
+      {/* RENTALS HIGHLIGHT */}
+      <section className="bg-secondary/20">
+        <div className="mx-auto max-w-7xl px-4 py-20">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <div className="text-sm font-semibold text-accent">Event Equipment Rentals</div>
+              <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Rent everything you need for your event</h2>
+              <p className="mt-3 max-w-2xl text-muted-foreground">
+                LED screens, sound systems, stages, lighting, photo booths, tents, generators, drones and more — delivered, set up and operated islandwide.
+              </p>
+            </div>
+            <Link
+              to="/event-rentals-sri-lanka"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-card)] hover:opacity-90"
+            >
+              Browse all rentals <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", icon: "🖥️" },
+              { slug: "sound-system-rental-sri-lanka", title: "Sound System Rental", icon: "🔊" },
+              { slug: "stage-rental-sri-lanka", title: "Stage Rental", icon: "🎤" },
+              { slug: "lighting-rental-sri-lanka", title: "Lighting Rental", icon: "💡" },
+              { slug: "photo-booth-rental-sri-lanka", title: "Photo Booth Rental", icon: "📸" },
+              { slug: "tent-marquee-rental-sri-lanka", title: "Tent & Marquee Rental", icon: "⛺" },
+              { slug: "generator-rental-sri-lanka", title: "Generator Rental", icon: "⚡" },
+              { slug: "drone-rental-sri-lanka", title: "Drone Rental", icon: "🚁" },
+            ].map((r) => (
+              <Link
+                key={r.slug}
+                to={`/${r.slug}` as never}
+                className="group flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[var(--shadow-card)]"
+              >
+                <div className="text-2xl">{r.icon}</div>
+                <div className="flex-1 text-sm font-semibold">{r.title}</div>
+                <ArrowRight className="h-4 w-4 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-primary" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* DECISION TABLE */}
       <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
         <div className="mx-auto max-w-7xl px-4 py-20">

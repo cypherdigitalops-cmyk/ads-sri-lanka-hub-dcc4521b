@@ -13,6 +13,7 @@ import { SITE } from "@/data/site";
 import { Toaster } from "@/components/ui/sonner";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { ClickTracker } from "@/components/site/ClickTracker";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
@@ -253,6 +254,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <Outlet />
       <Toaster richColors position="top-right" />
+      <ClickTracker />
     </QueryClientProvider>
   );
 }

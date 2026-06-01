@@ -3,11 +3,13 @@ import { MessageCircle, Phone, Send, X } from "lucide-react";
 import { SITE, CATEGORIES, titleCase } from "@/data/site";
 import { useServerFn } from "@tanstack/react-start";
 import { submitInquiry } from "@/lib/inquiries.functions";
+import { trackCta } from "./ClickTracker";
 
 export type QuoteOpenDetail = { service?: string };
 
 export function openQuoteModal(service?: string) {
   if (typeof window === "undefined") return;
+  trackCta("quote", service ? { service } : undefined);
   window.dispatchEvent(
     new CustomEvent<QuoteOpenDetail>("openQuoteModal", { detail: { service } }),
   );

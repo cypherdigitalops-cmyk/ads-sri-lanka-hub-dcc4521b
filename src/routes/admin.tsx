@@ -4,8 +4,9 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/lib/inquiries.functions";
+import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { toast } from "sonner";
-import { LogOut, Search, Trash2, Phone, MessageCircle, Mail } from "lucide-react";
+import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, MousePointerClick } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
@@ -89,6 +90,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   const list = useServerFn(listInquiries);
   const update = useServerFn(updateInquiry);
   const remove = useServerFn(deleteInquiry);
+  const listClicks = useServerFn(listCtaClicks);
 
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
@@ -97,6 +99,11 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["inquiries"],
     queryFn: () => list(),
+  });
+
+  const { data: clicksData } = useQuery({
+    queryKey: ["cta_clicks"],
+    queryFn: () => listClicks(),
   });
 
   const updateMutation = useMutation({
@@ -163,6 +170,63 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
 
   const maxServiceTotal = topServices[0]?.total ?? 0;
 
+  type ClickRow = { id: string; cta: string; page_url: string | null; created_at: string };
+  const clicks = (clicksData?.clicks ?? []) as ClickRow[];
+
+  function shortPath(url: string | null): string {
+    if (!url) return "(unknown)";
+    try {
+      const u = new URL(url);
+      return u.pathname + (u.search || "");
+    } catch {
+      return url;
+    }
+  }
+
+  const topPagesByInquiry = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const i of inquiries) {
+      const k = shortPath(i.page_url);
+      map.set(k, (map.get(k) ?? 0) + 1);
+    }
+    return Array.from(map.entries())
+      .map(([page, count]) => ({ page, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 8);
+  }, [inquiries]);
+
+  const topPagesByWhatsApp = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const c of clicks) {
+      if (c.cta !== "whatsapp") continue;
+      const k = shortPath(c.page_url);
+      map.set(k, (map.get(k) ?? 0) + 1);
+    }
+    return Array.from(map.entries())
+      .map(([page, count]) => ({ page, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 8);
+  }, [clicks]);
+
+  const topPagesByCall = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const c of clicks) {
+      if (c.cta !== "call") continue;
+      const k = shortPath(c.page_url);
+      map.set(k, (map.get(k) ?? 0) + 1);
+    }
+    return Array.from(map.entries())
+      .map(([page, count]) => ({ page, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 8);
+  }, [clicks]);
+
+  const ctaTotals = useMemo(() => {
+    const t = { whatsapp: 0, call: 0, quote: 0, email: 0 } as Record<string, number>;
+    for (const c of clicks) t[c.cta] = (t[c.cta] ?? 0) + 1;
+    return t;
+  }, [clicks]);
+
   async function handleLogout() {
     await supabase.auth.signOut();
     navigate({ to: "/login", replace: true });
@@ -214,6 +278,36 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+        {/* CTA totals */}
+        <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <KpiCard label="WhatsApp clicks" value={ctaTotals.whatsapp} tone="emerald" />
+          <KpiCard label="Call clicks" value={ctaTotals.call} tone="blue" />
+          <KpiCard label="Quote opens" value={ctaTotals.quote} tone="amber" />
+          <KpiCard label="Email clicks" value={ctaTotals.email} tone="violet" />
+        </div>
+
+        {/* Top pages — 3 columns */}
+        <div className="mb-6 grid gap-4 lg:grid-cols-3">
+          <TopPagesCard
+            title="Top pages — Inquiries"
+            subtitle="Pages that drove form submissions"
+            rows={topPagesByInquiry}
+            empty="No inquiries yet."
+          />
+          <TopPagesCard
+            title="Top pages — WhatsApp clicks"
+            subtitle="Pages where visitors tap WhatsApp"
+            rows={topPagesByWhatsApp}
+            empty="No WhatsApp clicks tracked yet."
+          />
+          <TopPagesCard
+            title="Top pages — Call clicks"
+            subtitle="Pages where visitors tap to call"
+            rows={topPagesByCall}
+            empty="No call clicks tracked yet."
+          />
+        </div>
+
         {/* Top services */}
         {topServices.length > 0 && (
           <div className="mb-6 overflow-hidden rounded-xl border border-border bg-card">
@@ -504,6 +598,78 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
     <div>
       <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</div>
       <div className="mt-1">{children}</div>
+    </div>
+  );
+}
+
+function KpiCard({
+  label,
+  value,
+  tone,
+}: {
+  label: string;
+  value: number;
+  tone: "emerald" | "blue" | "amber" | "violet";
+}) {
+  const toneClass: Record<string, string> = {
+    emerald: "text-emerald-600",
+    blue: "text-blue-600",
+    amber: "text-amber-600",
+    violet: "text-violet-600",
+  };
+  return (
+    <div className="rounded-xl border border-border bg-card p-4">
+      <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        {label}
+      </div>
+      <div className={`mt-1 flex items-center gap-2 text-2xl font-bold ${toneClass[tone]}`}>
+        <MousePointerClick className="h-5 w-5 opacity-70" />
+        {value.toLocaleString()}
+      </div>
+    </div>
+  );
+}
+
+function TopPagesCard({
+  title,
+  subtitle,
+  rows,
+  empty,
+}: {
+  title: string;
+  subtitle: string;
+  rows: { page: string; count: number }[];
+  empty: string;
+}) {
+  const max = rows[0]?.count ?? 0;
+  return (
+    <div className="overflow-hidden rounded-xl border border-border bg-card">
+      <div className="border-b border-border px-4 py-3">
+        <h2 className="text-sm font-bold">{title}</h2>
+        <p className="text-xs text-muted-foreground">{subtitle}</p>
+      </div>
+      {rows.length === 0 ? (
+        <p className="px-4 py-6 text-center text-xs text-muted-foreground">{empty}</p>
+      ) : (
+        <ul className="divide-y divide-border">
+          {rows.map((r) => {
+            const pct = max ? (r.count / max) * 100 : 0;
+            return (
+              <li key={r.page} className="px-4 py-2.5">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="truncate text-xs font-medium" title={r.page}>
+                    {r.page}
+                  </span>
+                  <span className="shrink-0 text-xs font-bold">{r.count}</span>
+                </div>
+                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-muted">
+                  <div className="h-full bg-primary" style={{ width: `${pct}%` }} />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }

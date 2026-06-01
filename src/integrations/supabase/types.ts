@@ -14,6 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      cta_clicks: {
+        Row: {
+          created_at: string
+          cta: string
+          id: string
+          meta: Json | null
+          page_url: string | null
+          referrer: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          created_at?: string
+          cta: string
+          id?: string
+          meta?: Json | null
+          page_url?: string | null
+          referrer?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          created_at?: string
+          cta?: string
+          id?: string
+          meta?: Json | null
+          page_url?: string | null
+          referrer?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
       inquiries: {
         Row: {
           admin_notes: string | null

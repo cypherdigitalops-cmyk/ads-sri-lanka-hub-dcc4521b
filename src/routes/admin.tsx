@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/lib/inquiries.functions";
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { toast } from "sonner";
-import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, type LucideIcon } from "lucide-react";
+import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
@@ -479,6 +479,8 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
           />
         </div>
 
+        <PagePerformanceMatrix inquiries={inquiries} clicks={clicks} shortPath={shortPath} />
+
         {/* Top services */}
         {topServices.length > 0 && (
           <div className="mb-6 overflow-hidden" style={CARD_STYLE}>
@@ -946,6 +948,234 @@ function TopPagesCard({
           })}
         </ul>
       )}
+    </div>
+  );
+}
+
+type MatrixInquiry = { page_url: string | null; service: string | null };
+type MatrixClick = { cta: string; page_url: string | null };
+
+function PagePerformanceMatrix({
+  inquiries,
+  clicks,
+  shortPath,
+}: {
+  inquiries: MatrixInquiry[];
+  clicks: MatrixClick[];
+  shortPath: (url: string | null) => string;
+}) {
+  const rows = (() => {
+    const map = new Map<
+      string,
+      { page: string; title: string; form: number; wa: number; call: number; quote: number; email: number; total: number }
+    >();
+    const bump = (
+      page: string,
+      title: string,
+      kind: "form" | "wa" | "call" | "quote" | "email",
+    ) => {
+      const cur = map.get(page) ?? { page, title, form: 0, wa: 0, call: 0, quote: 0, email: 0, total: 0 };
+      if (!cur.title && title) cur.title = title;
+      cur[kind] += 1;
+      cur.total += 1;
+      map.set(page, cur);
+    };
+    for (const i of inquiries) {
+      const k = shortPath(i.page_url);
+      bump(k, i.service || "", "form");
+    }
+    for (const c of clicks) {
+      const k = shortPath(c.page_url);
+      const kind =
+        c.cta === "whatsapp" ? "wa" :
+        c.cta === "call" ? "call" :
+        c.cta === "quote" ? "quote" :
+        c.cta === "email" ? "email" : null;
+      if (kind) bump(k, "", kind);
+    }
+    return Array.from(map.values())
+      .sort((a, b) => b.total - a.total)
+      .slice(0, 15);
+  })();
+
+  const stars = rows.filter((r) => r.form > 0);
+  const opps = rows.filter((r) => r.form === 0 && r.total > 0);
+
+  const kpis = {
+    active: stars.length,
+    whatsapp: rows.reduce((s, r) => s + r.wa, 0),
+    needFix: opps.length,
+    ghost: rows.filter((r) => r.total === 0).length,
+  };
+
+  function pageTitle(path: string): string {
+    if (path === "/" || !path) return "Home";
+    const seg = path.split("/").filter(Boolean).pop() || path;
+    return seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+
+  function PageCellSignals({ r }: { r: typeof rows[number] }) {
+    const items: { bg: string; fg: string; icon: LucideIcon; key: string }[] = [];
+    if (r.form > 0) items.push({ key: "form", bg: "#E6F1FB", fg: "#185FA5", icon: FileText });
+    if (r.wa > 0) items.push({ key: "wa", bg: "#E1F5EE", fg: "#0F6E56", icon: MessageCircle });
+    if (r.call > 0) items.push({ key: "call", bg: "#EAF3DE", fg: "#3B6D11", icon: Phone });
+    if (r.quote > 0) items.push({ key: "quote", bg: "#FAEEDA", fg: "#854F0B", icon: FileText });
+    if (r.email > 0) items.push({ key: "email", bg: "#FCEBEB", fg: "#A32D2D", icon: Mail });
+    if (items.length === 0) return <span style={{ color: "#9e9d97" }}>—</span>;
+    return (
+      <div className="flex flex-wrap gap-1.5">
+        {items.map((it) => (
+          <span
+            key={it.key}
+            className="inline-flex items-center justify-center"
+            style={{ width: 24, height: 24, borderRadius: 6, background: it.bg }}
+          >
+            <it.icon size={12} color={it.fg} />
+          </span>
+        ))}
+      </div>
+    );
+  }
+
+  function Num({ v, color }: { v: number; color: string }) {
+    return (
+      <span style={{ color: v > 0 ? color : "#9e9d97", fontWeight: v > 0 ? 500 : 400 }}>
+        {v}
+      </span>
+    );
+  }
+
+  return (
+    <section className="mb-6">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h2 style={{ fontSize: 18, fontWeight: 500, color: "#1a1a1a" }}>
+          Top 15 pages — performance matrix
+        </h2>
+      </div>
+
+      <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <MatrixKpi label="Active pages" value={kpis.active} icon={Star} iconBg="#EAF3DE" color="#3B6D11" badgeLabel="Generating leads" badgeBg="#EAF3DE" badgeFg="#3B6D11" />
+        <MatrixKpi label="WhatsApp taps" value={kpis.whatsapp} icon={MessageCircle} iconBg="#E1F5EE" color="#0F6E56" badgeLabel="Top CTA" badgeBg="#E1F5EE" badgeFg="#0F6E56" />
+        <MatrixKpi label="Pages need fix" value={kpis.needFix} icon={AlertTriangle} iconBg="#FAEEDA" color="#854F0B" badgeLabel="Missing CTAs" badgeBg="#FAEEDA" badgeFg="#854F0B" />
+        <MatrixKpi label="Ghost pages" value={kpis.ghost} icon={Ghost} iconBg="#FCEBEB" color="#A32D2D" badgeLabel="Zero engagement" badgeBg="#FCEBEB" badgeFg="#A32D2D" />
+      </div>
+
+      <div className="overflow-hidden" style={CARD_STYLE}>
+        <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+          <h3 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>Page performance matrix</h3>
+          <div className="flex flex-wrap items-center gap-3 text-xs" style={{ color: "#6b6b68" }}>
+            <LegendDot color="#185FA5" label="form" />
+            <LegendDot color="#0F6E56" label="WhatsApp" />
+            <LegendDot color="#3B6D11" label="call" />
+            <LegendDot color="#854F0B" label="quote" />
+            <LegendDot color="#9e9d97" label="none" />
+          </div>
+        </div>
+
+        {rows.length === 0 ? (
+          <p className="px-4 py-8 text-center text-xs" style={{ color: "#9e9d97" }}>
+            No page activity yet.
+          </p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="text-xs" style={{ background: "#F5F5F3", color: "#6b6b68" }}>
+                <tr>
+                  <th className="px-3 py-2 text-left" style={{ fontWeight: 500, width: 36 }}>#</th>
+                  <th className="px-3 py-2 text-left" style={{ fontWeight: 500 }}>Page</th>
+                  <th className="px-3 py-2 text-left" style={{ fontWeight: 500 }}>Signals</th>
+                  <th className="px-3 py-2 text-right" style={{ fontWeight: 500 }}>Form</th>
+                  <th className="px-3 py-2 text-right" style={{ fontWeight: 500 }}>WA</th>
+                  <th className="px-3 py-2 text-right" style={{ fontWeight: 500 }}>Call</th>
+                  <th className="px-3 py-2 text-right" style={{ fontWeight: 500 }}>Quote</th>
+                  <th className="px-3 py-2 text-right" style={{ fontWeight: 500 }}>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                {stars.length > 0 && (
+                  <tr>
+                    <td colSpan={8} className="px-3 py-2 text-xs uppercase tracking-wider" style={{ color: "#3B6D11", background: "#FAFAF7", borderTop: "0.5px solid #e5e4de", letterSpacing: "0.04em" }}>
+                      Star pages — generating real leads
+                    </td>
+                  </tr>
+                )}
+                {stars.map((r, idx) => (
+                  <MatrixRow key={r.page} idx={idx + 1} r={r} title={pageTitle(r.page)} pageCell={<PageCellSignals r={r} />} Num={Num} />
+                ))}
+                {opps.length > 0 && (
+                  <tr>
+                    <td colSpan={8} className="px-3 py-2 text-xs uppercase tracking-wider" style={{ color: "#854F0B", background: "#FAFAF7", borderTop: "0.5px solid #e5e4de", letterSpacing: "0.04em" }}>
+                      Opportunity pages — traffic but missing form
+                    </td>
+                  </tr>
+                )}
+                {opps.map((r, idx) => (
+                  <MatrixRow key={r.page} idx={stars.length + idx + 1} r={r} title={pageTitle(r.page)} pageCell={<PageCellSignals r={r} />} Num={Num} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function MatrixRow({
+  idx,
+  r,
+  title,
+  pageCell,
+  Num,
+}: {
+  idx: number;
+  r: { page: string; form: number; wa: number; call: number; quote: number; email: number };
+  title: string;
+  pageCell: React.ReactNode;
+  Num: (props: { v: number; color: string }) => React.ReactElement;
+}) {
+  return (
+    <tr style={{ borderTop: "0.5px solid #e5e4de" }}>
+      <td className="px-3 py-3 text-xs" style={{ color: "#9e9d97" }}>{idx}</td>
+      <td className="px-3 py-3">
+        <div style={{ color: "#1a1a1a", fontWeight: 500 }}>{title}</div>
+        <div className="text-xs" style={{ color: "#9e9d97" }}>{r.page}</div>
+      </td>
+      <td className="px-3 py-3">{pageCell}</td>
+      <td className="px-3 py-3 text-right"><Num v={r.form} color="#185FA5" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.wa} color="#0F6E56" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.call} color="#3B6D11" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.quote} color="#854F0B" /></td>
+      <td className="px-3 py-3 text-right"><Num v={r.email} color="#A32D2D" /></td>
+    </tr>
+  );
+}
+
+function LegendDot({ color, label }: { color: string; label: string }) {
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      <span style={{ width: 8, height: 8, borderRadius: 999, background: color, display: "inline-block" }} />
+      {label}
+    </span>
+  );
+}
+
+function MatrixKpi({
+  label, value, icon: Icon, iconBg, color, badgeLabel, badgeBg, badgeFg,
+}: {
+  label: string; value: number; icon: LucideIcon;
+  iconBg: string; color: string; badgeLabel: string; badgeBg: string; badgeFg: string;
+}) {
+  return (
+    <div className="p-4" style={CARD_STYLE}>
+      <div className="flex items-center justify-center" style={{ width: 32, height: 32, borderRadius: 9, background: iconBg }}>
+        <Icon size={16} color={color} />
+      </div>
+      <div className="mt-3" style={{ fontSize: 24, fontWeight: 500, color }}>{value.toLocaleString()}</div>
+      <div className="mt-1" style={{ fontSize: 12, color: "#6b6b68" }}>{label}</div>
+      <span className="mt-2 inline-block" style={{ background: badgeBg, color: badgeFg, borderRadius: 20, padding: "2px 10px", fontSize: 11, fontWeight: 500 }}>
+        {badgeLabel}
+      </span>
     </div>
   );
 }

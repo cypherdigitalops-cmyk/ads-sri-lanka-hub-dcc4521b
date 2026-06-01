@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/lib/inquiries.functions";
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { toast } from "sonner";
-import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, MousePointerClick } from "lucide-react";
+import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
@@ -34,13 +34,66 @@ type Inquiry = {
 };
 
 const STATUS_OPTIONS = ["new", "contacted", "quoted", "won", "lost"] as const;
-const STATUS_COLORS: Record<string, string> = {
-  new: "bg-blue-500/15 text-blue-600 border-blue-500/30",
-  contacted: "bg-amber-500/15 text-amber-600 border-amber-500/30",
-  quoted: "bg-purple-500/15 text-purple-600 border-purple-500/30",
-  won: "bg-emerald-500/15 text-emerald-600 border-emerald-500/30",
-  lost: "bg-rose-500/15 text-rose-600 border-rose-500/30",
+const STATUS_PILL: Record<string, { bg: string; fg: string }> = {
+  new:       { bg: "#E6F1FB", fg: "#185FA5" },
+  contacted: { bg: "#FAEEDA", fg: "#854F0B" },
+  quoted:    { bg: "#EEEDFE", fg: "#3C3489" },
+  won:       { bg: "#EAF3DE", fg: "#3B6D11" },
+  lost:      { bg: "#FCEBEB", fg: "#A32D2D" },
 };
+
+const AVATAR_PALETTE: { bg: string; fg: string }[] = [
+  { bg: "#E6F1FB", fg: "#185FA5" },
+  { bg: "#EAF3DE", fg: "#3B6D11" },
+  { bg: "#FAEEDA", fg: "#854F0B" },
+  { bg: "#EEEDFE", fg: "#3C3489" },
+  { bg: "#E1F5EE", fg: "#0F6E56" },
+];
+
+const CARD_STYLE: React.CSSProperties = {
+  background: "#FFFFFF",
+  border: "0.5px solid #e5e4de",
+  borderRadius: 14,
+};
+
+function initials(name: string): string {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "?";
+  if (parts.length === 1) return parts[0][0]!.toUpperCase();
+  return (parts[0][0]! + parts[parts.length - 1][0]!).toUpperCase();
+}
+
+function greetingFor(date: Date): string {
+  const h = date.getHours();
+  if (h < 12) return "Good morning";
+  if (h < 18) return "Good afternoon";
+  return "Good evening";
+}
+
+function relativeTime(iso: string): string {
+  const then = new Date(iso);
+  const now = new Date();
+  const diffMs = now.getTime() - then.getTime();
+  const diffMin = Math.floor(diffMs / 60000);
+  const sameDay = then.toDateString() === now.toDateString();
+  const yesterday = new Date(now);
+  yesterday.setDate(now.getDate() - 1);
+  const isYesterday = then.toDateString() === yesterday.toDateString();
+
+  if (diffMin < 1) return "just now";
+  if (diffMin < 60) return `${diffMin} min${diffMin === 1 ? "" : "s"} ago`;
+  if (sameDay) {
+    const t = then.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase();
+    return `today ${t}`;
+  }
+  if (isYesterday) return "yesterday";
+  const days = Math.floor(diffMs / 86400000);
+  if (days < 7) return `${days} days ago`;
+  if (days < 14) return "last week";
+  if (days < 30) return `${Math.floor(days / 7)} weeks ago`;
+  if (days < 365) return `${Math.floor(days / 30)} months ago`;
+  return `${Math.floor(days / 365)} years ago`;
+}
 
 function AdminPage() {
   const navigate = useNavigate();
@@ -75,8 +128,8 @@ function AdminPage() {
 
   if (authState !== "ready") {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-background">
-        <p className="text-sm text-muted-foreground">Loading…</p>
+      <div className="flex min-h-screen items-center justify-center" style={{ background: "#F5F5F3" }}>
+        <p className="text-sm" style={{ color: "#6b6b68" }}>Loading…</p>
       </div>
     );
   }
@@ -236,18 +289,19 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
     const msg = error instanceof Error ? error.message : "Failed to load";
     const isForbidden = /forbidden/i.test(msg);
     return (
-      <div className="mx-auto max-w-2xl px-6 py-16">
-        <h1 className="text-2xl font-bold">Admin</h1>
-        <p className="mt-4 text-sm text-rose-600">{msg}</p>
+      <div className="mx-auto max-w-2xl px-6 py-16" style={{ color: "#1a1a1a" }}>
+        <h1 className="text-2xl" style={{ fontWeight: 500 }}>Admin</h1>
+        <p className="mt-4 text-sm" style={{ color: "#A32D2D" }}>{msg}</p>
         {isForbidden && (
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="mt-2 text-sm" style={{ color: "#6b6b68" }}>
             You're signed in as <strong>{userEmail}</strong>, but this email isn't the configured admin.
             Ask your developer to set the <code>ADMIN_EMAIL</code> secret to your email and refresh.
           </p>
         )}
         <button
           onClick={handleLogout}
-          className="mt-6 rounded-full border border-border px-4 py-2 text-sm font-semibold hover:bg-muted"
+          className="mt-6 rounded-full px-4 py-2 text-sm"
+          style={{ border: "0.5px solid #e5e4de", background: "#FFFFFF", fontWeight: 500 }}
         >
           Sign out
         </button>
@@ -255,21 +309,51 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
     );
   }
 
+  const username = (userEmail.split("@")[0] || "there").replace(/[._-]+/g, " ");
+  const today = new Date();
+  const dateLabel = today.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
+
+  // Best performing page = combine inquiries + all CTA clicks per page
+  const bestPage = (() => {
+    const map = new Map<string, { inq: number; wa: number; call: number; quote: number; email: number; total: number }>();
+    const bump = (k: string, kind: "inq" | "wa" | "call" | "quote" | "email") => {
+      const cur = map.get(k) ?? { inq: 0, wa: 0, call: 0, quote: 0, email: 0, total: 0 };
+      cur[kind] += 1;
+      cur.total += 1;
+      map.set(k, cur);
+    };
+    for (const i of inquiries) bump(shortPath(i.page_url), "inq");
+    for (const c of clicks) {
+      const k = shortPath(c.page_url);
+      if (c.cta === "whatsapp") bump(k, "wa");
+      else if (c.cta === "call") bump(k, "call");
+      else if (c.cta === "quote") bump(k, "quote");
+      else if (c.cta === "email") bump(k, "email");
+    }
+    const arr = Array.from(map.entries()).sort((a, b) => b[1].total - a[1].total);
+    return arr[0] ?? null;
+  })();
+
   return (
-    <div className="min-h-screen bg-muted/30">
-      <header className="border-b border-border bg-card">
+    <div className="min-h-screen" style={{ background: "#F5F5F3", color: "#1a1a1a", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+      <header style={{ background: "#FFFFFF", borderBottom: "0.5px solid #e5e4de" }}>
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
           <div>
-            <Link to="/" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground">
+            <Link to="/" className="text-xs" style={{ color: "#6b6b68", fontWeight: 500 }}>
               ← Back to site
             </Link>
-            <h1 className="text-xl font-bold sm:text-2xl">Inquiries</h1>
+            <h1 className="text-xl sm:text-2xl" style={{ fontWeight: 500, color: "#1a1a1a" }}>Inquiries</h1>
           </div>
           <div className="flex items-center gap-3">
-            <span className="hidden text-xs text-muted-foreground sm:inline">{userEmail}</span>
+            <span className="hidden text-xs sm:inline" style={{ color: "#6b6b68" }}>{userEmail}</span>
             <button
               onClick={handleLogout}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold hover:bg-muted"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm"
+              style={{ border: "0.5px solid #e5e4de", background: "#FFFFFF", fontWeight: 500 }}
             >
               <LogOut className="h-4 w-4" /> Sign out
             </button>
@@ -278,13 +362,97 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+        {/* Greeting bar */}
+        <div className="mb-6 flex items-center justify-between gap-3">
+          <h2 style={{ fontSize: 20, fontWeight: 500, color: "#1a1a1a" }}>
+            {greetingFor(today)}, <span style={{ textTransform: "capitalize" }}>{username}</span> 👋
+          </h2>
+          <span
+            style={{
+              background: "#F5F5F3",
+              border: "0.5px solid #e5e4de",
+              borderRadius: 20,
+              fontSize: 12,
+              padding: "4px 12px",
+              color: "#6b6b68",
+            }}
+          >
+            {dateLabel}
+          </span>
+        </div>
+
         {/* CTA totals */}
         <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <KpiCard label="WhatsApp clicks" value={ctaTotals.whatsapp} tone="emerald" />
-          <KpiCard label="Call clicks" value={ctaTotals.call} tone="blue" />
-          <KpiCard label="Quote opens" value={ctaTotals.quote} tone="amber" />
-          <KpiCard label="Email clicks" value={ctaTotals.email} tone="violet" />
+          <KpiCard
+            label="WhatsApp clicks"
+            value={ctaTotals.whatsapp}
+            icon={MessageCircle}
+            iconBg="#E1F5EE"
+            color="#0F6E56"
+            badgeLabel="Top CTA"
+            badgeBg="#EAF3DE"
+            badgeFg="#3B6D11"
+          />
+          <KpiCard
+            label="Call clicks"
+            value={ctaTotals.call}
+            icon={Phone}
+            iconBg="#EAF3DE"
+            color="#3B6D11"
+            badgeLabel="High intent"
+            badgeBg="#EAF3DE"
+            badgeFg="#3B6D11"
+          />
+          <KpiCard
+            label="Quote opens"
+            value={ctaTotals.quote}
+            icon={FileText}
+            iconBg="#FAEEDA"
+            color="#854F0B"
+            badgeLabel="Follow up"
+            badgeBg="#FAEEDA"
+            badgeFg="#854F0B"
+          />
+          <KpiCard
+            label="Email clicks"
+            value={ctaTotals.email}
+            icon={Mail}
+            iconBg="#FCEBEB"
+            color="#A32D2D"
+            badgeLabel="Fix CTA"
+            badgeBg="#FCEBEB"
+            badgeFg="#A32D2D"
+          />
         </div>
+
+        {/* Best performing page */}
+        {bestPage && (
+          <div className="mb-6 p-5" style={CARD_STYLE}>
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div
+                  className="flex items-center justify-center"
+                  style={{ width: 32, height: 32, borderRadius: 9, background: "#FAEEDA" }}
+                >
+                  <Trophy size={16} color="#854F0B" />
+                </div>
+                <div>
+                  <div style={{ fontSize: 12, color: "#6b6b68" }}>Best performing page</div>
+                  <div style={{ fontSize: 16, fontWeight: 500, color: "#1a1a1a" }} className="break-all">
+                    {bestPage[0]}
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <StatPill label="Inquiries" value={bestPage[1].inq} bg="#E6F1FB" fg="#185FA5" />
+                <StatPill label="WhatsApp" value={bestPage[1].wa} bg="#E1F5EE" fg="#0F6E56" />
+                <StatPill label="Calls" value={bestPage[1].call} bg="#EAF3DE" fg="#3B6D11" />
+                <StatPill label="Quotes" value={bestPage[1].quote} bg="#FAEEDA" fg="#854F0B" />
+                <StatPill label="Emails" value={bestPage[1].email} bg="#FCEBEB" fg="#A32D2D" />
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Top pages — 3 columns */}
         <div className="mb-6 grid gap-4 lg:grid-cols-3">
@@ -293,62 +461,65 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             subtitle="Pages that drove form submissions"
             rows={topPagesByInquiry}
             empty="No inquiries yet."
+            barColor="#378ADD"
           />
           <TopPagesCard
             title="Top pages — WhatsApp clicks"
             subtitle="Pages where visitors tap WhatsApp"
             rows={topPagesByWhatsApp}
             empty="No WhatsApp clicks tracked yet."
+            barColor="#1D9E75"
           />
           <TopPagesCard
             title="Top pages — Call clicks"
             subtitle="Pages where visitors tap to call"
             rows={topPagesByCall}
             empty="No call clicks tracked yet."
+            barColor="#639922"
           />
         </div>
 
         {/* Top services */}
         {topServices.length > 0 && (
-          <div className="mb-6 overflow-hidden rounded-xl border border-border bg-card">
-            <div className="flex items-center justify-between border-b border-border px-4 py-3">
+          <div className="mb-6 overflow-hidden" style={CARD_STYLE}>
+            <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
               <div>
-                <h2 className="text-sm font-bold">Top services by inquiries</h2>
-                <p className="text-xs text-muted-foreground">
+                <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>Top services by inquiries</h2>
+                <p className="text-xs" style={{ color: "#6b6b68" }}>
                   Where demand is concentrated and how it's converting
                 </p>
               </div>
-              <span className="text-xs text-muted-foreground">
+              <span className="text-xs" style={{ color: "#9e9d97" }}>
                 {topServices.length} of {new Set(inquiries.map(i => i.service).filter(Boolean)).size}
               </span>
             </div>
-            <ul className="divide-y divide-border">
+            <ul>
               {topServices.map((s) => {
                 const pct = maxServiceTotal ? (s.total / maxServiceTotal) * 100 : 0;
                 return (
-                  <li key={s.service} className="px-4 py-3">
+                  <li key={s.service} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
                     <div className="flex items-center justify-between gap-3">
                       <button
                         onClick={() => setSearch(s.service)}
-                        className="truncate text-left text-sm font-semibold hover:underline"
+                        className="truncate text-left text-sm hover:underline"
+                        style={{ fontWeight: 500, color: "#1a1a1a" }}
                         title="Filter by this service"
                       >
                         {s.service}
                       </button>
-                      <div className="flex shrink-0 items-center gap-3 text-xs text-muted-foreground">
-                        <span className="font-semibold text-foreground">{s.total}</span>
-                        <span className="text-emerald-600">{s.won}W</span>
-                        <span className="text-rose-600">{s.lost}L</span>
-                        <span className="text-amber-600">{s.open} open</span>
-                        <span className="w-12 text-right font-semibold text-foreground">
+                      <div className="flex shrink-0 items-center gap-3 text-xs" style={{ color: "#6b6b68" }}>
+                        <span style={{ color: "#1a1a1a", fontWeight: 500 }}>{s.total}</span>
+                        <span style={{ color: "#3B6D11" }}>{s.won}W</span>
+                        <span style={{ color: "#A32D2D" }}>{s.lost}L</span>
+                        <span style={{ color: "#854F0B" }}>{s.open} open</span>
+                        <span className="w-12 text-right" style={{ color: "#1a1a1a", fontWeight: 500 }}>
                           {s.winRate === null ? "—" : `${s.winRate}%`}
                         </span>
                       </div>
                     </div>
-                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted">
+                    <div className="mt-2 overflow-hidden" style={{ height: 4, borderRadius: 2, background: "#e5e4de" }}>
                       <div
-                        className="h-full bg-primary"
-                        style={{ width: `${pct}%` }}
+                        style={{ width: `${pct}%`, height: "100%", background: "#378ADD" }}
                       />
                     </div>
                   </li>
@@ -362,9 +533,13 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <button
             onClick={() => setStatusFilter("all")}
-            className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${
-              statusFilter === "all" ? "border-foreground bg-foreground text-background" : "border-border bg-card"
-            }`}
+            className="rounded-full px-3 py-1.5 text-xs"
+            style={{
+              fontWeight: 500,
+              border: "0.5px solid #e5e4de",
+              background: statusFilter === "all" ? "#1a1a1a" : "#FFFFFF",
+              color: statusFilter === "all" ? "#FFFFFF" : "#1a1a1a",
+            }}
           >
             All ({counts.all ?? 0})
           </button>
@@ -372,80 +547,120 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             <button
               key={s}
               onClick={() => setStatusFilter(s)}
-              className={`rounded-full border px-3 py-1.5 text-xs font-semibold capitalize ${
-                statusFilter === s ? "border-foreground bg-foreground text-background" : "border-border bg-card"
-              }`}
+              className="rounded-full px-3 py-1.5 text-xs capitalize"
+              style={{
+                fontWeight: 500,
+                border: "0.5px solid #e5e4de",
+                background: statusFilter === s ? "#1a1a1a" : "#FFFFFF",
+                color: statusFilter === s ? "#FFFFFF" : "#1a1a1a",
+              }}
             >
               {s} ({counts[s] ?? 0})
             </button>
           ))}
           <div className="relative ml-auto w-full sm:w-64">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2" style={{ color: "#9e9d97" }} />
             <input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search name, phone, service…"
-              className="w-full rounded-full border border-border bg-card py-2 pl-9 pr-3 text-sm"
+              className="w-full rounded-full py-2 pl-9 pr-3 text-sm"
+              style={{ border: "0.5px solid #e5e4de", background: "#FFFFFF", color: "#1a1a1a" }}
             />
           </div>
         </div>
 
         {isLoading ? (
-          <p className="py-12 text-center text-sm text-muted-foreground">Loading inquiries…</p>
+          <p className="py-12 text-center text-sm" style={{ color: "#6b6b68" }}>Loading inquiries…</p>
         ) : filtered.length === 0 ? (
-          <p className="py-12 text-center text-sm text-muted-foreground">No inquiries match.</p>
+          <p className="py-12 text-center text-sm" style={{ color: "#6b6b68" }}>No inquiries match.</p>
         ) : (
-          <div className="overflow-hidden rounded-xl border border-border bg-card">
+          <div className="overflow-hidden" style={CARD_STYLE}>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead className="bg-muted/50 text-xs uppercase tracking-wider text-muted-foreground">
+                <thead style={{ background: "#F5F5F3", color: "#6b6b68" }} className="text-xs">
                   <tr>
-                    <th className="px-4 py-3 text-left">When</th>
-                    <th className="px-4 py-3 text-left">Name</th>
-                    <th className="px-4 py-3 text-left">Contact</th>
-                    <th className="px-4 py-3 text-left">Service</th>
-                    <th className="px-4 py-3 text-left">Status</th>
+                    <th className="px-4 py-3 text-left" style={{ fontWeight: 500 }}>When</th>
+                    <th className="px-4 py-3 text-left" style={{ fontWeight: 500 }}>Name</th>
+                    <th className="px-4 py-3 text-left" style={{ fontWeight: 500 }}>Contact</th>
+                    <th className="px-4 py-3 text-left" style={{ fontWeight: 500 }}>Service</th>
+                    <th className="px-4 py-3 text-left" style={{ fontWeight: 500 }}>Status</th>
                     <th className="px-4 py-3" />
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-border">
-                  {filtered.map((i) => (
-                    <tr key={i.id} className="hover:bg-muted/30">
-                      <td className="whitespace-nowrap px-4 py-3 text-xs text-muted-foreground">
-                        {new Date(i.created_at).toLocaleString()}
-                      </td>
-                      <td className="px-4 py-3 font-semibold">
-                        {i.name}
-                        {i.company && (
-                          <div className="text-xs font-normal text-muted-foreground">{i.company}</div>
-                        )}
-                      </td>
-                      <td className="px-4 py-3">
-                        <div className="flex flex-col gap-1 text-xs">
-                          <span>{i.phone}</span>
-                          {i.email && <span className="text-muted-foreground">{i.email}</span>}
-                        </div>
-                      </td>
-                      <td className="px-4 py-3 text-xs">{i.service || "—"}</td>
-                      <td className="px-4 py-3">
-                        <span
-                          className={`inline-block rounded-full border px-2 py-0.5 text-xs font-semibold capitalize ${
-                            STATUS_COLORS[i.status]
-                          }`}
-                        >
-                          {i.status}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 text-right">
-                        <button
-                          onClick={() => setSelected(i)}
-                          className="rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold hover:bg-muted"
-                        >
-                          Open
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
+                <tbody>
+                  {filtered.map((i, idx) => {
+                    const av = AVATAR_PALETTE[idx % AVATAR_PALETTE.length];
+                    const pill = STATUS_PILL[i.status];
+                    return (
+                      <tr
+                        key={i.id}
+                        onClick={() => setSelected(i)}
+                        className="cursor-pointer transition-colors"
+                        style={{ borderTop: "0.5px solid #e5e4de" }}
+                        onMouseEnter={(e) => (e.currentTarget.style.background = "#F0F0ED")}
+                        onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                      >
+                        <td className="whitespace-nowrap px-4 py-3 text-xs" style={{ color: "#9e9d97" }}>
+                          {relativeTime(i.created_at)}
+                        </td>
+                        <td className="px-4 py-3">
+                          <div className="flex items-center gap-2.5">
+                            <div
+                              className="flex shrink-0 items-center justify-center rounded-full"
+                              style={{
+                                width: 32,
+                                height: 32,
+                                background: av.bg,
+                                color: av.fg,
+                                fontSize: 12,
+                                fontWeight: 500,
+                              }}
+                            >
+                              {initials(i.name)}
+                            </div>
+                            <div>
+                              <div style={{ color: "#1a1a1a", fontWeight: 500 }}>{i.name}</div>
+                              {i.company && (
+                                <div className="text-xs" style={{ color: "#6b6b68" }}>{i.company}</div>
+                              )}
+                            </div>
+                          </div>
+                        </td>
+                        <td className="px-4 py-3">
+                          <div className="flex flex-col gap-1 text-xs">
+                            <span style={{ color: "#1a1a1a" }}>{i.phone}</span>
+                            {i.email && <span style={{ color: "#6b6b68" }}>{i.email}</span>}
+                          </div>
+                        </td>
+                        <td className="px-4 py-3 text-xs" style={{ color: "#1a1a1a" }}>{i.service || "—"}</td>
+                        <td className="px-4 py-3">
+                          <span
+                            className="inline-block capitalize"
+                            style={{
+                              background: pill.bg,
+                              color: pill.fg,
+                              borderRadius: 20,
+                              padding: "2px 10px",
+                              fontSize: 11,
+                              fontWeight: 500,
+                            }}
+                          >
+                            {i.status}
+                          </span>
+                        </td>
+                        <td className="px-4 py-3 text-right">
+                          <button
+                            onClick={(e) => { e.stopPropagation(); setSelected(i); }}
+                            className="rounded-full px-3 py-1 text-xs"
+                            style={{ border: "0.5px solid #e5e4de", background: "#FFFFFF", fontWeight: 500, color: "#1a1a1a" }}
+                          >
+                            Open
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -605,28 +820,67 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 function KpiCard({
   label,
   value,
-  tone,
+  icon: Icon,
+  iconBg,
+  color,
+  badgeLabel,
+  badgeBg,
+  badgeFg,
 }: {
   label: string;
   value: number;
-  tone: "emerald" | "blue" | "amber" | "violet";
+  icon: LucideIcon;
+  iconBg: string;
+  color: string;
+  badgeLabel: string;
+  badgeBg: string;
+  badgeFg: string;
 }) {
-  const toneClass: Record<string, string> = {
-    emerald: "text-emerald-600",
-    blue: "text-blue-600",
-    amber: "text-amber-600",
-    violet: "text-violet-600",
-  };
   return (
-    <div className="rounded-xl border border-border bg-card p-4">
-      <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        {label}
+    <div className="p-4" style={CARD_STYLE}>
+      <div
+        className="flex items-center justify-center"
+        style={{ width: 32, height: 32, borderRadius: 9, background: iconBg }}
+      >
+        <Icon size={16} color={color} />
       </div>
-      <div className={`mt-1 flex items-center gap-2 text-2xl font-bold ${toneClass[tone]}`}>
-        <MousePointerClick className="h-5 w-5 opacity-70" />
+      <div className="mt-3" style={{ fontSize: 24, fontWeight: 500, color }}>
         {value.toLocaleString()}
       </div>
+      <div className="mt-1" style={{ fontSize: 12, color: "#6b6b68" }}>
+        {label}
+      </div>
+      <span
+        className="mt-2 inline-block"
+        style={{
+          background: badgeBg,
+          color: badgeFg,
+          borderRadius: 20,
+          padding: "2px 10px",
+          fontSize: 11,
+          fontWeight: 500,
+        }}
+      >
+        {badgeLabel}
+      </span>
     </div>
+  );
+}
+
+function StatPill({ label, value, bg, fg }: { label: string; value: number; bg: string; fg: string }) {
+  return (
+    <span
+      style={{
+        background: bg,
+        color: fg,
+        borderRadius: 20,
+        padding: "4px 12px",
+        fontSize: 12,
+        fontWeight: 500,
+      }}
+    >
+      {label} {value}
+    </span>
   );
 }
 
@@ -635,35 +889,51 @@ function TopPagesCard({
   subtitle,
   rows,
   empty,
+  barColor,
 }: {
   title: string;
   subtitle: string;
   rows: { page: string; count: number }[];
   empty: string;
+  barColor: string;
 }) {
-  const max = rows[0]?.count ?? 0;
+  const total = rows.reduce((sum, r) => sum + r.count, 0);
+  // light tint for pill background
+  const pillBg = barColor + "22"; // 13% opacity hex suffix
   return (
-    <div className="overflow-hidden rounded-xl border border-border bg-card">
-      <div className="border-b border-border px-4 py-3">
-        <h2 className="text-sm font-bold">{title}</h2>
-        <p className="text-xs text-muted-foreground">{subtitle}</p>
+    <div className="overflow-hidden" style={CARD_STYLE}>
+      <div className="px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+        <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>{title}</h2>
+        <p className="text-xs" style={{ color: "#6b6b68" }}>{subtitle}</p>
       </div>
       {rows.length === 0 ? (
-        <p className="px-4 py-6 text-center text-xs text-muted-foreground">{empty}</p>
+        <p className="px-4 py-6 text-center text-xs" style={{ color: "#9e9d97" }}>{empty}</p>
       ) : (
-        <ul className="divide-y divide-border">
+        <ul>
           {rows.map((r) => {
-            const pct = max ? (r.count / max) * 100 : 0;
+            const pct = total ? (r.count / total) * 100 : 0;
             return (
-              <li key={r.page} className="px-4 py-2.5">
+              <li key={r.page} className="px-4 py-2.5" style={{ borderTop: "0.5px solid #e5e4de" }}>
                 <div className="flex items-center justify-between gap-3">
-                  <span className="truncate text-xs font-medium" title={r.page}>
+                  <span className="truncate text-xs" title={r.page} style={{ color: "#9e9d97" }}>
                     {r.page}
                   </span>
-                  <span className="shrink-0 text-xs font-bold">{r.count}</span>
+                  <span
+                    className="shrink-0"
+                    style={{
+                      background: pillBg,
+                      color: barColor,
+                      borderRadius: 20,
+                      padding: "2px 10px",
+                      fontSize: 11,
+                      fontWeight: 500,
+                    }}
+                  >
+                    {r.count}
+                  </span>
                 </div>
-                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-muted">
-                  <div className="h-full bg-primary" style={{ width: `${pct}%` }} />
+                <div className="mt-1.5 overflow-hidden" style={{ height: 4, borderRadius: 2, background: "#e5e4de" }}>
+                  <div style={{ width: `${pct}%`, height: "100%", background: barColor }} />
                 </div>
               </li>
             );

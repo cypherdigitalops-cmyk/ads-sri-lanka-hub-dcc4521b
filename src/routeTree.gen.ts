@@ -202,6 +202,7 @@ import { Route as EventVenueColomboRouteImport } from './routes/event-venue-colo
 import { Route as EventTicketingSriLankaRouteImport } from './routes/event-ticketing-sri-lanka'
 import { Route as EventSignagePrintingSriLankaRouteImport } from './routes/event-signage-printing-sri-lanka'
 import { Route as EventSecuritySriLankaRouteImport } from './routes/event-security-sri-lanka'
+import { Route as EventRentalsSriLankaRouteImport } from './routes/event-rentals-sri-lanka'
 import { Route as EventRegistrationSriLankaRouteImport } from './routes/event-registration-sri-lanka'
 import { Route as EventPlannersSriLankaRouteImport } from './routes/event-planners-sri-lanka'
 import { Route as EventPhotographySriLankaRouteImport } from './routes/event-photography-sri-lanka'
@@ -1487,6 +1488,11 @@ const EventSignagePrintingSriLankaRoute =
 const EventSecuritySriLankaRoute = EventSecuritySriLankaRouteImport.update({
   id: '/event-security-sri-lanka',
   path: '/event-security-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventRentalsSriLankaRoute = EventRentalsSriLankaRouteImport.update({
+  id: '/event-rentals-sri-lanka',
+  path: '/event-rentals-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EventRegistrationSriLankaRoute =
@@ -2930,6 +2936,7 @@ export interface FileRoutesByFullPath {
   '/event-photography-sri-lanka': typeof EventPhotographySriLankaRoute
   '/event-planners-sri-lanka': typeof EventPlannersSriLankaRoute
   '/event-registration-sri-lanka': typeof EventRegistrationSriLankaRoute
+  '/event-rentals-sri-lanka': typeof EventRentalsSriLankaRoute
   '/event-security-sri-lanka': typeof EventSecuritySriLankaRoute
   '/event-signage-printing-sri-lanka': typeof EventSignagePrintingSriLankaRoute
   '/event-ticketing-sri-lanka': typeof EventTicketingSriLankaRoute
@@ -3358,6 +3365,7 @@ export interface FileRoutesByTo {
   '/event-photography-sri-lanka': typeof EventPhotographySriLankaRoute
   '/event-planners-sri-lanka': typeof EventPlannersSriLankaRoute
   '/event-registration-sri-lanka': typeof EventRegistrationSriLankaRoute
+  '/event-rentals-sri-lanka': typeof EventRentalsSriLankaRoute
   '/event-security-sri-lanka': typeof EventSecuritySriLankaRoute
   '/event-signage-printing-sri-lanka': typeof EventSignagePrintingSriLankaRoute
   '/event-ticketing-sri-lanka': typeof EventTicketingSriLankaRoute
@@ -3787,6 +3795,7 @@ export interface FileRoutesById {
   '/event-photography-sri-lanka': typeof EventPhotographySriLankaRoute
   '/event-planners-sri-lanka': typeof EventPlannersSriLankaRoute
   '/event-registration-sri-lanka': typeof EventRegistrationSriLankaRoute
+  '/event-rentals-sri-lanka': typeof EventRentalsSriLankaRoute
   '/event-security-sri-lanka': typeof EventSecuritySriLankaRoute
   '/event-signage-printing-sri-lanka': typeof EventSignagePrintingSriLankaRoute
   '/event-ticketing-sri-lanka': typeof EventTicketingSriLankaRoute
@@ -4217,6 +4226,7 @@ export interface FileRouteTypes {
     | '/event-photography-sri-lanka'
     | '/event-planners-sri-lanka'
     | '/event-registration-sri-lanka'
+    | '/event-rentals-sri-lanka'
     | '/event-security-sri-lanka'
     | '/event-signage-printing-sri-lanka'
     | '/event-ticketing-sri-lanka'
@@ -4645,6 +4655,7 @@ export interface FileRouteTypes {
     | '/event-photography-sri-lanka'
     | '/event-planners-sri-lanka'
     | '/event-registration-sri-lanka'
+    | '/event-rentals-sri-lanka'
     | '/event-security-sri-lanka'
     | '/event-signage-printing-sri-lanka'
     | '/event-ticketing-sri-lanka'
@@ -5073,6 +5084,7 @@ export interface FileRouteTypes {
     | '/event-photography-sri-lanka'
     | '/event-planners-sri-lanka'
     | '/event-registration-sri-lanka'
+    | '/event-rentals-sri-lanka'
     | '/event-security-sri-lanka'
     | '/event-signage-printing-sri-lanka'
     | '/event-ticketing-sri-lanka'
@@ -5502,6 +5514,7 @@ export interface RootRouteChildren {
   EventPhotographySriLankaRoute: typeof EventPhotographySriLankaRoute
   EventPlannersSriLankaRoute: typeof EventPlannersSriLankaRoute
   EventRegistrationSriLankaRoute: typeof EventRegistrationSriLankaRoute
+  EventRentalsSriLankaRoute: typeof EventRentalsSriLankaRoute
   EventSecuritySriLankaRoute: typeof EventSecuritySriLankaRoute
   EventSignagePrintingSriLankaRoute: typeof EventSignagePrintingSriLankaRoute
   EventTicketingSriLankaRoute: typeof EventTicketingSriLankaRoute
@@ -7162,6 +7175,13 @@ declare module '@tanstack/react-router' {
       path: '/event-security-sri-lanka'
       fullPath: '/event-security-sri-lanka'
       preLoaderRoute: typeof EventSecuritySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-rentals-sri-lanka': {
+      id: '/event-rentals-sri-lanka'
+      path: '/event-rentals-sri-lanka'
+      fullPath: '/event-rentals-sri-lanka'
+      preLoaderRoute: typeof EventRentalsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/event-registration-sri-lanka': {
@@ -8920,6 +8940,7 @@ const rootRouteChildren: RootRouteChildren = {
   EventPhotographySriLankaRoute: EventPhotographySriLankaRoute,
   EventPlannersSriLankaRoute: EventPlannersSriLankaRoute,
   EventRegistrationSriLankaRoute: EventRegistrationSriLankaRoute,
+  EventRentalsSriLankaRoute: EventRentalsSriLankaRoute,
   EventSecuritySriLankaRoute: EventSecuritySriLankaRoute,
   EventSignagePrintingSriLankaRoute: EventSignagePrintingSriLankaRoute,
   EventTicketingSriLankaRoute: EventTicketingSriLankaRoute,

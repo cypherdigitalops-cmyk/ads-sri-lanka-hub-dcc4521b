@@ -601,3 +601,75 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
     </div>
   );
 }
+
+function KpiCard({
+  label,
+  value,
+  tone,
+}: {
+  label: string;
+  value: number;
+  tone: "emerald" | "blue" | "amber" | "violet";
+}) {
+  const toneClass: Record<string, string> = {
+    emerald: "text-emerald-600",
+    blue: "text-blue-600",
+    amber: "text-amber-600",
+    violet: "text-violet-600",
+  };
+  return (
+    <div className="rounded-xl border border-border bg-card p-4">
+      <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        {label}
+      </div>
+      <div className={`mt-1 flex items-center gap-2 text-2xl font-bold ${toneClass[tone]}`}>
+        <MousePointerClick className="h-5 w-5 opacity-70" />
+        {value.toLocaleString()}
+      </div>
+    </div>
+  );
+}
+
+function TopPagesCard({
+  title,
+  subtitle,
+  rows,
+  empty,
+}: {
+  title: string;
+  subtitle: string;
+  rows: { page: string; count: number }[];
+  empty: string;
+}) {
+  const max = rows[0]?.count ?? 0;
+  return (
+    <div className="overflow-hidden rounded-xl border border-border bg-card">
+      <div className="border-b border-border px-4 py-3">
+        <h2 className="text-sm font-bold">{title}</h2>
+        <p className="text-xs text-muted-foreground">{subtitle}</p>
+      </div>
+      {rows.length === 0 ? (
+        <p className="px-4 py-6 text-center text-xs text-muted-foreground">{empty}</p>
+      ) : (
+        <ul className="divide-y divide-border">
+          {rows.map((r) => {
+            const pct = max ? (r.count / max) * 100 : 0;
+            return (
+              <li key={r.page} className="px-4 py-2.5">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="truncate text-xs font-medium" title={r.page}>
+                    {r.page}
+                  </span>
+                  <span className="shrink-0 text-xs font-bold">{r.count}</span>
+                </div>
+                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-muted">
+                  <div className="h-full bg-primary" style={{ width: `${pct}%` }} />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  );
+}

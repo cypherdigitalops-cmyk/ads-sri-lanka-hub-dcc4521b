@@ -38,6 +38,44 @@ export const Route = createFileRoute("/event-rentals-sri-lanka")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/event-rentals-sri-lanka` }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": `${SITE.url}/event-rentals-sri-lanka#page`,
+          url: `${SITE.url}/event-rentals-sri-lanka`,
+          name: TITLE,
+          description: DESC,
+          inLanguage: "en-LK",
+          isPartOf: { "@id": `${SITE.url}/#website` },
+          about: { "@type": "Thing", name: "Event Rentals in Sri Lanka" },
+          mainEntity: {
+            "@type": "ItemList",
+            numberOfItems: RENTALS.length,
+            itemListElement: RENTALS.map((r, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: r.title,
+              url: `${SITE.url}/${r.slug}`,
+              description: r.desc,
+            })),
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
+            { "@type": "ListItem", position: 2, name: "Event Rentals", item: `${SITE.url}/event-rentals-sri-lanka` },
+          ],
+        }),
+      },
+    ],
   }),
   component: RentalsHubPage,
 });

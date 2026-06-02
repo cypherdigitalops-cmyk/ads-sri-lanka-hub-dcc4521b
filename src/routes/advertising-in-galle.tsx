@@ -54,7 +54,7 @@ const FAQ_JSONLD = {
   mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
-export const Route = createFileRoute(`/${SLUG}` as "/advertising-in-galle")({
+export const Route = createFileRoute("/advertising-in-galle")({
   head: () => ({
     meta: [
       { title: TITLE },

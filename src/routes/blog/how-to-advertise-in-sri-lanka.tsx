@@ -16,7 +16,7 @@ const PRIMARY_ANCHOR = {
   ctaService: "Advertising in Sri Lanka",
 };
 
-export const Route = createFileRoute(`/blog/how-to-advertise-in-sri-lanka` as "/blog/how-to-advertise-in-sri-lanka")({
+export const Route = createFileRoute("/blog/how-to-advertise-in-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },

@@ -195,8 +195,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Advertising Sri Lanka | Sri Lanka Advertising Insight Hub" },
       { name: "twitter:description", content: "Advertising information hub for advertising in Sri Lanka with ATL, BTL, digital marketing, SEO, branding, outdoor advertising and media insights." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bbd9938c-b026-4c41-bba4-c4870c09d62e/id-preview-52c6737f--8df064ce-8f53-4ab1-9287-19dfd35da584.lovable.app-1778356070854.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bbd9938c-b026-4c41-bba4-c4870c09d62e/id-preview-52c6737f--8df064ce-8f53-4ab1-9287-19dfd35da584.lovable.app-1778356070854.png" },
+      { property: "og:image", content: "https://advertisingsrilanka.lk/__l5e/assets-v1/a61a9d04-70b2-4fb4-aa9f-557879a26894/og-image.png" },
+      { property: "og:image:width", content: "1216" },
+      { property: "og:image:height", content: "640" },
+      { property: "og:image:alt", content: "Advertising Sri Lanka — Sri Lanka's Advertising Marketplace" },
+      { name: "twitter:image", content: "https://advertisingsrilanka.lk/__l5e/assets-v1/a61a9d04-70b2-4fb4-aa9f-557879a26894/og-image.png" },
     ],
     links: [
       {

@@ -203,7 +203,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "canonical", href: SITE.url },
       { rel: "alternate", hrefLang: "en-LK", href: SITE.url },
       { rel: "alternate", hrefLang: "x-default", href: SITE.url },
       { rel: "icon", type: "image/png", href: "/favicon.png" },

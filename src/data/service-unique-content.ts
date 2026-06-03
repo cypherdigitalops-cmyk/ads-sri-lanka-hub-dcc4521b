@@ -2009,3 +2009,7 @@ export const SERVICE_UNIQUE_CONTENT: Record<string, Block[]> = {
     { type: "p", text: "Invest in your brand's future. Discover the power of expertly managed PR and Public Relations Sri Lanka to gain a competitive edge, foster deeper trust with your audience, and achieve your business objectives. Our network includes agencies proficient in media relations, crisis management, digital PR, content creation, and stakeholder engagement, ensuring a holistic approach to your communication needs. Get in touch now to find the perfect partner for your PR journey." },
   ],
 };
+
+export function getServiceUniqueContent(slug: string): Block[] {
+  return SERVICE_UNIQUE_CONTENT[slug] ?? [];
+}

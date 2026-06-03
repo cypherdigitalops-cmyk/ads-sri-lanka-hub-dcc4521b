@@ -70,6 +70,7 @@ import { Route as ShrinkSleevePrintingSriLankaRouteImport } from './routes/shrin
 import { Route as ShopFrontStickerPrintingSriLankaRouteImport } from './routes/shop-front-sticker-printing-sri-lanka'
 import { Route as ShopBrandingSriLankaRouteImport } from './routes/shop-branding-sri-lanka'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SeoSriLankaRouteImport } from './routes/seo-sri-lanka'
 import { Route as SeoServicesSriLankaRouteImport } from './routes/seo-services-sri-lanka'
 import { Route as SeoCompanySriLankaRouteImport } from './routes/seo-company-sri-lanka'
 import { Route as SelfieMirrorRentalSriLankaRouteImport } from './routes/selfie-mirror-rental-sri-lanka'
@@ -780,6 +781,11 @@ const ShopBrandingSriLankaRoute = ShopBrandingSriLankaRouteImport.update({
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoSriLankaRoute = SeoSriLankaRouteImport.update({
+  id: '/seo-sri-lanka',
+  path: '/seo-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SeoServicesSriLankaRoute = SeoServicesSriLankaRouteImport.update({
@@ -3181,6 +3187,7 @@ export interface FileRoutesByFullPath {
   '/selfie-mirror-rental-sri-lanka': typeof SelfieMirrorRentalSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/seo-sri-lanka': typeof SeoSriLankaRoute
   '/services': typeof ServicesRoute
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/shop-front-sticker-printing-sri-lanka': typeof ShopFrontStickerPrintingSriLankaRoute
@@ -3626,6 +3633,7 @@ export interface FileRoutesByTo {
   '/selfie-mirror-rental-sri-lanka': typeof SelfieMirrorRentalSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/seo-sri-lanka': typeof SeoSriLankaRoute
   '/services': typeof ServicesRoute
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/shop-front-sticker-printing-sri-lanka': typeof ShopFrontStickerPrintingSriLankaRoute
@@ -4072,6 +4080,7 @@ export interface FileRoutesById {
   '/selfie-mirror-rental-sri-lanka': typeof SelfieMirrorRentalSriLankaRoute
   '/seo-company-sri-lanka': typeof SeoCompanySriLankaRoute
   '/seo-services-sri-lanka': typeof SeoServicesSriLankaRoute
+  '/seo-sri-lanka': typeof SeoSriLankaRoute
   '/services': typeof ServicesRoute
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/shop-front-sticker-printing-sri-lanka': typeof ShopFrontStickerPrintingSriLankaRoute
@@ -4519,6 +4528,7 @@ export interface FileRouteTypes {
     | '/selfie-mirror-rental-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
+    | '/seo-sri-lanka'
     | '/services'
     | '/shop-branding-sri-lanka'
     | '/shop-front-sticker-printing-sri-lanka'
@@ -4964,6 +4974,7 @@ export interface FileRouteTypes {
     | '/selfie-mirror-rental-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
+    | '/seo-sri-lanka'
     | '/services'
     | '/shop-branding-sri-lanka'
     | '/shop-front-sticker-printing-sri-lanka'
@@ -5409,6 +5420,7 @@ export interface FileRouteTypes {
     | '/selfie-mirror-rental-sri-lanka'
     | '/seo-company-sri-lanka'
     | '/seo-services-sri-lanka'
+    | '/seo-sri-lanka'
     | '/services'
     | '/shop-branding-sri-lanka'
     | '/shop-front-sticker-printing-sri-lanka'
@@ -5855,6 +5867,7 @@ export interface RootRouteChildren {
   SelfieMirrorRentalSriLankaRoute: typeof SelfieMirrorRentalSriLankaRoute
   SeoCompanySriLankaRoute: typeof SeoCompanySriLankaRoute
   SeoServicesSriLankaRoute: typeof SeoServicesSriLankaRoute
+  SeoSriLankaRoute: typeof SeoSriLankaRoute
   ServicesRoute: typeof ServicesRoute
   ShopBrandingSriLankaRoute: typeof ShopBrandingSriLankaRoute
   ShopFrontStickerPrintingSriLankaRoute: typeof ShopFrontStickerPrintingSriLankaRoute
@@ -6468,6 +6481,13 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-sri-lanka': {
+      id: '/seo-sri-lanka'
+      path: '/seo-sri-lanka'
+      fullPath: '/seo-sri-lanka'
+      preLoaderRoute: typeof SeoSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/seo-services-sri-lanka': {
@@ -9410,6 +9430,7 @@ const rootRouteChildren: RootRouteChildren = {
   SelfieMirrorRentalSriLankaRoute: SelfieMirrorRentalSriLankaRoute,
   SeoCompanySriLankaRoute: SeoCompanySriLankaRoute,
   SeoServicesSriLankaRoute: SeoServicesSriLankaRoute,
+  SeoSriLankaRoute: SeoSriLankaRoute,
   ServicesRoute: ServicesRoute,
   ShopBrandingSriLankaRoute: ShopBrandingSriLankaRoute,
   ShopFrontStickerPrintingSriLankaRoute: ShopFrontStickerPrintingSriLankaRoute,

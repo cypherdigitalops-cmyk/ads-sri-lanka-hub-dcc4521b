@@ -258,6 +258,7 @@ export const CATEGORIES: Category[] = [
       { slug: "content-marketing-sri-lanka", keyword: "content marketing sri lanka" },
       { slug: "backlink-services-sri-lanka", keyword: "backlink services sri lanka" },
       { slug: "seo-company-sri-lanka", keyword: "seo company sri lanka" },
+      { slug: "seo-sri-lanka", keyword: "seo sri lanka" },
     ],
     blog: [
       { slug: "seo-sri-lanka", keyword: "seo sri lanka" },

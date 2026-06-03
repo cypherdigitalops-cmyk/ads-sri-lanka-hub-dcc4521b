@@ -330,6 +330,21 @@ import { Route as AdvertisingInKandyRouteImport } from './routes/advertising-in-
 import { Route as AdvertisingInJaffnaRouteImport } from './routes/advertising-in-jaffna'
 import { Route as AdvertisingInGalleRouteImport } from './routes/advertising-in-galle'
 import { Route as AdvertisingInColomboRouteImport } from './routes/advertising-in-colombo'
+import { Route as AdvertisingForWeddingIndustrySriLankaRouteImport } from './routes/advertising-for-wedding-industry-sri-lanka'
+import { Route as AdvertisingForTravelTourismSriLankaRouteImport } from './routes/advertising-for-travel-tourism-sri-lanka'
+import { Route as AdvertisingForSupermarketsRetailSriLankaRouteImport } from './routes/advertising-for-supermarkets-retail-sri-lanka'
+import { Route as AdvertisingForSchoolsUniversitiesSriLankaRouteImport } from './routes/advertising-for-schools-universities-sri-lanka'
+import { Route as AdvertisingForRestaurantsSriLankaRouteImport } from './routes/advertising-for-restaurants-sri-lanka'
+import { Route as AdvertisingForRealEstateSriLankaRouteImport } from './routes/advertising-for-real-estate-sri-lanka'
+import { Route as AdvertisingForPoliticalCampaignsSriLankaRouteImport } from './routes/advertising-for-political-campaigns-sri-lanka'
+import { Route as AdvertisingForNgosNonprofitsSriLankaRouteImport } from './routes/advertising-for-ngos-nonprofits-sri-lanka'
+import { Route as AdvertisingForItTechCompaniesSriLankaRouteImport } from './routes/advertising-for-it-tech-companies-sri-lanka'
+import { Route as AdvertisingForHotelsResortsSriLankaRouteImport } from './routes/advertising-for-hotels-resorts-sri-lanka'
+import { Route as AdvertisingForHospitalsClinicsSriLankaRouteImport } from './routes/advertising-for-hospitals-clinics-sri-lanka'
+import { Route as AdvertisingForGarmentTextileSriLankaRouteImport } from './routes/advertising-for-garment-textile-sri-lanka'
+import { Route as AdvertisingForEcommerceSriLankaRouteImport } from './routes/advertising-for-ecommerce-sri-lanka'
+import { Route as AdvertisingForBanksFinancialServicesSriLankaRouteImport } from './routes/advertising-for-banks-financial-services-sri-lanka'
+import { Route as AdvertisingForAutomotiveDealersSriLankaRouteImport } from './routes/advertising-for-automotive-dealers-sri-lanka'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AcrylicSignBoardSriLankaRouteImport } from './routes/acrylic-sign-board-sri-lanka'
 import { Route as AcrylicAwardsSriLankaRouteImport } from './routes/acrylic-awards-sri-lanka'
@@ -2222,6 +2237,96 @@ const AdvertisingInColomboRoute = AdvertisingInColomboRouteImport.update({
   path: '/advertising-in-colombo',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdvertisingForWeddingIndustrySriLankaRoute =
+  AdvertisingForWeddingIndustrySriLankaRouteImport.update({
+    id: '/advertising-for-wedding-industry-sri-lanka',
+    path: '/advertising-for-wedding-industry-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForTravelTourismSriLankaRoute =
+  AdvertisingForTravelTourismSriLankaRouteImport.update({
+    id: '/advertising-for-travel-tourism-sri-lanka',
+    path: '/advertising-for-travel-tourism-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForSupermarketsRetailSriLankaRoute =
+  AdvertisingForSupermarketsRetailSriLankaRouteImport.update({
+    id: '/advertising-for-supermarkets-retail-sri-lanka',
+    path: '/advertising-for-supermarkets-retail-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForSchoolsUniversitiesSriLankaRoute =
+  AdvertisingForSchoolsUniversitiesSriLankaRouteImport.update({
+    id: '/advertising-for-schools-universities-sri-lanka',
+    path: '/advertising-for-schools-universities-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForRestaurantsSriLankaRoute =
+  AdvertisingForRestaurantsSriLankaRouteImport.update({
+    id: '/advertising-for-restaurants-sri-lanka',
+    path: '/advertising-for-restaurants-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForRealEstateSriLankaRoute =
+  AdvertisingForRealEstateSriLankaRouteImport.update({
+    id: '/advertising-for-real-estate-sri-lanka',
+    path: '/advertising-for-real-estate-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForPoliticalCampaignsSriLankaRoute =
+  AdvertisingForPoliticalCampaignsSriLankaRouteImport.update({
+    id: '/advertising-for-political-campaigns-sri-lanka',
+    path: '/advertising-for-political-campaigns-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForNgosNonprofitsSriLankaRoute =
+  AdvertisingForNgosNonprofitsSriLankaRouteImport.update({
+    id: '/advertising-for-ngos-nonprofits-sri-lanka',
+    path: '/advertising-for-ngos-nonprofits-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForItTechCompaniesSriLankaRoute =
+  AdvertisingForItTechCompaniesSriLankaRouteImport.update({
+    id: '/advertising-for-it-tech-companies-sri-lanka',
+    path: '/advertising-for-it-tech-companies-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForHotelsResortsSriLankaRoute =
+  AdvertisingForHotelsResortsSriLankaRouteImport.update({
+    id: '/advertising-for-hotels-resorts-sri-lanka',
+    path: '/advertising-for-hotels-resorts-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForHospitalsClinicsSriLankaRoute =
+  AdvertisingForHospitalsClinicsSriLankaRouteImport.update({
+    id: '/advertising-for-hospitals-clinics-sri-lanka',
+    path: '/advertising-for-hospitals-clinics-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForGarmentTextileSriLankaRoute =
+  AdvertisingForGarmentTextileSriLankaRouteImport.update({
+    id: '/advertising-for-garment-textile-sri-lanka',
+    path: '/advertising-for-garment-textile-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForEcommerceSriLankaRoute =
+  AdvertisingForEcommerceSriLankaRouteImport.update({
+    id: '/advertising-for-ecommerce-sri-lanka',
+    path: '/advertising-for-ecommerce-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForBanksFinancialServicesSriLankaRoute =
+  AdvertisingForBanksFinancialServicesSriLankaRouteImport.update({
+    id: '/advertising-for-banks-financial-services-sri-lanka',
+    path: '/advertising-for-banks-financial-services-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingForAutomotiveDealersSriLankaRoute =
+  AdvertisingForAutomotiveDealersSriLankaRouteImport.update({
+    id: '/advertising-for-automotive-dealers-sri-lanka',
+    path: '/advertising-for-automotive-dealers-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdminRoute = AdminRouteImport.update({
   id: '/admin',
   path: '/admin',
@@ -3023,6 +3128,21 @@ export interface FileRoutesByFullPath {
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
   '/acrylic-sign-board-sri-lanka': typeof AcrylicSignBoardSriLankaRoute
   '/admin': typeof AdminRoute
+  '/advertising-for-automotive-dealers-sri-lanka': typeof AdvertisingForAutomotiveDealersSriLankaRoute
+  '/advertising-for-banks-financial-services-sri-lanka': typeof AdvertisingForBanksFinancialServicesSriLankaRoute
+  '/advertising-for-ecommerce-sri-lanka': typeof AdvertisingForEcommerceSriLankaRoute
+  '/advertising-for-garment-textile-sri-lanka': typeof AdvertisingForGarmentTextileSriLankaRoute
+  '/advertising-for-hospitals-clinics-sri-lanka': typeof AdvertisingForHospitalsClinicsSriLankaRoute
+  '/advertising-for-hotels-resorts-sri-lanka': typeof AdvertisingForHotelsResortsSriLankaRoute
+  '/advertising-for-it-tech-companies-sri-lanka': typeof AdvertisingForItTechCompaniesSriLankaRoute
+  '/advertising-for-ngos-nonprofits-sri-lanka': typeof AdvertisingForNgosNonprofitsSriLankaRoute
+  '/advertising-for-political-campaigns-sri-lanka': typeof AdvertisingForPoliticalCampaignsSriLankaRoute
+  '/advertising-for-real-estate-sri-lanka': typeof AdvertisingForRealEstateSriLankaRoute
+  '/advertising-for-restaurants-sri-lanka': typeof AdvertisingForRestaurantsSriLankaRoute
+  '/advertising-for-schools-universities-sri-lanka': typeof AdvertisingForSchoolsUniversitiesSriLankaRoute
+  '/advertising-for-supermarkets-retail-sri-lanka': typeof AdvertisingForSupermarketsRetailSriLankaRoute
+  '/advertising-for-travel-tourism-sri-lanka': typeof AdvertisingForTravelTourismSriLankaRoute
+  '/advertising-for-wedding-industry-sri-lanka': typeof AdvertisingForWeddingIndustrySriLankaRoute
   '/advertising-in-colombo': typeof AdvertisingInColomboRoute
   '/advertising-in-galle': typeof AdvertisingInGalleRoute
   '/advertising-in-jaffna': typeof AdvertisingInJaffnaRoute
@@ -3481,6 +3601,21 @@ export interface FileRoutesByTo {
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
   '/acrylic-sign-board-sri-lanka': typeof AcrylicSignBoardSriLankaRoute
   '/admin': typeof AdminRoute
+  '/advertising-for-automotive-dealers-sri-lanka': typeof AdvertisingForAutomotiveDealersSriLankaRoute
+  '/advertising-for-banks-financial-services-sri-lanka': typeof AdvertisingForBanksFinancialServicesSriLankaRoute
+  '/advertising-for-ecommerce-sri-lanka': typeof AdvertisingForEcommerceSriLankaRoute
+  '/advertising-for-garment-textile-sri-lanka': typeof AdvertisingForGarmentTextileSriLankaRoute
+  '/advertising-for-hospitals-clinics-sri-lanka': typeof AdvertisingForHospitalsClinicsSriLankaRoute
+  '/advertising-for-hotels-resorts-sri-lanka': typeof AdvertisingForHotelsResortsSriLankaRoute
+  '/advertising-for-it-tech-companies-sri-lanka': typeof AdvertisingForItTechCompaniesSriLankaRoute
+  '/advertising-for-ngos-nonprofits-sri-lanka': typeof AdvertisingForNgosNonprofitsSriLankaRoute
+  '/advertising-for-political-campaigns-sri-lanka': typeof AdvertisingForPoliticalCampaignsSriLankaRoute
+  '/advertising-for-real-estate-sri-lanka': typeof AdvertisingForRealEstateSriLankaRoute
+  '/advertising-for-restaurants-sri-lanka': typeof AdvertisingForRestaurantsSriLankaRoute
+  '/advertising-for-schools-universities-sri-lanka': typeof AdvertisingForSchoolsUniversitiesSriLankaRoute
+  '/advertising-for-supermarkets-retail-sri-lanka': typeof AdvertisingForSupermarketsRetailSriLankaRoute
+  '/advertising-for-travel-tourism-sri-lanka': typeof AdvertisingForTravelTourismSriLankaRoute
+  '/advertising-for-wedding-industry-sri-lanka': typeof AdvertisingForWeddingIndustrySriLankaRoute
   '/advertising-in-colombo': typeof AdvertisingInColomboRoute
   '/advertising-in-galle': typeof AdvertisingInGalleRoute
   '/advertising-in-jaffna': typeof AdvertisingInJaffnaRoute
@@ -3940,6 +4075,21 @@ export interface FileRoutesById {
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
   '/acrylic-sign-board-sri-lanka': typeof AcrylicSignBoardSriLankaRoute
   '/admin': typeof AdminRoute
+  '/advertising-for-automotive-dealers-sri-lanka': typeof AdvertisingForAutomotiveDealersSriLankaRoute
+  '/advertising-for-banks-financial-services-sri-lanka': typeof AdvertisingForBanksFinancialServicesSriLankaRoute
+  '/advertising-for-ecommerce-sri-lanka': typeof AdvertisingForEcommerceSriLankaRoute
+  '/advertising-for-garment-textile-sri-lanka': typeof AdvertisingForGarmentTextileSriLankaRoute
+  '/advertising-for-hospitals-clinics-sri-lanka': typeof AdvertisingForHospitalsClinicsSriLankaRoute
+  '/advertising-for-hotels-resorts-sri-lanka': typeof AdvertisingForHotelsResortsSriLankaRoute
+  '/advertising-for-it-tech-companies-sri-lanka': typeof AdvertisingForItTechCompaniesSriLankaRoute
+  '/advertising-for-ngos-nonprofits-sri-lanka': typeof AdvertisingForNgosNonprofitsSriLankaRoute
+  '/advertising-for-political-campaigns-sri-lanka': typeof AdvertisingForPoliticalCampaignsSriLankaRoute
+  '/advertising-for-real-estate-sri-lanka': typeof AdvertisingForRealEstateSriLankaRoute
+  '/advertising-for-restaurants-sri-lanka': typeof AdvertisingForRestaurantsSriLankaRoute
+  '/advertising-for-schools-universities-sri-lanka': typeof AdvertisingForSchoolsUniversitiesSriLankaRoute
+  '/advertising-for-supermarkets-retail-sri-lanka': typeof AdvertisingForSupermarketsRetailSriLankaRoute
+  '/advertising-for-travel-tourism-sri-lanka': typeof AdvertisingForTravelTourismSriLankaRoute
+  '/advertising-for-wedding-industry-sri-lanka': typeof AdvertisingForWeddingIndustrySriLankaRoute
   '/advertising-in-colombo': typeof AdvertisingInColomboRoute
   '/advertising-in-galle': typeof AdvertisingInGalleRoute
   '/advertising-in-jaffna': typeof AdvertisingInJaffnaRoute
@@ -4400,6 +4550,21 @@ export interface FileRouteTypes {
     | '/acrylic-awards-sri-lanka'
     | '/acrylic-sign-board-sri-lanka'
     | '/admin'
+    | '/advertising-for-automotive-dealers-sri-lanka'
+    | '/advertising-for-banks-financial-services-sri-lanka'
+    | '/advertising-for-ecommerce-sri-lanka'
+    | '/advertising-for-garment-textile-sri-lanka'
+    | '/advertising-for-hospitals-clinics-sri-lanka'
+    | '/advertising-for-hotels-resorts-sri-lanka'
+    | '/advertising-for-it-tech-companies-sri-lanka'
+    | '/advertising-for-ngos-nonprofits-sri-lanka'
+    | '/advertising-for-political-campaigns-sri-lanka'
+    | '/advertising-for-real-estate-sri-lanka'
+    | '/advertising-for-restaurants-sri-lanka'
+    | '/advertising-for-schools-universities-sri-lanka'
+    | '/advertising-for-supermarkets-retail-sri-lanka'
+    | '/advertising-for-travel-tourism-sri-lanka'
+    | '/advertising-for-wedding-industry-sri-lanka'
     | '/advertising-in-colombo'
     | '/advertising-in-galle'
     | '/advertising-in-jaffna'
@@ -4858,6 +5023,21 @@ export interface FileRouteTypes {
     | '/acrylic-awards-sri-lanka'
     | '/acrylic-sign-board-sri-lanka'
     | '/admin'
+    | '/advertising-for-automotive-dealers-sri-lanka'
+    | '/advertising-for-banks-financial-services-sri-lanka'
+    | '/advertising-for-ecommerce-sri-lanka'
+    | '/advertising-for-garment-textile-sri-lanka'
+    | '/advertising-for-hospitals-clinics-sri-lanka'
+    | '/advertising-for-hotels-resorts-sri-lanka'
+    | '/advertising-for-it-tech-companies-sri-lanka'
+    | '/advertising-for-ngos-nonprofits-sri-lanka'
+    | '/advertising-for-political-campaigns-sri-lanka'
+    | '/advertising-for-real-estate-sri-lanka'
+    | '/advertising-for-restaurants-sri-lanka'
+    | '/advertising-for-schools-universities-sri-lanka'
+    | '/advertising-for-supermarkets-retail-sri-lanka'
+    | '/advertising-for-travel-tourism-sri-lanka'
+    | '/advertising-for-wedding-industry-sri-lanka'
     | '/advertising-in-colombo'
     | '/advertising-in-galle'
     | '/advertising-in-jaffna'
@@ -5316,6 +5496,21 @@ export interface FileRouteTypes {
     | '/acrylic-awards-sri-lanka'
     | '/acrylic-sign-board-sri-lanka'
     | '/admin'
+    | '/advertising-for-automotive-dealers-sri-lanka'
+    | '/advertising-for-banks-financial-services-sri-lanka'
+    | '/advertising-for-ecommerce-sri-lanka'
+    | '/advertising-for-garment-textile-sri-lanka'
+    | '/advertising-for-hospitals-clinics-sri-lanka'
+    | '/advertising-for-hotels-resorts-sri-lanka'
+    | '/advertising-for-it-tech-companies-sri-lanka'
+    | '/advertising-for-ngos-nonprofits-sri-lanka'
+    | '/advertising-for-political-campaigns-sri-lanka'
+    | '/advertising-for-real-estate-sri-lanka'
+    | '/advertising-for-restaurants-sri-lanka'
+    | '/advertising-for-schools-universities-sri-lanka'
+    | '/advertising-for-supermarkets-retail-sri-lanka'
+    | '/advertising-for-travel-tourism-sri-lanka'
+    | '/advertising-for-wedding-industry-sri-lanka'
     | '/advertising-in-colombo'
     | '/advertising-in-galle'
     | '/advertising-in-jaffna'
@@ -5775,6 +5970,21 @@ export interface RootRouteChildren {
   AcrylicAwardsSriLankaRoute: typeof AcrylicAwardsSriLankaRoute
   AcrylicSignBoardSriLankaRoute: typeof AcrylicSignBoardSriLankaRoute
   AdminRoute: typeof AdminRoute
+  AdvertisingForAutomotiveDealersSriLankaRoute: typeof AdvertisingForAutomotiveDealersSriLankaRoute
+  AdvertisingForBanksFinancialServicesSriLankaRoute: typeof AdvertisingForBanksFinancialServicesSriLankaRoute
+  AdvertisingForEcommerceSriLankaRoute: typeof AdvertisingForEcommerceSriLankaRoute
+  AdvertisingForGarmentTextileSriLankaRoute: typeof AdvertisingForGarmentTextileSriLankaRoute
+  AdvertisingForHospitalsClinicsSriLankaRoute: typeof AdvertisingForHospitalsClinicsSriLankaRoute
+  AdvertisingForHotelsResortsSriLankaRoute: typeof AdvertisingForHotelsResortsSriLankaRoute
+  AdvertisingForItTechCompaniesSriLankaRoute: typeof AdvertisingForItTechCompaniesSriLankaRoute
+  AdvertisingForNgosNonprofitsSriLankaRoute: typeof AdvertisingForNgosNonprofitsSriLankaRoute
+  AdvertisingForPoliticalCampaignsSriLankaRoute: typeof AdvertisingForPoliticalCampaignsSriLankaRoute
+  AdvertisingForRealEstateSriLankaRoute: typeof AdvertisingForRealEstateSriLankaRoute
+  AdvertisingForRestaurantsSriLankaRoute: typeof AdvertisingForRestaurantsSriLankaRoute
+  AdvertisingForSchoolsUniversitiesSriLankaRoute: typeof AdvertisingForSchoolsUniversitiesSriLankaRoute
+  AdvertisingForSupermarketsRetailSriLankaRoute: typeof AdvertisingForSupermarketsRetailSriLankaRoute
+  AdvertisingForTravelTourismSriLankaRoute: typeof AdvertisingForTravelTourismSriLankaRoute
+  AdvertisingForWeddingIndustrySriLankaRoute: typeof AdvertisingForWeddingIndustrySriLankaRoute
   AdvertisingInColomboRoute: typeof AdvertisingInColomboRoute
   AdvertisingInGalleRoute: typeof AdvertisingInGalleRoute
   AdvertisingInJaffnaRoute: typeof AdvertisingInJaffnaRoute
@@ -8470,6 +8680,111 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdvertisingInColomboRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/advertising-for-wedding-industry-sri-lanka': {
+      id: '/advertising-for-wedding-industry-sri-lanka'
+      path: '/advertising-for-wedding-industry-sri-lanka'
+      fullPath: '/advertising-for-wedding-industry-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForWeddingIndustrySriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-travel-tourism-sri-lanka': {
+      id: '/advertising-for-travel-tourism-sri-lanka'
+      path: '/advertising-for-travel-tourism-sri-lanka'
+      fullPath: '/advertising-for-travel-tourism-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForTravelTourismSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-supermarkets-retail-sri-lanka': {
+      id: '/advertising-for-supermarkets-retail-sri-lanka'
+      path: '/advertising-for-supermarkets-retail-sri-lanka'
+      fullPath: '/advertising-for-supermarkets-retail-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForSupermarketsRetailSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-schools-universities-sri-lanka': {
+      id: '/advertising-for-schools-universities-sri-lanka'
+      path: '/advertising-for-schools-universities-sri-lanka'
+      fullPath: '/advertising-for-schools-universities-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForSchoolsUniversitiesSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-restaurants-sri-lanka': {
+      id: '/advertising-for-restaurants-sri-lanka'
+      path: '/advertising-for-restaurants-sri-lanka'
+      fullPath: '/advertising-for-restaurants-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForRestaurantsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-real-estate-sri-lanka': {
+      id: '/advertising-for-real-estate-sri-lanka'
+      path: '/advertising-for-real-estate-sri-lanka'
+      fullPath: '/advertising-for-real-estate-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForRealEstateSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-political-campaigns-sri-lanka': {
+      id: '/advertising-for-political-campaigns-sri-lanka'
+      path: '/advertising-for-political-campaigns-sri-lanka'
+      fullPath: '/advertising-for-political-campaigns-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForPoliticalCampaignsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-ngos-nonprofits-sri-lanka': {
+      id: '/advertising-for-ngos-nonprofits-sri-lanka'
+      path: '/advertising-for-ngos-nonprofits-sri-lanka'
+      fullPath: '/advertising-for-ngos-nonprofits-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForNgosNonprofitsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-it-tech-companies-sri-lanka': {
+      id: '/advertising-for-it-tech-companies-sri-lanka'
+      path: '/advertising-for-it-tech-companies-sri-lanka'
+      fullPath: '/advertising-for-it-tech-companies-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForItTechCompaniesSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-hotels-resorts-sri-lanka': {
+      id: '/advertising-for-hotels-resorts-sri-lanka'
+      path: '/advertising-for-hotels-resorts-sri-lanka'
+      fullPath: '/advertising-for-hotels-resorts-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForHotelsResortsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-hospitals-clinics-sri-lanka': {
+      id: '/advertising-for-hospitals-clinics-sri-lanka'
+      path: '/advertising-for-hospitals-clinics-sri-lanka'
+      fullPath: '/advertising-for-hospitals-clinics-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForHospitalsClinicsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-garment-textile-sri-lanka': {
+      id: '/advertising-for-garment-textile-sri-lanka'
+      path: '/advertising-for-garment-textile-sri-lanka'
+      fullPath: '/advertising-for-garment-textile-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForGarmentTextileSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-ecommerce-sri-lanka': {
+      id: '/advertising-for-ecommerce-sri-lanka'
+      path: '/advertising-for-ecommerce-sri-lanka'
+      fullPath: '/advertising-for-ecommerce-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForEcommerceSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-banks-financial-services-sri-lanka': {
+      id: '/advertising-for-banks-financial-services-sri-lanka'
+      path: '/advertising-for-banks-financial-services-sri-lanka'
+      fullPath: '/advertising-for-banks-financial-services-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForBanksFinancialServicesSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-for-automotive-dealers-sri-lanka': {
+      id: '/advertising-for-automotive-dealers-sri-lanka'
+      path: '/advertising-for-automotive-dealers-sri-lanka'
+      fullPath: '/advertising-for-automotive-dealers-sri-lanka'
+      preLoaderRoute: typeof AdvertisingForAutomotiveDealersSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin': {
       id: '/admin'
       path: '/admin'
@@ -9431,6 +9746,34 @@ const rootRouteChildren: RootRouteChildren = {
   AcrylicAwardsSriLankaRoute: AcrylicAwardsSriLankaRoute,
   AcrylicSignBoardSriLankaRoute: AcrylicSignBoardSriLankaRoute,
   AdminRoute: AdminRoute,
+  AdvertisingForAutomotiveDealersSriLankaRoute:
+    AdvertisingForAutomotiveDealersSriLankaRoute,
+  AdvertisingForBanksFinancialServicesSriLankaRoute:
+    AdvertisingForBanksFinancialServicesSriLankaRoute,
+  AdvertisingForEcommerceSriLankaRoute: AdvertisingForEcommerceSriLankaRoute,
+  AdvertisingForGarmentTextileSriLankaRoute:
+    AdvertisingForGarmentTextileSriLankaRoute,
+  AdvertisingForHospitalsClinicsSriLankaRoute:
+    AdvertisingForHospitalsClinicsSriLankaRoute,
+  AdvertisingForHotelsResortsSriLankaRoute:
+    AdvertisingForHotelsResortsSriLankaRoute,
+  AdvertisingForItTechCompaniesSriLankaRoute:
+    AdvertisingForItTechCompaniesSriLankaRoute,
+  AdvertisingForNgosNonprofitsSriLankaRoute:
+    AdvertisingForNgosNonprofitsSriLankaRoute,
+  AdvertisingForPoliticalCampaignsSriLankaRoute:
+    AdvertisingForPoliticalCampaignsSriLankaRoute,
+  AdvertisingForRealEstateSriLankaRoute: AdvertisingForRealEstateSriLankaRoute,
+  AdvertisingForRestaurantsSriLankaRoute:
+    AdvertisingForRestaurantsSriLankaRoute,
+  AdvertisingForSchoolsUniversitiesSriLankaRoute:
+    AdvertisingForSchoolsUniversitiesSriLankaRoute,
+  AdvertisingForSupermarketsRetailSriLankaRoute:
+    AdvertisingForSupermarketsRetailSriLankaRoute,
+  AdvertisingForTravelTourismSriLankaRoute:
+    AdvertisingForTravelTourismSriLankaRoute,
+  AdvertisingForWeddingIndustrySriLankaRoute:
+    AdvertisingForWeddingIndustrySriLankaRoute,
   AdvertisingInColomboRoute: AdvertisingInColomboRoute,
   AdvertisingInGalleRoute: AdvertisingInGalleRoute,
   AdvertisingInJaffnaRoute: AdvertisingInJaffnaRoute,

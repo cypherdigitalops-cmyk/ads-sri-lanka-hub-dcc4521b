@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Banner Printing Sri Lanka | Flex, Vinyl & Fabric from Rs 120/sqft";
-const DESC = "Banner printing in Sri Lanka — flex, vinyl, fabric & mesh banners. From Rs 120/sqft. Any size, 2-day turnaround, hemming & eyelets included. Call 0771437707.";
+const TITLE = "Banner Printing Sri Lanka 2026 | Flex from Rs 120/sqft – 24hr Delivery";
+const DESC = "#1 banner printing in Sri Lanka — flex, vinyl, fabric, mesh & roll up banners from Rs 120/sqft. Free hemming + eyelets, 24-hour express, islandwide delivery. WhatsApp 0771437707 for an instant quote.";
 
 export const Route = createFileRoute("/banner-printing-sri-lanka")({
   head: () => ({

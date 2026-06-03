@@ -5,11 +5,11 @@ import { SITE } from "@/data/site";
 
 const SLUG = "blog/advertising-budget-calculator-sri-lankan-businesses";
 const TITLE = "Advertising Budget Calculator for Sri Lankan Businesses";
-const DESC = "How to calculate the right advertising budget for your Sri Lankan business — percentage-of-revenue method, objective-based budgeting and channel allocation.";
+const DESC = "How to calculate the right advertising budget for your Sri Lankan business — percentage-of-revenue method, objective-based budgeting and channel allocation by goal.";
 
 const PRIMARY_ANCHOR = {
   href: "/advertising-rates",
-  regex: /(advertising\\s+budget|budget)/i,
+  regex: /(advertising\s+budget|budget)/i,
   fallbackText: "advertising budget",
   ctaLabel: "Get my custom budget plan",
   ctaHeadline: "Want a tailored budget breakdown for your business?",
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/blog/advertising-budget-calculator-sri-la
         publishedISO="2025-05-12"
         category={{ label: "Advertising Insights", href: "/" }}
         primaryAnchor={PRIMARY_ANCHOR}
-        intro="Most Sri Lankan businesses underspend on marketing — or worse, spend the wrong amount on the wrong channel. Here is how to set a realistic budget."
+        intro="Most Sri Lankan businesses underspend on marketing — or worse, spend the wrong amount on the wrong channel. Here is how to set a realistic, defensible budget."
         blocks={[
   {
     "type": "h2",
@@ -49,28 +49,28 @@ export const Route = createFileRoute("/blog/advertising-budget-calculator-sri-la
     "head": [
       "Business stage",
       "% of revenue",
-      "Notes"
+      "Strategic intent"
     ],
     "rows": [
       [
         "Startup / launch",
         "15–25%",
-        "Aggressive — build awareness"
+        "Aggressive — build initial awareness"
       ],
       [
         "Growth (1–3 years)",
         "10–15%",
-        "Scale what works"
+        "Scale what already works"
       ],
       [
         "Established",
         "5–10%",
-        "Defend share, maintain top-of-mind"
+        "Defend market share, stay top of mind"
       ],
       [
-        "Mature / leader",
+        "Mature market leader",
         "3–6%",
-        "Brand maintenance"
+        "Brand maintenance and innovation"
       ]
     ]
   },
@@ -80,43 +80,43 @@ export const Route = createFileRoute("/blog/advertising-budget-calculator-sri-la
   },
   {
     "type": "p",
-    "text": "Required revenue ÷ average order value = customers needed ÷ close rate = leads needed × CPL = budget."
+    "text": "Required revenue ÷ average order value = customers needed ÷ close rate = leads needed × CPL = monthly budget."
   },
   {
     "type": "ul",
     "items": [
       "Example: Rs 5M revenue ÷ Rs 25,000 AOV = 200 customers",
-      "200 customers ÷ 20% close rate = 1,000 leads",
-      "1,000 leads × Rs 350 CPL = Rs 350,000/month budget"
+      "200 customers ÷ 20% close rate = 1,000 leads needed",
+      "1,000 leads × Rs 350 CPL = Rs 350,000 monthly ad budget"
     ]
   },
   {
     "type": "h2",
-    "text": "Recommended channel allocation"
+    "text": "Recommended channel allocation by goal"
   },
   {
     "type": "table",
     "head": [
-      "Goal",
+      "Primary goal",
       "Digital",
       "Traditional",
       "BTL / Events"
     ],
     "rows": [
       [
-        "Online sales / leads",
+        "Online sales or leads",
         "75%",
         "10%",
         "15%"
       ],
       [
-        "Local brick & mortar",
+        "Local brick-and-mortar footfall",
         "45%",
         "30%",
         "25%"
       ],
       [
-        "National brand",
+        "National brand awareness",
         "35%",
         "45%",
         "20%"
@@ -136,9 +136,9 @@ export const Route = createFileRoute("/blog/advertising-budget-calculator-sri-la
   {
     "type": "ul",
     "items": [
-      "70% on proven channels (kills underperformers monthly)",
-      "20% on testing new creative or audiences",
-      "10% on new channels / experiments"
+      "70% on proven channels (with monthly performance reviews)",
+      "20% on testing new creative or audience segments",
+      "10% on entirely new channels and experiments"
     ]
   },
   {
@@ -148,12 +148,12 @@ export const Route = createFileRoute("/blog/advertising-budget-calculator-sri-la
 ]}
         faqs={[
   {
-    "q": "What if I'm a new business with no revenue yet?",
-    "a": "Set a fixed monthly cap (Rs 50,000–150,000) for 3–6 months and reassess based on CAC vs LTV."
+    "q": "What if I am a brand-new business with no revenue yet?",
+    "a": "Set a fixed monthly cap (typically Rs 50,000–150,000) for 3–6 months, then reassess based on customer acquisition cost versus lifetime value."
   },
   {
-    "q": "How much should an SME spend on Meta vs Google?",
-    "a": "Start 60/40 Meta:Google for B2C and 30/70 for B2B; rebalance monthly based on CPA."
+    "q": "How should an SME split spend between paid social and paid search?",
+    "a": "Start around 60/40 social-to-search for B2C and 30/70 for B2B; rebalance monthly based on cost per acquisition."
   }
 ]}
         related={[

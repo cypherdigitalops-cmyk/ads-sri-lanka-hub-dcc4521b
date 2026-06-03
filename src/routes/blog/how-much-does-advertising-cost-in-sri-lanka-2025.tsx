@@ -5,14 +5,14 @@ import { SITE } from "@/data/site";
 
 const SLUG = "blog/how-much-does-advertising-cost-in-sri-lanka-2025";
 const TITLE = "How Much Does Advertising Cost in Sri Lanka? (2025)";
-const DESC = "Real 2025 advertising costs in Sri Lanka — TV, radio, billboard, Facebook, Google, TikTok, SMS and WhatsApp pricing in LKR with realistic monthly budgets.";
+const DESC = "Realistic 2025 advertising cost benchmarks in Sri Lanka — TV, radio, billboard, Facebook, Google, TikTok, SMS and WhatsApp pricing in LKR with sensible monthly budgets by business size.";
 
 const PRIMARY_ANCHOR = {
   href: "/advertising-rates",
-  regex: /(advertising\\s+rates)/i,
+  regex: /(advertising\s+rates)/i,
   fallbackText: "advertising rates",
   ctaLabel: "Get a custom 2025 quote",
-  ctaHeadline: "Want a tailored 2025 plan?",
+  ctaHeadline: "Want a tailored 2025 advertising plan?",
   ctaService: "Advertising Cost Sri Lanka",
 };
 
@@ -38,11 +38,11 @@ export const Route = createFileRoute("/blog/how-much-does-advertising-cost-in-sr
         publishedISO="2025-03-01"
         category={{ label: "Advertising Insights", href: "/" }}
         primaryAnchor={PRIMARY_ANCHOR}
-        intro="A clear, no-fluff answer to the question every Sri Lankan business owner asks first: what does advertising actually cost in 2025?"
+        intro="A clear, no-fluff answer to the question every Sri Lankan business owner asks first: what does advertising actually cost in 2025 — and how much should you spend?"
         blocks={[
   {
     "type": "p",
-    "text": "Advertising in Sri Lanka can start from Rs 15,000/month on Meta Ads and reach Rs 5,000,000+ on a national TV + outdoor campaign. The honest answer depends on channel, geography and how aggressively you negotiate."
+    "text": "Advertising in Sri Lanka can start from Rs 15,000/month on social ads and reach Rs 5,000,000+ on a national TV + outdoor campaign. The honest answer always depends on three things: channel mix, geographic reach, and how aggressively rates are negotiated."
   },
   {
     "type": "h2",
@@ -53,114 +53,114 @@ export const Route = createFileRoute("/blog/how-much-does-advertising-cost-in-sr
     "head": [
       "Business size",
       "Monthly ad spend",
-      "Best channels"
+      "Recommended channel mix"
     ],
     "rows": [
       [
         "Solo / startup",
         "Rs 15,000 – 50,000",
-        "Meta, WhatsApp, Google Search"
+        "Social ads, WhatsApp, search"
       ],
       [
-        "SME",
+        "Small / SME",
         "Rs 75,000 – 300,000",
-        "Meta + Google + TikTok"
+        "Search + social + light video"
       ],
       [
         "Mid-market",
         "Rs 400,000 – 1.5M",
-        "Add radio, outdoor, influencer"
+        "Add radio, outdoor and influencer layers"
       ],
       [
         "National brand",
         "Rs 2M – 25M+",
-        "TV + 360° integrated"
+        "Integrated TV, radio, digital, outdoor, BTL"
       ]
     ]
   },
   {
     "type": "h2",
-    "text": "Cost by channel (2025)"
+    "text": "Indicative cost by channel (2025)"
   },
   {
     "type": "table",
     "head": [
       "Channel",
       "Entry cost",
-      "Notes"
+      "Pricing notes"
     ],
     "rows": [
       [
-        "Facebook / Instagram",
+        "Social ads (Meta family)",
         "Rs 15,000/mo",
-        "CPM Rs 90–280"
+        "CPM typically Rs 90–280"
       ],
       [
-        "Google Search",
+        "Paid search",
         "Rs 30,000/mo",
-        "CPC Rs 25–180"
+        "CPC typically Rs 25–180"
       ],
       [
-        "TikTok Ads",
+        "Short-form video ads",
         "Rs 40,000/mo",
-        "CPM Rs 70–220"
+        "CPM typically Rs 70–220"
       ],
       [
-        "Radio (30s prime)",
-        "Rs 3,500–18,000/spot",
-        "Hiru/Sirasa premium"
+        "Radio (30s prime spot)",
+        "Rs 3,500–18,000 per spot",
+        "Premium stations sit at the top of the range"
       ],
       [
-        "TV (30s prime)",
-        "Rs 25,000–180,000/spot",
-        "Derana/Sirasa premium"
+        "TV (30s prime spot)",
+        "Rs 25,000–180,000 per spot",
+        "Top private channels sit at the top of the range"
       ],
       [
-        "Billboard Colombo",
+        "Billboards in Colombo",
         "Rs 90,000–350,000/mo",
-        "By size + tier"
+        "Size and visibility tier drive the price"
       ],
       [
-        "SMS bulk",
-        "Rs 0.50–1.20/SMS",
-        "Min 5k volume"
+        "Bulk SMS",
+        "Rs 0.50–1.20 per message",
+        "Volume minimums apply"
       ],
       [
-        "WhatsApp API",
-        "Rs 1.80–4.50/msg",
-        "Plus setup"
+        "WhatsApp Business API",
+        "Rs 1.80–4.50 per message",
+        "Plus one-off setup"
       ]
     ]
   },
   {
     "type": "h2",
-    "text": "What you should actually spend"
+    "text": "How much you should actually spend"
   },
   {
     "type": "ul",
     "items": [
-      "Allocate 5–12% of revenue to marketing if you are growing",
-      "Spend 70% on what works, 20% on testing, 10% on brand",
-      "Never put 100% in a single channel — diversify"
+      "Allocate 5–12% of revenue to marketing if you are actively growing",
+      "Split spend roughly 70% on proven channels, 20% on testing, 10% on long-term brand",
+      "Never put 100% of budget in a single channel — diversify across at least two formats"
     ]
   },
   {
     "type": "callout",
-    "text": "Rate cards in Sri Lanka are almost always negotiable. Experienced agencies typically secure 15–35% off published rates."
+    "text": "Published rate cards in Sri Lanka are almost always negotiable. Experienced buyers routinely secure 15–35% off the headline rate, especially for multi-month commitments."
   }
 ]}
         faqs={[
   {
-    "q": "What is the minimum advertising budget in Sri Lanka?",
-    "a": "You can start meaningful campaigns from Rs 15,000–25,000/month on Meta Ads or WhatsApp."
+    "q": "What is the minimum useful advertising budget in Sri Lanka?",
+    "a": "You can launch meaningful campaigns from around Rs 15,000–25,000/month on social ads or WhatsApp. Below that, you struggle to generate statistically significant data."
   },
   {
     "q": "Is TV still worth it in 2025?",
-    "a": "Yes for mass brands targeting 25+ audiences nationally. Skip TV for niche or B2B."
+    "a": "Yes for mass-market brands targeting 25+ audiences nationally. For niche, B2B or pure-online businesses, digital usually beats TV on ROI."
   },
   {
     "q": "Which channel gives the best ROI?",
-    "a": "For most SMEs: Google Search + Meta retargeting + WhatsApp follow-up."
+    "a": "For most SMEs in Sri Lanka, the highest-ROI combination is paid search + social retargeting + WhatsApp follow-up."
   }
 ]}
         related={[

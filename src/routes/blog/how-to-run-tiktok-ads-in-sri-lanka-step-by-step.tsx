@@ -5,7 +5,7 @@ import { SITE } from "@/data/site";
 
 const SLUG = "blog/how-to-run-tiktok-ads-in-sri-lanka-step-by-step";
 const TITLE = "How to Run TikTok Ads in Sri Lanka — Step-by-Step (2025)";
-const DESC = "Complete TikTok Ads setup guide for Sri Lanka — account creation, pixel install, audience targeting, creative specs, budgets and optimisation.";
+const DESC = "Complete TikTok Ads setup guide for Sri Lanka — account creation, pixel install, audience targeting, creative specs, budgets, bidding and optimisation cycle.";
 
 const PRIMARY_ANCHOR = {
   href: "/tiktok-marketing-sri-lanka",
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/blog/how-to-run-tiktok-ads-in-sri-lanka-s
         publishedISO="2025-04-25"
         category={{ label: "Advertising Insights", href: "/" }}
         primaryAnchor={PRIMARY_ANCHOR}
-        intro="TikTok is now the fastest-growing ad platform in Sri Lanka. Here is exactly how to launch a profitable campaign in under an hour."
+        intro="Short-form video is now the fastest-growing ad platform in Sri Lanka. Here is exactly how to launch a profitable TikTok campaign in under an hour."
         blocks={[
   {
     "type": "h2",
@@ -47,40 +47,40 @@ export const Route = createFileRoute("/blog/how-to-run-tiktok-ads-in-sri-lanka-s
   {
     "type": "ul",
     "items": [
-      "Sign up at ads.tiktok.com (TikTok for Business)",
-      "Select country: Sri Lanka, currency: USD (LKR not yet supported)",
-      "Verify business with BR number + bank statement"
+      "Sign up via the TikTok for Business platform",
+      "Select Sri Lanka as the country; currency will default to USD as LKR is not yet supported",
+      "Verify the business with a registration number and a bank statement"
     ]
   },
   {
     "type": "h2",
-    "text": "Step 2 — Install the TikTok Pixel"
+    "text": "Step 2 — Install the pixel"
   },
   {
     "type": "ul",
     "items": [
-      "Generate pixel in Events Manager",
-      "Install via Google Tag Manager or direct script",
-      "Verify events: PageView, AddToCart, Purchase, Lead"
+      "Generate the pixel in Events Manager",
+      "Install via a tag manager or directly in the site head",
+      "Verify standard events: PageView, AddToCart, Lead and Purchase fire correctly"
     ]
   },
   {
     "type": "h2",
-    "text": "Step 3 — Build creative"
+    "text": "Step 3 — Build native creative"
   },
   {
     "type": "ul",
     "items": [
-      "9:16 vertical, 9–30 seconds",
-      "Hook in first 1.5 seconds — face + bold text",
-      "Native, ugc-style — avoid polished TVCs",
-      "Captions in Sinhala or Tamil for local audiences",
-      "Test 3–5 creatives per ad group"
+      "Shoot 9:16 vertical, 9–30 seconds long",
+      "Hook the viewer in the first 1.5 seconds with a face and bold on-screen text",
+      "Keep it native and UGC-style — polished TVC re-cuts underperform here",
+      "Caption in Sinhala or Tamil for local audience segments",
+      "Always test 3–5 creatives per ad group"
     ]
   },
   {
     "type": "h2",
-    "text": "Step 4 — Targeting & budget"
+    "text": "Step 4 — Targeting and budget"
   },
   {
     "type": "table",
@@ -91,43 +91,43 @@ export const Route = createFileRoute("/blog/how-to-run-tiktok-ads-in-sri-lanka-s
     "rows": [
       [
         "Location",
-        "Sri Lanka (or Western Province only)"
+        "Sri Lanka, or narrow to Western Province for premium tests"
       ],
       [
         "Age",
-        "18–34 broad, 25–44 for premium"
+        "18–34 for broad reach; 25–44 for premium offers"
       ],
       [
-        "Budget",
-        "Min Rs 4,000/day per ad group"
+        "Daily budget",
+        "Minimum around Rs 4,000/day per ad group"
       ],
       [
-        "Bidding",
-        "Lowest cost first 5 days, then cost cap"
+        "Bidding strategy",
+        "Lowest cost for the first 5 days, then cost cap once you have data"
       ]
     ]
   },
   {
     "type": "h2",
-    "text": "Step 5 — Optimise"
+    "text": "Step 5 — Optimise continuously"
   },
   {
     "type": "ul",
     "items": [
-      "Kill creatives below 0.8% CTR after Rs 8,000 spend",
-      "Scale winners 20% every 2 days",
-      "Refresh creative every 10–14 days to fight fatigue"
+      "Pause creatives below 0.8% CTR after roughly Rs 8,000 spend",
+      "Scale winning creatives by 20% every 2 days",
+      "Refresh creative every 10–14 days to fight ad fatigue"
     ]
   }
 ]}
         faqs={[
   {
-    "q": "What's the minimum TikTok ads budget in Sri Lanka?",
-    "a": "Rs 40,000/month gives meaningful data; Rs 100,000+ to scale a winning creative."
+    "q": "What is the minimum TikTok ads budget in Sri Lanka?",
+    "a": "Rs 40,000/month produces meaningful learning data. To meaningfully scale a winning creative, plan for Rs 100,000+/month."
   },
   {
     "q": "Do TikTok ads work for B2B in Sri Lanka?",
-    "a": "Limited — TikTok is best for B2C retail, food, fashion, beauty, services with visual appeal."
+    "a": "Limited. The platform is strongest for B2C — retail, food, fashion, beauty and visually engaging services."
   }
 ]}
         related={[

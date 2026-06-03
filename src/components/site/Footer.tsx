@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
-import { CATEGORIES, FOOTER_RENTALS, SITE } from "@/data/site";
+import { CATEGORIES, FOOTER_RENTALS, FOOTER_PRINTING, SITE } from "@/data/site";
 import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
@@ -34,6 +34,16 @@ export function SiteFooter() {
           <div className="font-semibold mb-3">Event rentals</div>
           <ul className="space-y-2">
             {FOOTER_RENTALS.map((r) => (
+              <li key={r.slug}>
+                <Link to={`/${r.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
+                  {r.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="font-semibold mb-3 mt-6">Printing services</div>
+          <ul className="space-y-2">
+            {FOOTER_PRINTING.map((r) => (
               <li key={r.slug}>
                 <Link to={`/${r.slug}` as never} className="text-primary-foreground/85 hover:text-accent">
                   {r.label}

@@ -778,3 +778,15 @@ export const FOOTER_RENTALS: { slug: string; label: string }[] = [
   { slug: "drone-rental-sri-lanka", label: "Drone Rental" },
   { slug: "tent-marquee-rental-sri-lanka", label: "Tent & Marquee Rental" },
 ];
+
+export const FOOTER_PRINTING: { slug: string; label: string }[] = [
+  { slug: "printing-services-sri-lanka", label: "All Printing Services" },
+  { slug: "banner-printing-sri-lanka", label: "Banner Printing" },
+  { slug: "flex-printing-sri-lanka", label: "Flex Printing" },
+  { slug: "billboard-printing-sri-lanka", label: "Billboard Printing" },
+  { slug: "vehicle-branding-sri-lanka", label: "Vehicle Branding" },
+  { slug: "led-sign-board-sri-lanka", label: "LED Sign Boards" },
+  { slug: "business-card-printing-sri-lanka", label: "Business Card Printing" },
+  { slug: "flag-printing-sri-lanka", label: "Flag Printing" },
+  { slug: "3d-printing-sri-lanka", label: "3D Printing" },
+];

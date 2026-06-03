@@ -368,6 +368,7 @@ import { Route as AcrylicSignBoardSriLankaRouteImport } from './routes/acrylic-s
 import { Route as AcrylicAwardsSriLankaRouteImport } from './routes/acrylic-awards-sri-lanka'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AFrameSignSriLankaRouteImport } from './routes/a-frame-sign-sri-lanka'
+import { Route as R3dPrintingSriLankaRouteImport } from './routes/3d-printing-sri-lanka'
 import { Route as R3dLetterSignSriLankaRouteImport } from './routes/3d-letter-sign-sri-lanka'
 import { Route as R3dAnimationSriLankaRouteImport } from './routes/3d-animation-sri-lanka'
 import { Route as R360PhotoBoothRentalSriLankaRouteImport } from './routes/360-photo-booth-rental-sri-lanka'
@@ -2480,6 +2481,11 @@ const AFrameSignSriLankaRoute = AFrameSignSriLankaRouteImport.update({
   path: '/a-frame-sign-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R3dPrintingSriLankaRoute = R3dPrintingSriLankaRouteImport.update({
+  id: '/3d-printing-sri-lanka',
+  path: '/3d-printing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const R3dLetterSignSriLankaRoute = R3dLetterSignSriLankaRouteImport.update({
   id: '/3d-letter-sign-sri-lanka',
   path: '/3d-letter-sign-sri-lanka',
@@ -3310,6 +3316,7 @@ export interface FileRoutesByFullPath {
   '/360-photo-booth-rental-sri-lanka': typeof R360PhotoBoothRentalSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/3d-letter-sign-sri-lanka': typeof R3dLetterSignSriLankaRoute
+  '/3d-printing-sri-lanka': typeof R3dPrintingSriLankaRoute
   '/a-frame-sign-sri-lanka': typeof AFrameSignSriLankaRoute
   '/about': typeof AboutRoute
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
@@ -3811,6 +3818,7 @@ export interface FileRoutesByTo {
   '/360-photo-booth-rental-sri-lanka': typeof R360PhotoBoothRentalSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/3d-letter-sign-sri-lanka': typeof R3dLetterSignSriLankaRoute
+  '/3d-printing-sri-lanka': typeof R3dPrintingSriLankaRoute
   '/a-frame-sign-sri-lanka': typeof AFrameSignSriLankaRoute
   '/about': typeof AboutRoute
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
@@ -4313,6 +4321,7 @@ export interface FileRoutesById {
   '/360-photo-booth-rental-sri-lanka': typeof R360PhotoBoothRentalSriLankaRoute
   '/3d-animation-sri-lanka': typeof R3dAnimationSriLankaRoute
   '/3d-letter-sign-sri-lanka': typeof R3dLetterSignSriLankaRoute
+  '/3d-printing-sri-lanka': typeof R3dPrintingSriLankaRoute
   '/a-frame-sign-sri-lanka': typeof AFrameSignSriLankaRoute
   '/about': typeof AboutRoute
   '/acrylic-awards-sri-lanka': typeof AcrylicAwardsSriLankaRoute
@@ -4816,6 +4825,7 @@ export interface FileRouteTypes {
     | '/360-photo-booth-rental-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/3d-letter-sign-sri-lanka'
+    | '/3d-printing-sri-lanka'
     | '/a-frame-sign-sri-lanka'
     | '/about'
     | '/acrylic-awards-sri-lanka'
@@ -5317,6 +5327,7 @@ export interface FileRouteTypes {
     | '/360-photo-booth-rental-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/3d-letter-sign-sri-lanka'
+    | '/3d-printing-sri-lanka'
     | '/a-frame-sign-sri-lanka'
     | '/about'
     | '/acrylic-awards-sri-lanka'
@@ -5818,6 +5829,7 @@ export interface FileRouteTypes {
     | '/360-photo-booth-rental-sri-lanka'
     | '/3d-animation-sri-lanka'
     | '/3d-letter-sign-sri-lanka'
+    | '/3d-printing-sri-lanka'
     | '/a-frame-sign-sri-lanka'
     | '/about'
     | '/acrylic-awards-sri-lanka'
@@ -6320,6 +6332,7 @@ export interface RootRouteChildren {
   R360PhotoBoothRentalSriLankaRoute: typeof R360PhotoBoothRentalSriLankaRoute
   R3dAnimationSriLankaRoute: typeof R3dAnimationSriLankaRoute
   R3dLetterSignSriLankaRoute: typeof R3dLetterSignSriLankaRoute
+  R3dPrintingSriLankaRoute: typeof R3dPrintingSriLankaRoute
   AFrameSignSriLankaRoute: typeof AFrameSignSriLankaRoute
   AboutRoute: typeof AboutRoute
   AcrylicAwardsSriLankaRoute: typeof AcrylicAwardsSriLankaRoute
@@ -9329,6 +9342,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AFrameSignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/3d-printing-sri-lanka': {
+      id: '/3d-printing-sri-lanka'
+      path: '/3d-printing-sri-lanka'
+      fullPath: '/3d-printing-sri-lanka'
+      preLoaderRoute: typeof R3dPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/3d-letter-sign-sri-lanka': {
       id: '/3d-letter-sign-sri-lanka'
       path: '/3d-letter-sign-sri-lanka'
@@ -10320,6 +10340,7 @@ const rootRouteChildren: RootRouteChildren = {
   R360PhotoBoothRentalSriLankaRoute: R360PhotoBoothRentalSriLankaRoute,
   R3dAnimationSriLankaRoute: R3dAnimationSriLankaRoute,
   R3dLetterSignSriLankaRoute: R3dLetterSignSriLankaRoute,
+  R3dPrintingSriLankaRoute: R3dPrintingSriLankaRoute,
   AFrameSignSriLankaRoute: AFrameSignSriLankaRoute,
   AboutRoute: AboutRoute,
   AcrylicAwardsSriLankaRoute: AcrylicAwardsSriLankaRoute,

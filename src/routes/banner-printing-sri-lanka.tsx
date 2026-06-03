@@ -30,8 +30,6 @@ export const Route = createFileRoute("/banner-printing-sri-lanka")({
           { href: "/fabric-banner-printing-sri-lanka", label: "Fabric banner printing", anchor: "fabric banner" },
           { href: "/mesh-banner-printing-sri-lanka", label: "Mesh banner printing", anchor: "mesh banner" },
           { href: "/popup-banner-printing-sri-lanka", label: "Popup banner printing", anchor: "popup banner" },
-          { href: "/vinyl-banner-printing-sri-lanka", label: "Vinyl banner printing", anchor: "vinyl banner" },
-          { href: "/flex-banner-printing-sri-lanka", label: "Flex banner printing", anchor: "flex banner" },
           { href: "/trade-show-banner-printing-sri-lanka", label: "Trade show banner printing", anchor: "trade show" },
           { href: "/exhibition-banner-printing-sri-lanka", label: "Exhibition banner printing", anchor: "exhibition" },
           { href: "/backdrop-printing-sri-lanka", label: "Backdrop printing", anchor: "backdrop" },

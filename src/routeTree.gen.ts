@@ -55,12 +55,14 @@ import { Route as TentMarqueeRentalSriLankaRouteImport } from './routes/tent-mar
 import { Route as TechnicalSeoSriLankaRouteImport } from './routes/technical-seo-sri-lanka'
 import { Route as TableChairRentalSriLankaRouteImport } from './routes/table-chair-rental-sri-lanka'
 import { Route as TShirtPrintingSriLankaRouteImport } from './routes/t-shirt-printing-sri-lanka'
+import { Route as StreetFurnitureAdvertisingSriLankaRouteImport } from './routes/street-furniture-advertising-sri-lanka'
 import { Route as StickerPrintingSriLankaRouteImport } from './routes/sticker-printing-sri-lanka'
 import { Route as StageSetupSriLankaRouteImport } from './routes/stage-setup-sri-lanka'
 import { Route as StageRentalSriLankaRouteImport } from './routes/stage-rental-sri-lanka'
 import { Route as StageBrandingSriLankaRouteImport } from './routes/stage-branding-sri-lanka'
 import { Route as StageBackdropPrintingSriLankaRouteImport } from './routes/stage-backdrop-printing-sri-lanka'
 import { Route as SpotUvPrintingSriLankaRouteImport } from './routes/spot-uv-printing-sri-lanka'
+import { Route as SponsorshipAdvertisingSriLankaRouteImport } from './routes/sponsorship-advertising-sri-lanka'
 import { Route as SoundSystemRentalSriLankaRouteImport } from './routes/sound-system-rental-sri-lanka'
 import { Route as SocialMediaMarketingSriLankaRouteImport } from './routes/social-media-marketing-sri-lanka'
 import { Route as SocialMediaManagementSriLankaRouteImport } from './routes/social-media-management-sri-lanka'
@@ -84,9 +86,11 @@ import { Route as RoadshowMarketingSriLankaRouteImport } from './routes/roadshow
 import { Route as RetailBrandingSriLankaRouteImport } from './routes/retail-branding-sri-lanka'
 import { Route as ReputationManagementSriLankaRouteImport } from './routes/reputation-management-sri-lanka'
 import { Route as RemarketingSriLankaRouteImport } from './routes/remarketing-sri-lanka'
+import { Route as ReferralMarketingSriLankaRouteImport } from './routes/referral-marketing-sri-lanka'
 import { Route as RadioAdvertisingSriLankaRouteImport } from './routes/radio-advertising-sri-lanka'
 import { Route as PyrotechnicsSriLankaRouteImport } from './routes/pyrotechnics-sri-lanka'
 import { Route as PylonSignSriLankaRouteImport } from './routes/pylon-sign-sri-lanka'
+import { Route as PushNotificationAdvertisingSriLankaRouteImport } from './routes/push-notification-advertising-sri-lanka'
 import { Route as PromotionalProductsSriLankaRouteImport } from './routes/promotional-products-sri-lanka'
 import { Route as PromotionalItemsSriLankaRouteImport } from './routes/promotional-items-sri-lanka'
 import { Route as ProjectorRentalSriLankaRouteImport } from './routes/projector-rental-sri-lanka'
@@ -102,6 +106,7 @@ import { Route as PosterPrintingSriLankaRouteImport } from './routes/poster-prin
 import { Route as PopupBannerPrintingSriLankaRouteImport } from './routes/popup-banner-printing-sri-lanka'
 import { Route as PoloShirtPrintingSriLankaRouteImport } from './routes/polo-shirt-printing-sri-lanka'
 import { Route as PointOfSaleAdvertisingSriLankaRouteImport } from './routes/point-of-sale-advertising-sri-lanka'
+import { Route as PodcastAdvertisingSriLankaRouteImport } from './routes/podcast-advertising-sri-lanka'
 import { Route as PlaquePrintingSriLankaRouteImport } from './routes/plaque-printing-sri-lanka'
 import { Route as PhotographySriLankaRouteImport } from './routes/photography-sri-lanka'
 import { Route as PhotoBoothRentalSriLankaRouteImport } from './routes/photo-booth-rental-sri-lanka'
@@ -118,11 +123,13 @@ import { Route as NotebookPrintingSriLankaRouteImport } from './routes/notebook-
 import { Route as NewspaperAdvertisingSriLankaRouteImport } from './routes/newspaper-advertising-sri-lanka'
 import { Route as NeonSignRentalSriLankaRouteImport } from './routes/neon-sign-rental-sri-lanka'
 import { Route as NeonSignPrintingSriLankaRouteImport } from './routes/neon-sign-printing-sri-lanka'
+import { Route as NativeAdvertisingSriLankaRouteImport } from './routes/native-advertising-sri-lanka'
 import { Route as MultiChannelAdvertisingSriLankaRouteImport } from './routes/multi-channel-advertising-sri-lanka'
 import { Route as MugPrintingSriLankaRouteImport } from './routes/mug-printing-sri-lanka'
 import { Route as MotorcycleBrandingSriLankaRouteImport } from './routes/motorcycle-branding-sri-lanka'
 import { Route as MotionGraphicsSriLankaRouteImport } from './routes/motion-graphics-sri-lanka'
 import { Route as MobileBillboardSriLankaRouteImport } from './routes/mobile-billboard-sri-lanka'
+import { Route as MobileAppAdvertisingSriLankaRouteImport } from './routes/mobile-app-advertising-sri-lanka'
 import { Route as MeshBannerPrintingSriLankaRouteImport } from './routes/mesh-banner-printing-sri-lanka'
 import { Route as MenuPrintingSriLankaRouteImport } from './routes/menu-printing-sri-lanka'
 import { Route as MediaPlanningSriLankaRouteImport } from './routes/media-planning-sri-lanka'
@@ -148,6 +155,7 @@ import { Route as LedVideoWallSriLankaRouteImport } from './routes/led-video-wal
 import { Route as LedSignBoardSriLankaRouteImport } from './routes/led-sign-board-sri-lanka'
 import { Route as LedScreenRentalSriLankaRouteImport } from './routes/led-screen-rental-sri-lanka'
 import { Route as LedScreenAdvertisingSriLankaRouteImport } from './routes/led-screen-advertising-sri-lanka'
+import { Route as LeafletDistributionSriLankaRouteImport } from './routes/leaflet-distribution-sri-lanka'
 import { Route as LeadGenerationSriLankaRouteImport } from './routes/lead-generation-sri-lanka'
 import { Route as LaunchEventGiftsSriLankaRouteImport } from './routes/launch-event-gifts-sri-lanka'
 import { Route as LargeFormatPrintingSriLankaRouteImport } from './routes/large-format-printing-sri-lanka'
@@ -269,7 +277,9 @@ import { Route as CompanyProfileDesignSriLankaRouteImport } from './routes/compa
 import { Route as CommercialVideoSriLankaRouteImport } from './routes/commercial-video-sri-lanka'
 import { Route as ColdSparkMachineRentalSriLankaRouteImport } from './routes/cold-spark-machine-rental-sri-lanka'
 import { Route as ClientAppreciationGiftsSriLankaRouteImport } from './routes/client-appreciation-gifts-sri-lanka'
+import { Route as CinemaSlideAdsSriLankaRouteImport } from './routes/cinema-slide-ads-sri-lanka'
 import { Route as CinemaAdvertisingSriLankaRouteImport } from './routes/cinema-advertising-sri-lanka'
+import { Route as ChatbotMarketingSriLankaRouteImport } from './routes/chatbot-marketing-sri-lanka'
 import { Route as CharityEventsSriLankaRouteImport } from './routes/charity-events-sri-lanka'
 import { Route as CertificatePrintingSriLankaRouteImport } from './routes/certificate-printing-sri-lanka'
 import { Route as CeilingGraphicsSriLankaRouteImport } from './routes/ceiling-graphics-sri-lanka'
@@ -310,6 +320,8 @@ import { Route as AtlAdvertisingSriLankaRouteImport } from './routes/atl-adverti
 import { Route as ApronPrintingSriLankaRouteImport } from './routes/apron-printing-sri-lanka'
 import { Route as AnnualReportPrintingSriLankaRouteImport } from './routes/annual-report-printing-sri-lanka'
 import { Route as AnimationSriLankaRouteImport } from './routes/animation-sri-lanka'
+import { Route as AirportAdvertisingSriLankaRouteImport } from './routes/airport-advertising-sri-lanka'
+import { Route as AffiliateMarketingSriLankaRouteImport } from './routes/affiliate-marketing-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
 import { Route as AdvertisingInNegomboRouteImport } from './routes/advertising-in-negombo'
@@ -701,6 +713,12 @@ const TShirtPrintingSriLankaRoute = TShirtPrintingSriLankaRouteImport.update({
   path: '/t-shirt-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StreetFurnitureAdvertisingSriLankaRoute =
+  StreetFurnitureAdvertisingSriLankaRouteImport.update({
+    id: '/street-furniture-advertising-sri-lanka',
+    path: '/street-furniture-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const StickerPrintingSriLankaRoute = StickerPrintingSriLankaRouteImport.update({
   id: '/sticker-printing-sri-lanka',
   path: '/sticker-printing-sri-lanka',
@@ -732,6 +750,12 @@ const SpotUvPrintingSriLankaRoute = SpotUvPrintingSriLankaRouteImport.update({
   path: '/spot-uv-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SponsorshipAdvertisingSriLankaRoute =
+  SponsorshipAdvertisingSriLankaRouteImport.update({
+    id: '/sponsorship-advertising-sri-lanka',
+    path: '/sponsorship-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SoundSystemRentalSriLankaRoute =
   SoundSystemRentalSriLankaRouteImport.update({
     id: '/sound-system-rental-sri-lanka',
@@ -859,6 +883,12 @@ const RemarketingSriLankaRoute = RemarketingSriLankaRouteImport.update({
   path: '/remarketing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReferralMarketingSriLankaRoute =
+  ReferralMarketingSriLankaRouteImport.update({
+    id: '/referral-marketing-sri-lanka',
+    path: '/referral-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const RadioAdvertisingSriLankaRoute =
   RadioAdvertisingSriLankaRouteImport.update({
     id: '/radio-advertising-sri-lanka',
@@ -875,6 +905,12 @@ const PylonSignSriLankaRoute = PylonSignSriLankaRouteImport.update({
   path: '/pylon-sign-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PushNotificationAdvertisingSriLankaRoute =
+  PushNotificationAdvertisingSriLankaRouteImport.update({
+    id: '/push-notification-advertising-sri-lanka',
+    path: '/push-notification-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const PromotionalProductsSriLankaRoute =
   PromotionalProductsSriLankaRouteImport.update({
     id: '/promotional-products-sri-lanka',
@@ -958,6 +994,12 @@ const PointOfSaleAdvertisingSriLankaRoute =
   PointOfSaleAdvertisingSriLankaRouteImport.update({
     id: '/point-of-sale-advertising-sri-lanka',
     path: '/point-of-sale-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PodcastAdvertisingSriLankaRoute =
+  PodcastAdvertisingSriLankaRouteImport.update({
+    id: '/podcast-advertising-sri-lanka',
+    path: '/podcast-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const PlaquePrintingSriLankaRoute = PlaquePrintingSriLankaRouteImport.update({
@@ -1049,6 +1091,12 @@ const NeonSignPrintingSriLankaRoute =
     path: '/neon-sign-printing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NativeAdvertisingSriLankaRoute =
+  NativeAdvertisingSriLankaRouteImport.update({
+    id: '/native-advertising-sri-lanka',
+    path: '/native-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MultiChannelAdvertisingSriLankaRoute =
   MultiChannelAdvertisingSriLankaRouteImport.update({
     id: '/multi-channel-advertising-sri-lanka',
@@ -1076,6 +1124,12 @@ const MobileBillboardSriLankaRoute = MobileBillboardSriLankaRouteImport.update({
   path: '/mobile-billboard-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MobileAppAdvertisingSriLankaRoute =
+  MobileAppAdvertisingSriLankaRouteImport.update({
+    id: '/mobile-app-advertising-sri-lanka',
+    path: '/mobile-app-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MeshBannerPrintingSriLankaRoute =
   MeshBannerPrintingSriLankaRouteImport.update({
     id: '/mesh-banner-printing-sri-lanka',
@@ -1206,6 +1260,12 @@ const LedScreenAdvertisingSriLankaRoute =
   LedScreenAdvertisingSriLankaRouteImport.update({
     id: '/led-screen-advertising-sri-lanka',
     path: '/led-screen-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LeafletDistributionSriLankaRoute =
+  LeafletDistributionSriLankaRouteImport.update({
+    id: '/leaflet-distribution-sri-lanka',
+    path: '/leaflet-distribution-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const LeadGenerationSriLankaRoute = LeadGenerationSriLankaRouteImport.update({
@@ -1877,10 +1937,21 @@ const ClientAppreciationGiftsSriLankaRoute =
     path: '/client-appreciation-gifts-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const CinemaSlideAdsSriLankaRoute = CinemaSlideAdsSriLankaRouteImport.update({
+  id: '/cinema-slide-ads-sri-lanka',
+  path: '/cinema-slide-ads-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CinemaAdvertisingSriLankaRoute =
   CinemaAdvertisingSriLankaRouteImport.update({
     id: '/cinema-advertising-sri-lanka',
     path: '/cinema-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ChatbotMarketingSriLankaRoute =
+  ChatbotMarketingSriLankaRouteImport.update({
+    id: '/chatbot-marketing-sri-lanka',
+    path: '/chatbot-marketing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const CharityEventsSriLankaRoute = CharityEventsSriLankaRouteImport.update({
@@ -2099,6 +2170,18 @@ const AnimationSriLankaRoute = AnimationSriLankaRouteImport.update({
   path: '/animation-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AirportAdvertisingSriLankaRoute =
+  AirportAdvertisingSriLankaRouteImport.update({
+    id: '/airport-advertising-sri-lanka',
+    path: '/airport-advertising-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AffiliateMarketingSriLankaRoute =
+  AffiliateMarketingSriLankaRouteImport.update({
+    id: '/affiliate-marketing-sri-lanka',
+    path: '/affiliate-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdvertisingRatesRoute = AdvertisingRatesRouteImport.update({
   id: '/advertising-rates',
   path: '/advertising-rates',
@@ -2948,6 +3031,8 @@ export interface FileRoutesByFullPath {
   '/advertising-in-negombo': typeof AdvertisingInNegomboRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
+  '/airport-advertising-sri-lanka': typeof AirportAdvertisingSriLankaRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/annual-report-printing-sri-lanka': typeof AnnualReportPrintingSriLankaRoute
   '/apron-printing-sri-lanka': typeof ApronPrintingSriLankaRoute
@@ -2988,7 +3073,9 @@ export interface FileRoutesByFullPath {
   '/ceiling-graphics-sri-lanka': typeof CeilingGraphicsSriLankaRoute
   '/certificate-printing-sri-lanka': typeof CertificatePrintingSriLankaRoute
   '/charity-events-sri-lanka': typeof CharityEventsSriLankaRoute
+  '/chatbot-marketing-sri-lanka': typeof ChatbotMarketingSriLankaRoute
   '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/cinema-slide-ads-sri-lanka': typeof CinemaSlideAdsSriLankaRoute
   '/client-appreciation-gifts-sri-lanka': typeof ClientAppreciationGiftsSriLankaRoute
   '/cold-spark-machine-rental-sri-lanka': typeof ColdSparkMachineRentalSriLankaRoute
   '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
@@ -3110,6 +3197,7 @@ export interface FileRoutesByFullPath {
   '/large-format-printing-sri-lanka': typeof LargeFormatPrintingSriLankaRoute
   '/launch-event-gifts-sri-lanka': typeof LaunchEventGiftsSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
+  '/leaflet-distribution-sri-lanka': typeof LeafletDistributionSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
   '/led-sign-board-sri-lanka': typeof LedSignBoardSriLankaRoute
@@ -3135,11 +3223,13 @@ export interface FileRoutesByFullPath {
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
+  '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/motorcycle-branding-sri-lanka': typeof MotorcycleBrandingSriLankaRoute
   '/mug-printing-sri-lanka': typeof MugPrintingSriLankaRoute
   '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/native-advertising-sri-lanka': typeof NativeAdvertisingSriLankaRoute
   '/neon-sign-printing-sri-lanka': typeof NeonSignPrintingSriLankaRoute
   '/neon-sign-rental-sri-lanka': typeof NeonSignRentalSriLankaRoute
   '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
@@ -3156,6 +3246,7 @@ export interface FileRoutesByFullPath {
   '/photo-booth-rental-sri-lanka': typeof PhotoBoothRentalSriLankaRoute
   '/photography-sri-lanka': typeof PhotographySriLankaRoute
   '/plaque-printing-sri-lanka': typeof PlaquePrintingSriLankaRoute
+  '/podcast-advertising-sri-lanka': typeof PodcastAdvertisingSriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
@@ -3171,9 +3262,11 @@ export interface FileRoutesByFullPath {
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
   '/promotional-items-sri-lanka': typeof PromotionalItemsSriLankaRoute
   '/promotional-products-sri-lanka': typeof PromotionalProductsSriLankaRoute
+  '/push-notification-advertising-sri-lanka': typeof PushNotificationAdvertisingSriLankaRoute
   '/pylon-sign-sri-lanka': typeof PylonSignSriLankaRoute
   '/pyrotechnics-sri-lanka': typeof PyrotechnicsSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
+  '/referral-marketing-sri-lanka': typeof ReferralMarketingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
@@ -3197,12 +3290,14 @@ export interface FileRoutesByFullPath {
   '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
   '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
   '/sound-system-rental-sri-lanka': typeof SoundSystemRentalSriLankaRoute
+  '/sponsorship-advertising-sri-lanka': typeof SponsorshipAdvertisingSriLankaRoute
   '/spot-uv-printing-sri-lanka': typeof SpotUvPrintingSriLankaRoute
   '/stage-backdrop-printing-sri-lanka': typeof StageBackdropPrintingSriLankaRoute
   '/stage-branding-sri-lanka': typeof StageBrandingSriLankaRoute
   '/stage-rental-sri-lanka': typeof StageRentalSriLankaRoute
   '/stage-setup-sri-lanka': typeof StageSetupSriLankaRoute
   '/sticker-printing-sri-lanka': typeof StickerPrintingSriLankaRoute
+  '/street-furniture-advertising-sri-lanka': typeof StreetFurnitureAdvertisingSriLankaRoute
   '/t-shirt-printing-sri-lanka': typeof TShirtPrintingSriLankaRoute
   '/table-chair-rental-sri-lanka': typeof TableChairRentalSriLankaRoute
   '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
@@ -3394,6 +3489,8 @@ export interface FileRoutesByTo {
   '/advertising-in-negombo': typeof AdvertisingInNegomboRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
+  '/airport-advertising-sri-lanka': typeof AirportAdvertisingSriLankaRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/annual-report-printing-sri-lanka': typeof AnnualReportPrintingSriLankaRoute
   '/apron-printing-sri-lanka': typeof ApronPrintingSriLankaRoute
@@ -3434,7 +3531,9 @@ export interface FileRoutesByTo {
   '/ceiling-graphics-sri-lanka': typeof CeilingGraphicsSriLankaRoute
   '/certificate-printing-sri-lanka': typeof CertificatePrintingSriLankaRoute
   '/charity-events-sri-lanka': typeof CharityEventsSriLankaRoute
+  '/chatbot-marketing-sri-lanka': typeof ChatbotMarketingSriLankaRoute
   '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/cinema-slide-ads-sri-lanka': typeof CinemaSlideAdsSriLankaRoute
   '/client-appreciation-gifts-sri-lanka': typeof ClientAppreciationGiftsSriLankaRoute
   '/cold-spark-machine-rental-sri-lanka': typeof ColdSparkMachineRentalSriLankaRoute
   '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
@@ -3556,6 +3655,7 @@ export interface FileRoutesByTo {
   '/large-format-printing-sri-lanka': typeof LargeFormatPrintingSriLankaRoute
   '/launch-event-gifts-sri-lanka': typeof LaunchEventGiftsSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
+  '/leaflet-distribution-sri-lanka': typeof LeafletDistributionSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
   '/led-sign-board-sri-lanka': typeof LedSignBoardSriLankaRoute
@@ -3581,11 +3681,13 @@ export interface FileRoutesByTo {
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
+  '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/motorcycle-branding-sri-lanka': typeof MotorcycleBrandingSriLankaRoute
   '/mug-printing-sri-lanka': typeof MugPrintingSriLankaRoute
   '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/native-advertising-sri-lanka': typeof NativeAdvertisingSriLankaRoute
   '/neon-sign-printing-sri-lanka': typeof NeonSignPrintingSriLankaRoute
   '/neon-sign-rental-sri-lanka': typeof NeonSignRentalSriLankaRoute
   '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
@@ -3602,6 +3704,7 @@ export interface FileRoutesByTo {
   '/photo-booth-rental-sri-lanka': typeof PhotoBoothRentalSriLankaRoute
   '/photography-sri-lanka': typeof PhotographySriLankaRoute
   '/plaque-printing-sri-lanka': typeof PlaquePrintingSriLankaRoute
+  '/podcast-advertising-sri-lanka': typeof PodcastAdvertisingSriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
@@ -3617,9 +3720,11 @@ export interface FileRoutesByTo {
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
   '/promotional-items-sri-lanka': typeof PromotionalItemsSriLankaRoute
   '/promotional-products-sri-lanka': typeof PromotionalProductsSriLankaRoute
+  '/push-notification-advertising-sri-lanka': typeof PushNotificationAdvertisingSriLankaRoute
   '/pylon-sign-sri-lanka': typeof PylonSignSriLankaRoute
   '/pyrotechnics-sri-lanka': typeof PyrotechnicsSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
+  '/referral-marketing-sri-lanka': typeof ReferralMarketingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
@@ -3643,12 +3748,14 @@ export interface FileRoutesByTo {
   '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
   '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
   '/sound-system-rental-sri-lanka': typeof SoundSystemRentalSriLankaRoute
+  '/sponsorship-advertising-sri-lanka': typeof SponsorshipAdvertisingSriLankaRoute
   '/spot-uv-printing-sri-lanka': typeof SpotUvPrintingSriLankaRoute
   '/stage-backdrop-printing-sri-lanka': typeof StageBackdropPrintingSriLankaRoute
   '/stage-branding-sri-lanka': typeof StageBrandingSriLankaRoute
   '/stage-rental-sri-lanka': typeof StageRentalSriLankaRoute
   '/stage-setup-sri-lanka': typeof StageSetupSriLankaRoute
   '/sticker-printing-sri-lanka': typeof StickerPrintingSriLankaRoute
+  '/street-furniture-advertising-sri-lanka': typeof StreetFurnitureAdvertisingSriLankaRoute
   '/t-shirt-printing-sri-lanka': typeof TShirtPrintingSriLankaRoute
   '/table-chair-rental-sri-lanka': typeof TableChairRentalSriLankaRoute
   '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
@@ -3841,6 +3948,8 @@ export interface FileRoutesById {
   '/advertising-in-negombo': typeof AdvertisingInNegomboRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
+  '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
+  '/airport-advertising-sri-lanka': typeof AirportAdvertisingSriLankaRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/annual-report-printing-sri-lanka': typeof AnnualReportPrintingSriLankaRoute
   '/apron-printing-sri-lanka': typeof ApronPrintingSriLankaRoute
@@ -3881,7 +3990,9 @@ export interface FileRoutesById {
   '/ceiling-graphics-sri-lanka': typeof CeilingGraphicsSriLankaRoute
   '/certificate-printing-sri-lanka': typeof CertificatePrintingSriLankaRoute
   '/charity-events-sri-lanka': typeof CharityEventsSriLankaRoute
+  '/chatbot-marketing-sri-lanka': typeof ChatbotMarketingSriLankaRoute
   '/cinema-advertising-sri-lanka': typeof CinemaAdvertisingSriLankaRoute
+  '/cinema-slide-ads-sri-lanka': typeof CinemaSlideAdsSriLankaRoute
   '/client-appreciation-gifts-sri-lanka': typeof ClientAppreciationGiftsSriLankaRoute
   '/cold-spark-machine-rental-sri-lanka': typeof ColdSparkMachineRentalSriLankaRoute
   '/commercial-video-sri-lanka': typeof CommercialVideoSriLankaRoute
@@ -4003,6 +4114,7 @@ export interface FileRoutesById {
   '/large-format-printing-sri-lanka': typeof LargeFormatPrintingSriLankaRoute
   '/launch-event-gifts-sri-lanka': typeof LaunchEventGiftsSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
+  '/leaflet-distribution-sri-lanka': typeof LeafletDistributionSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
   '/led-screen-rental-sri-lanka': typeof LedScreenRentalSriLankaRoute
   '/led-sign-board-sri-lanka': typeof LedSignBoardSriLankaRoute
@@ -4028,11 +4140,13 @@ export interface FileRoutesById {
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
+  '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/motorcycle-branding-sri-lanka': typeof MotorcycleBrandingSriLankaRoute
   '/mug-printing-sri-lanka': typeof MugPrintingSriLankaRoute
   '/multi-channel-advertising-sri-lanka': typeof MultiChannelAdvertisingSriLankaRoute
+  '/native-advertising-sri-lanka': typeof NativeAdvertisingSriLankaRoute
   '/neon-sign-printing-sri-lanka': typeof NeonSignPrintingSriLankaRoute
   '/neon-sign-rental-sri-lanka': typeof NeonSignRentalSriLankaRoute
   '/newspaper-advertising-sri-lanka': typeof NewspaperAdvertisingSriLankaRoute
@@ -4049,6 +4163,7 @@ export interface FileRoutesById {
   '/photo-booth-rental-sri-lanka': typeof PhotoBoothRentalSriLankaRoute
   '/photography-sri-lanka': typeof PhotographySriLankaRoute
   '/plaque-printing-sri-lanka': typeof PlaquePrintingSriLankaRoute
+  '/podcast-advertising-sri-lanka': typeof PodcastAdvertisingSriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
@@ -4064,9 +4179,11 @@ export interface FileRoutesById {
   '/projector-rental-sri-lanka': typeof ProjectorRentalSriLankaRoute
   '/promotional-items-sri-lanka': typeof PromotionalItemsSriLankaRoute
   '/promotional-products-sri-lanka': typeof PromotionalProductsSriLankaRoute
+  '/push-notification-advertising-sri-lanka': typeof PushNotificationAdvertisingSriLankaRoute
   '/pylon-sign-sri-lanka': typeof PylonSignSriLankaRoute
   '/pyrotechnics-sri-lanka': typeof PyrotechnicsSriLankaRoute
   '/radio-advertising-sri-lanka': typeof RadioAdvertisingSriLankaRoute
+  '/referral-marketing-sri-lanka': typeof ReferralMarketingSriLankaRoute
   '/remarketing-sri-lanka': typeof RemarketingSriLankaRoute
   '/reputation-management-sri-lanka': typeof ReputationManagementSriLankaRoute
   '/retail-branding-sri-lanka': typeof RetailBrandingSriLankaRoute
@@ -4090,12 +4207,14 @@ export interface FileRoutesById {
   '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
   '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
   '/sound-system-rental-sri-lanka': typeof SoundSystemRentalSriLankaRoute
+  '/sponsorship-advertising-sri-lanka': typeof SponsorshipAdvertisingSriLankaRoute
   '/spot-uv-printing-sri-lanka': typeof SpotUvPrintingSriLankaRoute
   '/stage-backdrop-printing-sri-lanka': typeof StageBackdropPrintingSriLankaRoute
   '/stage-branding-sri-lanka': typeof StageBrandingSriLankaRoute
   '/stage-rental-sri-lanka': typeof StageRentalSriLankaRoute
   '/stage-setup-sri-lanka': typeof StageSetupSriLankaRoute
   '/sticker-printing-sri-lanka': typeof StickerPrintingSriLankaRoute
+  '/street-furniture-advertising-sri-lanka': typeof StreetFurnitureAdvertisingSriLankaRoute
   '/t-shirt-printing-sri-lanka': typeof TShirtPrintingSriLankaRoute
   '/table-chair-rental-sri-lanka': typeof TableChairRentalSriLankaRoute
   '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
@@ -4289,6 +4408,8 @@ export interface FileRouteTypes {
     | '/advertising-in-negombo'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/affiliate-marketing-sri-lanka'
+    | '/airport-advertising-sri-lanka'
     | '/animation-sri-lanka'
     | '/annual-report-printing-sri-lanka'
     | '/apron-printing-sri-lanka'
@@ -4329,7 +4450,9 @@ export interface FileRouteTypes {
     | '/ceiling-graphics-sri-lanka'
     | '/certificate-printing-sri-lanka'
     | '/charity-events-sri-lanka'
+    | '/chatbot-marketing-sri-lanka'
     | '/cinema-advertising-sri-lanka'
+    | '/cinema-slide-ads-sri-lanka'
     | '/client-appreciation-gifts-sri-lanka'
     | '/cold-spark-machine-rental-sri-lanka'
     | '/commercial-video-sri-lanka'
@@ -4451,6 +4574,7 @@ export interface FileRouteTypes {
     | '/large-format-printing-sri-lanka'
     | '/launch-event-gifts-sri-lanka'
     | '/lead-generation-sri-lanka'
+    | '/leaflet-distribution-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
     | '/led-sign-board-sri-lanka'
@@ -4476,11 +4600,13 @@ export interface FileRouteTypes {
     | '/media-planning-sri-lanka'
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
+    | '/mobile-app-advertising-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/motorcycle-branding-sri-lanka'
     | '/mug-printing-sri-lanka'
     | '/multi-channel-advertising-sri-lanka'
+    | '/native-advertising-sri-lanka'
     | '/neon-sign-printing-sri-lanka'
     | '/neon-sign-rental-sri-lanka'
     | '/newspaper-advertising-sri-lanka'
@@ -4497,6 +4623,7 @@ export interface FileRouteTypes {
     | '/photo-booth-rental-sri-lanka'
     | '/photography-sri-lanka'
     | '/plaque-printing-sri-lanka'
+    | '/podcast-advertising-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
@@ -4512,9 +4639,11 @@ export interface FileRouteTypes {
     | '/projector-rental-sri-lanka'
     | '/promotional-items-sri-lanka'
     | '/promotional-products-sri-lanka'
+    | '/push-notification-advertising-sri-lanka'
     | '/pylon-sign-sri-lanka'
     | '/pyrotechnics-sri-lanka'
     | '/radio-advertising-sri-lanka'
+    | '/referral-marketing-sri-lanka'
     | '/remarketing-sri-lanka'
     | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
@@ -4538,12 +4667,14 @@ export interface FileRouteTypes {
     | '/social-media-management-sri-lanka'
     | '/social-media-marketing-sri-lanka'
     | '/sound-system-rental-sri-lanka'
+    | '/sponsorship-advertising-sri-lanka'
     | '/spot-uv-printing-sri-lanka'
     | '/stage-backdrop-printing-sri-lanka'
     | '/stage-branding-sri-lanka'
     | '/stage-rental-sri-lanka'
     | '/stage-setup-sri-lanka'
     | '/sticker-printing-sri-lanka'
+    | '/street-furniture-advertising-sri-lanka'
     | '/t-shirt-printing-sri-lanka'
     | '/table-chair-rental-sri-lanka'
     | '/technical-seo-sri-lanka'
@@ -4735,6 +4866,8 @@ export interface FileRouteTypes {
     | '/advertising-in-negombo'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/affiliate-marketing-sri-lanka'
+    | '/airport-advertising-sri-lanka'
     | '/animation-sri-lanka'
     | '/annual-report-printing-sri-lanka'
     | '/apron-printing-sri-lanka'
@@ -4775,7 +4908,9 @@ export interface FileRouteTypes {
     | '/ceiling-graphics-sri-lanka'
     | '/certificate-printing-sri-lanka'
     | '/charity-events-sri-lanka'
+    | '/chatbot-marketing-sri-lanka'
     | '/cinema-advertising-sri-lanka'
+    | '/cinema-slide-ads-sri-lanka'
     | '/client-appreciation-gifts-sri-lanka'
     | '/cold-spark-machine-rental-sri-lanka'
     | '/commercial-video-sri-lanka'
@@ -4897,6 +5032,7 @@ export interface FileRouteTypes {
     | '/large-format-printing-sri-lanka'
     | '/launch-event-gifts-sri-lanka'
     | '/lead-generation-sri-lanka'
+    | '/leaflet-distribution-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
     | '/led-sign-board-sri-lanka'
@@ -4922,11 +5058,13 @@ export interface FileRouteTypes {
     | '/media-planning-sri-lanka'
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
+    | '/mobile-app-advertising-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/motorcycle-branding-sri-lanka'
     | '/mug-printing-sri-lanka'
     | '/multi-channel-advertising-sri-lanka'
+    | '/native-advertising-sri-lanka'
     | '/neon-sign-printing-sri-lanka'
     | '/neon-sign-rental-sri-lanka'
     | '/newspaper-advertising-sri-lanka'
@@ -4943,6 +5081,7 @@ export interface FileRouteTypes {
     | '/photo-booth-rental-sri-lanka'
     | '/photography-sri-lanka'
     | '/plaque-printing-sri-lanka'
+    | '/podcast-advertising-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
@@ -4958,9 +5097,11 @@ export interface FileRouteTypes {
     | '/projector-rental-sri-lanka'
     | '/promotional-items-sri-lanka'
     | '/promotional-products-sri-lanka'
+    | '/push-notification-advertising-sri-lanka'
     | '/pylon-sign-sri-lanka'
     | '/pyrotechnics-sri-lanka'
     | '/radio-advertising-sri-lanka'
+    | '/referral-marketing-sri-lanka'
     | '/remarketing-sri-lanka'
     | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
@@ -4984,12 +5125,14 @@ export interface FileRouteTypes {
     | '/social-media-management-sri-lanka'
     | '/social-media-marketing-sri-lanka'
     | '/sound-system-rental-sri-lanka'
+    | '/sponsorship-advertising-sri-lanka'
     | '/spot-uv-printing-sri-lanka'
     | '/stage-backdrop-printing-sri-lanka'
     | '/stage-branding-sri-lanka'
     | '/stage-rental-sri-lanka'
     | '/stage-setup-sri-lanka'
     | '/sticker-printing-sri-lanka'
+    | '/street-furniture-advertising-sri-lanka'
     | '/t-shirt-printing-sri-lanka'
     | '/table-chair-rental-sri-lanka'
     | '/technical-seo-sri-lanka'
@@ -5181,6 +5324,8 @@ export interface FileRouteTypes {
     | '/advertising-in-negombo'
     | '/advertising-packages'
     | '/advertising-rates'
+    | '/affiliate-marketing-sri-lanka'
+    | '/airport-advertising-sri-lanka'
     | '/animation-sri-lanka'
     | '/annual-report-printing-sri-lanka'
     | '/apron-printing-sri-lanka'
@@ -5221,7 +5366,9 @@ export interface FileRouteTypes {
     | '/ceiling-graphics-sri-lanka'
     | '/certificate-printing-sri-lanka'
     | '/charity-events-sri-lanka'
+    | '/chatbot-marketing-sri-lanka'
     | '/cinema-advertising-sri-lanka'
+    | '/cinema-slide-ads-sri-lanka'
     | '/client-appreciation-gifts-sri-lanka'
     | '/cold-spark-machine-rental-sri-lanka'
     | '/commercial-video-sri-lanka'
@@ -5343,6 +5490,7 @@ export interface FileRouteTypes {
     | '/large-format-printing-sri-lanka'
     | '/launch-event-gifts-sri-lanka'
     | '/lead-generation-sri-lanka'
+    | '/leaflet-distribution-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
     | '/led-screen-rental-sri-lanka'
     | '/led-sign-board-sri-lanka'
@@ -5368,11 +5516,13 @@ export interface FileRouteTypes {
     | '/media-planning-sri-lanka'
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
+    | '/mobile-app-advertising-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/motorcycle-branding-sri-lanka'
     | '/mug-printing-sri-lanka'
     | '/multi-channel-advertising-sri-lanka'
+    | '/native-advertising-sri-lanka'
     | '/neon-sign-printing-sri-lanka'
     | '/neon-sign-rental-sri-lanka'
     | '/newspaper-advertising-sri-lanka'
@@ -5389,6 +5539,7 @@ export interface FileRouteTypes {
     | '/photo-booth-rental-sri-lanka'
     | '/photography-sri-lanka'
     | '/plaque-printing-sri-lanka'
+    | '/podcast-advertising-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
@@ -5404,9 +5555,11 @@ export interface FileRouteTypes {
     | '/projector-rental-sri-lanka'
     | '/promotional-items-sri-lanka'
     | '/promotional-products-sri-lanka'
+    | '/push-notification-advertising-sri-lanka'
     | '/pylon-sign-sri-lanka'
     | '/pyrotechnics-sri-lanka'
     | '/radio-advertising-sri-lanka'
+    | '/referral-marketing-sri-lanka'
     | '/remarketing-sri-lanka'
     | '/reputation-management-sri-lanka'
     | '/retail-branding-sri-lanka'
@@ -5430,12 +5583,14 @@ export interface FileRouteTypes {
     | '/social-media-management-sri-lanka'
     | '/social-media-marketing-sri-lanka'
     | '/sound-system-rental-sri-lanka'
+    | '/sponsorship-advertising-sri-lanka'
     | '/spot-uv-printing-sri-lanka'
     | '/stage-backdrop-printing-sri-lanka'
     | '/stage-branding-sri-lanka'
     | '/stage-rental-sri-lanka'
     | '/stage-setup-sri-lanka'
     | '/sticker-printing-sri-lanka'
+    | '/street-furniture-advertising-sri-lanka'
     | '/t-shirt-printing-sri-lanka'
     | '/table-chair-rental-sri-lanka'
     | '/technical-seo-sri-lanka'
@@ -5628,6 +5783,8 @@ export interface RootRouteChildren {
   AdvertisingInNegomboRoute: typeof AdvertisingInNegomboRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
+  AffiliateMarketingSriLankaRoute: typeof AffiliateMarketingSriLankaRoute
+  AirportAdvertisingSriLankaRoute: typeof AirportAdvertisingSriLankaRoute
   AnimationSriLankaRoute: typeof AnimationSriLankaRoute
   AnnualReportPrintingSriLankaRoute: typeof AnnualReportPrintingSriLankaRoute
   ApronPrintingSriLankaRoute: typeof ApronPrintingSriLankaRoute
@@ -5668,7 +5825,9 @@ export interface RootRouteChildren {
   CeilingGraphicsSriLankaRoute: typeof CeilingGraphicsSriLankaRoute
   CertificatePrintingSriLankaRoute: typeof CertificatePrintingSriLankaRoute
   CharityEventsSriLankaRoute: typeof CharityEventsSriLankaRoute
+  ChatbotMarketingSriLankaRoute: typeof ChatbotMarketingSriLankaRoute
   CinemaAdvertisingSriLankaRoute: typeof CinemaAdvertisingSriLankaRoute
+  CinemaSlideAdsSriLankaRoute: typeof CinemaSlideAdsSriLankaRoute
   ClientAppreciationGiftsSriLankaRoute: typeof ClientAppreciationGiftsSriLankaRoute
   ColdSparkMachineRentalSriLankaRoute: typeof ColdSparkMachineRentalSriLankaRoute
   CommercialVideoSriLankaRoute: typeof CommercialVideoSriLankaRoute
@@ -5790,6 +5949,7 @@ export interface RootRouteChildren {
   LargeFormatPrintingSriLankaRoute: typeof LargeFormatPrintingSriLankaRoute
   LaunchEventGiftsSriLankaRoute: typeof LaunchEventGiftsSriLankaRoute
   LeadGenerationSriLankaRoute: typeof LeadGenerationSriLankaRoute
+  LeafletDistributionSriLankaRoute: typeof LeafletDistributionSriLankaRoute
   LedScreenAdvertisingSriLankaRoute: typeof LedScreenAdvertisingSriLankaRoute
   LedScreenRentalSriLankaRoute: typeof LedScreenRentalSriLankaRoute
   LedSignBoardSriLankaRoute: typeof LedSignBoardSriLankaRoute
@@ -5815,11 +5975,13 @@ export interface RootRouteChildren {
   MediaPlanningSriLankaRoute: typeof MediaPlanningSriLankaRoute
   MenuPrintingSriLankaRoute: typeof MenuPrintingSriLankaRoute
   MeshBannerPrintingSriLankaRoute: typeof MeshBannerPrintingSriLankaRoute
+  MobileAppAdvertisingSriLankaRoute: typeof MobileAppAdvertisingSriLankaRoute
   MobileBillboardSriLankaRoute: typeof MobileBillboardSriLankaRoute
   MotionGraphicsSriLankaRoute: typeof MotionGraphicsSriLankaRoute
   MotorcycleBrandingSriLankaRoute: typeof MotorcycleBrandingSriLankaRoute
   MugPrintingSriLankaRoute: typeof MugPrintingSriLankaRoute
   MultiChannelAdvertisingSriLankaRoute: typeof MultiChannelAdvertisingSriLankaRoute
+  NativeAdvertisingSriLankaRoute: typeof NativeAdvertisingSriLankaRoute
   NeonSignPrintingSriLankaRoute: typeof NeonSignPrintingSriLankaRoute
   NeonSignRentalSriLankaRoute: typeof NeonSignRentalSriLankaRoute
   NewspaperAdvertisingSriLankaRoute: typeof NewspaperAdvertisingSriLankaRoute
@@ -5836,6 +5998,7 @@ export interface RootRouteChildren {
   PhotoBoothRentalSriLankaRoute: typeof PhotoBoothRentalSriLankaRoute
   PhotographySriLankaRoute: typeof PhotographySriLankaRoute
   PlaquePrintingSriLankaRoute: typeof PlaquePrintingSriLankaRoute
+  PodcastAdvertisingSriLankaRoute: typeof PodcastAdvertisingSriLankaRoute
   PointOfSaleAdvertisingSriLankaRoute: typeof PointOfSaleAdvertisingSriLankaRoute
   PoloShirtPrintingSriLankaRoute: typeof PoloShirtPrintingSriLankaRoute
   PopupBannerPrintingSriLankaRoute: typeof PopupBannerPrintingSriLankaRoute
@@ -5851,9 +6014,11 @@ export interface RootRouteChildren {
   ProjectorRentalSriLankaRoute: typeof ProjectorRentalSriLankaRoute
   PromotionalItemsSriLankaRoute: typeof PromotionalItemsSriLankaRoute
   PromotionalProductsSriLankaRoute: typeof PromotionalProductsSriLankaRoute
+  PushNotificationAdvertisingSriLankaRoute: typeof PushNotificationAdvertisingSriLankaRoute
   PylonSignSriLankaRoute: typeof PylonSignSriLankaRoute
   PyrotechnicsSriLankaRoute: typeof PyrotechnicsSriLankaRoute
   RadioAdvertisingSriLankaRoute: typeof RadioAdvertisingSriLankaRoute
+  ReferralMarketingSriLankaRoute: typeof ReferralMarketingSriLankaRoute
   RemarketingSriLankaRoute: typeof RemarketingSriLankaRoute
   ReputationManagementSriLankaRoute: typeof ReputationManagementSriLankaRoute
   RetailBrandingSriLankaRoute: typeof RetailBrandingSriLankaRoute
@@ -5877,12 +6042,14 @@ export interface RootRouteChildren {
   SocialMediaManagementSriLankaRoute: typeof SocialMediaManagementSriLankaRoute
   SocialMediaMarketingSriLankaRoute: typeof SocialMediaMarketingSriLankaRoute
   SoundSystemRentalSriLankaRoute: typeof SoundSystemRentalSriLankaRoute
+  SponsorshipAdvertisingSriLankaRoute: typeof SponsorshipAdvertisingSriLankaRoute
   SpotUvPrintingSriLankaRoute: typeof SpotUvPrintingSriLankaRoute
   StageBackdropPrintingSriLankaRoute: typeof StageBackdropPrintingSriLankaRoute
   StageBrandingSriLankaRoute: typeof StageBrandingSriLankaRoute
   StageRentalSriLankaRoute: typeof StageRentalSriLankaRoute
   StageSetupSriLankaRoute: typeof StageSetupSriLankaRoute
   StickerPrintingSriLankaRoute: typeof StickerPrintingSriLankaRoute
+  StreetFurnitureAdvertisingSriLankaRoute: typeof StreetFurnitureAdvertisingSriLankaRoute
   TShirtPrintingSriLankaRoute: typeof TShirtPrintingSriLankaRoute
   TableChairRentalSriLankaRoute: typeof TableChairRentalSriLankaRoute
   TechnicalSeoSriLankaRoute: typeof TechnicalSeoSriLankaRoute
@@ -6378,6 +6545,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TShirtPrintingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/street-furniture-advertising-sri-lanka': {
+      id: '/street-furniture-advertising-sri-lanka'
+      path: '/street-furniture-advertising-sri-lanka'
+      fullPath: '/street-furniture-advertising-sri-lanka'
+      preLoaderRoute: typeof StreetFurnitureAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sticker-printing-sri-lanka': {
       id: '/sticker-printing-sri-lanka'
       path: '/sticker-printing-sri-lanka'
@@ -6418,6 +6592,13 @@ declare module '@tanstack/react-router' {
       path: '/spot-uv-printing-sri-lanka'
       fullPath: '/spot-uv-printing-sri-lanka'
       preLoaderRoute: typeof SpotUvPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sponsorship-advertising-sri-lanka': {
+      id: '/sponsorship-advertising-sri-lanka'
+      path: '/sponsorship-advertising-sri-lanka'
+      fullPath: '/sponsorship-advertising-sri-lanka'
+      preLoaderRoute: typeof SponsorshipAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sound-system-rental-sri-lanka': {
@@ -6581,6 +6762,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RemarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/referral-marketing-sri-lanka': {
+      id: '/referral-marketing-sri-lanka'
+      path: '/referral-marketing-sri-lanka'
+      fullPath: '/referral-marketing-sri-lanka'
+      preLoaderRoute: typeof ReferralMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/radio-advertising-sri-lanka': {
       id: '/radio-advertising-sri-lanka'
       path: '/radio-advertising-sri-lanka'
@@ -6600,6 +6788,13 @@ declare module '@tanstack/react-router' {
       path: '/pylon-sign-sri-lanka'
       fullPath: '/pylon-sign-sri-lanka'
       preLoaderRoute: typeof PylonSignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/push-notification-advertising-sri-lanka': {
+      id: '/push-notification-advertising-sri-lanka'
+      path: '/push-notification-advertising-sri-lanka'
+      fullPath: '/push-notification-advertising-sri-lanka'
+      preLoaderRoute: typeof PushNotificationAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/promotional-products-sri-lanka': {
@@ -6705,6 +6900,13 @@ declare module '@tanstack/react-router' {
       path: '/point-of-sale-advertising-sri-lanka'
       fullPath: '/point-of-sale-advertising-sri-lanka'
       preLoaderRoute: typeof PointOfSaleAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/podcast-advertising-sri-lanka': {
+      id: '/podcast-advertising-sri-lanka'
+      path: '/podcast-advertising-sri-lanka'
+      fullPath: '/podcast-advertising-sri-lanka'
+      preLoaderRoute: typeof PodcastAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/plaque-printing-sri-lanka': {
@@ -6819,6 +7021,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NeonSignPrintingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/native-advertising-sri-lanka': {
+      id: '/native-advertising-sri-lanka'
+      path: '/native-advertising-sri-lanka'
+      fullPath: '/native-advertising-sri-lanka'
+      preLoaderRoute: typeof NativeAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/multi-channel-advertising-sri-lanka': {
       id: '/multi-channel-advertising-sri-lanka'
       path: '/multi-channel-advertising-sri-lanka'
@@ -6852,6 +7061,13 @@ declare module '@tanstack/react-router' {
       path: '/mobile-billboard-sri-lanka'
       fullPath: '/mobile-billboard-sri-lanka'
       preLoaderRoute: typeof MobileBillboardSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mobile-app-advertising-sri-lanka': {
+      id: '/mobile-app-advertising-sri-lanka'
+      path: '/mobile-app-advertising-sri-lanka'
+      fullPath: '/mobile-app-advertising-sri-lanka'
+      preLoaderRoute: typeof MobileAppAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mesh-banner-printing-sri-lanka': {
@@ -7027,6 +7243,13 @@ declare module '@tanstack/react-router' {
       path: '/led-screen-advertising-sri-lanka'
       fullPath: '/led-screen-advertising-sri-lanka'
       preLoaderRoute: typeof LedScreenAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leaflet-distribution-sri-lanka': {
+      id: '/leaflet-distribution-sri-lanka'
+      path: '/leaflet-distribution-sri-lanka'
+      fullPath: '/leaflet-distribution-sri-lanka'
+      preLoaderRoute: typeof LeafletDistributionSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/lead-generation-sri-lanka': {
@@ -7876,11 +8099,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClientAppreciationGiftsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cinema-slide-ads-sri-lanka': {
+      id: '/cinema-slide-ads-sri-lanka'
+      path: '/cinema-slide-ads-sri-lanka'
+      fullPath: '/cinema-slide-ads-sri-lanka'
+      preLoaderRoute: typeof CinemaSlideAdsSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cinema-advertising-sri-lanka': {
       id: '/cinema-advertising-sri-lanka'
       path: '/cinema-advertising-sri-lanka'
       fullPath: '/cinema-advertising-sri-lanka'
       preLoaderRoute: typeof CinemaAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chatbot-marketing-sri-lanka': {
+      id: '/chatbot-marketing-sri-lanka'
+      path: '/chatbot-marketing-sri-lanka'
+      fullPath: '/chatbot-marketing-sri-lanka'
+      preLoaderRoute: typeof ChatbotMarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/charity-events-sri-lanka': {
@@ -8161,6 +8398,20 @@ declare module '@tanstack/react-router' {
       path: '/animation-sri-lanka'
       fullPath: '/animation-sri-lanka'
       preLoaderRoute: typeof AnimationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/airport-advertising-sri-lanka': {
+      id: '/airport-advertising-sri-lanka'
+      path: '/airport-advertising-sri-lanka'
+      fullPath: '/airport-advertising-sri-lanka'
+      preLoaderRoute: typeof AirportAdvertisingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/affiliate-marketing-sri-lanka': {
+      id: '/affiliate-marketing-sri-lanka'
+      path: '/affiliate-marketing-sri-lanka'
+      fullPath: '/affiliate-marketing-sri-lanka'
+      preLoaderRoute: typeof AffiliateMarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/advertising-rates': {
@@ -9188,6 +9439,8 @@ const rootRouteChildren: RootRouteChildren = {
   AdvertisingInNegomboRoute: AdvertisingInNegomboRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
+  AffiliateMarketingSriLankaRoute: AffiliateMarketingSriLankaRoute,
+  AirportAdvertisingSriLankaRoute: AirportAdvertisingSriLankaRoute,
   AnimationSriLankaRoute: AnimationSriLankaRoute,
   AnnualReportPrintingSriLankaRoute: AnnualReportPrintingSriLankaRoute,
   ApronPrintingSriLankaRoute: ApronPrintingSriLankaRoute,
@@ -9228,7 +9481,9 @@ const rootRouteChildren: RootRouteChildren = {
   CeilingGraphicsSriLankaRoute: CeilingGraphicsSriLankaRoute,
   CertificatePrintingSriLankaRoute: CertificatePrintingSriLankaRoute,
   CharityEventsSriLankaRoute: CharityEventsSriLankaRoute,
+  ChatbotMarketingSriLankaRoute: ChatbotMarketingSriLankaRoute,
   CinemaAdvertisingSriLankaRoute: CinemaAdvertisingSriLankaRoute,
+  CinemaSlideAdsSriLankaRoute: CinemaSlideAdsSriLankaRoute,
   ClientAppreciationGiftsSriLankaRoute: ClientAppreciationGiftsSriLankaRoute,
   ColdSparkMachineRentalSriLankaRoute: ColdSparkMachineRentalSriLankaRoute,
   CommercialVideoSriLankaRoute: CommercialVideoSriLankaRoute,
@@ -9352,6 +9607,7 @@ const rootRouteChildren: RootRouteChildren = {
   LargeFormatPrintingSriLankaRoute: LargeFormatPrintingSriLankaRoute,
   LaunchEventGiftsSriLankaRoute: LaunchEventGiftsSriLankaRoute,
   LeadGenerationSriLankaRoute: LeadGenerationSriLankaRoute,
+  LeafletDistributionSriLankaRoute: LeafletDistributionSriLankaRoute,
   LedScreenAdvertisingSriLankaRoute: LedScreenAdvertisingSriLankaRoute,
   LedScreenRentalSriLankaRoute: LedScreenRentalSriLankaRoute,
   LedSignBoardSriLankaRoute: LedSignBoardSriLankaRoute,
@@ -9377,11 +9633,13 @@ const rootRouteChildren: RootRouteChildren = {
   MediaPlanningSriLankaRoute: MediaPlanningSriLankaRoute,
   MenuPrintingSriLankaRoute: MenuPrintingSriLankaRoute,
   MeshBannerPrintingSriLankaRoute: MeshBannerPrintingSriLankaRoute,
+  MobileAppAdvertisingSriLankaRoute: MobileAppAdvertisingSriLankaRoute,
   MobileBillboardSriLankaRoute: MobileBillboardSriLankaRoute,
   MotionGraphicsSriLankaRoute: MotionGraphicsSriLankaRoute,
   MotorcycleBrandingSriLankaRoute: MotorcycleBrandingSriLankaRoute,
   MugPrintingSriLankaRoute: MugPrintingSriLankaRoute,
   MultiChannelAdvertisingSriLankaRoute: MultiChannelAdvertisingSriLankaRoute,
+  NativeAdvertisingSriLankaRoute: NativeAdvertisingSriLankaRoute,
   NeonSignPrintingSriLankaRoute: NeonSignPrintingSriLankaRoute,
   NeonSignRentalSriLankaRoute: NeonSignRentalSriLankaRoute,
   NewspaperAdvertisingSriLankaRoute: NewspaperAdvertisingSriLankaRoute,
@@ -9398,6 +9656,7 @@ const rootRouteChildren: RootRouteChildren = {
   PhotoBoothRentalSriLankaRoute: PhotoBoothRentalSriLankaRoute,
   PhotographySriLankaRoute: PhotographySriLankaRoute,
   PlaquePrintingSriLankaRoute: PlaquePrintingSriLankaRoute,
+  PodcastAdvertisingSriLankaRoute: PodcastAdvertisingSriLankaRoute,
   PointOfSaleAdvertisingSriLankaRoute: PointOfSaleAdvertisingSriLankaRoute,
   PoloShirtPrintingSriLankaRoute: PoloShirtPrintingSriLankaRoute,
   PopupBannerPrintingSriLankaRoute: PopupBannerPrintingSriLankaRoute,
@@ -9414,9 +9673,12 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectorRentalSriLankaRoute: ProjectorRentalSriLankaRoute,
   PromotionalItemsSriLankaRoute: PromotionalItemsSriLankaRoute,
   PromotionalProductsSriLankaRoute: PromotionalProductsSriLankaRoute,
+  PushNotificationAdvertisingSriLankaRoute:
+    PushNotificationAdvertisingSriLankaRoute,
   PylonSignSriLankaRoute: PylonSignSriLankaRoute,
   PyrotechnicsSriLankaRoute: PyrotechnicsSriLankaRoute,
   RadioAdvertisingSriLankaRoute: RadioAdvertisingSriLankaRoute,
+  ReferralMarketingSriLankaRoute: ReferralMarketingSriLankaRoute,
   RemarketingSriLankaRoute: RemarketingSriLankaRoute,
   ReputationManagementSriLankaRoute: ReputationManagementSriLankaRoute,
   RetailBrandingSriLankaRoute: RetailBrandingSriLankaRoute,
@@ -9440,12 +9702,15 @@ const rootRouteChildren: RootRouteChildren = {
   SocialMediaManagementSriLankaRoute: SocialMediaManagementSriLankaRoute,
   SocialMediaMarketingSriLankaRoute: SocialMediaMarketingSriLankaRoute,
   SoundSystemRentalSriLankaRoute: SoundSystemRentalSriLankaRoute,
+  SponsorshipAdvertisingSriLankaRoute: SponsorshipAdvertisingSriLankaRoute,
   SpotUvPrintingSriLankaRoute: SpotUvPrintingSriLankaRoute,
   StageBackdropPrintingSriLankaRoute: StageBackdropPrintingSriLankaRoute,
   StageBrandingSriLankaRoute: StageBrandingSriLankaRoute,
   StageRentalSriLankaRoute: StageRentalSriLankaRoute,
   StageSetupSriLankaRoute: StageSetupSriLankaRoute,
   StickerPrintingSriLankaRoute: StickerPrintingSriLankaRoute,
+  StreetFurnitureAdvertisingSriLankaRoute:
+    StreetFurnitureAdvertisingSriLankaRoute,
   TShirtPrintingSriLankaRoute: TShirtPrintingSriLankaRoute,
   TableChairRentalSriLankaRoute: TableChairRentalSriLankaRoute,
   TechnicalSeoSriLankaRoute: TechnicalSeoSriLankaRoute,
@@ -9654,3 +9919,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -116,8 +116,47 @@ function CostPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What drives the cost</h2>
-        <p className="mt-3">Crew size, shoot days, talent fees, equipment (cinema vs DSLR), VFX/CGI, music licensing and revision rounds.</p>
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What you are really buying when you pay for video</h2>
+        <p className="mt-3">A video quote is not a price per minute — it is a price per shoot day, plus pre-production complexity, plus post-production complexity. A 30-second social reel and a 30-second TV commercial can both be "30 seconds of finished video", yet cost LKR 80,000 and LKR 2,500,000 respectively. The difference is everything that happens around the camera.</p>
+        <p className="mt-3">Three multipliers drive the entire bill: crew size (a 4-person reel crew vs a 22-person TVC crew), equipment grade (mirrorless DSLR vs cinema camera with full lighting package), and post-production scope (a 4-hour edit vs a 60-hour edit with colour grading, sound design and motion graphics).</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Realistic Sri Lankan rate cards by format</h2>
+        <p className="mt-3">A 2026 working set of prices for common formats produced in Sri Lanka:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Social reel (single shoot day, phone-first or DSLR):</strong> LKR 65,000–250,000 per video. Best value when shot in batches of 4–8 videos in one day.</li>
+          <li><strong>Corporate profile film (3–5 min):</strong> LKR 350,000–1,500,000. Interviews, B-roll, drone, motion graphics, music licensing.</li>
+          <li><strong>Product / catalogue video (per SKU):</strong> LKR 25,000–80,000 when shot in batches of 10+ products in a single studio day.</li>
+          <li><strong>TVC — basic (30s):</strong> LKR 450,000–1,200,000. Single location, voiceover, no celebrity, 2-day shoot.</li>
+          <li><strong>TVC — premium (30s):</strong> LKR 2M–12M+. Director, name talent, jingle, multi-location, full agency creative.</li>
+          <li><strong>2D animation (per finished minute):</strong> LKR 80,000–350,000. Script, storyboard, illustration, animation, voiceover.</li>
+          <li><strong>3D animation / product CGI (per finished minute):</strong> LKR 250,000–1,500,000. Modelling, texturing, lighting and render time are the cost drivers.</li>
+          <li><strong>Drone shoot (half day):</strong> LKR 35,000–120,000 with a CAA-cleared pilot and 4K footage delivery.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">How to brief a video to keep cost under control</h2>
+        <p className="mt-3">Six brief decisions made early save 20–40% of the production budget:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Lock the shoot location count.</strong> Each extra location adds half a shoot day and one crew transfer.</li>
+          <li><strong>Lock the talent count.</strong> Each on-screen person adds make-up, wardrobe, fees and rehearsal time.</li>
+          <li><strong>Decide voiceover vs synced dialogue early.</strong> Sync sound requires a boom operator and a controlled location — voiceover does not.</li>
+          <li><strong>Confirm music licensing route.</strong> Original score is more expensive but owned forever; stock music is cheap but limited in usage rights.</li>
+          <li><strong>Batch shoot multiple deliverables in one day.</strong> 4 reels in one shoot day usually cost 60% of 4 reels shot on 4 separate days.</li>
+          <li><strong>Provide brand assets early.</strong> Logo files, fonts, colour codes and approved imagery delivered before pre-production saves 4–8 hours of post-production rework.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Pre, production and post — the typical timeline</h2>
+        <p className="mt-3">For a corporate profile film with interviews and on-location B-roll, plan roughly:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Days 1–4:</strong> brief, concept, script, storyboard, location recce.</li>
+          <li><strong>Days 5–7:</strong> pre-production — casting, scheduling, logistics, equipment booking.</li>
+          <li><strong>Days 8–10:</strong> shoot (typically 2–3 days for a 3–5 minute corporate piece).</li>
+          <li><strong>Days 11–18:</strong> offline edit, client review rounds 1–2.</li>
+          <li><strong>Days 19–24:</strong> online edit, colour, sound design, motion graphics.</li>
+          <li><strong>Days 25–28:</strong> final review, audio mix, deliverable exports in all required formats.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">The deliverables conversation nobody has up-front</h2>
+        <p className="mt-3">Always agree the deliverable list in writing before the shoot. A single shoot can produce many cuts: a 60-second hero film, a 30-second social cutdown, a 15-second story version, a 6-second bumper, vertical and horizontal aspect ratios, subtitled versions in Sinhala/Tamil/English, behind-the-scenes content, stills for press. Each additional cut adds 1–3 hours of editor time. Listing all of these in the contract avoids the awkward "but you said you would also give us…" conversation a week after delivery.</p>
 
         <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Get a tailored quote</h2>
         <p className="mt-3">Every brand has different audiences, seasons and goals. Call <a className="text-primary underline-offset-2 hover:underline" href={`tel:${SITE.phone}`}>{SITE.phone}</a> or visit our <Link to="/get-quote" className="text-primary underline-offset-2 hover:underline">free quote form</Link> for a written estimate within 24 hours.</p>

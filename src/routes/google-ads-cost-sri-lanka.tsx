@@ -111,8 +111,43 @@ function CostPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What drives the cost</h2>
-        <p className="mt-3">Industry CPC competitiveness, Quality Score, landing page conversion rate, location targeting and bidding strategy.</p>
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What you are actually paying for in Google Ads</h2>
+        <p className="mt-3">Google Ads in Sri Lanka is sold as an auction. The CPC you pay is set in real time by the competing bids in your keyword auction, multiplied by your Quality Score (a 1–10 measure of ad relevance, landing-page experience and expected click-through rate). A higher Quality Score reduces your CPC even when you bid the same amount as a competitor, which is why two advertisers chasing the same keyword can pay very different prices for the same click.</p>
+        <p className="mt-3">This is also why "Google Ads cost in Sri Lanka" cannot be answered with a single number. A plumbing service in Wattala may pay LKR 40 per click and a leasing company in Colombo may pay LKR 900 for the same word, because the lifetime value of a leasing customer justifies a 22× higher bid.</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Budget benchmarks by campaign type</h2>
+        <p className="mt-3">A useful working set of monthly Google Ads budgets for Sri Lankan businesses in 2026:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Local service business (single city):</strong> LKR 35,000–80,000/month — enough for 400–1,200 clicks on focused commercial-intent keywords.</li>
+          <li><strong>E-commerce store (national):</strong> LKR 80,000–300,000/month — Shopping and Performance Max usually outperform pure Search at this level.</li>
+          <li><strong>B2B lead generation:</strong> LKR 100,000–400,000/month — small click volume but high CPC keywords (LKR 300–1,200); track to qualified meetings, not raw leads.</li>
+          <li><strong>Education / courses:</strong> LKR 150,000–500,000/month — January, May and August enrolment peaks justify seasonal scaling.</li>
+          <li><strong>Real estate / financial services:</strong> LKR 200,000–800,000/month — among the highest CPCs in the country; quality of landing page is decisive.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Campaign types — when to use which</h2>
+        <p className="mt-3">Google has consolidated its inventory into a handful of campaign types. Each suits a different objective:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Search:</strong> the workhorse for commercial-intent keywords ("buy", "near me", "price", branded). Highest intent, highest CPC, highest conversion rate.</li>
+          <li><strong>Performance Max (PMax):</strong> automated mix of Search, Shopping, Display, YouTube and Discover. Strong for e-commerce with a complete product feed; weaker for service businesses with limited assets.</li>
+          <li><strong>Shopping:</strong> dedicated product-listing ads from Merchant Center. The default for any retailer with 20+ SKUs.</li>
+          <li><strong>YouTube (Video):</strong> CPV-based awareness and consideration. Skippable in-stream is the cost-efficient default; bumpers are great for reach.</li>
+          <li><strong>Display / Demand Gen:</strong> low CPC, high reach. Best used for remarketing to people who already visited your site, not as a primary acquisition channel.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Where most Sri Lankan accounts waste money</h2>
+        <p className="mt-3">Auditing dozens of local accounts, the same five leaks appear again and again. Fix these and most accounts cut their cost per conversion by 30–50% without adding budget:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Broad-match keywords with no negative list.</strong> A single broad term like "marketing" can chew through LKR 150,000 in a month showing on completely irrelevant searches. Always run with a tightly maintained negative-keyword list.</li>
+          <li><strong>One ad group with 50 keywords.</strong> Lower Quality Score, higher CPC. Use tightly themed ad groups of 5–15 closely related keywords each.</li>
+          <li><strong>Sending all traffic to the homepage.</strong> A dedicated landing page typically lifts conversion rate 2–4×.</li>
+          <li><strong>No conversion tracking.</strong> Without proper Google Ads or GA4 conversion events, you are optimising on clicks not customers.</li>
+          <li><strong>Display Network left on by default in Search campaigns.</strong> This silently bleeds budget on low-intent placements. Turn it off and run Display as its own campaign if you need it.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Agency vs in-house — what each really costs</h2>
+        <p className="mt-3">Specialist agency management of Google Ads in Sri Lanka typically costs LKR 35,000–150,000 per month, or 15–25% of media spend, with most accounts settling in the LKR 50,000–80,000 range for spend below LKR 500,000/month. The fee covers strategy, keyword and ad-copy work, Quality Score management, conversion tracking, weekly optimisation, monthly reporting and creative refreshes.</p>
+        <p className="mt-3">In-house can work if you can hire a dedicated paid-media specialist (LKR 120,000–250,000/month salary) who has at least 2–3 years of hands-on Google Ads experience and is willing to study the platform continuously. Below that experience level, in-house almost always underperforms a competent agency on a like-for-like budget.</p>
 
         <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Get a tailored quote</h2>
         <p className="mt-3">Every brand has different audiences, seasons and goals. Call <a className="text-primary underline-offset-2 hover:underline" href={`tel:${SITE.phone}`}>{SITE.phone}</a> or visit our <Link to="/get-quote" className="text-primary underline-offset-2 hover:underline">free quote form</Link> for a written estimate within 24 hours.</p>

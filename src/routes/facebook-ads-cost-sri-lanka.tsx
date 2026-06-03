@@ -111,8 +111,40 @@ function CostPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What drives the cost</h2>
-        <p className="mt-3">Audience size, creative quality (the #1 lever), objective, season, iOS attribution loss and Pixel hygiene.</p>
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">How Meta pricing works in Sri Lanka</h2>
+        <p className="mt-3">Meta (Facebook and Instagram) ads are auction-based, but the cost you pay is mostly driven by your creative quality and audience size rather than your bid. A 7-second vertical reel that holds attention can deliver clicks for one-third the cost of a static image targeting the same audience, even with the same budget and the same campaign objective.</p>
+        <p className="mt-3">In Sri Lanka the cheapest auction objectives are reach, video views and engagement. The most expensive are conversions and lead-form submissions. The right answer depends on where you are in the funnel: spend cheap awareness money to seed audiences, then retarget those warm audiences with the more expensive conversion objective to actually drive sales.</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Realistic CPM, CPC and CPL benchmarks</h2>
+        <p className="mt-3">Useful 2026 benchmarks for Sri Lankan accounts run by competent media buyers (creative is the biggest variable, so treat these as midpoints):</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>CPM (cost per 1,000 impressions):</strong> LKR 90–450. Lower end for broad reach with strong video; upper end for narrow targeted Colombo SEC A audiences.</li>
+          <li><strong>CPC (cost per link click):</strong> LKR 6–35. E-commerce and content offers typically sit at the lower end; B2B and high-consideration services at the higher end.</li>
+          <li><strong>CPL (cost per lead via on-platform form):</strong> LKR 80–600. Quality varies enormously — always qualify before passing to sales.</li>
+          <li><strong>Cost per WhatsApp conversation:</strong> LKR 120–500. Click-to-WhatsApp is consistently the cheapest meaningful lead source in the Sri Lankan market in 2025–26.</li>
+          <li><strong>Cost per video ThruPlay (15s view):</strong> LKR 1.50–6 for reels and feed video; lower in stories.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Creative is the lever, not the budget</h2>
+        <p className="mt-3">After running thousands of campaigns in this market the pattern is unmistakable: doubling your creative volume moves results far more than doubling your budget. A useful target is 4–6 fresh ad creatives per week per active ad set, rotating in new hooks as soon as creative fatigue shows in the frequency curve (typically after 4–7 days on a Colombo audience).</p>
+        <p className="mt-3">Three creative formats consistently outperform in Sri Lanka:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>UGC-style vertical reels</strong> — phone-shot, casual, with on-screen subtitles in Sinhala or Tamil. Outperforms polished studio video by 2–4× on cost per result in our test data.</li>
+          <li><strong>Carousels with a clear single offer per card</strong> — particularly effective for product catalogues and multi-tier service menus.</li>
+          <li><strong>Customer-testimonial videos under 30 seconds</strong> — third-party voice consistently beats first-party brand voice for trust-led categories (services, education, healthcare).</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Targeting that still works after Advantage+</h2>
+        <p className="mt-3">Apple ATT and Meta's shift to broader auto-targeting (Advantage+) have changed best practice in this market. Three approaches that still work reliably:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Broad targeting with sharp creative.</strong> Let Meta's machine learning find the audience using a creative that self-qualifies (e.g. "Sri Lankan business owners with 5–25 staff" stated explicitly in the hook).</li>
+          <li><strong>Custom audiences from your CRM or pixel.</strong> Upload past customers, build lookalikes off the top 10% by revenue.</li>
+          <li><strong>WhatsApp engagement custom audiences.</strong> People who already messaged you on WhatsApp are your warmest segment; remarket to them with new offers.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Agency fees and what they should include</h2>
+        <p className="mt-3">Specialist Meta-ads management in Sri Lanka generally costs LKR 30,000–120,000 per month, or 15–20% of spend for accounts above LKR 500,000/month. At minimum, the fee should include account setup and Pixel/Conversions API installation, audience and creative strategy, weekly optimisation, 4+ fresh creatives per week (or co-ordination with your creative team), monthly reporting with cohort-based ROAS, and quarterly account audits.</p>
+        <p className="mt-3">A common mistake is paying for "management" without a contractual minimum on creative volume. If your agency is recycling the same 3 ads for 4 weeks, your cost per result will rise no matter how well they manage the auction.</p>
 
         <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Get a tailored quote</h2>
         <p className="mt-3">Every brand has different audiences, seasons and goals. Call <a className="text-primary underline-offset-2 hover:underline" href={`tel:${SITE.phone}`}>{SITE.phone}</a> or visit our <Link to="/get-quote" className="text-primary underline-offset-2 hover:underline">free quote form</Link> for a written estimate within 24 hours.</p>

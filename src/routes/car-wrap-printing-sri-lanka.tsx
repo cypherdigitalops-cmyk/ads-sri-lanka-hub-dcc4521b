@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Car Wrap Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Need car wrap printing sri lanka that lasts? We use weather-rated inks, premium substrates and fast turnaround across Colombo and the island.";
+const TITLE = "Car Wrap Printing Sri Lanka | Full & Partial Wraps from Rs 60,000";
+const DESC = "Professional car wrap printing in Sri Lanka. Full wraps Rs 60,000–150,000. Partial wraps from Rs 25,000. Cast vinyl, 3–5 year life. Colombo & islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/car-wrap-printing-sri-lanka")({
   head: () => ({

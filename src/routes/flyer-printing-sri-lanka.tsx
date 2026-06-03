@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Flyer Printing Sri Lanka in Sri Lanka";
-const DESC = "Get measurable results from flyer printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Flyer Printing Sri Lanka | A5 & A4 Flyers from Rs 3 Each";
+const DESC = "Flyer printing in Sri Lanka from Rs 3 per A5 flyer. Single & double sided, gloss or matt. Minimum 100 copies. Fast 24hr turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/flyer-printing-sri-lanka")({
   head: () => ({

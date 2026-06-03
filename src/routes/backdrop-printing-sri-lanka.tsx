@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Backdrop Printing Sri Lanka in Sri Lanka";
-const DESC = "Need backdrop printing sri lanka that lasts? We use weather-rated inks, premium substrates and fast turnaround across Colombo and the island.";
+const TITLE = "Backdrop Printing Sri Lanka | Event & Stage Backdrops Any Size";
+const DESC = "Backdrop printing in Sri Lanka for events, stages & media walls. Flex, fabric & canvas backdrops from Rs 180/sqft. 2-day turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/backdrop-printing-sri-lanka")({
   head: () => ({

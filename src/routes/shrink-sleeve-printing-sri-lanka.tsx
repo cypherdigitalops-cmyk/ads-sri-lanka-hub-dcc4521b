@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Shrink Sleeve Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Sri Lanka's full-service shrink sleeve printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Shrink Sleeve Printing Sri Lanka | FMCG & Beverage Label Sleeves";
+const DESC = "Shrink sleeve label printing in Sri Lanka. Full-body PET & PETG sleeves for bottles, jars & cans. From 500 units. Fast production. Call 0771437707.";
 
 export const Route = createFileRoute("/shrink-sleeve-printing-sri-lanka")({
   head: () => ({

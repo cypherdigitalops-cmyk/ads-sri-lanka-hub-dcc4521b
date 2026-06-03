@@ -326,12 +326,18 @@ import { Route as AirportAdvertisingSriLankaRouteImport } from './routes/airport
 import { Route as AffiliateMarketingSriLankaRouteImport } from './routes/affiliate-marketing-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
+import { Route as AdvertisingInTrincomaleeRouteImport } from './routes/advertising-in-trincomalee'
+import { Route as AdvertisingInRatnapuraRouteImport } from './routes/advertising-in-ratnapura'
 import { Route as AdvertisingInNegomboRouteImport } from './routes/advertising-in-negombo'
+import { Route as AdvertisingInMataraRouteImport } from './routes/advertising-in-matara'
 import { Route as AdvertisingInKurunegalaRouteImport } from './routes/advertising-in-kurunegala'
 import { Route as AdvertisingInKandyRouteImport } from './routes/advertising-in-kandy'
 import { Route as AdvertisingInJaffnaRouteImport } from './routes/advertising-in-jaffna'
 import { Route as AdvertisingInGalleRouteImport } from './routes/advertising-in-galle'
 import { Route as AdvertisingInColomboRouteImport } from './routes/advertising-in-colombo'
+import { Route as AdvertisingInBatticaloaRouteImport } from './routes/advertising-in-batticaloa'
+import { Route as AdvertisingInBadullaRouteImport } from './routes/advertising-in-badulla'
+import { Route as AdvertisingInAnuradhapuraRouteImport } from './routes/advertising-in-anuradhapura'
 import { Route as AdvertisingForWeddingIndustrySriLankaRouteImport } from './routes/advertising-for-wedding-industry-sri-lanka'
 import { Route as AdvertisingForTravelTourismSriLankaRouteImport } from './routes/advertising-for-travel-tourism-sri-lanka'
 import { Route as AdvertisingForSupermarketsRetailSriLankaRouteImport } from './routes/advertising-for-supermarkets-retail-sri-lanka'
@@ -2221,9 +2227,25 @@ const AdvertisingPackagesRoute = AdvertisingPackagesRouteImport.update({
   path: '/advertising-packages',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdvertisingInTrincomaleeRoute =
+  AdvertisingInTrincomaleeRouteImport.update({
+    id: '/advertising-in-trincomalee',
+    path: '/advertising-in-trincomalee',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AdvertisingInRatnapuraRoute = AdvertisingInRatnapuraRouteImport.update({
+  id: '/advertising-in-ratnapura',
+  path: '/advertising-in-ratnapura',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdvertisingInNegomboRoute = AdvertisingInNegomboRouteImport.update({
   id: '/advertising-in-negombo',
   path: '/advertising-in-negombo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertisingInMataraRoute = AdvertisingInMataraRouteImport.update({
+  id: '/advertising-in-matara',
+  path: '/advertising-in-matara',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdvertisingInKurunegalaRoute = AdvertisingInKurunegalaRouteImport.update({
@@ -2251,6 +2273,22 @@ const AdvertisingInColomboRoute = AdvertisingInColomboRouteImport.update({
   path: '/advertising-in-colombo',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdvertisingInBatticaloaRoute = AdvertisingInBatticaloaRouteImport.update({
+  id: '/advertising-in-batticaloa',
+  path: '/advertising-in-batticaloa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertisingInBadullaRoute = AdvertisingInBadullaRouteImport.update({
+  id: '/advertising-in-badulla',
+  path: '/advertising-in-badulla',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertisingInAnuradhapuraRoute =
+  AdvertisingInAnuradhapuraRouteImport.update({
+    id: '/advertising-in-anuradhapura',
+    path: '/advertising-in-anuradhapura',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdvertisingForWeddingIndustrySriLankaRoute =
   AdvertisingForWeddingIndustrySriLankaRouteImport.update({
     id: '/advertising-for-wedding-industry-sri-lanka',
@@ -3157,12 +3195,18 @@ export interface FileRoutesByFullPath {
   '/advertising-for-supermarkets-retail-sri-lanka': typeof AdvertisingForSupermarketsRetailSriLankaRoute
   '/advertising-for-travel-tourism-sri-lanka': typeof AdvertisingForTravelTourismSriLankaRoute
   '/advertising-for-wedding-industry-sri-lanka': typeof AdvertisingForWeddingIndustrySriLankaRoute
+  '/advertising-in-anuradhapura': typeof AdvertisingInAnuradhapuraRoute
+  '/advertising-in-badulla': typeof AdvertisingInBadullaRoute
+  '/advertising-in-batticaloa': typeof AdvertisingInBatticaloaRoute
   '/advertising-in-colombo': typeof AdvertisingInColomboRoute
   '/advertising-in-galle': typeof AdvertisingInGalleRoute
   '/advertising-in-jaffna': typeof AdvertisingInJaffnaRoute
   '/advertising-in-kandy': typeof AdvertisingInKandyRoute
   '/advertising-in-kurunegala': typeof AdvertisingInKurunegalaRoute
+  '/advertising-in-matara': typeof AdvertisingInMataraRoute
   '/advertising-in-negombo': typeof AdvertisingInNegomboRoute
+  '/advertising-in-ratnapura': typeof AdvertisingInRatnapuraRoute
+  '/advertising-in-trincomalee': typeof AdvertisingInTrincomaleeRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
@@ -3632,12 +3676,18 @@ export interface FileRoutesByTo {
   '/advertising-for-supermarkets-retail-sri-lanka': typeof AdvertisingForSupermarketsRetailSriLankaRoute
   '/advertising-for-travel-tourism-sri-lanka': typeof AdvertisingForTravelTourismSriLankaRoute
   '/advertising-for-wedding-industry-sri-lanka': typeof AdvertisingForWeddingIndustrySriLankaRoute
+  '/advertising-in-anuradhapura': typeof AdvertisingInAnuradhapuraRoute
+  '/advertising-in-badulla': typeof AdvertisingInBadullaRoute
+  '/advertising-in-batticaloa': typeof AdvertisingInBatticaloaRoute
   '/advertising-in-colombo': typeof AdvertisingInColomboRoute
   '/advertising-in-galle': typeof AdvertisingInGalleRoute
   '/advertising-in-jaffna': typeof AdvertisingInJaffnaRoute
   '/advertising-in-kandy': typeof AdvertisingInKandyRoute
   '/advertising-in-kurunegala': typeof AdvertisingInKurunegalaRoute
+  '/advertising-in-matara': typeof AdvertisingInMataraRoute
   '/advertising-in-negombo': typeof AdvertisingInNegomboRoute
+  '/advertising-in-ratnapura': typeof AdvertisingInRatnapuraRoute
+  '/advertising-in-trincomalee': typeof AdvertisingInTrincomaleeRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
@@ -4108,12 +4158,18 @@ export interface FileRoutesById {
   '/advertising-for-supermarkets-retail-sri-lanka': typeof AdvertisingForSupermarketsRetailSriLankaRoute
   '/advertising-for-travel-tourism-sri-lanka': typeof AdvertisingForTravelTourismSriLankaRoute
   '/advertising-for-wedding-industry-sri-lanka': typeof AdvertisingForWeddingIndustrySriLankaRoute
+  '/advertising-in-anuradhapura': typeof AdvertisingInAnuradhapuraRoute
+  '/advertising-in-badulla': typeof AdvertisingInBadullaRoute
+  '/advertising-in-batticaloa': typeof AdvertisingInBatticaloaRoute
   '/advertising-in-colombo': typeof AdvertisingInColomboRoute
   '/advertising-in-galle': typeof AdvertisingInGalleRoute
   '/advertising-in-jaffna': typeof AdvertisingInJaffnaRoute
   '/advertising-in-kandy': typeof AdvertisingInKandyRoute
   '/advertising-in-kurunegala': typeof AdvertisingInKurunegalaRoute
+  '/advertising-in-matara': typeof AdvertisingInMataraRoute
   '/advertising-in-negombo': typeof AdvertisingInNegomboRoute
+  '/advertising-in-ratnapura': typeof AdvertisingInRatnapuraRoute
+  '/advertising-in-trincomalee': typeof AdvertisingInTrincomaleeRoute
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
@@ -4585,12 +4641,18 @@ export interface FileRouteTypes {
     | '/advertising-for-supermarkets-retail-sri-lanka'
     | '/advertising-for-travel-tourism-sri-lanka'
     | '/advertising-for-wedding-industry-sri-lanka'
+    | '/advertising-in-anuradhapura'
+    | '/advertising-in-badulla'
+    | '/advertising-in-batticaloa'
     | '/advertising-in-colombo'
     | '/advertising-in-galle'
     | '/advertising-in-jaffna'
     | '/advertising-in-kandy'
     | '/advertising-in-kurunegala'
+    | '/advertising-in-matara'
     | '/advertising-in-negombo'
+    | '/advertising-in-ratnapura'
+    | '/advertising-in-trincomalee'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/affiliate-marketing-sri-lanka'
@@ -5060,12 +5122,18 @@ export interface FileRouteTypes {
     | '/advertising-for-supermarkets-retail-sri-lanka'
     | '/advertising-for-travel-tourism-sri-lanka'
     | '/advertising-for-wedding-industry-sri-lanka'
+    | '/advertising-in-anuradhapura'
+    | '/advertising-in-badulla'
+    | '/advertising-in-batticaloa'
     | '/advertising-in-colombo'
     | '/advertising-in-galle'
     | '/advertising-in-jaffna'
     | '/advertising-in-kandy'
     | '/advertising-in-kurunegala'
+    | '/advertising-in-matara'
     | '/advertising-in-negombo'
+    | '/advertising-in-ratnapura'
+    | '/advertising-in-trincomalee'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/affiliate-marketing-sri-lanka'
@@ -5535,12 +5603,18 @@ export interface FileRouteTypes {
     | '/advertising-for-supermarkets-retail-sri-lanka'
     | '/advertising-for-travel-tourism-sri-lanka'
     | '/advertising-for-wedding-industry-sri-lanka'
+    | '/advertising-in-anuradhapura'
+    | '/advertising-in-badulla'
+    | '/advertising-in-batticaloa'
     | '/advertising-in-colombo'
     | '/advertising-in-galle'
     | '/advertising-in-jaffna'
     | '/advertising-in-kandy'
     | '/advertising-in-kurunegala'
+    | '/advertising-in-matara'
     | '/advertising-in-negombo'
+    | '/advertising-in-ratnapura'
+    | '/advertising-in-trincomalee'
     | '/advertising-packages'
     | '/advertising-rates'
     | '/affiliate-marketing-sri-lanka'
@@ -6011,12 +6085,18 @@ export interface RootRouteChildren {
   AdvertisingForSupermarketsRetailSriLankaRoute: typeof AdvertisingForSupermarketsRetailSriLankaRoute
   AdvertisingForTravelTourismSriLankaRoute: typeof AdvertisingForTravelTourismSriLankaRoute
   AdvertisingForWeddingIndustrySriLankaRoute: typeof AdvertisingForWeddingIndustrySriLankaRoute
+  AdvertisingInAnuradhapuraRoute: typeof AdvertisingInAnuradhapuraRoute
+  AdvertisingInBadullaRoute: typeof AdvertisingInBadullaRoute
+  AdvertisingInBatticaloaRoute: typeof AdvertisingInBatticaloaRoute
   AdvertisingInColomboRoute: typeof AdvertisingInColomboRoute
   AdvertisingInGalleRoute: typeof AdvertisingInGalleRoute
   AdvertisingInJaffnaRoute: typeof AdvertisingInJaffnaRoute
   AdvertisingInKandyRoute: typeof AdvertisingInKandyRoute
   AdvertisingInKurunegalaRoute: typeof AdvertisingInKurunegalaRoute
+  AdvertisingInMataraRoute: typeof AdvertisingInMataraRoute
   AdvertisingInNegomboRoute: typeof AdvertisingInNegomboRoute
+  AdvertisingInRatnapuraRoute: typeof AdvertisingInRatnapuraRoute
+  AdvertisingInTrincomaleeRoute: typeof AdvertisingInTrincomaleeRoute
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
   AffiliateMarketingSriLankaRoute: typeof AffiliateMarketingSriLankaRoute
@@ -8680,11 +8760,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdvertisingPackagesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/advertising-in-trincomalee': {
+      id: '/advertising-in-trincomalee'
+      path: '/advertising-in-trincomalee'
+      fullPath: '/advertising-in-trincomalee'
+      preLoaderRoute: typeof AdvertisingInTrincomaleeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-in-ratnapura': {
+      id: '/advertising-in-ratnapura'
+      path: '/advertising-in-ratnapura'
+      fullPath: '/advertising-in-ratnapura'
+      preLoaderRoute: typeof AdvertisingInRatnapuraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/advertising-in-negombo': {
       id: '/advertising-in-negombo'
       path: '/advertising-in-negombo'
       fullPath: '/advertising-in-negombo'
       preLoaderRoute: typeof AdvertisingInNegomboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-in-matara': {
+      id: '/advertising-in-matara'
+      path: '/advertising-in-matara'
+      fullPath: '/advertising-in-matara'
+      preLoaderRoute: typeof AdvertisingInMataraRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/advertising-in-kurunegala': {
@@ -8720,6 +8821,27 @@ declare module '@tanstack/react-router' {
       path: '/advertising-in-colombo'
       fullPath: '/advertising-in-colombo'
       preLoaderRoute: typeof AdvertisingInColomboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-in-batticaloa': {
+      id: '/advertising-in-batticaloa'
+      path: '/advertising-in-batticaloa'
+      fullPath: '/advertising-in-batticaloa'
+      preLoaderRoute: typeof AdvertisingInBatticaloaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-in-badulla': {
+      id: '/advertising-in-badulla'
+      path: '/advertising-in-badulla'
+      fullPath: '/advertising-in-badulla'
+      preLoaderRoute: typeof AdvertisingInBadullaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertising-in-anuradhapura': {
+      id: '/advertising-in-anuradhapura'
+      path: '/advertising-in-anuradhapura'
+      fullPath: '/advertising-in-anuradhapura'
+      preLoaderRoute: typeof AdvertisingInAnuradhapuraRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/advertising-for-wedding-industry-sri-lanka': {
@@ -9816,12 +9938,18 @@ const rootRouteChildren: RootRouteChildren = {
     AdvertisingForTravelTourismSriLankaRoute,
   AdvertisingForWeddingIndustrySriLankaRoute:
     AdvertisingForWeddingIndustrySriLankaRoute,
+  AdvertisingInAnuradhapuraRoute: AdvertisingInAnuradhapuraRoute,
+  AdvertisingInBadullaRoute: AdvertisingInBadullaRoute,
+  AdvertisingInBatticaloaRoute: AdvertisingInBatticaloaRoute,
   AdvertisingInColomboRoute: AdvertisingInColomboRoute,
   AdvertisingInGalleRoute: AdvertisingInGalleRoute,
   AdvertisingInJaffnaRoute: AdvertisingInJaffnaRoute,
   AdvertisingInKandyRoute: AdvertisingInKandyRoute,
   AdvertisingInKurunegalaRoute: AdvertisingInKurunegalaRoute,
+  AdvertisingInMataraRoute: AdvertisingInMataraRoute,
   AdvertisingInNegomboRoute: AdvertisingInNegomboRoute,
+  AdvertisingInRatnapuraRoute: AdvertisingInRatnapuraRoute,
+  AdvertisingInTrincomaleeRoute: AdvertisingInTrincomaleeRoute,
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
   AffiliateMarketingSriLankaRoute: AffiliateMarketingSriLankaRoute,
@@ -10307,3 +10435,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

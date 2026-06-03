@@ -10,7 +10,7 @@ const SLUG = "tv-advertising-cost-sri-lanka";
 
 const ROWS: { format: string; cost: string; notes: string }[] = [
   {
-    "format": "Leading Sinhala channel prime time (7–10 pm)",
+    "format": "Top channel prime time (Hiru / Sirasa / Derana, 7–10 pm)",
     "cost": "Rs 90,000 – 220,000 / 30s spot",
     "notes": "Top teledrama bumpers cost more."
   },
@@ -20,12 +20,12 @@ const ROWS: { format: string; cost: string; notes: string }[] = [
     "notes": "Mornings and afternoons."
   },
   {
-    "format": "Leading English channels",
+    "format": "MTV / Sirasa English channels",
     "cost": "Rs 15,000 – 60,000 / 30s spot",
     "notes": "Sports and English film breaks."
   },
   {
-    "format": "State channels — prime time",
+    "format": "ITN / Rupavahini prime time",
     "cost": "Rs 30,000 – 90,000 / 30s spot",
     "notes": "State channels, wide rural reach."
   },

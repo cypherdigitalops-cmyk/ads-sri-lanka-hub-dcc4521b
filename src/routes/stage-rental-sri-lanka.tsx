@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
-const TITLE = "Stage Rental in Sri Lanka — Hire & Pricing | advertisingsrilanka.lk";
-const DESC = "Reliable stage rental for events in Sri Lanka. Get pricing, packages and free guidance — call 0771437707 or WhatsApp.";
+const TITLE = "Stage Rental Sri Lanka — From LKR 25,000 | Free Quote in 30 Min";
+const DESC = "Professional stage rental Sri Lanka: modular decks, truss roofs, wedding & concert stages. LKR pricing, island-wide delivery, free LKR quote on WhatsApp 0771437707.";
 
 export const Route = createFileRoute("/stage-rental-sri-lanka")({
   head: () => ({

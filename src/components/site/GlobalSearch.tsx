@@ -5,6 +5,37 @@ import { CATEGORIES, titleCase } from "@/data/site";
 
 type Item = { slug: string; label: string; group: string; kind: "service" | "hub" | "blog" };
 
+const EXTRA: Item[] = [
+  // City hubs
+  { slug: "advertising-in-anuradhapura", label: "Advertising in Anuradhapura", group: "Cities", kind: "hub" },
+  { slug: "advertising-in-badulla", label: "Advertising in Badulla", group: "Cities", kind: "hub" },
+  { slug: "advertising-in-batticaloa", label: "Advertising in Batticaloa", group: "Cities", kind: "hub" },
+  { slug: "advertising-in-matara", label: "Advertising in Matara", group: "Cities", kind: "hub" },
+  { slug: "advertising-in-ratnapura", label: "Advertising in Ratnapura", group: "Cities", kind: "hub" },
+  { slug: "advertising-in-trincomalee", label: "Advertising in Trincomalee", group: "Cities", kind: "hub" },
+  // Cost guides
+  { slug: "billboard-advertising-cost-sri-lanka", label: "Billboard Advertising Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "tv-advertising-cost-sri-lanka", label: "TV Advertising Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "radio-advertising-cost-sri-lanka", label: "Radio Advertising Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "google-ads-cost-sri-lanka", label: "Google Ads Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "facebook-ads-cost-sri-lanka", label: "Facebook Ads Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "seo-pricing-sri-lanka", label: "SEO Pricing Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "event-management-cost-sri-lanka", label: "Event Management Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "video-production-cost-sri-lanka", label: "Video Production Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  { slug: "logo-design-cost-sri-lanka", label: "Logo Design Cost Sri Lanka", group: "Cost Guides", kind: "service" },
+  // Blog guides
+  { slug: "blog/how-much-does-advertising-cost-in-sri-lanka-2025", label: "How Much Does Advertising Cost in Sri Lanka (2025)", group: "Guides", kind: "blog" },
+  { slug: "blog/best-time-to-run-facebook-ads-in-sri-lanka", label: "Best Time to Run Facebook Ads in Sri Lanka", group: "Guides", kind: "blog" },
+  { slug: "blog/how-to-book-a-billboard-in-colombo", label: "How to Book a Billboard in Colombo", group: "Guides", kind: "blog" },
+  { slug: "blog/google-business-profile-setup-guide-sri-lanka", label: "Google Business Profile Setup Guide Sri Lanka", group: "Guides", kind: "blog" },
+  { slug: "blog/how-to-run-tiktok-ads-in-sri-lanka-step-by-step", label: "How to Run TikTok Ads in Sri Lanka Step by Step", group: "Guides", kind: "blog" },
+  { slug: "blog/sinhala-vs-tamil-vs-english-advertising-language-sri-lanka", label: "Sinhala vs Tamil vs English — Advertising Language", group: "Guides", kind: "blog" },
+  { slug: "blog/how-to-get-on-first-page-of-google-sri-lanka", label: "How to Get on First Page of Google Sri Lanka", group: "Guides", kind: "blog" },
+  { slug: "blog/whatsapp-marketing-guide-sri-lankan-businesses", label: "WhatsApp Marketing Guide for Sri Lankan Businesses", group: "Guides", kind: "blog" },
+  { slug: "blog/how-to-plan-a-brand-activation-in-sri-lanka", label: "How to Plan a Brand Activation in Sri Lanka", group: "Guides", kind: "blog" },
+  { slug: "blog/advertising-budget-calculator-sri-lankan-businesses", label: "Advertising Budget Calculator for Sri Lankan Businesses", group: "Guides", kind: "blog" },
+];
+
 function buildIndex(): Item[] {
   const items: Item[] = [];
   for (const c of CATEGORIES) {
@@ -16,6 +47,9 @@ function buildIndex(): Item[] {
       items.push({ slug: `blog/${b.slug}`, label: titleCase(b.keyword), group: c.title, kind: "blog" });
     }
   }
+  // De-dupe by slug, prefer entries already in CATEGORIES
+  const seen = new Set(items.map((i) => i.slug));
+  for (const e of EXTRA) if (!seen.has(e.slug)) items.push(e);
   return items;
 }
 

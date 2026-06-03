@@ -1753,3 +1753,7 @@ export const PAGE_FAQS: Record<string, FAQ[]> = {
     { q: "What types of content are most effective for PR in the Sri Lankan media landscape?", a: "In the Sri Lankan media landscape, effective PR content often includes culturally relevant success stories, impactful corporate social responsibility (CSR) initiatives, and expert commentary on local economic or social trends. High-quality press releases, case studies, and engaging visuals are also crucial for gaining media attention. Let's craft your compelling stories – call us." },
   ],
 };
+
+export function getPageFaqs(slug: string): FAQ[] {
+  return PAGE_FAQS[slug] ?? [];
+}

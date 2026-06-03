@@ -30,7 +30,6 @@ const ORG_JSONLD = {
       },
       image: `${SITE.url}/og-home.jpg`,
       telephone: SITE.phoneIntl,
-      email: SITE.email,
       priceRange: "$$",
       description:
         "Sri Lanka's #1 advertising hub — ATL, BTL, digital, SEO, social media, outdoor, branding, web and video production for businesses across Sri Lanka.",

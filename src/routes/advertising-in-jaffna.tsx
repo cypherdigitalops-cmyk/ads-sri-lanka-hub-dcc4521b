@@ -17,7 +17,6 @@ const LOCAL_BUSINESS_JSONLD = {
   name: `Advertising Sri Lanka — ${CITY}`,
   url: `${SITE.url}/${SLUG}`,
   telephone: "+94771437707",
-  email: "info@advertisingsrilanka.lk",
   image: `${SITE.url}/og-home.jpg`,
   priceRange: "$$",
   areaServed: { "@type": "City", name: CITY },

@@ -21,7 +21,7 @@ export function SiteHeader() {
           <Link to="/event-rentals-sri-lanka" className="hover:text-primary">Rentals</Link>
           <Link to="/atl-advertising-sri-lanka" className="hover:text-primary">ATL</Link>
           <Link to="/btl-advertising-sri-lanka" className="hover:text-primary">BTL</Link>
-          <Link to="/printing-services-sri-lanka" className="hover:text-primary">Printing</Link>
+          <Link to="/printing-services-sri-lanka" className="hover:text-primary">Printing Services</Link>
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
           <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
           <Link to="/pr-communications-sri-lanka" className="hover:text-primary">PR</Link>

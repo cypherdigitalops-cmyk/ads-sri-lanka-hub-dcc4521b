@@ -550,6 +550,18 @@ export function CategoryHubTemplate({
       </div>
       <RelatedCategories categorySlug={category.slug} />
       <FaqList items={getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs} />
+      {category.slug !== "printing-services-sri-lanka" ? (
+        <section className="mx-auto max-w-7xl px-4 pb-10">
+          <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">
+            <span className="font-semibold">Looking for print?</span>{" "}
+            Browse Sri Lanka's most complete range of{" "}
+            <Link to="/printing-services-sri-lanka" className="text-primary underline-offset-2 hover:underline font-semibold">
+              printing services Sri Lanka
+            </Link>{" "}
+            — large format, banners, flex, signage, vehicle branding, business cards, packaging and 35+ more, with same-day jobs in Colombo.
+          </div>
+        </section>
+      ) : null}
       <InlineInquiryForm service={category.title} />
     </>
   );
@@ -689,6 +701,18 @@ export function ServicePageTemplate({
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
+      {category.slug !== "printing-services-sri-lanka" ? (
+        <section className="mx-auto max-w-7xl px-4 pb-10">
+          <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">
+            <span className="font-semibold">Need printing too?</span>{" "}
+            Explore our full range of{" "}
+            <Link to="/printing-services-sri-lanka" className="text-primary underline-offset-2 hover:underline font-semibold">
+              printing services Sri Lanka
+            </Link>{" "}
+            — banners, flex, signage, vehicle branding, business cards, packaging and 35+ more, with same-day jobs available in Colombo.
+          </div>
+        </section>
+      ) : null}
       <InlineInquiryForm service={title} />
     </>
   );
@@ -801,6 +825,18 @@ export function BlogArticleTemplate({
           ))}
         </div>
       </section>
+      {category.slug !== "printing-services-sri-lanka" ? (
+        <section className="mx-auto max-w-7xl px-4 pb-10">
+          <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">
+            <span className="font-semibold">Need print collateral?</span>{" "}
+            See Sri Lanka's most complete{" "}
+            <Link to="/printing-services-sri-lanka" className="text-primary underline-offset-2 hover:underline font-semibold">
+              printing services Sri Lanka
+            </Link>{" "}
+            hub — banners, flex, signage, vehicle branding, packaging and 35+ more.
+          </div>
+        </section>
+      ) : null}
     </>
   );
 }

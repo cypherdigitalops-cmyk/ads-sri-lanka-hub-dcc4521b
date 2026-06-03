@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Social Media Marketing Solutions for Sri Lanka";
-const DESC = "Grow followers, engagement and sales across every social platform. Get pricing and free advice — call 0771437707 or WhatsApp.";
+const TITLE = "Social Media Marketing Sri Lanka | Facebook, Instagram & TikTok Ads from LKR 45,000/mo";
+const DESC = "Sri Lanka's results-driven social media marketing agency. Facebook, Instagram, TikTok & LinkedIn ads in Sinhala, Tamil & English. Free strategy call — WhatsApp 0771437707.";
 
 export const Route = createFileRoute("/social-media-marketing-sri-lanka")({
   head: () => ({

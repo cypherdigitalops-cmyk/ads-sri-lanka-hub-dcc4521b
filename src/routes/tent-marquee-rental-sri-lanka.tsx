@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
-const TITLE = "Tent & Marquee Rental in Sri Lanka — Hire & Pricing | advertisingsrilanka.lk";
-const DESC = "Reliable tent & marquee rental for events in Sri Lanka. Get pricing, packages and free guidance — call 0771437707 or WhatsApp.";
+const TITLE = "Tent & Marquee Rental Sri Lanka | Wedding & Event Tents from LKR 9,500/day";
+const DESC = "Tent and marquee rental in Sri Lanka — clear-span, pagoda, stretch & crystal marquees with full install. Free site visit. Call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/tent-marquee-rental-sri-lanka")({
   head: () => ({

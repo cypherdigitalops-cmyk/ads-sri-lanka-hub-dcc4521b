@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
-const TITLE = "Event Management Sri Lanka — Plan, Stage & Execute | advertisingsrilanka.lk";
-const DESC = "Sri Lanka's trusted event management hub — corporate events, weddings, exhibitions, conferences, brand activations, stage setup & LED screens. Call 0771437707.";
+const TITLE = "Event Management Sri Lanka | Corporate, Wedding & Conference Specialists";
+const DESC = "Sri Lanka's full-service event management team — corporate events, weddings, launches, conferences & concerts. One team, every detail. Call 0771437707.";
 
 export const Route = createFileRoute("/event-management-sri-lanka")({
   head: () => ({

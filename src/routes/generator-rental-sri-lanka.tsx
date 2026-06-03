@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
-const TITLE = "Generator Rental in Sri Lanka — Hire & Pricing | advertisingsrilanka.lk";
-const DESC = "Reliable generator rental for events in Sri Lanka. Get pricing, packages and free guidance — call 0771437707 or WhatsApp.";
+const TITLE = "Generator Rental Sri Lanka | Silent 15–500 kVA Hire from LKR 9,500/day";
+const DESC = "Silent diesel generator rental in Sri Lanka — 15 kVA to 500 kVA with operator, fuel and ATS. Same-day delivery in Colombo. Call 0771437707 or WhatsApp.";
 
 export const Route = createFileRoute("/generator-rental-sri-lanka")({
   head: () => ({

@@ -825,6 +825,18 @@ export function BlogArticleTemplate({
           ))}
         </div>
       </section>
+      {category.slug !== "printing-services-sri-lanka" ? (
+        <section className="mx-auto max-w-7xl px-4 pb-10">
+          <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">
+            <span className="font-semibold">Need print collateral?</span>{" "}
+            See Sri Lanka's most complete{" "}
+            <Link to="/printing-services-sri-lanka" className="text-primary underline-offset-2 hover:underline font-semibold">
+              printing services Sri Lanka
+            </Link>{" "}
+            hub — banners, flex, signage, vehicle branding, packaging and 35+ more.
+          </div>
+        </section>
+      ) : null}
     </>
   );
 }

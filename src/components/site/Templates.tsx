@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users, Building2, GraduationCap, Mic2, PartyPopper, Presentation, Heart, Image as ImageIcon, Sticker, Layout, Car, Square, ScrollText, Tag } from "lucide-react";
+import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users, Building2, GraduationCap, Mic2, PartyPopper, Presentation, Heart, Image as ImageIcon, Sticker, Layout, Car, Square, ScrollText, Tag, MessageCircle, Send, Zap, Clock } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection, InlineInquiryForm, MidContentWhatsAppCTA } from "./CTASection";
 import { openQuoteModal } from "./QuoteModal";
@@ -244,17 +244,31 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
         </div>
         <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{h1}</h1>
         <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{applyLinks(intro)}</p>
-        <div className="mt-7 flex flex-wrap gap-3">
-          <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90">
-            <Phone className="h-4 w-4" /> Call {SITE.phone}
-          </a>
+        <div className="mt-7 flex flex-wrap items-center gap-3">
           <button
             type="button"
             onClick={() => openQuoteModal(kicker)}
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-semibold text-[var(--whatsapp-foreground)] shadow-[var(--shadow-card)] transition hover:opacity-90"
+            className="group relative inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3.5 text-base font-bold text-accent-foreground shadow-2xl ring-2 ring-accent/40 transition hover:scale-[1.03]"
           >
-            Get Free Quote <ArrowRight className="h-4 w-4" />
+            <span className="absolute -inset-0.5 -z-10 animate-pulse rounded-full bg-accent/50 blur-md" aria-hidden />
+            <Send className="h-5 w-5" /> Get Free Quote <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
           </button>
+          <a
+            href={`${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${kicker}. Please share pricing and timelines.`)}`}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3.5 text-base font-bold text-[var(--whatsapp-foreground)] shadow-xl transition hover:scale-[1.03]"
+          >
+            <MessageCircle className="h-5 w-5" /> WhatsApp Us
+          </a>
+          <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20">
+            <Phone className="h-5 w-5" /> Call {SITE.phone}
+          </a>
+        </div>
+        <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-primary-foreground/85">
+          <span className="inline-flex items-center gap-1.5"><Zap className="h-3.5 w-3.5 text-accent" /> Free quote in 5 min</span>
+          <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-accent" /> No obligation</span>
+          <span className="inline-flex items-center gap-1.5"><Clock className="h-3.5 w-3.5 text-accent" /> Mon–Sat 9am–7pm</span>
         </div>
       </div>
     </section>
@@ -666,6 +680,7 @@ export function ServicePageTemplate({
         </div>
       </section>
       <FaqList items={faqs} />
+      <MidContentWhatsAppCTA service={title} />
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={`Want clear answers about ${title}?`}

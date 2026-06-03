@@ -89,24 +89,44 @@ export function MidContentWhatsAppCTA({ service }: { service?: string }) {
     ? `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${service}. Can you share pricing and timelines?`)}`
     : SITE.whatsapp;
   return (
-    <section className="mx-auto my-10 max-w-3xl px-4">
-      <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-[var(--whatsapp)]/30 bg-[var(--whatsapp)]/5 p-6 sm:flex-row sm:p-7">
-        <div className="text-center sm:text-left">
-          <div className="text-base font-bold sm:text-lg">
-            Talking to a specialist is faster than reading.
+    <section className="mx-auto my-12 max-w-4xl px-4">
+      <div className="relative overflow-hidden rounded-3xl bg-[image:var(--gradient-hero)] p-7 text-primary-foreground shadow-[var(--shadow-elegant)] sm:p-9">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/30 blur-3xl" aria-hidden />
+        <div className="pointer-events-none absolute -bottom-20 -left-16 h-56 w-56 rounded-full bg-[var(--whatsapp)]/40 blur-3xl" aria-hidden />
+        <div className="relative flex flex-col items-center justify-between gap-5 sm:flex-row">
+          <div className="text-center sm:text-left">
+            <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-accent">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+              </span>
+              Specialists online now
+            </div>
+            <div className="mt-3 text-xl font-extrabold leading-tight sm:text-2xl">
+              {service ? `Get pricing for ${service} in 5 minutes` : "Get pricing & answers in 5 minutes"}
+            </div>
+            <p className="mt-2 text-sm text-primary-foreground/85">
+              {service ? `Free quote, samples & timelines for ${service}. No obligation.` : "Free quote, samples & timelines. No obligation."}
+            </p>
           </div>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {service ? `Get instant pricing & samples for ${service} on WhatsApp.` : "Get instant pricing & answers on WhatsApp — usually within 5 minutes."}
-          </p>
+          <div className="flex flex-col items-stretch gap-2 sm:flex-none">
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener"
+              className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-7 py-4 text-base font-extrabold text-[var(--whatsapp-foreground)] shadow-2xl ring-2 ring-[var(--whatsapp)]/40 transition hover:scale-105"
+            >
+              <span className="absolute -inset-0.5 -z-10 animate-pulse rounded-full bg-[var(--whatsapp)] opacity-60 blur-md" aria-hidden />
+              <MessageCircle className="h-5 w-5" /> WhatsApp Now
+            </a>
+            <a
+              href={`tel:${SITE.phone}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3 text-sm font-bold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
+            >
+              <Phone className="h-4 w-4" /> Call {SITE.phone}
+            </a>
+          </div>
         </div>
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener"
-          className="inline-flex flex-none items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-bold text-[var(--whatsapp-foreground)] shadow-lg transition hover:scale-105"
-        >
-          <MessageCircle className="h-5 w-5" /> WhatsApp Us Now
-        </a>
       </div>
     </section>
   );

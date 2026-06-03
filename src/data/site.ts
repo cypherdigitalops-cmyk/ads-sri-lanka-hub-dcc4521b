@@ -616,6 +616,35 @@ CATEGORIES.push({
   blog: [],
 });
 
+CATEGORIES.push({
+  slug: "industry-advertising-sri-lanka",
+  hubKeyword: "industry advertising sri lanka",
+  title: "Industry-Specific Advertising",
+  short:
+    "Tailored advertising playbooks for hotels, real estate, schools, hospitals, restaurants, banks, e-commerce, automotive, IT and more.",
+  intro:
+    "Every industry has its own buyer journey, regulations and seasonality. We build channel mixes, creative and measurement frameworks tuned to each sector — from luxury resorts and private hospitals to political campaigns and supermarket chains across Sri Lanka.",
+  icon: "Briefcase",
+  services: [
+    { slug: "advertising-for-hotels-resorts-sri-lanka", keyword: "advertising for hotels and resorts sri lanka" },
+    { slug: "advertising-for-real-estate-sri-lanka", keyword: "advertising for real estate sri lanka" },
+    { slug: "advertising-for-schools-universities-sri-lanka", keyword: "advertising for schools and universities sri lanka" },
+    { slug: "advertising-for-hospitals-clinics-sri-lanka", keyword: "advertising for hospitals and clinics sri lanka" },
+    { slug: "advertising-for-restaurants-sri-lanka", keyword: "advertising for restaurants sri lanka" },
+    { slug: "advertising-for-garment-textile-sri-lanka", keyword: "advertising for garment and textile industry sri lanka" },
+    { slug: "advertising-for-banks-financial-services-sri-lanka", keyword: "advertising for banks and financial services sri lanka" },
+    { slug: "advertising-for-ecommerce-sri-lanka", keyword: "advertising for ecommerce businesses sri lanka" },
+    { slug: "advertising-for-ngos-nonprofits-sri-lanka", keyword: "advertising for ngos and non-profits sri lanka" },
+    { slug: "advertising-for-travel-tourism-sri-lanka", keyword: "advertising for travel and tourism sri lanka" },
+    { slug: "advertising-for-automotive-dealers-sri-lanka", keyword: "advertising for automotive dealers sri lanka" },
+    { slug: "advertising-for-supermarkets-retail-sri-lanka", keyword: "advertising for supermarkets and retail chains sri lanka" },
+    { slug: "advertising-for-it-tech-companies-sri-lanka", keyword: "advertising for it and tech companies sri lanka" },
+    { slug: "advertising-for-wedding-industry-sri-lanka", keyword: "advertising for wedding industry sri lanka" },
+    { slug: "advertising-for-political-campaigns-sri-lanka", keyword: "advertising for political campaigns sri lanka" },
+  ],
+  blog: [],
+});
+
 export function titleCase(s: string) {
   const ACRONYMS = new Set([
     "atl", "btl", "ttl", "seo", "sem", "ppc", "pos", "tv", "ui", "ux",

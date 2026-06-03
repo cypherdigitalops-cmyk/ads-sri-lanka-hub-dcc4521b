@@ -15,6 +15,7 @@ import {
 } from "@/data/content-engine";
 import { getPageFaqs } from "@/data/page-faqs";
 import { getPrintingServiceContent } from "@/data/printing-service-content";
+import { getServiceUniqueContent } from "@/data/service-unique-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -499,6 +500,14 @@ export function CategoryHubTemplate({
           { icon: <Users className="h-5 w-5" />, title: "Local expertise", body: "Deep market knowledge across Sinhala, Tamil and English audiences." },
         ]}
       />
+      {(() => {
+        const svc = getServiceUniqueContent(category.slug);
+        return svc.length ? (
+          <section className="mx-auto max-w-3xl px-4 py-8">
+            <LongFormBlocks blocks={svc} />
+          </section>
+        ) : null;
+      })()}
       <ProcessSteps />
       <MidContentWhatsAppCTA service={category.title} />
       {category.blog.length ? (
@@ -624,6 +633,14 @@ export function ServicePageTemplate({
         return unique.length ? (
           <section className="mx-auto max-w-3xl px-4 py-8">
             <LongFormBlocks blocks={unique} />
+          </section>
+        ) : null;
+      })()}
+      {(() => {
+        const svc = getServiceUniqueContent(slug);
+        return svc.length ? (
+          <section className="mx-auto max-w-3xl px-4 py-8">
+            <LongFormBlocks blocks={svc} />
           </section>
         ) : null;
       })()}

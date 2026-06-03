@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Embossed Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Hire trusted specialists for embossed printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Embossed Printing Sri Lanka | Raised & Debossed Business Cards";
+const DESC = "Embossed & debossed printing in Sri Lanka for business cards, folders & packaging. Blind emboss, foil + emboss combinations. Premium finish. Call 0771437707.";
 
 export const Route = createFileRoute("/embossed-printing-sri-lanka")({
   head: () => ({

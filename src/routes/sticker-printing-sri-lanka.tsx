@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Sticker Printing Sri Lanka Services Across Sri Lanka";
-const DESC = "Hire trusted specialists for sticker printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Sticker Printing Sri Lanka | Vinyl, Die-Cut & Label Stickers";
+const DESC = "Sticker printing in Sri Lanka — vinyl, transparent, die-cut & barcode labels. From Rs 5 per sticker. Waterproof & outdoor grade available. Call 0771437707.";
 
 export const Route = createFileRoute("/sticker-printing-sri-lanka")({
   head: () => ({

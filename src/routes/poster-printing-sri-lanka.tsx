@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Poster Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Professional poster printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Poster Printing Sri Lanka | A3 A2 A1 & Custom Size Posters";
+const DESC = "Poster printing in Sri Lanka — A3, A2, A1 & custom sizes. Gloss & matt lamination. From Rs 80 per A3. Fast 24–48hr turnaround. Islandwide delivery. Call 0771437707.";
 
 export const Route = createFileRoute("/poster-printing-sri-lanka")({
   head: () => ({

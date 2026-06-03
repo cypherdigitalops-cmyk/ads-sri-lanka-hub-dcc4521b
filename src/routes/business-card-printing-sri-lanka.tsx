@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Business Card Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Sri Lanka's full-service business card printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Business Card Printing Sri Lanka | From Rs 1,500 per 100 Cards";
+const DESC = "Business card printing in Sri Lanka from Rs 1,500 per 100. Matt, gloss, spot UV, foil & soft-touch finish. Same-day available in Colombo. Call 0771437707.";
 
 export const Route = createFileRoute("/business-card-printing-sri-lanka")({
   head: () => ({

@@ -105,6 +105,7 @@ import { Route as PowerBankPrintingSriLankaRouteImport } from './routes/power-ba
 import { Route as PosterPrintingSriLankaRouteImport } from './routes/poster-printing-sri-lanka'
 import { Route as PopupBannerPrintingSriLankaRouteImport } from './routes/popup-banner-printing-sri-lanka'
 import { Route as PoloShirtPrintingSriLankaRouteImport } from './routes/polo-shirt-printing-sri-lanka'
+import { Route as PoliticalAdvertisingCampaignSriLankaRouteImport } from './routes/political-advertising-campaign-sri-lanka'
 import { Route as PointOfSaleAdvertisingSriLankaRouteImport } from './routes/point-of-sale-advertising-sri-lanka'
 import { Route as PodcastAdvertisingSriLankaRouteImport } from './routes/podcast-advertising-sri-lanka'
 import { Route as PlaquePrintingSriLankaRouteImport } from './routes/plaque-printing-sri-lanka'
@@ -1004,6 +1005,12 @@ const PoloShirtPrintingSriLankaRoute =
   PoloShirtPrintingSriLankaRouteImport.update({
     id: '/polo-shirt-printing-sri-lanka',
     path: '/polo-shirt-printing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PoliticalAdvertisingCampaignSriLankaRoute =
+  PoliticalAdvertisingCampaignSriLankaRouteImport.update({
+    id: '/political-advertising-campaign-sri-lanka',
+    path: '/political-advertising-campaign-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const PointOfSaleAdvertisingSriLankaRoute =
@@ -3376,6 +3383,7 @@ export interface FileRoutesByFullPath {
   '/plaque-printing-sri-lanka': typeof PlaquePrintingSriLankaRoute
   '/podcast-advertising-sri-lanka': typeof PodcastAdvertisingSriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
+  '/political-advertising-campaign-sri-lanka': typeof PoliticalAdvertisingCampaignSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
   '/poster-printing-sri-lanka': typeof PosterPrintingSriLankaRoute
@@ -3850,6 +3858,7 @@ export interface FileRoutesByTo {
   '/plaque-printing-sri-lanka': typeof PlaquePrintingSriLankaRoute
   '/podcast-advertising-sri-lanka': typeof PodcastAdvertisingSriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
+  '/political-advertising-campaign-sri-lanka': typeof PoliticalAdvertisingCampaignSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
   '/poster-printing-sri-lanka': typeof PosterPrintingSriLankaRoute
@@ -4325,6 +4334,7 @@ export interface FileRoutesById {
   '/plaque-printing-sri-lanka': typeof PlaquePrintingSriLankaRoute
   '/podcast-advertising-sri-lanka': typeof PodcastAdvertisingSriLankaRoute
   '/point-of-sale-advertising-sri-lanka': typeof PointOfSaleAdvertisingSriLankaRoute
+  '/political-advertising-campaign-sri-lanka': typeof PoliticalAdvertisingCampaignSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
   '/poster-printing-sri-lanka': typeof PosterPrintingSriLankaRoute
@@ -4801,6 +4811,7 @@ export interface FileRouteTypes {
     | '/plaque-printing-sri-lanka'
     | '/podcast-advertising-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
+    | '/political-advertising-campaign-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
     | '/poster-printing-sri-lanka'
@@ -5275,6 +5286,7 @@ export interface FileRouteTypes {
     | '/plaque-printing-sri-lanka'
     | '/podcast-advertising-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
+    | '/political-advertising-campaign-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
     | '/poster-printing-sri-lanka'
@@ -5749,6 +5761,7 @@ export interface FileRouteTypes {
     | '/plaque-printing-sri-lanka'
     | '/podcast-advertising-sri-lanka'
     | '/point-of-sale-advertising-sri-lanka'
+    | '/political-advertising-campaign-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
     | '/poster-printing-sri-lanka'
@@ -6224,6 +6237,7 @@ export interface RootRouteChildren {
   PlaquePrintingSriLankaRoute: typeof PlaquePrintingSriLankaRoute
   PodcastAdvertisingSriLankaRoute: typeof PodcastAdvertisingSriLankaRoute
   PointOfSaleAdvertisingSriLankaRoute: typeof PointOfSaleAdvertisingSriLankaRoute
+  PoliticalAdvertisingCampaignSriLankaRoute: typeof PoliticalAdvertisingCampaignSriLankaRoute
   PoloShirtPrintingSriLankaRoute: typeof PoloShirtPrintingSriLankaRoute
   PopupBannerPrintingSriLankaRoute: typeof PopupBannerPrintingSriLankaRoute
   PosterPrintingSriLankaRoute: typeof PosterPrintingSriLankaRoute
@@ -7117,6 +7131,13 @@ declare module '@tanstack/react-router' {
       path: '/polo-shirt-printing-sri-lanka'
       fullPath: '/polo-shirt-printing-sri-lanka'
       preLoaderRoute: typeof PoloShirtPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/political-advertising-campaign-sri-lanka': {
+      id: '/political-advertising-campaign-sri-lanka'
+      path: '/political-advertising-campaign-sri-lanka'
+      fullPath: '/political-advertising-campaign-sri-lanka'
+      preLoaderRoute: typeof PoliticalAdvertisingCampaignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/point-of-sale-advertising-sri-lanka': {
@@ -10023,6 +10044,8 @@ const rootRouteChildren: RootRouteChildren = {
   PlaquePrintingSriLankaRoute: PlaquePrintingSriLankaRoute,
   PodcastAdvertisingSriLankaRoute: PodcastAdvertisingSriLankaRoute,
   PointOfSaleAdvertisingSriLankaRoute: PointOfSaleAdvertisingSriLankaRoute,
+  PoliticalAdvertisingCampaignSriLankaRoute:
+    PoliticalAdvertisingCampaignSriLankaRoute,
   PoloShirtPrintingSriLankaRoute: PoloShirtPrintingSriLankaRoute,
   PopupBannerPrintingSriLankaRoute: PopupBannerPrintingSriLankaRoute,
   PosterPrintingSriLankaRoute: PosterPrintingSriLankaRoute,
@@ -10284,13 +10307,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

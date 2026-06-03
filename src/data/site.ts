@@ -641,6 +641,7 @@ CATEGORIES.push({
     { slug: "advertising-for-it-tech-companies-sri-lanka", keyword: "advertising for it and tech companies sri lanka" },
     { slug: "advertising-for-wedding-industry-sri-lanka", keyword: "advertising for wedding industry sri lanka" },
     { slug: "advertising-for-political-campaigns-sri-lanka", keyword: "advertising for political campaigns sri lanka" },
+    { slug: "political-advertising-campaign-sri-lanka", keyword: "political advertising campaign sri lanka" },
   ],
   blog: [],
 });

@@ -169,6 +169,7 @@ import { Route as IntegratedMarketingSriLankaRouteImport } from './routes/integr
 import { Route as InstagramMarketingSriLankaRouteImport } from './routes/instagram-marketing-sri-lanka'
 import { Route as InstagramAdsSriLankaRouteImport } from './routes/instagram-ads-sri-lanka'
 import { Route as InfluencerMarketingSriLankaRouteImport } from './routes/influencer-marketing-sri-lanka'
+import { Route as IndustryAdvertisingSriLankaRouteImport } from './routes/industry-advertising-sri-lanka'
 import { Route as IndoorBannerPrintingSriLankaRouteImport } from './routes/indoor-banner-printing-sri-lanka'
 import { Route as IdCardPrintingSriLankaRouteImport } from './routes/id-card-printing-sri-lanka'
 import { Route as IceSculptureSriLankaRouteImport } from './routes/ice-sculpture-sri-lanka'
@@ -1353,6 +1354,12 @@ const InfluencerMarketingSriLankaRoute =
   InfluencerMarketingSriLankaRouteImport.update({
     id: '/influencer-marketing-sri-lanka',
     path: '/influencer-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const IndustryAdvertisingSriLankaRoute =
+  IndustryAdvertisingSriLankaRouteImport.update({
+    id: '/industry-advertising-sri-lanka',
+    path: '/industry-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const IndoorBannerPrintingSriLankaRoute =
@@ -3304,6 +3311,7 @@ export interface FileRoutesByFullPath {
   '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
   '/id-card-printing-sri-lanka': typeof IdCardPrintingSriLankaRoute
   '/indoor-banner-printing-sri-lanka': typeof IndoorBannerPrintingSriLankaRoute
+  '/industry-advertising-sri-lanka': typeof IndustryAdvertisingSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
@@ -3777,6 +3785,7 @@ export interface FileRoutesByTo {
   '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
   '/id-card-printing-sri-lanka': typeof IdCardPrintingSriLankaRoute
   '/indoor-banner-printing-sri-lanka': typeof IndoorBannerPrintingSriLankaRoute
+  '/industry-advertising-sri-lanka': typeof IndustryAdvertisingSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
@@ -4251,6 +4260,7 @@ export interface FileRoutesById {
   '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
   '/id-card-printing-sri-lanka': typeof IdCardPrintingSriLankaRoute
   '/indoor-banner-printing-sri-lanka': typeof IndoorBannerPrintingSriLankaRoute
+  '/industry-advertising-sri-lanka': typeof IndustryAdvertisingSriLankaRoute
   '/influencer-marketing-sri-lanka': typeof InfluencerMarketingSriLankaRoute
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
@@ -4726,6 +4736,7 @@ export interface FileRouteTypes {
     | '/ice-sculpture-sri-lanka'
     | '/id-card-printing-sri-lanka'
     | '/indoor-banner-printing-sri-lanka'
+    | '/industry-advertising-sri-lanka'
     | '/influencer-marketing-sri-lanka'
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
@@ -5199,6 +5210,7 @@ export interface FileRouteTypes {
     | '/ice-sculpture-sri-lanka'
     | '/id-card-printing-sri-lanka'
     | '/indoor-banner-printing-sri-lanka'
+    | '/industry-advertising-sri-lanka'
     | '/influencer-marketing-sri-lanka'
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
@@ -5672,6 +5684,7 @@ export interface FileRouteTypes {
     | '/ice-sculpture-sri-lanka'
     | '/id-card-printing-sri-lanka'
     | '/indoor-banner-printing-sri-lanka'
+    | '/industry-advertising-sri-lanka'
     | '/influencer-marketing-sri-lanka'
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
@@ -6146,6 +6159,7 @@ export interface RootRouteChildren {
   IceSculptureSriLankaRoute: typeof IceSculptureSriLankaRoute
   IdCardPrintingSriLankaRoute: typeof IdCardPrintingSriLankaRoute
   IndoorBannerPrintingSriLankaRoute: typeof IndoorBannerPrintingSriLankaRoute
+  IndustryAdvertisingSriLankaRoute: typeof IndustryAdvertisingSriLankaRoute
   InfluencerMarketingSriLankaRoute: typeof InfluencerMarketingSriLankaRoute
   InstagramAdsSriLankaRoute: typeof InstagramAdsSriLankaRoute
   InstagramMarketingSriLankaRoute: typeof InstagramMarketingSriLankaRoute
@@ -7551,6 +7565,13 @@ declare module '@tanstack/react-router' {
       path: '/influencer-marketing-sri-lanka'
       fullPath: '/influencer-marketing-sri-lanka'
       preLoaderRoute: typeof InfluencerMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/industry-advertising-sri-lanka': {
+      id: '/industry-advertising-sri-lanka'
+      path: '/industry-advertising-sri-lanka'
+      fullPath: '/industry-advertising-sri-lanka'
+      preLoaderRoute: typeof IndustryAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/indoor-banner-printing-sri-lanka': {
@@ -9937,6 +9958,7 @@ const rootRouteChildren: RootRouteChildren = {
   IceSculptureSriLankaRoute: IceSculptureSriLankaRoute,
   IdCardPrintingSriLankaRoute: IdCardPrintingSriLankaRoute,
   IndoorBannerPrintingSriLankaRoute: IndoorBannerPrintingSriLankaRoute,
+  IndustryAdvertisingSriLankaRoute: IndustryAdvertisingSriLankaRoute,
   InfluencerMarketingSriLankaRoute: InfluencerMarketingSriLankaRoute,
   InstagramAdsSriLankaRoute: InstagramAdsSriLankaRoute,
   InstagramMarketingSriLankaRoute: InstagramMarketingSriLankaRoute,
@@ -10262,3 +10284,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

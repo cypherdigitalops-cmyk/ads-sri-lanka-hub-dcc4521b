@@ -536,6 +536,7 @@ CATEGORIES.push({
     { slug: "popup-banner-printing-sri-lanka", keyword: "popup banner printing sri lanka" },
     { slug: "exhibition-banner-printing-sri-lanka", keyword: "exhibition banner printing sri lanka" },
     { slug: "trade-show-banner-printing-sri-lanka", keyword: "trade show banner printing sri lanka" },
+    { slug: "flag-printing-sri-lanka", keyword: "flag printing sri lanka" },
     { slug: "exhibition-stall-branding-sri-lanka", keyword: "exhibition stall branding sri lanka" },
     { slug: "booth-branding-sri-lanka", keyword: "booth branding sri lanka" },
     { slug: "stage-branding-sri-lanka", keyword: "stage branding sri lanka" },

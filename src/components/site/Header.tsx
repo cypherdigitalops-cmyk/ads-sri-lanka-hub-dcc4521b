@@ -23,7 +23,6 @@ export function SiteHeader() {
           <Link to="/btl-advertising-sri-lanka" className="hover:text-primary">BTL</Link>
           <Link to="/printing-services-sri-lanka" className="hover:text-primary">Printing Services</Link>
           <Link to="/outdoor-advertising-sri-lanka" className="hover:text-primary">Outdoor</Link>
-          <Link to="/branding-sri-lanka" className="hover:text-primary">Branding</Link>
           <Link to="/pr-communications-sri-lanka" className="hover:text-primary">PR</Link>
         </nav>
         <div className="flex items-center gap-2">

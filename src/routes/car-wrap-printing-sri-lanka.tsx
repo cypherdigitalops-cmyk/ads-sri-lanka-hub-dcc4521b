@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Car Wrap Printing Sri Lanka | Full & Partial Wraps from Rs 60,000";
-const DESC = "Professional car wrap printing in Sri Lanka. Full wraps Rs 60,000–150,000. Partial wraps from Rs 25,000. Cast vinyl, 3–5 year life. Colombo & islandwide. Call 0771437707.";
+const TITLE = "Car Wrap Sri Lanka — Full Wraps from LKR 95,000 | 3M & Avery Cast Vinyl";
+const DESC = "Professional car wrap Sri Lanka: full wraps from LKR 95,000, partial from LKR 35,000. 3M, Avery, Oracal cast vinyl, 5–7 yr life. Free 3D mockup on WhatsApp 0771437707.";
 
 export const Route = createFileRoute("/car-wrap-printing-sri-lanka")({
   head: () => ({

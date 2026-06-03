@@ -4,8 +4,8 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Digital Marketing Sri Lanka — Pricing & Best Practices";
-const DESC = "Wondering if digital marketing sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
+const TITLE = "Digital Marketing Sri Lanka 2026 — Packages, Pricing (LKR) & Best Agencies";
+const DESC = "Complete digital marketing Sri Lanka guide: SEO, Google Ads, Facebook & Instagram costs in LKR, package pricing, agency selection, ROI benchmarks. Free strategy call: 0771437707.";
 
 export const Route = createFileRoute("/blog/digital-marketing-sri-lanka")({
   head: () => ({

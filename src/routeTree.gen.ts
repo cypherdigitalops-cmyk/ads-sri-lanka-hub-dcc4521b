@@ -204,6 +204,7 @@ import { Route as FlowerWallRentalSriLankaRouteImport } from './routes/flower-wa
 import { Route as FlowerDecorationSriLankaRouteImport } from './routes/flower-decoration-sri-lanka'
 import { Route as FloorStickerPrintingSriLankaRouteImport } from './routes/floor-sticker-printing-sri-lanka'
 import { Route as FlexPrintingSriLankaRouteImport } from './routes/flex-printing-sri-lanka'
+import { Route as FlagPrintingSriLankaRouteImport } from './routes/flag-printing-sri-lanka'
 import { Route as FieldMarketingSriLankaRouteImport } from './routes/field-marketing-sri-lanka'
 import { Route as FacebookMarketingSriLankaRouteImport } from './routes/facebook-marketing-sri-lanka'
 import { Route as FacebookAdsSriLankaRouteImport } from './routes/facebook-ads-sri-lanka'
@@ -1573,6 +1574,11 @@ const FloorStickerPrintingSriLankaRoute =
 const FlexPrintingSriLankaRoute = FlexPrintingSriLankaRouteImport.update({
   id: '/flex-printing-sri-lanka',
   path: '/flex-printing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FlagPrintingSriLankaRoute = FlagPrintingSriLankaRouteImport.update({
+  id: '/flag-printing-sri-lanka',
+  path: '/flag-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FieldMarketingSriLankaRoute = FieldMarketingSriLankaRouteImport.update({
@@ -3467,6 +3473,7 @@ export interface FileRoutesByFullPath {
   '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
   '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
   '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/flag-printing-sri-lanka': typeof FlagPrintingSriLankaRoute
   '/flex-printing-sri-lanka': typeof FlexPrintingSriLankaRoute
   '/floor-sticker-printing-sri-lanka': typeof FloorStickerPrintingSriLankaRoute
   '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
@@ -3967,6 +3974,7 @@ export interface FileRoutesByTo {
   '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
   '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
   '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/flag-printing-sri-lanka': typeof FlagPrintingSriLankaRoute
   '/flex-printing-sri-lanka': typeof FlexPrintingSriLankaRoute
   '/floor-sticker-printing-sri-lanka': typeof FloorStickerPrintingSriLankaRoute
   '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
@@ -4468,6 +4476,7 @@ export interface FileRoutesById {
   '/facebook-ads-sri-lanka': typeof FacebookAdsSriLankaRoute
   '/facebook-marketing-sri-lanka': typeof FacebookMarketingSriLankaRoute
   '/field-marketing-sri-lanka': typeof FieldMarketingSriLankaRoute
+  '/flag-printing-sri-lanka': typeof FlagPrintingSriLankaRoute
   '/flex-printing-sri-lanka': typeof FlexPrintingSriLankaRoute
   '/floor-sticker-printing-sri-lanka': typeof FloorStickerPrintingSriLankaRoute
   '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
@@ -4970,6 +4979,7 @@ export interface FileRouteTypes {
     | '/facebook-ads-sri-lanka'
     | '/facebook-marketing-sri-lanka'
     | '/field-marketing-sri-lanka'
+    | '/flag-printing-sri-lanka'
     | '/flex-printing-sri-lanka'
     | '/floor-sticker-printing-sri-lanka'
     | '/flower-decoration-sri-lanka'
@@ -5470,6 +5480,7 @@ export interface FileRouteTypes {
     | '/facebook-ads-sri-lanka'
     | '/facebook-marketing-sri-lanka'
     | '/field-marketing-sri-lanka'
+    | '/flag-printing-sri-lanka'
     | '/flex-printing-sri-lanka'
     | '/floor-sticker-printing-sri-lanka'
     | '/flower-decoration-sri-lanka'
@@ -5970,6 +5981,7 @@ export interface FileRouteTypes {
     | '/facebook-ads-sri-lanka'
     | '/facebook-marketing-sri-lanka'
     | '/field-marketing-sri-lanka'
+    | '/flag-printing-sri-lanka'
     | '/flex-printing-sri-lanka'
     | '/floor-sticker-printing-sri-lanka'
     | '/flower-decoration-sri-lanka'
@@ -6471,6 +6483,7 @@ export interface RootRouteChildren {
   FacebookAdsSriLankaRoute: typeof FacebookAdsSriLankaRoute
   FacebookMarketingSriLankaRoute: typeof FacebookMarketingSriLankaRoute
   FieldMarketingSriLankaRoute: typeof FieldMarketingSriLankaRoute
+  FlagPrintingSriLankaRoute: typeof FlagPrintingSriLankaRoute
   FlexPrintingSriLankaRoute: typeof FlexPrintingSriLankaRoute
   FloorStickerPrintingSriLankaRoute: typeof FloorStickerPrintingSriLankaRoute
   FlowerDecorationSriLankaRoute: typeof FlowerDecorationSriLankaRoute
@@ -8166,6 +8179,13 @@ declare module '@tanstack/react-router' {
       path: '/flex-printing-sri-lanka'
       fullPath: '/flex-printing-sri-lanka'
       preLoaderRoute: typeof FlexPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flag-printing-sri-lanka': {
+      id: '/flag-printing-sri-lanka'
+      path: '/flag-printing-sri-lanka'
+      fullPath: '/flag-printing-sri-lanka'
+      preLoaderRoute: typeof FlagPrintingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/field-marketing-sri-lanka': {
@@ -10478,6 +10498,7 @@ const rootRouteChildren: RootRouteChildren = {
   FacebookAdsSriLankaRoute: FacebookAdsSriLankaRoute,
   FacebookMarketingSriLankaRoute: FacebookMarketingSriLankaRoute,
   FieldMarketingSriLankaRoute: FieldMarketingSriLankaRoute,
+  FlagPrintingSriLankaRoute: FlagPrintingSriLankaRoute,
   FlexPrintingSriLankaRoute: FlexPrintingSriLankaRoute,
   FloorStickerPrintingSriLankaRoute: FloorStickerPrintingSriLankaRoute,
   FlowerDecorationSriLankaRoute: FlowerDecorationSriLankaRoute,

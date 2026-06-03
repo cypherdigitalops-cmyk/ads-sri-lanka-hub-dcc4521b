@@ -226,6 +226,7 @@ import { Route as EmployeeWelcomeKitsSriLankaRouteImport } from './routes/employ
 import { Route as EmbroiderySriLankaRouteImport } from './routes/embroidery-sri-lanka'
 import { Route as EmbossedPrintingSriLankaRouteImport } from './routes/embossed-printing-sri-lanka'
 import { Route as EmailSmsMarketingSriLankaRouteImport } from './routes/email-sms-marketing-sri-lanka'
+import { Route as EmailMarketingSriLankaRouteImport } from './routes/email-marketing-sri-lanka'
 import { Route as EmailAutomationSriLankaRouteImport } from './routes/email-automation-sri-lanka'
 import { Route as EcommerceWebsiteSriLankaRouteImport } from './routes/ecommerce-website-sri-lanka'
 import { Route as EcommerceSeoSriLankaRouteImport } from './routes/ecommerce-seo-sri-lanka'
@@ -1636,6 +1637,11 @@ const EmailSmsMarketingSriLankaRoute =
     path: '/email-sms-marketing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const EmailMarketingSriLankaRoute = EmailMarketingSriLankaRouteImport.update({
+  id: '/email-marketing-sri-lanka',
+  path: '/email-marketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EmailAutomationSriLankaRoute = EmailAutomationSriLankaRouteImport.update({
   id: '/email-automation-sri-lanka',
   path: '/email-automation-sri-lanka',
@@ -3018,6 +3024,7 @@ export interface FileRoutesByFullPath {
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-marketing-sri-lanka': typeof EmailMarketingSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
   '/embossed-printing-sri-lanka': typeof EmbossedPrintingSriLankaRoute
   '/embroidery-sri-lanka': typeof EmbroiderySriLankaRoute
@@ -3462,6 +3469,7 @@ export interface FileRoutesByTo {
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-marketing-sri-lanka': typeof EmailMarketingSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
   '/embossed-printing-sri-lanka': typeof EmbossedPrintingSriLankaRoute
   '/embroidery-sri-lanka': typeof EmbroiderySriLankaRoute
@@ -3907,6 +3915,7 @@ export interface FileRoutesById {
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-marketing-sri-lanka': typeof EmailMarketingSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
   '/embossed-printing-sri-lanka': typeof EmbossedPrintingSriLankaRoute
   '/embroidery-sri-lanka': typeof EmbroiderySriLankaRoute
@@ -4353,6 +4362,7 @@ export interface FileRouteTypes {
     | '/ecommerce-seo-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
+    | '/email-marketing-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
     | '/embossed-printing-sri-lanka'
     | '/embroidery-sri-lanka'
@@ -4797,6 +4807,7 @@ export interface FileRouteTypes {
     | '/ecommerce-seo-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
+    | '/email-marketing-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
     | '/embossed-printing-sri-lanka'
     | '/embroidery-sri-lanka'
@@ -5241,6 +5252,7 @@ export interface FileRouteTypes {
     | '/ecommerce-seo-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
+    | '/email-marketing-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
     | '/embossed-printing-sri-lanka'
     | '/embroidery-sri-lanka'
@@ -5686,6 +5698,7 @@ export interface RootRouteChildren {
   EcommerceSeoSriLankaRoute: typeof EcommerceSeoSriLankaRoute
   EcommerceWebsiteSriLankaRoute: typeof EcommerceWebsiteSriLankaRoute
   EmailAutomationSriLankaRoute: typeof EmailAutomationSriLankaRoute
+  EmailMarketingSriLankaRoute: typeof EmailMarketingSriLankaRoute
   EmailSmsMarketingSriLankaRoute: typeof EmailSmsMarketingSriLankaRoute
   EmbossedPrintingSriLankaRoute: typeof EmbossedPrintingSriLankaRoute
   EmbroiderySriLankaRoute: typeof EmbroiderySriLankaRoute
@@ -7549,6 +7562,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmailSmsMarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/email-marketing-sri-lanka': {
+      id: '/email-marketing-sri-lanka'
+      path: '/email-marketing-sri-lanka'
+      fullPath: '/email-marketing-sri-lanka'
+      preLoaderRoute: typeof EmailMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/email-automation-sri-lanka': {
       id: '/email-automation-sri-lanka'
       path: '/email-automation-sri-lanka'
@@ -9232,6 +9252,7 @@ const rootRouteChildren: RootRouteChildren = {
   EcommerceSeoSriLankaRoute: EcommerceSeoSriLankaRoute,
   EcommerceWebsiteSriLankaRoute: EcommerceWebsiteSriLankaRoute,
   EmailAutomationSriLankaRoute: EmailAutomationSriLankaRoute,
+  EmailMarketingSriLankaRoute: EmailMarketingSriLankaRoute,
   EmailSmsMarketingSriLankaRoute: EmailSmsMarketingSriLankaRoute,
   EmbossedPrintingSriLankaRoute: EmbossedPrintingSriLankaRoute,
   EmbroiderySriLankaRoute: EmbroiderySriLankaRoute,
@@ -9612,13 +9633,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

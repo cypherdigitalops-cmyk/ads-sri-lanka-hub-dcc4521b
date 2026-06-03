@@ -180,7 +180,6 @@ function GetQuote() {
             <div className="mt-5 space-y-3">
               <a href={`tel:${SITE.phone}`} className="flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-5 py-3 font-semibold text-accent-foreground"><Phone className="h-4 w-4" /> Call {SITE.phone}</a>
               <a href={SITE.whatsapp} target="_blank" rel="noopener" className="flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-5 py-3 font-semibold text-[var(--whatsapp-foreground)]"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
-              <a href={`mailto:${SITE.email}`} className="flex items-center justify-center gap-2 rounded-full border border-border px-5 py-3 font-semibold"><Mail className="h-4 w-4" /> {SITE.email}</a>
             </div>
           </div>
           <div className="rounded-2xl border border-border bg-card p-6 text-sm text-muted-foreground">

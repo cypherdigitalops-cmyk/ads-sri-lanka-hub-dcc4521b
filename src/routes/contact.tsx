@@ -42,11 +42,6 @@ function Contact() {
           <div className="mt-3 font-semibold">WhatsApp</div>
           <div className="mt-1 text-sm text-muted-foreground">Chat with us 24/7</div>
         </a>
-        <a href={`mailto:${SITE.email}`} className="rounded-2xl border border-border bg-card p-6 text-center shadow-[var(--shadow-card)] hover:border-primary/40">
-          <Mail className="mx-auto h-8 w-8 text-primary" />
-          <div className="mt-3 font-semibold">Email</div>
-          <div className="mt-1 text-sm text-muted-foreground">{SITE.email}</div>
-        </a>
         <div className="rounded-2xl border border-border bg-card p-6 text-center shadow-[var(--shadow-card)]">
           <MapPin className="mx-auto h-8 w-8 text-primary" />
           <div className="mt-3 font-semibold">Office</div>

@@ -1411,7 +1411,6 @@ export const ORG_JSONLD = {
   name: SITE.name,
   url: SITE.url,
   telephone: SITE.phoneIntl,
-  email: SITE.email,
   areaServed: { "@type": "Country", name: "Sri Lanka" },
   address: {
     "@type": "PostalAddress",

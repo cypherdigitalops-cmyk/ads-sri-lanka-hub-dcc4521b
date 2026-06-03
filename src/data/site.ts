@@ -5,7 +5,6 @@ export const SITE = {
   phone: "0771437707",
   phoneIntl: "+94771437707",
   whatsapp: "https://wa.me/94771437707",
-  email: "info@advertisingsrilanka.lk",
   tagline: "Sri Lanka's #1 Advertising Solutions Hub",
 };
 

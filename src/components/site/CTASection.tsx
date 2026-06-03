@@ -55,12 +55,6 @@ export function TopContactBar() {
             <span className="hidden sm:inline">WhatsApp</span>
             <span className="sm:hidden">Chat</span>
           </a>
-          <a
-            href={`mailto:${SITE.email}`}
-            className="hidden items-center gap-1.5 hover:text-accent md:inline-flex"
-          >
-            <Mail className="h-3.5 w-3.5" /> {SITE.email}
-          </a>
         </div>
       </div>
     </div>

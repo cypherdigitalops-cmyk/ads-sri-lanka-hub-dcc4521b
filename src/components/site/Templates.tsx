@@ -500,12 +500,14 @@ export function CategoryHubTemplate({
           { icon: <Users className="h-5 w-5" />, title: "Local expertise", body: "Deep market knowledge across Sinhala, Tamil and English audiences." },
         ]}
       />
-        items={[
-          { icon: <Target className="h-5 w-5" />, title: "Strategy first", body: "Every campaign starts with audience, message and channel mix." },
-          { icon: <TrendingUp className="h-5 w-5" />, title: "Measurable ROI", body: "Transparent reporting on reach, engagement and conversions." },
-          { icon: <Users className="h-5 w-5" />, title: "Local expertise", body: "Deep market knowledge across Sinhala, Tamil and English audiences." },
-        ]}
-      />
+      {(() => {
+        const svc = getServiceUniqueContent(category.slug);
+        return svc.length ? (
+          <section className="mx-auto max-w-3xl px-4 py-8">
+            <LongFormBlocks blocks={svc} />
+          </section>
+        ) : null;
+      })()}
       <ProcessSteps />
       <MidContentWhatsAppCTA service={category.title} />
       {category.blog.length ? (

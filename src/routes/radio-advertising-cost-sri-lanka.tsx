@@ -12,7 +12,7 @@ const ROWS: { format: string; cost: string; notes: string }[] = [
   {
     "format": "Top Sinhala FM prime time (drive time)",
     "cost": "Rs 8,000 – 22,000 / 30s spot",
-    "notes": "Drive-time slots on top Sinhala FM networks, 7–10am and 4–7pm."
+    "notes": "Hiru, Sirasa, Y FM 7–10am, 4–7pm."
   },
   {
     "format": "Top Sinhala FM off-peak",
@@ -20,12 +20,12 @@ const ROWS: { format: string; cost: string; notes: string }[] = [
     "notes": "Late night and weekends."
   },
   {
-    "format": "Leading English FM stations",
+    "format": "English FM (TNL, Kiss, YES)",
     "cost": "Rs 5,000 – 15,000 / 30s spot",
     "notes": "Urban, English-speaking, premium SEC."
   },
   {
-    "format": "Leading Tamil FM stations",
+    "format": "Tamil FM (Shakthi, Sun FM)",
     "cost": "Rs 4,000 – 12,000 / 30s spot",
     "notes": "North & East and tea-estate reach."
   },

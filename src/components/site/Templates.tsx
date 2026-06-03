@@ -435,6 +435,8 @@ export function CategoryHubTemplate({
   );
   const h1 = `${titleCase(category.hubKeyword)}`;
   const longForm = buildCategoryLongForm(category);
+  const uniqueCat = getServiceUniqueContent(category.slug);
+  const hasUnique = uniqueCat.length > 0;
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -487,29 +489,31 @@ export function CategoryHubTemplate({
           ))}
         </div>
       </section>
-      {longForm.blocks.length ? (
+      {/* PRIORITY: unique content first */}
+      {hasUnique ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={longForm.blocks} />
+          <LongFormBlocks blocks={uniqueCat} />
         </section>
       ) : null}
-      <FeatureGrid
-        title={`Why brands choose us for ${category.title.toLowerCase()}`}
-        items={[
-          { icon: <Target className="h-5 w-5" />, title: "Strategy first", body: "Every campaign starts with audience, message and channel mix." },
-          { icon: <TrendingUp className="h-5 w-5" />, title: "Measurable ROI", body: "Transparent reporting on reach, engagement and conversions." },
-          { icon: <Users className="h-5 w-5" />, title: "Local expertise", body: "Deep market knowledge across Sinhala, Tamil and English audiences." },
-        ]}
-      />
-      {(() => {
-        const svc = getServiceUniqueContent(category.slug);
-        return svc.length ? (
-          <section className="mx-auto max-w-3xl px-4 py-8">
-            <LongFormBlocks blocks={svc} />
-          </section>
-        ) : null;
-      })()}
-      <ProcessSteps />
       <MidContentWhatsAppCTA service={category.title} />
+      {!hasUnique ? (
+        <>
+          {longForm.blocks.length ? (
+            <section className="mx-auto max-w-3xl px-4 py-8">
+              <LongFormBlocks blocks={longForm.blocks} />
+            </section>
+          ) : null}
+          <FeatureGrid
+            title={`Why brands choose us for ${category.title.toLowerCase()}`}
+            items={[
+              { icon: <Target className="h-5 w-5" />, title: "Strategy first", body: "Every campaign starts with audience, message and channel mix." },
+              { icon: <TrendingUp className="h-5 w-5" />, title: "Measurable ROI", body: "Transparent reporting on reach, engagement and conversions." },
+              { icon: <Users className="h-5 w-5" />, title: "Local expertise", body: "Deep market knowledge across Sinhala, Tamil and English audiences." },
+            ]}
+          />
+          <ProcessSteps />
+        </>
+      ) : null}
       {category.blog.length ? (
         <section className="mx-auto max-w-7xl px-4 py-12">
           <h2 className="text-2xl font-bold sm:text-3xl">{category.title} insights & guides</h2>

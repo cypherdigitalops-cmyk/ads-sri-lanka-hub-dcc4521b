@@ -559,6 +559,9 @@ export function ServicePageTemplate({
   );
   const overrideFaqs = getPageFaqs(slug);
   const faqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
+  const uniqueSvc = getServiceUniqueContent(slug);
+  const uniquePrint = getPrintingServiceContent(slug);
+  const hasUnique = uniqueSvc.length > 0 || uniquePrint.length > 0;
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -591,59 +594,60 @@ export function ServicePageTemplate({
       />
       {slug === "led-screen-rental-sri-lanka" ? <LedEventTypesSection /> : null}
       {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
-      <section className="mx-auto max-w-3xl px-4 py-12">
-        <h2 className="text-2xl font-bold sm:text-3xl">Why {title} works in Sri Lanka</h2>
-        <p className="mt-4 text-muted-foreground">
-          {title} remains one of the most effective ways for Sri Lankan brands to reach the right audience at the right time. Whether you are a startup, SME or enterprise, our team blends data, creativity and local insight to deliver measurable results — leads, sales, awareness or brand love.
-        </p>
-        <p className="mt-4 text-muted-foreground">
-          We handle the complete journey: strategy, audience research, creative production, media buying, campaign launch, optimisation and detailed reporting. You stay in control while we do the heavy lifting.
-        </p>
-      </section>
-      <Bullets
-        title={`What's included in our ${title} service`}
-        items={[
-          "Discovery call & objective setting",
-          "Audience research & competitor analysis",
-          "Creative concept & content production",
-          "Channel selection & media planning",
-          "Campaign setup, launch & QA",
-          "Continuous optimisation & A/B testing",
-          "Transparent weekly performance reporting",
-          "Dedicated account manager",
-        ]}
-      />
-      <MidContentWhatsAppCTA service={title} />
-      <FeatureGrid
-        title={`Why choose us for ${title}`}
-        items={[
-          { icon: <Target className="h-5 w-5" />, title: "Goal-driven", body: "Every rupee tied to a measurable outcome." },
-          { icon: <Sparkles className="h-5 w-5" />, title: "Creative that converts", body: "On-brand creative built for the Sri Lankan audience." },
-          { icon: <TrendingUp className="h-5 w-5" />, title: "Always-on optimisation", body: "Weekly tuning to keep results climbing." },
-        ]}
-      />
-      <ProcessSteps />
-      {longForm.blocks.length ? (
-        <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={longForm.blocks} />
+      {/* PRIORITY: unique content first — drives reading + trust + CTA clicks */}
+      {uniqueSvc.length ? (
+        <section className="mx-auto max-w-3xl px-4 py-12">
+          <LongFormBlocks blocks={uniqueSvc} />
         </section>
       ) : null}
-      {(() => {
-        const unique = getPrintingServiceContent(slug);
-        return unique.length ? (
-          <section className="mx-auto max-w-3xl px-4 py-8">
-            <LongFormBlocks blocks={unique} />
+      {uniquePrint.length ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={uniquePrint} />
+        </section>
+      ) : null}
+      {/* Early conversion prompt while attention is high */}
+      <MidContentWhatsAppCTA service={title} />
+      {/* Generic template sections — only when no unique content exists, to avoid duplicate SEO content across pages */}
+      {!hasUnique ? (
+        <>
+          <section className="mx-auto max-w-3xl px-4 py-12">
+            <h2 className="text-2xl font-bold sm:text-3xl">Why {title} works in Sri Lanka</h2>
+            <p className="mt-4 text-muted-foreground">
+              {title} remains one of the most effective ways for Sri Lankan brands to reach the right audience at the right time. Whether you are a startup, SME or enterprise, our team blends data, creativity and local insight to deliver measurable results — leads, sales, awareness or brand love.
+            </p>
+            <p className="mt-4 text-muted-foreground">
+              We handle the complete journey: strategy, audience research, creative production, media buying, campaign launch, optimisation and detailed reporting. You stay in control while we do the heavy lifting.
+            </p>
           </section>
-        ) : null;
-      })()}
-      {(() => {
-        const svc = getServiceUniqueContent(slug);
-        return svc.length ? (
-          <section className="mx-auto max-w-3xl px-4 py-8">
-            <LongFormBlocks blocks={svc} />
-          </section>
-        ) : null;
-      })()}
+          <Bullets
+            title={`What's included in our ${title} service`}
+            items={[
+              "Discovery call & objective setting",
+              "Audience research & competitor analysis",
+              "Creative concept & content production",
+              "Channel selection & media planning",
+              "Campaign setup, launch & QA",
+              "Continuous optimisation & A/B testing",
+              "Transparent weekly performance reporting",
+              "Dedicated account manager",
+            ]}
+          />
+          <FeatureGrid
+            title={`Why choose us for ${title}`}
+            items={[
+              { icon: <Target className="h-5 w-5" />, title: "Goal-driven", body: "Every rupee tied to a measurable outcome." },
+              { icon: <Sparkles className="h-5 w-5" />, title: "Creative that converts", body: "On-brand creative built for the Sri Lankan audience." },
+              { icon: <TrendingUp className="h-5 w-5" />, title: "Always-on optimisation", body: "Weekly tuning to keep results climbing." },
+            ]}
+          />
+          <ProcessSteps />
+          {longForm.blocks.length ? (
+            <section className="mx-auto max-w-3xl px-4 py-8">
+              <LongFormBlocks blocks={longForm.blocks} />
+            </section>
+          ) : null}
+        </>
+      ) : null}
       <section className="mx-auto max-w-7xl px-4 py-12">
         <h2 className="text-2xl font-bold sm:text-3xl">Related {category.title.toLowerCase()} services</h2>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

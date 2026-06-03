@@ -223,6 +223,7 @@ export const CATEGORIES: Category[] = [
       { slug: "google-shopping-sri-lanka", keyword: "google shopping sri lanka" },
       { slug: "content-marketing-sri-lanka", keyword: "content marketing sri lanka" },
       { slug: "reputation-management-sri-lanka", keyword: "reputation management sri lanka" },
+      { slug: "email-marketing-sri-lanka", keyword: "email marketing sri lanka" },
     ],
     blog: [
       { slug: "digital-marketing-sri-lanka", keyword: "digital marketing sri lanka" },

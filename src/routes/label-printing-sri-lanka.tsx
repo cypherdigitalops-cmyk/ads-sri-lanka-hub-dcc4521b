@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Product Label Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Get measurable results from product label printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Label Printing Sri Lanka | Product, Barcode & Roll Labels";
+const DESC = "Product label printing in Sri Lanka — paper, PP & waterproof labels on roll or sheet. From Rs 3 per label. Barcode & QR labels available. Call 0771437707.";
 
 export const Route = createFileRoute("/label-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Spot UV Printing Sri Lanka in Sri Lanka";
-const DESC = "Get measurable results from spot uv printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Spot UV Printing Sri Lanka | Gloss Coating on Business Cards";
+const DESC = "Spot UV printing in Sri Lanka — high-gloss UV coating on matt laminated business cards, folders & packaging. From Rs 3,500 per 100. Call 0771437707.";
 
 export const Route = createFileRoute("/spot-uv-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional DTF Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Professional dtf printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "DTF Printing Sri Lanka | Direct to Film T-Shirt & Fabric Prints";
+const DESC = "DTF printing in Sri Lanka — full-colour transfers for t-shirts, hoodies & uniforms. No minimum order. From Rs 150 per transfer. Fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/dtf-printing-sri-lanka")({
   head: () => ({

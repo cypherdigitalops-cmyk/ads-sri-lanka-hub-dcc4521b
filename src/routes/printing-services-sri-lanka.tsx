@@ -4,8 +4,8 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Printing Services Sri Lanka — Outdoor & Large Format Printing";
-const DESC = "Sri Lanka's most complete outdoor & large format printing service — hoarding, flex, banner, billboard, vehicle branding, sign boards, UV, digital & 35+ services. Free quote: 0771437707.";
+const TITLE = "Printing Services Sri Lanka | Banners, Signage, Cards & Packaging — Same-Day in Colombo";
+const DESC = "Full-service printing in Sri Lanka — banners, signage, business cards, packaging, vehicle wraps, t-shirts. Same-day jobs in Colombo. Call 0771437707.";
 
 export const Route = createFileRoute("/printing-services-sri-lanka")({
   head: () => ({

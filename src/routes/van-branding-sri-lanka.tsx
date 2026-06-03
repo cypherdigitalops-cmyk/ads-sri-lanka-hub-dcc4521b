@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Van Branding Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for van branding sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable installation.";
+const TITLE = "Van Branding Sri Lanka | Full & Partial Van Wraps & Graphics";
+const DESC = "Van branding in Sri Lanka — full wraps from Rs 80,000, partial branding from Rs 30,000. Cast vinyl, 3–5 year outdoor life. Fleet discounts. Call 0771437707.";
 
 export const Route = createFileRoute("/van-branding-sri-lanka")({
   head: () => ({

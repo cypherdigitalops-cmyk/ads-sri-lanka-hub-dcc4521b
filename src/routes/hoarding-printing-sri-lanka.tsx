@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Hoarding Printing Sri Lanka in Sri Lanka";
-const DESC = "Sri Lanka's full-service hoarding printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Hoarding Printing Sri Lanka | Billboard Flex from Rs 150/sqft";
+const DESC = "Hoarding printing in Sri Lanka from Rs 150/sqft. Heavy-duty PVC flex for highways, construction sites & commercial properties. Islandwide installation. Call 0771437707.";
 
 export const Route = createFileRoute("/hoarding-printing-sri-lanka")({
   head: () => ({

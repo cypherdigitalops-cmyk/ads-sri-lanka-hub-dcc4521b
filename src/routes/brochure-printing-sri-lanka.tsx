@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Brochure Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Hire trusted specialists for brochure printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Brochure Printing Sri Lanka | A4 & A5 Brochures from Rs 25";
+const DESC = "Brochure printing in Sri Lanka from Rs 25 per copy. A4, A5, trifold & Z-fold. Gloss, matt & soft-touch lamination. Minimum 100 copies. Call 0771437707.";
 
 export const Route = createFileRoute("/brochure-printing-sri-lanka")({
   head: () => ({

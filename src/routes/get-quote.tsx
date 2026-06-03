@@ -1,6 +1,6 @@
 import { createFileRoute, useSearch } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { CheckCircle2, Mail, MessageCircle, Phone } from "lucide-react";
+import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";

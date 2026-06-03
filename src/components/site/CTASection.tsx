@@ -1,5 +1,5 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { Mail, MessageCircle, Phone, Send } from "lucide-react";
+import { MessageCircle, Phone, Send } from "lucide-react";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { useState } from "react";
 import { openQuoteModal } from "./QuoteModal";

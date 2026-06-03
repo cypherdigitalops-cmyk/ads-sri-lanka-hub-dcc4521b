@@ -106,8 +106,44 @@ function CostPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What drives the cost</h2>
-        <p className="mt-3">Station, daypart, language, package (typically 30–90 spot bundles), sponsorship vs spot and creative production.</p>
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Why radio is still one of the most efficient channels</h2>
+        <p className="mt-3">Radio reaches roughly 70% of Sri Lankans every week, with particularly strong penetration in vehicles during drive-time, in three-wheelers across the day, in shops and salons, and inside households in semi-urban and rural Sri Lanka. Its great strength is frequency — a campaign with 8–12 spots a day for two weeks will build recall faster than almost any other medium for the same money.</p>
+        <p className="mt-3">On a cost-per-thousand-listeners basis, radio in Sri Lanka is usually 4–8× cheaper than television for the same effective reach in a defined region, and 2–3× cheaper than out-of-home for the same frequency.</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Language and station targeting — get this right first</h2>
+        <p className="mt-3">Sri Lankan radio splits cleanly across Sinhala, Tamil and English networks, and listener profiles barely overlap. A national consumer brand usually buys across all three. A regional product or service can save 50–70% of the budget by buying language-targeted only.</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Sinhala-language FM</strong> drives mass reach in Western, North-Western, Central, Southern, Sabaragamuwa and Uva provinces. Drive-time and morning belt deliver the strongest cost-efficiency.</li>
+          <li><strong>Tamil-language FM</strong> is essential for Northern, Eastern, and plantation-belt audiences. Often the only meaningful broadcast channel into estate communities and small towns in the North-East.</li>
+          <li><strong>English-language FM</strong> is comparatively niche by listener count but indexes very high on professional audiences in Greater Colombo, Kandy and Galle — premium SEC, decision-makers, expats.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Dayparts and ad length — the practical pricing matrix</h2>
+        <p className="mt-3">Most stations sell three dayparts: morning drive (06:30–10:00), afternoon drive (16:00–19:00) and off-peak (everything else). Drive-time can cost 2.5–3× off-peak for the same 30-second spot. Weekend daytime sits between the two.</p>
+        <p className="mt-3">The 30-second spot is the default unit. Common variants:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>10-second tag</strong> — about 40% of the 30-second rate. Use for short calls to action after a longer ad.</li>
+          <li><strong>20-second spot</strong> — about 70% of the 30-second rate. The sweet spot for most retail and service offers.</li>
+          <li><strong>45-second spot</strong> — about 150% of the 30-second rate. Use only when there is genuine narrative justification.</li>
+          <li><strong>60-second spot</strong> — about 180–200% of the 30-second rate. Almost always overkill unless you are doing radio drama or sponsorship.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Sponsorships, branded billboards and live reads</h2>
+        <p className="mt-3">Beyond spot buying, radio offers high-value integration formats that often outperform plain spots:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Show sponsorship</strong> — your brand is woven into the show opener, closer and intermediate billboards (e.g. "weather brought to you by ..."). Typically LKR 80,000–400,000 per month and the perceived endorsement value is high.</li>
+          <li><strong>Traffic and weather slots</strong> — short branded 8–10 second mentions inside hourly traffic or weather updates. Excellent frequency at a fraction of full-spot cost.</li>
+          <li><strong>Live RJ reads</strong> — the RJ delivers the message in their own voice and personality. Carries 2–3× the recall of a produced ad of the same length, but you give up some message control.</li>
+          <li><strong>Branded contests and giveaways</strong> — the listener pays you with attention while the prize cost replaces some of the media buy.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Producing the spot — practical guidance</h2>
+        <p className="mt-3">A voiced 30-second radio ad in Sri Lanka can be produced for as little as LKR 35,000 (single voice, simple bed) or up to LKR 250,000 for a fully sung jingle with multiple voices and a mixed instrumental track. Three production tips that consistently lift response:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li>Open with the offer or hook in the first 3 seconds — listeners decide in the first sentence whether to keep listening.</li>
+          <li>Mention the brand name at least three times in 30 seconds, and once in the first 5 seconds. Recall studies show brand-name mentions are the single biggest predictor of unaided recall.</li>
+          <li>End with one clear action — a phone number, a website, or "visit our store today". Spots with two competing actions reduce response by 30–50%.</li>
+        </ul>
 
         <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Get a tailored quote</h2>
         <p className="mt-3">Every brand has different audiences, seasons and goals. Call <a className="text-primary underline-offset-2 hover:underline" href={`tel:${SITE.phone}`}>{SITE.phone}</a> or visit our <Link to="/get-quote" className="text-primary underline-offset-2 hover:underline">free quote form</Link> for a written estimate within 24 hours.</p>

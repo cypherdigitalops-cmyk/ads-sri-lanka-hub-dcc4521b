@@ -111,8 +111,41 @@ function CostPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What drives the cost</h2>
-        <p className="mt-3">Channel, daypart, programme rating, ad length (15/20/30/45/60s), package deals, season and whether you negotiate bonus spots.</p>
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">How TV pricing actually works in Sri Lanka</h2>
+        <p className="mt-3">Television in Sri Lanka is sold spot-by-spot inside daypart bands, not as bulk audience guarantees. The published rate card always assumes a 30-second commercial in a defined slot — 15-second ads usually cost 60–70% of the 30-second rate, 45-second ads cost about 150%, and 60-second ads roughly 180–200%. Length, not just position, drives the bill.</p>
+        <p className="mt-3">Dayparts are the single biggest cost variable. Prime time runs roughly 7:00 PM to 10:00 PM when teledramas pull peak family viewership and rate cards may quote 2–4× the daytime number. Late prime (10:00 PM–midnight) drops sharply, daytime housewife belts (10:00 AM–4:00 PM) sit at the lower end, and early morning news bulletins sit in between because they attract a smaller but high-income audience.</p>
+        <p className="mt-3">Inside prime time, the specific programme matters even more than the channel. Bumpers around the top-rated teledramas and 8:00 PM news command a premium because advertisers know exactly how many sets are switched on. Live sport — particularly cricket — is a category of its own, with break rates that can run 5–10× a regular prime spot during ICC tournaments.</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">GRPs, reach and frequency — what to actually buy</h2>
+        <p className="mt-3">Ask your TV plan to be measured in Gross Rating Points (GRPs), 1+ reach and average frequency, not just number of spots. A campaign of 60 spots that delivers 250 GRPs at 65% reach and 3.8 frequency is doing real work; the same 60 spots scattered across off-peak daytime might deliver only 90 GRPs and reach 28% of your target.</p>
+        <p className="mt-3">For a national consumer launch in Sri Lanka, a useful planning benchmark is 300–450 GRPs in the launch month for awareness, dropping to 150–200 GRPs per month for sustenance. Anything under 100 GRPs in a month is essentially invisible at the national level — you will spend money without moving recall scores.</p>
+        <p className="mt-3">Channel-mix discipline matters too. A campaign targeting rural and semi-urban audiences should lean heavily on the largest Sinhala channels and state broadcasters; an urban premium-product campaign should over-index on English-language and lifestyle channels even though raw GRP cost is higher.</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">TVC production — where the money really goes</h2>
+        <p className="mt-3">On-air spend is only part of the bill. A 30-second commercial in Sri Lanka can be produced for anywhere between LKR 350,000 and LKR 12M+ depending on scope. Here is roughly how a mid-tier LKR 1.5M production breaks down:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Concept and script:</strong> 5–8% of total — usually included in agency retainer.</li>
+          <li><strong>Pre-production:</strong> 10–15% — casting, location recce, storyboard, costume, props.</li>
+          <li><strong>Shoot day(s):</strong> 35–45% — crew (DOP, gaffer, sound, AD), camera and lighting hire, talent fees, location fees, F&B.</li>
+          <li><strong>Post-production:</strong> 20–25% — offline edit, online finishing, colour grade, sound design, VO.</li>
+          <li><strong>Music and licensing:</strong> 5–10% — original jingle or licensed stock track.</li>
+          <li><strong>Contingency and overheads:</strong> 8–12% — always include this; weather and equipment failure happen.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Practical ways to cut TV cost without cutting impact</h2>
+        <p className="mt-3">Six negotiation tactics consistently work with Sri Lankan TV sales houses:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li>Buy <strong>fixed-spot packages</strong> for prime drama bumpers — you pay a small premium but you guarantee position, which is often worth more than a rate discount.</li>
+          <li>Combine <strong>RON (run-of-network) inventory</strong> with prime fixed spots — RON can drop your blended cost-per-GRP by 25–35%.</li>
+          <li>Take <strong>bonus spots</strong> instead of rate cuts when the channel resists discounting headline prime — extra inventory in late-prime and daytime is essentially free reach.</li>
+          <li>Commit to <strong>13-week or 26-week deals</strong> instead of monthly buying — annual volume commitments unlock the deepest discounts.</li>
+          <li>Use <strong>15-second cutdowns</strong> for the second half of the campaign — you keep frequency up at 60–70% of the cost.</li>
+          <li>Avoid <strong>festival weeks</strong> (Avurudu, Vesak, Christmas-New Year) for non-festive brands — rates spike 20–40% and inventory is tight.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Measurement — what to demand in your post-buy report</h2>
+        <p className="mt-3">Insist on a post-campaign report within 10 working days of the last spot that includes scheduled vs delivered spot logs, achieved GRPs vs planned by daypart and channel, 1+ and 3+ reach against your target audience, and any spot drops with credit notes attached. Without this report you have no way to verify the inventory you actually paid for, and you cannot benchmark future buys.</p>
+        <p className="mt-3">For brands serious about TV, an annual or semi-annual brand-tracking study (top-of-mind awareness, ad recall, message take-out) is the only honest way to measure whether all this money is moving the needle.</p>
 
         <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Get a tailored quote</h2>
         <p className="mt-3">Every brand has different audiences, seasons and goals. Call <a className="text-primary underline-offset-2 hover:underline" href={`tel:${SITE.phone}`}>{SITE.phone}</a> or visit our <Link to="/get-quote" className="text-primary underline-offset-2 hover:underline">free quote form</Link> for a written estimate within 24 hours.</p>

@@ -111,8 +111,49 @@ function CostPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What drives the cost</h2>
-        <p className="mt-3">Designer experience, number of concepts, revision rounds, depth of strategy work and breadth of deliverables.</p>
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Why logo prices in Sri Lanka span 50× from low to high</h2>
+        <p className="mt-3">A logo design quote in Sri Lanka can be LKR 5,000 from a freelance student or LKR 500,000+ from a senior brand studio. The artwork at the centre might look superficially similar — what differs is the discovery, the strategic positioning, the number of explored directions, the iteration depth, the system around the mark, and the rights and files you walk away with.</p>
+        <p className="mt-3">A cheap logo is usually a single template with your business name set in a stock font. A mid-tier logo is 2–3 original concepts with two rounds of revisions. A premium identity engagement is a research-led process producing not just a mark but a full brand system — logo, monogram, secondary marks, colour palette, typography system, brand voice, usage guidelines and a 30–80 page brand book.</p>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Realistic price tiers and what each delivers</h2>
+        <p className="mt-3">Working benchmarks for Sri Lankan logo and identity work in 2026:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Freelance / template (LKR 5,000–25,000):</strong> 1–3 concepts, basic file formats. Acceptable for a stop-gap or a micro-business that will rebrand within 2 years.</li>
+          <li><strong>Junior designer / boutique studio (LKR 35,000–120,000):</strong> 2–3 original concepts, 2 rounds of revisions, full vector files, simple usage guideline (5–10 pages).</li>
+          <li><strong>Senior studio with strategy (LKR 150,000–400,000):</strong> brief workshop, competitor and category audit, 3 strategic directions, 2 rounds, monogram, full colour system, type system, comprehensive brand guidelines (30–60 pages).</li>
+          <li><strong>Full brand identity engagement (LKR 500,000–2,500,000+):</strong> brand strategy workshop, positioning, naming review, complete identity system, packaging or signage applications, motion logo, multi-asset launch pack, brand book (60–120 pages).</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">What separates a working logo from a decorative one</h2>
+        <p className="mt-3">A logo earns its fee when it does the following four jobs in the real world. Test any concept against these before approving:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Legible at the smallest size you will ever use it.</strong> If it cannot be read at 16 px in a browser tab or on a WhatsApp Business avatar, the mark is too detailed.</li>
+          <li><strong>Recognisable in single colour.</strong> Black on white and white on black both have to work — your logo will appear on invoices, embroidered on uniforms, and etched on signage where colour is not available.</li>
+          <li><strong>Distinctive in your category.</strong> Place your mark next to 6 competitors. If a customer cannot pick yours out in 2 seconds, the concept needs more work.</li>
+          <li><strong>Reproducible across every medium.</strong> Print (CMYK and spot colour), screen (RGB and dark mode), embroidery (limited thread counts), single-colour vinyl signage, and animated motion.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Files and rights — what to insist on receiving</h2>
+        <p className="mt-3">When you pay for a logo, you should walk away with a clean delivery pack and clear ownership. Insist on every item below in writing in the contract:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Source files</strong> — Adobe Illustrator (.ai) and editable PDF, not just JPG and PNG.</li>
+          <li><strong>All standard exports</strong> — SVG, EPS, PDF, PNG (transparent), JPG, plus favicon/app-icon sizes (16, 32, 192, 512 px).</li>
+          <li><strong>Colour values</strong> — HEX, RGB, CMYK and Pantone references for every colour in the palette.</li>
+          <li><strong>Typography list</strong> — primary, secondary and fallback fonts, plus licensing source and link.</li>
+          <li><strong>Full copyright assignment</strong> to your company in writing. Without it the designer technically retains rights to the mark.</li>
+          <li><strong>Brand guidelines document</strong> — clear-space rules, minimum size, incorrect-usage examples, colour palette, type system.</li>
+        </ul>
+
+        <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Process and timeline you should expect</h2>
+        <p className="mt-3">A serious identity engagement in Sri Lanka follows roughly this 5–8 week timeline. Anything dramatically shorter is either a template job or skipping steps that protect you from picking the wrong direction:</p>
+        <ul className="mt-3 list-disc space-y-2 pl-5">
+          <li><strong>Week 1:</strong> brief workshop, stakeholder interviews, competitor and category audit.</li>
+          <li><strong>Week 2:</strong> strategic territory and moodboards — narrowing the visual world before any logo sketching.</li>
+          <li><strong>Week 3–4:</strong> 2–3 logo directions presented with rationale, in-context mockups (business card, signage, app icon), and the reasoning for each.</li>
+          <li><strong>Week 5:</strong> direction chosen, two rounds of refinement on the selected mark.</li>
+          <li><strong>Week 6–7:</strong> full identity system build — colour, typography, secondary marks, brand book.</li>
+          <li><strong>Week 8:</strong> final delivery — full file pack, brand guidelines PDF, source files, copyright transfer.</li>
+        </ul>
 
         <h2 className="mt-10 text-2xl font-bold text-foreground sm:text-3xl">Get a tailored quote</h2>
         <p className="mt-3">Every brand has different audiences, seasons and goals. Call <a className="text-primary underline-offset-2 hover:underline" href={`tel:${SITE.phone}`}>{SITE.phone}</a> or visit our <Link to="/get-quote" className="text-primary underline-offset-2 hover:underline">free quote form</Link> for a written estimate within 24 hours.</p>

@@ -5,7 +5,7 @@ import { SITE } from "@/data/site";
 
 const SLUG = "blog/whatsapp-marketing-guide-sri-lankan-businesses";
 const TITLE = "WhatsApp Marketing Guide for Sri Lankan Businesses (2025)";
-const DESC = "Complete WhatsApp marketing guide for Sri Lanka — Business App vs API, broadcast lists, catalogs, automation, template messages and compliance.";
+const DESC = "Complete WhatsApp marketing playbook for Sri Lanka — Business App vs Cloud API, broadcast rules, catalogs, automation, template messages and compliance.";
 
 const PRIMARY_ANCHOR = {
   href: "/whatsapp-advertising-sri-lanka",
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/blog/whatsapp-marketing-guide-sri-lankan-
         publishedISO="2025-04-02"
         category={{ label: "Advertising Insights", href: "/" }}
         primaryAnchor={PRIMARY_ANCHOR}
-        intro="WhatsApp is the highest-conversion channel for most Sri Lankan SMEs — when used correctly. Here is the full 2025 playbook."
+        intro="WhatsApp is the highest-conversion direct channel for most Sri Lankan SMEs — when used correctly. Here is the full 2025 playbook."
         blocks={[
   {
     "type": "h2",
@@ -54,37 +54,37 @@ export const Route = createFileRoute("/blog/whatsapp-marketing-guide-sri-lankan-
     "rows": [
       [
         "Best for",
-        "Up to 256 contacts/broadcast",
-        "Bulk + automation"
+        "Up to 256 contacts per broadcast",
+        "Bulk messaging and automation"
       ],
       [
         "Cost",
-        "Free",
-        "Rs 1.80–4.50/msg + setup"
+        "Free to install",
+        "Rs 1.80–4.50 per message plus setup"
       ],
       [
         "Automation",
         "Limited",
-        "Full"
+        "Full programmatic flows"
       ],
       [
         "CRM integration",
         "No",
-        "Yes"
+        "Yes via webhooks"
       ]
     ]
   },
   {
     "type": "h2",
-    "text": "Acquisition tactics that work in Sri Lanka"
+    "text": "Acquisition tactics that work"
   },
   {
     "type": "ul",
     "items": [
-      "'Click-to-WhatsApp' Facebook & Instagram ads (lowest CPL in 2025)",
-      "WhatsApp button on Google Business Profile",
-      "QR code on receipts, packaging, in-store posters",
-      "Lead magnet (price list, brochure) delivered via WhatsApp"
+      "Click-to-WhatsApp ads from social platforms — consistently the lowest cost per lead",
+      "WhatsApp button on the Google Business Profile",
+      "QR code on receipts, packaging and in-store posters",
+      "Lead magnets such as price lists or brochures delivered via WhatsApp"
     ]
   },
   {
@@ -94,10 +94,10 @@ export const Route = createFileRoute("/blog/whatsapp-marketing-guide-sri-lankan-
   {
     "type": "ul",
     "items": [
-      "Only message users who opted in",
-      "Use template messages (pre-approved) for any outbound",
-      "Send within business hours (9am–9pm SLT)",
-      "Personalise with first name — generic blasts get reported"
+      "Only message users who have explicitly opted in",
+      "Use pre-approved template messages for any outbound campaign",
+      "Send within business hours (9am–9pm SLT) to avoid spam complaints",
+      "Always personalise with the customer's first name"
     ]
   },
   {
@@ -107,25 +107,25 @@ export const Route = createFileRoute("/blog/whatsapp-marketing-guide-sri-lankan-
   {
     "type": "ul",
     "items": [
-      "Instant auto-reply with menu (1=catalog, 2=quote, 3=human)",
-      "Order status updates via API webhooks",
-      "Cart abandonment 1 hour after drop-off",
+      "Instant auto-reply with a numbered menu (1 = catalog, 2 = quote, 3 = talk to a human)",
+      "Order status updates triggered by your CRM or shop platform",
+      "Cart abandonment reminder 1 hour after drop-off",
       "Review request 48 hours after delivery"
     ]
   },
   {
     "type": "callout",
-    "text": "Bulk-promotional blasts to non-opted-in numbers will get your number banned. Use TrustedSource opt-in flows always."
+    "text": "Unsolicited bulk messaging to non-opted-in numbers will get your business number banned. Always use proper opt-in flows."
   }
 ]}
         faqs={[
   {
     "q": "Is WhatsApp marketing legal in Sri Lanka?",
-    "a": "Yes — but only to users who opt in. Unsolicited bulk messaging violates WhatsApp ToS and can result in number bans."
+    "a": "Yes — provided users opt in. Unsolicited bulk messaging violates the platform's terms and can result in permanent number bans."
   },
   {
-    "q": "What's the ROI vs SMS?",
-    "a": "WhatsApp open rates: 95%+ vs SMS ~98%, but WhatsApp click-through is 4–8× higher due to rich media."
+    "q": "How does WhatsApp ROI compare to SMS?",
+    "a": "Open rates are similar (95%+), but WhatsApp click-through is typically 4–8× higher because of rich media support."
   }
 ]}
         related={[

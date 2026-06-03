@@ -61,7 +61,7 @@ const FAQ_JSONLD = {
   ],
 };
 
-export const Route = createFileRoute(`/${SLUG}` as "/video-production-cost-sri-lanka")({
+export const Route = createFileRoute("/video-production-cost-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },

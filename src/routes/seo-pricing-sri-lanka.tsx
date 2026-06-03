@@ -56,7 +56,7 @@ const FAQ_JSONLD = {
   ],
 };
 
-export const Route = createFileRoute(`/${SLUG}` as "/seo-pricing-sri-lanka")({
+export const Route = createFileRoute("/seo-pricing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },

@@ -61,7 +61,7 @@ const FAQ_JSONLD = {
   ],
 };
 
-export const Route = createFileRoute(`/${SLUG}` as "/event-management-cost-sri-lanka")({
+export const Route = createFileRoute("/event-management-cost-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },

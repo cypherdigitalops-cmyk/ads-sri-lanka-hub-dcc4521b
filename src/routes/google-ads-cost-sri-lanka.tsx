@@ -56,7 +56,7 @@ const FAQ_JSONLD = {
   ],
 };
 
-export const Route = createFileRoute(`/${SLUG}` as "/google-ads-cost-sri-lanka")({
+export const Route = createFileRoute("/google-ads-cost-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },

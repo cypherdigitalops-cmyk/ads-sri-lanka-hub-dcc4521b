@@ -785,7 +785,7 @@ export const FOOTER_PRINTING: { slug: string; label: string }[] = [
   { slug: "flex-printing-sri-lanka", label: "Flex Printing" },
   { slug: "billboard-printing-sri-lanka", label: "Billboard Printing" },
   { slug: "vehicle-branding-sri-lanka", label: "Vehicle Branding" },
-  { slug: "sign-board-sri-lanka", label: "Sign Boards" },
+  { slug: "led-sign-board-sri-lanka", label: "LED Sign Boards" },
   { slug: "business-card-printing-sri-lanka", label: "Business Card Printing" },
   { slug: "flag-printing-sri-lanka", label: "Flag Printing" },
   { slug: "3d-printing-sri-lanka", label: "3D Printing" },

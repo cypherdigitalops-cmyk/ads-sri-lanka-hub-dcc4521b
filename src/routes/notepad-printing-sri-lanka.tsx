@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Notepad Printing Sri Lanka Services Across Sri Lanka";
-const DESC = "Get measurable results from notepad printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Notepad Printing Sri Lanka | Branded Notepads from Rs 150 Each";
+const DESC = "Custom notepad printing in Sri Lanka from Rs 150. Branded notepads & memo pads for corporate gifting, hotels & offices. Any size. Call 0771437707.";
 
 export const Route = createFileRoute("/notepad-printing-sri-lanka")({
   head: () => ({

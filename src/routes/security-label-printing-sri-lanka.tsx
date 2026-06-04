@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Security Label Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Hire trusted specialists for security label printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Security Label Printing Sri Lanka | Void & Tamper-Evident Seals";
+const DESC = "Security label printing in Sri Lanka. Void labels, tamper-evident seals, holographic stickers & serialised labels for product authentication. Call 0771437707.";
 
 export const Route = createFileRoute("/security-label-printing-sri-lanka")({
   head: () => ({

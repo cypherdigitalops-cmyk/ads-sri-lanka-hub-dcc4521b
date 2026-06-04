@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable A Frame Sign Sri Lanka Services Across Sri Lanka";
-const DESC = "Get measurable results from a frame sign sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "A Frame Sign Sri Lanka | Pavement Signs & Sandwich Boards";
+const DESC = "A-frame & pavement sign printing in Sri Lanka. Folding sandwich boards for shops, restaurants & street promotions. Durable outdoor signs. Call 0771437707.";
 
 export const Route = createFileRoute("/a-frame-sign-sri-lanka")({
   head: () => ({

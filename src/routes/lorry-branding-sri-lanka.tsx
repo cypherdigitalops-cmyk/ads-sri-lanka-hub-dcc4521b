@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Lorry Branding Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Get measurable results from lorry branding sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Lorry Branding Sri Lanka | Truck & HGV Fleet Vinyl Graphics";
+const DESC = "Lorry & truck branding in Sri Lanka. Large vehicle vinyl wraps & graphics for HGVs, container trucks & fleet lorries. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/lorry-branding-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Bus Branding Sri Lanka — Strategy, Production, Delivery";
-const DESC = "Get measurable results from bus branding sri lanka in Sri Lanka. Concept, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Bus Branding Sri Lanka | Full Bus Wrap & Transit Advertising";
+const DESC = "Bus branding & full bus wraps in Sri Lanka. Transit advertising on public & private buses for maximum brand reach. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/bus-branding-sri-lanka")({
   head: () => ({

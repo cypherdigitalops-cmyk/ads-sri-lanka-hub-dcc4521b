@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Construction Hoarding Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Sri Lanka's full-service construction hoarding sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Construction Hoarding Sri Lanka | Site Hoardings & Fencing";
+const DESC = "Construction hoarding printing & installation in Sri Lanka. Branded site hoardings for property developers & contractors. Any size. Call 0771437707.";
 
 export const Route = createFileRoute("/construction-hoarding-sri-lanka")({
   head: () => ({

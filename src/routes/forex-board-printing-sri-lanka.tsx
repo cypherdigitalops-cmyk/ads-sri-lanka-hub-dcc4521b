@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Forex Board Printing Sri Lanka — Strategy, Production, Delivery";
-const DESC = "Hire trusted specialists for forex board printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable installation.";
+const TITLE = "Forex Board Printing Sri Lanka | PVC Rigid Board Signs Any Size";
+const DESC = "Forex board printing in Sri Lanka. Smooth surface PVC board for indoor & semi-outdoor signage. Any size, UV-printed, fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/forex-board-printing-sri-lanka")({
   head: () => ({

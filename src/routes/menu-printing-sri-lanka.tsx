@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Menu Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Sri Lanka's full-service menu printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Menu Printing Sri Lanka | Restaurant Menus from Rs 350 Each";
+const DESC = "Menu printing in Sri Lanka from Rs 350. Laminated, leather-bound & digital menu options for restaurants, hotels & cafes. Fast 2-day turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/menu-printing-sri-lanka")({
   head: () => ({

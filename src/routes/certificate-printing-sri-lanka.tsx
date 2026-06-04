@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Certificate Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Professional certificate printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Certificate Printing Sri Lanka | Award Certificates & Diplomas";
+const DESC = "Certificate printing in Sri Lanka for academic awards, corporate recognition & completion diplomas. Quality paper & premium finishing. Call 0771437707.";
 
 export const Route = createFileRoute("/certificate-printing-sri-lanka")({
   head: () => ({

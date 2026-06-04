@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Exhibition Banner Printing Sri Lanka | BMICH & Trade Show Graphics";
+const TITLE = "Exhibition Banner Printing Sri Lanka | Trade Show Graphics";
 const DESC = "Exhibition banner printing in Sri Lanka for BMICH, trade shows & product launches. Fabric, flex & pop-up banners from Rs 3,500. Fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/exhibition-banner-printing-sri-lanka")({

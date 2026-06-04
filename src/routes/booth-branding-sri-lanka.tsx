@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Booth Branding Sri Lanka for Sri Lankan Brands";
-const DESC = "Hire trusted specialists for booth branding sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable installation.";
+const TITLE = "Booth Branding Sri Lanka | Exhibition Booth Design & Graphics";
+const DESC = "Booth branding for exhibitions, trade shows & events in Sri Lanka. Complete booth graphic design, print & installation. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/booth-branding-sri-lanka")({
   head: () => ({

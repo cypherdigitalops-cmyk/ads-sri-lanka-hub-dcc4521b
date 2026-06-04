@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Frosted Glass Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Professional frosted glass printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Frosted Glass Printing Sri Lanka | Privacy Film & Sandblast";
+const DESC = "Frosted glass film & privacy screen installation in Sri Lanka. Sandblast-effect vinyl for offices, partitions & glass doors. Custom designs. Call 0771437707.";
 
 export const Route = createFileRoute("/frosted-glass-printing-sri-lanka")({
   head: () => ({

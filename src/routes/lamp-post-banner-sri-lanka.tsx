@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Lamp Post Banner Sri Lanka for Sri Lankan Brands";
-const DESC = "Professional lamp post banner sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Lamp Post Banner Sri Lanka | Street Pole Banners for Events";
+const DESC = "Lamp post banner printing & installation in Sri Lanka. Double-sided street pole banners for events, elections & brand awareness campaigns. Call 0771437707.";
 
 export const Route = createFileRoute("/lamp-post-banner-sri-lanka")({
   head: () => ({

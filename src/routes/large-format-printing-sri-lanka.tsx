@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Large Format Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from large format printing sri lanka in Sri Lanka. Concept, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Large Format Printing Sri Lanka | Wide Format Banners & Displays";
+const DESC = "Large format printing in Sri Lanka — wide format banners, hoardings, backdrops & display graphics. Any size, fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/large-format-printing-sri-lanka")({
   head: () => ({

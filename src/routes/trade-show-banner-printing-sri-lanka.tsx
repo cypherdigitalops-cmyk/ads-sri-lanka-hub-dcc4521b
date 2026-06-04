@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Trade Show Banner Printing Sri Lanka — Strategy, Production, Delivery";
-const DESC = "Sri Lanka's full-service trade show banner printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Trade Show Banner Printing Sri Lanka | Complete Display Packages";
+const DESC = "Trade show banner printing in Sri Lanka. Complete display packages — backdrops, roll-ups & exhibition graphics. BMICH ready. Call 0771437707.";
 
 export const Route = createFileRoute("/trade-show-banner-printing-sri-lanka")({
   head: () => ({

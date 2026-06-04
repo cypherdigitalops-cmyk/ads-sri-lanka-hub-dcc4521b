@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Barcode Label Printing Sri Lanka Services Across Sri Lanka";
-const DESC = "Professional barcode label printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Barcode Label Printing Sri Lanka | EAN-13, QR & Serial Labels";
+const DESC = "Barcode label printing in Sri Lanka. EAN-13, QR codes & serial labels for supermarkets, warehouses & exporters. GS1 compliant. Call 0771437707.";
 
 export const Route = createFileRoute("/barcode-label-printing-sri-lanka")({
   head: () => ({

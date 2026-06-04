@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Screen Printing Sri Lanka Services Across Sri Lanka";
-const DESC = "Get measurable results from screen printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Screen Printing Sri Lanka | Garment Screen Print from Rs 350";
+const DESC = "Screen printing in Sri Lanka from Rs 350 per garment. T-shirts, hoodies, bags & promotional textiles. Vibrant results, minimum 24 pieces. Call 0771437707.";
 
 export const Route = createFileRoute("/screen-printing-sri-lanka")({
   head: () => ({

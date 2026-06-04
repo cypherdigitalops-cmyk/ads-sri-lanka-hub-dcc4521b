@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Floor Sticker Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Get measurable results from floor sticker printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Floor Sticker Printing Sri Lanka | Anti-Slip Floor Decals";
+const DESC = "Floor sticker printing in Sri Lanka. Anti-slip certified floor graphics for retail, events & wayfinding. Temporary & permanent options. Call 0771437707.";
 
 export const Route = createFileRoute("/floor-sticker-printing-sri-lanka")({
   head: () => ({

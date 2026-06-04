@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Neon Sign Printing Sri Lanka — Strategy, Production, Delivery";
-const DESC = "Sri Lanka's full-service neon sign printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Neon Sign Sri Lanka | LED Neon Signs Any Shape from Rs 8,000";
+const DESC = "Custom LED neon signs in Sri Lanka from Rs 8,000. Any shape, any colour for bars, restaurants & offices. Manufactured islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/neon-sign-printing-sri-lanka")({
   head: () => ({

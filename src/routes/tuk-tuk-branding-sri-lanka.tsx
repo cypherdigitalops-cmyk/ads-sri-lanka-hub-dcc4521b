@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Tuk Tuk Branding Sri Lanka Services Across Sri Lanka";
-const DESC = "Sri Lanka's full-service tuk tuk branding sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Tuk Tuk Branding Sri Lanka | Three-Wheeler Advertising & Wraps";
+const DESC = "Tuk tuk branding & three-wheeler advertising in Sri Lanka. Printed vinyl graphics for fleet & individual three-wheelers. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/tuk-tuk-branding-sri-lanka")({
   head: () => ({

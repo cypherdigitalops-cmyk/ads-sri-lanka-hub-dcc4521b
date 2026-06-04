@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Hoodie Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Get measurable results from hoodie printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Hoodie Printing Sri Lanka | Custom Branded Hoodies from Rs 2,500";
+const DESC = "Hoodie printing in Sri Lanka from Rs 2,500. Screen print, embroidery & DTF for corporate hoodies, event merch & team apparel. Fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/hoodie-printing-sri-lanka")({
   head: () => ({

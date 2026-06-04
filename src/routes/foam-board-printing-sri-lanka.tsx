@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Foam Board Printing Sri Lanka in Sri Lanka";
-const DESC = "Need foam board printing sri lanka that lasts? We use weather-rated inks, premium substrates and fast turnaround across Colombo and the island.";
+const TITLE = "Foam Board Printing Sri Lanka | Lightweight Display Panels";
+const DESC = "Foam board printing in Sri Lanka for signage, displays & exhibitions. Lightweight rigid panels for POS, events & offices. Any size. Call 0771437707.";
 
 export const Route = createFileRoute("/foam-board-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Roll Label Printing Sri Lanka in Sri Lanka";
-const DESC = "Get measurable results from roll label printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Roll Label Printing Sri Lanka | Self-Adhesive Labels on Roll";
+const DESC = "Roll label printing in Sri Lanka for automated labelling machines. Product, price & logistics labels on roll. PP, paper & waterproof options. Call 0771437707.";
 
 export const Route = createFileRoute("/roll-label-printing-sri-lanka")({
   head: () => ({

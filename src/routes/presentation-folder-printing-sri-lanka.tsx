@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Presentation Folder Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Sri Lanka's full-service presentation folder printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Presentation Folder Printing Sri Lanka | From Rs 250 Each";
+const DESC = "Presentation folder printing in Sri Lanka from Rs 250. Corporate folders, document wallets with spot UV & foil options. Offset quality. Call 0771437707.";
 
 export const Route = createFileRoute("/presentation-folder-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Indoor Banner Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Sri Lanka's full-service indoor banner printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Indoor Banner Printing Sri Lanka | Fabric & Vinyl Event Banners";
+const DESC = "Indoor banner printing in Sri Lanka for events, exhibitions & retail. High-res print on fabric, vinyl & flex. Any size, 2-day turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/indoor-banner-printing-sri-lanka")({
   head: () => ({

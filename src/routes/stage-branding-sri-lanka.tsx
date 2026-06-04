@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Stage Branding Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from stage branding sri lanka in Sri Lanka. Concept, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Stage Branding Sri Lanka | Event Stage Sets & Conference Graphics";
+const DESC = "Stage branding for corporate events, concerts & conferences in Sri Lanka. Stage sets, backdrops, lectern branding & graphics. Call 0771437707.";
 
 export const Route = createFileRoute("/stage-branding-sri-lanka")({
   head: () => ({

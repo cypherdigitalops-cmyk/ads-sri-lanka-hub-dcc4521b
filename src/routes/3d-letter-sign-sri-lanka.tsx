@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "3D Letter Sign Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Hire trusted specialists for 3d letter sign sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "3D Letter Sign Sri Lanka | Aluminium & Acrylic Letters";
+const DESC = "3D fabricated letter signs in Sri Lanka. Aluminium, stainless steel & acrylic letters for shops, offices & buildings. Illuminated & non-illuminated. Call 0771437707.";
 
 export const Route = createFileRoute("/3d-letter-sign-sri-lanka")({
   head: () => ({

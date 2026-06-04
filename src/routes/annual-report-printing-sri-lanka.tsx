@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Annual Report Printing Sri Lanka in Sri Lanka";
-const DESC = "Professional annual report printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Annual Report Printing Sri Lanka | From Rs 120 per Copy";
+const DESC = "Annual report printing in Sri Lanka from Rs 120/copy. Premium paper, perfect binding, spot UV & foil covers. Offset quality. Call 0771437707.";
 
 export const Route = createFileRoute("/annual-report-printing-sri-lanka")({
   head: () => ({

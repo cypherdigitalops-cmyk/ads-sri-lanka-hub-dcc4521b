@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Uniform Printing Sri Lanka — Premium Quality, Islandwide Delivery";
-const DESC = "Professional uniform printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Uniform Printing Sri Lanka | Staff Uniforms from Rs 800";
+const DESC = "Uniform printing in Sri Lanka from Rs 800. Branded corporate uniforms, staff shirts & workwear with screen print, DTF or embroidery. Call 0771437707.";
 
 export const Route = createFileRoute("/uniform-printing-sri-lanka")({
   head: () => ({

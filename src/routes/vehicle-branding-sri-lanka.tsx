@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Vehicle Branding Sri Lanka for Sri Lankan Brands";
-const DESC = "Sri Lanka's full-service vehicle branding sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Vehicle Branding Sri Lanka | Car Wraps from Rs 40,000";
+const DESC = "Vehicle branding in Sri Lanka from Rs 40,000. Full wraps, partial wraps & fleet graphics using cast vinyl. 3-5 year outdoor life. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/vehicle-branding-sri-lanka")({
   head: () => ({

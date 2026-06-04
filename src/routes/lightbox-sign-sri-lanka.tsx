@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Lightbox Sign Sri Lanka Services Across Sri Lanka";
-const DESC = "Professional lightbox sign sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Lightbox Sign Sri Lanka | Illuminated Signs from Rs 8,000";
+const DESC = "Lightbox sign printing & fabrication in Sri Lanka from Rs 8,000. Backlit signs for shops, offices & events. Single & double-sided, custom sizes. Call 0771437707.";
 
 export const Route = createFileRoute("/lightbox-sign-sri-lanka")({
   head: () => ({

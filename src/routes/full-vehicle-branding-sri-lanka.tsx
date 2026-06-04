@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Full Vehicle Branding Sri Lanka That Drives Real Brand Visibility";
-const DESC = "Sri Lanka's full-service full vehicle branding sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Full Vehicle Branding Sri Lanka | Complete Fleet Wrap & Graphics";
+const DESC = "Full vehicle branding in Sri Lanka for cars, vans, trucks & buses. Complete corporate fleet wraps with cast vinyl. Professional installation. Call 0771437707.";
 
 export const Route = createFileRoute("/full-vehicle-branding-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Wall Mural Printing Sri Lanka in Sri Lanka";
-const DESC = "Professional wall mural printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Wall Mural Printing Sri Lanka | Office & Retail Wall Graphics";
+const DESC = "Custom wall mural printing in Sri Lanka for offices, retail & hospitality. Self-adhesive & fabric mural installations. Any size. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/wall-mural-printing-sri-lanka")({
   head: () => ({

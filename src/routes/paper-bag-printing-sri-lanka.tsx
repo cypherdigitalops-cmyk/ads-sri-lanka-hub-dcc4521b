@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Paper Bag Printing Sri Lanka in Sri Lanka";
-const DESC = "Sri Lanka's full-service paper bag printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Paper Bag Printing Sri Lanka | Custom Branded Shopping Bags";
+const DESC = "Custom paper bag printing in Sri Lanka. Branded kraft & art paper shopping bags for boutiques, bakeries & retailers. Eco-friendly options. Call 0771437707.";
 
 export const Route = createFileRoute("/paper-bag-printing-sri-lanka")({
   head: () => ({

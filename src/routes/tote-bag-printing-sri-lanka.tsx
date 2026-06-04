@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Tote Bag Printing Sri Lanka Services Across Sri Lanka";
-const DESC = "Sri Lanka's full-service tote bag printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Tote Bag Printing Sri Lanka | Canvas & Non-Woven Bags from Rs 350";
+const DESC = "Tote bag printing in Sri Lanka from Rs 350. Cotton canvas, non-woven & jute bags with custom logo printing. Corporate gifts & events. Call 0771437707.";
 
 export const Route = createFileRoute("/tote-bag-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Packaging Box Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Professional packaging box printing sri lanka services with quick turnaround across Sri Lanka. Request a free quote today.";
+const TITLE = "Box Printing Sri Lanka | Custom Packaging Boxes & Gift Cartons";
+const DESC = "Custom packaging box printing in Sri Lanka. Product boxes, gift boxes & retail cartons with full-colour print. Die-cut & custom shapes available. Call 0771437707.";
 
 export const Route = createFileRoute("/box-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Motorcycle Branding Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for motorcycle branding sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Motorcycle Branding Sri Lanka | Motorbike Vinyl Graphics & Decals";
+const DESC = "Motorcycle branding & vinyl graphics in Sri Lanka for delivery bikes & fleet motorbikes. Durable cast vinyl, fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/motorcycle-branding-sri-lanka")({
   head: () => ({

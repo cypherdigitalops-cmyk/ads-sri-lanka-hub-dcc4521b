@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Event Backdrop Printing Sri Lanka That Drives Real Brand Visibility";
-const DESC = "Sri Lanka's full-service event backdrop printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Event Backdrop Printing Sri Lanka | Photo Walls & Stage Backs";
+const DESC = "Event backdrop printing in Sri Lanka for stage sets, photo walls & brand activations. Fabric, flex & canvas options. Any size. Call 0771437707.";
 
 export const Route = createFileRoute("/event-backdrop-printing-sri-lanka")({
   head: () => ({

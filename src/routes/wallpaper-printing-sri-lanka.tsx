@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Wallpaper Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Sri Lanka's full-service wallpaper printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Wallpaper Printing Sri Lanka | Custom Printed Wallpaper & Murals";
+const DESC = "Custom wallpaper printing in Sri Lanka for homes, hotels & offices. Printed wallpaper, textured designs & peel-and-stick wall murals. Call 0771437707.";
 
 export const Route = createFileRoute("/wallpaper-printing-sri-lanka")({
   head: () => ({

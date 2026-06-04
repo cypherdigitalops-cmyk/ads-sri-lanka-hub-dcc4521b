@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Polo Shirt Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Hire trusted specialists for polo shirt printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Polo Shirt Printing Sri Lanka | Corporate Uniforms from Rs 1,200";
+const DESC = "Polo shirt printing in Sri Lanka from Rs 1,200. Embroidery, screen print & DTF for corporate uniforms & branded polo shirts. Minimum 12 pieces. Call 0771437707.";
 
 export const Route = createFileRoute("/polo-shirt-printing-sri-lanka")({
   head: () => ({

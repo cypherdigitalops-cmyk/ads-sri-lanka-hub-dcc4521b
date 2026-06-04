@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Vehicle Sticker Printing Sri Lanka — Car, Van, Bus & Tuk-Tuk from LKR 850";
-const DESC = "Vehicle sticker printing Sri Lanka: door decals from LKR 850, full bus wraps, school van markings, fleet branding. Cast vinyl, 5–7 yr life. WhatsApp 0771437707 — 30-min quote.";
+const TITLE = "Vehicle Sticker Printing Sri Lanka | Car & Van Vinyl Stickers";
+const DESC = "Vehicle sticker printing in Sri Lanka using cast vinyl. Car, van, bus & tuk tuk stickers from Rs 25/sqft. Weatherproof 3-5 year life. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/vehicle-sticker-printing-sri-lanka")({
   head: () => ({

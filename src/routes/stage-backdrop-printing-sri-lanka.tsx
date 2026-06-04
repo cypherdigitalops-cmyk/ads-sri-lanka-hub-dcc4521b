@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Stage Backdrop Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Need stage backdrop printing sri lanka that lasts? We use weather-rated inks, premium substrates and fast turnaround across Colombo and the island.";
+const TITLE = "Stage Backdrop Printing Sri Lanka | Conference Stage Banners";
+const DESC = "Stage backdrop printing in Sri Lanka for conferences, concerts & corporate events. Large format fabric & vinyl stage backdrops. Fast turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/stage-backdrop-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Event Signage Printing Sri Lanka in Sri Lanka";
-const DESC = "Sri Lanka's full-service event signage printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Event Signage Printing Sri Lanka | Welcome & Directional Boards";
+const DESC = "Event signage printing in Sri Lanka — welcome boards, directional signs, table numbers & event banners. Fast turnaround. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/event-signage-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Glass Sticker Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Sri Lanka's full-service glass sticker printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Glass Sticker Printing Sri Lanka | Frosted & Decorative Film";
+const DESC = "Glass sticker & frosted film in Sri Lanka. Privacy screens, decorative glass film & branded glass panels for offices & retail. Custom designs. Call 0771437707.";
 
 export const Route = createFileRoute("/glass-sticker-printing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "X Banner Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Hire trusted specialists for x banner printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "X Banner Printing Sri Lanka | Cross Frame Banners from Rs 2,500";
+const DESC = "X banner printing in Sri Lanka from Rs 2,500 including stand. Cross-frame display banners for events, retail & promotions. Fast delivery. Call 0771437707.";
 
 export const Route = createFileRoute("/x-banner-printing-sri-lanka")({
   head: () => ({

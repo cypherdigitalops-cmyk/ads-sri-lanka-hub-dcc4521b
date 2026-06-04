@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Window Sticker Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Get measurable results from window sticker printing sri lanka in Sri Lanka. Concept, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Window Sticker Printing Sri Lanka | Custom Window Decals & Film";
+const DESC = "Window sticker printing in Sri Lanka. Custom cut stickers, printed film & window graphics for shops & vehicles. Any size, fast delivery. Call 0771437707.";
 
 export const Route = createFileRoute("/window-sticker-printing-sri-lanka")({
   head: () => ({

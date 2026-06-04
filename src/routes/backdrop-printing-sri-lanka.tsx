@@ -4,7 +4,7 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Backdrop Printing Sri Lanka | Event & Stage Backdrops Any Size";
+const TITLE = "Backdrop Printing Sri Lanka | Event Backdrops from Rs 180/sqft";
 const DESC = "Backdrop printing in Sri Lanka for events, stages & media walls. Flex, fabric & canvas backdrops from Rs 180/sqft. 2-day turnaround. Call 0771437707.";
 
 export const Route = createFileRoute("/backdrop-printing-sri-lanka")({

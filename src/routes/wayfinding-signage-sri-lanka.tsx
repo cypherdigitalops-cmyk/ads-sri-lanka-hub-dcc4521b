@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Wayfinding Signage Sri Lanka in Sri Lanka";
-const DESC = "Sri Lanka's full-service wayfinding signage sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Wayfinding Signage Sri Lanka | Directional & Navigation Signs";
+const DESC = "Wayfinding signage in Sri Lanka for hospitals, hotels & offices. Directional signs, room ID & navigation panels. Islandwide install. Call 0771437707.";
 
 export const Route = createFileRoute("/wayfinding-signage-sri-lanka")({
   head: () => ({

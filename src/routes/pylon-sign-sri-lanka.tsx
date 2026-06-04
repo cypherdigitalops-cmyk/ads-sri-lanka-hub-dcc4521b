@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Pylon Sign Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Sri Lanka's full-service pylon sign sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Pylon Sign Sri Lanka | Freestanding Totem & Pole Signs";
+const DESC = "Pylon & totem sign fabrication in Sri Lanka. Freestanding pole signs for petrol stations, shopping centres & commercial parks. Custom sizes. Call 0771437707.";
 
 export const Route = createFileRoute("/pylon-sign-sri-lanka")({
   head: () => ({

@@ -24,6 +24,7 @@ import { WINDOW_STICKER_EXTRA, WINDOW_STICKER_EXTRA_FAQS } from "@/data/window-s
 import { EMBOSSED_PRINTING_EXTRA, EMBOSSED_PRINTING_EXTRA_FAQS } from "@/data/embossed-printing-extra-content";
 import { LED_SCREEN_RENTAL_EXTRA, LED_SCREEN_RENTAL_EXTRA_FAQS } from "@/data/led-screen-rental-extra-content";
 import { CORPORATE_GIFTING_EXTRA, CORPORATE_GIFTING_EXTRA_FAQS } from "@/data/corporate-gifting-extra-content";
+import { PRINTING_HUB_EXTRA, PRINTING_HUB_EXTRA_FAQS } from "@/data/printing-services-hub-extra-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -550,6 +551,10 @@ export function CategoryHubTemplate({
         </section>
       ) : null}
       {isPrinting ? <PrintingPowerCTA service={category.title} /> : <MidContentWhatsAppCTA service={category.title} />}
+      {/* Hub long-form SEO content with mid CTA split */}
+      {isPrinting ? (
+        <PrintingExtraWithMidCTA blocks={PRINTING_HUB_EXTRA} service={category.title} />
+      ) : null}
       {!hasUnique ? (
         <>
           {longForm.blocks.length ? (
@@ -589,7 +594,17 @@ export function CategoryHubTemplate({
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
-      <FaqList items={getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs} />
+      <FaqList
+        items={(() => {
+          const base = getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs;
+          if (!isPrinting) return base;
+          const merged = [...base];
+          for (const f of PRINTING_HUB_EXTRA_FAQS) {
+            if (!merged.some((b) => b.q.toLowerCase() === f.q.toLowerCase())) merged.push(f);
+          }
+          return merged;
+        })()}
+      />
       {category.slug !== "printing-services-sri-lanka" ? (
         <section className="mx-auto max-w-7xl px-4 pb-10">
           <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">

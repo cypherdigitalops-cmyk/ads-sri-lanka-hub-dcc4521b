@@ -226,9 +226,6 @@ function PrintingExtraWithMidCTA({ blocks, service }: { blocks: Block[]; service
 }
 
 function FaqList({ items }: { items: FAQ[] }) {
-  return _FaqListImpl({ items });
-}
-function _FaqListImpl({ items }: { items: FAQ[] }) {
   if (!items.length) return null;
   return (
     <section className="mx-auto max-w-3xl px-4 py-12">

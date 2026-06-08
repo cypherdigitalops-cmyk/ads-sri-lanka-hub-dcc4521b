@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Pen Printing Sri Lanka | Branded Promo Pens from Rs 25 Each";
-const DESC = "Pen printing in Sri Lanka from Rs 25 per pen. Plastic, metal & gel pens with single & full-colour logo print. Min 100 units. Call 0771437707.";
+const TITLE = "Pen Printing Sri Lanka — Branded Promotional & Executive Pens | Logo Print & Laser Engraving";
+const DESC = "Branded pen printing in Sri Lanka — plastic, metal, gel & executive pens with pad print, screen print or laser engraving. Any quantity. Same-day Colombo. Call 0771437707.";
 
 export const Route = createFileRoute("/pen-printing-sri-lanka")({
   head: () => ({

@@ -4,7 +4,44 @@ import type { Block } from "./content-engine";
 import type { FAQ } from "./content-engine";
 
 export const ROLL_UP_BANNER_EXTRA: Block[] = [
-  // ── SECTION 1: SIZE GUIDE ──
+  // ── SECTION 1: MATERIAL COMPARISON ──
+  { type: "h2", text: "Roll Up Banner Materials Compared — Which Should You Choose?" },
+  { type: "p", text: "The substrate (print material) determines how sharp your banner looks, how long it lasts, and how well it handles Sri Lanka's humidity and heat. Here is a clear comparison of every material we use:" },
+  {
+    type: "table",
+    head: ["Material", "Finish", "Durability", "Best Use", "Price Tier"],
+    rows: [
+      ["Premium Polyester Film (Gloss)", "High gloss", "2–3 years indoor", "Product photography, vibrant brand colours", "Mid"],
+      ["Premium Polyester Film (Matt)", "Matt / anti-glare", "2–3 years indoor", "Conference halls, hotel lobbies, text-heavy designs", "Mid"],
+      ["Blockout Film", "Semi-gloss", "3–4 years indoor", "Double-sided banners (prevents light bleed-through)", "Mid-High"],
+      ["Non-Curl Synthetic Paper", "Satin", "1–2 years indoor", "Short-term events, promotions, budget requirements", "Economy"],
+      ["Backlit Film", "Translucent", "2 years indoor", "Illuminated light-box roll up stands", "Premium"],
+      ["Fabric (Dye-Sub)", "Soft matt", "5+ years", "Luxury events, fabric tension stands", "Premium"],
+    ],
+  },
+  { type: "p", text: "Our recommendation for most Sri Lankan businesses: Premium Polyester Film (Matt) for indoor corporate use, or Premium Polyester Film (Gloss) when product photography and brand colour accuracy are the priority. Both handle Sri Lanka's humidity well and produce excellent results on standard and premium cassette systems." },
+
+  // ── SECTION 2: USE CASE GUIDE ──
+  { type: "h2", text: "Roll Up Banners by Industry — What Works in Sri Lanka" },
+  { type: "p", text: "Roll up banner printing in Sri Lanka is used across almost every sector. Here is how different industries use them most effectively, and what to include in the design for each:" },
+  {
+    type: "table",
+    head: ["Industry", "Typical Use", "Recommended Size", "Key Design Elements"],
+    rows: [
+      ["Banking & Finance", "Branch promotions, product launches, queue management", "850 × 2000 mm", "Brand colours, product headline, compliance disclaimers at bottom"],
+      ["Hospitality & Hotels", "Conference signage, lobby branding, restaurant promotions", "850 × 2000 mm or 1000 × 2000 mm", "Premium photography, minimal text, QR code for bookings"],
+      ["Healthcare & Pharma", "Waiting room info, health awareness campaigns, pharmacy counters", "850 × 2000 mm (floor) + 300 × 700 mm (counter)", "Clean layout, large fonts, Sri Lanka MOH-compliant messaging"],
+      ["Education & Schools", "Open days, admissions, graduations, seminars", "850 × 2000 mm", "Institution branding, intake deadlines, course highlights"],
+      ["Retail & FMCG", "In-store promotions, product launches, seasonal campaigns", "850 × 2000 mm or 1000 × 2000 mm", "Product photography, offer price, expiry date, barcode/QR"],
+      ["Exhibitions & Trade Shows (BMICH)", "Booth branding, aisle markers, product showcases", "850 × 2000 mm or 1200 × 2000 mm", "Bold brand presence, contact details, product range overview"],
+      ["Real Estate & Property", "Show flat displays, project launches, site offices", "1000 × 2000 mm", "Project renders, unit pricing, location map, developer logo"],
+      ["Government & NGO", "Awareness campaigns, community events, official functions", "850 × 2000 mm", "Official logos, bilingual (Sinhala/English), programme details"],
+      ["IT & Tech", "Product demos, conferences, award nights", "850 × 2000 mm", "Dark/premium aesthetic, product visuals, website/app QR"],
+      ["Wedding & Events", "Photo booths, seating guides, welcome displays", "850 × 2000 mm", "Elegant typography, couple photography, floral design elements"],
+    ],
+  },
+
+  // ── SECTION 3: SIZE GUIDE ──
   { type: "h2", text: "Roll Up Banner Size Guide for Sri Lanka — All Standard Sizes Explained" },
   { type: "p", text: "Choosing the wrong size is one of the most common and costly roll up banner mistakes. Below is a complete size reference for every standard roll up banner format available in Sri Lanka — including print dimensions, safe zone measurements, and the best use case for each." },
   { type: "h3", text: "Standard Roll Up Banner Sizes (Sri Lanka)" },
@@ -23,7 +60,42 @@ export const ROLL_UP_BANNER_EXTRA: Block[] = [
   },
   { type: "p", text: "Important: The standard 850 × 2000 mm print size includes a 50 mm bottom strip that feeds into the cassette mechanism and is never visible. Your visible display area is effectively 850 × 1950 mm. Keep all critical text and logos within the 800 × 1900 mm safe zone." },
 
-  // ── SECTION 2: ARTWORK SETUP GUIDE ──
+  // ── SECTION 4: STAND / HARDWARE ──
+  { type: "h2", text: "Roll Up Banner Stand Types — Budget vs Premium Explained" },
+  { type: "p", text: "The stand (cassette mechanism) is as important as the print itself. A poor quality base can cause the banner to retract unevenly, topple in air-conditioned rooms, or fail after a few dozen uses. Here is what to know before you order:" },
+  { type: "h3", text: "Stand Comparison" },
+  {
+    type: "table",
+    head: ["Stand Type", "Weight", "Lifespan", "Stability", "Carry Bag", "Best For", "Price Range"],
+    rows: [
+      ["Economy Aluminium", "1.2 kg", "50–100 uses", "Basic", "Thin sleeve", "One-off events, short-term promotions", "Rs 1,500 – 2,500"],
+      ["Standard Aluminium", "1.8 kg", "200–300 uses", "Good", "Zip bag", "Regular events, small business use", "Rs 3,000 – 4,500"],
+      ["Heavy-Duty / Premium", "2.5 kg", "1,000+ uses", "Excellent", "Padded shoulder bag", "Frequent exhibitors, corporates, franchises", "Rs 5,500 – 9,000"],
+      ["Double-Sided Stand", "3.0 kg", "500+ uses", "Very Good", "Padded bag", "Trade shows, lobby displays, aisles", "Rs 8,000 – 14,000"],
+      ["Waterbase Stand", "2.0 kg (+ water)", "300+ uses", "Excellent outdoors", "Bag included", "Outdoor events, entrances, forecourts", "Rs 6,000 – 10,000"],
+    ],
+  },
+  { type: "p", text: "Tip for Sri Lankan conditions: Standard aluminium stands can wobble under air conditioning airflow in large conference halls. If your banner will be in an open or air-conditioned space, choose a heavy-duty base with an adjustable tension spring — it keeps the graphic taut and prevents the banner from rippling or toppling." },
+
+  // ── SECTION 5: COMPARISON TABLE ──
+  { type: "h2", text: "Roll Up Banners vs Other Display Options — Which Is Right for You?" },
+  { type: "p", text: "Not sure if a roll up banner is the right display solution? Here is a quick comparison against the other popular options available in Sri Lanka:" },
+  {
+    type: "table",
+    head: ["Display Type", "Cost", "Setup Time", "Portability", "Reusable?", "Best For"],
+    rows: [
+      ["Roll Up Banner", "Rs 4,500+", "Under 1 min", "Excellent — fits slim carry bag", "Yes (graphic replaceable)", "Events, exhibitions, retail, corporate"],
+      ["X-Banner", "Rs 1,500+", "2–3 min", "Good — lightweight", "Limited", "Budget promotions, short-term use"],
+      ["Pop-Up Display", "Rs 25,000+", "5–10 min", "Moderate — requires carry case", "Yes", "Exhibition booths, large brand walls"],
+      ["Fabric Tension System", "Rs 35,000+", "10–20 min", "Moderate", "Yes — fabric washable", "Premium events, luxury branding"],
+      ["Foam Board / Forex Sign", "Rs 2,000+", "Instant", "Poor — rigid, large", "Not easily", "Fixed indoor signage, estate agents"],
+      ["LED Sign Board", "Rs 15,000+", "Installation required", "Poor — fixed", "Yes", "Permanent shopfront/office signage"],
+      ["Flex Banner (hung)", "Rs 800+", "Rigging required", "Poor", "Limited", "Outdoor events, roadside advertising"],
+    ],
+  },
+  { type: "p", text: "Bottom line: For businesses that need professional, portable, reusable branding for repeated events — roll up banners offer the best value per use of any display format available in Sri Lanka." },
+
+  // ── SECTION 6: ARTWORK SETUP GUIDE ──
   { type: "h2", text: "Artwork & File Setup Guide — How to Send Print-Ready Files" },
   { type: "p", text: "Sending correctly prepared artwork is the single most important step to getting a crisp, colour-accurate roll up banner. Here is exactly what we need from you:" },
   { type: "h3", text: "File Format Requirements" },
@@ -66,61 +138,7 @@ export const ROLL_UP_BANNER_EXTRA: Block[] = [
   },
   { type: "p", text: "Not sure how to set up your file? Send us your design and our pre-press team will check it for free before printing. We catch issues like low resolution, wrong colour mode and missing bleed before they become problems on the finished banner." },
 
-  // ── SECTION 3: MATERIAL COMPARISON ──
-  { type: "h2", text: "Roll Up Banner Materials Compared — Which Should You Choose?" },
-  { type: "p", text: "The substrate (print material) determines how sharp your banner looks, how long it lasts, and how well it handles Sri Lanka's humidity and heat. Here is a clear comparison of every material we use:" },
-  {
-    type: "table",
-    head: ["Material", "Finish", "Durability", "Best Use", "Price Tier"],
-    rows: [
-      ["Premium Polyester Film (Gloss)", "High gloss", "2–3 years indoor", "Product photography, vibrant brand colours", "Mid"],
-      ["Premium Polyester Film (Matt)", "Matt / anti-glare", "2–3 years indoor", "Conference halls, hotel lobbies, text-heavy designs", "Mid"],
-      ["Blockout Film", "Semi-gloss", "3–4 years indoor", "Double-sided banners (prevents light bleed-through)", "Mid-High"],
-      ["Non-Curl Synthetic Paper", "Satin", "1–2 years indoor", "Short-term events, promotions, budget requirements", "Economy"],
-      ["Backlit Film", "Translucent", "2 years indoor", "Illuminated light-box roll up stands", "Premium"],
-      ["Fabric (Dye-Sub)", "Soft matt", "5+ years", "Luxury events, fabric tension stands", "Premium"],
-    ],
-  },
-  { type: "p", text: "Our recommendation for most Sri Lankan businesses: Premium Polyester Film (Matt) for indoor corporate use, or Premium Polyester Film (Gloss) when product photography and brand colour accuracy are the priority. Both handle Sri Lanka's humidity well and produce excellent results on standard and premium cassette systems." },
-
-  // ── SECTION 4: STAND / HARDWARE ──
-  { type: "h2", text: "Roll Up Banner Stand Types — Budget vs Premium Explained" },
-  { type: "p", text: "The stand (cassette mechanism) is as important as the print itself. A poor quality base can cause the banner to retract unevenly, topple in air-conditioned rooms, or fail after a few dozen uses. Here is what to know before you order:" },
-  { type: "h3", text: "Stand Comparison" },
-  {
-    type: "table",
-    head: ["Stand Type", "Weight", "Lifespan", "Stability", "Carry Bag", "Best For", "Price Range"],
-    rows: [
-      ["Economy Aluminium", "1.2 kg", "50–100 uses", "Basic", "Thin sleeve", "One-off events, short-term promotions", "Rs 1,500 – 2,500"],
-      ["Standard Aluminium", "1.8 kg", "200–300 uses", "Good", "Zip bag", "Regular events, small business use", "Rs 3,000 – 4,500"],
-      ["Heavy-Duty / Premium", "2.5 kg", "1,000+ uses", "Excellent", "Padded shoulder bag", "Frequent exhibitors, corporates, franchises", "Rs 5,500 – 9,000"],
-      ["Double-Sided Stand", "3.0 kg", "500+ uses", "Very Good", "Padded bag", "Trade shows, lobby displays, aisles", "Rs 8,000 – 14,000"],
-      ["Waterbase Stand", "2.0 kg (+ water)", "300+ uses", "Excellent outdoors", "Bag included", "Outdoor events, entrances, forecourts", "Rs 6,000 – 10,000"],
-    ],
-  },
-  { type: "p", text: "Tip for Sri Lankan conditions: Standard aluminium stands can wobble under air conditioning airflow in large conference halls. If your banner will be in an open or air-conditioned space, choose a heavy-duty base with an adjustable tension spring — it keeps the graphic taut and prevents the banner from rippling or toppling." },
-
-  // ── SECTION 5: USE CASE GUIDE ──
-  { type: "h2", text: "Roll Up Banners by Industry — What Works in Sri Lanka" },
-  { type: "p", text: "Roll up banner printing in Sri Lanka is used across almost every sector. Here is how different industries use them most effectively, and what to include in the design for each:" },
-  {
-    type: "table",
-    head: ["Industry", "Typical Use", "Recommended Size", "Key Design Elements"],
-    rows: [
-      ["Banking & Finance", "Branch promotions, product launches, queue management", "850 × 2000 mm", "Brand colours, product headline, compliance disclaimers at bottom"],
-      ["Hospitality & Hotels", "Conference signage, lobby branding, restaurant promotions", "850 × 2000 mm or 1000 × 2000 mm", "Premium photography, minimal text, QR code for bookings"],
-      ["Healthcare & Pharma", "Waiting room info, health awareness campaigns, pharmacy counters", "850 × 2000 mm (floor) + 300 × 700 mm (counter)", "Clean layout, large fonts, Sri Lanka MOH-compliant messaging"],
-      ["Education & Schools", "Open days, admissions, graduations, seminars", "850 × 2000 mm", "Institution branding, intake deadlines, course highlights"],
-      ["Retail & FMCG", "In-store promotions, product launches, seasonal campaigns", "850 × 2000 mm or 1000 × 2000 mm", "Product photography, offer price, expiry date, barcode/QR"],
-      ["Exhibitions & Trade Shows (BMICH)", "Booth branding, aisle markers, product showcases", "850 × 2000 mm or 1200 × 2000 mm", "Bold brand presence, contact details, product range overview"],
-      ["Real Estate & Property", "Show flat displays, project launches, site offices", "1000 × 2000 mm", "Project renders, unit pricing, location map, developer logo"],
-      ["Government & NGO", "Awareness campaigns, community events, official functions", "850 × 2000 mm", "Official logos, bilingual (Sinhala/English), programme details"],
-      ["IT & Tech", "Product demos, conferences, award nights", "850 × 2000 mm", "Dark/premium aesthetic, product visuals, website/app QR"],
-      ["Wedding & Events", "Photo booths, seating guides, welcome displays", "850 × 2000 mm", "Elegant typography, couple photography, floral design elements"],
-    ],
-  },
-
-  // ── SECTION 6: SETUP INSTRUCTIONS ──
+  // ── SECTION 7: SETUP INSTRUCTIONS ──
   { type: "h2", text: "How to Set Up a Roll Up Banner — Step by Step" },
   { type: "p", text: "One of the biggest advantages of roll up banners is how fast they assemble. Here is a simple setup guide you can share with your team:" },
   {
@@ -136,25 +154,7 @@ export const ROLL_UP_BANNER_EXTRA: Block[] = [
   },
   { type: "p", text: "To pack down: Hold the top rail, remove the pole, and slowly guide the graphic back down into the cassette. Never let it snap back — the spring tension can crease the graphic if it retracts too fast. Disassemble the pole, place everything into the carry bag, and it is ready for the next event." },
 
-  // ── SECTION 8: COMPARISON TABLE ──
-  { type: "h2", text: "Roll Up Banners vs Other Display Options — Which Is Right for You?" },
-  { type: "p", text: "Not sure if a roll up banner is the right display solution? Here is a quick comparison against the other popular options available in Sri Lanka:" },
-  {
-    type: "table",
-    head: ["Display Type", "Cost", "Setup Time", "Portability", "Reusable?", "Best For"],
-    rows: [
-      ["Roll Up Banner", "Rs 4,500+", "Under 1 min", "Excellent — fits slim carry bag", "Yes (graphic replaceable)", "Events, exhibitions, retail, corporate"],
-      ["X-Banner", "Rs 1,500+", "2–3 min", "Good — lightweight", "Limited", "Budget promotions, short-term use"],
-      ["Pop-Up Display", "Rs 25,000+", "5–10 min", "Moderate — requires carry case", "Yes", "Exhibition booths, large brand walls"],
-      ["Fabric Tension System", "Rs 35,000+", "10–20 min", "Moderate", "Yes — fabric washable", "Premium events, luxury branding"],
-      ["Foam Board / Forex Sign", "Rs 2,000+", "Instant", "Poor — rigid, large", "Not easily", "Fixed indoor signage, estate agents"],
-      ["LED Sign Board", "Rs 15,000+", "Installation required", "Poor — fixed", "Yes", "Permanent shopfront/office signage"],
-      ["Flex Banner (hung)", "Rs 800+", "Rigging required", "Poor", "Limited", "Outdoor events, roadside advertising"],
-    ],
-  },
-  { type: "p", text: "Bottom line: For businesses that need professional, portable, reusable branding for repeated events — roll up banners offer the best value per use of any display format available in Sri Lanka." },
-
-  // ── SECTION 9: CARE & MAINTENANCE ──
+  // ── SECTION 8: CARE & MAINTENANCE ──
   { type: "h2", text: "How to Care for Your Roll Up Banner — Make It Last Longer" },
   { type: "p", text: "A well-maintained roll up banner can last 3 to 5 years with regular use. Follow these simple care guidelines to protect your investment:" },
   {
@@ -170,7 +170,7 @@ export const ROLL_UP_BANNER_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 10: RELATED PRINTING SERVICES ──
+  // ── SECTION 9: RELATED PRINTING SERVICES ──
   { type: "h2", text: "Related Printing Services You May Also Need" },
   { type: "p", text: "Many businesses ordering roll up banner printing in Sri Lanka also require one or more of these complementary services for their events and campaigns — banner printing, backdrop printing, exhibition banner printing, foam board printing, sticker printing and exhibition stall branding all pair well with retractable displays." },
 ];

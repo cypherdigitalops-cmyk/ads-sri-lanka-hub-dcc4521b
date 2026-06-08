@@ -9,7 +9,27 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
   { type: "p", text: "In Sri Lanka's event industry, LED screens are used in two primary configurations. Indoor LED walls — used in hotel ballrooms, conference centres, exhibition halls and corporate venues — are built from fine-pitch panels (P2 to P4) producing sharp, close-up viewing quality. Outdoor LED walls — used for concerts, political rallies, outdoor festivals, sports events and mobile roadshow trucks — use coarser panels (P4 to P10) with higher brightness (5,000 to 10,000 nits) to remain visible in direct Sri Lankan sunlight." },
   { type: "p", text: "Every LED screen rental in Sri Lanka includes the panels themselves, the processing hardware (video processor / scaler), the structural rigging or ground-support frame, power distribution, signal cabling, and a trained technical operator who manages the screen throughout your event. Delivery, installation, operation and removal are all part of the rental service — you do not handle the equipment yourself." },
 
-  // ── SECTION 2: PIXEL PITCH GUIDE ──
+  // ── SECTION 2: USE CASES BY EVENT TYPE ──
+  { type: "h2", text: "LED Screen Rental by Event Type — What Works in Sri Lanka" },
+  {
+    type: "table",
+    head: ["Event Type", "Recommended Screen", "Typical Size", "Key Requirement", "Common Venues in Sri Lanka"],
+    rows: [
+      ["Corporate Conference / AGM", "Indoor P3 or P3.9", "4×3 m to 6×3 m", "Sharp presentation display, HDMI laptop input, confidence monitor for presenter", "BMICH, Cinnamon Grand, Shangri-La, Waters Edge, Cinnamon Lakeside"],
+      ["Product Launch", "Indoor P3, dramatic reveal setup", "6×3 m to 8×4 m", "Video playback, colour accuracy for brand visuals, synchronised reveal moment", "Hotel ballrooms, Colombo showrooms, BMICH, rooftop venues"],
+      ["Award Ceremony / Gala", "Indoor P2.5 to P3", "6×3 m to 8×3 m", "Photographic-quality winner reveals, name and logo display, live camera IMAG feed", "Kingsbury, Galle Face Hotel, Hilton, Cinnamon Grand ballroom"],
+      ["Concert / Live Music", "Outdoor P3.9 to P6", "8×4 m to 12×5 m", "High brightness for stage wash overspill, live camera IMAG, weather resistance", "Outdoor amphitheatres, Sugathadasa Stadium, open grounds islandwide"],
+      ["Political Rally / Public Event", "Outdoor P6 to P10", "8×4 m to 10×5 m (often multiple screens)", "Maximum brightness for daylight, wide viewing angle, robust structure for large crowds", "Open grounds, sports stadiums, town centres across all provinces"],
+      ["Wedding Reception", "Indoor P3 to P3.9", "4×3 m to 6×3 m", "Photo and video slideshow display, warm colour reproduction, ambient integration", "Hotel ballrooms, banquet halls, garden venues, beach resorts"],
+      ["Exhibition / Trade Show", "Indoor P3 to P4", "3×2 m to 6×3 m per booth", "Multi-day hire, product video loop, bright enough to compete with venue lighting", "BMICH, Cinnamon Grand exhibition space, Galadari ballroom"],
+      ["Sports Event", "Outdoor P6 to P10 (scoreboard/replay)", "Varies — 4×2 m scoreboard to 10×5 m replay wall", "Fast refresh rate for motion content, high brightness, durable outdoor structure", "SSC, R. Premadasa Stadium, Rangiri Dambulla stadium, provincial grounds"],
+      ["Roadshow / Mobile Activation", "Mobile LED truck — outdoor P6 to P10", "3×4 m to 5×3 m on vehicle", "Moving audience — must be visible while truck is stationary and during slow approach", "Street-level, market areas, shopping complexes — islandwide routing"],
+      ["School / University Event", "Indoor P3 to P4", "4×3 m to 6×3 m", "PowerPoint and video display, microphone confidence monitor, easy presenter operation", "School halls, university auditoriums, outdoor prize-giving grounds"],
+      ["Religious / Cultural Festival", "Outdoor P6 to P10", "6×3 m to 10×5 m", "Daylight operation, crowd-scale viewing, robust overnight operation", "Temple grounds, Vesak festival sites, cultural centres, open fields"],
+    ],
+  },
+
+  // ── SECTION 3: PIXEL PITCH GUIDE ──
   { type: "h2", text: "Pixel Pitch Guide — Which LED Screen Specification Do You Need?" },
   { type: "p", text: "Pixel pitch is the single most important technical specification when renting an LED screen in Sri Lanka. It is the distance in millimetres between the centre of one LED cluster and the centre of the next. A smaller pixel pitch number means more pixels per square metre, finer detail and sharper image — but also higher rental cost. Choosing the wrong pixel pitch for your viewing distance either wastes budget (too fine for the distance) or produces a visibly pixelated image (too coarse for close viewing)." },
   {
@@ -26,7 +46,7 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
   { type: "p", text: "Practical rule for Sri Lanka: Divide your minimum audience viewing distance (in metres) by 3 to get the maximum acceptable pixel pitch. A conference room where the back row is 9 metres from the screen needs a maximum P3 panel. An outdoor rally where the furthest viewers are 30 metres away can use P10 comfortably." },
   { type: "p", text: "For most corporate events in Sri Lanka — hotel conferences, award nights, product launches — P3 or P3.9 is the standard specification and delivers excellent results in all common event venues including Cinnamon Grand, Shangri-La, Waters Edge, BMICH, Kingsbury and Galle Face Hotel." },
 
-  // ── SECTION 3: INDOOR VS OUTDOOR ──
+  // ── SECTION 4: INDOOR VS OUTDOOR ──
   { type: "h2", text: "Indoor vs Outdoor LED Screen Rental — Key Differences" },
   {
     type: "table",
@@ -46,7 +66,7 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 4: STANDARD SIZES ──
+  // ── SECTION 5: STANDARD SIZES ──
   { type: "h2", text: "Standard LED Screen Sizes for Events in Sri Lanka" },
   { type: "p", text: "LED screens are modular — size is built from standard cabinet dimensions. Most rental providers in Sri Lanka use 500×500mm or 500×1000mm cabinets. This means screen sizes increase in those steps. Here are the most commonly rented configurations for each event type." },
   {
@@ -65,7 +85,7 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
   },
   { type: "p", text: "Note on aspect ratios: Standard 16:9 widescreen content (PowerPoint, video) works best on screens wider than they are tall. If your content is 16:9, request a screen ratio to match. Custom aspect ratios are available — just specify if your content format is non-standard (square social media content, portrait video, etc.) at the time of booking so the screen configuration is planned accordingly." },
 
-  // ── SECTION 5: WHAT'S INCLUDED ──
+  // ── SECTION 6: WHAT'S INCLUDED ──
   { type: "h2", text: "What Is Included in an LED Screen Rental Package in Sri Lanka" },
   { type: "p", text: "LED screen rental in Sri Lanka is a full-service hire — not equipment-only. Here is exactly what a complete rental package includes and what may be quoted separately depending on your event requirements." },
   { type: "h3", text: "Included in Every Rental" },
@@ -97,27 +117,40 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 6: USE CASES BY EVENT TYPE ──
-  { type: "h2", text: "LED Screen Rental by Event Type — What Works in Sri Lanka" },
+  // ── SECTION 7: MOBILE LED TRUCK ──
+  { type: "h2", text: "Mobile LED Truck Rental Sri Lanka — Roadshow & Activation Screens" },
+  { type: "p", text: "Mobile LED trucks are a distinct category of LED screen rental in Sri Lanka — a high-brightness outdoor LED video wall permanently mounted on a lorry or truck chassis, with an onboard generator. The truck drives to your location, parks, and operates as a standalone mobile advertising or event screen. No external power connection is required." },
+  { type: "h3", text: "How Mobile LED Trucks Are Used in Sri Lanka" },
   {
-    type: "table",
-    head: ["Event Type", "Recommended Screen", "Typical Size", "Key Requirement", "Common Venues in Sri Lanka"],
-    rows: [
-      ["Corporate Conference / AGM", "Indoor P3 or P3.9", "4×3 m to 6×3 m", "Sharp presentation display, HDMI laptop input, confidence monitor for presenter", "BMICH, Cinnamon Grand, Shangri-La, Waters Edge, Cinnamon Lakeside"],
-      ["Product Launch", "Indoor P3, dramatic reveal setup", "6×3 m to 8×4 m", "Video playback, colour accuracy for brand visuals, synchronised reveal moment", "Hotel ballrooms, Colombo showrooms, BMICH, rooftop venues"],
-      ["Award Ceremony / Gala", "Indoor P2.5 to P3", "6×3 m to 8×3 m", "Photographic-quality winner reveals, name and logo display, live camera IMAG feed", "Kingsbury, Galle Face Hotel, Hilton, Cinnamon Grand ballroom"],
-      ["Concert / Live Music", "Outdoor P3.9 to P6", "8×4 m to 12×5 m", "High brightness for stage wash overspill, live camera IMAG, weather resistance", "Outdoor amphitheatres, Sugathadasa Stadium, open grounds islandwide"],
-      ["Political Rally / Public Event", "Outdoor P6 to P10", "8×4 m to 10×5 m (often multiple screens)", "Maximum brightness for daylight, wide viewing angle, robust structure for large crowds", "Open grounds, sports stadiums, town centres across all provinces"],
-      ["Wedding Reception", "Indoor P3 to P3.9", "4×3 m to 6×3 m", "Photo and video slideshow display, warm colour reproduction, ambient integration", "Hotel ballrooms, banquet halls, garden venues, beach resorts"],
-      ["Exhibition / Trade Show", "Indoor P3 to P4", "3×2 m to 6×3 m per booth", "Multi-day hire, product video loop, bright enough to compete with venue lighting", "BMICH, Cinnamon Grand exhibition space, Galadari ballroom"],
-      ["Sports Event", "Outdoor P6 to P10 (scoreboard/replay)", "Varies — 4×2 m scoreboard to 10×5 m replay wall", "Fast refresh rate for motion content, high brightness, durable outdoor structure", "SSC, R. Premadasa Stadium, Rangiri Dambulla stadium, provincial grounds"],
-      ["Roadshow / Mobile Activation", "Mobile LED truck — outdoor P6 to P10", "3×4 m to 5×3 m on vehicle", "Moving audience — must be visible while truck is stationary and during slow approach", "Street-level, market areas, shopping complexes — islandwide routing"],
-      ["School / University Event", "Indoor P3 to P4", "4×3 m to 6×3 m", "PowerPoint and video display, microphone confidence monitor, easy presenter operation", "School halls, university auditoriums, outdoor prize-giving grounds"],
-      ["Religious / Cultural Festival", "Outdoor P6 to P10", "6×3 m to 10×5 m", "Daylight operation, crowd-scale viewing, robust overnight operation", "Temple grounds, Vesak festival sites, cultural centres, open fields"],
+    type: "ul",
+    items: [
+      "Product launches and brand activations — park outside a target retail location or competitor and run brand content directly to passing consumers",
+      "Political campaigns — the highest-volume use case in Sri Lanka — trucks travel pre-defined routes displaying candidate content and broadcasting live rally audio",
+      "FMCG roadshows — reach semi-urban and rural markets in Kurunegala, Anuradhapura, Matara, Jaffna that traditional outdoor media does not cover efficiently",
+      "Event amplification — park trucks outside a venue to display event content, sponsor branding and crowd direction to people approaching the entrance",
+      "Emergency public information — government and NGO campaigns to reach communities quickly across multiple districts simultaneously",
     ],
   },
+  { type: "h3", text: "Mobile LED Truck Specifications" },
+  {
+    type: "table",
+    head: ["Specification", "Typical Range in Sri Lanka"],
+    rows: [
+      ["Screen size", "3×2 m to 6×3 m (fixed to vehicle body)"],
+      ["Pixel pitch", "P6 to P10 outdoor"],
+      ["Brightness", "5,000 to 8,000 nits — visible in full daylight"],
+      ["Power source", "Onboard diesel generator — self-sufficient"],
+      ["Viewing angle", "160° horizontal — wide street coverage"],
+      ["Content playback", "USB media player — MP4 video loop, image slideshow"],
+      ["Audio", "Integrated PA speaker system on truck"],
+      ["Operating hours", "12 to 16 hours per fuel tank"],
+      ["Crew included", "Driver + LED technician / content operator"],
+      ["Minimum hire", "Typically 1 day (8 to 12 operating hours)"],
+    ],
+  },
+  { type: "p", text: "Planning tip for Sri Lanka: Mobile LED trucks require prior route approval from the Police Traffic Division for movement in and around Colombo. For roadshows covering multiple districts, coordinate district-level police clearances at least 7 to 10 working days before the activation. Your LED truck supplier should be familiar with this process — if they are not, that is a red flag." },
 
-  // ── SECTION 7: CONTENT GUIDE ──
+  // ── SECTION 8: CONTENT GUIDE ──
   { type: "h2", text: "Content Guide — How to Prepare Visuals for LED Screens" },
   { type: "p", text: "The most common cause of poor LED screen image quality at events in Sri Lanka is not the screen — it is the content. Slides and videos prepared for a laptop screen or projector do not automatically look good on a large LED wall. Here is exactly how to prepare content that will look sharp and professional on your hired LED screen." },
   { type: "h3", text: "Video Content Specifications" },
@@ -169,7 +202,7 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
   },
   { type: "p", text: "Always bring your own HDMI cable (minimum 3 metres) and a USB-C to HDMI adapter if your laptop uses USB-C only. Do not rely on the venue or LED team to supply laptop adaptors." },
 
-  // ── SECTION 8: SETUP & LOGISTICS ──
+  // ── SECTION 9: SETUP & LOGISTICS ──
   { type: "h2", text: "LED Screen Rental Setup — Timelines & Logistics in Sri Lanka" },
   { type: "p", text: "Poor planning of setup time is the most common cause of last-minute stress at events with LED screens in Sri Lanka. Here is a realistic guide to how long setup takes for each screen size and configuration." },
   { type: "h3", text: "Setup Time by Screen Size" },
@@ -198,39 +231,6 @@ export const LED_SCREEN_RENTAL_EXTRA: Block[] = [
       "Plan for monsoon weather for outdoor events — if the event is outdoors during southwest monsoon (May to September) or northeast monsoon (November to January), confirm the IP rating of the screen panels and have a rain contingency plan agreed in advance with the LED supplier.",
     ],
   },
-
-  // ── SECTION 9: MOBILE LED TRUCK ──
-  { type: "h2", text: "Mobile LED Truck Rental Sri Lanka — Roadshow & Activation Screens" },
-  { type: "p", text: "Mobile LED trucks are a distinct category of LED screen rental in Sri Lanka — a high-brightness outdoor LED video wall permanently mounted on a lorry or truck chassis, with an onboard generator. The truck drives to your location, parks, and operates as a standalone mobile advertising or event screen. No external power connection is required." },
-  { type: "h3", text: "How Mobile LED Trucks Are Used in Sri Lanka" },
-  {
-    type: "ul",
-    items: [
-      "Product launches and brand activations — park outside a target retail location or competitor and run brand content directly to passing consumers",
-      "Political campaigns — the highest-volume use case in Sri Lanka — trucks travel pre-defined routes displaying candidate content and broadcasting live rally audio",
-      "FMCG roadshows — reach semi-urban and rural markets in Kurunegala, Anuradhapura, Matara, Jaffna that traditional outdoor media does not cover efficiently",
-      "Event amplification — park trucks outside a venue to display event content, sponsor branding and crowd direction to people approaching the entrance",
-      "Emergency public information — government and NGO campaigns to reach communities quickly across multiple districts simultaneously",
-    ],
-  },
-  { type: "h3", text: "Mobile LED Truck Specifications" },
-  {
-    type: "table",
-    head: ["Specification", "Typical Range in Sri Lanka"],
-    rows: [
-      ["Screen size", "3×2 m to 6×3 m (fixed to vehicle body)"],
-      ["Pixel pitch", "P6 to P10 outdoor"],
-      ["Brightness", "5,000 to 8,000 nits — visible in full daylight"],
-      ["Power source", "Onboard diesel generator — self-sufficient"],
-      ["Viewing angle", "160° horizontal — wide street coverage"],
-      ["Content playback", "USB media player — MP4 video loop, image slideshow"],
-      ["Audio", "Integrated PA speaker system on truck"],
-      ["Operating hours", "12 to 16 hours per fuel tank"],
-      ["Crew included", "Driver + LED technician / content operator"],
-      ["Minimum hire", "Typically 1 day (8 to 12 operating hours)"],
-    ],
-  },
-  { type: "p", text: "Planning tip for Sri Lanka: Mobile LED trucks require prior route approval from the Police Traffic Division for movement in and around Colombo. For roadshows covering multiple districts, coordinate district-level police clearances at least 7 to 10 working days before the activation. Your LED truck supplier should be familiar with this process — if they are not, that is a red flag." },
 
   // ── SECTION 10: BOOKING GUIDE ──
   { type: "h2", text: "How to Book LED Screen Rental in Sri Lanka — Step by Step" },

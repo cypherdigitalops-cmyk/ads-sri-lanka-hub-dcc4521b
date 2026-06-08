@@ -3,7 +3,68 @@
 import type { Block, FAQ } from "./content-engine";
 
 export const PRINTING_HUB_EXTRA: Block[] = [
-  // ── SECTION 1: LOCAL COVERAGE ──
+  // ── SECTION 1: WHAT'S AVAILABLE ──
+  { type: "h2", text: "Printing in Sri Lanka — The Complete Guide to What's Available" },
+  { type: "p", text: "Printing in Sri Lanka covers a far wider range of services than most buyers initially realise. The industry has matured significantly — Sri Lanka's printing sector now includes digital printing, offset printing, large format printing, UV printing, garment printing, packaging printing, specialty finishing and sign fabrication, all available under one roof at the best full-service providers. Here is a complete map of what is available, so you know exactly what to look for when searching for printing services near you." },
+  { type: "h3", text: "Every Type of Printing Available in Sri Lanka" },
+  {
+    type: "table",
+    head: ["Print Category", "What It Covers", "Minimum Order", "Turnaround", "Key Search Terms"],
+    rows: [
+      ["Large Format / Outdoor", "Flex banners, hoardings, billboards, building wraps, mesh banners, vehicle wraps", "1 piece", "1–3 days", "banner printing sri lanka, hoarding printing, flex printing"],
+      ["Sign Boards & Signage", "LED sign boards, acrylic signs, 3D letters, lightboxes, pylon signs, neon signs", "1 piece", "7–14 days", "sign board printing sri lanka, led sign board, acrylic sign board"],
+      ["Digital Printing", "Business cards, flyers, brochures, posters, letterheads, menus — any quantity", "1 copy", "1–3 days", "digital printing sri lanka, business card printing colombo"],
+      ["Offset Printing", "High-volume brochures, catalogues, annual reports, books, packaging — 500+ copies", "500 copies", "5–10 days", "offset printing sri lanka, brochure printing, catalogue printing"],
+      ["Vehicle Branding", "Full car wraps, van branding, fleet graphics, tuk-tuk branding, bus wraps", "1 vehicle", "3–7 days", "vehicle branding sri lanka, car wrap sri lanka, van branding"],
+      ["Sticker & Window Graphics", "Vinyl stickers, window decals, frosted film, one-way vision, floor stickers", "1 piece", "2–3 days", "sticker printing sri lanka, window sticker printing, frosted glass"],
+      ["Garment Printing", "T-shirts, polo shirts, uniforms, hoodies — DTG, DTF, screen print, embroidery", "1 piece (DTG/DTF)", "2–5 days", "t shirt printing sri lanka, dtg printing, screen printing"],
+      ["Packaging & Labels", "Custom boxes, paper bags, product labels, hang tags, shrink sleeves, roll labels", "10–100 pcs", "5–10 days", "packaging printing sri lanka, label printing, box printing"],
+      ["UV & Specialty Printing", "UV print on acrylic/glass/metal, spot UV finishing, embossing, foil stamping", "1 piece", "3–7 days", "uv printing sri lanka, spot uv printing, embossed printing"],
+      ["Exhibition & Event Print", "Exhibition booth graphics, pop-up banners, backdrops, fabric displays", "1 piece", "3–7 days", "exhibition banner printing sri lanka, booth branding, backdrop printing"],
+      ["Interior & Décor Print", "Wall murals, custom wallpaper, canvas prints, ceiling graphics", "1 sqm", "3–7 days", "wall mural printing sri lanka, wallpaper printing, canvas printing"],
+      ["Dye Sublimation", "Fabric flags, soft signage, sportswear, lanyards, mouse pads, mugs", "1 piece (mugs/pads)", "2–5 days", "dye sublimation printing sri lanka, flag printing, lanyard printing"],
+    ],
+  },
+
+  // ── SECTION 2: BUYING GUIDE BY BUSINESS TYPE ──
+  { type: "h2", text: "Printing Services in Sri Lanka — What Each Business Type Needs Most" },
+  {
+    type: "table",
+    head: ["Business Type", "Essential Print Needs", "Most Ordered Services", "Key Consideration"],
+    rows: [
+      ["Retail Shop", "Shopfront sign, promotional banners, price boards, loyalty cards", "LED sign board, flex banner, sticker printing, window sticker", "Seasonal promotion updates — need fast turnaround on repeat banner orders"],
+      ["Restaurant / Café", "Menu, table tent cards, signage, promotional banners, packaging", "Menu printing, roll-up banners, shopfront sticker, paper bags", "Menus update frequently — digital printing with no minimum order is most cost-effective"],
+      ["Hotel / Resort", "Room signage, event banners, branded packaging, vehicle graphics", "Wayfinding signage, backdrop printing, canvas printing, vehicle branding", "Colour accuracy critical — brand standards must be maintained across all print"],
+      ["Corporate / Office", "Business cards, stationery, branded merchandise, presentation folders", "Business card printing, letterheads, roll-up banners, embossed stationery", "Consistency across multiple print types — one supplier for all stationery is more efficient"],
+      ["School / University", "Banners, certificates, lanyards, ID cards, event backdrop, branded stationery", "Banner printing, certificate printing, lanyard printing, ID card printing", "Budget-conscious — digital printing from small quantities reduces waste"],
+      ["Healthcare / Clinic", "Waiting room signage, information boards, branded stationery, awareness banners", "Roll-up banners, window stickers, business cards, brochures", "Text accuracy is critical — always proof carefully before approval"],
+      ["FMCG / Manufacturer", "Product labels, packaging boxes, promotional banners, vehicle fleet branding", "Label printing, box printing, flex printing, vehicle branding", "Volume pricing and reorder consistency most important — needs reliable supplier relationship"],
+      ["Events Company", "Backdrops, banners, flags, roll-ups, stage branding, exhibition graphics", "Backdrop printing, banner printing, flag printing, exhibition booth printing", "Tight deadlines — fast turnaround and islandwide delivery non-negotiable"],
+      ["Startup / SME", "Business cards, basic stationery, simple banner, basic packaging", "Digital business card printing, A4 flyers, vinyl banner, basic stickers", "Low minimum orders most important — digital printing allows starting from 1 copy"],
+      ["Exporter / Manufacturer", "Export packaging, product labels, hangtags, branded shipping materials", "Packaging box printing, hang tag printing, shrink sleeve printing, roll labels", "Food-safe and export-standard substrates required — confirm compliance at ordering"],
+    ],
+  },
+  // ── SECTION 3: TECHNOLOGY GUIDE ──
+  { type: "h2", text: "Printing Technology Guide — Which Method for Which Job" },
+  { type: "p", text: "Understanding the printing technology behind your job helps you ask the right questions, set realistic expectations and avoid paying for a method that does not suit your needs. Here is a plain-language guide to every printing technology available in Sri Lanka today." },
+  {
+    type: "table",
+    head: ["Technology", "How It Works", "Best For", "Colour Accuracy", "Minimum Qty", "Speed"],
+    rows: [
+      ["Digital (Inkjet)", "Inkjet head sprays CMYK ink directly onto substrate — no plates or screens needed", "Short runs, variable data, full colour on paper, card, vinyl, fabric", "Very good — Pantone approximate", "1 copy", "Fast — hours"],
+      ["Offset Lithography", "Ink transferred from plate to rubber blanket to substrate — consistent high volume", "High-volume stationery, books, catalogues, packaging — 500+ copies", "Excellent — Pantone exact", "500 copies", "Slow setup, fast run"],
+      ["Eco-Solvent (Large Format)", "Solvent-based inkjet onto vinyl, flex and banner media — outdoor-rated", "Outdoor banners, vehicle wraps, window graphics, hoardings", "Very good", "1 sqm", "Fast — hours"],
+      ["UV Flatbed", "UV-cured ink printed directly onto rigid substrates — acrylic, metal, wood, glass", "Sign boards, awards, phone cases, premium packaging, display items", "Excellent — vibrant, scratch-resistant", "1 piece", "Fast — hours"],
+      ["Screen Printing", "Ink pushed through a mesh screen — one colour per screen pass", "T-shirts, tote bags, mugs, caps — solid colour designs in bulk", "Good — Pantone spot colours", "24–50 pcs", "Medium — setup then fast"],
+      ["DTG (Direct to Garment)", "Inkjet printer jets water-based ink directly onto fabric", "Full-colour photo prints on cotton garments — any quantity from 1", "Excellent — photographic", "1 piece", "Medium — minutes per garment"],
+      ["DTF (Direct to Film)", "Full-colour print on film transferred to fabric by heat press", "All fabric types — cotton, polyester, blends — any quantity from 1", "Excellent — full colour", "1 piece", "Medium"],
+      ["Dye Sublimation", "Heat converts dye into gas that bonds into polyester fabric permanently", "Flags, soft signage, sportswear, mugs (coated), lanyards", "Excellent — vibrant, wash-fast", "1 piece (mugs)", "Fast"],
+      ["Laser Engraving", "Laser burns away surface material revealing layer below", "Awards, pens, notebooks, metal items, plaques — permanent marking", "N/A — mono tone", "1 piece", "Fast — minutes"],
+      ["Embossing / Debossing", "Metal die presses design into paper under high pressure", "Business cards, notebook covers, premium stationery, packaging", "N/A — tactile only", "100 pcs", "Slow — die manufacture 5 days"],
+    ],
+  },
+
+  // ── SECTION 4: LOCAL COVERAGE ──
   { type: "h2", text: "Printing Near Me in Sri Lanka — Where We Deliver" },
   { type: "p", text: "When you search for printing near me in Sri Lanka, you need a printing service that can actually reach you — not just one based in Colombo that ships whenever it feels like it. Our production facility is in Colombo and we deliver printing services to every district in Sri Lanka, with same-day and next-day options for most of the Western Province." },
   { type: "p", text: "We are the printing service nearest to you whether you are in a Colombo high-rise, a Kandy town shop, a Galle hotel, a Negombo guesthouse or a Jaffna school — because we deliver to all of them, on a fixed schedule, at the same rate. Islandwide is not a slogan here — it is the production reality we have built over years of serving Sri Lankan businesses from every province." },
@@ -45,30 +106,7 @@ export const PRINTING_HUB_EXTRA: Block[] = [
   },
   { type: "p", text: "How to order from outside Colombo: WhatsApp your order details, artwork and delivery address to 0771437707. We confirm the production and delivery timeline by return. Payment by bank transfer — we dispatch on confirmation. For large or urgent outstation orders, call directly and we will plan the fastest available route." },
 
-  // ── SECTION 2: WHAT'S AVAILABLE ──
-  { type: "h2", text: "Printing in Sri Lanka — The Complete Guide to What's Available" },
-  { type: "p", text: "Printing in Sri Lanka covers a far wider range of services than most buyers initially realise. The industry has matured significantly — Sri Lanka's printing sector now includes digital printing, offset printing, large format printing, UV printing, garment printing, packaging printing, specialty finishing and sign fabrication, all available under one roof at the best full-service providers. Here is a complete map of what is available, so you know exactly what to look for when searching for printing services near you." },
-  { type: "h3", text: "Every Type of Printing Available in Sri Lanka" },
-  {
-    type: "table",
-    head: ["Print Category", "What It Covers", "Minimum Order", "Turnaround", "Key Search Terms"],
-    rows: [
-      ["Large Format / Outdoor", "Flex banners, hoardings, billboards, building wraps, mesh banners, vehicle wraps", "1 piece", "1–3 days", "banner printing sri lanka, hoarding printing, flex printing"],
-      ["Sign Boards & Signage", "LED sign boards, acrylic signs, 3D letters, lightboxes, pylon signs, neon signs", "1 piece", "7–14 days", "sign board printing sri lanka, led sign board, acrylic sign board"],
-      ["Digital Printing", "Business cards, flyers, brochures, posters, letterheads, menus — any quantity", "1 copy", "1–3 days", "digital printing sri lanka, business card printing colombo"],
-      ["Offset Printing", "High-volume brochures, catalogues, annual reports, books, packaging — 500+ copies", "500 copies", "5–10 days", "offset printing sri lanka, brochure printing, catalogue printing"],
-      ["Vehicle Branding", "Full car wraps, van branding, fleet graphics, tuk-tuk branding, bus wraps", "1 vehicle", "3–7 days", "vehicle branding sri lanka, car wrap sri lanka, van branding"],
-      ["Sticker & Window Graphics", "Vinyl stickers, window decals, frosted film, one-way vision, floor stickers", "1 piece", "2–3 days", "sticker printing sri lanka, window sticker printing, frosted glass"],
-      ["Garment Printing", "T-shirts, polo shirts, uniforms, hoodies — DTG, DTF, screen print, embroidery", "1 piece (DTG/DTF)", "2–5 days", "t shirt printing sri lanka, dtg printing, screen printing"],
-      ["Packaging & Labels", "Custom boxes, paper bags, product labels, hang tags, shrink sleeves, roll labels", "10–100 pcs", "5–10 days", "packaging printing sri lanka, label printing, box printing"],
-      ["UV & Specialty Printing", "UV print on acrylic/glass/metal, spot UV finishing, embossing, foil stamping", "1 piece", "3–7 days", "uv printing sri lanka, spot uv printing, embossed printing"],
-      ["Exhibition & Event Print", "Exhibition booth graphics, pop-up banners, backdrops, fabric displays", "1 piece", "3–7 days", "exhibition banner printing sri lanka, booth branding, backdrop printing"],
-      ["Interior & Décor Print", "Wall murals, custom wallpaper, canvas prints, ceiling graphics", "1 sqm", "3–7 days", "wall mural printing sri lanka, wallpaper printing, canvas printing"],
-      ["Dye Sublimation", "Fabric flags, soft signage, sportswear, lanyards, mouse pads, mugs", "1 piece (mugs/pads)", "2–5 days", "dye sublimation printing sri lanka, flag printing, lanyard printing"],
-    ],
-  },
-
-  // ── SECTION 3: HOW TO CHOOSE ──
+  // ── SECTION 5: HOW TO CHOOSE ──
   { type: "h2", text: "How to Choose a Printing Company in Sri Lanka — What to Look For" },
   { type: "p", text: "Searching for printing services in Sri Lanka returns hundreds of results. Here is exactly what separates a reliable full-service printer from a small shop that will let you down on deadline day." },
   {
@@ -88,27 +126,7 @@ export const PRINTING_HUB_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 4: TECHNOLOGY GUIDE ──
-  { type: "h2", text: "Printing Technology Guide — Which Method for Which Job" },
-  { type: "p", text: "Understanding the printing technology behind your job helps you ask the right questions, set realistic expectations and avoid paying for a method that does not suit your needs. Here is a plain-language guide to every printing technology available in Sri Lanka today." },
-  {
-    type: "table",
-    head: ["Technology", "How It Works", "Best For", "Colour Accuracy", "Minimum Qty", "Speed"],
-    rows: [
-      ["Digital (Inkjet)", "Inkjet head sprays CMYK ink directly onto substrate — no plates or screens needed", "Short runs, variable data, full colour on paper, card, vinyl, fabric", "Very good — Pantone approximate", "1 copy", "Fast — hours"],
-      ["Offset Lithography", "Ink transferred from plate to rubber blanket to substrate — consistent high volume", "High-volume stationery, books, catalogues, packaging — 500+ copies", "Excellent — Pantone exact", "500 copies", "Slow setup, fast run"],
-      ["Eco-Solvent (Large Format)", "Solvent-based inkjet onto vinyl, flex and banner media — outdoor-rated", "Outdoor banners, vehicle wraps, window graphics, hoardings", "Very good", "1 sqm", "Fast — hours"],
-      ["UV Flatbed", "UV-cured ink printed directly onto rigid substrates — acrylic, metal, wood, glass", "Sign boards, awards, phone cases, premium packaging, display items", "Excellent — vibrant, scratch-resistant", "1 piece", "Fast — hours"],
-      ["Screen Printing", "Ink pushed through a mesh screen — one colour per screen pass", "T-shirts, tote bags, mugs, caps — solid colour designs in bulk", "Good — Pantone spot colours", "24–50 pcs", "Medium — setup then fast"],
-      ["DTG (Direct to Garment)", "Inkjet printer jets water-based ink directly onto fabric", "Full-colour photo prints on cotton garments — any quantity from 1", "Excellent — photographic", "1 piece", "Medium — minutes per garment"],
-      ["DTF (Direct to Film)", "Full-colour print on film transferred to fabric by heat press", "All fabric types — cotton, polyester, blends — any quantity from 1", "Excellent — full colour", "1 piece", "Medium"],
-      ["Dye Sublimation", "Heat converts dye into gas that bonds into polyester fabric permanently", "Flags, soft signage, sportswear, mugs (coated), lanyards", "Excellent — vibrant, wash-fast", "1 piece (mugs)", "Fast"],
-      ["Laser Engraving", "Laser burns away surface material revealing layer below", "Awards, pens, notebooks, metal items, plaques — permanent marking", "N/A — mono tone", "1 piece", "Fast — minutes"],
-      ["Embossing / Debossing", "Metal die presses design into paper under high pressure", "Business cards, notebook covers, premium stationery, packaging", "N/A — tactile only", "100 pcs", "Slow — die manufacture 5 days"],
-    ],
-  },
-
-  // ── SECTION 5: ARTWORK GUIDE ──
+  // ── SECTION 6: ARTWORK GUIDE ──
   { type: "h2", text: "Artwork & File Guide for Printing in Sri Lanka" },
   { type: "p", text: "The fastest way to delay your printing job in Sri Lanka is to send the wrong file. Here is a universal quick-reference guide covering every common print product — the right file format, colour mode, resolution and what to avoid." },
   {
@@ -129,7 +147,7 @@ export const PRINTING_HUB_EXTRA: Block[] = [
   },
   { type: "p", text: "General rule for all printing in Sri Lanka: CMYK always (not RGB). Fonts outlined always. Bleed included always. If you are not sure — send us your file and we will check it free before printing starts. We catch the problem before it costs you a reprint." },
 
-  // ── SECTION 6: TURNAROUND ──
+  // ── SECTION 7: TURNAROUND ──
   { type: "h2", text: "Printing Turnaround Times in Sri Lanka — What to Realistically Expect" },
   { type: "p", text: "Turnaround time is the most frequently misunderstood part of ordering printing services in Sri Lanka. Every printer quotes \"fast turnaround\" — here is what the industry reality actually looks like for each product type, measured from the moment your artwork is approved and payment confirmed." },
   {
@@ -154,24 +172,6 @@ export const PRINTING_HUB_EXTRA: Block[] = [
   },
   { type: "p", text: "The most important rule: Turnaround starts from artwork approval — not from the moment you place the enquiry. A job where artwork arrives on Monday, requires two rounds of correction, and is approved Wednesday starts production on Wednesday. Add 1 day for islandwide delivery after production. Build this reality into your project planning — not the optimistic version." },
 
-  // ── SECTION 7: BUYING GUIDE BY BUSINESS TYPE ──
-  { type: "h2", text: "Printing Services in Sri Lanka — What Each Business Type Needs Most" },
-  {
-    type: "table",
-    head: ["Business Type", "Essential Print Needs", "Most Ordered Services", "Key Consideration"],
-    rows: [
-      ["Retail Shop", "Shopfront sign, promotional banners, price boards, loyalty cards", "LED sign board, flex banner, sticker printing, window sticker", "Seasonal promotion updates — need fast turnaround on repeat banner orders"],
-      ["Restaurant / Café", "Menu, table tent cards, signage, promotional banners, packaging", "Menu printing, roll-up banners, shopfront sticker, paper bags", "Menus update frequently — digital printing with no minimum order is most cost-effective"],
-      ["Hotel / Resort", "Room signage, event banners, branded packaging, vehicle graphics", "Wayfinding signage, backdrop printing, canvas printing, vehicle branding", "Colour accuracy critical — brand standards must be maintained across all print"],
-      ["Corporate / Office", "Business cards, stationery, branded merchandise, presentation folders", "Business card printing, letterheads, roll-up banners, embossed stationery", "Consistency across multiple print types — one supplier for all stationery is more efficient"],
-      ["School / University", "Banners, certificates, lanyards, ID cards, event backdrop, branded stationery", "Banner printing, certificate printing, lanyard printing, ID card printing", "Budget-conscious — digital printing from small quantities reduces waste"],
-      ["Healthcare / Clinic", "Waiting room signage, information boards, branded stationery, awareness banners", "Roll-up banners, window stickers, business cards, brochures", "Text accuracy is critical — always proof carefully before approval"],
-      ["FMCG / Manufacturer", "Product labels, packaging boxes, promotional banners, vehicle fleet branding", "Label printing, box printing, flex printing, vehicle branding", "Volume pricing and reorder consistency most important — needs reliable supplier relationship"],
-      ["Events Company", "Backdrops, banners, flags, roll-ups, stage branding, exhibition graphics", "Backdrop printing, banner printing, flag printing, exhibition booth printing", "Tight deadlines — fast turnaround and islandwide delivery non-negotiable"],
-      ["Startup / SME", "Business cards, basic stationery, simple banner, basic packaging", "Digital business card printing, A4 flyers, vinyl banner, basic stickers", "Low minimum orders most important — digital printing allows starting from 1 copy"],
-      ["Exporter / Manufacturer", "Export packaging, product labels, hangtags, branded shipping materials", "Packaging box printing, hang tag printing, shrink sleeve printing, roll labels", "Food-safe and export-standard substrates required — confirm compliance at ordering"],
-    ],
-  },
 ];
 
 export const PRINTING_HUB_EXTRA_FAQS: FAQ[] = [

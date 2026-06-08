@@ -3,52 +3,7 @@
 import type { Block, FAQ } from "./content-engine";
 
 export const CORPORATE_GIFTING_EXTRA: Block[] = [
-  // ── SECTION 1: SEASONAL GIFTING CALENDAR ──
-  { type: "h2", text: "Corporate Gifting Calendar Sri Lanka — When to Order for Every Season" },
-  { type: "p", text: "Corporate gifting in Sri Lanka follows clear seasonal peaks tied to local and national events. Missing the ordering window means rushed production, poor quality or late delivery. Plan your annual gifting calendar using this guide — the order deadlines are based on realistic production and islandwide delivery lead times." },
-  {
-    type: "table",
-    head: ["Season / Occasion", "Month", "Order Deadline", "Most Popular Gift Types", "Recipient Focus"],
-    rows: [
-      ["Sinhala & Tamil New Year (Avurudu)", "April 13–14", "Order by end of March", "Ceylon tea hampers, sweet boxes, branded mugs, traditional gift sets", "Employees, local clients, suppliers, community partners"],
-      ["Vesak", "May (full moon)", "Order by mid-April", "Eco-friendly gifts, organic products, wellness sets, books, charity donations in brand name", "Employees, Buddhist community stakeholders"],
-      ["Mid-Year Employee Recognition", "June–July", "Order by end of May", "Branded apparel, tech accessories, premium notebooks, desk sets", "Employees, performance award recipients"],
-      ["Independence Day", "February 4", "Order by mid-January", "Sri Lanka–themed gifts, national craft items, premium Ceylon tea sets", "Government stakeholders, international clients, embassy contacts"],
-      ["Annual General Meetings", "Typically May–August", "Order 3 weeks before AGM date", "Crystal awards, plaques, premium pens, leather folders, delegate packs", "Board members, shareholders, senior management"],
-      ["World Children's Day / School Events", "October–November", "Order by end of September", "Branded stationery sets, backpacks, water bottles, activity kits", "Children of employees, school partnerships, CSR programmes"],
-      ["Deepavali", "October–November", "Order 3 weeks before", "Sweets hampers, gold-coloured gift sets, premium candles, luxury tea collections", "Tamil-speaking employees and clients, Hindu community stakeholders"],
-      ["Christmas", "December 25", "Order by end of November", "Gift hampers, branded merchandise sets, executive gifts, luxury packaging, wine/food sets", "All stakeholders — highest volume gifting season of the year"],
-      ["New Year (January 1)", "January 1", "Order by first week of December", "Branded diaries, planners, calendars, desk accessories, tech gifts", "Clients, partners, senior employees"],
-      ["Year-End Employee Awards", "December", "Order by mid-November", "Crystal trophies, acrylic awards, plaques, certificate frames, experience gifts", "Top performers, long-service awardees, leadership team"],
-      ["Company Anniversary / Milestones", "Any — plan 6 weeks ahead", "Order 6 weeks before event", "Commemorative gifts, engraved items, premium branded merchandise, photo books", "All employees, founding clients, long-term partners"],
-      ["New Employee Onboarding (Year-round)", "Ongoing", "Maintain standing stock", "Welcome kits — branded t-shirt, notebook, pen, mug, lanyard, tote bag", "New joiners at all levels"],
-    ],
-  },
-  { type: "p", text: "Planning tip: The Christmas and New Year gifting window (November–December) accounts for approximately 40% of all annual corporate gift orders in Sri Lanka. Production capacity fills up fast from mid-October. Place your Christmas and New Year gift orders no later than the end of October to guarantee on-time delivery and avoid premium rush charges." },
-
-  // ── SECTION 2: GIFT GUIDE BY RECIPIENT TYPE ──
-  { type: "h2", text: "Corporate Gift Guide by Recipient — What to Give Whom in Sri Lanka" },
-  { type: "p", text: "The most common gifting mistake in Sri Lanka's corporate sector is sending the same gift to every recipient regardless of their relationship to the company. A gift that works for a frontline employee is wrong for a board director. A gift appropriate for an international client may miss the mark with a local supplier. Use this guide to match gift type to recipient relationship." },
-  {
-    type: "table",
-    head: ["Recipient Type", "Relationship Objective", "Recommended Gift Category", "Branding Approach", "Key Consideration"],
-    rows: [
-      ["CEO / Board Director", "Prestige, relationship reinforcement", "Executive gifts — leather goods, crystal awards, premium tech, bespoke hampers", "Subtle — embossed logo, not screen-printed", "Perceived value is paramount — cheap gifts to this group damage relationships"],
-      ["Senior Management", "Recognition, retention", "Premium branded merchandise — quality pens, leather notebooks, power banks, premium apparel", "Understated branding — small logo placement", "Focus on utility and quality — items used daily keep the brand visible"],
-      ["General Employees", "Appreciation, belonging, morale", "Branded apparel, mugs, bags, snack hampers, stationery sets, wellness packs", "Brand-forward — visible logo acceptable", "Inclusivity matters — ensure all employees receive equal value gifts regardless of department"],
-      ["New Employees (Onboarding)", "Welcome, culture immersion", "Welcome kits — branded t-shirt, notebook, pen, mug, lanyard, tote bag, company handbook", "Full brand identity — first brand touchpoint", "Quality of the onboarding kit sets expectations — cheap items signal low regard for new talent"],
-      ["Key Clients (Local)", "Relationship maintenance, loyalty", "Ceylon tea hampers, premium branded sets, festive gift boxes, experience vouchers", "Subtle branding — focus on gift quality", "Personalize where possible — a handwritten card with the client's name adds significant perceived value"],
-      ["International Clients & Partners", "Sri Lanka brand ambassador, cultural bridge", "Premium Ceylon tea collections, local craft gifts, artisan food hampers, handloom items", "Minimal branding — let the product speak", "Sri Lankan provenance is a differentiator internationally — lean into it"],
-      ["Suppliers & Vendors", "Partnership maintenance, goodwill", "Mid-range branded merchandise — branded bags, umbrellas, apparel, desk items", "Standard logo branding", "Often overlooked — recognised suppliers perform better and prioritise your orders"],
-      ["Conference / Event Delegates", "Brand recall, networking utility", "Delegate packs — notebook, pen, lanyard, tote bag, USB, branded card holder", "Prominent branding — items will be used publicly", "Weight and portability matter — delegates carry these home on the same day"],
-      ["Trade Show / Exhibition Visitors", "Lead generation, brand recall", "Event giveaways — branded pens, keyrings, stickers, tote bags, sweets, small tech", "High visibility branding", "Cost per unit must be low enough to give freely — useful items are kept, novelty items are discarded"],
-      ["Media / Press", "Brand storytelling, positive coverage", "Premium press kits — branded media pack, artisan product samples, exclusive merchandise", "Sophisticated, story-driven presentation", "Journalists receive many press gifts — a compelling story and beautiful packaging make the difference"],
-      ["Government & Regulatory Officials", "Relationship, compliance goodwill", "Modest, non-controversial gifts — branded stationery, books, Sri Lanka-themed items", "Institutional branding only", "Be aware of anti-bribery policies — modest, functional gifts are safest in this category"],
-      ["CSR Community Partners", "Community relationship, brand values demonstration", "Eco-friendly gifts, educational materials, locally sourced items, experience donations", "Subtle — community-first messaging", "Align gift type with CSR theme — eco gifts for environmental programmes, books for education initiatives"],
-    ],
-  },
-
-  // ── SECTION 3: PRODUCT CATEGORIES GUIDE ──
+  // ── SECTION 1: PRODUCT CATEGORIES GUIDE ──
   { type: "h2", text: "Corporate Gift Product Categories — Complete Range Available in Sri Lanka" },
   { type: "p", text: "Corporate gifting in Sri Lanka covers a far wider range of products than most buyers initially consider. Here is the complete product category guide with the most popular items in each group and the typical customisation options available." },
   { type: "h3", text: "Office & Stationery" },
@@ -112,7 +67,71 @@ export const CORPORATE_GIFTING_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 4: BRANDING METHODS GUIDE ──
+  // ── SECTION 2: GIFT GUIDE BY RECIPIENT TYPE ──
+  { type: "h2", text: "Corporate Gift Guide by Recipient — What to Give Whom in Sri Lanka" },
+  { type: "p", text: "The most common gifting mistake in Sri Lanka's corporate sector is sending the same gift to every recipient regardless of their relationship to the company. A gift that works for a frontline employee is wrong for a board director. A gift appropriate for an international client may miss the mark with a local supplier. Use this guide to match gift type to recipient relationship." },
+  {
+    type: "table",
+    head: ["Recipient Type", "Relationship Objective", "Recommended Gift Category", "Branding Approach", "Key Consideration"],
+    rows: [
+      ["CEO / Board Director", "Prestige, relationship reinforcement", "Executive gifts — leather goods, crystal awards, premium tech, bespoke hampers", "Subtle — embossed logo, not screen-printed", "Perceived value is paramount — cheap gifts to this group damage relationships"],
+      ["Senior Management", "Recognition, retention", "Premium branded merchandise — quality pens, leather notebooks, power banks, premium apparel", "Understated branding — small logo placement", "Focus on utility and quality — items used daily keep the brand visible"],
+      ["General Employees", "Appreciation, belonging, morale", "Branded apparel, mugs, bags, snack hampers, stationery sets, wellness packs", "Brand-forward — visible logo acceptable", "Inclusivity matters — ensure all employees receive equal value gifts regardless of department"],
+      ["New Employees (Onboarding)", "Welcome, culture immersion", "Welcome kits — branded t-shirt, notebook, pen, mug, lanyard, tote bag, company handbook", "Full brand identity — first brand touchpoint", "Quality of the onboarding kit sets expectations — cheap items signal low regard for new talent"],
+      ["Key Clients (Local)", "Relationship maintenance, loyalty", "Ceylon tea hampers, premium branded sets, festive gift boxes, experience vouchers", "Subtle branding — focus on gift quality", "Personalize where possible — a handwritten card with the client's name adds significant perceived value"],
+      ["International Clients & Partners", "Sri Lanka brand ambassador, cultural bridge", "Premium Ceylon tea collections, local craft gifts, artisan food hampers, handloom items", "Minimal branding — let the product speak", "Sri Lankan provenance is a differentiator internationally — lean into it"],
+      ["Suppliers & Vendors", "Partnership maintenance, goodwill", "Mid-range branded merchandise — branded bags, umbrellas, apparel, desk items", "Standard logo branding", "Often overlooked — recognised suppliers perform better and prioritise your orders"],
+      ["Conference / Event Delegates", "Brand recall, networking utility", "Delegate packs — notebook, pen, lanyard, tote bag, USB, branded card holder", "Prominent branding — items will be used publicly", "Weight and portability matter — delegates carry these home on the same day"],
+      ["Trade Show / Exhibition Visitors", "Lead generation, brand recall", "Event giveaways — branded pens, keyrings, stickers, tote bags, sweets, small tech", "High visibility branding", "Cost per unit must be low enough to give freely — useful items are kept, novelty items are discarded"],
+      ["Media / Press", "Brand storytelling, positive coverage", "Premium press kits — branded media pack, artisan product samples, exclusive merchandise", "Sophisticated, story-driven presentation", "Journalists receive many press gifts — a compelling story and beautiful packaging make the difference"],
+      ["Government & Regulatory Officials", "Relationship, compliance goodwill", "Modest, non-controversial gifts — branded stationery, books, Sri Lanka-themed items", "Institutional branding only", "Be aware of anti-bribery policies — modest, functional gifts are safest in this category"],
+      ["CSR Community Partners", "Community relationship, brand values demonstration", "Eco-friendly gifts, educational materials, locally sourced items, experience donations", "Subtle — community-first messaging", "Align gift type with CSR theme — eco gifts for environmental programmes, books for education initiatives"],
+    ],
+  },
+
+  // ── SECTION 3: INDUSTRY GIFTING GUIDE ──
+  { type: "h2", text: "Corporate Gifting by Industry — What Works for Each Sector in Sri Lanka" },
+  {
+    type: "table",
+    head: ["Industry", "Gifting Objective", "Recommended Gift Types", "Peak Gifting Seasons", "What to Avoid"],
+    rows: [
+      ["Banking & Finance", "Client retention, stakeholder appreciation, regulatory relationships", "Premium leather goods, crystal awards, executive pen sets, quality hampers", "New Year (Jan), Christmas (Dec), AGM season", "Cheap items — financial sector clients judge brand by gift quality"],
+      ["Hospitality & Tourism", "Guest experience enhancement, travel agent relationships, B2B partnership", "Ceylon tea collections, local craft gifts, branded amenity kits, premium hampers", "Christmas, New Year, peak tourist season (Dec–Jan, Jul–Aug)", "Generic branded items with no Sri Lanka story or connection"],
+      ["FMCG & Retail", "Trade partner incentives, distributor loyalty, consumer promotions", "Branded apparel, tech accessories, mid-range hampers, event giveaways", "Avurudu (Apr), Christmas (Dec), product launch events", "Food gifts that compete with or reference competitor products"],
+      ["Pharmaceutical & Healthcare", "Doctor/pharmacy relationships, medical conference presence, patient appreciation", "Quality medical bags, branded stationery sets, wellness kits, conference packs", "Medical conference season, World Health Day (April 7)", "Alcohol, excessive luxury gifts (regulatory sensitivity in this sector)"],
+      ["IT & Technology", "Tech-savvy employee appreciation, client gifting, startup culture expression", "Power banks, wireless earbuds, USB hubs, branded tech accessories, premium cable sets", "Mid-year performance awards, year-end, product launch events", "Non-functional gifts — tech audiences value utility above all"],
+      ["Real Estate & Construction", "Client acquisition, project completion gifts, investor appreciation", "Premium branded items, crystal plaques, high-end hampers, experience vouchers", "Project completions, New Year, major launches", "Disposable or low-quality items — perceived value directly impacts brand trust"],
+      ["Education & Institutions", "Alumni relations, staff recognition, donor appreciation", "Branded stationery, institution-crested merchandise, framed certificates, premium books", "Convocation (Jun & Nov), Teachers Day (Oct 5), year-end", "Overly commercial items — educational institutions prefer purposeful, intellectual gifts"],
+      ["Manufacturing & Exports", "International buyer relationships, local supplier goodwill, employee welfare", "Ceylon tea export sets, Sri Lanka craft collections, branded safety gear for employees", "International buyer visits, Christmas (for export buyers), Avurudu (for local staff)", "Non-exportable perishables for international recipients"],
+      ["Government & Public Sector", "Interagency relationships, official visit gifts, public service recognition", "Ceylon tea, national craft items, institutional plaques, branded stationery", "Independence Day (Feb 4), official visits, year-end", "High-value gifts that could be perceived as inappropriate under anti-corruption guidelines"],
+      ["Media & Advertising", "Press relationships, creative agency partners, influencer gifting", "Creative merchandise, premium press kits, branded lifestyle items, artisan products", "Campaign launches, award season, Christmas", "Generic items — media people receive many gifts and remember only standout pieces"],
+    ],
+  },
+
+  // ── SECTION 4: SEASONAL GIFTING CALENDAR ──
+  { type: "h2", text: "Corporate Gifting Calendar Sri Lanka — When to Order for Every Season" },
+  { type: "p", text: "Corporate gifting in Sri Lanka follows clear seasonal peaks tied to local and national events. Missing the ordering window means rushed production, poor quality or late delivery. Plan your annual gifting calendar using this guide — the order deadlines are based on realistic production and islandwide delivery lead times." },
+  {
+    type: "table",
+    head: ["Season / Occasion", "Month", "Order Deadline", "Most Popular Gift Types", "Recipient Focus"],
+    rows: [
+      ["Sinhala & Tamil New Year (Avurudu)", "April 13–14", "Order by end of March", "Ceylon tea hampers, sweet boxes, branded mugs, traditional gift sets", "Employees, local clients, suppliers, community partners"],
+      ["Vesak", "May (full moon)", "Order by mid-April", "Eco-friendly gifts, organic products, wellness sets, books, charity donations in brand name", "Employees, Buddhist community stakeholders"],
+      ["Mid-Year Employee Recognition", "June–July", "Order by end of May", "Branded apparel, tech accessories, premium notebooks, desk sets", "Employees, performance award recipients"],
+      ["Independence Day", "February 4", "Order by mid-January", "Sri Lanka–themed gifts, national craft items, premium Ceylon tea sets", "Government stakeholders, international clients, embassy contacts"],
+      ["Annual General Meetings", "Typically May–August", "Order 3 weeks before AGM date", "Crystal awards, plaques, premium pens, leather folders, delegate packs", "Board members, shareholders, senior management"],
+      ["World Children's Day / School Events", "October–November", "Order by end of September", "Branded stationery sets, backpacks, water bottles, activity kits", "Children of employees, school partnerships, CSR programmes"],
+      ["Deepavali", "October–November", "Order 3 weeks before", "Sweets hampers, gold-coloured gift sets, premium candles, luxury tea collections", "Tamil-speaking employees and clients, Hindu community stakeholders"],
+      ["Christmas", "December 25", "Order by end of November", "Gift hampers, branded merchandise sets, executive gifts, luxury packaging, wine/food sets", "All stakeholders — highest volume gifting season of the year"],
+      ["New Year (January 1)", "January 1", "Order by first week of December", "Branded diaries, planners, calendars, desk accessories, tech gifts", "Clients, partners, senior employees"],
+      ["Year-End Employee Awards", "December", "Order by mid-November", "Crystal trophies, acrylic awards, plaques, certificate frames, experience gifts", "Top performers, long-service awardees, leadership team"],
+      ["Company Anniversary / Milestones", "Any — plan 6 weeks ahead", "Order 6 weeks before event", "Commemorative gifts, engraved items, premium branded merchandise, photo books", "All employees, founding clients, long-term partners"],
+      ["New Employee Onboarding (Year-round)", "Ongoing", "Maintain standing stock", "Welcome kits — branded t-shirt, notebook, pen, mug, lanyard, tote bag", "New joiners at all levels"],
+    ],
+  },
+  { type: "p", text: "Planning tip: The Christmas and New Year gifting window (November–December) accounts for approximately 40% of all annual corporate gift orders in Sri Lanka. Production capacity fills up fast from mid-October. Place your Christmas and New Year gift orders no later than the end of October to guarantee on-time delivery and avoid premium rush charges." },
+
+  // ── SECTION 5: BRANDING METHODS GUIDE ──
   { type: "h2", text: "Corporate Gift Branding Methods — Which Technique for Which Product" },
   { type: "p", text: "How your logo is applied to a corporate gift is as important as the gift itself. A poorly printed logo on a premium gift damages the brand impression you are trying to create. Here is a guide to every branding technique used in Sri Lanka's corporate gifting industry and when to use each one." },
   {
@@ -132,26 +151,24 @@ export const CORPORATE_GIFTING_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 5: INDUSTRY GIFTING GUIDE ──
-  { type: "h2", text: "Corporate Gifting by Industry — What Works for Each Sector in Sri Lanka" },
+  // ── SECTION 6: PACKAGING & PRESENTATION GUIDE ──
+  { type: "h2", text: "Corporate Gift Packaging & Presentation in Sri Lanka" },
+  { type: "p", text: "Packaging is the first thing a recipient sees and touches — before the gift itself. A premium gift in poor packaging loses most of its impact. Here is how the most effective corporate gift packaging works in Sri Lanka." },
   {
     type: "table",
-    head: ["Industry", "Gifting Objective", "Recommended Gift Types", "Peak Gifting Seasons", "What to Avoid"],
+    head: ["Packaging Type", "Best For", "Customisation Options", "Impression Created"],
     rows: [
-      ["Banking & Finance", "Client retention, stakeholder appreciation, regulatory relationships", "Premium leather goods, crystal awards, executive pen sets, quality hampers", "New Year (Jan), Christmas (Dec), AGM season", "Cheap items — financial sector clients judge brand by gift quality"],
-      ["Hospitality & Tourism", "Guest experience enhancement, travel agent relationships, B2B partnership", "Ceylon tea collections, local craft gifts, branded amenity kits, premium hampers", "Christmas, New Year, peak tourist season (Dec–Jan, Jul–Aug)", "Generic branded items with no Sri Lanka story or connection"],
-      ["FMCG & Retail", "Trade partner incentives, distributor loyalty, consumer promotions", "Branded apparel, tech accessories, mid-range hampers, event giveaways", "Avurudu (Apr), Christmas (Dec), product launch events", "Food gifts that compete with or reference competitor products"],
-      ["Pharmaceutical & Healthcare", "Doctor/pharmacy relationships, medical conference presence, patient appreciation", "Quality medical bags, branded stationery sets, wellness kits, conference packs", "Medical conference season, World Health Day (April 7)", "Alcohol, excessive luxury gifts (regulatory sensitivity in this sector)"],
-      ["IT & Technology", "Tech-savvy employee appreciation, client gifting, startup culture expression", "Power banks, wireless earbuds, USB hubs, branded tech accessories, premium cable sets", "Mid-year performance awards, year-end, product launch events", "Non-functional gifts — tech audiences value utility above all"],
-      ["Real Estate & Construction", "Client acquisition, project completion gifts, investor appreciation", "Premium branded items, crystal plaques, high-end hampers, experience vouchers", "Project completions, New Year, major launches", "Disposable or low-quality items — perceived value directly impacts brand trust"],
-      ["Education & Institutions", "Alumni relations, staff recognition, donor appreciation", "Branded stationery, institution-crested merchandise, framed certificates, premium books", "Convocation (Jun & Nov), Teachers Day (Oct 5), year-end", "Overly commercial items — educational institutions prefer purposeful, intellectual gifts"],
-      ["Manufacturing & Exports", "International buyer relationships, local supplier goodwill, employee welfare", "Ceylon tea export sets, Sri Lanka craft collections, branded safety gear for employees", "International buyer visits, Christmas (for export buyers), Avurudu (for local staff)", "Non-exportable perishables for international recipients"],
-      ["Government & Public Sector", "Interagency relationships, official visit gifts, public service recognition", "Ceylon tea, national craft items, institutional plaques, branded stationery", "Independence Day (Feb 4), official visits, year-end", "High-value gifts that could be perceived as inappropriate under anti-corruption guidelines"],
-      ["Media & Advertising", "Press relationships, creative agency partners, influencer gifting", "Creative merchandise, premium press kits, branded lifestyle items, artisan products", "Campaign launches, award season, Christmas", "Generic items — media people receive many gifts and remember only standout pieces"],
+      ["Rigid Gift Box (custom printed)", "Executive gifts, hampers, premium product sets", "Full-colour print, foil stamp lid, deboss logo, magnetic closure, ribbon pull", "Premium, luxury, memorable unboxing experience"],
+      ["Kraft Box with Branded Ribbon", "Mid-range gifts, Avurudu sets, eco-conscious brands", "Custom printed ribbon, branded label, tissue paper insert", "Artisan, eco-friendly, warm and personal"],
+      ["Branded Tote Bag", "Conference delegate packs, employee welcome kits", "Full-colour screen print, embroidery, custom size", "Practical, sustainable, high brand visibility post-event"],
+      ["Branded Paper Bag", "Event giveaways, retail-style gift handout", "Full-colour print, rope handle or flat handle, tissue insert", "Retail quality, professional presentation"],
+      ["Custom Sleeve / Wrapper", "Product enhancement — wrapping around existing packaging", "Full-colour print, die-cut window, personalised text", "Brand layering on existing products — effective for hampers"],
+      ["Branded Tissue Paper", "Used inside any gift box to wrap individual items", "Full-colour or single-colour logo, custom colour tissue", "Attention to detail — noticed immediately when box is opened"],
+      ["Personalised Gift Card / Tag", "Any gift — the highest-ROI addition per unit", "Recipient name, personal message, premium card stock", "Personalisation dramatically increases perceived value at minimal cost"],
     ],
   },
-
-  // ── SECTION 6: ORDERING PROCESS & MOQ GUIDE ──
+  { type: "p", text: "Most important packaging tip: A handwritten or personalised printed gift card with the recipient's name adds more perceived value per rupee than almost any other upgrade. In Sri Lanka's relationship-oriented business culture, the personal touch of knowing someone's name was used communicates genuine regard rather than bulk processing." },
+  // ── SECTION 7: ORDERING PROCESS & MOQ GUIDE ──
   { type: "h2", text: "How to Order Corporate Gifts in Sri Lanka — Process & Minimum Quantities" },
   { type: "p", text: "Understanding the ordering process and minimum quantities before you enquire saves time and prevents budget surprises. Here is a full guide to how corporate gifting orders work in Sri Lanka." },
   { type: "h3", text: "Minimum Order Quantities (MOQ) by Product Category" },
@@ -186,23 +203,6 @@ export const CORPORATE_GIFTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Lead time summary: Standard branded merchandise takes 5 to 10 working days. Hampers and custom assembled sets take 7 to 14 working days. Crystal and acrylic awards take 3 to 7 working days. Always add 2 to 3 days for islandwide courier delivery. For Christmas and Avurudu orders, add 5 working days to all estimates due to peak production volumes across the industry." },
 
-  // ── SECTION 7: PACKAGING & PRESENTATION GUIDE ──
-  { type: "h2", text: "Corporate Gift Packaging & Presentation in Sri Lanka" },
-  { type: "p", text: "Packaging is the first thing a recipient sees and touches — before the gift itself. A premium gift in poor packaging loses most of its impact. Here is how the most effective corporate gift packaging works in Sri Lanka." },
-  {
-    type: "table",
-    head: ["Packaging Type", "Best For", "Customisation Options", "Impression Created"],
-    rows: [
-      ["Rigid Gift Box (custom printed)", "Executive gifts, hampers, premium product sets", "Full-colour print, foil stamp lid, deboss logo, magnetic closure, ribbon pull", "Premium, luxury, memorable unboxing experience"],
-      ["Kraft Box with Branded Ribbon", "Mid-range gifts, Avurudu sets, eco-conscious brands", "Custom printed ribbon, branded label, tissue paper insert", "Artisan, eco-friendly, warm and personal"],
-      ["Branded Tote Bag", "Conference delegate packs, employee welcome kits", "Full-colour screen print, embroidery, custom size", "Practical, sustainable, high brand visibility post-event"],
-      ["Branded Paper Bag", "Event giveaways, retail-style gift handout", "Full-colour print, rope handle or flat handle, tissue insert", "Retail quality, professional presentation"],
-      ["Custom Sleeve / Wrapper", "Product enhancement — wrapping around existing packaging", "Full-colour print, die-cut window, personalised text", "Brand layering on existing products — effective for hampers"],
-      ["Branded Tissue Paper", "Used inside any gift box to wrap individual items", "Full-colour or single-colour logo, custom colour tissue", "Attention to detail — noticed immediately when box is opened"],
-      ["Personalised Gift Card / Tag", "Any gift — the highest-ROI addition per unit", "Recipient name, personal message, premium card stock", "Personalisation dramatically increases perceived value at minimal cost"],
-    ],
-  },
-  { type: "p", text: "Most important packaging tip: A handwritten or personalised printed gift card with the recipient's name adds more perceived value per rupee than almost any other upgrade. In Sri Lanka's relationship-oriented business culture, the personal touch of knowing someone's name was used communicates genuine regard rather than bulk processing." },
 ];
 
 export const CORPORATE_GIFTING_EXTRA_FAQS: FAQ[] = [

@@ -90,7 +90,63 @@ export const WINDOW_STICKER_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 5: APPLICATION & REMOVAL GUIDE ──
+  // ── SECTION 5: DURABILITY ──
+  { type: "h2", text: "Window Sticker Durability — How Long Each Type Lasts in Sri Lanka" },
+  { type: "p", text: "Sri Lanka's climate — high UV, monsoon humidity, coastal salt air and temperature fluctuation between air-conditioned interiors and hot exteriors — is particularly demanding on adhesive vinyl products. Here is the realistic lifespan of each window sticker type under Sri Lankan conditions." },
+  {
+    type: "table",
+    head: ["Material Type", "Indoor Lifespan", "Outdoor / Sun-Facing Lifespan", "Coastal Area Lifespan", "Key Degradation Factor"],
+    rows: [
+      ["Standard Opaque Vinyl (unlaminated)", "3–5 years", "1–2 years", "8–12 months", "UV fading of ink, edge lifting from humidity"],
+      ["Opaque Vinyl with UV Laminate", "5–7 years", "3–5 years", "2–3 years", "Edge lifting in coastal humidity over time"],
+      ["Clear Printed Vinyl", "2–4 years", "1–2 years", "6–12 months", "Yellowing of clear base in UV exposure"],
+      ["Frosted / Etched Film", "5–8 years", "2–3 years (inside face)", "2–3 years", "Very stable indoors — edge lifting only failure mode"],
+      ["One-Way Vision (Perforated)", "3–5 years", "2–3 years", "1–2 years", "UV ink fade in perforations, edge lifting"],
+      ["Static Cling", "6–12 months per use", "Not recommended outdoors", "Not recommended", "Loses cling in direct heat above 35°C"],
+      ["Premium Cast Vinyl with Laminate", "7–10 years", "5–7 years", "3–5 years", "Most durable option — recommended for permanent installations"],
+    ],
+  },
+  { type: "p", text: "Key recommendations for Sri Lanka:" },
+  {
+    type: "ul",
+    items: [
+      "Always apply UV laminate to any vinyl facing direct sunlight — south and west-facing windows in Sri Lanka receive intense UV year-round",
+      "For inside application (applied to interior glass face), lifespan is significantly longer because the vinyl is protected from weather",
+      "In coastal cities — Galle, Negombo, Trincomalee, Jaffna — use premium cast vinyl with laminate for any installation expected to last more than 12 months",
+      "For air-conditioned offices with interior glass partitions, standard frosted film lasts 5+ years with no special treatment",
+    ],
+  },
+
+  // ── SECTION 6: ARTWORK GUIDE ──
+  { type: "h2", text: "Artwork Guide for Window Sticker Printing — File Setup & Design Tips" },
+  { type: "p", text: "Window stickers are viewed at close range — often by people standing 30 to 100 centimetres from the glass. This means print quality requirements are higher than for banners or hoardings. Here is what your artwork needs to meet for a perfect result." },
+  { type: "h3", text: "File Requirements" },
+  {
+    type: "table",
+    head: ["Requirement", "Standard", "Notes"],
+    rows: [
+      ["File format", "PDF with bleed (preferred)", "Also accepted: AI (fonts outlined), PSD (flattened)"],
+      ["Colour mode", "CMYK", "RGB files shifted on conversion — especially blues and greens on clear vinyl"],
+      ["Resolution", "150 DPI at actual print size", "200 DPI recommended for A3 size and smaller — close viewing distance shows lower resolution"],
+      ["Bleed", "3 mm all sides for small stickers, 10 mm for large panels", "Background must extend to bleed edge — no white borders"],
+      ["Safe zone", "Keep all text and logos 5 mm inside trim line", "Text near the edge risks being cut during trimming"],
+      ["Fonts", "Outlined or embedded", "Always convert text to outlines in Illustrator — font files do not travel with the document"],
+      ["White ink areas", "Mark white clearly on a separate layer", "For clear vinyl, white areas must be specially flagged — the printer needs to know where to apply white ink under the colour"],
+    ],
+  },
+  { type: "h3", text: "Design Tips Specific to Window Stickers" },
+  {
+    type: "ul",
+    items: [
+      "For clear vinyl — add a white base layer. Without a white ink layer beneath the colour print, colours on clear vinyl appear washed out and translucent against the glass. Always request white underprint for full-colour graphics on clear film.",
+      "For frosted etched film — use negative space. The most professional frosted designs are largely frosted with clear cut-out areas for the logo or text rather than the reverse. This is how real etched glass looks and it reads more convincingly.",
+      "For one-way vision — use bold, high-contrast designs. The perforation holes reduce effective ink coverage by 40–60%. Pale colours and fine details are lost. Bold graphics with strong colour contrast are essential for one-way vision to read clearly from the street.",
+      "Include Sinhala or Tamil text correctly. If your sticker includes Sinhala or Tamil text, ensure all fonts are outlined in Illustrator or embedded in PDF. Sinhala and Tamil font substitution is the most common pre-press issue with Sri Lankan sticker artwork files.",
+      "Note the viewing side. Clearly state in your brief whether the sticker applies to the outside or inside of the glass. Inside application requires the artwork to be printed in reverse (mirror image) so it reads correctly from outside through the glass.",
+    ],
+  },
+
+  // ── SECTION 7: APPLICATION & REMOVAL GUIDE ──
   { type: "h2", text: "How to Apply Window Stickers — Step-by-Step Installation Guide" },
   { type: "p", text: "Professional application makes the difference between a bubble-free, flat finish and a wrinkled sticker full of trapped air. Follow this process for every window sticker installation in Sri Lanka." },
   { type: "h3", text: "What You Need" },
@@ -133,63 +189,7 @@ export const WINDOW_STICKER_EXTRA: Block[] = [
   },
   { type: "p", text: "Important for Sri Lanka: Static cling film (no adhesive) is the easiest to remove and leaves zero residue — ideal for shops on rented premises or businesses that update promotions frequently. It can also be cleaned and reused if removed carefully." },
 
-  // ── SECTION 6: DURABILITY ──
-  { type: "h2", text: "Window Sticker Durability — How Long Each Type Lasts in Sri Lanka" },
-  { type: "p", text: "Sri Lanka's climate — high UV, monsoon humidity, coastal salt air and temperature fluctuation between air-conditioned interiors and hot exteriors — is particularly demanding on adhesive vinyl products. Here is the realistic lifespan of each window sticker type under Sri Lankan conditions." },
-  {
-    type: "table",
-    head: ["Material Type", "Indoor Lifespan", "Outdoor / Sun-Facing Lifespan", "Coastal Area Lifespan", "Key Degradation Factor"],
-    rows: [
-      ["Standard Opaque Vinyl (unlaminated)", "3–5 years", "1–2 years", "8–12 months", "UV fading of ink, edge lifting from humidity"],
-      ["Opaque Vinyl with UV Laminate", "5–7 years", "3–5 years", "2–3 years", "Edge lifting in coastal humidity over time"],
-      ["Clear Printed Vinyl", "2–4 years", "1–2 years", "6–12 months", "Yellowing of clear base in UV exposure"],
-      ["Frosted / Etched Film", "5–8 years", "2–3 years (inside face)", "2–3 years", "Very stable indoors — edge lifting only failure mode"],
-      ["One-Way Vision (Perforated)", "3–5 years", "2–3 years", "1–2 years", "UV ink fade in perforations, edge lifting"],
-      ["Static Cling", "6–12 months per use", "Not recommended outdoors", "Not recommended", "Loses cling in direct heat above 35°C"],
-      ["Premium Cast Vinyl with Laminate", "7–10 years", "5–7 years", "3–5 years", "Most durable option — recommended for permanent installations"],
-    ],
-  },
-  { type: "p", text: "Key recommendations for Sri Lanka:" },
-  {
-    type: "ul",
-    items: [
-      "Always apply UV laminate to any vinyl facing direct sunlight — south and west-facing windows in Sri Lanka receive intense UV year-round",
-      "For inside application (applied to interior glass face), lifespan is significantly longer because the vinyl is protected from weather",
-      "In coastal cities — Galle, Negombo, Trincomalee, Jaffna — use premium cast vinyl with laminate for any installation expected to last more than 12 months",
-      "For air-conditioned offices with interior glass partitions, standard frosted film lasts 5+ years with no special treatment",
-    ],
-  },
-
-  // ── SECTION 7: ARTWORK GUIDE ──
-  { type: "h2", text: "Artwork Guide for Window Sticker Printing — File Setup & Design Tips" },
-  { type: "p", text: "Window stickers are viewed at close range — often by people standing 30 to 100 centimetres from the glass. This means print quality requirements are higher than for banners or hoardings. Here is what your artwork needs to meet for a perfect result." },
-  { type: "h3", text: "File Requirements" },
-  {
-    type: "table",
-    head: ["Requirement", "Standard", "Notes"],
-    rows: [
-      ["File format", "PDF with bleed (preferred)", "Also accepted: AI (fonts outlined), PSD (flattened)"],
-      ["Colour mode", "CMYK", "RGB files shifted on conversion — especially blues and greens on clear vinyl"],
-      ["Resolution", "150 DPI at actual print size", "200 DPI recommended for A3 size and smaller — close viewing distance shows lower resolution"],
-      ["Bleed", "3 mm all sides for small stickers, 10 mm for large panels", "Background must extend to bleed edge — no white borders"],
-      ["Safe zone", "Keep all text and logos 5 mm inside trim line", "Text near the edge risks being cut during trimming"],
-      ["Fonts", "Outlined or embedded", "Always convert text to outlines in Illustrator — font files do not travel with the document"],
-      ["White ink areas", "Mark white clearly on a separate layer", "For clear vinyl, white areas must be specially flagged — the printer needs to know where to apply white ink under the colour"],
-    ],
-  },
-  { type: "h3", text: "Design Tips Specific to Window Stickers" },
-  {
-    type: "ul",
-    items: [
-      "For clear vinyl — add a white base layer. Without a white ink layer beneath the colour print, colours on clear vinyl appear washed out and translucent against the glass. Always request white underprint for full-colour graphics on clear film.",
-      "For frosted etched film — use negative space. The most professional frosted designs are largely frosted with clear cut-out areas for the logo or text rather than the reverse. This is how real etched glass looks and it reads more convincingly.",
-      "For one-way vision — use bold, high-contrast designs. The perforation holes reduce effective ink coverage by 40–60%. Pale colours and fine details are lost. Bold graphics with strong colour contrast are essential for one-way vision to read clearly from the street.",
-      "Include Sinhala or Tamil text correctly. If your sticker includes Sinhala or Tamil text, ensure all fonts are outlined in Illustrator or embedded in PDF. Sinhala and Tamil font substitution is the most common pre-press issue with Sri Lankan sticker artwork files.",
-      "Note the viewing side. Clearly state in your brief whether the sticker applies to the outside or inside of the glass. Inside application requires the artwork to be printed in reverse (mirror image) so it reads correctly from outside through the glass.",
-    ],
-  },
-
-  // ── SECTION 9: RELATED ──
+  // ── SECTION 8: RELATED ──
   { type: "h2", text: "Related Sticker & Glass Printing Services in Sri Lanka" },
   { type: "p", text: "Businesses ordering window sticker printing in Sri Lanka frequently also need one or more of these complementary services — glass sticker printing, frosted glass printing, shop front sticker printing, sticker printing, floor sticker printing, vehicle branding, vinyl printing and wayfinding signage all pair well with window sticker orders." },
 ];

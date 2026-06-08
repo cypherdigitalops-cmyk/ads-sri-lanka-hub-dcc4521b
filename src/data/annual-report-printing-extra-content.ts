@@ -20,7 +20,30 @@ export const ANNUAL_REPORT_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Recommendation for CSE-listed companies in Sri Lanka: Section sewn perfect binding is the industry standard for listed company annual reports. The sewn binding ensures pages do not fall out over years of reference — a consideration for documents that shareholders may retain for 5 to 10 years. Case binding (hardcover) is reserved for landmark years — IPOs, 25th or 50th anniversaries, flagship sustainability reports." },
 
-  // ── SECTION 2: PAPER & STOCK ──
+  // ── SECTION 2: CSE COMPLIANCE CHECKLIST ──
+  { type: "h2", text: "CSE Annual Report Compliance Checklist — Sri Lanka Listed Companies" },
+  { type: "p", text: "For companies listed on the Colombo Stock Exchange, the annual report must meet specific content requirements mandated by the CSE Listing Rules, the Securities and Exchange Commission of Sri Lanka (SEC) and the Companies Act No. 07 of 2007. This checklist covers the key content requirements — verify current rules with the CSE and your legal team as regulations are updated periodically." },
+  {
+    type: "table",
+    head: ["Section", "Required Content", "Regulatory Reference", "Design Consideration"],
+    rows: [
+      ["Corporate Information", "Company name, registration number, registered address, directors' names, company secretary, auditors, bankers, legal counsel", "Companies Act 2007 / CSE Listing Rules", "Typically presented on an inner cover or first interior page — design to be clean and legible"],
+      ["Chairman's Statement", "Review of year's performance, outlook, acknowledgements", "Best practice / CSE governance", "High-profile section — premium photography and design treatment expected"],
+      ["Board of Directors", "Director profiles — name, designation, qualifications, experience, committee memberships", "CSE Listing Rules 7.10 (Corporate Governance)", "Uniform portrait photography for all directors — brief must be issued to photographer in advance"],
+      ["Corporate Governance Report", "Board structure, committees (audit, remuneration, nominations), meetings attendance, independence declarations", "CSE Listing Rules 7.10 — mandatory for listed companies", "Dense text section — clean typography and table formatting critical for compliance legibility"],
+      ["Audit Committee Report", "Committee composition, scope of work, findings, recommendation to board", "CSE Listing Rules 7.10.6", "Standard text section — signed by Audit Committee Chairman"],
+      ["Remuneration Committee Report", "Policy, executive remuneration bands, committee composition", "CSE Listing Rules 7.10.5", "Standard text — remuneration bands presented in table format"],
+      ["Directors' Responsibility Statement", "Directors' responsibility for financial statements, internal controls, going concern", "Companies Act 2007 / CSE Rules", "Standard single-page section — signed by Chairman and CEO/MD"],
+      ["Independent Auditor's Report", "Auditor's opinion, basis, key audit matters, responsibilities", "Sri Lanka Standards on Auditing (SLSA) / Companies Act", "Reproduced verbatim from auditor — typography must be clear and unaltered"],
+      ["Financial Statements", "Statement of Financial Position, Income Statement, Statement of Changes in Equity, Cash Flow Statement, Notes to Accounts", "Sri Lanka Accounting Standards (SLFRS/LKAS)", "Most complex layout section — consistent table formatting, clear hierarchy essential"],
+      ["Ten-Year Summary", "Key financial indicators over last 10 financial years", "CSE Listing Rules — best practice for listed entities", "Data visualisation opportunity — charts showing trends significantly improve readability"],
+      ["Shareholder Information", "Top 20 shareholders, public holding percentage, share price history, stock exchange information", "CSE Listing Rules 7.6", "Tables and share price chart — standard format across all CSE companies"],
+      ["Notice of AGM", "Date, time, venue, agenda, proxy form", "Companies Act 2007 s.137–142", "Typically last pages of report — often printed on different stock to allow easy removal"],
+    ],
+  },
+  { type: "p", text: "Important note: The above is a general reference guide only. CSE listing rules, SEC requirements and accounting standards are updated periodically. Always verify current requirements with your legal counsel, auditors and the CSE directly before finalising the annual report structure. Your printer's role is production — compliance verification is the responsibility of the company's legal and finance team." },
+
+  // ── SECTION 3: PAPER & STOCK ──
   { type: "h2", text: "Paper Specifications for Annual Reports — Complete Guide" },
   { type: "p", text: "Paper selection affects every quality perception — how the report feels in the hand, how photographs reproduce, how text reads, and how the document ages. Here is a complete reference for every paper specification used in annual report printing in Sri Lanka." },
   { type: "h3", text: "Interior Pages" },
@@ -51,7 +74,7 @@ export const ANNUAL_REPORT_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Standard for most Sri Lankan corporate annual reports: 130–150 gsm silk art interior + 350 gsm silk art board cover with soft-touch lamination. This combination provides excellent colour reproduction, a premium tactile experience and reasonable production cost for quantities of 300 to 2,000 copies." },
 
-  // ── SECTION 3: COVER FINISHING ──
+  // ── SECTION 4: COVER FINISHING ──
   { type: "h2", text: "Annual Report Cover Finishing Options — From Standard to Prestige" },
   { type: "p", text: "The cover finish is the most visible quality signal of an annual report. Here is every finishing technique available for annual report covers in Sri Lanka, and the effect each produces." },
   {
@@ -72,7 +95,55 @@ export const ANNUAL_REPORT_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Most impactful combination used by Sri Lankan listed companies: Soft-touch lamination (full cover) + spot UV on the logo and cover headline + blind emboss on the company crest. This three-finish combination produces a cover that looks premium from across the room and feels premium in the hand — without requiring foil, which adds significant cost for long print runs." },
 
-  // ── SECTION 4: PRODUCTION TIMELINE ──
+  // ── SECTION 5: PHOTOGRAPHY BRIEF ──
+  { type: "h2", text: "Annual Report Photography Guide — What to Commission for Sri Lankan Reports" },
+  { type: "p", text: "Photography is where most Sri Lankan annual reports are won or lost visually. Generic stock photography produces a generic report. Original commissioned photography creates an authentic document that genuinely represents the organisation. Here is a complete photography brief framework for annual report production in Sri Lanka." },
+  {
+    type: "table",
+    head: ["Photography Category", "What to Capture", "Technical Requirement", "Usage in Report"],
+    rows: [
+      ["Leadership Portraits", "Chairman, CEO, all board directors, senior management team", "Consistent background, lighting and crop across all subjects. 3:4 portrait ratio minimum. RAW format.", "Board of directors section, chairman's message, CEO review, management profiles"],
+      ["Operational Photography", "Production facilities, service delivery, branch operations, equipment, teams at work", "Natural working conditions — not staged. Mix of wide establishing shots and close detail shots. Releases for identifiable people required.", "Business overview spreads, divisional performance sections, inside cover"],
+      ["Customer / Stakeholder Photography", "Customers using products or services, community interactions, partner meetings", "Authentic — not posed. Signed model releases for all identifiable subjects. Mix ethnicities and regions where relevant to Sri Lankan operations.", "Stakeholder value sections, CSR sections, brand narrative spreads"],
+      ["Product Photography", "Core products, new launches, flagship services, branded environments", "Studio quality or environmental. White or contextual backgrounds depending on design brief.", "Product section covers, business overview, marketing highlights"],
+      ["Location & Environmental", "Branches, outlets, facilities — exterior and interior", "Architectural quality — straight lines, no lens distortion. Both day and dusk/night where lighting makes an impact.", "Geographic coverage sections, network expansion narratives, sustainability sections"],
+      ["Community & CSR", "CSR project sites, beneficiaries, events, volunteer activities", "Documentary style — authentic moments, not staged. Releases for identifiable subjects.", "Sustainability report sections, CSR narrative, community investment spreads"],
+      ["Cover Photography", "Hero image that encapsulates the year's theme — conceptual, landscape or people", "Highest resolution available — minimum 300 DPI at A4 cover size. Shoot with cover text placement in mind.", "Front cover, back cover, section divider spreads"],
+    ],
+  },
+  { type: "p", text: "Key advice for Sri Lankan annual report photography: Book photography sessions at least 6 weeks before the printing deadline. Leadership portrait sessions require coordination across multiple executives' schedules — the most difficult logistical element of annual report production. Always shoot more than you need — having 3 to 4 usable portraits per director means the design team can select the best match for the layout." },
+  // ── SECTION 6: ARTWORK & FILE GUIDE ──
+  { type: "h2", text: "Artwork & File Preparation Guide — Annual Report Printing Sri Lanka" },
+  { type: "p", text: "Annual reports are the most technically complex print job most organisations ever produce. A well-prepared file prevents costly delays, reprints and colour errors. Here is the complete pre-press checklist for annual report printing in Sri Lanka." },
+  { type: "h3", text: "Software & File Format Requirements" },
+  {
+    type: "table",
+    head: ["Requirement", "Standard", "Notes"],
+    rows: [
+      ["Layout software", "Adobe InDesign (preferred)", "InDesign is the industry standard for annual report layout in Sri Lanka — ensures correct bleed, master page consistency and professional typography control. QuarkXPress also accepted."],
+      ["Export format", "PDF/X-1a or PDF/X-4 with all fonts embedded", "Never send native InDesign files to the printer — always export to press-ready PDF with correct settings. Supply one PDF per section if preferred (cover, interior, financial)."],
+      ["Colour mode", "CMYK throughout — no RGB or spot colours without prior agreement", "All images, graphics and colour elements must be converted to CMYK before PDF export. Pantone colours should be converted to CMYK equivalents unless foil or spot ink is specifically ordered."],
+      ["Image resolution", "300 DPI at actual placement size for all photographs", "The most common cause of rejected annual report files. An image placed at 50% of its original size is effectively 600 DPI — fine. An image placed at 200% of original is 150 DPI — too low and will appear soft in print."],
+      ["Bleed", "3 mm bleed on all pages on all four sides", "Any element that extends to the page edge — full-bleed photography, colour backgrounds, rules — must extend 3 mm beyond the trim line. Text and logos must be kept 5 mm inside the trim line (safe zone)."],
+      ["Fonts", "All fonts embedded in the PDF — not just subset-embedded", "Select 'Embed all fonts' in PDF export settings. Never rely on the printer having the same fonts installed — if a font is missing, InDesign substitutes a default that changes spacing and layout."],
+      ["Black text", "100% K only (0C 0M 0Y 100K) for all body text", "Rich black (combined CMYK) on small text causes misregistration — characters appear blurry. Reserve rich black (60C 40M 40Y 100K) for large headlines and full-bleed backgrounds only."],
+      ["Spot UV / foil artwork", "Separate layer or spot colour named 'SpotUV' or 'Foil' on cover file", "Spot UV and foil elements must be supplied as 100% black shapes on a separate named layer or spot colour. The printer uses this to create the UV or foil die — if not supplied separately, the finish cannot be applied correctly."],
+      ["Table and chart artwork", "All financial tables and charts as vector in InDesign or exported from Excel as vector PDF", "Never place Excel screenshots or low-resolution chart images. Charts and tables must be vector or built within InDesign to ensure crisp lines at print resolution."],
+      ["Page order", "Supply as reader spreads — pages in correct reading order with page numbers confirmed", "Confirm the total page count is divisible by 4 (for saddle stitch) or 8 (for section sewn binding) before sending to press. Odd page counts require blank pages — confirm placement with printer."],
+    ],
+  },
+  { type: "h3", text: "Page Count Rules for Binding" },
+  {
+    type: "ul",
+    items: [
+      "Saddle stitch: Total page count must be divisible by 4. Minimum 8 pages, maximum 48 pages.",
+      "Perfect binding: Total page count must be divisible by 4. Minimum 48 pages for a spine wide enough for spine text. Spine width = (page count × paper thickness in mm) ÷ 2.",
+      "Section sewn: Interior pages divided into signatures of 8 or 16 pages each — total page count must be divisible by 8 or 16 for clean signature division.",
+      "Spine text: For perfect-bound reports, spine text is practical only when spine width is 5mm or more (approximately 80 pages at 130gsm).",
+    ],
+  },
+
+  // ── SECTION 7: PRODUCTION TIMELINE ──
   { type: "h2", text: "Annual Report Production Timeline — From Brief to Delivery" },
   { type: "p", text: "Annual report production in Sri Lanka is always driven by a fixed external deadline — the AGM date, the CSE filing deadline, or the shareholder distribution target. Missing that deadline is not an option. Here is a realistic production timeline working backward from delivery date." },
   {
@@ -106,77 +177,6 @@ export const ANNUAL_REPORT_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "The most important planning advice: Start design work on the narrative sections — chairman's message, business overview, strategy — before the financial statements are finalised. These sections can be designed, reviewed and approved while the audit is still in progress. Only the financial section requires waiting for audited figures. This parallel workflow is how Sri Lanka's most experienced annual report producers consistently hit tight deadlines." },
 
-  // ── SECTION 5: CSE COMPLIANCE CHECKLIST ──
-  { type: "h2", text: "CSE Annual Report Compliance Checklist — Sri Lanka Listed Companies" },
-  { type: "p", text: "For companies listed on the Colombo Stock Exchange, the annual report must meet specific content requirements mandated by the CSE Listing Rules, the Securities and Exchange Commission of Sri Lanka (SEC) and the Companies Act No. 07 of 2007. This checklist covers the key content requirements — verify current rules with the CSE and your legal team as regulations are updated periodically." },
-  {
-    type: "table",
-    head: ["Section", "Required Content", "Regulatory Reference", "Design Consideration"],
-    rows: [
-      ["Corporate Information", "Company name, registration number, registered address, directors' names, company secretary, auditors, bankers, legal counsel", "Companies Act 2007 / CSE Listing Rules", "Typically presented on an inner cover or first interior page — design to be clean and legible"],
-      ["Chairman's Statement", "Review of year's performance, outlook, acknowledgements", "Best practice / CSE governance", "High-profile section — premium photography and design treatment expected"],
-      ["Board of Directors", "Director profiles — name, designation, qualifications, experience, committee memberships", "CSE Listing Rules 7.10 (Corporate Governance)", "Uniform portrait photography for all directors — brief must be issued to photographer in advance"],
-      ["Corporate Governance Report", "Board structure, committees (audit, remuneration, nominations), meetings attendance, independence declarations", "CSE Listing Rules 7.10 — mandatory for listed companies", "Dense text section — clean typography and table formatting critical for compliance legibility"],
-      ["Audit Committee Report", "Committee composition, scope of work, findings, recommendation to board", "CSE Listing Rules 7.10.6", "Standard text section — signed by Audit Committee Chairman"],
-      ["Remuneration Committee Report", "Policy, executive remuneration bands, committee composition", "CSE Listing Rules 7.10.5", "Standard text — remuneration bands presented in table format"],
-      ["Directors' Responsibility Statement", "Directors' responsibility for financial statements, internal controls, going concern", "Companies Act 2007 / CSE Rules", "Standard single-page section — signed by Chairman and CEO/MD"],
-      ["Independent Auditor's Report", "Auditor's opinion, basis, key audit matters, responsibilities", "Sri Lanka Standards on Auditing (SLSA) / Companies Act", "Reproduced verbatim from auditor — typography must be clear and unaltered"],
-      ["Financial Statements", "Statement of Financial Position, Income Statement, Statement of Changes in Equity, Cash Flow Statement, Notes to Accounts", "Sri Lanka Accounting Standards (SLFRS/LKAS)", "Most complex layout section — consistent table formatting, clear hierarchy essential"],
-      ["Ten-Year Summary", "Key financial indicators over last 10 financial years", "CSE Listing Rules — best practice for listed entities", "Data visualisation opportunity — charts showing trends significantly improve readability"],
-      ["Shareholder Information", "Top 20 shareholders, public holding percentage, share price history, stock exchange information", "CSE Listing Rules 7.6", "Tables and share price chart — standard format across all CSE companies"],
-      ["Notice of AGM", "Date, time, venue, agenda, proxy form", "Companies Act 2007 s.137–142", "Typically last pages of report — often printed on different stock to allow easy removal"],
-    ],
-  },
-  { type: "p", text: "Important note: The above is a general reference guide only. CSE listing rules, SEC requirements and accounting standards are updated periodically. Always verify current requirements with your legal counsel, auditors and the CSE directly before finalising the annual report structure. Your printer's role is production — compliance verification is the responsibility of the company's legal and finance team." },
-
-  // ── SECTION 6: ARTWORK & FILE GUIDE ──
-  { type: "h2", text: "Artwork & File Preparation Guide — Annual Report Printing Sri Lanka" },
-  { type: "p", text: "Annual reports are the most technically complex print job most organisations ever produce. A well-prepared file prevents costly delays, reprints and colour errors. Here is the complete pre-press checklist for annual report printing in Sri Lanka." },
-  { type: "h3", text: "Software & File Format Requirements" },
-  {
-    type: "table",
-    head: ["Requirement", "Standard", "Notes"],
-    rows: [
-      ["Layout software", "Adobe InDesign (preferred)", "InDesign is the industry standard for annual report layout in Sri Lanka — ensures correct bleed, master page consistency and professional typography control. QuarkXPress also accepted."],
-      ["Export format", "PDF/X-1a or PDF/X-4 with all fonts embedded", "Never send native InDesign files to the printer — always export to press-ready PDF with correct settings. Supply one PDF per section if preferred (cover, interior, financial)."],
-      ["Colour mode", "CMYK throughout — no RGB or spot colours without prior agreement", "All images, graphics and colour elements must be converted to CMYK before PDF export. Pantone colours should be converted to CMYK equivalents unless foil or spot ink is specifically ordered."],
-      ["Image resolution", "300 DPI at actual placement size for all photographs", "The most common cause of rejected annual report files. An image placed at 50% of its original size is effectively 600 DPI — fine. An image placed at 200% of original is 150 DPI — too low and will appear soft in print."],
-      ["Bleed", "3 mm bleed on all pages on all four sides", "Any element that extends to the page edge — full-bleed photography, colour backgrounds, rules — must extend 3 mm beyond the trim line. Text and logos must be kept 5 mm inside the trim line (safe zone)."],
-      ["Fonts", "All fonts embedded in the PDF — not just subset-embedded", "Select 'Embed all fonts' in PDF export settings. Never rely on the printer having the same fonts installed — if a font is missing, InDesign substitutes a default that changes spacing and layout."],
-      ["Black text", "100% K only (0C 0M 0Y 100K) for all body text", "Rich black (combined CMYK) on small text causes misregistration — characters appear blurry. Reserve rich black (60C 40M 40Y 100K) for large headlines and full-bleed backgrounds only."],
-      ["Spot UV / foil artwork", "Separate layer or spot colour named 'SpotUV' or 'Foil' on cover file", "Spot UV and foil elements must be supplied as 100% black shapes on a separate named layer or spot colour. The printer uses this to create the UV or foil die — if not supplied separately, the finish cannot be applied correctly."],
-      ["Table and chart artwork", "All financial tables and charts as vector in InDesign or exported from Excel as vector PDF", "Never place Excel screenshots or low-resolution chart images. Charts and tables must be vector or built within InDesign to ensure crisp lines at print resolution."],
-      ["Page order", "Supply as reader spreads — pages in correct reading order with page numbers confirmed", "Confirm the total page count is divisible by 4 (for saddle stitch) or 8 (for section sewn binding) before sending to press. Odd page counts require blank pages — confirm placement with printer."],
-    ],
-  },
-  { type: "h3", text: "Page Count Rules for Binding" },
-  {
-    type: "ul",
-    items: [
-      "Saddle stitch: Total page count must be divisible by 4. Minimum 8 pages, maximum 48 pages.",
-      "Perfect binding: Total page count must be divisible by 4. Minimum 48 pages for a spine wide enough for spine text. Spine width = (page count × paper thickness in mm) ÷ 2.",
-      "Section sewn: Interior pages divided into signatures of 8 or 16 pages each — total page count must be divisible by 8 or 16 for clean signature division.",
-      "Spine text: For perfect-bound reports, spine text is practical only when spine width is 5mm or more (approximately 80 pages at 130gsm).",
-    ],
-  },
-
-  // ── SECTION 7: PHOTOGRAPHY BRIEF ──
-  { type: "h2", text: "Annual Report Photography Guide — What to Commission for Sri Lankan Reports" },
-  { type: "p", text: "Photography is where most Sri Lankan annual reports are won or lost visually. Generic stock photography produces a generic report. Original commissioned photography creates an authentic document that genuinely represents the organisation. Here is a complete photography brief framework for annual report production in Sri Lanka." },
-  {
-    type: "table",
-    head: ["Photography Category", "What to Capture", "Technical Requirement", "Usage in Report"],
-    rows: [
-      ["Leadership Portraits", "Chairman, CEO, all board directors, senior management team", "Consistent background, lighting and crop across all subjects. 3:4 portrait ratio minimum. RAW format.", "Board of directors section, chairman's message, CEO review, management profiles"],
-      ["Operational Photography", "Production facilities, service delivery, branch operations, equipment, teams at work", "Natural working conditions — not staged. Mix of wide establishing shots and close detail shots. Releases for identifiable people required.", "Business overview spreads, divisional performance sections, inside cover"],
-      ["Customer / Stakeholder Photography", "Customers using products or services, community interactions, partner meetings", "Authentic — not posed. Signed model releases for all identifiable subjects. Mix ethnicities and regions where relevant to Sri Lankan operations.", "Stakeholder value sections, CSR sections, brand narrative spreads"],
-      ["Product Photography", "Core products, new launches, flagship services, branded environments", "Studio quality or environmental. White or contextual backgrounds depending on design brief.", "Product section covers, business overview, marketing highlights"],
-      ["Location & Environmental", "Branches, outlets, facilities — exterior and interior", "Architectural quality — straight lines, no lens distortion. Both day and dusk/night where lighting makes an impact.", "Geographic coverage sections, network expansion narratives, sustainability sections"],
-      ["Community & CSR", "CSR project sites, beneficiaries, events, volunteer activities", "Documentary style — authentic moments, not staged. Releases for identifiable subjects.", "Sustainability report sections, CSR narrative, community investment spreads"],
-      ["Cover Photography", "Hero image that encapsulates the year's theme — conceptual, landscape or people", "Highest resolution available — minimum 300 DPI at A4 cover size. Shoot with cover text placement in mind.", "Front cover, back cover, section divider spreads"],
-    ],
-  },
-  { type: "p", text: "Key advice for Sri Lankan annual report photography: Book photography sessions at least 6 weeks before the printing deadline. Leadership portrait sessions require coordination across multiple executives' schedules — the most difficult logistical element of annual report production. Always shoot more than you need — having 3 to 4 usable portraits per director means the design team can select the best match for the layout." },
 ];
 
 export const ANNUAL_REPORT_PRINTING_EXTRA_FAQS: FAQ[] = [

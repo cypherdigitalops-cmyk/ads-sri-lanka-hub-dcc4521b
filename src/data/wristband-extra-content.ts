@@ -25,7 +25,30 @@ export const WRISTBAND_EXTRA: Block[] = [
     ],
   },
 
-  // Section 2: Tyvek
+  // Section 2: by event type — high-intent use cases
+  { type: "h2", text: "Wristbands by Event Type — What Works in Sri Lanka" },
+  {
+    type: "table",
+    head: ["Event / Application", "Recommended Wristband", "Key Feature Needed", "Quantity Guide"],
+    rows: [
+      ["Concert / Music Show", "Tyvek — colour-coded by ticket tier", "Tamper-evident, fast application at gate, colour differentiation", "100% of ticket count + 15% buffer"],
+      ["Multi-Day Music Festival", "Fabric with snap-lock clasp", "Non-removable, waterproof, multi-day wear", "100% of attendees per day + 10% buffer"],
+      ["School Sports Day", "Tyvek or silicone — colour per house/team", "Colour coding by team, comfortable for active wear", "1 per student + 5% buffer"],
+      ["Corporate Conference / AGM", "Tyvek or fabric — branded with company logo", "Professional appearance, delegate identification", "1 per delegate + 10% buffer"],
+      ["Resort / Hotel Pool Access", "Vinyl or fabric — colour per room type", "Waterproof, multi-day, colour identification for staff", "1 per guest per stay + 10% for replacements"],
+      ["Water Park / Theme Park", "Vinyl or fabric — waterproof", "Fully waterproof, durable for rides, snap-lock", "1 per visitor per day + 10% buffer"],
+      ["Hospital Patient ID", "Patient wristband — Tyvek or synthetic polymer", "Printed patient data, barcode for scanning, skin-safe adhesive", "2 per patient admission (primary + backup)"],
+      ["Fundraising Campaign", "Silicone — debossed with cause message", "Reusable, wearable long-term, cause messaging visible", "Match to campaign distribution target"],
+      ["School / University Charity Drive", "Silicone — debossed colour-filled", "School colours, durable for daily wear, cost-effective in bulk", "1 per student + staff quantity"],
+      ["Beach Club / Bar Access", "Tyvek — neon colours for night visibility", "Tamper-evident, waterproof, visually distinctive in low light", "1 per cover per evening + 10%"],
+      ["Brand Activation / Roadshow", "Silicone branded or printed Tyvek", "Brand recall after event — silicone stays on; Tyvek for gate control", "Match to activation target reach"],
+      ["Children's Event / Party", "Tyvek — child size, bright colours", "Child-safe closure, name field for lost child identification", "1 per child + parent contact set"],
+      ["Marathon / Fun Run", "Tyvek — with bib number or chip timing data", "Race number correlation, water resistant for sweat", "1 per participant + 5% buffer"],
+      ["Political / Community Event", "Tyvek — large volume, colour per faction", "Fast production, high volume, colour differentiation", "100% of expected attendance + 20%"],
+    ],
+  },
+
+  // Section 3: Tyvek
   { type: "h2", text: "Tyvek Wristbands in Sri Lanka — The Event Industry Standard" },
   { type: "p", text: "Tyvek wristbands are the most widely used event wristband in Sri Lanka. Made from DuPont Tyvek — a non-woven, high-density polyethylene fibre composite — they are tear-resistant, waterproof, lightweight and inexpensive enough to use as a single-use disposable. Every concert, festival, school sports day and corporate event in Sri Lanka that needs crowd and access management relies on Tyvek wristbands as the primary solution." },
   { type: "h3", text: "Tyvek Wristband Specifications" },
@@ -57,7 +80,7 @@ export const WRISTBAND_EXTRA: Block[] = [
     ],
   },
 
-  // Section 3: Silicone
+  // Section 4: Silicone
   { type: "h2", text: "Silicone Wristbands in Sri Lanka — Fundraising, Awareness & Brand Merchandise" },
   { type: "p", text: "Silicone wristbands are durable, reusable, comfortable and one of the most cost-effective branded merchandise items available in Sri Lanka. They became globally recognisable through charity campaigns and remain the standard wristband for fundraising, awareness programmes, sports teams, school events and corporate brand merchandise across the island." },
   { type: "h3", text: "Silicone Wristband Customisation Options" },
@@ -89,7 +112,7 @@ export const WRISTBAND_EXTRA: Block[] = [
     ],
   },
 
-  // Section 4: Fabric
+  // Section 5: Fabric
   { type: "h2", text: "Fabric Wristbands in Sri Lanka — Multi-Day Events & Resort Access" },
   { type: "p", text: "Fabric wristbands are the premium event wristband for multi-day festivals, resort all-inclusive access, beach clubs and VIP experiences. The woven polyester fabric is comfortable to wear for days, resistant to water and sweat, and the metal or plastic snap-lock clasp makes them non-transferable without cutting — providing genuine security that Tyvek cannot match for longer events." },
   {
@@ -107,29 +130,6 @@ export const WRISTBAND_EXTRA: Block[] = [
     ],
   },
   { type: "p", text: "Why resorts and beach venues in Sri Lanka prefer fabric wristbands: Guests wearing all-inclusive fabric wristbands stay in the water, at the beach and through rain without the wristband degrading. The snap-lock closure means staff can visually verify access at pools and bars without scanning. The fabric is comfortable enough to sleep in, which prevents the security gap created when guests remove Tyvek bands at night." },
-
-  // Section 5: by event type
-  { type: "h2", text: "Wristbands by Event Type — What Works in Sri Lanka" },
-  {
-    type: "table",
-    head: ["Event / Application", "Recommended Wristband", "Key Feature Needed", "Quantity Guide"],
-    rows: [
-      ["Concert / Music Show", "Tyvek — colour-coded by ticket tier", "Tamper-evident, fast application at gate, colour differentiation", "100% of ticket count + 15% buffer"],
-      ["Multi-Day Music Festival", "Fabric with snap-lock clasp", "Non-removable, waterproof, multi-day wear", "100% of attendees per day + 10% buffer"],
-      ["School Sports Day", "Tyvek or silicone — colour per house/team", "Colour coding by team, comfortable for active wear", "1 per student + 5% buffer"],
-      ["Corporate Conference / AGM", "Tyvek or fabric — branded with company logo", "Professional appearance, delegate identification", "1 per delegate + 10% buffer"],
-      ["Resort / Hotel Pool Access", "Vinyl or fabric — colour per room type", "Waterproof, multi-day, colour identification for staff", "1 per guest per stay + 10% for replacements"],
-      ["Water Park / Theme Park", "Vinyl or fabric — waterproof", "Fully waterproof, durable for rides, snap-lock", "1 per visitor per day + 10% buffer"],
-      ["Hospital Patient ID", "Patient wristband — Tyvek or synthetic polymer", "Printed patient data, barcode for scanning, skin-safe adhesive", "2 per patient admission (primary + backup)"],
-      ["Fundraising Campaign", "Silicone — debossed with cause message", "Reusable, wearable long-term, cause messaging visible", "Match to campaign distribution target"],
-      ["School / University Charity Drive", "Silicone — debossed colour-filled", "School colours, durable for daily wear, cost-effective in bulk", "1 per student + staff quantity"],
-      ["Beach Club / Bar Access", "Tyvek — neon colours for night visibility", "Tamper-evident, waterproof, visually distinctive in low light", "1 per cover per evening + 10%"],
-      ["Brand Activation / Roadshow", "Silicone branded or printed Tyvek", "Brand recall after event — silicone stays on; Tyvek for gate control", "Match to activation target reach"],
-      ["Children's Event / Party", "Tyvek — child size, bright colours", "Child-safe closure, name field for lost child identification", "1 per child + parent contact set"],
-      ["Marathon / Fun Run", "Tyvek — with bib number or chip timing data", "Race number correlation, water resistant for sweat", "1 per participant + 5% buffer"],
-      ["Political / Community Event", "Tyvek — large volume, colour per faction", "Fast production, high volume, colour differentiation", "100% of expected attendance + 20%"],
-    ],
-  },
 
   // Section 6: customisation
   { type: "h2", text: "Wristband Customisation Options — What You Can Print & Add" },

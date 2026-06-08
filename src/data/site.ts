@@ -790,4 +790,12 @@ export const FOOTER_PRINTING: { slug: string; label: string }[] = [
   { slug: "business-card-printing-sri-lanka", label: "Business Card Printing" },
   { slug: "flag-printing-sri-lanka", label: "Flag Printing" },
   { slug: "3d-printing-sri-lanka", label: "3D Printing" },
+  { slug: "roll-up-banner-printing-sri-lanka", label: "Roll Up Banner Printing" },
+  { slug: "window-sticker-printing-sri-lanka", label: "Window Sticker Printing" },
+  { slug: "embossed-printing-sri-lanka", label: "Embossed Printing" },
+  { slug: "annual-report-printing-sri-lanka", label: "Annual Report Printing" },
+  { slug: "wristband-sri-lanka", label: "Wristband Printing" },
+  { slug: "pen-printing-sri-lanka", label: "Pen Printing" },
+  { slug: "backdrop-printing-sri-lanka", label: "Backdrop Printing" },
+  { slug: "mug-printing-sri-lanka", label: "Mug Printing" },
 ];

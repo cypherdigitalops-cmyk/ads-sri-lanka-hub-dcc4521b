@@ -342,7 +342,7 @@ function Index() {
                     <Send className="h-3.5 w-3.5" /> Get Free Quote
                   </button>
                   <Link to={`/${s.slug}` as never} className="inline-flex items-center gap-1 rounded-full border border-border px-4 py-2 text-xs font-semibold hover:border-primary hover:text-primary">
-                    Learn more <ArrowRight className="h-3.5 w-3.5" />
+                    View {s.title} details <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
               </div>

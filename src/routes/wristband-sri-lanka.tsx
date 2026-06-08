@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Wristband Sri Lanka — Custom Event, Silicone & Tyvek Wristbands | Islandwide";
-const DESC = "Custom wristband printing in Sri Lanka — Tyvek, silicone, fabric, PVC & vinyl wristbands for events, hospitals, schools & promotions. Any quantity. Islandwide delivery. Call 0771437707.";
+const TITLE = "Wristband Sri Lanka — Custom Silicone & Tyvek Wristbands";
+const DESC = "Custom wristband printing in Sri Lanka — Tyvek, silicone, fabric & PVC wristbands for events, hospitals & promotions. Any quantity, islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/wristband-sri-lanka")({
   head: () => ({

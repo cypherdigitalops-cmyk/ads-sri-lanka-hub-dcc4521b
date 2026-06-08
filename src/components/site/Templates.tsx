@@ -784,6 +784,22 @@ export function ServicePageTemplate({
       {slug === "mug-printing-sri-lanka" ? (
         <PrintingExtraWithMidCTA blocks={MUG_PRINTING_EXTRA} service={title} />
       ) : null}
+      {(() => {
+        const slugsWithMidCta = new Set([
+          "roll-up-banner-printing-sri-lanka",
+          "led-sign-board-sri-lanka",
+          "banner-printing-sri-lanka",
+          "window-sticker-printing-sri-lanka",
+          "embossed-printing-sri-lanka",
+          "annual-report-printing-sri-lanka",
+          "wristband-sri-lanka",
+          "pen-printing-sri-lanka",
+          "backdrop-printing-sri-lanka",
+          "mug-printing-sri-lanka",
+        ]);
+        // Mid CTA already injected by PrintingExtraWithMidCTA — skip extra one.
+        return slugsWithMidCta.has(slug) ? null : <MidContentWhatsAppCTA service={title} />;
+      })()}
       {slug === "corporate-gifting-sri-lanka" ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={CORPORATE_GIFTING_EXTRA} />
@@ -794,8 +810,6 @@ export function ServicePageTemplate({
           <LongFormBlocks blocks={LED_SCREEN_RENTAL_EXTRA} />
         </section>
       ) : null}
-      {/* Early conversion prompt while attention is high */}
-      <MidContentWhatsAppCTA service={title} />
       {/* Generic template sections — only when no unique content exists, to avoid duplicate SEO content across pages */}
       {!hasUnique ? (
         <>
@@ -852,7 +866,6 @@ export function ServicePageTemplate({
       </section>
       <FaqList items={faqs} />
       <TodayCrossLinks currentSlug={slug} />
-      <MidContentWhatsAppCTA service={title} />
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={`Want clear answers about ${title}?`}

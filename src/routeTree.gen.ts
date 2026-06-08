@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as YoutubeMarketingSriLankaRouteImport } from './routes/youtube-marketing-sri-lanka'
 import { Route as YoutubeAdsSriLankaRouteImport } from './routes/youtube-ads-sri-lanka'
 import { Route as XBannerPrintingSriLankaRouteImport } from './routes/x-banner-printing-sri-lanka'
+import { Route as WristbandSriLankaRouteImport } from './routes/wristband-sri-lanka'
 import { Route as WordpressDevelopmentSriLankaRouteImport } from './routes/wordpress-development-sri-lanka'
 import { Route as WindowStickerPrintingSriLankaRouteImport } from './routes/window-sticker-printing-sri-lanka'
 import { Route as WhatsappMarketingSriLankaRouteImport } from './routes/whatsapp-marketing-sri-lanka'
@@ -524,6 +525,11 @@ const YoutubeAdsSriLankaRoute = YoutubeAdsSriLankaRouteImport.update({
 const XBannerPrintingSriLankaRoute = XBannerPrintingSriLankaRouteImport.update({
   id: '/x-banner-printing-sri-lanka',
   path: '/x-banner-printing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WristbandSriLankaRoute = WristbandSriLankaRouteImport.update({
+  id: '/wristband-sri-lanka',
+  path: '/wristband-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WordpressDevelopmentSriLankaRoute =
@@ -3673,6 +3679,7 @@ export interface FileRoutesByFullPath {
   '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
   '/window-sticker-printing-sri-lanka': typeof WindowStickerPrintingSriLankaRoute
   '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
+  '/wristband-sri-lanka': typeof WristbandSriLankaRoute
   '/x-banner-printing-sri-lanka': typeof XBannerPrintingSriLankaRoute
   '/youtube-ads-sri-lanka': typeof YoutubeAdsSriLankaRoute
   '/youtube-marketing-sri-lanka': typeof YoutubeMarketingSriLankaRoute
@@ -4175,6 +4182,7 @@ export interface FileRoutesByTo {
   '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
   '/window-sticker-printing-sri-lanka': typeof WindowStickerPrintingSriLankaRoute
   '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
+  '/wristband-sri-lanka': typeof WristbandSriLankaRoute
   '/x-banner-printing-sri-lanka': typeof XBannerPrintingSriLankaRoute
   '/youtube-ads-sri-lanka': typeof YoutubeAdsSriLankaRoute
   '/youtube-marketing-sri-lanka': typeof YoutubeMarketingSriLankaRoute
@@ -4678,6 +4686,7 @@ export interface FileRoutesById {
   '/whatsapp-marketing-sri-lanka': typeof WhatsappMarketingSriLankaRoute
   '/window-sticker-printing-sri-lanka': typeof WindowStickerPrintingSriLankaRoute
   '/wordpress-development-sri-lanka': typeof WordpressDevelopmentSriLankaRoute
+  '/wristband-sri-lanka': typeof WristbandSriLankaRoute
   '/x-banner-printing-sri-lanka': typeof XBannerPrintingSriLankaRoute
   '/youtube-ads-sri-lanka': typeof YoutubeAdsSriLankaRoute
   '/youtube-marketing-sri-lanka': typeof YoutubeMarketingSriLankaRoute
@@ -5182,6 +5191,7 @@ export interface FileRouteTypes {
     | '/whatsapp-marketing-sri-lanka'
     | '/window-sticker-printing-sri-lanka'
     | '/wordpress-development-sri-lanka'
+    | '/wristband-sri-lanka'
     | '/x-banner-printing-sri-lanka'
     | '/youtube-ads-sri-lanka'
     | '/youtube-marketing-sri-lanka'
@@ -5684,6 +5694,7 @@ export interface FileRouteTypes {
     | '/whatsapp-marketing-sri-lanka'
     | '/window-sticker-printing-sri-lanka'
     | '/wordpress-development-sri-lanka'
+    | '/wristband-sri-lanka'
     | '/x-banner-printing-sri-lanka'
     | '/youtube-ads-sri-lanka'
     | '/youtube-marketing-sri-lanka'
@@ -6186,6 +6197,7 @@ export interface FileRouteTypes {
     | '/whatsapp-marketing-sri-lanka'
     | '/window-sticker-printing-sri-lanka'
     | '/wordpress-development-sri-lanka'
+    | '/wristband-sri-lanka'
     | '/x-banner-printing-sri-lanka'
     | '/youtube-ads-sri-lanka'
     | '/youtube-marketing-sri-lanka'
@@ -6689,6 +6701,7 @@ export interface RootRouteChildren {
   WhatsappMarketingSriLankaRoute: typeof WhatsappMarketingSriLankaRoute
   WindowStickerPrintingSriLankaRoute: typeof WindowStickerPrintingSriLankaRoute
   WordpressDevelopmentSriLankaRoute: typeof WordpressDevelopmentSriLankaRoute
+  WristbandSriLankaRoute: typeof WristbandSriLankaRoute
   XBannerPrintingSriLankaRoute: typeof XBannerPrintingSriLankaRoute
   YoutubeAdsSriLankaRoute: typeof YoutubeAdsSriLankaRoute
   YoutubeMarketingSriLankaRoute: typeof YoutubeMarketingSriLankaRoute
@@ -6848,6 +6861,13 @@ declare module '@tanstack/react-router' {
       path: '/x-banner-printing-sri-lanka'
       fullPath: '/x-banner-printing-sri-lanka'
       preLoaderRoute: typeof XBannerPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wristband-sri-lanka': {
+      id: '/wristband-sri-lanka'
+      path: '/wristband-sri-lanka'
+      fullPath: '/wristband-sri-lanka'
+      preLoaderRoute: typeof WristbandSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/wordpress-development-sri-lanka': {
@@ -10716,6 +10736,7 @@ const rootRouteChildren: RootRouteChildren = {
   WhatsappMarketingSriLankaRoute: WhatsappMarketingSriLankaRoute,
   WindowStickerPrintingSriLankaRoute: WindowStickerPrintingSriLankaRoute,
   WordpressDevelopmentSriLankaRoute: WordpressDevelopmentSriLankaRoute,
+  WristbandSriLankaRoute: WristbandSriLankaRoute,
   XBannerPrintingSriLankaRoute: XBannerPrintingSriLankaRoute,
   YoutubeAdsSriLankaRoute: YoutubeAdsSriLankaRoute,
   YoutubeMarketingSriLankaRoute: YoutubeMarketingSriLankaRoute,

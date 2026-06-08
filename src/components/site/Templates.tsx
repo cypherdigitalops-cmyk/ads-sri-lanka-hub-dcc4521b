@@ -551,6 +551,10 @@ export function CategoryHubTemplate({
         </section>
       ) : null}
       {isPrinting ? <PrintingPowerCTA service={category.title} /> : <MidContentWhatsAppCTA service={category.title} />}
+      {/* Hub long-form SEO content with mid CTA split */}
+      {isPrinting ? (
+        <PrintingExtraWithMidCTA blocks={PRINTING_HUB_EXTRA} service={category.title} />
+      ) : null}
       {!hasUnique ? (
         <>
           {longForm.blocks.length ? (

@@ -851,6 +851,7 @@ export function ServicePageTemplate({
         </div>
       </section>
       <FaqList items={faqs} />
+      <TodayCrossLinks currentSlug={slug} />
       <MidContentWhatsAppCTA service={title} />
       <div className="mx-auto max-w-7xl px-4">
         <CTASection

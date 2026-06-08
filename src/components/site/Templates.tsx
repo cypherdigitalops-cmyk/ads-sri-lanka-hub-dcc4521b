@@ -194,8 +194,8 @@ function FaqList({ items }: { items: FAQ[] }) {
       <div className="mt-6 space-y-3">
         {items.map((f) => (
           <details key={f.q} className="group rounded-lg border border-border bg-card p-5">
-            <summary className="cursor-pointer list-none font-semibold marker:hidden">{applyLinks(f.q)}</summary>
-            <p className="mt-3 text-sm text-muted-foreground">{applyLinks(f.a)}</p>
+            <summary className="cursor-pointer list-none font-semibold marker:hidden">{f.q}</summary>
+            <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
           </details>
         ))}
       </div>

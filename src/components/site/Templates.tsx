@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, Sparkles, Target, TrendingUp, Users, Building2, GraduationCap, Mic2, PartyPopper, Presentation, Heart, Image as ImageIcon, Sticker, Layout, Car, Square, ScrollText, Tag, MessageCircle, Send, Zap, Clock } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
-import { CTASection, InlineInquiryForm, MidContentWhatsAppCTA } from "./CTASection";
+import { CTASection, InlineInquiryForm, MidContentWhatsAppCTA, PrintingPowerCTA } from "./CTASection";
 import { openQuoteModal } from "./QuoteModal";
 import { RELATED_CATEGORIES, SITE, titleCase, type Category } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
@@ -657,30 +657,23 @@ export function ServicePageTemplate({
           <LongFormBlocks blocks={uniquePrint} />
         </section>
       ) : null}
+      {category.slug === "printing-services-sri-lanka" && (uniquePrint.length || uniqueSvc.length) ? (
+        <PrintingPowerCTA service={title} />
+      ) : null}
       {slug === "roll-up-banner-printing-sri-lanka" ? (
-        <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={ROLL_UP_BANNER_EXTRA} />
-        </section>
+        <PrintingExtraWithMidCTA blocks={ROLL_UP_BANNER_EXTRA} service={title} />
       ) : null}
       {slug === "led-sign-board-sri-lanka" ? (
-        <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={LED_SIGN_BOARD_EXTRA} />
-        </section>
+        <PrintingExtraWithMidCTA blocks={LED_SIGN_BOARD_EXTRA} service={title} />
       ) : null}
       {slug === "banner-printing-sri-lanka" ? (
-        <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={BANNER_PRINTING_EXTRA} />
-        </section>
+        <PrintingExtraWithMidCTA blocks={BANNER_PRINTING_EXTRA} service={title} />
       ) : null}
       {slug === "window-sticker-printing-sri-lanka" ? (
-        <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={WINDOW_STICKER_EXTRA} />
-        </section>
+        <PrintingExtraWithMidCTA blocks={WINDOW_STICKER_EXTRA} service={title} />
       ) : null}
       {slug === "embossed-printing-sri-lanka" ? (
-        <section className="mx-auto max-w-3xl px-4 py-8">
-          <LongFormBlocks blocks={EMBOSSED_PRINTING_EXTRA} />
-        </section>
+        <PrintingExtraWithMidCTA blocks={EMBOSSED_PRINTING_EXTRA} service={title} />
       ) : null}
       {slug === "corporate-gifting-sri-lanka" ? (
         <section className="mx-auto max-w-3xl px-4 py-8">

@@ -20,6 +20,7 @@ import { getPrintingH1Override } from "@/data/printing-h1-overrides";
 import { ROLL_UP_BANNER_EXTRA, ROLL_UP_BANNER_EXTRA_FAQS } from "@/data/roll-up-banner-extra-content";
 import { LED_SIGN_BOARD_EXTRA, LED_SIGN_BOARD_EXTRA_FAQS } from "@/data/led-sign-board-extra-content";
 import { BANNER_PRINTING_EXTRA, BANNER_PRINTING_EXTRA_FAQS } from "@/data/banner-printing-extra-content";
+import { WINDOW_STICKER_EXTRA, WINDOW_STICKER_EXTRA_FAQS } from "@/data/window-sticker-extra-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -598,6 +599,7 @@ export function ServicePageTemplate({
     slug === "roll-up-banner-printing-sri-lanka" ? ROLL_UP_BANNER_EXTRA_FAQS
     : slug === "led-sign-board-sri-lanka" ? LED_SIGN_BOARD_EXTRA_FAQS
     : slug === "banner-printing-sri-lanka" ? BANNER_PRINTING_EXTRA_FAQS
+    : slug === "window-sticker-printing-sri-lanka" ? WINDOW_STICKER_EXTRA_FAQS
     : [];
   const faqs = extraFaqsForSlug.length
     ? [...baseFaqs, ...extraFaqsForSlug.filter(f => !baseFaqs.some(b => b.q.toLowerCase() === f.q.toLowerCase()))]
@@ -662,6 +664,11 @@ export function ServicePageTemplate({
       {slug === "banner-printing-sri-lanka" ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={BANNER_PRINTING_EXTRA} />
+        </section>
+      ) : null}
+      {slug === "window-sticker-printing-sri-lanka" ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={WINDOW_STICKER_EXTRA} />
         </section>
       ) : null}
       {/* Early conversion prompt while attention is high */}

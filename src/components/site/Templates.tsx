@@ -486,6 +486,7 @@ export function CategoryHubTemplate({
   const uniqueCat = getServiceUniqueContent(category.slug);
   const hasUnique = uniqueCat.length > 0;
   const h1Override = getPrintingH1Override(category.slug);
+  const isPrinting = category.slug === "printing-services-sri-lanka";
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -522,7 +523,9 @@ export function CategoryHubTemplate({
         intro={h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
-      {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
+      {/* PRINTING HUB: conversion-first ordering — strong CTA immediately under hero, then browse, then inquiry form, then content */}
+      {isPrinting ? <PrintingPowerCTA service={category.title} /> : null}
+      {isPrinting ? <PrintingTopCategoryCards /> : null}
       {category.slug === "event-management-sri-lanka" ? <LedEventTypesSection /> : null}
       <section className="mx-auto max-w-7xl px-4 py-14">
         <h2 className="text-2xl font-bold sm:text-3xl">Our {category.title.toLowerCase()} services</h2>
@@ -538,13 +541,15 @@ export function CategoryHubTemplate({
           ))}
         </div>
       </section>
+      {/* Inline inquiry form right after the browse grid — capture intent while picking a service */}
+      {isPrinting ? <InlineInquiryForm service={category.title} /> : null}
       {/* PRIORITY: unique content first */}
       {hasUnique ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={uniqueCat} />
         </section>
       ) : null}
-      <MidContentWhatsAppCTA service={category.title} />
+      {isPrinting ? <PrintingPowerCTA service={category.title} /> : <MidContentWhatsAppCTA service={category.title} />}
       {!hasUnique ? (
         <>
           {longForm.blocks.length ? (
@@ -597,6 +602,7 @@ export function CategoryHubTemplate({
           </div>
         </section>
       ) : null}
+      {isPrinting ? <PrintingPowerCTA service={category.title} /> : null}
       <InlineInquiryForm service={category.title} />
     </>
   );

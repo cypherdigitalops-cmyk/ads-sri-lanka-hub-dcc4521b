@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Pen Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from pen printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Pen Printing Sri Lanka | Branded Promo Pens from Rs 25 Each";
+const DESC = "Pen printing in Sri Lanka from Rs 25 per pen. Plastic, metal & gel pens with single & full-colour logo print. Min 100 units. Call 0771437707.";
 
 export const Route = createFileRoute("/pen-printing-sri-lanka")({
   head: () => ({

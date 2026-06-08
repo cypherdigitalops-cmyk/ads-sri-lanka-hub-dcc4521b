@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Top-Rated Ecommerce SEO Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for ecommerce seo sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
+const TITLE = "Ecommerce SEO Sri Lanka | Shopify & WooCommerce SEO Services";
+const DESC = "Ecommerce SEO in Sri Lanka — Shopify, WooCommerce & Magento optimisation, product schema, technical audits & link building. Call 0771437707.";
 
 export const Route = createFileRoute("/ecommerce-seo-sri-lanka")({
   head: () => ({

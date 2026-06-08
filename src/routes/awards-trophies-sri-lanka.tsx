@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Awards And Trophies Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from awards and trophies sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Awards & Trophies Sri Lanka | Crystal, Acrylic & Metal Trophies";
+const DESC = "Awards & trophies in Sri Lanka — crystal, acrylic, metal & wooden trophies for sports, corporate & academic events. Custom engraving. Call 0771437707.";
 
 export const Route = createFileRoute("/awards-trophies-sri-lanka")({
   head: () => ({

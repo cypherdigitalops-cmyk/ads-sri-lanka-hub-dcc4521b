@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Affordable Catalogue Printing Sri Lanka Services Across Sri Lanka";
-const DESC = "Sri Lanka's full-service catalogue printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and consultation.";
+const TITLE = "Catalogue Printing Sri Lanka | Product Catalogues from Rs 85";
+const DESC = "Catalogue printing in Sri Lanka from Rs 85 per copy. A4/A5 perfect-bound or saddle-stitched, gloss/matt lamination. Min 100 copies. Call 0771437707.";
 
 export const Route = createFileRoute("/catalogue-printing-sri-lanka")({
   head: () => ({

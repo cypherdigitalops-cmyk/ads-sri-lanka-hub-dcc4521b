@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Digital Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from digital printing sri lanka in Sri Lanka. Concept, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Digital Printing Sri Lanka | Short-Run & On-Demand Print";
+const DESC = "Digital printing in Sri Lanka — short-run business cards, flyers, brochures & posters with same-day turnaround in Colombo. Call 0771437707.";
 
 export const Route = createFileRoute("/digital-printing-sri-lanka")({
   head: () => ({

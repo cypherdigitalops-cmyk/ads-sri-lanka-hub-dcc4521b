@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Event Branding Merchandise Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from event branding merchandise sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Event Branding & Merchandise Sri Lanka | Full Event Kits";
+const DESC = "Event branding & merchandise in Sri Lanka — backdrops, signage, lanyards, T-shirts & gift packs for corporate events. Call 0771437707.";
 
 export const Route = createFileRoute("/event-branding-merchandise-sri-lanka")({
   head: () => ({

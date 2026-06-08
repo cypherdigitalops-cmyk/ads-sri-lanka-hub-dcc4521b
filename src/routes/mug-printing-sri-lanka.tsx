@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Mug Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from mug printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Mug Printing Sri Lanka | Custom Photo & Logo Mugs from Rs 350";
+const DESC = "Mug printing in Sri Lanka from Rs 350. Ceramic, magic & travel mugs with sublimation print, dishwasher safe. Min 12 units. Call 0771437707.";
 
 export const Route = createFileRoute("/mug-printing-sri-lanka")({
   head: () => ({

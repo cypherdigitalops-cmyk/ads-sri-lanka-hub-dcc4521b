@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "USB Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from usb printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "USB Printing Sri Lanka | Branded USB Drives from Rs 650";
+const DESC = "USB printing in Sri Lanka from Rs 650. 8GB–64GB branded USB drives with custom shapes, UV & laser engraving. Call 0771437707.";
 
 export const Route = createFileRoute("/usb-printing-sri-lanka")({
   head: () => ({

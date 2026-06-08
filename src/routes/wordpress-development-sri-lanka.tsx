@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Top-Rated Wordpress Development Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for wordpress development sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
+const TITLE = "WordPress Development Sri Lanka | Custom WP Sites from Rs 65,000";
+const DESC = "WordPress development in Sri Lanka from Rs 65,000. Custom themes, WooCommerce, plugins & ongoing maintenance. Call 0771437707.";
 
 export const Route = createFileRoute("/wordpress-development-sri-lanka")({
   head: () => ({

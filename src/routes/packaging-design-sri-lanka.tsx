@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Packaging Design Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from packaging design sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Packaging Design Sri Lanka | Product Box & Label Design";
+const DESC = "Packaging design in Sri Lanka — product boxes, labels, pouches & dielines with print-ready files & mockups. Call 0771437707.";
 
 export const Route = createFileRoute("/packaging-design-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Top-Rated Mobile Billboard Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for mobile billboard sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
+const TITLE = "Mobile Billboard Sri Lanka | Truck & Van Advertising";
+const DESC = "Mobile billboard advertising in Sri Lanka — branded trucks & vans for roadshow campaigns across Colombo & outstation routes. Call 0771437707.";
 
 export const Route = createFileRoute("/mobile-billboard-sri-lanka")({
   head: () => ({

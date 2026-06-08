@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Corporate Gift Hampers Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from corporate gift hampers sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Corporate Gift Hampers Sri Lanka | Festive & Year-End Hampers";
+const DESC = "Corporate gift hampers in Sri Lanka — festive, Avurudu & year-end hampers with custom branding & islandwide delivery. From Rs 2,500. Call 0771437707.";
 
 export const Route = createFileRoute("/corporate-gift-hampers-sri-lanka")({
   head: () => ({

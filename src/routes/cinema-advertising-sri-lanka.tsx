@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Top-Rated Cinema Advertising Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for cinema advertising sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
+const TITLE = "Cinema Advertising Sri Lanka | Scope, PVR & Savoy Ad Slots";
+const DESC = "Cinema advertising in Sri Lanka — on-screen ad slots at Scope, PVR, Savoy & Liberty cinemas. Production, placement & reporting. Call 0771437707.";
 
 export const Route = createFileRoute("/cinema-advertising-sri-lanka")({
   head: () => ({

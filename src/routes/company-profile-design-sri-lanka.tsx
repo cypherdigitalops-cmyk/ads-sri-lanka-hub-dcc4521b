@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
-const TITLE = "Top-Rated Company Profile Design Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for company profile design sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
+const TITLE = "Company Profile Design Sri Lanka | Corporate Profile Booklets";
+const DESC = "Company profile design in Sri Lanka — bilingual profile booklets, PDF & print-ready files with copywriting & photography. From Rs 25,000. Call 0771437707.";
 
 export const Route = createFileRoute("/company-profile-design-sri-lanka")({
   head: () => ({

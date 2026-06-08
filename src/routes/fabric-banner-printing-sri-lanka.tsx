@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Fabric Banner Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Need fabric banner printing sri lanka that lasts? We use weather-rated inks, premium substrates and fast turnaround across Colombo and the island.";
+const TITLE = "Fabric Banner Printing Sri Lanka | Dye-Sub Fabric from Rs 180/sqft";
+const DESC = "Fabric banner printing in Sri Lanka from Rs 180/sqft. Dye-sublimation polyester, washable & reusable for events & exhibitions. Call 0771437707.";
 
 export const Route = createFileRoute("/fabric-banner-printing-sri-lanka")({
   head: () => ({

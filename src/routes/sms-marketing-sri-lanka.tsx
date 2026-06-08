@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "SMS Marketing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from sms marketing sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "SMS Marketing Sri Lanka | Bulk SMS from Rs 0.80 per SMS";
+const DESC = "SMS marketing in Sri Lanka from Rs 0.80 per SMS. Bulk SMS, sender-ID setup, campaign scheduling & delivery reports. Call 0771437707.";
 
 export const Route = createFileRoute("/sms-marketing-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Launch Event Gifts Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from launch event gifts sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Launch Event Gifts Sri Lanka | Product Launch Giveaways";
+const DESC = "Launch event gifts in Sri Lanka — branded gift packs, premium giveaways & media kits for product & brand launches. Call 0771437707.";
 
 export const Route = createFileRoute("/launch-event-gifts-sri-lanka")({
   head: () => ({

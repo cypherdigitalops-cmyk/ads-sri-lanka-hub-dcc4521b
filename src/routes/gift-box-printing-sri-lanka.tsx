@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Gift Box Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from gift box printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Gift Box Printing Sri Lanka | Custom Branded Boxes from Rs 120";
+const DESC = "Gift box printing in Sri Lanka from Rs 120 per box. Rigid, foldable & magnetic-close boxes with logo print & lamination. Call 0771437707.";
 
 export const Route = createFileRoute("/gift-box-printing-sri-lanka")({
   head: () => ({

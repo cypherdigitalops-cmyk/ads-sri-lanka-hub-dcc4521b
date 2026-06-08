@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Booklet Printing Sri Lanka Services in Sri Lanka — Free Quote";
-const DESC = "Get measurable results from booklet printing sri lanka in Sri Lanka. Strategy, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Booklet Printing Sri Lanka | A4 & A5 Booklets from Rs 35 per Copy";
+const DESC = "Booklet printing in Sri Lanka from Rs 35 per copy. Saddle-stitch & perfect bound, A4/A5, 8–200 pages, gloss or matt. Min 100 copies. Call 0771437707.";
 
 export const Route = createFileRoute("/booklet-printing-sri-lanka")({
   head: () => ({

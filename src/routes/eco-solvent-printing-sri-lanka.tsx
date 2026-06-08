@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Eco Solvent Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Hire trusted specialists for eco solvent printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable installation.";
+const TITLE = "Eco Solvent Printing Sri Lanka | Outdoor-Grade Wide Format";
+const DESC = "Eco solvent printing in Sri Lanka — outdoor-grade banners, vehicle graphics & signage with UV-stable, low-odour inks. Call 0771437707.";
 
 export const Route = createFileRoute("/eco-solvent-printing-sri-lanka")({
   head: () => ({

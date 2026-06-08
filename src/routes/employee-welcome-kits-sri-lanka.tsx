@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Employee Welcome Kits Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from employee welcome kits sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Employee Welcome Kits Sri Lanka | New Hire Onboarding Gifts";
+const DESC = "Employee welcome kits in Sri Lanka — branded onboarding packs with notebooks, drinkware, apparel & tech accessories. Call 0771437707.";
 
 export const Route = createFileRoute("/employee-welcome-kits-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Dye Sublimation Printing Sri Lanka in Sri Lanka";
-const DESC = "Sri Lanka's full-service dye sublimation printing sri lanka — premium materials, sharp print, on-time delivery. Free quote and site visit.";
+const TITLE = "Dye Sublimation Printing Sri Lanka | Fabric & Apparel Print";
+const DESC = "Dye sublimation printing in Sri Lanka — fabric banners, sportswear, flags & tabletop graphics with full-colour photo-quality print. Call 0771437707.";
 
 export const Route = createFileRoute("/dye-sublimation-printing-sri-lanka")({
   head: () => ({

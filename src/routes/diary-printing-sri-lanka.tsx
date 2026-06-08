@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Diary Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from diary printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Diary Printing Sri Lanka | 2026 Corporate Diaries from Rs 450";
+const DESC = "Diary printing in Sri Lanka — A4/A5 corporate diaries from Rs 450. PU leather, hardback & soft-cover with logo debossing. Call 0771437707.";
 
 export const Route = createFileRoute("/diary-printing-sri-lanka")({
   head: () => ({

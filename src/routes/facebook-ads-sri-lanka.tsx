@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Facebook Ads Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from facebook ads sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Facebook Ads Sri Lanka | Meta Ads Management from Rs 25,000/month";
+const DESC = "Facebook & Instagram ads management in Sri Lanka from Rs 25,000/month. Strategy, creative, targeting & reporting. Call 0771437707.";
 
 export const Route = createFileRoute("/facebook-ads-sri-lanka")({
   head: () => ({

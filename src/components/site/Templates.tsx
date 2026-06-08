@@ -594,7 +594,17 @@ export function CategoryHubTemplate({
         />
       </div>
       <RelatedCategories categorySlug={category.slug} />
-      <FaqList items={getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs} />
+      <FaqList
+        items={(() => {
+          const base = getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs;
+          if (!isPrinting) return base;
+          const merged = [...base];
+          for (const f of PRINTING_HUB_EXTRA_FAQS) {
+            if (!merged.some((b) => b.q.toLowerCase() === f.q.toLowerCase())) merged.push(f);
+          }
+          return merged;
+        })()}
+      />
       {category.slug !== "printing-services-sri-lanka" ? (
         <section className="mx-auto max-w-7xl px-4 pb-10">
           <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">

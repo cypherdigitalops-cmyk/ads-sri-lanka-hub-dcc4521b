@@ -616,6 +616,7 @@ export function CategoryHubTemplate({
         </section>
       ) : null}
       {!isPrinting ? <InlineInquiryForm service={category.title} /> : null}
+      <HubConversionBadge slug={category.slug} />
     </>
   );
 }

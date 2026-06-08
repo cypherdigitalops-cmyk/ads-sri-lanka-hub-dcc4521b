@@ -25,6 +25,7 @@ import { EMBOSSED_PRINTING_EXTRA, EMBOSSED_PRINTING_EXTRA_FAQS } from "@/data/em
 import { LED_SCREEN_RENTAL_EXTRA, LED_SCREEN_RENTAL_EXTRA_FAQS } from "@/data/led-screen-rental-extra-content";
 import { CORPORATE_GIFTING_EXTRA, CORPORATE_GIFTING_EXTRA_FAQS } from "@/data/corporate-gifting-extra-content";
 import { PRINTING_HUB_EXTRA, PRINTING_HUB_EXTRA_FAQS } from "@/data/printing-services-hub-extra-content";
+import { HubConversionBadge } from "@/components/site/HubConversionBadge";
 
 /**
  * Linkify variants of the brand keyword to the homepage.

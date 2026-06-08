@@ -1,8 +1,10 @@
 // Long-form content for /pen-printing-sri-lanka page.
 import type { Block, FAQ } from "./content-engine";
 
-export const PEN_PRINTING_EXTRA: Block[] = [
-  ] = [
+export const PEN_PRINTING_EXTRA: Block[
+  
+
+  
 
   // Section 2: Printing methods
   { type: "h2", text: "Pen Printing & Branding Methods — Which Technique for Which Pen" },
@@ -22,6 +24,8 @@ export const PEN_PRINTING_EXTRA: Block[] = [
     ],
   },
   { type: "p", text: "Most important rule: Laser engraving is only available on metal and bamboo pens — it cannot be applied to standard plastic. If your brand requires permanent marking, budget accordingly for a metal pen body. Pad printing on plastic produces excellent results but is not permanent on premium executive gifts that are expected to last years." },
+
+  
 
   // Section 1: Pen Types
   { type: "h2", text: "Branded Pen Types — Complete Guide to Every Option in Sri Lanka" },
@@ -83,72 +87,8 @@ export const PEN_PRINTING_EXTRA: Block[] = [
     ],
   },
 
-  // Section 3: Industry
-  { type: "h2", text: "Branded Pens by Industry — What Sri Lankan Organisations Order Most" },
-  {
-    type: "table",
-    head: ["Industry / Organisation", "Most Common Use", "Recommended Pen Grade", "Recommended Method", "Peak Ordering Season"],
-    rows: [
-      ["Banks & Financial Institutions", "Counter pens, client gifts, branch opening giveaways, AGM delegate packs", "Metal ballpoint (counter), premium rollerball (executive gift)", "Laser engraving for executive; pad print for counter", "New Year (Jan), AGM season (May–Aug)"],
-      ["Insurance Companies", "Agent branding, customer giveaways, claim processing counter pens", "Mid-range plastic or metal grip pen", "Pad print — 2 colours (company name + hotline)", "Year-round — monthly agent kit replenishment"],
-      ["Hotels & Resorts", "In-room amenity pens, front desk pens, conference stationery", "Slim metal ballpoint or premium plastic", "Laser engraving or pad print — hotel name and logo", "Peak tourist season (Dec–Jan, Jul–Aug)"],
-      ["Pharmaceutical Companies", "Doctor detailing pens, pharmacy counter pens, representative giveaways", "Good quality plastic with comfortable grip — doctor comfort matters", "Pad print — brand name, product name, hotline", "Year-round — quarterly rep distribution cycles"],
-      ["Real Estate & Property", "Show flat stationery, contract signing pens, client gifts", "Premium metal ballpoint or executive set", "Laser engraving — project name, company brand", "Project launch periods"],
-      ["Educational Institutions", "Student orientation packs, staff gifts, open day giveaways, prize-giving", "Mid-range plastic or gel pen", "Pad print — institution name, logo, website", "Academic year start (Jan, Sep)"],
-      ["Law Firms & Professional Services", "Client desk pens, document signing, new client welcome packs", "Premium metal ballpoint or rollerball", "Laser engraving — firm name only (understated)", "Year-round"],
-      ["FMCG & Retail", "Trade partner giveaways, dealer incentives, mass consumer promotions", "Budget plastic — high volume", "Pad print — product name, brand logo, tagline", "Avurudu (Apr), Christmas (Dec), product launches"],
-      ["Healthcare & Hospitals", "Patient appointment pens, staff stationery, pharmacy counter", "Standard plastic — hygienic, easily replaceable", "Pad print — hospital name, department, hotline", "Year-round"],
-      ["Corporates & Multinationals", "New employee welcome kits, AGM delegate packs, conference stationery", "Metal ballpoint or premium stylus pen", "Laser engraving or UV print for full-colour logo", "New Year (Jan), AGM season, corporate events year-round"],
-      ["NGOs & Government", "Awareness campaigns, training programme stationery, community outreach", "Budget to mid-range plastic", "Pad print — organisation name, campaign message", "Programme launch dates"],
-      ["Events & Exhibitions", "Delegate packs, booth giveaways, sponsor branding", "Budget plastic for mass; mid-range for conference delegates", "Pad print — event name, sponsor logo, website", "BMICH exhibition season, conference calendar"],
-    ],
-  },
+  
 
-  // Section 5: Packaging
-  { type: "h2", text: "Pen Packaging & Presentation Options in Sri Lanka" },
-  { type: "p", text: "Packaging is the first thing a recipient sees — and for pens given as corporate gifts, the packaging communicates as much as the pen itself. Here is every packaging option available for branded pens in Sri Lanka." },
-  {
-    type: "table",
-    head: ["Packaging Type", "Best For", "Customisation Options", "Impression Created"],
-    rows: [
-      ["Polybag (single pen)", "Budget mass giveaways, trade show distribution, large-volume promotional pens", "Printed header card with logo and brand", "Functional — no premium perception"],
-      ["Individual Cardboard Sleeve", "Mid-range promotional pens, conference delegate inserts", "Full-colour print on sleeve — logo, tagline, contact", "Professional — branded presentation"],
-      ["Single Pen Gift Box", "Premium metal or executive pens — client gifts, awards", "Branded lid print, deboss or foil stamp on box, tissue insert", "Premium — gift-ready presentation"],
-      ["Two-Pen Set Box", "Executive sets — ballpoint + rollerball pairs", "Branded box with custom insert, ribbon, tissue", "Prestige — high perceived value"],
-      ["Pen + Notebook Set Box", "Conference gifts, new employee welcome kits, client appreciation sets", "Branded box, both pen and notebook branded, ribbon pull", "Premium corporate gift set — high utility"],
-      ["Pen Pouch / Sleeve", "Leather or velvet pouch for premium single pens", "Embossed or foil logo on pouch", "Luxury — jewellery-like presentation"],
-      ["Bulk Retail Box (bulk packing)", "High-volume orders — pens shipped in branded bulk box for internal distribution", "Branded master carton, pen count per box", "Functional — for internal distribution management"],
-    ],
-  },
-  { type: "p", text: "Most effective combination for corporate gifting in Sri Lanka: Premium metal pen with laser-engraved logo + individual gift box with soft-touch lamination and debossed brand name on the lid. This combination produces a gift that looks and feels premium without requiring the very high cost of a full executive set." },
-
-  // Section 6: Order steps
-  { type: "h2", text: "How to Order Branded Pens in Sri Lanka — Step by Step" },
-  {
-    type: "ol",
-    items: [
-      "Select your pen type and grade. Use the pen types table above to identify the right material, mechanism and function for your recipient and occasion. If unsure, share your budget per pen and the occasion via WhatsApp and we will recommend the best option.",
-      "Confirm quantity. Volume pricing applies above certain quantities — the per-unit cost decreases significantly at higher quantities. For annual stationery needs, ordering a full year's supply in one batch is almost always more economical than multiple small orders.",
-      "Choose branding method. Pad print or screen print for plastic pens. Laser engraving for metal pens. UV print for full-colour logo reproduction. Specify the number of colours in your logo if using pad or screen print.",
-      "Send your artwork. Supply your logo in the correct format for your chosen branding method. If you only have a JPG or PNG, send it — our pre-press team will advise and redraw to vector if required (design fee applies).",
-      "Approve digital proof. We supply a digital mockup showing your logo at actual size on the chosen pen barrel before production. Review logo size, colour and placement carefully.",
-      "Production and delivery. Plastic pens with pad print: 5 to 7 working days. Metal pens with laser engraving: 7 to 10 working days. Executive sets with custom packaging: 10 to 14 working days. Islandwide delivery after production — Colombo next day, outstation 1 to 3 days.",
-    ],
-  },
-  { type: "h3", text: "Lead Time Summary" },
-  {
-    type: "table",
-    head: ["Pen Type & Method", "Standard Lead Time", "Rush Available?"],
-    rows: [
-      ["Plastic pen — pad print (under 1,000 pcs)", "5 – 7 working days", "Yes — 3 days for simple 1-colour jobs"],
-      ["Plastic pen — pad print (1,000 – 5,000 pcs)", "7 – 10 working days", "Limited"],
-      ["Metal pen — laser engraving", "7 – 10 working days", "Yes — 5 days for small quantities"],
-      ["Rollerball / fountain pen — engraving", "10 – 14 working days", "Limited"],
-      ["Executive set with custom gift box", "10 – 14 working days", "Limited — box production adds time"],
-      ["Custom barrel colour (Pantone matched body)", "21 – 28 working days", "No — factory production lead time fixed"],
-    ],
-  },
-  { type: "p", text: "For seasonal gifting (Avurudu, Christmas, New Year): Order at least 4 weeks before your intended distribution date. Production facilities across Sri Lanka run at peak capacity in March and November–December." },
 ];
 
 export const PEN_PRINTING_EXTRA_FAQS: FAQ[] = [

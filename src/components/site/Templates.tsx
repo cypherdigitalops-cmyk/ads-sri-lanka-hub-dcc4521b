@@ -646,6 +646,7 @@ export function CategoryHubTemplate({
           return merged;
         })()}
       />
+      <TodayCrossLinks currentSlug={category.slug} />
       {category.slug !== "printing-services-sri-lanka" ? (
         <section className="mx-auto max-w-7xl px-4 pb-10">
           <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">

@@ -2,6 +2,27 @@
 import type { Block, FAQ } from "./content-engine";
 
 export const PEN_PRINTING_EXTRA: Block[] = [
+  ] = [
+
+  // Section 2: Printing methods
+  { type: "h2", text: "Pen Printing & Branding Methods — Which Technique for Which Pen" },
+  { type: "p", text: "The branding method determines how your logo looks, how permanent it is, and what pen types it can be applied to. Here is every method available for branded pens in Sri Lanka, with clear guidance on when to use each one." },
+  {
+    type: "table",
+    head: ["Method", "How It Works", "Pen Types", "Colour Capability", "Durability", "Print Area", "Best For"],
+    rows: [
+      ["Pad Printing", "Ink transferred from etched plate via silicone pad onto pen barrel — the standard method for curved surfaces", "Plastic, rubber-grip, stylus", "1 to 4 spot colours (Pantone)", "Good — resists normal handling", "Pen barrel — typically 30 to 50mm × 8 to 12mm", "Mass promotional pens, plastic pens in any colour, multi-colour logos on economy runs"],
+      ["Screen Printing", "Ink pushed through mesh screen onto flat or slightly curved surface", "Plastic", "1 to 4 spot colours", "Good", "Larger flat barrel area", "High-volume runs, large barrel pens with maximum print area"],
+      ["Laser Engraving", "Laser removes surface material to reveal metal or lighter layer below — permanent marking", "Metal (aluminium, steel, brass), bamboo, some plastics", "Single tone — the natural metal or material colour", "Permanent — cannot fade, scratch or peel", "Pen barrel — typically 30 to 60mm × 6 to 10mm", "Premium corporate gifts, executive pens, gifts that last — the gold standard for metal pens"],
+      ["UV Printing (Full Colour)", "UV-cured inkjet printed directly onto pen barrel — full photographic colour reproduction", "Metal, plastic, bamboo", "Full CMYK — photographs, gradients, complex logos", "Very good — UV-cured ink is scratch-resistant", "Full barrel wrap — 360° print available on some pens", "Complex full-colour logos, photographic designs, premium brand-accurate colour reproduction"],
+      ["Digital Transfer Print", "Full-colour design printed on transfer film and heat-applied to barrel", "Metal, plastic", "Full colour", "Good — moderate scratch resistance", "Pen barrel", "Short-run full-colour promotional pens, small quantity personalised orders"],
+      ["Hot Foil Stamping", "Metallic foil pressed onto pen surface with heated die", "Plastic, some metal", "Metallic — gold, silver, copper, holographic", "Good indoors", "Small logo area", "Premium-looking promotional pens where metallic finish elevates perceived value on a plastic pen"],
+      ["Debossing / Embossing", "Design pressed into or raised from pen barrel material", "Soft-touch plastic, rubber grip pens", "No colour — tactile only", "Permanent", "Small logo on grip area", "Subtle premium touch on soft-grip pens — understated luxury"],
+      ["Barrel Colour Customisation", "Pen barrel produced in a custom Pantone colour matching brand guidelines", "Plastic (high MOQ)", "Single solid Pantone barrel colour", "N/A — colour of barrel itself", "Full barrel", "Large corporate orders where brand colour accuracy on the pen body itself is required — typically 5,000+ minimum"],
+    ],
+  },
+  { type: "p", text: "Most important rule: Laser engraving is only available on metal and bamboo pens — it cannot be applied to standard plastic. If your brand requires permanent marking, budget accordingly for a metal pen body. Pad printing on plastic produces excellent results but is not permanent on premium executive gifts that are expected to last years." },
+
   // Section 1: Pen Types
   { type: "h2", text: "Branded Pen Types — Complete Guide to Every Option in Sri Lanka" },
   { type: "p", text: "Pen printing in Sri Lanka covers a wide spectrum of pen types — from budget plastic pens for mass event giveaways to premium metal executive pens for board-level gifting. Choosing the right pen for the occasion is the most important decision before ordering. The wrong pen grade for the recipient communicates the wrong brand message." },
@@ -23,46 +44,6 @@ export const PEN_PRINTING_EXTRA: Block[] = [
     ],
   },
   { type: "p", text: "Choosing the right grade: Match pen quality to recipient relationship. Budget plastic pens given to senior executives communicate carelessness rather than brand generosity. Premium engraved metal pens given away at mass public events disappear without creating any relationship value. The pen grade should reflect the value you place on the specific relationship." },
-
-  // Section 2: Printing methods
-  { type: "h2", text: "Pen Printing & Branding Methods — Which Technique for Which Pen" },
-  { type: "p", text: "The branding method determines how your logo looks, how permanent it is, and what pen types it can be applied to. Here is every method available for branded pens in Sri Lanka, with clear guidance on when to use each one." },
-  {
-    type: "table",
-    head: ["Method", "How It Works", "Pen Types", "Colour Capability", "Durability", "Print Area", "Best For"],
-    rows: [
-      ["Pad Printing", "Ink transferred from etched plate via silicone pad onto pen barrel — the standard method for curved surfaces", "Plastic, rubber-grip, stylus", "1 to 4 spot colours (Pantone)", "Good — resists normal handling", "Pen barrel — typically 30 to 50mm × 8 to 12mm", "Mass promotional pens, plastic pens in any colour, multi-colour logos on economy runs"],
-      ["Screen Printing", "Ink pushed through mesh screen onto flat or slightly curved surface", "Plastic", "1 to 4 spot colours", "Good", "Larger flat barrel area", "High-volume runs, large barrel pens with maximum print area"],
-      ["Laser Engraving", "Laser removes surface material to reveal metal or lighter layer below — permanent marking", "Metal (aluminium, steel, brass), bamboo, some plastics", "Single tone — the natural metal or material colour", "Permanent — cannot fade, scratch or peel", "Pen barrel — typically 30 to 60mm × 6 to 10mm", "Premium corporate gifts, executive pens, gifts that last — the gold standard for metal pens"],
-      ["UV Printing (Full Colour)", "UV-cured inkjet printed directly onto pen barrel — full photographic colour reproduction", "Metal, plastic, bamboo", "Full CMYK — photographs, gradients, complex logos", "Very good — UV-cured ink is scratch-resistant", "Full barrel wrap — 360° print available on some pens", "Complex full-colour logos, photographic designs, premium brand-accurate colour reproduction"],
-      ["Digital Transfer Print", "Full-colour design printed on transfer film and heat-applied to barrel", "Metal, plastic", "Full colour", "Good — moderate scratch resistance", "Pen barrel", "Short-run full-colour promotional pens, small quantity personalised orders"],
-      ["Hot Foil Stamping", "Metallic foil pressed onto pen surface with heated die", "Plastic, some metal", "Metallic — gold, silver, copper, holographic", "Good indoors", "Small logo area", "Premium-looking promotional pens where metallic finish elevates perceived value on a plastic pen"],
-      ["Debossing / Embossing", "Design pressed into or raised from pen barrel material", "Soft-touch plastic, rubber grip pens", "No colour — tactile only", "Permanent", "Small logo on grip area", "Subtle premium touch on soft-grip pens — understated luxury"],
-      ["Barrel Colour Customisation", "Pen barrel produced in a custom Pantone colour matching brand guidelines", "Plastic (high MOQ)", "Single solid Pantone barrel colour", "N/A — colour of barrel itself", "Full barrel", "Large corporate orders where brand colour accuracy on the pen body itself is required — typically 5,000+ minimum"],
-    ],
-  },
-  { type: "p", text: "Most important rule: Laser engraving is only available on metal and bamboo pens — it cannot be applied to standard plastic. If your brand requires permanent marking, budget accordingly for a metal pen body. Pad printing on plastic produces excellent results but is not permanent on premium executive gifts that are expected to last years." },
-
-  // Section 3: Industry
-  { type: "h2", text: "Branded Pens by Industry — What Sri Lankan Organisations Order Most" },
-  {
-    type: "table",
-    head: ["Industry / Organisation", "Most Common Use", "Recommended Pen Grade", "Recommended Method", "Peak Ordering Season"],
-    rows: [
-      ["Banks & Financial Institutions", "Counter pens, client gifts, branch opening giveaways, AGM delegate packs", "Metal ballpoint (counter), premium rollerball (executive gift)", "Laser engraving for executive; pad print for counter", "New Year (Jan), AGM season (May–Aug)"],
-      ["Insurance Companies", "Agent branding, customer giveaways, claim processing counter pens", "Mid-range plastic or metal grip pen", "Pad print — 2 colours (company name + hotline)", "Year-round — monthly agent kit replenishment"],
-      ["Hotels & Resorts", "In-room amenity pens, front desk pens, conference stationery", "Slim metal ballpoint or premium plastic", "Laser engraving or pad print — hotel name and logo", "Peak tourist season (Dec–Jan, Jul–Aug)"],
-      ["Pharmaceutical Companies", "Doctor detailing pens, pharmacy counter pens, representative giveaways", "Good quality plastic with comfortable grip — doctor comfort matters", "Pad print — brand name, product name, hotline", "Year-round — quarterly rep distribution cycles"],
-      ["Real Estate & Property", "Show flat stationery, contract signing pens, client gifts", "Premium metal ballpoint or executive set", "Laser engraving — project name, company brand", "Project launch periods"],
-      ["Educational Institutions", "Student orientation packs, staff gifts, open day giveaways, prize-giving", "Mid-range plastic or gel pen", "Pad print — institution name, logo, website", "Academic year start (Jan, Sep)"],
-      ["Law Firms & Professional Services", "Client desk pens, document signing, new client welcome packs", "Premium metal ballpoint or rollerball", "Laser engraving — firm name only (understated)", "Year-round"],
-      ["FMCG & Retail", "Trade partner giveaways, dealer incentives, mass consumer promotions", "Budget plastic — high volume", "Pad print — product name, brand logo, tagline", "Avurudu (Apr), Christmas (Dec), product launches"],
-      ["Healthcare & Hospitals", "Patient appointment pens, staff stationery, pharmacy counter", "Standard plastic — hygienic, easily replaceable", "Pad print — hospital name, department, hotline", "Year-round"],
-      ["Corporates & Multinationals", "New employee welcome kits, AGM delegate packs, conference stationery", "Metal ballpoint or premium stylus pen", "Laser engraving or UV print for full-colour logo", "New Year (Jan), AGM season, corporate events year-round"],
-      ["NGOs & Government", "Awareness campaigns, training programme stationery, community outreach", "Budget to mid-range plastic", "Pad print — organisation name, campaign message", "Programme launch dates"],
-      ["Events & Exhibitions", "Delegate packs, booth giveaways, sponsor branding", "Budget plastic for mass; mid-range for conference delegates", "Pad print — event name, sponsor logo, website", "BMICH exhibition season, conference calendar"],
-    ],
-  },
 
   // Section 4: Artwork
   { type: "h2", text: "Artwork Guide for Pen Printing — File Requirements & Logo Sizing" },
@@ -99,6 +80,27 @@ export const PEN_PRINTING_EXTRA: Block[] = [
       "Use high-contrast colour combinations — dark logo on a light pen barrel, or white logo on a dark barrel. Yellow or pale colours on white pen bodies are invisible.",
       "For laser engraving, think about barrel colour. The engraved mark exposes the metal beneath the coating — the visual impact depends entirely on the contrast between the coating and the metal below.",
       "Request a digital proof before production. Always approve a digital mockup of your logo on the actual pen barrel at actual size before production begins.",
+    ],
+  },
+
+  // Section 3: Industry
+  { type: "h2", text: "Branded Pens by Industry — What Sri Lankan Organisations Order Most" },
+  {
+    type: "table",
+    head: ["Industry / Organisation", "Most Common Use", "Recommended Pen Grade", "Recommended Method", "Peak Ordering Season"],
+    rows: [
+      ["Banks & Financial Institutions", "Counter pens, client gifts, branch opening giveaways, AGM delegate packs", "Metal ballpoint (counter), premium rollerball (executive gift)", "Laser engraving for executive; pad print for counter", "New Year (Jan), AGM season (May–Aug)"],
+      ["Insurance Companies", "Agent branding, customer giveaways, claim processing counter pens", "Mid-range plastic or metal grip pen", "Pad print — 2 colours (company name + hotline)", "Year-round — monthly agent kit replenishment"],
+      ["Hotels & Resorts", "In-room amenity pens, front desk pens, conference stationery", "Slim metal ballpoint or premium plastic", "Laser engraving or pad print — hotel name and logo", "Peak tourist season (Dec–Jan, Jul–Aug)"],
+      ["Pharmaceutical Companies", "Doctor detailing pens, pharmacy counter pens, representative giveaways", "Good quality plastic with comfortable grip — doctor comfort matters", "Pad print — brand name, product name, hotline", "Year-round — quarterly rep distribution cycles"],
+      ["Real Estate & Property", "Show flat stationery, contract signing pens, client gifts", "Premium metal ballpoint or executive set", "Laser engraving — project name, company brand", "Project launch periods"],
+      ["Educational Institutions", "Student orientation packs, staff gifts, open day giveaways, prize-giving", "Mid-range plastic or gel pen", "Pad print — institution name, logo, website", "Academic year start (Jan, Sep)"],
+      ["Law Firms & Professional Services", "Client desk pens, document signing, new client welcome packs", "Premium metal ballpoint or rollerball", "Laser engraving — firm name only (understated)", "Year-round"],
+      ["FMCG & Retail", "Trade partner giveaways, dealer incentives, mass consumer promotions", "Budget plastic — high volume", "Pad print — product name, brand logo, tagline", "Avurudu (Apr), Christmas (Dec), product launches"],
+      ["Healthcare & Hospitals", "Patient appointment pens, staff stationery, pharmacy counter", "Standard plastic — hygienic, easily replaceable", "Pad print — hospital name, department, hotline", "Year-round"],
+      ["Corporates & Multinationals", "New employee welcome kits, AGM delegate packs, conference stationery", "Metal ballpoint or premium stylus pen", "Laser engraving or UV print for full-colour logo", "New Year (Jan), AGM season, corporate events year-round"],
+      ["NGOs & Government", "Awareness campaigns, training programme stationery, community outreach", "Budget to mid-range plastic", "Pad print — organisation name, campaign message", "Programme launch dates"],
+      ["Events & Exhibitions", "Delegate packs, booth giveaways, sponsor branding", "Budget plastic for mass; mid-range for conference delegates", "Pad print — event name, sponsor logo, website", "BMICH exhibition season, conference calendar"],
     ],
   },
 
@@ -147,22 +149,6 @@ export const PEN_PRINTING_EXTRA: Block[] = [
     ],
   },
   { type: "p", text: "For seasonal gifting (Avurudu, Christmas, New Year): Order at least 4 weeks before your intended distribution date. Production facilities across Sri Lanka run at peak capacity in March and November–December." },
-
-  // Section 7: Quality
-  { type: "h2", text: "Branded Pen Quality — What to Check Before Distributing" },
-  { type: "p", text: "Distributing pens with a poor writing experience or fading print creates a negative brand impression. Here is a simple quality checklist to run before distributing any branded pen order." },
-  {
-    type: "table",
-    head: ["Quality Check", "How to Test", "Pass Condition", "What Failure Means"],
-    rows: [
-      ["Writing performance", "Write a full page of text immediately after uncapping", "Smooth, consistent ink flow from first stroke with no skipping", "Poor ink quality — will frustrate recipients and associate bad experience with your brand"],
-      ["Print adhesion (pad print)", "Rub the printed area firmly with a thumbnail 10 times", "Logo should show no scratching or ink removal", "Poor ink adhesion — print will fade within weeks of normal handling"],
-      ["Print adhesion (laser engraving)", "Rub firmly with fingernail — attempt to scratch", "Engraved mark is permanent — no change", "If mark can be removed, it was pad printed not engraved — wrong method used"],
-      ["Colour accuracy", "Compare against your brand colour swatch or Pantone reference", "Logo colour within acceptable tolerance of Pantone specification", "Colour shift — especially problematic for single-brand corporate programmes"],
-      ["Clip and mechanism", "Click or twist mechanism 20 times — test clip by bending outward 5 times", "Smooth consistent action — no stiff points, no looseness", "Mechanism failure — pens that stop working quickly damage brand perception more than no gift"],
-      ["Packaging condition", "Inspect 10% of boxes for damage — check tissue, ribbon and box edges", "All boxes clean, undamaged, tissue neatly folded", "Damaged packaging on a premium gift communicates carelessness even if the pen is perfect"],
-    ],
-  },
 ];
 
 export const PEN_PRINTING_EXTRA_FAQS: FAQ[] = [

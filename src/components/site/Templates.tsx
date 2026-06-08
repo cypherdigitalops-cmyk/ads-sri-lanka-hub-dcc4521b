@@ -30,6 +30,7 @@ import { WRISTBAND_EXTRA, WRISTBAND_EXTRA_FAQS } from "@/data/wristband-extra-co
 import { PEN_PRINTING_EXTRA, PEN_PRINTING_EXTRA_FAQS } from "@/data/pen-printing-extra-content";
 import { BACKDROP_PRINTING_EXTRA, BACKDROP_PRINTING_EXTRA_FAQS } from "@/data/backdrop-printing-extra-content";
 import { MUG_PRINTING_EXTRA, MUG_PRINTING_EXTRA_FAQS } from "@/data/mug-printing-extra-content";
+import { TODAY_MODIFIED, getCrossLinksExcluding } from "@/data/today-cross-links";
 import { HubConversionBadge } from "@/components/site/HubConversionBadge";
 
 /**
@@ -246,6 +247,43 @@ function FaqList({ items }: { items: FAQ[] }) {
 }
 
 function RelatedCategories({ categorySlug }: { categorySlug: string }) {
+  return _RelatedCategoriesImpl({ categorySlug });
+}
+
+/**
+ * Keyword-rich internal anchor links pointing to other articles updated
+ * in the same content refresh. Each modified page renders this block and
+ * receives 12 inbound contextual links from the other modified pages.
+ */
+function TodayCrossLinks({ currentSlug }: { currentSlug: string }) {
+  const isModified = TODAY_MODIFIED.some((l) => l.slug === currentSlug);
+  if (!isModified) return null;
+  const links = getCrossLinksExcluding(currentSlug);
+  return (
+    <section className="mx-auto max-w-3xl px-4 py-10">
+      <h2 className="text-2xl font-bold sm:text-3xl">Recommended reading — related guides</h2>
+      <p className="mt-2 text-sm text-muted-foreground">
+        Explore related printing &amp; advertising services in Sri Lanka. Every guide is written for Sri Lankan buyers with materials, sizes, lead times and ordering steps.
+      </p>
+      <ul className="mt-5 space-y-3 text-sm">
+        {links.map((l) => (
+          <li key={l.slug} className="leading-relaxed">
+            <span className="text-muted-foreground">{l.context} </span>
+            <Link
+              to={`/${l.slug}` as never}
+              className="font-semibold text-primary underline-offset-2 hover:underline"
+            >
+              {l.anchor}
+            </Link>
+            <span className="text-muted-foreground">.</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function _RelatedCategoriesImpl({ categorySlug }: { categorySlug: string }) {
   const items = RELATED_CATEGORIES[categorySlug];
   if (!items || items.length === 0) return null;
   return (
@@ -608,6 +646,7 @@ export function CategoryHubTemplate({
           return merged;
         })()}
       />
+      <TodayCrossLinks currentSlug={category.slug} />
       {category.slug !== "printing-services-sri-lanka" ? (
         <section className="mx-auto max-w-7xl px-4 pb-10">
           <div className="rounded-xl border border-border bg-muted/40 p-5 text-sm">
@@ -812,6 +851,7 @@ export function ServicePageTemplate({
         </div>
       </section>
       <FaqList items={faqs} />
+      <TodayCrossLinks currentSlug={slug} />
       <MidContentWhatsAppCTA service={title} />
       <div className="mx-auto max-w-7xl px-4">
         <CTASection

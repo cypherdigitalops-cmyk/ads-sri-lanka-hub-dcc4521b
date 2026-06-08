@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "LED Sign Board Sri Lanka | Illuminated Shop Signs & Lettering";
-const DESC = "LED sign boards in Sri Lanka for shopfronts, offices & showrooms. Acrylic letters, lightbox & channel letter signs. From Rs 15,000. Islandwide. Call 0771437707.";
+const TITLE = "LED Sign Board Sri Lanka — Shop Signs from Rs 15,000";
+const DESC = "LED sign boards in Sri Lanka for shopfronts, offices & showrooms — acrylic letters, lightbox & channel letter signs from Rs 15,000. Islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/led-sign-board-sri-lanka")({
   head: () => ({

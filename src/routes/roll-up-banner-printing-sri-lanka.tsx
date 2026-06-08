@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Roll Up Banner Printing Sri Lanka | Pull-Up Stands from Rs 4,500";
-const DESC = "Roll up banner printing in Sri Lanka from Rs 4,500 including stand. 85×200cm standard size. Express 24hr service available. Islandwide delivery. Call 0771437707.";
+const TITLE = "Roll Up Banner Printing Sri Lanka — From Rs 4,500";
+const DESC = "Roll up banner printing in Sri Lanka from Rs 4,500 with stand. 85×200cm standard, 24-hour express, islandwide delivery. Call 0771437707 for a free quote.";
 
 export const Route = createFileRoute("/roll-up-banner-printing-sri-lanka")({
   head: () => ({

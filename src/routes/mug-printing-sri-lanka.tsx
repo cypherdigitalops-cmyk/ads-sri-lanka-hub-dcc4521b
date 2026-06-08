@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Mug Printing Sri Lanka — Custom Ceramic, Travel & Magic Mugs | Logo & Photo Printing";
-const DESC = "Custom mug printing in Sri Lanka — ceramic, magic, travel & enamel mugs with sublimation photo or logo print. From 12 units. Same-day Colombo. Islandwide. Call 0771437707.";
+const TITLE = "Mug Printing Sri Lanka — Custom Ceramic, Photo & Logo Mugs";
+const DESC = "Mug printing in Sri Lanka — ceramic, magic, travel & enamel mugs with sublimation photo or logo print from 12 units. Same-day Colombo, islandwide. Call 0771437707.";
 
 export const Route = createFileRoute("/mug-printing-sri-lanka")({
   head: () => ({

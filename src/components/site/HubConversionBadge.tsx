@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import { getHubStats, type HubStats } from "@/lib/page-views.functions";
+import { supabase } from "@/integrations/supabase/client";
 import { BarChart3, MessageCircle, Mail, Eye } from "lucide-react";
 
 /**
@@ -10,11 +12,26 @@ import { BarChart3, MessageCircle, Mail, Eye } from "lucide-react";
 export function HubConversionBadge({ slug }: { slug: string }) {
   const fetchStats = useServerFn(getHubStats);
   const path = `/${slug}`;
+  const [hasSession, setHasSession] = useState(false);
+  useEffect(() => {
+    let active = true;
+    supabase.auth.getSession().then(({ data }) => {
+      if (active) setHasSession(!!data.session);
+    });
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => {
+      setHasSession(!!session);
+    });
+    return () => {
+      active = false;
+      sub.subscription.unsubscribe();
+    };
+  }, []);
   const { data, isError } = useQuery<HubStats>({
     queryKey: ["hub-stats", path],
     queryFn: () => fetchStats({ data: { page_path: path, days: 30 } }),
     retry: false,
     staleTime: 60_000,
+    enabled: hasSession,
   });
 
   if (isError || !data) return null;

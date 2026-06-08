@@ -24,6 +24,7 @@ import { WINDOW_STICKER_EXTRA, WINDOW_STICKER_EXTRA_FAQS } from "@/data/window-s
 import { EMBOSSED_PRINTING_EXTRA, EMBOSSED_PRINTING_EXTRA_FAQS } from "@/data/embossed-printing-extra-content";
 import { LED_SCREEN_RENTAL_EXTRA, LED_SCREEN_RENTAL_EXTRA_FAQS } from "@/data/led-screen-rental-extra-content";
 import { CORPORATE_GIFTING_EXTRA, CORPORATE_GIFTING_EXTRA_FAQS } from "@/data/corporate-gifting-extra-content";
+import { PRINTING_HUB_EXTRA, PRINTING_HUB_EXTRA_FAQS } from "@/data/printing-services-hub-extra-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.

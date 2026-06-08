@@ -524,8 +524,7 @@ export function CategoryHubTemplate({
         intro={h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
-      {/* PRINTING HUB: conversion-first ordering — strong CTA immediately under hero, then browse, then inquiry form, then content */}
-      {isPrinting ? <PrintingPowerCTA service={category.title} /> : null}
+      {/* PRINTING HUB: browse first, then CTA further down */}
       {isPrinting ? <PrintingTopCategoryCards /> : null}
       {category.slug === "event-management-sri-lanka" ? <LedEventTypesSection /> : null}
       <section className="mx-auto max-w-7xl px-4 py-14">

@@ -504,6 +504,7 @@ CATEGORIES.push({
     { slug: "launch-event-gifts-sri-lanka", keyword: "launch event gifts sri lanka" },
     { slug: "employee-welcome-kits-sri-lanka", keyword: "employee welcome kits sri lanka" },
     { slug: "client-appreciation-gifts-sri-lanka", keyword: "client appreciation gifts sri lanka" },
+    { slug: "wristband-sri-lanka", keyword: "wristband sri lanka" },
   ],
   blog: [],
 });

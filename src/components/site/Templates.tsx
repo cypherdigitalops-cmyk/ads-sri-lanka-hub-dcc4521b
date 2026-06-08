@@ -16,6 +16,7 @@ import {
 import { getPageFaqs } from "@/data/page-faqs";
 import { getPrintingServiceContent } from "@/data/printing-service-content";
 import { getServiceUniqueContent } from "@/data/service-unique-content";
+import { getPrintingH1Override } from "@/data/printing-h1-overrides";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -451,6 +452,7 @@ export function CategoryHubTemplate({
   const longForm = buildCategoryLongForm(category);
   const uniqueCat = getServiceUniqueContent(category.slug);
   const hasUnique = uniqueCat.length > 0;
+  const h1Override = getPrintingH1Override(category.slug);
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -483,8 +485,8 @@ export function CategoryHubTemplate({
       />
       <Hero
         kicker={`${category.title} Sri Lanka`}
-        h1={`${category.title} in Sri Lanka — ${category.short}`}
-        intro={category.intro}
+        h1={h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`}
+        intro={h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
       {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
@@ -592,6 +594,7 @@ export function ServicePageTemplate({
   const uniqueSvc = getServiceUniqueContent(slug);
   const uniquePrint = getPrintingServiceContent(slug);
   const hasUnique = uniqueSvc.length > 0 || uniquePrint.length > 0;
+  const h1Override = getPrintingH1Override(slug);
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -614,8 +617,8 @@ export function ServicePageTemplate({
       />
       <Hero
         kicker={`${category.title} • Sri Lanka`}
-        h1={`${title} — Get Found, Get Customers`}
-        intro={`Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
+        h1={h1Override?.h1 ?? `${title} — Get Found, Get Customers`}
+        intro={h1Override?.intro ?? `Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: category.title, to: `/${category.slug}` },

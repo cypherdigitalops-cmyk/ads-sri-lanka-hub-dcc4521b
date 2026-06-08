@@ -594,6 +594,7 @@ export function ServicePageTemplate({
   const uniqueSvc = getServiceUniqueContent(slug);
   const uniquePrint = getPrintingServiceContent(slug);
   const hasUnique = uniqueSvc.length > 0 || uniquePrint.length > 0;
+  const h1Override = getPrintingH1Override(slug);
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -616,8 +617,8 @@ export function ServicePageTemplate({
       />
       <Hero
         kicker={`${category.title} • Sri Lanka`}
-        h1={`${title} — Get Found, Get Customers`}
-        intro={`Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
+        h1={h1Override?.h1 ?? `${title} — Get Found, Get Customers`}
+        intro={h1Override?.intro ?? `Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: category.title, to: `/${category.slug}` },

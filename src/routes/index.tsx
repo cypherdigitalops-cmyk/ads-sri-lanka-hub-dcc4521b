@@ -14,8 +14,8 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka — Every Channel, Every Budget | Free Guidance";
-const TITLE_OG = "Advertising Sri Lanka — Every Channel, Every Budget | Free Guidance";
+const TITLE = "Advertising Sri Lanka — Every Channel, Every Budget";
+const TITLE_OG = "Advertising Sri Lanka — Every Channel, Every Budget";
 const DESC = "Advertising in Sri Lanka — the complete guide to every channel. Compare ATL, BTL, digital, outdoor, SEO and social media advertising. Free guidance for Sri Lankan businesses. Call 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {

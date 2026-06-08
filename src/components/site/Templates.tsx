@@ -245,7 +245,7 @@ function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro
           <Sparkles className="h-3.5 w-3.5" /> {kicker}
         </div>
         <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{h1}</h1>
-        <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg [&_a]:text-accent [&_a]:underline [&_a]:underline-offset-2">{applyLinks(intro)}</p>
+        <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{intro}</p>
         <div className="mt-7 flex flex-wrap items-center gap-3">
           <button
             type="button"

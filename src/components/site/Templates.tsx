@@ -191,6 +191,32 @@ function LongFormBlocks({ blocks }: { blocks: Block[] }) {
   );
 }
 
+/**
+ * Renders long-form printing content with a powerful WhatsApp CTA injected
+ * at roughly the midpoint (between H2 sections) so engaged readers get a
+ * second strong conversion prompt without disrupting reading flow.
+ */
+function PrintingExtraWithMidCTA({ blocks, service }: { blocks: Block[]; service: string }) {
+  const h2Indices: number[] = [];
+  blocks.forEach((b, i) => { if (b.type === "h2") h2Indices.push(i); });
+  const splitAt = h2Indices.length >= 2
+    ? h2Indices[Math.floor(h2Indices.length / 2)]
+    : Math.floor(blocks.length / 2);
+  const first = blocks.slice(0, splitAt);
+  const rest = blocks.slice(splitAt);
+  return (
+    <>
+      <section className="mx-auto max-w-3xl px-4 py-8">
+        <LongFormBlocks blocks={first} />
+      </section>
+      <PrintingPowerCTA service={service} />
+      <section className="mx-auto max-w-3xl px-4 py-8">
+        <LongFormBlocks blocks={rest} />
+      </section>
+    </>
+  );
+}
+
 function FaqList({ items }: { items: FAQ[] }) {
   if (!items.length) return null;
   return (

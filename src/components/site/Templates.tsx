@@ -27,6 +27,7 @@ import { CORPORATE_GIFTING_EXTRA, CORPORATE_GIFTING_EXTRA_FAQS } from "@/data/co
 import { PRINTING_HUB_EXTRA, PRINTING_HUB_EXTRA_FAQS } from "@/data/printing-services-hub-extra-content";
 import { ANNUAL_REPORT_PRINTING_EXTRA, ANNUAL_REPORT_PRINTING_EXTRA_FAQS } from "@/data/annual-report-printing-extra-content";
 import { WRISTBAND_EXTRA, WRISTBAND_EXTRA_FAQS } from "@/data/wristband-extra-content";
+import { PEN_PRINTING_EXTRA, PEN_PRINTING_EXTRA_FAQS } from "@/data/pen-printing-extra-content";
 import { HubConversionBadge } from "@/components/site/HubConversionBadge";
 
 /**
@@ -655,6 +656,7 @@ export function ServicePageTemplate({
     : slug === "led-screen-rental-sri-lanka" ? LED_SCREEN_RENTAL_EXTRA_FAQS
     : slug === "annual-report-printing-sri-lanka" ? ANNUAL_REPORT_PRINTING_EXTRA_FAQS
     : slug === "wristband-sri-lanka" ? WRISTBAND_EXTRA_FAQS
+    : slug === "pen-printing-sri-lanka" ? PEN_PRINTING_EXTRA_FAQS
     : [];
   const faqs = extraFaqsForSlug.length
     ? [...baseFaqs, ...extraFaqsForSlug.filter(f => !baseFaqs.some(b => b.q.toLowerCase() === f.q.toLowerCase()))]
@@ -729,6 +731,9 @@ export function ServicePageTemplate({
       ) : null}
       {slug === "wristband-sri-lanka" ? (
         <PrintingExtraWithMidCTA blocks={WRISTBAND_EXTRA} service={title} />
+      ) : null}
+      {slug === "pen-printing-sri-lanka" ? (
+        <PrintingExtraWithMidCTA blocks={PEN_PRINTING_EXTRA} service={title} />
       ) : null}
       {slug === "corporate-gifting-sri-lanka" ? (
         <section className="mx-auto max-w-3xl px-4 py-8">

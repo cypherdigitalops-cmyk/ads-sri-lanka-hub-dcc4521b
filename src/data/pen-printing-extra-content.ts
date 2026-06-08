@@ -2,7 +2,7 @@
 import type { Block, FAQ } from "./content-engine";
 
 export const PEN_PRINTING_EXTRA: Block[] = [
-  // Section 1: Pen Types
+  // 1. Pen Types — broad keyword surface, anchors the page topic
   { type: "h2", text: "Branded Pen Types — Complete Guide to Every Option in Sri Lanka" },
   { type: "p", text: "Pen printing in Sri Lanka covers a wide spectrum of pen types — from budget plastic pens for mass event giveaways to premium metal executive pens for board-level gifting. Choosing the right pen for the occasion is the most important decision before ordering. The wrong pen grade for the recipient communicates the wrong brand message." },
   {
@@ -24,26 +24,7 @@ export const PEN_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Choosing the right grade: Match pen quality to recipient relationship. Budget plastic pens given to senior executives communicate carelessness rather than brand generosity. Premium engraved metal pens given away at mass public events disappear without creating any relationship value. The pen grade should reflect the value you place on the specific relationship." },
 
-  // Section 2: Printing methods
-  { type: "h2", text: "Pen Printing & Branding Methods — Which Technique for Which Pen" },
-  { type: "p", text: "The branding method determines how your logo looks, how permanent it is, and what pen types it can be applied to. Here is every method available for branded pens in Sri Lanka, with clear guidance on when to use each one." },
-  {
-    type: "table",
-    head: ["Method", "How It Works", "Pen Types", "Colour Capability", "Durability", "Print Area", "Best For"],
-    rows: [
-      ["Pad Printing", "Ink transferred from etched plate via silicone pad onto pen barrel — the standard method for curved surfaces", "Plastic, rubber-grip, stylus", "1 to 4 spot colours (Pantone)", "Good — resists normal handling", "Pen barrel — typically 30 to 50mm × 8 to 12mm", "Mass promotional pens, plastic pens in any colour, multi-colour logos on economy runs"],
-      ["Screen Printing", "Ink pushed through mesh screen onto flat or slightly curved surface", "Plastic", "1 to 4 spot colours", "Good", "Larger flat barrel area", "High-volume runs, large barrel pens with maximum print area"],
-      ["Laser Engraving", "Laser removes surface material to reveal metal or lighter layer below — permanent marking", "Metal (aluminium, steel, brass), bamboo, some plastics", "Single tone — the natural metal or material colour", "Permanent — cannot fade, scratch or peel", "Pen barrel — typically 30 to 60mm × 6 to 10mm", "Premium corporate gifts, executive pens, gifts that last — the gold standard for metal pens"],
-      ["UV Printing (Full Colour)", "UV-cured inkjet printed directly onto pen barrel — full photographic colour reproduction", "Metal, plastic, bamboo", "Full CMYK — photographs, gradients, complex logos", "Very good — UV-cured ink is scratch-resistant", "Full barrel wrap — 360° print available on some pens", "Complex full-colour logos, photographic designs, premium brand-accurate colour reproduction"],
-      ["Digital Transfer Print", "Full-colour design printed on transfer film and heat-applied to barrel", "Metal, plastic", "Full colour", "Good — moderate scratch resistance", "Pen barrel", "Short-run full-colour promotional pens, small quantity personalised orders"],
-      ["Hot Foil Stamping", "Metallic foil pressed onto pen surface with heated die", "Plastic, some metal", "Metallic — gold, silver, copper, holographic", "Good indoors", "Small logo area", "Premium-looking promotional pens where metallic finish elevates perceived value on a plastic pen"],
-      ["Debossing / Embossing", "Design pressed into or raised from pen barrel material", "Soft-touch plastic, rubber grip pens", "No colour — tactile only", "Permanent", "Small logo on grip area", "Subtle premium touch on soft-grip pens — understated luxury"],
-      ["Barrel Colour Customisation", "Pen barrel produced in a custom Pantone colour matching brand guidelines", "Plastic (high MOQ)", "Single solid Pantone barrel colour", "N/A — colour of barrel itself", "Full barrel", "Large corporate orders where brand colour accuracy on the pen body itself is required — typically 5,000+ minimum"],
-    ],
-  },
-  { type: "p", text: "Most important rule: Laser engraving is only available on metal and bamboo pens — it cannot be applied to standard plastic. If your brand requires permanent marking, budget accordingly for a metal pen body. Pad printing on plastic produces excellent results but is not permanent on premium executive gifts that are expected to last years." },
-
-  // Section 3: Industry
+  // 2. By Industry — high-intent use cases, captures "best pen for bank/hotel/event" queries
   { type: "h2", text: "Branded Pens by Industry — What Sri Lankan Organisations Order Most" },
   {
     type: "table",
@@ -64,7 +45,44 @@ export const PEN_PRINTING_EXTRA: Block[] = [
     ],
   },
 
-  // Section 4: Artwork
+  // 3. Printing & Branding Methods — once user knows the pen, they pick the method
+  { type: "h2", text: "Pen Printing & Branding Methods — Which Technique for Which Pen" },
+  { type: "p", text: "The branding method determines how your logo looks, how permanent it is, and what pen types it can be applied to. Here is every method available for branded pens in Sri Lanka, with clear guidance on when to use each one." },
+  {
+    type: "table",
+    head: ["Method", "How It Works", "Pen Types", "Colour Capability", "Durability", "Print Area", "Best For"],
+    rows: [
+      ["Pad Printing", "Ink transferred from etched plate via silicone pad onto pen barrel — the standard method for curved surfaces", "Plastic, rubber-grip, stylus", "1 to 4 spot colours (Pantone)", "Good — resists normal handling", "Pen barrel — typically 30 to 50mm × 8 to 12mm", "Mass promotional pens, plastic pens in any colour, multi-colour logos on economy runs"],
+      ["Screen Printing", "Ink pushed through mesh screen onto flat or slightly curved surface", "Plastic", "1 to 4 spot colours", "Good", "Larger flat barrel area", "High-volume runs, large barrel pens with maximum print area"],
+      ["Laser Engraving", "Laser removes surface material to reveal metal or lighter layer below — permanent marking", "Metal (aluminium, steel, brass), bamboo, some plastics", "Single tone — the natural metal or material colour", "Permanent — cannot fade, scratch or peel", "Pen barrel — typically 30 to 60mm × 6 to 10mm", "Premium corporate gifts, executive pens, gifts that last — the gold standard for metal pens"],
+      ["UV Printing (Full Colour)", "UV-cured inkjet printed directly onto pen barrel — full photographic colour reproduction", "Metal, plastic, bamboo", "Full CMYK — photographs, gradients, complex logos", "Very good — UV-cured ink is scratch-resistant", "Full barrel wrap — 360° print available on some pens", "Complex full-colour logos, photographic designs, premium brand-accurate colour reproduction"],
+      ["Digital Transfer Print", "Full-colour design printed on transfer film and heat-applied to barrel", "Metal, plastic", "Full colour", "Good — moderate scratch resistance", "Pen barrel", "Short-run full-colour promotional pens, small quantity personalised orders"],
+      ["Hot Foil Stamping", "Metallic foil pressed onto pen surface with heated die", "Plastic, some metal", "Metallic — gold, silver, copper, holographic", "Good indoors", "Small logo area", "Premium-looking promotional pens where metallic finish elevates perceived value on a plastic pen"],
+      ["Debossing / Embossing", "Design pressed into or raised from pen barrel material", "Soft-touch plastic, rubber grip pens", "No colour — tactile only", "Permanent", "Small logo on grip area", "Subtle premium touch on soft-grip pens — understated luxury"],
+      ["Barrel Colour Customisation", "Pen barrel produced in a custom Pantone colour matching brand guidelines", "Plastic (high MOQ)", "Single solid Pantone barrel colour", "N/A — colour of barrel itself", "Full barrel", "Large corporate orders where brand colour accuracy on the pen body itself is required — typically 5,000+ minimum"],
+    ],
+  },
+  { type: "p", text: "Most important rule: Laser engraving is only available on metal and bamboo pens — it cannot be applied to standard plastic. If your brand requires permanent marking, budget accordingly for a metal pen body. Pad printing on plastic produces excellent results but is not permanent on premium executive gifts that are expected to last years." },
+
+  // 4. Packaging & Presentation — natural next decision after pen + method
+  { type: "h2", text: "Pen Packaging & Presentation Options in Sri Lanka" },
+  { type: "p", text: "Packaging is the first thing a recipient sees — and for pens given as corporate gifts, the packaging communicates as much as the pen itself. Here is every packaging option available for branded pens in Sri Lanka." },
+  {
+    type: "table",
+    head: ["Packaging Type", "Best For", "Customisation Options", "Impression Created"],
+    rows: [
+      ["Polybag (single pen)", "Budget mass giveaways, trade show distribution, large-volume promotional pens", "Printed header card with logo and brand", "Functional — no premium perception"],
+      ["Individual Cardboard Sleeve", "Mid-range promotional pens, conference delegate inserts", "Full-colour print on sleeve — logo, tagline, contact", "Professional — branded presentation"],
+      ["Single Pen Gift Box", "Premium metal or executive pens — client gifts, awards", "Branded lid print, deboss or foil stamp on box, tissue insert", "Premium — gift-ready presentation"],
+      ["Two-Pen Set Box", "Executive sets — ballpoint + rollerball pairs", "Branded box with custom insert, ribbon, tissue", "Prestige — high perceived value"],
+      ["Pen + Notebook Set Box", "Conference gifts, new employee welcome kits, client appreciation sets", "Branded box, both pen and notebook branded, ribbon pull", "Premium corporate gift set — high utility"],
+      ["Pen Pouch / Sleeve", "Leather or velvet pouch for premium single pens", "Embossed or foil logo on pouch", "Luxury — jewellery-like presentation"],
+      ["Bulk Retail Box (bulk packing)", "High-volume orders — pens shipped in branded bulk box for internal distribution", "Branded master carton, pen count per box", "Functional — for internal distribution management"],
+    ],
+  },
+  { type: "p", text: "Most effective combination for corporate gifting in Sri Lanka: Premium metal pen with laser-engraved logo + individual gift box with soft-touch lamination and debossed brand name on the lid. This combination produces a gift that looks and feels premium without requiring the very high cost of a full executive set." },
+
+  // 5. Artwork Guide — technical specs for users ready to commit
   { type: "h2", text: "Artwork Guide for Pen Printing — File Requirements & Logo Sizing" },
   { type: "p", text: "The print area on a pen barrel is small — errors that would be invisible on a banner are clearly visible on a pen held at reading distance. Correct artwork preparation prevents colour shifts, blurry logos and rejected orders." },
   { type: "h3", text: "File Requirements by Printing Method" },
@@ -102,25 +120,7 @@ export const PEN_PRINTING_EXTRA: Block[] = [
     ],
   },
 
-  // Section 5: Packaging
-  { type: "h2", text: "Pen Packaging & Presentation Options in Sri Lanka" },
-  { type: "p", text: "Packaging is the first thing a recipient sees — and for pens given as corporate gifts, the packaging communicates as much as the pen itself. Here is every packaging option available for branded pens in Sri Lanka." },
-  {
-    type: "table",
-    head: ["Packaging Type", "Best For", "Customisation Options", "Impression Created"],
-    rows: [
-      ["Polybag (single pen)", "Budget mass giveaways, trade show distribution, large-volume promotional pens", "Printed header card with logo and brand", "Functional — no premium perception"],
-      ["Individual Cardboard Sleeve", "Mid-range promotional pens, conference delegate inserts", "Full-colour print on sleeve — logo, tagline, contact", "Professional — branded presentation"],
-      ["Single Pen Gift Box", "Premium metal or executive pens — client gifts, awards", "Branded lid print, deboss or foil stamp on box, tissue insert", "Premium — gift-ready presentation"],
-      ["Two-Pen Set Box", "Executive sets — ballpoint + rollerball pairs", "Branded box with custom insert, ribbon, tissue", "Prestige — high perceived value"],
-      ["Pen + Notebook Set Box", "Conference gifts, new employee welcome kits, client appreciation sets", "Branded box, both pen and notebook branded, ribbon pull", "Premium corporate gift set — high utility"],
-      ["Pen Pouch / Sleeve", "Leather or velvet pouch for premium single pens", "Embossed or foil logo on pouch", "Luxury — jewellery-like presentation"],
-      ["Bulk Retail Box (bulk packing)", "High-volume orders — pens shipped in branded bulk box for internal distribution", "Branded master carton, pen count per box", "Functional — for internal distribution management"],
-    ],
-  },
-  { type: "p", text: "Most effective combination for corporate gifting in Sri Lanka: Premium metal pen with laser-engraved logo + individual gift box with soft-touch lamination and debossed brand name on the lid. This combination produces a gift that looks and feels premium without requiring the very high cost of a full executive set." },
-
-  // Section 6: Order steps
+  // 6. How to Order + Lead Times — conversion-driver near the bottom where intent is highest
   { type: "h2", text: "How to Order Branded Pens in Sri Lanka — Step by Step" },
   {
     type: "ol",
@@ -148,7 +148,7 @@ export const PEN_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "For seasonal gifting (Avurudu, Christmas, New Year): Order at least 4 weeks before your intended distribution date. Production facilities across Sri Lanka run at peak capacity in March and November–December." },
 
-  // Section 7: Quality
+  // 7. Quality Checklist — trust + reassurance closer
   { type: "h2", text: "Branded Pen Quality — What to Check Before Distributing" },
   { type: "p", text: "Distributing pens with a poor writing experience or fading print creates a negative brand impression. Here is a simple quality checklist to run before distributing any branded pen order." },
   {

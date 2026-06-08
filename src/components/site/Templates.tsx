@@ -17,6 +17,7 @@ import { getPageFaqs } from "@/data/page-faqs";
 import { getPrintingServiceContent } from "@/data/printing-service-content";
 import { getServiceUniqueContent } from "@/data/service-unique-content";
 import { getPrintingH1Override } from "@/data/printing-h1-overrides";
+import { ROLL_UP_BANNER_EXTRA, ROLL_UP_BANNER_EXTRA_FAQS } from "@/data/roll-up-banner-extra-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -590,7 +591,10 @@ export function ServicePageTemplate({
     })),
   );
   const overrideFaqs = getPageFaqs(slug);
-  const faqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
+  const baseFaqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
+  const faqs = slug === "roll-up-banner-printing-sri-lanka"
+    ? [...baseFaqs, ...ROLL_UP_BANNER_EXTRA_FAQS.filter(f => !baseFaqs.some(b => b.q.toLowerCase() === f.q.toLowerCase()))]
+    : baseFaqs;
   const uniqueSvc = getServiceUniqueContent(slug);
   const uniquePrint = getPrintingServiceContent(slug);
   const hasUnique = uniqueSvc.length > 0 || uniquePrint.length > 0;
@@ -636,6 +640,11 @@ export function ServicePageTemplate({
       {uniquePrint.length ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={uniquePrint} />
+        </section>
+      ) : null}
+      {slug === "roll-up-banner-printing-sri-lanka" ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={ROLL_UP_BANNER_EXTRA} />
         </section>
       ) : null}
       {/* Early conversion prompt while attention is high */}

@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
 
-const TITLE = "About Advertising Sri Lanka — Sri Lanka's Full-Service Advertising Team";
+const TITLE = "About Us | Advertising Sri Lanka";
 const DESC = "Meet the advertising specialists behind advertisingsrilanka.lk. Strategy, creative, media, digital, SEO and outdoor — one expert team for every brand in Sri Lanka.";
 
 export const Route = createFileRoute("/about")({

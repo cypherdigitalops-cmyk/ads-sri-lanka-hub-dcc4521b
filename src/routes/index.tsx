@@ -14,8 +14,8 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka — Every Channel, Every Budget | Free Guidance";
-const TITLE_OG = "Advertising Sri Lanka — Every Channel, Every Budget | Free Guidance";
+const TITLE = "Advertising Sri Lanka — Every Channel, Every Budget";
+const TITLE_OG = "Advertising Sri Lanka — Every Channel, Every Budget";
 const DESC = "Advertising in Sri Lanka — the complete guide to every channel. Compare ATL, BTL, digital, outdoor, SEO and social media advertising. Free guidance for Sri Lankan businesses. Call 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -342,7 +342,7 @@ function Index() {
                     <Send className="h-3.5 w-3.5" /> Get Free Quote
                   </button>
                   <Link to={`/${s.slug}` as never} className="inline-flex items-center gap-1 rounded-full border border-border px-4 py-2 text-xs font-semibold hover:border-primary hover:text-primary">
-                    Learn more <ArrowRight className="h-3.5 w-3.5" />
+                    View {s.title} details <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
               </div>

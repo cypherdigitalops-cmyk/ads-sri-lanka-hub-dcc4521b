@@ -133,6 +133,64 @@ export function MidContentWhatsAppCTA({ service }: { service?: string }) {
 }
 
 /**
+ * High-conversion printing CTA used mid-page on printing service pages.
+ * Larger, more urgency, free sample + free quote hooks specific to print buyers.
+ */
+export function PrintingPowerCTA({ service }: { service?: string }) {
+  const label = service ?? "your print job";
+  const href = `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I need a quote for ${label}. Please share pricing, samples and delivery time.`)}`;
+  return (
+    <section className="mx-auto my-14 max-w-4xl px-4">
+      <div className="relative overflow-hidden rounded-3xl border-2 border-[var(--whatsapp)]/40 bg-[image:var(--gradient-hero)] p-8 text-primary-foreground shadow-[var(--shadow-elegant)] sm:p-12">
+        <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/40 blur-3xl" aria-hidden />
+        <div className="pointer-events-none absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-[var(--whatsapp)]/50 blur-3xl" aria-hidden />
+        <div className="relative text-center">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)]/20 px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[var(--whatsapp)] ring-1 ring-[var(--whatsapp)]/40">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--whatsapp)] opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--whatsapp)]" />
+            </span>
+            Reply in under 5 minutes — Mon–Sat
+          </div>
+          <h3 className="mt-4 text-2xl font-extrabold leading-tight sm:text-4xl">
+            {service ? `Get your ${service} quote on WhatsApp — free` : "Get your printing quote on WhatsApp — free"}
+          </h3>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-primary-foreground/90 sm:text-base">
+            Send your artwork, quantity & delivery date — we reply with LKR pricing, paper samples and a delivery timeline. No commitment, no obligation. Trusted by 500+ Sri Lankan brands.
+          </p>
+          <ul className="mx-auto mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[12px] font-semibold text-primary-foreground/90 sm:text-sm">
+            <li className="inline-flex items-center gap-1.5"><span className="text-[var(--whatsapp)]">✓</span> Free quote &amp; samples</li>
+            <li className="inline-flex items-center gap-1.5"><span className="text-[var(--whatsapp)]">✓</span> LKR pricing — no hidden fees</li>
+            <li className="inline-flex items-center gap-1.5"><span className="text-[var(--whatsapp)]">✓</span> Island-wide delivery</li>
+            <li className="inline-flex items-center gap-1.5"><span className="text-[var(--whatsapp)]">✓</span> Rush orders welcome</li>
+          </ul>
+          <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener"
+              className="group relative inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-8 py-4 text-base font-extrabold text-[var(--whatsapp-foreground)] shadow-2xl ring-2 ring-[var(--whatsapp)]/50 transition hover:scale-105 sm:w-auto sm:text-lg"
+            >
+              <span className="absolute -inset-1 -z-10 animate-pulse rounded-full bg-[var(--whatsapp)] opacity-60 blur-md" aria-hidden />
+              <MessageCircle className="h-5 w-5" /> WhatsApp 0771437707
+            </a>
+            <a
+              href={`tel:${SITE.phone}`}
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-7 py-3.5 text-sm font-bold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20 sm:w-auto"
+            >
+              <Phone className="h-4 w-4" /> Call {SITE.phone}
+            </a>
+          </div>
+          <p className="mt-4 text-[11px] uppercase tracking-wider text-primary-foreground/70">
+            Or DM us — we usually reply faster on WhatsApp than email
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/**
  * Inline inquiry form — submission opens WhatsApp with the user's
  * details pre-filled. No backend required and works on every page.
  */

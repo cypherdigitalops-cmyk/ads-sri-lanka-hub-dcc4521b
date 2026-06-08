@@ -541,15 +541,13 @@ export function CategoryHubTemplate({
           ))}
         </div>
       </section>
-      {/* Inline inquiry form right after the browse grid — capture intent while picking a service */}
-      {isPrinting ? <InlineInquiryForm service={category.title} /> : null}
       {/* PRIORITY: unique content first */}
       {hasUnique ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={uniqueCat} />
         </section>
       ) : null}
-      {isPrinting ? <PrintingPowerCTA service={category.title} /> : <MidContentWhatsAppCTA service={category.title} />}
+      {!isPrinting ? <MidContentWhatsAppCTA service={category.title} /> : null}
       {/* Hub long-form SEO content with mid CTA split */}
       {isPrinting ? (
         <PrintingExtraWithMidCTA blocks={PRINTING_HUB_EXTRA} service={category.title} />
@@ -616,8 +614,7 @@ export function CategoryHubTemplate({
           </div>
         </section>
       ) : null}
-      {isPrinting ? <PrintingPowerCTA service={category.title} /> : null}
-      <InlineInquiryForm service={category.title} />
+      {!isPrinting ? <InlineInquiryForm service={category.title} /> : null}
     </>
   );
 }

@@ -9,6 +9,7 @@ import {
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { openQuoteModal } from "@/components/site/QuoteModal";
+import { HomeExtraSections } from "@/components/site/HomeExtraSections";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";

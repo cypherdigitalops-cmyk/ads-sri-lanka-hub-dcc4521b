@@ -16,6 +16,7 @@ import {
 import { getPageFaqs } from "@/data/page-faqs";
 import { getPrintingServiceContent } from "@/data/printing-service-content";
 import { getServiceUniqueContent } from "@/data/service-unique-content";
+import { getPrintingH1Override } from "@/data/printing-h1-overrides";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -451,6 +452,7 @@ export function CategoryHubTemplate({
   const longForm = buildCategoryLongForm(category);
   const uniqueCat = getServiceUniqueContent(category.slug);
   const hasUnique = uniqueCat.length > 0;
+  const h1Override = getPrintingH1Override(category.slug);
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -483,8 +485,8 @@ export function CategoryHubTemplate({
       />
       <Hero
         kicker={`${category.title} Sri Lanka`}
-        h1={`${category.title} in Sri Lanka — ${category.short}`}
-        intro={category.intro}
+        h1={h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`}
+        intro={h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
       {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}

@@ -61,22 +61,6 @@ export const LED_SIGN_BOARD_EXTRA: Block[] = [
   { type: "p", text: "Always ask your supplier for the IP rating and LED brand before confirming an order. Any reputable LED sign board fabricator in Sri Lanka should be able to provide this information without hesitation." },
 
   // SECTION 4
-  { type: "h2", text: "LED Sign Board Installation Process in Sri Lanka — Step by Step" },
-  { type: "p", text: "Understanding how LED sign boards are professionally installed helps you plan the project timeline and prepare your premises. Here is the full process from site survey to switch-on." },
-  {
-    type: "ol",
-    items: [
-      "Site Survey — Our team visits your premises to assess the mounting surface, measure the fascia space, check for structural anchor points, and identify the nearest electrical supply point. Free of charge within Colombo and major cities.",
-      "Design & Approval — We produce a scaled design showing dimensions, letter heights, colours and placement, presented as a digital mockup on a photo of your actual shopfront. Revisions are included until you are satisfied.",
-      "Fabrication — Aluminium frame is cut and welded, face panels produced, LED modules installed and tested, and all weatherproofing applied. Standard time is 7 to 14 working days depending on sign type and complexity.",
-      "Electrical Preparation — Ensure your electrician has prepared a dedicated 230V AC feed with an isolator switch accessible from inside the premises. Large signs above 100W need a separate circuit breaker.",
-      "Installation — Anchor bolts drilled into the building structure (not just surface cladding), frame mounted and levelled, electrical connections made and tested. Ground-floor jobs finish in 4 to 8 hours; pylons or multi-storey installs take 1 to 2 days with scaffolding or an elevated work platform.",
-      "Testing & Handover — LED circuits tested for uniform brightness and correct colour. Power supply, wiring and waterproofing inspected. Operation walkthrough, cleaning guidance and a warranty certificate covering components and workmanship.",
-    ],
-  },
-  { type: "p", text: "Timeline summary: From initial enquiry to completed installation, allow 2 to 4 weeks for standard lightbox and channel letter signs. Complex pylon signs and large fascia projects may require 4 to 6 weeks. Rush fabrication is available — contact us to discuss." },
-
-  // SECTION 5
   { type: "h2", text: "LED Sign Board Size Guide — How to Choose the Right Dimensions" },
   { type: "p", text: "The most common mistake when ordering an LED sign board in Sri Lanka is choosing a size that looks correct on a drawing but is too small in real life. Use these guidelines to determine the right dimensions for your location." },
   { type: "h3", text: "Letter Height vs Viewing Distance" },
@@ -105,7 +89,60 @@ export const LED_SIGN_BOARD_EXTRA: Block[] = [
   },
   { type: "p", text: "General rule: Your sign should fill at least 70% of the available fascia width. A sign that is too narrow looks lost on the building and misses the visual impact that drives foot traffic in Sri Lanka's busy commercial streets." },
 
+  // SECTION 5
+  { type: "h2", text: "LED Sign Boards vs Other Sign Types — Which Should You Choose?" },
+  { type: "p", text: "If you are comparing LED sign boards against other signage options available in Sri Lanka, this guide will help you make the right decision for your business needs and budget." },
+  {
+    type: "table",
+    head: ["Sign Type", "Night Visibility", "Lifespan", "Energy Use", "Maintenance", "Best Suited For"],
+    rows: [
+      ["LED Sign Board ✅", "Excellent", "8–12 years", "Very low", "Low — no bulb changes", "All commercial businesses — the #1 choice"],
+      ["Fluorescent Lightbox", "Good", "3–5 years", "High", "Medium — tube replacements every 1–2 years", "Being phased out — avoid for new installations"],
+      ["Painted Signboard", "None (no illumination)", "2–4 years", "Zero", "High — repainting required", "Temporary or very low-budget signage only"],
+      ["Traditional Neon", "Excellent", "5–8 years", "High", "High — fragile glass tubes, specialist repair needed", "Legacy installations — being replaced by LED neon"],
+      ["Acrylic Sign (unlit)", "None", "5–8 years", "Zero", "Very low", "Interior reception signs where ambient lighting is sufficient"],
+      ["Flex Printed Banner Sign", "Poor (no illumination)", "1–2 years", "Zero", "Replacement required regularly", "Temporary promotions, events — not permanent signage"],
+    ],
+  },
+  { type: "p", text: "For any permanent commercial signage in Sri Lanka — shop, office, restaurant, clinic or institution — LED sign boards are the clear choice across all evaluation criteria. The only scenario where an unlit sign board makes sense is for interior installations where ambient lighting is consistently sufficient." },
+
   // SECTION 6
+  { type: "h2", text: "LED Sign Board Installation Process in Sri Lanka — Step by Step" },
+  { type: "p", text: "Understanding how LED sign boards are professionally installed helps you plan the project timeline and prepare your premises. Here is the full process from site survey to switch-on." },
+  {
+    type: "ol",
+    items: [
+      "Site Survey — Our team visits your premises to assess the mounting surface, measure the fascia space, check for structural anchor points, and identify the nearest electrical supply point. Free of charge within Colombo and major cities.",
+      "Design & Approval — We produce a scaled design showing dimensions, letter heights, colours and placement, presented as a digital mockup on a photo of your actual shopfront. Revisions are included until you are satisfied.",
+      "Fabrication — Aluminium frame is cut and welded, face panels produced, LED modules installed and tested, and all weatherproofing applied. Standard time is 7 to 14 working days depending on sign type and complexity.",
+      "Electrical Preparation — Ensure your electrician has prepared a dedicated 230V AC feed with an isolator switch accessible from inside the premises. Large signs above 100W need a separate circuit breaker.",
+      "Installation — Anchor bolts drilled into the building structure (not just surface cladding), frame mounted and levelled, electrical connections made and tested. Ground-floor jobs finish in 4 to 8 hours; pylons or multi-storey installs take 1 to 2 days with scaffolding or an elevated work platform.",
+      "Testing & Handover — LED circuits tested for uniform brightness and correct colour. Power supply, wiring and waterproofing inspected. Operation walkthrough, cleaning guidance and a warranty certificate covering components and workmanship.",
+    ],
+  },
+  { type: "p", text: "Timeline summary: From initial enquiry to completed installation, allow 2 to 4 weeks for standard lightbox and channel letter signs. Complex pylon signs and large fascia projects may require 4 to 6 weeks. Rush fabrication is available — contact us to discuss." },
+
+  // SECTION 7
+  { type: "h2", text: "LED Sign Board Installation — Areas We Cover in Sri Lanka" },
+  { type: "p", text: "We design, fabricate and install LED sign boards islandwide across Sri Lanka. Our installation teams operate from our Colombo production facility and cover all major cities and towns." },
+  {
+    type: "table",
+    head: ["Region", "Cities & Areas Covered", "Typical Installation Lead Time"],
+    rows: [
+      ["Western Province", "Colombo, Dehiwala, Moratuwa, Kotte, Nugegoda, Maharagama, Homagama, Piliyandala, Kesbewa, Kaduwela, Gampaha, Negombo, Ja-Ela, Wattala, Ragama, Kalutara, Panadura, Horana", "1–3 days after fabrication"],
+      ["Central Province", "Kandy, Matale, Nuwara Eliya, Peradeniya, Katugastota, Gampola", "2–4 days after fabrication"],
+      ["Southern Province", "Galle, Matara, Hambantota, Unawatuna, Weligama, Mirissa, Tangalle", "2–4 days after fabrication"],
+      ["North Western Province", "Kurunegala, Puttalam, Kuliyapitiya, Chilaw, Wariyapola", "2–3 days after fabrication"],
+      ["North Central Province", "Anuradhapura, Polonnaruwa, Dambulla, Habarana", "3–5 days after fabrication"],
+      ["Northern Province", "Jaffna, Vavuniya, Mannar, Kilinochchi", "4–6 days after fabrication"],
+      ["Eastern Province", "Trincomalee, Batticaloa, Ampara, Arugam Bay", "4–6 days after fabrication"],
+      ["Sabaragamuwa Province", "Ratnapura, Kegalle, Balangoda", "2–3 days after fabrication"],
+      ["Uva Province", "Badulla, Bandarawela, Monaragala, Ella", "3–5 days after fabrication"],
+    ],
+  },
+  { type: "p", text: "For locations outside major city centres, installation is coordinated with local access arrangements. Contact us with your location and we will confirm the exact installation timeline for your area." },
+
+  // SECTION 8
   { type: "h2", text: "LED Sign Board Maintenance Guide — How to Keep Your Sign at Its Best" },
   { type: "p", text: "A properly maintained LED sign board will last 8 to 12 years in Sri Lanka's climate. Follow this maintenance routine to protect your investment and avoid costly repairs." },
   { type: "h3", text: "Routine Maintenance Schedule" },
@@ -133,44 +170,7 @@ export const LED_SIGN_BOARD_EXTRA: Block[] = [
     ],
   },
 
-  // SECTION 7
-  { type: "h2", text: "LED Sign Board Installation — Areas We Cover in Sri Lanka" },
-  { type: "p", text: "We design, fabricate and install LED sign boards islandwide across Sri Lanka. Our installation teams operate from our Colombo production facility and cover all major cities and towns." },
-  {
-    type: "table",
-    head: ["Region", "Cities & Areas Covered", "Typical Installation Lead Time"],
-    rows: [
-      ["Western Province", "Colombo, Dehiwala, Moratuwa, Kotte, Nugegoda, Maharagama, Homagama, Piliyandala, Kesbewa, Kaduwela, Gampaha, Negombo, Ja-Ela, Wattala, Ragama, Kalutara, Panadura, Horana", "1–3 days after fabrication"],
-      ["Central Province", "Kandy, Matale, Nuwara Eliya, Peradeniya, Katugastota, Gampola", "2–4 days after fabrication"],
-      ["Southern Province", "Galle, Matara, Hambantota, Unawatuna, Weligama, Mirissa, Tangalle", "2–4 days after fabrication"],
-      ["North Western Province", "Kurunegala, Puttalam, Kuliyapitiya, Chilaw, Wariyapola", "2–3 days after fabrication"],
-      ["North Central Province", "Anuradhapura, Polonnaruwa, Dambulla, Habarana", "3–5 days after fabrication"],
-      ["Northern Province", "Jaffna, Vavuniya, Mannar, Kilinochchi", "4–6 days after fabrication"],
-      ["Eastern Province", "Trincomalee, Batticaloa, Ampara, Arugam Bay", "4–6 days after fabrication"],
-      ["Sabaragamuwa Province", "Ratnapura, Kegalle, Balangoda", "2–3 days after fabrication"],
-      ["Uva Province", "Badulla, Bandarawela, Monaragala, Ella", "3–5 days after fabrication"],
-    ],
-  },
-  { type: "p", text: "For locations outside major city centres, installation is coordinated with local access arrangements. Contact us with your location and we will confirm the exact installation timeline for your area." },
-
-  // SECTION 8
-  { type: "h2", text: "LED Sign Boards vs Other Sign Types — Which Should You Choose?" },
-  { type: "p", text: "If you are comparing LED sign boards against other signage options available in Sri Lanka, this guide will help you make the right decision for your business needs and budget." },
-  {
-    type: "table",
-    head: ["Sign Type", "Night Visibility", "Lifespan", "Energy Use", "Maintenance", "Best Suited For"],
-    rows: [
-      ["LED Sign Board ✅", "Excellent", "8–12 years", "Very low", "Low — no bulb changes", "All commercial businesses — the #1 choice"],
-      ["Fluorescent Lightbox", "Good", "3–5 years", "High", "Medium — tube replacements every 1–2 years", "Being phased out — avoid for new installations"],
-      ["Painted Signboard", "None (no illumination)", "2–4 years", "Zero", "High — repainting required", "Temporary or very low-budget signage only"],
-      ["Traditional Neon", "Excellent", "5–8 years", "High", "High — fragile glass tubes, specialist repair needed", "Legacy installations — being replaced by LED neon"],
-      ["Acrylic Sign (unlit)", "None", "5–8 years", "Zero", "Very low", "Interior reception signs where ambient lighting is sufficient"],
-      ["Flex Printed Banner Sign", "Poor (no illumination)", "1–2 years", "Zero", "Replacement required regularly", "Temporary promotions, events — not permanent signage"],
-    ],
-  },
-  { type: "p", text: "For any permanent commercial signage in Sri Lanka — shop, office, restaurant, clinic or institution — LED sign boards are the clear choice across all evaluation criteria. The only scenario where an unlit sign board makes sense is for interior installations where ambient lighting is consistently sufficient." },
-
-  // SECTION 11 (related — keep as paragraph; sidebar already exists)
+  // SECTION 9 (related — keep as paragraph; sidebar already exists)
   { type: "h2", text: "Related Sign Board & Signage Services" },
   { type: "p", text: "Businesses ordering LED sign boards in Sri Lanka frequently also require acrylic sign boards, 3D letter signs, lightbox signs, neon signs, pylon signs, wayfinding signage and frosted glass printing — all available under the same project team." },
 ];

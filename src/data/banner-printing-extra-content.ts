@@ -22,7 +22,28 @@ export const BANNER_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Quick guide for Sri Lanka's climate: For anything displayed outdoors longer than 8 weeks, always use minimum 440gsm frontlit flex. For coastal areas — Galle, Negombo, Trincomalee — choose 510gsm or vinyl due to salt air degradation. For building wraps and scaffolding, mesh is mandatory — solid flex on large areas acts as a sail in strong wind and will tear or pull fixings out." },
 
-  // ── SECTION 2: SIZES GUIDE ──
+  // ── SECTION 2: BY INDUSTRY ──
+  { type: "h2", text: "Banner Printing by Industry — What Sri Lankan Businesses Order Most" },
+  {
+    type: "table",
+    head: ["Industry / Event Type", "Most Common Banner Uses", "Recommended Material", "Typical Size Range"],
+    rows: [
+      ["Retail & Supermarkets", "Sale promotions, new arrivals, seasonal campaigns, price banners", "440gsm frontlit flex", "4×8 ft to 6×12 ft"],
+      ["Restaurants & Cafés", "Menu displays, promotions, outdoor shopfront, new branch opening", "440gsm flex or fabric (indoor)", "3×6 ft to 5×10 ft"],
+      ["Hotels & Resorts", "Welcome banners, event signage, pool area décor, conference room", "Fabric dye-sub (indoor), 510gsm flex (outdoor)", "Custom — full room width"],
+      ["Schools & Universities", "Sports day, prize-giving, welcome banners, open day, exam result boards", "440gsm frontlit flex", "4×8 ft to 6×12 ft"],
+      ["Political & Government", "Campaign banners, election displays, government announcements", "440gsm frontlit flex", "5×10 ft to 10×20 ft"],
+      ["Religious & Cultural Events", "Vesak banners, Pooja notices, temple festivals, Avurudu celebrations", "440gsm frontlit flex", "4×8 ft to 8×16 ft"],
+      ["Corporate Events", "Stage backdrops, conference banners, product launch, trade shows", "Fabric dye-sub or 510gsm flex", "8×16 ft to 20×10 ft backdrop"],
+      ["Construction & Real Estate", "Hoarding wraps, site banners, project launch, sales office", "510gsm frontlit or mesh for large spans", "10×30 ft to full site perimeter"],
+      ["Healthcare & Pharma", "Health awareness campaigns, clinic opening, waiting room info", "440gsm flex (outdoor), fabric (indoor)", "4×8 ft to 6×12 ft"],
+      ["Banks & Finance", "Branch promotions, product launches, seasonal offers, ATM branding", "440gsm flex or vinyl", "4×8 ft to custom fascia size"],
+      ["FMCG & Manufacturers", "Dealer promotions, market activations, POS displays", "440gsm flex", "4×8 ft to 6×12 ft"],
+      ["Sports Events", "Sponsor banners, match-day advertising, team branding", "440gsm flex or mesh (perimeter fencing)", "3×6 ft to 5×10 ft panels"],
+    ],
+  },
+
+  // ── SECTION 3: SIZES GUIDE ──
   { type: "h2", text: "Banner Sizes Guide — Standard Sizes & Custom Dimensions" },
   { type: "p", text: "Banner printing in Sri Lanka has no fixed size limit — our wide-format printers output up to 3.2 metres wide in a single piece, and any height. For widths above 3.2 metres, banners are joined in panels with welded or stitched seams. Use the tables below to find the right size for your application." },
   { type: "h3", text: "Standard Banner Sizes Used in Sri Lanka" },
@@ -54,7 +75,7 @@ export const BANNER_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "Accepted file formats: PDF (preferred, with bleed and embedded fonts), Adobe Illustrator AI/EPS (fonts outlined), PSD (flattened, at correct resolution). JPG and PNG accepted at 150 DPI minimum at actual print size. Never send files designed at A4 and ask them to be scaled up — low resolution at source produces blurry output at large format." },
 
-  // ── SECTION 3: FINISHING OPTIONS ──
+  // ── SECTION 4: FINISHING OPTIONS ──
   { type: "h2", text: "Banner Finishing Options — Eyelets, Hems, Pockets & More" },
   { type: "p", text: "The finish you choose determines how the banner is mounted, how long it holds up, and how professional it looks. Here is every finishing option available for banner printing in Sri Lanka, and when to use each one." },
   {
@@ -73,28 +94,66 @@ export const BANNER_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "For outdoor banners in Sri Lanka: Always request reinforced hem plus eyelets as a minimum. For coastal areas or exposed rooftop locations, request double-welded hem and eyelets every 300mm rather than 500mm. Wind load on large banners is significant — poor finishing is the leading cause of outdoor banner failures in Sri Lanka's monsoon conditions." },
 
-  // ── SECTION 4: BY INDUSTRY ──
-  { type: "h2", text: "Banner Printing by Industry — What Sri Lankan Businesses Order Most" },
+  // ── SECTION 5: WEATHER ──
+  { type: "h2", text: "Outdoor Banner Durability in Sri Lanka's Climate — What You Need to Know" },
+  { type: "p", text: "Sri Lanka's tropical climate is one of the most demanding environments for outdoor printed materials in the world. High UV index year-round, two annual monsoon seasons with heavy rain and wind, coastal salt air, and high ambient humidity all act on outdoor banners simultaneously. Here is how to choose materials that survive." },
   {
     type: "table",
-    head: ["Industry / Event Type", "Most Common Banner Uses", "Recommended Material", "Typical Size Range"],
+    head: ["Environmental Factor", "Impact on Banners", "How to Protect Against It"],
     rows: [
-      ["Retail & Supermarkets", "Sale promotions, new arrivals, seasonal campaigns, price banners", "440gsm frontlit flex", "4×8 ft to 6×12 ft"],
-      ["Restaurants & Cafés", "Menu displays, promotions, outdoor shopfront, new branch opening", "440gsm flex or fabric (indoor)", "3×6 ft to 5×10 ft"],
-      ["Hotels & Resorts", "Welcome banners, event signage, pool area décor, conference room", "Fabric dye-sub (indoor), 510gsm flex (outdoor)", "Custom — full room width"],
-      ["Schools & Universities", "Sports day, prize-giving, welcome banners, open day, exam result boards", "440gsm frontlit flex", "4×8 ft to 6×12 ft"],
-      ["Political & Government", "Campaign banners, election displays, government announcements", "440gsm frontlit flex", "5×10 ft to 10×20 ft"],
-      ["Religious & Cultural Events", "Vesak banners, Pooja notices, temple festivals, Avurudu celebrations", "440gsm frontlit flex", "4×8 ft to 8×16 ft"],
-      ["Corporate Events", "Stage backdrops, conference banners, product launch, trade shows", "Fabric dye-sub or 510gsm flex", "8×16 ft to 20×10 ft backdrop"],
-      ["Construction & Real Estate", "Hoarding wraps, site banners, project launch, sales office", "510gsm frontlit or mesh for large spans", "10×30 ft to full site perimeter"],
-      ["Healthcare & Pharma", "Health awareness campaigns, clinic opening, waiting room info", "440gsm flex (outdoor), fabric (indoor)", "4×8 ft to 6×12 ft"],
-      ["Banks & Finance", "Branch promotions, product launches, seasonal offers, ATM branding", "440gsm flex or vinyl", "4×8 ft to custom fascia size"],
-      ["FMCG & Manufacturers", "Dealer promotions, market activations, POS displays", "440gsm flex", "4×8 ft to 6×12 ft"],
-      ["Sports Events", "Sponsor banners, match-day advertising, team branding", "440gsm flex or mesh (perimeter fencing)", "3×6 ft to 5×10 ft panels"],
+      ["UV Radiation (year-round, highest April–August)", "Fades ink, yellows acrylic coatings, degrades PVC", "UV-resistant eco-solvent or latex inks. Lamination adds 40% UV life extension."],
+      ["Monsoon Rain (SW: May–Sep, NE: Nov–Jan)", "Water penetrates seams, causes delamination, warps unprotected edges", "Double-welded hems on all edges. Eyelets punched through welded sections only."],
+      ["Wind Load (especially coastal areas)", "Tearing at eyelet points, seam separation, structural failure on large banners", "Mesh material for large banners. Eyelets every 300mm in high-wind locations. Nylon rope, not cable ties."],
+      ["Coastal Salt Air (Galle, Negombo, Trincomalee, Jaffna)", "Accelerates corrosion of metal eyelets and fixings. Degrades surface coatings.", "Stainless steel or plastic eyelets (not aluminium or brass). Stainless steel mounting hardware."],
+      ["Humidity (60–90% RH year-round)", "Promotes mould growth on fabric surfaces, causes flex to stiffen and crack", "Antimicrobial coating on fabric banners. Store indoors between uses. Never fold wet."],
+      ["Heat (30–35°C average outdoors)", "Accelerates ink fade, softens adhesive on self-adhesive vinyl", "High-quality inks rated for 60°C+ surface temperature. Premium adhesive vinyl for hot-surface applications."],
+    ],
+  },
+  { type: "p", text: "Recommended material for each scenario in Sri Lanka:" },
+  {
+    type: "ul",
+    items: [
+      "Short-term indoor event (under 4 weeks): Economy flex 300gsm or fabric dye-sub",
+      "Outdoor event or promotion (4–12 weeks): Frontlit flex 440gsm with reinforced hem and eyelets",
+      "Long-term outdoor advertising (3–12 months): Frontlit flex 510gsm with UV lamination, double-welded hem",
+      "Coastal location (any duration): 510gsm flex or vinyl with stainless steel eyelets",
+      "Building wrap or scaffolding: Mesh PVC — never solid flex for spans above 3 metres in open air",
     ],
   },
 
-  // ── SECTION 5: INSTALLATION ──
+  // ── SECTION 6: ARTWORK GUIDE ──
+  { type: "h2", text: "Banner Design & Artwork Guide — How to Send Print-Ready Files" },
+  { type: "p", text: "Sending correct artwork avoids delays, reprints and disappointment. Here is exactly what our pre-press team needs from you for banner printing in Sri Lanka." },
+  { type: "h3", text: "Design Rules for High-Impact Banners" },
+  {
+    type: "ul",
+    items: [
+      "One primary message per banner. Banners are read in seconds by people walking or driving past. A banner trying to say five things says nothing. Lead with the single most important message — your brand name, offer headline, or event name.",
+      "Use no more than 2 fonts. One display font for headlines, one clean sans-serif for body text. Mixed fonts create visual noise that reduces legibility at distance.",
+      "High contrast between text and background. White text on yellow is illegible at distance. Black or dark text on light backgrounds, or white text on dark backgrounds, deliver the best outdoor legibility in Sri Lanka's bright sunlight.",
+      "Leave 10% margin on all edges. Content placed too close to the edge risks being cut during trimming or hidden by mounting hardware. Keep all critical content at least 10% of the banner width away from each edge.",
+      "Use large, simple images. Complex detailed photographs lose impact at banner scale. Simple, strong visuals — a product close-up, a face, a bold graphic — read better than busy lifestyle photography at distance.",
+      "Include a clear call to action. Every banner should answer 'what do I do now?' — visit this address, call this number, scan this QR code. Make the CTA the second-largest element after the headline.",
+    ],
+  },
+  { type: "h3", text: "File Submission Checklist" },
+  {
+    type: "table",
+    head: ["Requirement", "Standard", "Notes"],
+    rows: [
+      ["File format", "PDF with bleed (preferred)", "Also accepted: AI (fonts outlined), PSD (flattened), EPS"],
+      ["Colour mode", "CMYK", "RGB files will be converted — blues and greens may shift"],
+      ["Resolution", "100–150 DPI at actual print size", "72 DPI acceptable for banners above 8 ft × 20 ft"],
+      ["Bleed", "25 mm all sides (50mm for large banners)", "Background must extend into bleed — no white borders"],
+      ["Fonts", "Embedded or outlined", "Missing fonts default to system substitutes — always outline"],
+      ["Image links", "Embedded (not linked)", "Linked images not available when file is received cause print delays"],
+      ["Black text", "100% K only (not rich black)", "Rich black on text causes misregistration at edges — use 0C 0M 0Y 100K"],
+      ["Rich black (backgrounds)", "60C 40M 40Y 100K", "Use only for large dark background areas, not text"],
+    ],
+  },
+  { type: "p", text: "Not sure if your file is ready? Send it to us on WhatsApp or email — our pre-press team checks every artwork file free of charge before printing. We will flag any issues and advise on corrections before a single metre of material is consumed." },
+
+  // ── SECTION 7: INSTALLATION ──
   { type: "h2", text: "How to Hang & Install a Banner — Complete Guide for Sri Lanka" },
   { type: "p", text: "Correct installation is as important as the print quality. A well-printed banner installed poorly will tear, fall, or look unprofessional within days. Here is how to install banners correctly for every common scenario in Sri Lanka." },
   { type: "h3", text: "Outdoor Banner — Rope & Eyelet Method (Most Common)" },
@@ -137,66 +196,7 @@ export const BANNER_PRINTING_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 6: ARTWORK GUIDE ──
-  { type: "h2", text: "Banner Design & Artwork Guide — How to Send Print-Ready Files" },
-  { type: "p", text: "Sending correct artwork avoids delays, reprints and disappointment. Here is exactly what our pre-press team needs from you for banner printing in Sri Lanka." },
-  { type: "h3", text: "Design Rules for High-Impact Banners" },
-  {
-    type: "ul",
-    items: [
-      "One primary message per banner. Banners are read in seconds by people walking or driving past. A banner trying to say five things says nothing. Lead with the single most important message — your brand name, offer headline, or event name.",
-      "Use no more than 2 fonts. One display font for headlines, one clean sans-serif for body text. Mixed fonts create visual noise that reduces legibility at distance.",
-      "High contrast between text and background. White text on yellow is illegible at distance. Black or dark text on light backgrounds, or white text on dark backgrounds, deliver the best outdoor legibility in Sri Lanka's bright sunlight.",
-      "Leave 10% margin on all edges. Content placed too close to the edge risks being cut during trimming or hidden by mounting hardware. Keep all critical content at least 10% of the banner width away from each edge.",
-      "Use large, simple images. Complex detailed photographs lose impact at banner scale. Simple, strong visuals — a product close-up, a face, a bold graphic — read better than busy lifestyle photography at distance.",
-      "Include a clear call to action. Every banner should answer 'what do I do now?' — visit this address, call this number, scan this QR code. Make the CTA the second-largest element after the headline.",
-    ],
-  },
-  { type: "h3", text: "File Submission Checklist" },
-  {
-    type: "table",
-    head: ["Requirement", "Standard", "Notes"],
-    rows: [
-      ["File format", "PDF with bleed (preferred)", "Also accepted: AI (fonts outlined), PSD (flattened), EPS"],
-      ["Colour mode", "CMYK", "RGB files will be converted — blues and greens may shift"],
-      ["Resolution", "100–150 DPI at actual print size", "72 DPI acceptable for banners above 8 ft × 20 ft"],
-      ["Bleed", "25 mm all sides (50mm for large banners)", "Background must extend into bleed — no white borders"],
-      ["Fonts", "Embedded or outlined", "Missing fonts default to system substitutes — always outline"],
-      ["Image links", "Embedded (not linked)", "Linked images not available when file is received cause print delays"],
-      ["Black text", "100% K only (not rich black)", "Rich black on text causes misregistration at edges — use 0C 0M 0Y 100K"],
-      ["Rich black (backgrounds)", "60C 40M 40Y 100K", "Use only for large dark background areas, not text"],
-    ],
-  },
-  { type: "p", text: "Not sure if your file is ready? Send it to us on WhatsApp or email — our pre-press team checks every artwork file free of charge before printing. We will flag any issues and advise on corrections before a single metre of material is consumed." },
-
-  // ── SECTION 7: WEATHER ──
-  { type: "h2", text: "Outdoor Banner Durability in Sri Lanka's Climate — What You Need to Know" },
-  { type: "p", text: "Sri Lanka's tropical climate is one of the most demanding environments for outdoor printed materials in the world. High UV index year-round, two annual monsoon seasons with heavy rain and wind, coastal salt air, and high ambient humidity all act on outdoor banners simultaneously. Here is how to choose materials that survive." },
-  {
-    type: "table",
-    head: ["Environmental Factor", "Impact on Banners", "How to Protect Against It"],
-    rows: [
-      ["UV Radiation (year-round, highest April–August)", "Fades ink, yellows acrylic coatings, degrades PVC", "UV-resistant eco-solvent or latex inks. Lamination adds 40% UV life extension."],
-      ["Monsoon Rain (SW: May–Sep, NE: Nov–Jan)", "Water penetrates seams, causes delamination, warps unprotected edges", "Double-welded hems on all edges. Eyelets punched through welded sections only."],
-      ["Wind Load (especially coastal areas)", "Tearing at eyelet points, seam separation, structural failure on large banners", "Mesh material for large banners. Eyelets every 300mm in high-wind locations. Nylon rope, not cable ties."],
-      ["Coastal Salt Air (Galle, Negombo, Trincomalee, Jaffna)", "Accelerates corrosion of metal eyelets and fixings. Degrades surface coatings.", "Stainless steel or plastic eyelets (not aluminium or brass). Stainless steel mounting hardware."],
-      ["Humidity (60–90% RH year-round)", "Promotes mould growth on fabric surfaces, causes flex to stiffen and crack", "Antimicrobial coating on fabric banners. Store indoors between uses. Never fold wet."],
-      ["Heat (30–35°C average outdoors)", "Accelerates ink fade, softens adhesive on self-adhesive vinyl", "High-quality inks rated for 60°C+ surface temperature. Premium adhesive vinyl for hot-surface applications."],
-    ],
-  },
-  { type: "p", text: "Recommended material for each scenario in Sri Lanka:" },
-  {
-    type: "ul",
-    items: [
-      "Short-term indoor event (under 4 weeks): Economy flex 300gsm or fabric dye-sub",
-      "Outdoor event or promotion (4–12 weeks): Frontlit flex 440gsm with reinforced hem and eyelets",
-      "Long-term outdoor advertising (3–12 months): Frontlit flex 510gsm with UV lamination, double-welded hem",
-      "Coastal location (any duration): 510gsm flex or vinyl with stainless steel eyelets",
-      "Building wrap or scaffolding: Mesh PVC — never solid flex for spans above 3 metres in open air",
-    ],
-  },
-
-  // ── SECTION 9: RELATED ──
+  // ── SECTION 8: RELATED ──
   { type: "h2", text: "Related Banner & Large Format Printing Services" },
   { type: "p", text: "Businesses ordering banner printing in Sri Lanka frequently also need one or more of these related services for their campaigns and events — backdrop printing, roll up banner printing, hoarding printing, mesh banner printing, flex printing, exhibition banner printing, flag printing and large format printing all pair well with banner orders." },
 ];

@@ -20,53 +20,7 @@ export const EMBOSSED_PRINTING_EXTRA: Block[] = [
   },
   { type: "p", text: "For most Sri Lankan businesses ordering for the first time: Blind emboss on 350gsm or heavier uncoated stock is the recommended starting point — it delivers a clear premium quality signal at the most accessible entry point. Foil emboss is the step up for wedding stationery, award certificates and luxury brand collateral." },
 
-  // ── SECTION 2: VS OTHER FINISHES ──
-  { type: "h2", text: "Embossed Printing vs Other Premium Finishes — Which Should You Choose?" },
-  { type: "p", text: "Sri Lankan businesses ordering premium print often compare embossing against spot UV, foil stamping, soft-touch lamination and letterpress. Here is how each finish compares so you can choose the right one — or the right combination — for your project." },
-  {
-    type: "table",
-    head: ["Finish", "Visual Effect", "Tactile Effect", "Works Best On", "Can Combine With", "Impression it Creates"],
-    rows: [
-      ["Blind Emboss", "Subtle — shadow and light only", "Raised, smooth", "Uncoated 300gsm+", "Foil, soft-touch lamination, letterpress", "Understated luxury, refined elegance"],
-      ["Foil Emboss", "Metallic, dimensional, high-impact", "Raised, metallic", "Uncoated or soft-touch 350gsm+", "Soft-touch lamination, matte print", "Prestige, exclusivity, celebration"],
-      ["Spot UV", "High-gloss contrast against matte surface", "Slightly raised, smooth gloss", "Coated / laminated stock", "Matte lamination, CMYK print", "Modern, graphic, bold contrast"],
-      ["Foil Stamping (flat)", "Metallic flat — high visual impact", "Flat, slightly textured surface", "Any 300gsm+ stock", "Emboss, soft-touch, matte lamination", "Glamour, luxury, celebration"],
-      ["Soft-Touch Lamination", "Matte, velvety — premium surface", "Soft, suede-like", "Any laminated stock", "Emboss, foil, spot UV", "Premium, tactile warmth, sophisticated"],
-      ["Letterpress", "Deep impression — inked or uninked", "Pressed into paper — deeply tactile", "Thick cotton or uncoated stock 600gsm+", "Foil, blind emboss", "Artisanal, craft, heritage quality"],
-      ["Die-Cut (custom shape)", "Custom silhouette shape", "Clean cut edge", "Any stock", "All finishes", "Creative, distinctive, memorable"],
-    ],
-  },
-  { type: "p", text: "Most powerful combinations used by Sri Lankan premium brands:" },
-  {
-    type: "ul",
-    items: [
-      "Soft-touch lamination + blind emboss — velvety surface with a raised logo. The most popular premium business card combination in Sri Lanka's corporate sector.",
-      "Matte lamination + foil emboss — matte base makes the metallic foil pop dramatically. Standard for luxury wedding invitations and award certificates.",
-      "Uncoated stock + blind emboss + letterpress — deep tactile print with raised logo. Favoured by law firms, architects and boutique brands wanting a craft aesthetic.",
-      "Spot UV + registered emboss — gloss spot UV on the embossed element creates both visual and tactile contrast. Used for premium brochure covers and annual reports.",
-    ],
-  },
-
-  // ── SECTION 3: PAPER & STOCK ──
-  { type: "h2", text: "Paper & Stock Guide for Embossed Printing — What Works and What Doesn't" },
-  { type: "p", text: "Paper choice is the single most important factor in embossing quality. The wrong stock produces a flat, cracked or poorly defined impression regardless of die quality. Here is a complete guide to paper selection for embossed printing in Sri Lanka." },
-  {
-    type: "table",
-    head: ["Paper Type", "Weight Range", "Emboss Quality", "Best Emboss Techniques", "Notes for Sri Lanka"],
-    rows: [
-      ["Uncoated Art Card", "300–400 gsm", "Excellent", "Blind emboss, registered emboss, foil emboss", "Most widely available in Sri Lanka — good compressibility produces crisp, deep relief"],
-      ["Cotton / Rag Stock", "300–600 gsm", "Outstanding", "All techniques — especially blind emboss and letterpress", "Best embossing substrate available — very soft fibre takes the deepest impressions. Used for premium certificates and luxury business cards."],
-      ["Textured / Laid Stock", "250–400 gsm", "Very Good", "Blind emboss, foil emboss", "Linen, felt, wove and laid textures enhance the natural quality of blind emboss — design must be bold enough to read against the texture"],
-      ["Soft-Touch Laminated Card", "300–400 gsm base + laminate", "Very Good", "Blind emboss, foil emboss — after lamination", "Most popular for business cards — soft-touch surface plus emboss is Sri Lanka's #1 premium business card combination"],
-      ["Coated Gloss Art Card", "300–400 gsm", "Fair", "Registered emboss, foil emboss", "Gloss coating reduces compressibility — emboss is less deep and can crack if die pressure is too high. Foil emboss works better than blind emboss on this surface."],
-      ["Matte Laminated Card", "300–400 gsm base + laminate", "Good", "Blind emboss, foil emboss", "Matte lamination gives a good embossing surface. Popular for luxury packaging boxes and premium folder covers."],
-      ["Thin Coated Paper (below 250gsm)", "Below 250 gsm", "Poor", "Not recommended", "Thin stock is prone to cracking along emboss lines and cannot hold a deep impression. Avoid for embossing — minimum 300gsm strongly recommended."],
-      ["Board / Greyboard", "1000–2000 micron", "Good for deboss", "Deboss only — emboss is very limited on rigid board", "Used for hardcover book covers, premium packaging boxes and folder covers — deboss works well on board where emboss would be limited by rigidity"],
-    ],
-  },
-  { type: "p", text: "Minimum weight recommendation: Never emboss on stock below 300gsm. Below this weight, Sri Lanka's humidity causes additional paper instability that leads to waviness around the embossed area. 350gsm uncoated or cotton stock is the recommended starting weight for business cards and invitations." },
-
-  // ── SECTION 4: USE CASES BY PRODUCT ──
+  // ── SECTION 2: USE CASES BY PRODUCT ──
   { type: "h2", text: "Embossed Printing Applications — What Sri Lankan Businesses Order Most" },
   { type: "h3", text: "Business Cards" },
   { type: "p", text: "Embossed business cards are the most ordered embossed product in Sri Lanka. The standard format is a 90×55mm card on 350–400gsm uncoated or cotton stock with a soft-touch lamination and blind or foil embossed logo. When a recipient holds an embossed card, the raised logo is felt before it is consciously noticed — creating a physical brand impression that flat-printed cards simply cannot deliver. For professionals in law, finance, real estate, architecture and medicine in Colombo and Kandy, embossed business cards are now the expected standard rather than an upgrade." },
@@ -95,34 +49,70 @@ export const EMBOSSED_PRINTING_EXTRA: Block[] = [
   { type: "h3", text: "Book Covers & Annual Reports" },
   { type: "p", text: "Premium hardcover book covers, annual report covers and high-value corporate publications use embossing to signal that the content inside merits the investment in premium production. Sri Lanka's leading listed companies, banks and government institutions commission annual reports with embossed or foil-embossed covers as a statement of institutional quality. Publishers producing limited edition or collector's edition books use embossing to justify the premium over standard editions." },
 
-  // ── SECTION 5: PRODUCTION PROCESS ──
-  { type: "h2", text: "Embossing Die Making & Production Process — What Happens After You Order" },
-  { type: "p", text: "Understanding the embossing production process helps you plan your timeline and prepare your artwork correctly. Embossing is a more involved process than standard offset or digital printing — here is every stage from artwork to finished product." },
-  {
-    type: "ol",
-    items: [
-      "Artwork Preparation & Die Artwork. The embossing area of your design must be supplied as a separate vector file — typically a closed-path outline of each element to be embossed. This is different from your print artwork. If your logo is being embossed, we need a clean vector outline file (not a raster image) showing the exact boundary of every embossed element. Fine details below 0.5mm stroke width and text below 8pt are generally not suitable for standard die embossing.",
-      "Die Manufacturing. Your emboss design is used to machine-cut a matched pair of metal dies — a male (convex) and female (concave) die that fit together precisely. For standard commercial embossing, dies are typically machined from magnesium or brass. Magnesium dies are more economical and suit most commercial embossing jobs. Brass dies are harder, more durable, and better for fine detail — preferred for long runs and complex designs. Die manufacturing takes 3 to 5 working days and is a one-time cost that applies to all future reprints of the same design.",
-      "Press Make-Ready & Test Impression. The dies are mounted on the embossing press and precisely aligned. A test impression is run on the actual production stock to verify the relief depth, edge sharpness and paper behaviour at the specified die pressure. If the paper shows cracking or the relief is insufficient, die pressure and packing are adjusted before the production run begins. This make-ready process is why embossing has a longer minimum lead time than flat digital printing.",
-      "Production Embossing Run. Once the make-ready is approved, the full production run proceeds. Each sheet is individually fed through the embossing press — embossing cannot be done on roll-fed high-speed presses, so production speeds are slower than flat printing. For business card quantities of 250 to 500 pieces, embossing run time is typically 2 to 4 hours after make-ready.",
-      "Post-Emboss Finishing. After embossing, the sheets undergo any additional finishing — cutting to final size, rounding corners, adding a carry bag string (for hang tags) or folding (for invitations). For business cards, the embossed sheets are guillotine-cut to individual card size after embossing. The embossed relief is naturally robust and is not damaged by standard post-press cutting.",
-      "Quality Inspection & Packing. Every embossed job is hand-inspected for relief consistency, edge sharpness, foil adhesion (for foil emboss jobs) and any cracking or deformation. Pieces with visible defects are removed before packing. Embossed pieces are packed flat — never rolled or folded — to preserve the relief through transit.",
-    ],
-  },
-  { type: "p", text: "Typical lead time breakdown for embossed printing in Sri Lanka:" },
+  // ── SECTION 3: BY INDUSTRY ──
+  { type: "h2", text: "Embossed Printing by Industry — Who Orders What in Sri Lanka" },
   {
     type: "table",
-    head: ["Stage", "Time Required", "Notes"],
+    head: ["Industry", "Most Common Embossed Products", "Preferred Technique", "Key Season in Sri Lanka"],
     rows: [
-      ["Artwork approval", "1–2 days", "Your approval of digital proof required before die ordering"],
-      ["Die manufacturing", "3–5 working days", "One-time for the design — reused for all reprints"],
-      ["Print base (for registered emboss)", "2–3 working days", "Offset or digital print run completes before embossing"],
-      ["Embossing press run", "1–2 working days", "Shorter for reprints using existing dies"],
-      ["Post-press finishing", "1–2 working days", "Cutting, rounding, packing"],
-      ["Total — first order", "8–12 working days", "Plan 2–3 weeks from brief to delivery for first-time orders"],
-      ["Total — reorder (existing die)", "4–6 working days", "Die reused — significant time saving on repeat orders"],
+      ["Legal & Professional Services", "Business cards, letterheads, presentation folders, certificate portfolios", "Blind emboss on uncoated / cotton stock", "Year-round — new partner cards, firm rebrands"],
+      ["Banking & Finance", "Premium business cards, annual report covers, client gift packaging", "Foil emboss + soft-touch lamination", "Q1 annual reports, year-end client gifts"],
+      ["Hospitality & Hotels", "Menu covers, amenity packaging, room key wallets, welcome cards", "Deboss on leather-look covers, foil emboss on packaging", "Peak tourist season (Dec–Jan, Jul–Aug)"],
+      ["Weddings & Events", "Invitations, menu cards, place cards, ceremony programmes, thank-you cards", "Foil emboss (gold / rose gold / silver) on cotton or ivory stock", "Peak wedding season (Jan–Apr, Sep–Nov)"],
+      ["Education & Institutions", "Degree certificates, award certificates, convocation booklet covers", "Blind emboss seal / registered emboss crest", "Convocation seasons — typically Jun and Nov"],
+      ["Luxury Retail & Fashion", "Shopping bag tissue paper, gift boxes, hang tags, garment labels", "Foil emboss or deboss on packaging stock", "Christmas, Avurudu, Vesak, Valentine's Day"],
+      ["Ceylon Tea & Exports", "Gift tea boxes, tin lid labels, export packaging, promotional mailers", "Foil emboss (gold) on uncoated packaging board", "Christmas export season (Oct–Dec)"],
+      ["Real Estate & Architecture", "Business cards, project brochure covers, presentation folders", "Blind emboss on thick uncoated stock", "Project launch periods"],
+      ["Corporate Gifting", "Branded notebooks, diaries, box sets, pen sets with embossed packaging", "Deboss on PU leather cover, foil emboss on box lid", "Avurudu (April), Christmas (December), New Year (January)"],
+      ["Healthcare & Pharma", "Medical certificates, doctor's appointment cards, premium clinic stationery", "Blind emboss or registered emboss", "Year-round — clinic rebrands and stationery orders"],
     ],
   },
+
+  // ── SECTION 4: VS OTHER FINISHES ──
+  { type: "h2", text: "Embossed Printing vs Other Premium Finishes — Which Should You Choose?" },
+  { type: "p", text: "Sri Lankan businesses ordering premium print often compare embossing against spot UV, foil stamping, soft-touch lamination and letterpress. Here is how each finish compares so you can choose the right one — or the right combination — for your project." },
+  {
+    type: "table",
+    head: ["Finish", "Visual Effect", "Tactile Effect", "Works Best On", "Can Combine With", "Impression it Creates"],
+    rows: [
+      ["Blind Emboss", "Subtle — shadow and light only", "Raised, smooth", "Uncoated 300gsm+", "Foil, soft-touch lamination, letterpress", "Understated luxury, refined elegance"],
+      ["Foil Emboss", "Metallic, dimensional, high-impact", "Raised, metallic", "Uncoated or soft-touch 350gsm+", "Soft-touch lamination, matte print", "Prestige, exclusivity, celebration"],
+      ["Spot UV", "High-gloss contrast against matte surface", "Slightly raised, smooth gloss", "Coated / laminated stock", "Matte lamination, CMYK print", "Modern, graphic, bold contrast"],
+      ["Foil Stamping (flat)", "Metallic flat — high visual impact", "Flat, slightly textured surface", "Any 300gsm+ stock", "Emboss, soft-touch, matte lamination", "Glamour, luxury, celebration"],
+      ["Soft-Touch Lamination", "Matte, velvety — premium surface", "Soft, suede-like", "Any laminated stock", "Emboss, foil, spot UV", "Premium, tactile warmth, sophisticated"],
+      ["Letterpress", "Deep impression — inked or uninked", "Pressed into paper — deeply tactile", "Thick cotton or uncoated stock 600gsm+", "Foil, blind emboss", "Artisanal, craft, heritage quality"],
+      ["Die-Cut (custom shape)", "Custom silhouette shape", "Clean cut edge", "Any stock", "All finishes", "Creative, distinctive, memorable"],
+    ],
+  },
+  { type: "p", text: "Most powerful combinations used by Sri Lankan premium brands:" },
+  {
+    type: "ul",
+    items: [
+      "Soft-touch lamination + blind emboss — velvety surface with a raised logo. The most popular premium business card combination in Sri Lanka's corporate sector.",
+      "Matte lamination + foil emboss — matte base makes the metallic foil pop dramatically. Standard for luxury wedding invitations and award certificates.",
+      "Uncoated stock + blind emboss + letterpress — deep tactile print with raised logo. Favoured by law firms, architects and boutique brands wanting a craft aesthetic.",
+      "Spot UV + registered emboss — gloss spot UV on the embossed element creates both visual and tactile contrast. Used for premium brochure covers and annual reports.",
+    ],
+  },
+
+  // ── SECTION 5: PAPER & STOCK ──
+  { type: "h2", text: "Paper & Stock Guide for Embossed Printing — What Works and What Doesn't" },
+  { type: "p", text: "Paper choice is the single most important factor in embossing quality. The wrong stock produces a flat, cracked or poorly defined impression regardless of die quality. Here is a complete guide to paper selection for embossed printing in Sri Lanka." },
+  {
+    type: "table",
+    head: ["Paper Type", "Weight Range", "Emboss Quality", "Best Emboss Techniques", "Notes for Sri Lanka"],
+    rows: [
+      ["Uncoated Art Card", "300–400 gsm", "Excellent", "Blind emboss, registered emboss, foil emboss", "Most widely available in Sri Lanka — good compressibility produces crisp, deep relief"],
+      ["Cotton / Rag Stock", "300–600 gsm", "Outstanding", "All techniques — especially blind emboss and letterpress", "Best embossing substrate available — very soft fibre takes the deepest impressions. Used for premium certificates and luxury business cards."],
+      ["Textured / Laid Stock", "250–400 gsm", "Very Good", "Blind emboss, foil emboss", "Linen, felt, wove and laid textures enhance the natural quality of blind emboss — design must be bold enough to read against the texture"],
+      ["Soft-Touch Laminated Card", "300–400 gsm base + laminate", "Very Good", "Blind emboss, foil emboss — after lamination", "Most popular for business cards — soft-touch surface plus emboss is Sri Lanka's #1 premium business card combination"],
+      ["Coated Gloss Art Card", "300–400 gsm", "Fair", "Registered emboss, foil emboss", "Gloss coating reduces compressibility — emboss is less deep and can crack if die pressure is too high. Foil emboss works better than blind emboss on this surface."],
+      ["Matte Laminated Card", "300–400 gsm base + laminate", "Good", "Blind emboss, foil emboss", "Matte lamination gives a good embossing surface. Popular for luxury packaging boxes and premium folder covers."],
+      ["Thin Coated Paper (below 250gsm)", "Below 250 gsm", "Poor", "Not recommended", "Thin stock is prone to cracking along emboss lines and cannot hold a deep impression. Avoid for embossing — minimum 300gsm strongly recommended."],
+      ["Board / Greyboard", "1000–2000 micron", "Good for deboss", "Deboss only — emboss is very limited on rigid board", "Used for hardcover book covers, premium packaging boxes and folder covers — deboss works well on board where emboss would be limited by rigidity"],
+    ],
+  },
+  { type: "p", text: "Minimum weight recommendation: Never emboss on stock below 300gsm. Below this weight, Sri Lanka's humidity causes additional paper instability that leads to waviness around the embossed area. 350gsm uncoated or cotton stock is the recommended starting weight for business cards and invitations." },
 
   // ── SECTION 6: ARTWORK SETUP ──
   { type: "h2", text: "Artwork Setup Guide for Embossed Printing — File Requirements" },
@@ -164,26 +154,36 @@ export const EMBOSSED_PRINTING_EXTRA: Block[] = [
     ],
   },
 
-  // ── SECTION 7: BY INDUSTRY ──
-  { type: "h2", text: "Embossed Printing by Industry — Who Orders What in Sri Lanka" },
+  // ── SECTION 7: PRODUCTION PROCESS ──
+  { type: "h2", text: "Embossing Die Making & Production Process — What Happens After You Order" },
+  { type: "p", text: "Understanding the embossing production process helps you plan your timeline and prepare your artwork correctly. Embossing is a more involved process than standard offset or digital printing — here is every stage from artwork to finished product." },
+  {
+    type: "ol",
+    items: [
+      "Artwork Preparation & Die Artwork. The embossing area of your design must be supplied as a separate vector file — typically a closed-path outline of each element to be embossed. This is different from your print artwork. If your logo is being embossed, we need a clean vector outline file (not a raster image) showing the exact boundary of every embossed element. Fine details below 0.5mm stroke width and text below 8pt are generally not suitable for standard die embossing.",
+      "Die Manufacturing. Your emboss design is used to machine-cut a matched pair of metal dies — a male (convex) and female (concave) die that fit together precisely. For standard commercial embossing, dies are typically machined from magnesium or brass. Magnesium dies are more economical and suit most commercial embossing jobs. Brass dies are harder, more durable, and better for fine detail — preferred for long runs and complex designs. Die manufacturing takes 3 to 5 working days and is a one-time cost that applies to all future reprints of the same design.",
+      "Press Make-Ready & Test Impression. The dies are mounted on the embossing press and precisely aligned. A test impression is run on the actual production stock to verify the relief depth, edge sharpness and paper behaviour at the specified die pressure. If the paper shows cracking or the relief is insufficient, die pressure and packing are adjusted before the production run begins. This make-ready process is why embossing has a longer minimum lead time than flat digital printing.",
+      "Production Embossing Run. Once the make-ready is approved, the full production run proceeds. Each sheet is individually fed through the embossing press — embossing cannot be done on roll-fed high-speed presses, so production speeds are slower than flat printing. For business card quantities of 250 to 500 pieces, embossing run time is typically 2 to 4 hours after make-ready.",
+      "Post-Emboss Finishing. After embossing, the sheets undergo any additional finishing — cutting to final size, rounding corners, adding a carry bag string (for hang tags) or folding (for invitations). For business cards, the embossed sheets are guillotine-cut to individual card size after embossing. The embossed relief is naturally robust and is not damaged by standard post-press cutting.",
+      "Quality Inspection & Packing. Every embossed job is hand-inspected for relief consistency, edge sharpness, foil adhesion (for foil emboss jobs) and any cracking or deformation. Pieces with visible defects are removed before packing. Embossed pieces are packed flat — never rolled or folded — to preserve the relief through transit.",
+    ],
+  },
+  { type: "p", text: "Typical lead time breakdown for embossed printing in Sri Lanka:" },
   {
     type: "table",
-    head: ["Industry", "Most Common Embossed Products", "Preferred Technique", "Key Season in Sri Lanka"],
+    head: ["Stage", "Time Required", "Notes"],
     rows: [
-      ["Legal & Professional Services", "Business cards, letterheads, presentation folders, certificate portfolios", "Blind emboss on uncoated / cotton stock", "Year-round — new partner cards, firm rebrands"],
-      ["Banking & Finance", "Premium business cards, annual report covers, client gift packaging", "Foil emboss + soft-touch lamination", "Q1 annual reports, year-end client gifts"],
-      ["Hospitality & Hotels", "Menu covers, amenity packaging, room key wallets, welcome cards", "Deboss on leather-look covers, foil emboss on packaging", "Peak tourist season (Dec–Jan, Jul–Aug)"],
-      ["Weddings & Events", "Invitations, menu cards, place cards, ceremony programmes, thank-you cards", "Foil emboss (gold / rose gold / silver) on cotton or ivory stock", "Peak wedding season (Jan–Apr, Sep–Nov)"],
-      ["Education & Institutions", "Degree certificates, award certificates, convocation booklet covers", "Blind emboss seal / registered emboss crest", "Convocation seasons — typically Jun and Nov"],
-      ["Luxury Retail & Fashion", "Shopping bag tissue paper, gift boxes, hang tags, garment labels", "Foil emboss or deboss on packaging stock", "Christmas, Avurudu, Vesak, Valentine's Day"],
-      ["Ceylon Tea & Exports", "Gift tea boxes, tin lid labels, export packaging, promotional mailers", "Foil emboss (gold) on uncoated packaging board", "Christmas export season (Oct–Dec)"],
-      ["Real Estate & Architecture", "Business cards, project brochure covers, presentation folders", "Blind emboss on thick uncoated stock", "Project launch periods"],
-      ["Corporate Gifting", "Branded notebooks, diaries, box sets, pen sets with embossed packaging", "Deboss on PU leather cover, foil emboss on box lid", "Avurudu (April), Christmas (December), New Year (January)"],
-      ["Healthcare & Pharma", "Medical certificates, doctor's appointment cards, premium clinic stationery", "Blind emboss or registered emboss", "Year-round — clinic rebrands and stationery orders"],
+      ["Artwork approval", "1–2 days", "Your approval of digital proof required before die ordering"],
+      ["Die manufacturing", "3–5 working days", "One-time for the design — reused for all reprints"],
+      ["Print base (for registered emboss)", "2–3 working days", "Offset or digital print run completes before embossing"],
+      ["Embossing press run", "1–2 working days", "Shorter for reprints using existing dies"],
+      ["Post-press finishing", "1–2 working days", "Cutting, rounding, packing"],
+      ["Total — first order", "8–12 working days", "Plan 2–3 weeks from brief to delivery for first-time orders"],
+      ["Total — reorder (existing die)", "4–6 working days", "Die reused — significant time saving on repeat orders"],
     ],
   },
 
-  // ── SECTION 9: RELATED ──
+  // ── SECTION 8: RELATED ──
   { type: "h2", text: "Related Premium Print Finishing Services in Sri Lanka" },
   { type: "p", text: "Businesses ordering embossed printing in Sri Lanka frequently combine it with one or more of these complementary premium finishing services — spot UV printing, business card printing, certificate printing, brochure printing, presentation folder printing, packaging box printing, corporate gifting and offset printing all pair well with embossed orders." },
 ];

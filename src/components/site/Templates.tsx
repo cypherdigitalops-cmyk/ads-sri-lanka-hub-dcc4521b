@@ -22,6 +22,7 @@ import { LED_SIGN_BOARD_EXTRA, LED_SIGN_BOARD_EXTRA_FAQS } from "@/data/led-sign
 import { BANNER_PRINTING_EXTRA, BANNER_PRINTING_EXTRA_FAQS } from "@/data/banner-printing-extra-content";
 import { WINDOW_STICKER_EXTRA, WINDOW_STICKER_EXTRA_FAQS } from "@/data/window-sticker-extra-content";
 import { EMBOSSED_PRINTING_EXTRA, EMBOSSED_PRINTING_EXTRA_FAQS } from "@/data/embossed-printing-extra-content";
+import { LED_SCREEN_RENTAL_EXTRA, LED_SCREEN_RENTAL_EXTRA_FAQS } from "@/data/led-screen-rental-extra-content";
 import { CORPORATE_GIFTING_EXTRA, CORPORATE_GIFTING_EXTRA_FAQS } from "@/data/corporate-gifting-extra-content";
 
 /**
@@ -604,6 +605,7 @@ export function ServicePageTemplate({
     : slug === "window-sticker-printing-sri-lanka" ? WINDOW_STICKER_EXTRA_FAQS
     : slug === "embossed-printing-sri-lanka" ? EMBOSSED_PRINTING_EXTRA_FAQS
     : slug === "corporate-gifting-sri-lanka" ? CORPORATE_GIFTING_EXTRA_FAQS
+    : slug === "led-screen-rental-sri-lanka" ? LED_SCREEN_RENTAL_EXTRA_FAQS
     : [];
   const faqs = extraFaqsForSlug.length
     ? [...baseFaqs, ...extraFaqsForSlug.filter(f => !baseFaqs.some(b => b.q.toLowerCase() === f.q.toLowerCase()))]
@@ -683,6 +685,11 @@ export function ServicePageTemplate({
       {slug === "corporate-gifting-sri-lanka" ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={CORPORATE_GIFTING_EXTRA} />
+        </section>
+      ) : null}
+      {slug === "led-screen-rental-sri-lanka" ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={LED_SCREEN_RENTAL_EXTRA} />
         </section>
       ) : null}
       {/* Early conversion prompt while attention is high */}

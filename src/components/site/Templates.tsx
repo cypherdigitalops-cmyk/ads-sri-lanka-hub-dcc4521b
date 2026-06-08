@@ -18,6 +18,7 @@ import { getPrintingServiceContent } from "@/data/printing-service-content";
 import { getServiceUniqueContent } from "@/data/service-unique-content";
 import { getPrintingH1Override } from "@/data/printing-h1-overrides";
 import { ROLL_UP_BANNER_EXTRA, ROLL_UP_BANNER_EXTRA_FAQS } from "@/data/roll-up-banner-extra-content";
+import { LED_SIGN_BOARD_EXTRA, LED_SIGN_BOARD_EXTRA_FAQS } from "@/data/led-sign-board-extra-content";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -592,8 +593,12 @@ export function ServicePageTemplate({
   );
   const overrideFaqs = getPageFaqs(slug);
   const baseFaqs = overrideFaqs.length ? overrideFaqs : longForm.faqs;
-  const faqs = slug === "roll-up-banner-printing-sri-lanka"
-    ? [...baseFaqs, ...ROLL_UP_BANNER_EXTRA_FAQS.filter(f => !baseFaqs.some(b => b.q.toLowerCase() === f.q.toLowerCase()))]
+  const extraFaqsForSlug =
+    slug === "roll-up-banner-printing-sri-lanka" ? ROLL_UP_BANNER_EXTRA_FAQS
+    : slug === "led-sign-board-sri-lanka" ? LED_SIGN_BOARD_EXTRA_FAQS
+    : [];
+  const faqs = extraFaqsForSlug.length
+    ? [...baseFaqs, ...extraFaqsForSlug.filter(f => !baseFaqs.some(b => b.q.toLowerCase() === f.q.toLowerCase()))]
     : baseFaqs;
   const uniqueSvc = getServiceUniqueContent(slug);
   const uniquePrint = getPrintingServiceContent(slug);
@@ -645,6 +650,11 @@ export function ServicePageTemplate({
       {slug === "roll-up-banner-printing-sri-lanka" ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={ROLL_UP_BANNER_EXTRA} />
+        </section>
+      ) : null}
+      {slug === "led-sign-board-sri-lanka" ? (
+        <section className="mx-auto max-w-3xl px-4 py-8">
+          <LongFormBlocks blocks={LED_SIGN_BOARD_EXTRA} />
         </section>
       ) : null}
       {/* Early conversion prompt while attention is high */}

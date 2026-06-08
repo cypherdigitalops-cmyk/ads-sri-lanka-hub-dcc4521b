@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Top-Rated Calendar Printing Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for calendar printing sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and reliable production.";
+const TITLE = "Calendar Printing Sri Lanka | Wall, Desk & Custom Calendars 2026";
+const DESC = "Calendar printing in Sri Lanka — wall, desk, spiral & corporate calendars from Rs 250. Full-colour, custom branding, bulk discounts. Call 0771437707.";
 
 export const Route = createFileRoute("/calendar-printing-sri-lanka")({
   head: () => ({

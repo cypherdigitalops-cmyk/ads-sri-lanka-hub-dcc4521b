@@ -13,9 +13,9 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { HOME_LONGFORM, ORG_JSONLD, faqJsonLd } from "@/data/content-engine";
 import heroImg from "@/assets/hero-advertising.jpg";
 
-const TITLE = "Advertising Sri Lanka — ATL, BTL, Digital & Free Guidance";
-const TITLE_OG = "Advertising Sri Lanka — ATL, BTL, Digital & Free Guidance";
-const DESC = "Advertising Sri Lanka — compare every channel. ATL, BTL, digital, outdoor, SEO, branding & more. Free guidance islandwide. Call 0771437707.";
+const TITLE = "Advertising Sri Lanka — Every Channel, Every Budget | Free Guidance";
+const TITLE_OG = "Advertising Sri Lanka — Every Channel, Every Budget | Free Guidance";
+const DESC = "Advertising in Sri Lanka — the complete guide to every channel. Compare ATL, BTL, digital, outdoor, SEO and social media advertising. Free guidance for Sri Lankan businesses. Call 0771437707.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -107,6 +107,11 @@ const EXTRA_FAQS = [
   { q: "How long does it take to see results from advertising in Sri Lanka?", a: "Google Search Ads: 3–7 days. Facebook/Instagram: hours to a week. TV/radio: 2–4 weeks for measurable brand-search lift. BTL: same day. SEO: 4–8 weeks for early movement, 3–6 months for meaningful traffic, 6–12 months for strong #1 positions. Email/SMS: immediate, if you have an opt-in list." },
   { q: "Is advertising in Sri Lanka regulated?", a: "Yes. TV/radio is regulated by TRCSL. Product claims by the Consumer Affairs Authority. Financial services by SEC and CBSL. Pharmaceuticals by NMRA. Tobacco and alcohol carry specific restrictions. OOH requires municipal permits. Personal data in digital marketing must comply with the Personal Data Protection Act 2022." },
   { q: "How do I measure whether my advertising is working?", a: "For digital: GA4, Meta Pixel and UTM tracking on every link. The three numbers that matter are Cost Per Lead (CPL), Return on Ad Spend (ROAS) and Customer Lifetime Value (CLV). For offline: track website search lift, use unique numbers/URLs per channel, and survey new customers. If your agency cannot report these monthly, that is a red flag." },
+  { q: "What are the most effective advertising channels in Sri Lanka?", a: "Google Search Ads for high-intent leads, Facebook and Instagram for broad consumer reach, TikTok for under-35 audiences, TV (Siyatha, Derana, Hiru) for national mass awareness, and outdoor billboards for local visibility. Most effective campaigns combine 2–3 channels rather than concentrating all spend in one." },
+  { q: "How do I advertise my business in Sri Lanka on a small budget?", a: "Start with three free foundations: claim your Google Business Profile, set up WhatsApp Business with a product catalogue, and create a Facebook Business Page. With Rs 30,000–80,000/month, add Google Search Ads for high-intent customers and Facebook/Instagram ads targeted to your customer profile by age, location and interest." },
+  { q: "Do I need an advertising agency in Sri Lanka or can I do it myself?", a: "For Google Ads and Facebook Ads below Rs 100,000/month, a business owner with basic digital knowledge can self-manage. For multi-channel campaigns, TV buying, BTL activations or budgets above Rs 300,000/month, a specialist agency almost always delivers better results than self-management." },
+  { q: "What is the best digital advertising platform in Sri Lanka?", a: "Google Search Ads for demand capture (people already looking for you), Facebook/Instagram for demand creation, TikTok for under-35 product discovery, LinkedIn for B2B, and YouTube for video brand building. The best platform depends on your objective and audience — not a single platform fits every business." },
+  { q: "Is social media advertising effective in Sri Lanka?", a: "Yes. Sri Lanka has over 6.5 million Facebook users and approximately 4 million TikTok users, with some of South Asia's highest social engagement. The key is Sinhala or Tamil creative (not just English), mobile-optimised formats and continuous testing of creative variants." },
 ];
 
 const HOME_JSONLD = {
@@ -236,7 +241,7 @@ function Index() {
             <Sparkles className="h-3.5 w-3.5" /> Sri Lanka's #1 Advertising Information Hub
           </div>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Advertising in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span> — Your Complete Guide to Every Option
+            Advertising in <span className="bg-[image:var(--gradient-accent)] bg-clip-text text-transparent">Sri Lanka</span> — The Complete Guide for Sri Lankan Businesses
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
             Sri Lanka's #1 advertising information hub — learn how every advertising channel works, compare your options, and get free guidance for your next campaign.

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Mall Activation Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from mall activation sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Mall Activation Sri Lanka | Colombo City Centre & One Galle Face";
+const DESC = "Mall activation in Sri Lanka — booth setup, sampling & brand experiences at One Galle Face, Colombo City Centre & Liberty Plaza. Call 0771437707.";
 
 export const Route = createFileRoute("/mall-activation-sri-lanka")({
   head: () => ({

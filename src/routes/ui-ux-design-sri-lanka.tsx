@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "UI UX Design Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from ui ux design sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "UI/UX Design Sri Lanka | App & Web Design from Rs 50,000";
+const DESC = "UI/UX design in Sri Lanka from Rs 50,000. Mobile app, SaaS & website design with Figma prototypes & design systems. Call 0771437707.";
 
 export const Route = createFileRoute("/ui-ux-design-sri-lanka")({
   head: () => ({

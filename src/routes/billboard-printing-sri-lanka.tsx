@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
-const TITLE = "Professional Billboard Printing Sri Lanka for Sri Lankan Brands";
-const DESC = "Get measurable results from billboard printing sri lanka in Sri Lanka. Concept, production and islandwide delivery handled by one specialist team.";
+const TITLE = "Billboard Printing Sri Lanka | Hoarding & Banner Print from Rs 90/sqft";
+const DESC = "Billboard printing in Sri Lanka — large-format hoardings, building wraps & roadside billboards from Rs 90/sqft. UV-stable inks, 510gsm flex. Call 0771437707.";
 
 export const Route = createFileRoute("/billboard-printing-sri-lanka")({
   head: () => ({

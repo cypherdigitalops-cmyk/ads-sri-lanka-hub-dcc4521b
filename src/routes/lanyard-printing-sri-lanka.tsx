@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Lanyard Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from lanyard printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Lanyard Printing Sri Lanka | Custom Lanyards from Rs 95 Each";
+const DESC = "Lanyard printing in Sri Lanka from Rs 95. Polyester & woven lanyards with custom print, breakaway clips & card holders. Call 0771437707.";
 
 export const Route = createFileRoute("/lanyard-printing-sri-lanka")({
   head: () => ({

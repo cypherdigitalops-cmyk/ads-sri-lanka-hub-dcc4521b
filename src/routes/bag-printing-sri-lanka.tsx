@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Bag Printing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from bag printing sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Bag Printing Sri Lanka | Cotton, Jute & Non-Woven from Rs 95 Each";
+const DESC = "Bag printing in Sri Lanka — cotton, jute, canvas & non-woven bags from Rs 95. Screen, heat-transfer & embroidery. Min 50 units. Call 0771437707.";
 
 export const Route = createFileRoute("/bag-printing-sri-lanka")({
   head: () => ({

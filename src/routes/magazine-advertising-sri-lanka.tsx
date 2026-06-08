@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
-const TITLE = "Magazine Advertising Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from magazine advertising sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Magazine Advertising Sri Lanka | Print Ad Buying & Placement";
+const DESC = "Magazine advertising in Sri Lanka — ad placement in Lanka Monthly Digest, Echelon, Hi!! & trade publications. Call 0771437707.";
 
 export const Route = createFileRoute("/magazine-advertising-sri-lanka")({
   head: () => ({

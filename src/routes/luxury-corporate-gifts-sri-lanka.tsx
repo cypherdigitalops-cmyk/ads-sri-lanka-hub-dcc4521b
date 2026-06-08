@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Luxury Corporate Gifts Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from luxury corporate gifts sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Luxury Corporate Gifts Sri Lanka | Premium Executive Gifting";
+const DESC = "Luxury corporate gifts in Sri Lanka — premium leather, crystal & metal gift sets with bespoke packaging for VIP clients. Call 0771437707.";
 
 export const Route = createFileRoute("/luxury-corporate-gifts-sri-lanka")({
   head: () => ({

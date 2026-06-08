@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Branded Merchandise Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from branded merchandise sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Branded Merchandise Sri Lanka | Custom Corporate Giveaways";
+const DESC = "Branded merchandise in Sri Lanka — caps, mugs, pens, USBs, bags & apparel printed or embroidered with your logo. Min 50 units. Call 0771437707.";
 
 export const Route = createFileRoute("/branded-merchandise-sri-lanka")({
   head: () => ({

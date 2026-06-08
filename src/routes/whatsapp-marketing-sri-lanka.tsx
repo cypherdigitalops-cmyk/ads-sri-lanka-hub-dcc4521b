@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Whatsapp Marketing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from whatsapp marketing sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "WhatsApp Marketing Sri Lanka | WhatsApp Business API & Bulk Send";
+const DESC = "WhatsApp marketing in Sri Lanka — WhatsApp Business API setup, bulk broadcasts, chatbots & campaign management. Call 0771437707.";
 
 export const Route = createFileRoute("/whatsapp-marketing-sri-lanka")({
   head: () => ({

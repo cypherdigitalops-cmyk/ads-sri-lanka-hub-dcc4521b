@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
-const TITLE = "Ecommerce Website Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from ecommerce website sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Ecommerce Website Sri Lanka | Shopify & WooCommerce from Rs 75,000";
+const DESC = "Ecommerce website development in Sri Lanka from Rs 75,000. Shopify, WooCommerce & custom stores with PayHere/Stripe integration. Call 0771437707.";
 
 export const Route = createFileRoute("/ecommerce-website-sri-lanka")({
   head: () => ({

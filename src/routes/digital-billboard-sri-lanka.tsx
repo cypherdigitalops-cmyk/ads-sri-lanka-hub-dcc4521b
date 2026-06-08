@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
-const TITLE = "Top-Rated Digital Billboard Sri Lanka in Sri Lanka";
-const DESC = "Hire trusted specialists for digital billboard sri lanka in Sri Lanka. Goal-driven planning, on-brand creative and always-on optimisation.";
+const TITLE = "Digital Billboard Sri Lanka | LED Hoarding Ad Placement";
+const DESC = "Digital billboard advertising in Sri Lanka — premium LED hoarding sites in Colombo, Kandy & Galle. Slot planning & creative. Call 0771437707.";
 
 export const Route = createFileRoute("/digital-billboard-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
-const TITLE = "Customized Corporate Gifts Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from customized corporate gifts sri lanka in Sri Lanka. Strategy, sourcing, branding and delivery handled by one specialist team.";
+const TITLE = "Customized Corporate Gifts Sri Lanka | Logo-Branded Gifts";
+const DESC = "Customized corporate gifts in Sri Lanka — logo-branded executive sets, drinkware, tech & desk accessories. Min 25 units. Call 0771437707.";
 
 export const Route = createFileRoute("/customized-corporate-gifts-sri-lanka")({
   head: () => ({

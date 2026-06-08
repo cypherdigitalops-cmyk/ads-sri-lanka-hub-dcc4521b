@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
-const TITLE = "Brand Activation Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from brand activation sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Brand Activation Sri Lanka | Experiential Marketing & Sampling";
+const DESC = "Brand activation in Sri Lanka — mall, supermarket & roadshow activations, sampling, BTL events & promoter teams across the island. Call 0771437707.";
 
 export const Route = createFileRoute("/brand-activation-sri-lanka")({
   head: () => ({

@@ -4,8 +4,8 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Influencer Marketing Sri Lanka Services — Get a Free Quote Today";
-const DESC = "Get measurable results from influencer marketing sri lanka in Sri Lanka. Strategy, creative production and media buying handled by one specialist team.";
+const TITLE = "Influencer Marketing Sri Lanka | Creator Campaigns & Sourcing";
+const DESC = "Influencer marketing in Sri Lanka — creator sourcing, campaign management, content briefs & performance reporting. Call 0771437707.";
 
 export const Route = createFileRoute("/influencer-marketing-sri-lanka")({
   head: () => ({

@@ -612,7 +612,7 @@ export function CategoryHubTemplate({
       {isAtl ? (
         <PrintingExtraWithMidCTA blocks={ATL_EXTRA} service={category.title} />
       ) : null}
-      {(!hasUnique || isPrinting) ? (
+      {!hasUnique ? (
         <>
           {longForm.blocks.length ? (
             <section className="mx-auto max-w-3xl px-4 py-8">
@@ -625,6 +625,19 @@ export function CategoryHubTemplate({
               { icon: <Target className="h-5 w-5" />, title: "Strategy first", body: "Every campaign starts with audience, message and channel mix." },
               { icon: <TrendingUp className="h-5 w-5" />, title: "Measurable ROI", body: "Transparent reporting on reach, engagement and conversions." },
               { icon: <Users className="h-5 w-5" />, title: "Local expertise", body: "Deep market knowledge across Sinhala, Tamil and English audiences." },
+            ]}
+          />
+          <ProcessSteps />
+        </>
+      ) : null}
+      {isPrinting && hasUnique ? (
+        <>
+          <FeatureGrid
+            title={`Why brands choose us for ${category.title.toLowerCase()}`}
+            items={[
+              { icon: <Target className="h-5 w-5" />, title: "Strategy first", body: "Every print job starts with substrate, finish and turnaround planning." },
+              { icon: <TrendingUp className="h-5 w-5" />, title: "Same-day in Colombo", body: "Rush banners, signage and cards delivered same day across Colombo." },
+              { icon: <Users className="h-5 w-5" />, title: "Trusted by 500+ brands", body: "From SMEs to enterprises — consistent colour and on-time delivery." },
             ]}
           />
           <ProcessSteps />

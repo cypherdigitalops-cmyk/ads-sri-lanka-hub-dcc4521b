@@ -518,12 +518,14 @@ export function CategoryHubTemplate({
   h1Override: h1OverrideProp,
   introOverride,
   reducedCtas,
+  extraContent,
 }: {
   category: Category;
   extraLinks?: { href: string; label: string; anchor?: string }[];
   h1Override?: string;
   introOverride?: string;
   reducedCtas?: boolean;
+  extraContent?: React.ReactNode;
 }) {
   resetHomeAnchor(category.slug);
   setExtraLinks(
@@ -591,6 +593,7 @@ export function CategoryHubTemplate({
           ))}
         </div>
       </section>
+      {extraContent ? <>{extraContent}</> : null}
       {/* PRIORITY: unique content first */}
       {hasUnique ? (
         <section className="mx-auto max-w-3xl px-4 py-8">

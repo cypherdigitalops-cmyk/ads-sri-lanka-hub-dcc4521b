@@ -71,8 +71,13 @@ export const Route = createFileRoute("/outdoor-advertising-sri-lanka")({
   }),
   component: () => (
     <PageShell>
-      <CategoryHubTemplate category={CAT} h1Override={H1} introOverride={INTRO} reducedCtas />
-      <OutdoorRankContent />
+      <CategoryHubTemplate
+        category={CAT}
+        h1Override={H1}
+        introOverride={INTRO}
+        reducedCtas
+        extraContent={<OutdoorRankContent />}
+      />
     </PageShell>
   ),
 });

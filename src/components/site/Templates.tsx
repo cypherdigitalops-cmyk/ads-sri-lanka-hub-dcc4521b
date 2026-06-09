@@ -515,9 +515,13 @@ function FAQ({ items }: { items: { q: string; a: string }[] }) {
 export function CategoryHubTemplate({
   category,
   extraLinks,
+  h1Override: h1OverrideProp,
+  introOverride,
 }: {
   category: Category;
   extraLinks?: { href: string; label: string; anchor?: string }[];
+  h1Override?: string;
+  introOverride?: string;
 }) {
   resetHomeAnchor(category.slug);
   setExtraLinks(
@@ -564,8 +568,8 @@ export function CategoryHubTemplate({
       />
       <Hero
         kicker={`${category.title} Sri Lanka`}
-        h1={h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`}
-        intro={h1Override?.intro ?? category.intro}
+        h1={h1OverrideProp ?? h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`}
+        intro={introOverride ?? h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
       {/* PRINTING HUB: browse first, then CTA further down */}

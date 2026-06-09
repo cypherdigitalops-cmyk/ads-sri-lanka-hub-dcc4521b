@@ -222,6 +222,73 @@ function EventManagementRankContent() {
       </div>
       <p className="mt-4"><strong className="text-foreground">The most important rule:</strong> always include a 10% contingency. Sri Lankan events consistently encounter last-minute costs — generator fuel, venue overtime, emergency equipment, additional catering, higher permit fees. Contingency is insurance against the inevitable.</p>
 
+      <h3 className="mt-8 text-xl font-bold text-foreground">Where Sri Lankan event organisers most often overspend</h3>
+      <ul className="mt-3 list-disc space-y-2 pl-5">
+        <li><strong>Premium hotel venues</strong> — the same event quality often achievable at less prestigious venues for 40% less cost.</li>
+        <li><strong>Elaborate décor and florals</strong> that look better in the budget spreadsheet than in the room.</li>
+        <li><strong>Catering portions that exceed actual consumption</strong> — confirm realistic per-head consumption with your caterer.</li>
+        <li><strong>Entertainment acts the audience does not recognise</strong> — impressive on paper, poor ROI in the room.</li>
+      </ul>
+
+      <h3 className="mt-6 text-xl font-bold text-foreground">Where Sri Lankan event organisers most often underspend</h3>
+      <ul className="mt-3 list-disc space-y-2 pl-5">
+        <li><strong>Sound system specification</strong> — the single biggest factor in poor event experience. An underpowered PA cannot fill the room evenly.</li>
+        <li><strong>Photography and video</strong> — generates branded content used for 12 months after the event. Underspending costs more in lost brand content than the saving.</li>
+        <li><strong>Technical rehearsal time</strong> — paying for venue access the evening before for a full rehearsal is the highest-ROI event investment available.</li>
+        <li><strong>Contingency buffer</strong> — events without contingency face crisis decisions under time pressure — always the worst environment for financial decisions.</li>
+      </ul>
+
+      <h2 className="mt-12 text-2xl font-bold text-foreground sm:text-3xl">Types of events managed by professional companies in Sri Lanka</h2>
+      <p className="mt-3">Understanding what falls within professional event management scope — versus what can be self-managed — helps organisations allocate budget and resource correctly.</p>
+      <div className="mt-4 overflow-x-auto rounded-lg border border-border bg-card">
+        <table className="w-full text-left text-sm">
+          <thead className="bg-secondary/40 text-foreground">
+            <tr>
+              <th className="px-4 py-3 font-semibold">Event Category</th>
+              <th className="px-4 py-3 font-semibold">Complexity</th>
+              <th className="px-4 py-3 font-semibold">Pro Management Needed?</th>
+              <th className="px-4 py-3 font-semibold">Key Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["National/international conference (500+ pax)", "Very High", "Essential", "AV complexity, translation, delegate management, security and protocol"],
+              ["Product launch with media/press", "High", "Essential", "The reveal moment, PR coordination and live photography must be choreographed"],
+              ["Award ceremony (200+ pax, live camera)", "High", "Essential", "Run-of-show precision — a single timing error on camera is permanent"],
+              ["Concert (500+ audience)", "Very High", "Essential", "Stage load, sound engineering, crowd management and permits require specialists"],
+              ["Wedding (200+ guests)", "High", "Strongly recommended", "Vendor coordination complexity grows exponentially with guest count"],
+              ["BMICH exhibition (multi-booth)", "High", "Strongly recommended", "Booth design, build, utilities and floor plan require trade experience"],
+              ["Mall brand activation (3–7 days)", "Medium", "Recommended", "Landlord requirements, activation mechanics, staffing benefit from coordination"],
+              ["Corporate dinner (under 100, hotel)", "Medium", "Optional", "Hotel events team can manage most requirements"],
+              ["Small team offsite (under 30)", "Low", "Not essential", "Internal coordination sufficient — hotel handles logistics"],
+              ["Webinar / virtual event", "Medium", "Depends on scale", "Specialist support needed above 500 virtual attendees"],
+            ].map((r) => (
+              <tr key={r[0]} className="border-t border-border align-top">
+                <td className="px-4 py-3 font-semibold text-foreground">{r[0]}</td>
+                <td className="px-4 py-3">{r[1]}</td>
+                <td className="px-4 py-3">{r[2]}</td>
+                <td className="px-4 py-3">{r[3]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 className="mt-12 text-2xl font-bold text-foreground sm:text-3xl">What our clients say — event management across Sri Lanka</h2>
+      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        {[
+          { q: "The stage, sound and LED setup for our annual dealer conference were exactly what we briefed. The technical team was on-site from 6am, full rehearsal done by noon, and the event ran without a single technical issue for 800 delegates.", c: "Marketing Director, FMCG Company, Colombo" },
+          { q: "We needed a product launch that could generate press coverage and social content simultaneously. The reveal moment was choreographed perfectly — we trended on social within 2 hours of the event starting.", c: "Brand Manager, Consumer Electronics, Sri Lanka" },
+          { q: "CMC permit, police clearance and fire safety sign-off all confirmed in writing 10 days before our outdoor event. We have worked with three other event companies who left permits to the last week. The difference in stress level alone justified the choice.", c: "Event Manager, NGO, Colombo" },
+          { q: "Our Jaffna dealer meet was managed with the same standard as our Colombo events. The outstation team sourced the venue, organised catering and delivered full stage and AV on time — 300km from Colombo.", c: "National Sales Manager, Telecommunications Company" },
+        ].map((t) => (
+          <figure key={t.c} className="rounded-xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
+            <blockquote className="text-sm text-foreground/90">“{t.q}”</blockquote>
+            <figcaption className="mt-3 text-xs font-semibold text-muted-foreground">— {t.c}</figcaption>
+          </figure>
+        ))}
+      </div>
+
       <h2 className="mt-12 text-2xl font-bold text-foreground sm:text-3xl">Sri Lanka event industry — key facts</h2>
       <ul className="mt-3 list-disc space-y-2 pl-5">
         <li><strong>200+ registered event management companies</strong> — fragmented market, due diligence essential.</li>

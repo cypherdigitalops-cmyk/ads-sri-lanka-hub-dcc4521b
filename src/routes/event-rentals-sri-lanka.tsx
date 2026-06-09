@@ -4,8 +4,8 @@ import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
 
-const TITLE = "Event Rentals in Sri Lanka — Stage, Sound, LED, Photo Booth & More";
-const DESC = "Rent everything you need for your event in Sri Lanka — LED screens, sound systems, stages, lighting, photo booths, tents, generators, drones and more. Get pricing and free guidance.";
+const TITLE = "Event Rentals Sri Lanka — Stage, Sound, LED, Tents & 17 Categories | Islandwide";
+const DESC = "Event rentals Sri Lanka — LED screens, sound, stages, lighting, tents, generators, photo booths & 17 categories. Delivered, set up & operated islandwide. Call 0771437707.";
 
 const RENTALS: { slug: string; title: string; icon: string; desc: string }[] = [
   { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", icon: "🖥️", desc: "Indoor & outdoor LED video walls for stages, conferences and concerts." },

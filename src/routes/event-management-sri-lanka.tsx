@@ -81,8 +81,8 @@ export const Route = createFileRoute("/event-management-sri-lanka")({
           { href: "/sound-system-rental-sri-lanka", label: "Sound System Rental Sri Lanka", anchor: "line-array sound systems" },
           { href: "/stage-setup-sri-lanka", label: "Stage Setup Sri Lanka", anchor: "Truss stages" },
         ]}
+        extraContent={<EventManagementRankContent />}
       />
-      <EventManagementRankContent />
     </PageShell>
   ),
 });

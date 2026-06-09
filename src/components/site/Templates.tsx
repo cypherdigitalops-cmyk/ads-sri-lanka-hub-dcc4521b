@@ -517,11 +517,13 @@ export function CategoryHubTemplate({
   extraLinks,
   h1Override: h1OverrideProp,
   introOverride,
+  reducedCtas,
 }: {
   category: Category;
   extraLinks?: { href: string; label: string; anchor?: string }[];
   h1Override?: string;
   introOverride?: string;
+  reducedCtas?: boolean;
 }) {
   resetHomeAnchor(category.slug);
   setExtraLinks(
@@ -595,7 +597,7 @@ export function CategoryHubTemplate({
           <LongFormBlocks blocks={uniqueCat} />
         </section>
       ) : null}
-      {!isPrinting ? <MidContentWhatsAppCTA service={category.title} /> : null}
+      {!isPrinting && !reducedCtas ? <MidContentWhatsAppCTA service={category.title} /> : null}
       {/* Hub long-form SEO content with mid CTA split */}
       {isPrinting ? (
         <PrintingExtraWithMidCTA blocks={PRINTING_HUB_EXTRA} service={category.title} />
@@ -663,7 +665,7 @@ export function CategoryHubTemplate({
           </div>
         </section>
       ) : null}
-      {!isPrinting ? <InlineInquiryForm service={category.title} /> : null}
+      {!isPrinting && !reducedCtas ? <InlineInquiryForm service={category.title} /> : null}
       <HubConversionBadge slug={category.slug} />
     </>
   );

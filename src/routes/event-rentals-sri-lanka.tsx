@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import { ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
@@ -183,10 +184,10 @@ function RentalsHubPage() {
   );
 }
 
-function Th({ children }: { children: React.ReactNode }) {
+function Th({ children }: { children: ReactNode }) {
   return <th className="border border-border bg-muted px-3 py-2 text-left text-sm font-semibold">{children}</th>;
 }
-function Td({ children }: { children: React.ReactNode }) {
+function Td({ children }: { children: ReactNode }) {
   return <td className="border border-border px-3 py-2 align-top text-sm">{children}</td>;
 }
 

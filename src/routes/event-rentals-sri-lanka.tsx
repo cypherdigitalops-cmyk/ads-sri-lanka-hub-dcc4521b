@@ -100,7 +100,7 @@ export const Route = createFileRoute("/event-rentals-sri-lanka")({
           name: "Event Rentals Sri Lanka",
           serviceType: "Event Equipment Rental",
           areaServed: { "@type": "Country", name: "Sri Lanka" },
-          provider: { "@type": "Organization", name: SITE.brand, telephone: SITE.phone, url: SITE.url },
+          provider: { "@type": "Organization", name: SITE.name, telephone: SITE.phone, url: SITE.url },
           description: DESC,
         }),
       },

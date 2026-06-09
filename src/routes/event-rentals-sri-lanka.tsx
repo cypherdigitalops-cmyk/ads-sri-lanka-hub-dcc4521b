@@ -148,6 +148,9 @@ function RentalsHubPage() {
         </div>
       </section>
 
+      {/* Long-form rank content */}
+      <RentalsRankContent />
+
       {/* Rentals grid */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:py-20">
         <div className="text-center">

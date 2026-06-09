@@ -30,6 +30,7 @@ import { WRISTBAND_EXTRA, WRISTBAND_EXTRA_FAQS } from "@/data/wristband-extra-co
 import { PEN_PRINTING_EXTRA, PEN_PRINTING_EXTRA_FAQS } from "@/data/pen-printing-extra-content";
 import { BACKDROP_PRINTING_EXTRA, BACKDROP_PRINTING_EXTRA_FAQS } from "@/data/backdrop-printing-extra-content";
 import { MUG_PRINTING_EXTRA, MUG_PRINTING_EXTRA_FAQS } from "@/data/mug-printing-extra-content";
+import { ATL_EXTRA, ATL_EXTRA_FAQS } from "@/data/atl-advertising-extra-content";
 import { TODAY_MODIFIED, getCrossLinksExcluding } from "@/data/today-cross-links";
 import { HubConversionBadge } from "@/components/site/HubConversionBadge";
 
@@ -540,6 +541,7 @@ export function CategoryHubTemplate({
   const hasUnique = uniqueCat.length > 0;
   const h1Override = getPrintingH1Override(category.slug);
   const isPrinting = category.slug === "printing-services-sri-lanka";
+  const isAtl = category.slug === "atl-advertising-sri-lanka";
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -605,6 +607,9 @@ export function CategoryHubTemplate({
       {isPrinting ? (
         <PrintingExtraWithMidCTA blocks={PRINTING_HUB_EXTRA} service={category.title} />
       ) : null}
+      {isAtl ? (
+        <PrintingExtraWithMidCTA blocks={ATL_EXTRA} service={category.title} />
+      ) : null}
       {!hasUnique ? (
         <>
           {longForm.blocks.length ? (
@@ -647,9 +652,10 @@ export function CategoryHubTemplate({
       <FaqList
         items={(() => {
           const base = getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs;
-          if (!isPrinting) return base;
+          const extras = isPrinting ? PRINTING_HUB_EXTRA_FAQS : isAtl ? ATL_EXTRA_FAQS : [];
+          if (!extras.length) return base;
           const merged = [...base];
-          for (const f of PRINTING_HUB_EXTRA_FAQS) {
+          for (const f of extras) {
             if (!merged.some((b) => b.q.toLowerCase() === f.q.toLowerCase())) merged.push(f);
           }
           return merged;

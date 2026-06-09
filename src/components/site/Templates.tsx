@@ -595,6 +595,8 @@ export function CategoryHubTemplate({
           ))}
         </div>
       </section>
+      {/* Printing hub: high-intent mid-page WhatsApp CTA right after the services grid */}
+      {isPrinting ? <MidContentWhatsAppCTA service={category.title} /> : null}
       {extraContent ? <>{extraContent}</> : null}
       {/* PRIORITY: unique content first */}
       {hasUnique ? (
@@ -610,7 +612,7 @@ export function CategoryHubTemplate({
       {isAtl ? (
         <PrintingExtraWithMidCTA blocks={ATL_EXTRA} service={category.title} />
       ) : null}
-      {!hasUnique ? (
+      {(!hasUnique || isPrinting) ? (
         <>
           {longForm.blocks.length ? (
             <section className="mx-auto max-w-3xl px-4 py-8">
@@ -674,7 +676,7 @@ export function CategoryHubTemplate({
           </div>
         </section>
       ) : null}
-      {!isPrinting && !reducedCtas ? <InlineInquiryForm service={category.title} /> : null}
+      {(!reducedCtas) ? <InlineInquiryForm service={category.title} /> : null}
       <HubConversionBadge slug={category.slug} />
     </>
   );

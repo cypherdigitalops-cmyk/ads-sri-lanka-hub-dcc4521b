@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { ArrowRight, Phone, MessageCircle, CheckCircle2, Truck, Wrench, ShieldCheck, Clock, Star } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
@@ -145,20 +145,39 @@ function RentalsHubPage() {
                 Get a free quote <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm opacity-90">
+              <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4" /> 17 rental categories</span>
+              <span className="inline-flex items-center gap-2"><Truck className="h-4 w-4" /> Islandwide delivery</span>
+              <span className="inline-flex items-center gap-2"><Wrench className="h-4 w-4" /> Setup + technician included</span>
+              <span className="inline-flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Backup equipment on standby</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Long-form rank content */}
-      <RentalsRankContent />
+      {/* Trust bar */}
+      <section className="border-b border-border bg-muted/40">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-6 text-sm sm:grid-cols-4">
+          {[
+            { icon: Star, label: "500+ events delivered" },
+            { icon: Clock, label: "Same/next-day in Colombo" },
+            { icon: Truck, label: "All 25 districts covered" },
+            { icon: ShieldCheck, label: "On-site technician included" },
+          ].map(({ icon: Icon, label }, i) => (
+            <div key={i} className="flex items-center gap-2 font-medium text-foreground">
+              <Icon className="h-5 w-5 text-primary" /> {label}
+            </div>
+          ))}
+        </div>
+      </section>
 
-      {/* Rentals grid */}
+      {/* Rentals grid — primary offer, moved up for conversion */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:py-20">
         <div className="text-center">
-          <div className="text-sm font-semibold text-accent">All Rentals</div>
-          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Browse {RENTALS.length} event rental services</h2>
+          <div className="text-sm font-semibold text-accent">Pick what you need</div>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">{RENTALS.length} event rental categories — tap for pricing</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Pick a category to see what's available, how it's priced and what's included. All rentals come with delivery, setup, operation and pack-down.
+            Every rental includes delivery, setup, an on-site technician, testing and pack-down. Tap any category to see specs, prices and what's included.
           </p>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -177,7 +196,18 @@ function RentalsHubPage() {
             </Link>
           ))}
         </div>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-card)] hover:opacity-90">
+            <Phone className="h-4 w-4" /> Not sure what you need? Call {SITE.phone}
+          </a>
+          <a href={`https://wa.me/${waPhone}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:opacity-90">
+            <MessageCircle className="h-4 w-4" /> WhatsApp for a quick quote
+          </a>
+        </div>
       </section>
+
+      {/* Long-form rank + reference content (moved below offer) */}
+      <RentalsRankContent />
 
       <CTASection />
     </PageShell>

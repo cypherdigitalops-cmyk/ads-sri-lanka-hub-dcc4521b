@@ -75,6 +75,7 @@ export const Route = createFileRoute("/event-management-sri-lanka")({
         category={CAT}
         h1Override={H1}
         introOverride={INTRO}
+        reducedCtas
         extraLinks={[
           { href: "/led-screen-rental-sri-lanka", label: "LED Screen Rental Sri Lanka", anchor: "indoor/outdoor LED screens" },
           { href: "/sound-system-rental-sri-lanka", label: "Sound System Rental Sri Lanka", anchor: "line-array sound systems" },

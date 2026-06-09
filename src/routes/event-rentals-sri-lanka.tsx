@@ -193,7 +193,13 @@ function Td({ children }: { children: ReactNode }) {
 
 function RentalsRankContent() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-12 prose prose-slate max-w-none dark:prose-invert">
+    <div className="mx-auto max-w-5xl px-4 py-12 text-foreground
+      [&_h2]:mt-12 [&_h2]:text-2xl [&_h2]:font-bold sm:[&_h2]:text-3xl [&_h2]:mb-4 [&_h2:first-child]:mt-0
+      [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:mb-3
+      [&_p]:mb-4 [&_p]:leading-relaxed [&_p]:text-muted-foreground
+      [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_ol_li]:text-muted-foreground
+      [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul_li]:text-muted-foreground
+      [&_table]:my-6 [&_strong]:text-foreground">
       {/* Section 1 */}
       <h2>What Every Event Rental Includes — Delivery, Setup & Operation</h2>
       <p>

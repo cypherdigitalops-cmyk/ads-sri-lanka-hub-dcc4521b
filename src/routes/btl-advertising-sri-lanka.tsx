@@ -72,8 +72,13 @@ export const Route = createFileRoute("/btl-advertising-sri-lanka")({
   }),
   component: () => (
     <PageShell>
-      <CategoryHubTemplate category={CAT} h1Override={H1} introOverride={INTRO} reducedCtas />
-      <BtlRankContent />
+      <CategoryHubTemplate
+        category={CAT}
+        h1Override={H1}
+        introOverride={INTRO}
+        reducedCtas
+        extraContent={<BtlRankContent />}
+      />
     </PageShell>
   ),
 });

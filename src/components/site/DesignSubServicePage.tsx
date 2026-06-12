@@ -30,6 +30,128 @@ const RELATED = [
   { href: "/social-media-post-design-sri-lanka", label: "Social Media Design" },
 ];
 
+// Map each design sub-service slug to the printing services most likely to be
+// purchased alongside it. Anchor text uses the exact printing keyword so the
+// internal link reinforces the printing page's target keyword.
+const PRINTING_LINKS: Record<string, { href: string; label: string }[]> = {
+  "flyer-design-sri-lanka": [
+    { href: "/flyer-printing-sri-lanka", label: "flyer printing Sri Lanka" },
+    { href: "/digital-printing-sri-lanka", label: "digital printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+  ],
+  "poster-design-sri-lanka": [
+    { href: "/poster-printing-sri-lanka", label: "poster printing Sri Lanka" },
+    { href: "/large-format-printing-sri-lanka", label: "large format printing Sri Lanka" },
+    { href: "/canvas-printing-sri-lanka", label: "canvas printing Sri Lanka" },
+  ],
+  "business-card-design-sri-lanka": [
+    { href: "/business-card-printing-sri-lanka", label: "business card printing Sri Lanka" },
+    { href: "/spot-uv-printing-sri-lanka", label: "spot UV printing Sri Lanka" },
+    { href: "/embossed-printing-sri-lanka", label: "embossed printing Sri Lanka" },
+  ],
+  "brochure-design-sri-lanka": [
+    { href: "/brochure-printing-sri-lanka", label: "brochure printing Sri Lanka" },
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+  ],
+  "packaging-design-sri-lanka": [
+    { href: "/box-printing-sri-lanka", label: "box printing Sri Lanka" },
+    { href: "/gift-box-printing-sri-lanka", label: "gift box printing Sri Lanka" },
+    { href: "/paper-bag-printing-sri-lanka", label: "paper bag printing Sri Lanka" },
+    { href: "/shrink-sleeve-printing-sri-lanka", label: "shrink sleeve printing Sri Lanka" },
+  ],
+  "label-design-sri-lanka": [
+    { href: "/label-printing-sri-lanka", label: "label printing Sri Lanka" },
+    { href: "/roll-label-printing-sri-lanka", label: "roll label printing Sri Lanka" },
+    { href: "/barcode-label-printing-sri-lanka", label: "barcode label printing Sri Lanka" },
+    { href: "/security-label-printing-sri-lanka", label: "security label printing Sri Lanka" },
+  ],
+  "menu-design-sri-lanka": [
+    { href: "/menu-printing-sri-lanka", label: "menu printing Sri Lanka" },
+    { href: "/digital-printing-sri-lanka", label: "digital printing Sri Lanka" },
+    { href: "/spot-uv-printing-sri-lanka", label: "spot UV printing Sri Lanka" },
+  ],
+  "magazine-cover-design-sri-lanka": [
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+    { href: "/catalogue-printing-sri-lanka", label: "catalogue printing Sri Lanka" },
+  ],
+  "catalog-design-sri-lanka": [
+    { href: "/catalogue-printing-sri-lanka", label: "catalogue printing Sri Lanka" },
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+  ],
+  "book-cover-design-sri-lanka": [
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+    { href: "/spot-uv-printing-sri-lanka", label: "spot UV printing Sri Lanka" },
+  ],
+  "interior-book-design-sri-lanka": [
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+  ],
+  "company-profile-design-sri-lanka": [
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/presentation-folder-printing-sri-lanka", label: "presentation folder printing Sri Lanka" },
+    { href: "/annual-report-printing-sri-lanka", label: "annual report printing Sri Lanka" },
+  ],
+  "stationery-design-sri-lanka": [
+    { href: "/letterhead-printing-sri-lanka", label: "letterhead printing Sri Lanka" },
+    { href: "/business-card-printing-sri-lanka", label: "business card printing Sri Lanka" },
+    { href: "/invoice-book-printing-sri-lanka", label: "invoice book printing Sri Lanka" },
+    { href: "/notebook-printing-sri-lanka", label: "notebook printing Sri Lanka" },
+  ],
+  "brand-identity-design-sri-lanka": [
+    { href: "/business-card-printing-sri-lanka", label: "business card printing Sri Lanka" },
+    { href: "/letterhead-printing-sri-lanka", label: "letterhead printing Sri Lanka" },
+    { href: "/presentation-folder-printing-sri-lanka", label: "presentation folder printing Sri Lanka" },
+  ],
+  "brand-style-guide-sri-lanka": [
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+  ],
+  "signage-design-sri-lanka": [
+    { href: "/foam-board-printing-sri-lanka", label: "foam board printing Sri Lanka" },
+    { href: "/forex-board-printing-sri-lanka", label: "forex board printing Sri Lanka" },
+    { href: "/neon-sign-printing-sri-lanka", label: "neon sign printing Sri Lanka" },
+    { href: "/event-signage-printing-sri-lanka", label: "event signage printing Sri Lanka" },
+  ],
+  "web-banner-design-sri-lanka": [
+    { href: "/banner-printing-sri-lanka", label: "banner printing Sri Lanka" },
+    { href: "/roll-up-banner-printing-sri-lanka", label: "roll-up banner printing Sri Lanka" },
+    { href: "/x-banner-printing-sri-lanka", label: "X banner printing Sri Lanka" },
+  ],
+  "social-media-post-design-sri-lanka": [
+    { href: "/poster-printing-sri-lanka", label: "poster printing Sri Lanka" },
+    { href: "/flyer-printing-sri-lanka", label: "flyer printing Sri Lanka" },
+  ],
+  "thumbnail-design-sri-lanka": [
+    { href: "/poster-printing-sri-lanka", label: "poster printing Sri Lanka" },
+  ],
+  "email-design-sri-lanka": [
+    { href: "/flyer-printing-sri-lanka", label: "flyer printing Sri Lanka" },
+    { href: "/brochure-printing-sri-lanka", label: "brochure printing Sri Lanka" },
+  ],
+  "icon-design-sri-lanka": [
+    { href: "/sticker-printing-sri-lanka", label: "sticker printing Sri Lanka" },
+  ],
+  "website-design-sri-lanka": [
+    { href: "/business-card-printing-sri-lanka", label: "business card printing Sri Lanka" },
+    { href: "/brochure-printing-sri-lanka", label: "brochure printing Sri Lanka" },
+  ],
+  "ecommerce-website-design-sri-lanka": [
+    { href: "/box-printing-sri-lanka", label: "box printing Sri Lanka" },
+    { href: "/sticker-printing-sri-lanka", label: "sticker printing Sri Lanka" },
+    { href: "/hang-tag-printing-sri-lanka", label: "hang tag printing Sri Lanka" },
+  ],
+  "ux-design-sri-lanka": [
+    { href: "/printing-services-sri-lanka", label: "printing services Sri Lanka" },
+  ],
+  "mobile-app-ui-design-sri-lanka": [
+    { href: "/sticker-printing-sri-lanka", label: "sticker printing Sri Lanka" },
+  ],
+};
+
 export function DesignSubServicePage({ data }: { data: DesignSubService }) {
   return (
     <PageShell>
@@ -89,6 +211,28 @@ export function DesignSubServicePage({ data }: { data: DesignSubService }) {
             All Design Services →
           </Link>
         </div>
+        {PRINTING_LINKS[data.slug]?.length ? (
+          <div className="mt-8 rounded-xl border border-slate-200 bg-white p-6">
+            <h3 className="mb-2 text-lg font-bold text-[#15224a]">Need it printed too?</h3>
+            <p className="mb-3 text-[15px] leading-relaxed text-slate-600">
+              Once your {data.h1.toLowerCase()} is ready, we can print it in-house.
+              Explore our most relevant{" "}
+              <Link to={"/printing-services-sri-lanka" as never} className="font-semibold text-[#2563eb] underline">
+                printing services in Sri Lanka
+              </Link>
+              :
+            </p>
+            <ul className="list-disc space-y-1.5 pl-5 text-[15px] text-slate-700">
+              {PRINTING_LINKS[data.slug].map((p) => (
+                <li key={p.href}>
+                  <Link to={p.href as never} className="font-semibold text-[#2563eb] hover:underline">
+                    {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </section>
 
       <section className="bg-[#2563eb] px-6 py-14 text-center text-white">

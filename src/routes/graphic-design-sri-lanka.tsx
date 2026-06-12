@@ -61,6 +61,7 @@ const GROUPS: Group[] = [
       { href: "/poster-design-sri-lanka", icon: "🖼️", title: "Poster Design", desc: "Large-format posters for events, retail and brand campaigns." },
       { href: "/catalog-design-sri-lanka", icon: "📚", title: "Catalog Design", desc: "Product catalogs that showcase your range and drive sales." },
       { href: "/menu-design-sri-lanka", icon: "🍽️", title: "Menu Design", desc: "Restaurant and café menus designed to increase orders." },
+      { href: "/annual-report-design-sri-lanka", icon: "📊", title: "Annual Report Design", desc: "Corporate annual reports for listed companies, banks and NGOs." },
     ],
   },
   {

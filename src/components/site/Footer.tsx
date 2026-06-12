@@ -28,6 +28,11 @@ export function SiteFooter() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link to={"/graphic-design-sri-lanka" as never} className="text-primary-foreground/85 hover:text-accent">
+                Graphic Design
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="text-sm">

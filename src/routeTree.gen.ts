@@ -147,11 +147,13 @@ import { Route as MobileAppUiDesignSriLankaRouteImport } from './routes/mobile-a
 import { Route as MobileAppAdvertisingSriLankaRouteImport } from './routes/mobile-app-advertising-sri-lanka'
 import { Route as MeshBannerPrintingSriLankaRouteImport } from './routes/mesh-banner-printing-sri-lanka'
 import { Route as MenuPrintingSriLankaRouteImport } from './routes/menu-printing-sri-lanka'
+import { Route as MenuDesignSriLankaRouteImport } from './routes/menu-design-sri-lanka'
 import { Route as MediaPlanningSriLankaRouteImport } from './routes/media-planning-sri-lanka'
 import { Route as MediaBuyingSriLankaRouteImport } from './routes/media-buying-sri-lanka'
 import { Route as McHostHireSriLankaRouteImport } from './routes/mc-host-hire-sri-lanka'
 import { Route as MarketResearchSriLankaRouteImport } from './routes/market-research-sri-lanka'
 import { Route as MallActivationSriLankaRouteImport } from './routes/mall-activation-sri-lanka'
+import { Route as MagazineCoverDesignSriLankaRouteImport } from './routes/magazine-cover-design-sri-lanka'
 import { Route as MagazineAdvertisingSriLankaRouteImport } from './routes/magazine-advertising-sri-lanka'
 import { Route as LuxuryCorporateGiftsSriLankaRouteImport } from './routes/luxury-corporate-gifts-sri-lanka'
 import { Route as LoyaltyProgramsSriLankaRouteImport } from './routes/loyalty-programs-sri-lanka'
@@ -180,7 +182,9 @@ import { Route as LandingPageSriLankaRouteImport } from './routes/landing-page-s
 import { Route as LandingPageDesignSriLankaRouteImport } from './routes/landing-page-design-sri-lanka'
 import { Route as LampPostBannerSriLankaRouteImport } from './routes/lamp-post-banner-sri-lanka'
 import { Route as LabelPrintingSriLankaRouteImport } from './routes/label-printing-sri-lanka'
+import { Route as LabelDesignSriLankaRouteImport } from './routes/label-design-sri-lanka'
 import { Route as InvoiceBookPrintingSriLankaRouteImport } from './routes/invoice-book-printing-sri-lanka'
+import { Route as InteriorBookDesignSriLankaRouteImport } from './routes/interior-book-design-sri-lanka'
 import { Route as IntegratedMarketingSriLankaRouteImport } from './routes/integrated-marketing-sri-lanka'
 import { Route as InstagramMarketingSriLankaRouteImport } from './routes/instagram-marketing-sri-lanka'
 import { Route as InstagramAdsSriLankaRouteImport } from './routes/instagram-ads-sri-lanka'
@@ -188,6 +192,7 @@ import { Route as InfluencerMarketingSriLankaRouteImport } from './routes/influe
 import { Route as IndustryAdvertisingSriLankaRouteImport } from './routes/industry-advertising-sri-lanka'
 import { Route as IndoorBannerPrintingSriLankaRouteImport } from './routes/indoor-banner-printing-sri-lanka'
 import { Route as IdCardPrintingSriLankaRouteImport } from './routes/id-card-printing-sri-lanka'
+import { Route as IconDesignSriLankaRouteImport } from './routes/icon-design-sri-lanka'
 import { Route as IceSculptureSriLankaRouteImport } from './routes/ice-sculpture-sri-lanka'
 import { Route as HybridEventSriLankaRouteImport } from './routes/hybrid-event-sri-lanka'
 import { Route as HoodiePrintingSriLankaRouteImport } from './routes/hoodie-printing-sri-lanka'
@@ -210,6 +215,7 @@ import { Route as ForexBoardPrintingSriLankaRouteImport } from './routes/forex-b
 import { Route as FogMachineRentalSriLankaRouteImport } from './routes/fog-machine-rental-sri-lanka'
 import { Route as FoamBoardPrintingSriLankaRouteImport } from './routes/foam-board-printing-sri-lanka'
 import { Route as FlyerPrintingSriLankaRouteImport } from './routes/flyer-printing-sri-lanka'
+import { Route as FlyerDesignSriLankaRouteImport } from './routes/flyer-design-sri-lanka'
 import { Route as FlowerWallRentalSriLankaRouteImport } from './routes/flower-wall-rental-sri-lanka'
 import { Route as FlowerDecorationSriLankaRouteImport } from './routes/flower-decoration-sri-lanka'
 import { Route as FloorStickerPrintingSriLankaRouteImport } from './routes/floor-sticker-printing-sri-lanka'
@@ -257,8 +263,10 @@ import { Route as EmbroiderySriLankaRouteImport } from './routes/embroidery-sri-
 import { Route as EmbossedPrintingSriLankaRouteImport } from './routes/embossed-printing-sri-lanka'
 import { Route as EmailSmsMarketingSriLankaRouteImport } from './routes/email-sms-marketing-sri-lanka'
 import { Route as EmailMarketingSriLankaRouteImport } from './routes/email-marketing-sri-lanka'
+import { Route as EmailDesignSriLankaRouteImport } from './routes/email-design-sri-lanka'
 import { Route as EmailAutomationSriLankaRouteImport } from './routes/email-automation-sri-lanka'
 import { Route as EcommerceWebsiteSriLankaRouteImport } from './routes/ecommerce-website-sri-lanka'
+import { Route as EcommerceWebsiteDesignSriLankaRouteImport } from './routes/ecommerce-website-design-sri-lanka'
 import { Route as EcommerceSeoSriLankaRouteImport } from './routes/ecommerce-seo-sri-lanka'
 import { Route as EcoSolventPrintingSriLankaRouteImport } from './routes/eco-solvent-printing-sri-lanka'
 import { Route as EcoFriendlyCorporateGiftsSriLankaRouteImport } from './routes/eco-friendly-corporate-gifts-sri-lanka'
@@ -1277,6 +1285,11 @@ const MenuPrintingSriLankaRoute = MenuPrintingSriLankaRouteImport.update({
   path: '/menu-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MenuDesignSriLankaRoute = MenuDesignSriLankaRouteImport.update({
+  id: '/menu-design-sri-lanka',
+  path: '/menu-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MediaPlanningSriLankaRoute = MediaPlanningSriLankaRouteImport.update({
   id: '/media-planning-sri-lanka',
   path: '/media-planning-sri-lanka',
@@ -1302,6 +1315,12 @@ const MallActivationSriLankaRoute = MallActivationSriLankaRouteImport.update({
   path: '/mall-activation-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MagazineCoverDesignSriLankaRoute =
+  MagazineCoverDesignSriLankaRouteImport.update({
+    id: '/magazine-cover-design-sri-lanka',
+    path: '/magazine-cover-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MagazineAdvertisingSriLankaRoute =
   MagazineAdvertisingSriLankaRouteImport.update({
     id: '/magazine-advertising-sri-lanka',
@@ -1452,10 +1471,21 @@ const LabelPrintingSriLankaRoute = LabelPrintingSriLankaRouteImport.update({
   path: '/label-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LabelDesignSriLankaRoute = LabelDesignSriLankaRouteImport.update({
+  id: '/label-design-sri-lanka',
+  path: '/label-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const InvoiceBookPrintingSriLankaRoute =
   InvoiceBookPrintingSriLankaRouteImport.update({
     id: '/invoice-book-printing-sri-lanka',
     path: '/invoice-book-printing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InteriorBookDesignSriLankaRoute =
+  InteriorBookDesignSriLankaRouteImport.update({
+    id: '/interior-book-design-sri-lanka',
+    path: '/interior-book-design-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const IntegratedMarketingSriLankaRoute =
@@ -1496,6 +1526,11 @@ const IndoorBannerPrintingSriLankaRoute =
 const IdCardPrintingSriLankaRoute = IdCardPrintingSriLankaRouteImport.update({
   id: '/id-card-printing-sri-lanka',
   path: '/id-card-printing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IconDesignSriLankaRoute = IconDesignSriLankaRouteImport.update({
+  id: '/icon-design-sri-lanka',
+  path: '/icon-design-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IceSculptureSriLankaRoute = IceSculptureSriLankaRouteImport.update({
@@ -1615,6 +1650,11 @@ const FoamBoardPrintingSriLankaRoute =
 const FlyerPrintingSriLankaRoute = FlyerPrintingSriLankaRouteImport.update({
   id: '/flyer-printing-sri-lanka',
   path: '/flyer-printing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FlyerDesignSriLankaRoute = FlyerDesignSriLankaRouteImport.update({
+  id: '/flyer-design-sri-lanka',
+  path: '/flyer-design-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FlowerWallRentalSriLankaRoute =
@@ -1876,6 +1916,11 @@ const EmailMarketingSriLankaRoute = EmailMarketingSriLankaRouteImport.update({
   path: '/email-marketing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EmailDesignSriLankaRoute = EmailDesignSriLankaRouteImport.update({
+  id: '/email-design-sri-lanka',
+  path: '/email-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EmailAutomationSriLankaRoute = EmailAutomationSriLankaRouteImport.update({
   id: '/email-automation-sri-lanka',
   path: '/email-automation-sri-lanka',
@@ -1885,6 +1930,12 @@ const EcommerceWebsiteSriLankaRoute =
   EcommerceWebsiteSriLankaRouteImport.update({
     id: '/ecommerce-website-sri-lanka',
     path: '/ecommerce-website-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EcommerceWebsiteDesignSriLankaRoute =
+  EcommerceWebsiteDesignSriLankaRouteImport.update({
+    id: '/ecommerce-website-design-sri-lanka',
+    path: '/ecommerce-website-design-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
 const EcommerceSeoSriLankaRoute = EcommerceSeoSriLankaRouteImport.update({
@@ -3499,8 +3550,10 @@ export interface FileRoutesByFullPath {
   '/eco-friendly-corporate-gifts-sri-lanka': typeof EcoFriendlyCorporateGiftsSriLankaRoute
   '/eco-solvent-printing-sri-lanka': typeof EcoSolventPrintingSriLankaRoute
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
+  '/ecommerce-website-design-sri-lanka': typeof EcommerceWebsiteDesignSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-design-sri-lanka': typeof EmailDesignSriLankaRoute
   '/email-marketing-sri-lanka': typeof EmailMarketingSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
   '/embossed-printing-sri-lanka': typeof EmbossedPrintingSriLankaRoute
@@ -3548,6 +3601,7 @@ export interface FileRoutesByFullPath {
   '/floor-sticker-printing-sri-lanka': typeof FloorStickerPrintingSriLankaRoute
   '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
   '/flower-wall-rental-sri-lanka': typeof FlowerWallRentalSriLankaRoute
+  '/flyer-design-sri-lanka': typeof FlyerDesignSriLankaRoute
   '/flyer-printing-sri-lanka': typeof FlyerPrintingSriLankaRoute
   '/foam-board-printing-sri-lanka': typeof FoamBoardPrintingSriLankaRoute
   '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
@@ -3570,6 +3624,7 @@ export interface FileRoutesByFullPath {
   '/hoodie-printing-sri-lanka': typeof HoodiePrintingSriLankaRoute
   '/hybrid-event-sri-lanka': typeof HybridEventSriLankaRoute
   '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
+  '/icon-design-sri-lanka': typeof IconDesignSriLankaRoute
   '/id-card-printing-sri-lanka': typeof IdCardPrintingSriLankaRoute
   '/indoor-banner-printing-sri-lanka': typeof IndoorBannerPrintingSriLankaRoute
   '/industry-advertising-sri-lanka': typeof IndustryAdvertisingSriLankaRoute
@@ -3577,7 +3632,9 @@ export interface FileRoutesByFullPath {
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
   '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
+  '/interior-book-design-sri-lanka': typeof InteriorBookDesignSriLankaRoute
   '/invoice-book-printing-sri-lanka': typeof InvoiceBookPrintingSriLankaRoute
+  '/label-design-sri-lanka': typeof LabelDesignSriLankaRoute
   '/label-printing-sri-lanka': typeof LabelPrintingSriLankaRoute
   '/lamp-post-banner-sri-lanka': typeof LampPostBannerSriLankaRoute
   '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
@@ -3606,11 +3663,13 @@ export interface FileRoutesByFullPath {
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/luxury-corporate-gifts-sri-lanka': typeof LuxuryCorporateGiftsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
+  '/magazine-cover-design-sri-lanka': typeof MagazineCoverDesignSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
   '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
   '/mc-host-hire-sri-lanka': typeof McHostHireSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
+  '/menu-design-sri-lanka': typeof MenuDesignSriLankaRoute
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
   '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
@@ -4011,8 +4070,10 @@ export interface FileRoutesByTo {
   '/eco-friendly-corporate-gifts-sri-lanka': typeof EcoFriendlyCorporateGiftsSriLankaRoute
   '/eco-solvent-printing-sri-lanka': typeof EcoSolventPrintingSriLankaRoute
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
+  '/ecommerce-website-design-sri-lanka': typeof EcommerceWebsiteDesignSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-design-sri-lanka': typeof EmailDesignSriLankaRoute
   '/email-marketing-sri-lanka': typeof EmailMarketingSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
   '/embossed-printing-sri-lanka': typeof EmbossedPrintingSriLankaRoute
@@ -4060,6 +4121,7 @@ export interface FileRoutesByTo {
   '/floor-sticker-printing-sri-lanka': typeof FloorStickerPrintingSriLankaRoute
   '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
   '/flower-wall-rental-sri-lanka': typeof FlowerWallRentalSriLankaRoute
+  '/flyer-design-sri-lanka': typeof FlyerDesignSriLankaRoute
   '/flyer-printing-sri-lanka': typeof FlyerPrintingSriLankaRoute
   '/foam-board-printing-sri-lanka': typeof FoamBoardPrintingSriLankaRoute
   '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
@@ -4082,6 +4144,7 @@ export interface FileRoutesByTo {
   '/hoodie-printing-sri-lanka': typeof HoodiePrintingSriLankaRoute
   '/hybrid-event-sri-lanka': typeof HybridEventSriLankaRoute
   '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
+  '/icon-design-sri-lanka': typeof IconDesignSriLankaRoute
   '/id-card-printing-sri-lanka': typeof IdCardPrintingSriLankaRoute
   '/indoor-banner-printing-sri-lanka': typeof IndoorBannerPrintingSriLankaRoute
   '/industry-advertising-sri-lanka': typeof IndustryAdvertisingSriLankaRoute
@@ -4089,7 +4152,9 @@ export interface FileRoutesByTo {
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
   '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
+  '/interior-book-design-sri-lanka': typeof InteriorBookDesignSriLankaRoute
   '/invoice-book-printing-sri-lanka': typeof InvoiceBookPrintingSriLankaRoute
+  '/label-design-sri-lanka': typeof LabelDesignSriLankaRoute
   '/label-printing-sri-lanka': typeof LabelPrintingSriLankaRoute
   '/lamp-post-banner-sri-lanka': typeof LampPostBannerSriLankaRoute
   '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
@@ -4118,11 +4183,13 @@ export interface FileRoutesByTo {
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/luxury-corporate-gifts-sri-lanka': typeof LuxuryCorporateGiftsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
+  '/magazine-cover-design-sri-lanka': typeof MagazineCoverDesignSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
   '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
   '/mc-host-hire-sri-lanka': typeof McHostHireSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
+  '/menu-design-sri-lanka': typeof MenuDesignSriLankaRoute
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
   '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
@@ -4524,8 +4591,10 @@ export interface FileRoutesById {
   '/eco-friendly-corporate-gifts-sri-lanka': typeof EcoFriendlyCorporateGiftsSriLankaRoute
   '/eco-solvent-printing-sri-lanka': typeof EcoSolventPrintingSriLankaRoute
   '/ecommerce-seo-sri-lanka': typeof EcommerceSeoSriLankaRoute
+  '/ecommerce-website-design-sri-lanka': typeof EcommerceWebsiteDesignSriLankaRoute
   '/ecommerce-website-sri-lanka': typeof EcommerceWebsiteSriLankaRoute
   '/email-automation-sri-lanka': typeof EmailAutomationSriLankaRoute
+  '/email-design-sri-lanka': typeof EmailDesignSriLankaRoute
   '/email-marketing-sri-lanka': typeof EmailMarketingSriLankaRoute
   '/email-sms-marketing-sri-lanka': typeof EmailSmsMarketingSriLankaRoute
   '/embossed-printing-sri-lanka': typeof EmbossedPrintingSriLankaRoute
@@ -4573,6 +4642,7 @@ export interface FileRoutesById {
   '/floor-sticker-printing-sri-lanka': typeof FloorStickerPrintingSriLankaRoute
   '/flower-decoration-sri-lanka': typeof FlowerDecorationSriLankaRoute
   '/flower-wall-rental-sri-lanka': typeof FlowerWallRentalSriLankaRoute
+  '/flyer-design-sri-lanka': typeof FlyerDesignSriLankaRoute
   '/flyer-printing-sri-lanka': typeof FlyerPrintingSriLankaRoute
   '/foam-board-printing-sri-lanka': typeof FoamBoardPrintingSriLankaRoute
   '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
@@ -4595,6 +4665,7 @@ export interface FileRoutesById {
   '/hoodie-printing-sri-lanka': typeof HoodiePrintingSriLankaRoute
   '/hybrid-event-sri-lanka': typeof HybridEventSriLankaRoute
   '/ice-sculpture-sri-lanka': typeof IceSculptureSriLankaRoute
+  '/icon-design-sri-lanka': typeof IconDesignSriLankaRoute
   '/id-card-printing-sri-lanka': typeof IdCardPrintingSriLankaRoute
   '/indoor-banner-printing-sri-lanka': typeof IndoorBannerPrintingSriLankaRoute
   '/industry-advertising-sri-lanka': typeof IndustryAdvertisingSriLankaRoute
@@ -4602,7 +4673,9 @@ export interface FileRoutesById {
   '/instagram-ads-sri-lanka': typeof InstagramAdsSriLankaRoute
   '/instagram-marketing-sri-lanka': typeof InstagramMarketingSriLankaRoute
   '/integrated-marketing-sri-lanka': typeof IntegratedMarketingSriLankaRoute
+  '/interior-book-design-sri-lanka': typeof InteriorBookDesignSriLankaRoute
   '/invoice-book-printing-sri-lanka': typeof InvoiceBookPrintingSriLankaRoute
+  '/label-design-sri-lanka': typeof LabelDesignSriLankaRoute
   '/label-printing-sri-lanka': typeof LabelPrintingSriLankaRoute
   '/lamp-post-banner-sri-lanka': typeof LampPostBannerSriLankaRoute
   '/landing-page-design-sri-lanka': typeof LandingPageDesignSriLankaRoute
@@ -4631,11 +4704,13 @@ export interface FileRoutesById {
   '/loyalty-programs-sri-lanka': typeof LoyaltyProgramsSriLankaRoute
   '/luxury-corporate-gifts-sri-lanka': typeof LuxuryCorporateGiftsSriLankaRoute
   '/magazine-advertising-sri-lanka': typeof MagazineAdvertisingSriLankaRoute
+  '/magazine-cover-design-sri-lanka': typeof MagazineCoverDesignSriLankaRoute
   '/mall-activation-sri-lanka': typeof MallActivationSriLankaRoute
   '/market-research-sri-lanka': typeof MarketResearchSriLankaRoute
   '/mc-host-hire-sri-lanka': typeof McHostHireSriLankaRoute
   '/media-buying-sri-lanka': typeof MediaBuyingSriLankaRoute
   '/media-planning-sri-lanka': typeof MediaPlanningSriLankaRoute
+  '/menu-design-sri-lanka': typeof MenuDesignSriLankaRoute
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
   '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
@@ -5038,8 +5113,10 @@ export interface FileRouteTypes {
     | '/eco-friendly-corporate-gifts-sri-lanka'
     | '/eco-solvent-printing-sri-lanka'
     | '/ecommerce-seo-sri-lanka'
+    | '/ecommerce-website-design-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
+    | '/email-design-sri-lanka'
     | '/email-marketing-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
     | '/embossed-printing-sri-lanka'
@@ -5087,6 +5164,7 @@ export interface FileRouteTypes {
     | '/floor-sticker-printing-sri-lanka'
     | '/flower-decoration-sri-lanka'
     | '/flower-wall-rental-sri-lanka'
+    | '/flyer-design-sri-lanka'
     | '/flyer-printing-sri-lanka'
     | '/foam-board-printing-sri-lanka'
     | '/fog-machine-rental-sri-lanka'
@@ -5109,6 +5187,7 @@ export interface FileRouteTypes {
     | '/hoodie-printing-sri-lanka'
     | '/hybrid-event-sri-lanka'
     | '/ice-sculpture-sri-lanka'
+    | '/icon-design-sri-lanka'
     | '/id-card-printing-sri-lanka'
     | '/indoor-banner-printing-sri-lanka'
     | '/industry-advertising-sri-lanka'
@@ -5116,7 +5195,9 @@ export interface FileRouteTypes {
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
     | '/integrated-marketing-sri-lanka'
+    | '/interior-book-design-sri-lanka'
     | '/invoice-book-printing-sri-lanka'
+    | '/label-design-sri-lanka'
     | '/label-printing-sri-lanka'
     | '/lamp-post-banner-sri-lanka'
     | '/landing-page-design-sri-lanka'
@@ -5145,11 +5226,13 @@ export interface FileRouteTypes {
     | '/loyalty-programs-sri-lanka'
     | '/luxury-corporate-gifts-sri-lanka'
     | '/magazine-advertising-sri-lanka'
+    | '/magazine-cover-design-sri-lanka'
     | '/mall-activation-sri-lanka'
     | '/market-research-sri-lanka'
     | '/mc-host-hire-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
+    | '/menu-design-sri-lanka'
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
     | '/mobile-app-advertising-sri-lanka'
@@ -5550,8 +5633,10 @@ export interface FileRouteTypes {
     | '/eco-friendly-corporate-gifts-sri-lanka'
     | '/eco-solvent-printing-sri-lanka'
     | '/ecommerce-seo-sri-lanka'
+    | '/ecommerce-website-design-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
+    | '/email-design-sri-lanka'
     | '/email-marketing-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
     | '/embossed-printing-sri-lanka'
@@ -5599,6 +5684,7 @@ export interface FileRouteTypes {
     | '/floor-sticker-printing-sri-lanka'
     | '/flower-decoration-sri-lanka'
     | '/flower-wall-rental-sri-lanka'
+    | '/flyer-design-sri-lanka'
     | '/flyer-printing-sri-lanka'
     | '/foam-board-printing-sri-lanka'
     | '/fog-machine-rental-sri-lanka'
@@ -5621,6 +5707,7 @@ export interface FileRouteTypes {
     | '/hoodie-printing-sri-lanka'
     | '/hybrid-event-sri-lanka'
     | '/ice-sculpture-sri-lanka'
+    | '/icon-design-sri-lanka'
     | '/id-card-printing-sri-lanka'
     | '/indoor-banner-printing-sri-lanka'
     | '/industry-advertising-sri-lanka'
@@ -5628,7 +5715,9 @@ export interface FileRouteTypes {
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
     | '/integrated-marketing-sri-lanka'
+    | '/interior-book-design-sri-lanka'
     | '/invoice-book-printing-sri-lanka'
+    | '/label-design-sri-lanka'
     | '/label-printing-sri-lanka'
     | '/lamp-post-banner-sri-lanka'
     | '/landing-page-design-sri-lanka'
@@ -5657,11 +5746,13 @@ export interface FileRouteTypes {
     | '/loyalty-programs-sri-lanka'
     | '/luxury-corporate-gifts-sri-lanka'
     | '/magazine-advertising-sri-lanka'
+    | '/magazine-cover-design-sri-lanka'
     | '/mall-activation-sri-lanka'
     | '/market-research-sri-lanka'
     | '/mc-host-hire-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
+    | '/menu-design-sri-lanka'
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
     | '/mobile-app-advertising-sri-lanka'
@@ -6062,8 +6153,10 @@ export interface FileRouteTypes {
     | '/eco-friendly-corporate-gifts-sri-lanka'
     | '/eco-solvent-printing-sri-lanka'
     | '/ecommerce-seo-sri-lanka'
+    | '/ecommerce-website-design-sri-lanka'
     | '/ecommerce-website-sri-lanka'
     | '/email-automation-sri-lanka'
+    | '/email-design-sri-lanka'
     | '/email-marketing-sri-lanka'
     | '/email-sms-marketing-sri-lanka'
     | '/embossed-printing-sri-lanka'
@@ -6111,6 +6204,7 @@ export interface FileRouteTypes {
     | '/floor-sticker-printing-sri-lanka'
     | '/flower-decoration-sri-lanka'
     | '/flower-wall-rental-sri-lanka'
+    | '/flyer-design-sri-lanka'
     | '/flyer-printing-sri-lanka'
     | '/foam-board-printing-sri-lanka'
     | '/fog-machine-rental-sri-lanka'
@@ -6133,6 +6227,7 @@ export interface FileRouteTypes {
     | '/hoodie-printing-sri-lanka'
     | '/hybrid-event-sri-lanka'
     | '/ice-sculpture-sri-lanka'
+    | '/icon-design-sri-lanka'
     | '/id-card-printing-sri-lanka'
     | '/indoor-banner-printing-sri-lanka'
     | '/industry-advertising-sri-lanka'
@@ -6140,7 +6235,9 @@ export interface FileRouteTypes {
     | '/instagram-ads-sri-lanka'
     | '/instagram-marketing-sri-lanka'
     | '/integrated-marketing-sri-lanka'
+    | '/interior-book-design-sri-lanka'
     | '/invoice-book-printing-sri-lanka'
+    | '/label-design-sri-lanka'
     | '/label-printing-sri-lanka'
     | '/lamp-post-banner-sri-lanka'
     | '/landing-page-design-sri-lanka'
@@ -6169,11 +6266,13 @@ export interface FileRouteTypes {
     | '/loyalty-programs-sri-lanka'
     | '/luxury-corporate-gifts-sri-lanka'
     | '/magazine-advertising-sri-lanka'
+    | '/magazine-cover-design-sri-lanka'
     | '/mall-activation-sri-lanka'
     | '/market-research-sri-lanka'
     | '/mc-host-hire-sri-lanka'
     | '/media-buying-sri-lanka'
     | '/media-planning-sri-lanka'
+    | '/menu-design-sri-lanka'
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
     | '/mobile-app-advertising-sri-lanka'
@@ -6575,8 +6674,10 @@ export interface RootRouteChildren {
   EcoFriendlyCorporateGiftsSriLankaRoute: typeof EcoFriendlyCorporateGiftsSriLankaRoute
   EcoSolventPrintingSriLankaRoute: typeof EcoSolventPrintingSriLankaRoute
   EcommerceSeoSriLankaRoute: typeof EcommerceSeoSriLankaRoute
+  EcommerceWebsiteDesignSriLankaRoute: typeof EcommerceWebsiteDesignSriLankaRoute
   EcommerceWebsiteSriLankaRoute: typeof EcommerceWebsiteSriLankaRoute
   EmailAutomationSriLankaRoute: typeof EmailAutomationSriLankaRoute
+  EmailDesignSriLankaRoute: typeof EmailDesignSriLankaRoute
   EmailMarketingSriLankaRoute: typeof EmailMarketingSriLankaRoute
   EmailSmsMarketingSriLankaRoute: typeof EmailSmsMarketingSriLankaRoute
   EmbossedPrintingSriLankaRoute: typeof EmbossedPrintingSriLankaRoute
@@ -6624,6 +6725,7 @@ export interface RootRouteChildren {
   FloorStickerPrintingSriLankaRoute: typeof FloorStickerPrintingSriLankaRoute
   FlowerDecorationSriLankaRoute: typeof FlowerDecorationSriLankaRoute
   FlowerWallRentalSriLankaRoute: typeof FlowerWallRentalSriLankaRoute
+  FlyerDesignSriLankaRoute: typeof FlyerDesignSriLankaRoute
   FlyerPrintingSriLankaRoute: typeof FlyerPrintingSriLankaRoute
   FoamBoardPrintingSriLankaRoute: typeof FoamBoardPrintingSriLankaRoute
   FogMachineRentalSriLankaRoute: typeof FogMachineRentalSriLankaRoute
@@ -6646,6 +6748,7 @@ export interface RootRouteChildren {
   HoodiePrintingSriLankaRoute: typeof HoodiePrintingSriLankaRoute
   HybridEventSriLankaRoute: typeof HybridEventSriLankaRoute
   IceSculptureSriLankaRoute: typeof IceSculptureSriLankaRoute
+  IconDesignSriLankaRoute: typeof IconDesignSriLankaRoute
   IdCardPrintingSriLankaRoute: typeof IdCardPrintingSriLankaRoute
   IndoorBannerPrintingSriLankaRoute: typeof IndoorBannerPrintingSriLankaRoute
   IndustryAdvertisingSriLankaRoute: typeof IndustryAdvertisingSriLankaRoute
@@ -6653,7 +6756,9 @@ export interface RootRouteChildren {
   InstagramAdsSriLankaRoute: typeof InstagramAdsSriLankaRoute
   InstagramMarketingSriLankaRoute: typeof InstagramMarketingSriLankaRoute
   IntegratedMarketingSriLankaRoute: typeof IntegratedMarketingSriLankaRoute
+  InteriorBookDesignSriLankaRoute: typeof InteriorBookDesignSriLankaRoute
   InvoiceBookPrintingSriLankaRoute: typeof InvoiceBookPrintingSriLankaRoute
+  LabelDesignSriLankaRoute: typeof LabelDesignSriLankaRoute
   LabelPrintingSriLankaRoute: typeof LabelPrintingSriLankaRoute
   LampPostBannerSriLankaRoute: typeof LampPostBannerSriLankaRoute
   LandingPageDesignSriLankaRoute: typeof LandingPageDesignSriLankaRoute
@@ -6682,11 +6787,13 @@ export interface RootRouteChildren {
   LoyaltyProgramsSriLankaRoute: typeof LoyaltyProgramsSriLankaRoute
   LuxuryCorporateGiftsSriLankaRoute: typeof LuxuryCorporateGiftsSriLankaRoute
   MagazineAdvertisingSriLankaRoute: typeof MagazineAdvertisingSriLankaRoute
+  MagazineCoverDesignSriLankaRoute: typeof MagazineCoverDesignSriLankaRoute
   MallActivationSriLankaRoute: typeof MallActivationSriLankaRoute
   MarketResearchSriLankaRoute: typeof MarketResearchSriLankaRoute
   McHostHireSriLankaRoute: typeof McHostHireSriLankaRoute
   MediaBuyingSriLankaRoute: typeof MediaBuyingSriLankaRoute
   MediaPlanningSriLankaRoute: typeof MediaPlanningSriLankaRoute
+  MenuDesignSriLankaRoute: typeof MenuDesignSriLankaRoute
   MenuPrintingSriLankaRoute: typeof MenuPrintingSriLankaRoute
   MeshBannerPrintingSriLankaRoute: typeof MeshBannerPrintingSriLankaRoute
   MobileAppAdvertisingSriLankaRoute: typeof MobileAppAdvertisingSriLankaRoute
@@ -7928,6 +8035,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MenuPrintingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/menu-design-sri-lanka': {
+      id: '/menu-design-sri-lanka'
+      path: '/menu-design-sri-lanka'
+      fullPath: '/menu-design-sri-lanka'
+      preLoaderRoute: typeof MenuDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/media-planning-sri-lanka': {
       id: '/media-planning-sri-lanka'
       path: '/media-planning-sri-lanka'
@@ -7961,6 +8075,13 @@ declare module '@tanstack/react-router' {
       path: '/mall-activation-sri-lanka'
       fullPath: '/mall-activation-sri-lanka'
       preLoaderRoute: typeof MallActivationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/magazine-cover-design-sri-lanka': {
+      id: '/magazine-cover-design-sri-lanka'
+      path: '/magazine-cover-design-sri-lanka'
+      fullPath: '/magazine-cover-design-sri-lanka'
+      preLoaderRoute: typeof MagazineCoverDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/magazine-advertising-sri-lanka': {
@@ -8159,11 +8280,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LabelPrintingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/label-design-sri-lanka': {
+      id: '/label-design-sri-lanka'
+      path: '/label-design-sri-lanka'
+      fullPath: '/label-design-sri-lanka'
+      preLoaderRoute: typeof LabelDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/invoice-book-printing-sri-lanka': {
       id: '/invoice-book-printing-sri-lanka'
       path: '/invoice-book-printing-sri-lanka'
       fullPath: '/invoice-book-printing-sri-lanka'
       preLoaderRoute: typeof InvoiceBookPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/interior-book-design-sri-lanka': {
+      id: '/interior-book-design-sri-lanka'
+      path: '/interior-book-design-sri-lanka'
+      fullPath: '/interior-book-design-sri-lanka'
+      preLoaderRoute: typeof InteriorBookDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/integrated-marketing-sri-lanka': {
@@ -8213,6 +8348,13 @@ declare module '@tanstack/react-router' {
       path: '/id-card-printing-sri-lanka'
       fullPath: '/id-card-printing-sri-lanka'
       preLoaderRoute: typeof IdCardPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/icon-design-sri-lanka': {
+      id: '/icon-design-sri-lanka'
+      path: '/icon-design-sri-lanka'
+      fullPath: '/icon-design-sri-lanka'
+      preLoaderRoute: typeof IconDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ice-sculpture-sri-lanka': {
@@ -8367,6 +8509,13 @@ declare module '@tanstack/react-router' {
       path: '/flyer-printing-sri-lanka'
       fullPath: '/flyer-printing-sri-lanka'
       preLoaderRoute: typeof FlyerPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flyer-design-sri-lanka': {
+      id: '/flyer-design-sri-lanka'
+      path: '/flyer-design-sri-lanka'
+      fullPath: '/flyer-design-sri-lanka'
+      preLoaderRoute: typeof FlyerDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/flower-wall-rental-sri-lanka': {
@@ -8698,6 +8847,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmailMarketingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/email-design-sri-lanka': {
+      id: '/email-design-sri-lanka'
+      path: '/email-design-sri-lanka'
+      fullPath: '/email-design-sri-lanka'
+      preLoaderRoute: typeof EmailDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/email-automation-sri-lanka': {
       id: '/email-automation-sri-lanka'
       path: '/email-automation-sri-lanka'
@@ -8710,6 +8866,13 @@ declare module '@tanstack/react-router' {
       path: '/ecommerce-website-sri-lanka'
       fullPath: '/ecommerce-website-sri-lanka'
       preLoaderRoute: typeof EcommerceWebsiteSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecommerce-website-design-sri-lanka': {
+      id: '/ecommerce-website-design-sri-lanka'
+      path: '/ecommerce-website-design-sri-lanka'
+      fullPath: '/ecommerce-website-design-sri-lanka'
+      preLoaderRoute: typeof EcommerceWebsiteDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ecommerce-seo-sri-lanka': {
@@ -10678,8 +10841,10 @@ const rootRouteChildren: RootRouteChildren = {
     EcoFriendlyCorporateGiftsSriLankaRoute,
   EcoSolventPrintingSriLankaRoute: EcoSolventPrintingSriLankaRoute,
   EcommerceSeoSriLankaRoute: EcommerceSeoSriLankaRoute,
+  EcommerceWebsiteDesignSriLankaRoute: EcommerceWebsiteDesignSriLankaRoute,
   EcommerceWebsiteSriLankaRoute: EcommerceWebsiteSriLankaRoute,
   EmailAutomationSriLankaRoute: EmailAutomationSriLankaRoute,
+  EmailDesignSriLankaRoute: EmailDesignSriLankaRoute,
   EmailMarketingSriLankaRoute: EmailMarketingSriLankaRoute,
   EmailSmsMarketingSriLankaRoute: EmailSmsMarketingSriLankaRoute,
   EmbossedPrintingSriLankaRoute: EmbossedPrintingSriLankaRoute,
@@ -10727,6 +10892,7 @@ const rootRouteChildren: RootRouteChildren = {
   FloorStickerPrintingSriLankaRoute: FloorStickerPrintingSriLankaRoute,
   FlowerDecorationSriLankaRoute: FlowerDecorationSriLankaRoute,
   FlowerWallRentalSriLankaRoute: FlowerWallRentalSriLankaRoute,
+  FlyerDesignSriLankaRoute: FlyerDesignSriLankaRoute,
   FlyerPrintingSriLankaRoute: FlyerPrintingSriLankaRoute,
   FoamBoardPrintingSriLankaRoute: FoamBoardPrintingSriLankaRoute,
   FogMachineRentalSriLankaRoute: FogMachineRentalSriLankaRoute,
@@ -10749,6 +10915,7 @@ const rootRouteChildren: RootRouteChildren = {
   HoodiePrintingSriLankaRoute: HoodiePrintingSriLankaRoute,
   HybridEventSriLankaRoute: HybridEventSriLankaRoute,
   IceSculptureSriLankaRoute: IceSculptureSriLankaRoute,
+  IconDesignSriLankaRoute: IconDesignSriLankaRoute,
   IdCardPrintingSriLankaRoute: IdCardPrintingSriLankaRoute,
   IndoorBannerPrintingSriLankaRoute: IndoorBannerPrintingSriLankaRoute,
   IndustryAdvertisingSriLankaRoute: IndustryAdvertisingSriLankaRoute,
@@ -10756,7 +10923,9 @@ const rootRouteChildren: RootRouteChildren = {
   InstagramAdsSriLankaRoute: InstagramAdsSriLankaRoute,
   InstagramMarketingSriLankaRoute: InstagramMarketingSriLankaRoute,
   IntegratedMarketingSriLankaRoute: IntegratedMarketingSriLankaRoute,
+  InteriorBookDesignSriLankaRoute: InteriorBookDesignSriLankaRoute,
   InvoiceBookPrintingSriLankaRoute: InvoiceBookPrintingSriLankaRoute,
+  LabelDesignSriLankaRoute: LabelDesignSriLankaRoute,
   LabelPrintingSriLankaRoute: LabelPrintingSriLankaRoute,
   LampPostBannerSriLankaRoute: LampPostBannerSriLankaRoute,
   LandingPageDesignSriLankaRoute: LandingPageDesignSriLankaRoute,
@@ -10785,11 +10954,13 @@ const rootRouteChildren: RootRouteChildren = {
   LoyaltyProgramsSriLankaRoute: LoyaltyProgramsSriLankaRoute,
   LuxuryCorporateGiftsSriLankaRoute: LuxuryCorporateGiftsSriLankaRoute,
   MagazineAdvertisingSriLankaRoute: MagazineAdvertisingSriLankaRoute,
+  MagazineCoverDesignSriLankaRoute: MagazineCoverDesignSriLankaRoute,
   MallActivationSriLankaRoute: MallActivationSriLankaRoute,
   MarketResearchSriLankaRoute: MarketResearchSriLankaRoute,
   McHostHireSriLankaRoute: McHostHireSriLankaRoute,
   MediaBuyingSriLankaRoute: MediaBuyingSriLankaRoute,
   MediaPlanningSriLankaRoute: MediaPlanningSriLankaRoute,
+  MenuDesignSriLankaRoute: MenuDesignSriLankaRoute,
   MenuPrintingSriLankaRoute: MenuPrintingSriLankaRoute,
   MeshBannerPrintingSriLankaRoute: MeshBannerPrintingSriLankaRoute,
   MobileAppAdvertisingSriLankaRoute: MobileAppAdvertisingSriLankaRoute,

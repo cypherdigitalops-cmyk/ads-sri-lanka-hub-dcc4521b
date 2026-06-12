@@ -3,6 +3,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { SITE } from "@/data/site";
 
 export type DesignFAQ = { q: string; a: string };
+export type DesignLongFormSection = { h2: string; paragraphs: string[] };
 
 export type DesignSubService = {
   slug: string;
@@ -19,6 +20,8 @@ export type DesignSubService = {
   included: string[];
   cost?: string;
   faqs: DesignFAQ[];
+  /** Optional long-form body (~1000 words) rendered between "Who Needs" and "What is Included". */
+  longForm?: DesignLongFormSection[];
 };
 
 const RELATED = [

@@ -1,6 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { SITE } from "@/data/site";
+import { Hero, Bullets, FAQ } from "@/components/site/Templates";
+import { MidContentWhatsAppCTA, CTASection } from "@/components/site/CTASection";
+import { ArrowRight, Printer } from "lucide-react";
 
 export type DesignFAQ = { q: string; a: string };
 export type DesignLongFormSection = { h2: string; paragraphs: string[] };

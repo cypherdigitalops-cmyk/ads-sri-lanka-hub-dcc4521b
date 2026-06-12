@@ -1290,6 +1290,102 @@ function Mini({ label, bg, fg }: { label: string; bg: string; fg: string }) {
   );
 }
 
+function DemandInsights({ demand }: { demand: DemandRow[] }) {
+  if (!demand || demand.length === 0) {
+    return (
+      <div
+        className="mt-5 p-4"
+        style={{ background: "#F5F5F3", borderRadius: 12 }}
+      >
+        <div style={{ fontSize: 12, color: "#6b6b68" }}>Demand insights — last 7 days</div>
+        <p className="mt-2 text-sm" style={{ color: "#6b6b68" }}>
+          Not enough data yet. Pages will appear here as visitors view and engage.
+        </p>
+      </div>
+    );
+  }
+
+  const max = demand[0].score || 1;
+
+  return (
+    <div
+      className="mt-5 p-4"
+      style={{ background: "#FFFBF2", border: "0.5px solid #FDE4B5", borderRadius: 12 }}
+    >
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <div style={{ fontSize: 12, color: "#B45309", fontWeight: 600, textTransform: "uppercase", letterSpacing: 0.4 }}>
+            Demand insights · last 7 days
+          </div>
+          <div style={{ fontSize: 14, color: "#1a1a1a", fontWeight: 500 }}>
+            Top {demand.length} pages by combined views &amp; intent
+          </div>
+        </div>
+        <span style={{ fontSize: 11, color: "#6b6b68" }}>
+          score = views + WhatsApp×6 + call×8 + quote×5 + email×4 + inquiry×15
+        </span>
+      </div>
+
+      <ol className="space-y-2">
+        {demand.map((r, idx) => {
+          const pct = Math.round((r.score / max) * 100);
+          const medal = idx === 0 ? "🥇" : idx === 1 ? "🥈" : idx === 2 ? "🥉" : `#${idx + 1}`;
+          return (
+            <li key={r.page} className="p-3" style={{ background: "#FFFFFF", borderRadius: 10, border: "0.5px solid #e5e4de" }}>
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex min-w-0 items-center gap-2">
+                  <span style={{ fontSize: 14, fontWeight: 600, color: "#B45309", width: 26 }}>{medal}</span>
+                  <span
+                    className="truncate"
+                    style={{ fontSize: 13, fontWeight: 500, color: "#1a1a1a" }}
+                    title={r.page}
+                  >
+                    {r.page}
+                  </span>
+                </div>
+                <span
+                  style={{
+                    background: "#FDE4B5",
+                    color: "#B45309",
+                    borderRadius: 20,
+                    padding: "2px 10px",
+                    fontSize: 11,
+                    fontWeight: 600,
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  score {r.score}
+                </span>
+              </div>
+              <div
+                className="mt-2"
+                style={{ height: 6, borderRadius: 999, background: "#F5F5F3", overflow: "hidden" }}
+              >
+                <div
+                  style={{
+                    width: `${pct}%`,
+                    height: "100%",
+                    background: "linear-gradient(90deg,#F59E0B,#B45309)",
+                    borderRadius: 999,
+                  }}
+                />
+              </div>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                <Mini label={`${r.views} views`} bg="#E5E7EB" fg="#374151" />
+                {r.inquiries > 0 && <Mini label={`${r.inquiries} inquiry`} bg="#CCE3F8" fg="#1D4ED8" />}
+                {r.whatsapp > 0 && <Mini label={`${r.whatsapp} WhatsApp`} bg="#C7F0DF" fg="#047857" />}
+                {r.call > 0 && <Mini label={`${r.call} call`} bg="#D6EBB6" fg="#3F6212" />}
+                {r.quote > 0 && <Mini label={`${r.quote} quote`} bg="#FDE4B5" fg="#B45309" />}
+                {r.email > 0 && <Mini label={`${r.email} email`} bg="#FBD0D0" fg="#B91C1C" />}
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+}
+
 function TopPagesCard({
   title,
   subtitle,

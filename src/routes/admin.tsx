@@ -381,6 +381,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
           </span>
         </div>
 
+        {/* Today's activity */}
+        <TodayPanel inquiries={inquiries} clicks={clicks} shortPath={shortPath} />
+
         {/* CTA totals */}
         <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
           <KpiCard

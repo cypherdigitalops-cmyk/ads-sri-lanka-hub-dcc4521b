@@ -920,10 +920,12 @@ function TodayPanel({
   inquiries,
   clicks,
   shortPath,
+  demand,
 }: {
   inquiries: TodayInquiryRow[];
   clicks: TodayClickRow[];
   shortPath: (url: string | null) => string;
+  demand: DemandRow[];
 }) {
   const isToday = (iso: string) => {
     const d = new Date(iso);
@@ -1053,6 +1055,8 @@ function TodayPanel({
         <TodayKpi label="Quote opens" value={counts.quote} bg="#FDE4B5" fg="#B45309" />
         <TodayKpi label="Email" value={counts.email} bg="#FBD0D0" fg="#B91C1C" />
       </div>
+
+      <DemandInsights demand={demand} />
 
       {!hasAny ? (
         <p className="mt-5 text-sm" style={{ color: "#6b6b68" }}>

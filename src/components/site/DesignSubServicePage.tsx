@@ -1,6 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { SITE } from "@/data/site";
+import { Hero, Bullets, FAQ } from "@/components/site/Templates";
+import { MidContentWhatsAppCTA, CTASection } from "@/components/site/CTASection";
+import { ArrowRight, Printer } from "lucide-react";
 
 export type DesignFAQ = { q: string; a: string };
 export type DesignLongFormSection = { h2: string; paragraphs: string[] };
@@ -158,107 +161,100 @@ const PRINTING_LINKS: Record<string, { href: string; label: string }[]> = {
 export function DesignSubServicePage({ data }: { data: DesignSubService }) {
   return (
     <PageShell>
-      <div className="bg-slate-50 px-6 py-3 text-[13px] text-slate-500">
-        <Link to="/" className="text-[#2563eb]">Home</Link> ›{" "}
-        <Link to={"/graphic-design-sri-lanka" as never} className="text-[#2563eb]">Graphic Design Sri Lanka</Link> › {data.h1}
-      </div>
+      <Hero
+        kicker="Graphic Design • Sri Lanka"
+        h1={data.h1}
+        intro={data.intro}
+        crumbs={[
+          { label: "Home", to: "/" },
+          { label: "Graphic Design Sri Lanka", to: "/graphic-design-sri-lanka" },
+          { label: data.h1 },
+        ]}
+      />
 
-      <section className="bg-gradient-to-br from-[#15224a] via-[#1e3a8a] to-[#2563eb] px-6 py-16 text-center text-white">
-        <div className="mb-3 text-xs font-semibold uppercase tracking-[2px] text-[#93c5fd]">
-          Graphic Design Services — Sri Lanka
-        </div>
-        <h1 className="mx-auto text-3xl font-extrabold leading-tight sm:text-4xl md:text-[46px]">{data.h1}</h1>
-        <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-[#bfdbfe]">{data.intro}</p>
-        <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <a href={`tel:${SITE.phone}`} className="rounded-md border-2 border-[#2563eb] bg-[#2563eb] px-6 py-3 text-sm font-bold text-white">📞 Call {SITE.phone}</a>
-          <a href={SITE.whatsapp} target="_blank" rel="noopener" className="rounded-md bg-[#25d366] px-6 py-3 text-sm font-bold text-white">💬 WhatsApp Us</a>
-          <Link to={"/get-quote" as never} className="rounded-md border-2 border-white/50 px-6 py-3 text-sm font-bold text-white">Get Free Quote</Link>
-        </div>
+      <section className="mx-auto max-w-3xl px-4 py-12">
+        <h2 className="text-2xl font-bold sm:text-3xl">What is {data.h1}?</h2>
+        <p className="mt-4 text-muted-foreground">{data.whatIs}</p>
+        <h2 className="mt-10 text-2xl font-bold sm:text-3xl">Who Needs {data.h1}?</h2>
+        <p className="mt-4 text-muted-foreground">{data.whoNeeds}</p>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-14">
-        <h2 className="mb-3 text-xl font-extrabold text-[#15224a] sm:text-2xl">What is {data.h1}?</h2>
-        <p className="mb-6 text-base leading-loose text-slate-600">{data.whatIs}</p>
-        <h2 className="mb-3 text-xl font-extrabold text-[#15224a] sm:text-2xl">Who Needs {data.h1}?</h2>
-        <p className="mb-8 text-base leading-loose text-slate-600">{data.whoNeeds}</p>
-
-        {data.longForm?.length ? (
-          <div className="mb-8 space-y-6">
+      {data.longForm?.length ? (
+        <section className="mx-auto max-w-3xl px-4 pb-8">
+          <div className="space-y-10">
             {data.longForm.map((sec) => (
               <div key={sec.h2}>
-                <h2 className="mb-3 text-xl font-extrabold text-[#15224a] sm:text-2xl">{sec.h2}</h2>
+                <h2 className="text-2xl font-bold sm:text-3xl">{sec.h2}</h2>
                 {sec.paragraphs.map((p, i) => (
-                  <p key={i} className="mb-4 text-base leading-loose text-slate-600">{p}</p>
+                  <p key={i} className="mt-4 text-muted-foreground">{p}</p>
                 ))}
               </div>
             ))}
           </div>
-        ) : null}
+        </section>
+      ) : null}
 
-        <div className="mb-6 rounded-xl border border-[#e0eaff] bg-[#f0f7ff] p-6">
-          <h3 className="mb-3 text-lg font-bold text-[#15224a]">What is Included</h3>
-          <ul className="list-disc space-y-1.5 pl-5 text-[15px] text-slate-700">
-            {data.included.map((i) => <li key={i}>{i}</li>)}
-          </ul>
-        </div>
-      </section>
+      <Bullets title={`What's included in our ${data.h1} service`} items={data.included} />
 
-      <section className="bg-slate-50 px-6 py-14">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="mb-6 text-xl font-extrabold text-[#15224a] sm:text-2xl">Frequently Asked Questions</h2>
-          {data.faqs.map((f) => (
-            <div key={f.q} className="border-b border-slate-200 py-4">
-              <div className="mb-1.5 text-base font-bold text-[#15224a]">{f.q}</div>
-              <div className="text-[15px] leading-relaxed text-slate-600">{f.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <MidContentWhatsAppCTA service={data.h1} />
 
-      <section className="mx-auto max-w-4xl px-6 py-12">
-        <h2 className="mb-4 text-xl font-extrabold text-[#15224a]">Related Graphic Design Services</h2>
-        <div className="flex flex-wrap gap-2">
+      <FAQ items={data.faqs} />
+
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <h2 className="text-2xl font-bold sm:text-3xl">Related Graphic Design Services</h2>
+        <div className="mt-6 flex flex-wrap gap-2">
           {RELATED.map((r) => (
-            <Link key={r.href} to={r.href as never} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-[13px] font-semibold text-[#2563eb] hover:border-[#2563eb]">
+            <Link
+              key={r.href}
+              to={r.href as never}
+              className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary transition hover:border-primary/40"
+            >
               {r.label}
             </Link>
           ))}
-          <Link to={"/graphic-design-sri-lanka" as never} className="rounded-full bg-[#2563eb] px-4 py-2 text-[13px] font-semibold text-white">
-            All Design Services →
+          <Link
+            to={"/graphic-design-sri-lanka" as never}
+            className="inline-flex items-center gap-1 rounded-full bg-[image:var(--gradient-hero)] px-4 py-2 text-sm font-semibold text-primary-foreground"
+          >
+            All Design Services <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
+
         {PRINTING_LINKS[data.slug]?.length ? (
-          <div className="mt-8 rounded-xl border border-slate-200 bg-white p-6">
-            <h3 className="mb-2 text-lg font-bold text-[#15224a]">Need it printed too?</h3>
-            <p className="mb-3 text-[15px] leading-relaxed text-slate-600">
-              Once your {data.h1.toLowerCase()} is ready, we can print it in-house.
-              Explore our most relevant{" "}
-              <Link to={"/printing-services-sri-lanka" as never} className="font-semibold text-[#2563eb] underline">
+          <div className="mt-10 rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
+            <div className="flex items-center gap-3">
+              <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[image:var(--gradient-accent)] text-accent-foreground">
+                <Printer className="h-5 w-5" />
+              </div>
+              <h3 className="text-xl font-bold">Need it printed too?</h3>
+            </div>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Once your {data.h1.toLowerCase()} is ready, we can print it in-house. Explore our most relevant{" "}
+              <Link to={"/printing-services-sri-lanka" as never} className="font-semibold text-primary underline-offset-2 hover:underline">
                 printing services in Sri Lanka
               </Link>
               :
             </p>
-            <ul className="list-disc space-y-1.5 pl-5 text-[15px] text-slate-700">
+            <div className="mt-4 flex flex-wrap gap-2">
               {PRINTING_LINKS[data.slug].map((p) => (
-                <li key={p.href}>
-                  <Link to={p.href as never} className="font-semibold text-[#2563eb] hover:underline">
-                    {p.label}
-                  </Link>
-                </li>
+                <Link
+                  key={p.href}
+                  to={p.href as never}
+                  className="rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:border-primary/40"
+                >
+                  {p.label}
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
         ) : null}
       </section>
 
-      <section className="bg-[#2563eb] px-6 py-14 text-center text-white">
-        <h2 className="mb-3 text-2xl font-extrabold sm:text-3xl">Get a Free Quote for {data.h1}</h2>
-        <p className="mb-6 text-[15px] text-[#bfdbfe]">Call or WhatsApp us — free quote the same business day. No obligation.</p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <a href={`tel:${SITE.phone}`} className="rounded-md bg-white px-6 py-3 text-sm font-bold text-[#2563eb]">📞 Call {SITE.phone}</a>
-          <a href={SITE.whatsapp} target="_blank" rel="noopener" className="rounded-md bg-[#25d366] px-6 py-3 text-sm font-bold text-white">💬 WhatsApp Us</a>
-        </div>
-      </section>
+      <CTASection
+        headline={`Get a Free Quote for ${data.h1}`}
+        sub="Call or WhatsApp us — free quote the same business day. No obligation."
+        service={data.h1}
+      />
     </PageShell>
   );
 }

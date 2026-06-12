@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/lib/inquiries.functions";
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
+import { getDemandInsights, type DemandRow } from "@/lib/demand-insights.functions";
 import { toast } from "sonner";
 import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, type LucideIcon } from "lucide-react";
 
@@ -144,6 +145,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   const update = useServerFn(updateInquiry);
   const remove = useServerFn(deleteInquiry);
   const listClicks = useServerFn(listCtaClicks);
+  const fetchDemand = useServerFn(getDemandInsights);
 
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
@@ -157,6 +159,11 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   const { data: clicksData } = useQuery({
     queryKey: ["cta_clicks"],
     queryFn: () => listClicks(),
+  });
+
+  const { data: demandData } = useQuery({
+    queryKey: ["demand_insights_week"],
+    queryFn: () => fetchDemand(),
   });
 
   const updateMutation = useMutation({
@@ -382,7 +389,12 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
         </div>
 
         {/* Today's activity */}
-        <TodayPanel inquiries={inquiries} clicks={clicks} shortPath={shortPath} />
+        <TodayPanel
+          inquiries={inquiries}
+          clicks={clicks}
+          shortPath={shortPath}
+          demand={(demandData?.rows ?? []) as DemandRow[]}
+        />
 
         {/* CTA totals */}
         <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">

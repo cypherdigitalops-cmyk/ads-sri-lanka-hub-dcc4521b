@@ -895,6 +895,290 @@ function StatPill({ label, value, bg, fg }: { label: string; value: number; bg: 
   );
 }
 
+type TodayClickRow = { id: string; cta: string; page_url: string | null; created_at: string };
+type TodayInquiryRow = {
+  id: string;
+  name: string;
+  service: string | null;
+  page_url: string | null;
+  created_at: string;
+};
+
+function TodayPanel({
+  inquiries,
+  clicks,
+  shortPath,
+}: {
+  inquiries: TodayInquiryRow[];
+  clicks: TodayClickRow[];
+  shortPath: (url: string | null) => string;
+}) {
+  const isToday = (iso: string) => {
+    const d = new Date(iso);
+    const now = new Date();
+    return (
+      d.getFullYear() === now.getFullYear() &&
+      d.getMonth() === now.getMonth() &&
+      d.getDate() === now.getDate()
+    );
+  };
+
+  const todayInq = inquiries.filter((i) => isToday(i.created_at));
+  const todayClicks = clicks.filter((c) => isToday(c.created_at));
+
+  const counts = {
+    whatsapp: todayClicks.filter((c) => c.cta === "whatsapp").length,
+    call: todayClicks.filter((c) => c.cta === "call").length,
+    quote: todayClicks.filter((c) => c.cta === "quote").length,
+    email: todayClicks.filter((c) => c.cta === "email").length,
+    inquiries: todayInq.length,
+  };
+
+  // Pages visitors are interested in today (any engagement: click or inquiry)
+  const pageMap = new Map<
+    string,
+    { total: number; wa: number; call: number; quote: number; email: number; inq: number }
+  >();
+  const bump = (k: string, kind: "wa" | "call" | "quote" | "email" | "inq") => {
+    const cur = pageMap.get(k) ?? { total: 0, wa: 0, call: 0, quote: 0, email: 0, inq: 0 };
+    cur.total += 1;
+    cur[kind] += 1;
+    pageMap.set(k, cur);
+  };
+  for (const c of todayClicks) {
+    const k = shortPath(c.page_url);
+    if (c.cta === "whatsapp") bump(k, "wa");
+    else if (c.cta === "call") bump(k, "call");
+    else if (c.cta === "quote") bump(k, "quote");
+    else if (c.cta === "email") bump(k, "email");
+  }
+  for (const i of todayInq) bump(shortPath(i.page_url), "inq");
+
+  const topPages = Array.from(pageMap.entries())
+    .map(([page, s]) => ({ page, ...s }))
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 10);
+
+  const max = topPages[0]?.total ?? 0;
+
+  const recentEvents = [
+    ...todayInq.map((i) => ({
+      kind: "inquiry" as const,
+      ts: i.created_at,
+      label: `${i.name} — ${i.service || "inquiry"}`,
+      page: shortPath(i.page_url),
+    })),
+    ...todayClicks.map((c) => ({
+      kind: c.cta as "whatsapp" | "call" | "quote" | "email",
+      ts: c.created_at,
+      label:
+        c.cta === "whatsapp"
+          ? "WhatsApp click"
+          : c.cta === "call"
+          ? "Call click"
+          : c.cta === "quote"
+          ? "Quote open"
+          : "Email click",
+      page: shortPath(c.page_url),
+    })),
+  ]
+    .sort((a, b) => new Date(b.ts).getTime() - new Date(a.ts).getTime())
+    .slice(0, 12);
+
+  const eventStyle: Record<string, { bg: string; fg: string }> = {
+    inquiry: { bg: "#CCE3F8", fg: "#1D4ED8" },
+    whatsapp: { bg: "#C7F0DF", fg: "#047857" },
+    call: { bg: "#D6EBB6", fg: "#3F6212" },
+    quote: { bg: "#FDE4B5", fg: "#B45309" },
+    email: { bg: "#FBD0D0", fg: "#B91C1C" },
+  };
+
+  const fmtTime = (iso: string) =>
+    new Date(iso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase();
+
+  const hasAny =
+    counts.whatsapp + counts.call + counts.quote + counts.email + counts.inquiries > 0;
+
+  return (
+    <div className="mb-6 p-5" style={CARD_STYLE}>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <div style={{ fontSize: 12, color: "#6b6b68" }}>Customer behaviour</div>
+          <div style={{ fontSize: 16, fontWeight: 500, color: "#1a1a1a" }}>Today so far</div>
+        </div>
+        <span
+          style={{
+            background: "#F5F5F3",
+            border: "0.5px solid #e5e4de",
+            borderRadius: 20,
+            fontSize: 11,
+            padding: "3px 10px",
+            color: "#6b6b68",
+          }}
+        >
+          Live
+        </span>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+        <TodayKpi label="Inquiries" value={counts.inquiries} bg="#CCE3F8" fg="#1D4ED8" />
+        <TodayKpi label="WhatsApp" value={counts.whatsapp} bg="#C7F0DF" fg="#047857" />
+        <TodayKpi label="Calls" value={counts.call} bg="#D6EBB6" fg="#3F6212" />
+        <TodayKpi label="Quote opens" value={counts.quote} bg="#FDE4B5" fg="#B45309" />
+        <TodayKpi label="Email" value={counts.email} bg="#FBD0D0" fg="#B91C1C" />
+      </div>
+
+      {!hasAny ? (
+        <p className="mt-5 text-sm" style={{ color: "#6b6b68" }}>
+          No activity yet today. As visitors click Call, WhatsApp, or submit quote requests, they'll show up here in real time.
+        </p>
+      ) : (
+        <div className="mt-5 grid gap-5 lg:grid-cols-2">
+          {/* Pages they're interested in today */}
+          <div>
+            <div className="mb-2 flex items-center justify-between">
+              <h3 style={{ fontSize: 13, fontWeight: 500, color: "#1a1a1a" }}>
+                Pages they're interested in today
+              </h3>
+              <span style={{ fontSize: 11, color: "#6b6b68" }}>{topPages.length} pages</span>
+            </div>
+            {topPages.length === 0 ? (
+              <p className="text-sm" style={{ color: "#6b6b68" }}>No page activity yet.</p>
+            ) : (
+              <ul className="space-y-2">
+                {topPages.map((p) => {
+                  const pct = max > 0 ? Math.round((p.total / max) * 100) : 0;
+                  return (
+                    <li key={p.page}>
+                      <div className="flex items-center justify-between gap-3">
+                        <span
+                          className="truncate"
+                          style={{ fontSize: 13, color: "#1a1a1a", fontWeight: 500 }}
+                          title={p.page}
+                        >
+                          {p.page}
+                        </span>
+                        <span style={{ fontSize: 12, color: "#6b6b68" }}>{p.total}</span>
+                      </div>
+                      <div
+                        className="mt-1"
+                        style={{ height: 6, borderRadius: 999, background: "#F5F5F3", overflow: "hidden" }}
+                      >
+                        <div
+                          style={{
+                            width: `${pct}%`,
+                            height: "100%",
+                            background: "#1D4ED8",
+                            borderRadius: 999,
+                          }}
+                        />
+                      </div>
+                      <div className="mt-1 flex flex-wrap gap-1.5">
+                        {p.inq > 0 && <Mini label={`${p.inq} inquiry`} bg="#CCE3F8" fg="#1D4ED8" />}
+                        {p.wa > 0 && <Mini label={`${p.wa} WhatsApp`} bg="#C7F0DF" fg="#047857" />}
+                        {p.call > 0 && <Mini label={`${p.call} call`} bg="#D6EBB6" fg="#3F6212" />}
+                        {p.quote > 0 && <Mini label={`${p.quote} quote`} bg="#FDE4B5" fg="#B45309" />}
+                        {p.email > 0 && <Mini label={`${p.email} email`} bg="#FBD0D0" fg="#B91C1C" />}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+
+          {/* Recent activity timeline */}
+          <div>
+            <div className="mb-2 flex items-center justify-between">
+              <h3 style={{ fontSize: 13, fontWeight: 500, color: "#1a1a1a" }}>Recent activity</h3>
+              <span style={{ fontSize: 11, color: "#6b6b68" }}>Newest first</span>
+            </div>
+            <ul className="space-y-2">
+              {recentEvents.map((e, idx) => {
+                const style = eventStyle[e.kind];
+                return (
+                  <li
+                    key={idx}
+                    className="flex items-start gap-3 p-2"
+                    style={{ background: "#F5F5F3", borderRadius: 10 }}
+                  >
+                    <span
+                      style={{
+                        background: style.bg,
+                        color: style.fg,
+                        borderRadius: 20,
+                        padding: "2px 8px",
+                        fontSize: 11,
+                        fontWeight: 500,
+                        textTransform: "capitalize",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {e.kind}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div
+                        className="truncate"
+                        style={{ fontSize: 13, color: "#1a1a1a", fontWeight: 500 }}
+                        title={e.label}
+                      >
+                        {e.label}
+                      </div>
+                      <div
+                        className="truncate"
+                        style={{ fontSize: 11, color: "#6b6b68" }}
+                        title={e.page}
+                      >
+                        {e.page}
+                      </div>
+                    </div>
+                    <span style={{ fontSize: 11, color: "#6b6b68", whiteSpace: "nowrap" }}>
+                      {fmtTime(e.ts)}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function TodayKpi({ label, value, bg, fg }: { label: string; value: number; bg: string; fg: string }) {
+  return (
+    <div
+      className="p-3"
+      style={{ background: bg, borderRadius: 12 }}
+    >
+      <div style={{ fontSize: 22, fontWeight: 600, color: fg, lineHeight: 1.1 }}>
+        {value.toLocaleString()}
+      </div>
+      <div className="mt-1" style={{ fontSize: 11, color: fg, opacity: 0.85, fontWeight: 500 }}>
+        {label}
+      </div>
+    </div>
+  );
+}
+
+function Mini({ label, bg, fg }: { label: string; bg: string; fg: string }) {
+  return (
+    <span
+      style={{
+        background: bg,
+        color: fg,
+        borderRadius: 20,
+        padding: "1px 7px",
+        fontSize: 10,
+        fontWeight: 500,
+      }}
+    >
+      {label}
+    </span>
+  );
+}
+
 function TopPagesCard({
   title,
   subtitle,

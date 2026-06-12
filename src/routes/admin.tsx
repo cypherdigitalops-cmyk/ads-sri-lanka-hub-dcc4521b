@@ -1047,6 +1047,66 @@ function TodayPanel({
           No activity yet today. As visitors click Call, WhatsApp, or submit quote requests, they'll show up here in real time.
         </p>
       ) : (
+        <>
+        {/* Pages people inquired from today */}
+        <div className="mt-5">
+          <div className="mb-2 flex items-center justify-between">
+            <h3 style={{ fontSize: 13, fontWeight: 500, color: "#1a1a1a" }}>
+              Pages people inquired from today
+            </h3>
+            <span style={{ fontSize: 11, color: "#6b6b68" }}>
+              {counts.inquiries} {counts.inquiries === 1 ? "inquiry" : "inquiries"}
+            </span>
+          </div>
+          {inquiryPages.length === 0 ? (
+            <p className="text-sm" style={{ color: "#6b6b68" }}>
+              No form inquiries today yet.
+            </p>
+          ) : (
+            <ul className="grid gap-2 sm:grid-cols-2">
+              {inquiryPages.map((p) => (
+                <li
+                  key={p.page}
+                  className="p-3"
+                  style={{ background: "#F5F5F3", borderRadius: 10 }}
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span
+                      className="truncate"
+                      style={{ fontSize: 13, fontWeight: 500, color: "#1a1a1a" }}
+                      title={p.page}
+                    >
+                      {p.page}
+                    </span>
+                    <span
+                      style={{
+                        background: "#CCE3F8",
+                        color: "#1D4ED8",
+                        borderRadius: 20,
+                        padding: "2px 10px",
+                        fontSize: 11,
+                        fontWeight: 600,
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {p.count} {p.count === 1 ? "inquiry" : "inquiries"}
+                    </span>
+                  </div>
+                  <div
+                    className="mt-1 truncate"
+                    style={{ fontSize: 11, color: "#6b6b68" }}
+                    title={p.names.join(", ")}
+                  >
+                    {p.names.slice(0, 3).join(", ")}
+                    {p.names.length > 3 ? ` +${p.names.length - 3} more` : ""}
+                    <span style={{ marginLeft: 6 }}>· last {fmtTime(p.latest)}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
         <div className="mt-5 grid gap-5 lg:grid-cols-2">
           {/* Pages they're interested in today */}
           <div>
@@ -1155,6 +1215,7 @@ function TodayPanel({
             </ul>
           </div>
         </div>
+        </>
       )}
     </div>
   );

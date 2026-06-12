@@ -961,6 +961,20 @@ function TodayPanel({
 
   const max = topPages[0]?.total ?? 0;
 
+  // Pages people inquired from today (grouped by page, with the names)
+  const inquiryPagesMap = new Map<string, { count: number; names: string[]; latest: string }>();
+  for (const i of todayInq) {
+    const k = shortPath(i.page_url);
+    const cur = inquiryPagesMap.get(k) ?? { count: 0, names: [], latest: i.created_at };
+    cur.count += 1;
+    cur.names.push(i.name);
+    if (new Date(i.created_at) > new Date(cur.latest)) cur.latest = i.created_at;
+    inquiryPagesMap.set(k, cur);
+  }
+  const inquiryPages = Array.from(inquiryPagesMap.entries())
+    .map(([page, s]) => ({ page, ...s }))
+    .sort((a, b) => b.count - a.count || new Date(b.latest).getTime() - new Date(a.latest).getTime());
+
   const recentEvents = [
     ...todayInq.map((i) => ({
       kind: "inquiry" as const,

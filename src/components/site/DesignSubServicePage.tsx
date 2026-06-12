@@ -17,7 +17,7 @@ export type DesignSubService = {
   whatIs: string;
   whoNeeds: string;
   included: string[];
-  cost: string;
+  cost?: string;
   faqs: DesignFAQ[];
 };
 
@@ -62,11 +62,6 @@ export function DesignSubServicePage({ data }: { data: DesignSubService }) {
           <ul className="list-disc space-y-1.5 pl-5 text-[15px] text-slate-700">
             {data.included.map((i) => <li key={i}>{i}</li>)}
           </ul>
-        </div>
-
-        <div className="rounded-xl border-l-4 border-[#2563eb] bg-[#fffbe6] p-6">
-          <h3 className="mb-2 text-lg font-bold text-[#15224a]">💰 How Much Does it Cost?</h3>
-          <p className="text-[15px] leading-relaxed text-slate-700">{data.cost}</p>
         </div>
       </section>
 

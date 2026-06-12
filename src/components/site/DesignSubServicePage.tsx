@@ -156,6 +156,12 @@ const PRINTING_LINKS: Record<string, { href: string; label: string }[]> = {
   "mobile-app-ui-design-sri-lanka": [
     { href: "/sticker-printing-sri-lanka", label: "sticker printing Sri Lanka" },
   ],
+  "annual-report-design-sri-lanka": [
+    { href: "/annual-report-printing-sri-lanka", label: "annual report printing Sri Lanka" },
+    { href: "/booklet-printing-sri-lanka", label: "booklet printing Sri Lanka" },
+    { href: "/offset-printing-sri-lanka", label: "offset printing Sri Lanka" },
+    { href: "/presentation-folder-printing-sri-lanka", label: "presentation folder printing Sri Lanka" },
+  ],
 };
 
 export function DesignSubServicePage({ data }: { data: DesignSubService }) {

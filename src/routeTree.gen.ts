@@ -22,7 +22,9 @@ import { Route as WeddingDecorSriLankaRouteImport } from './routes/wedding-decor
 import { Route as WeddingCateringSriLankaRouteImport } from './routes/wedding-catering-sri-lanka'
 import { Route as WebsiteMaintenanceSriLankaRouteImport } from './routes/website-maintenance-sri-lanka'
 import { Route as WebsiteDevelopmentSriLankaRouteImport } from './routes/website-development-sri-lanka'
+import { Route as WebsiteDesignSriLankaRouteImport } from './routes/website-design-sri-lanka'
 import { Route as WebDesignSriLankaRouteImport } from './routes/web-design-sri-lanka'
+import { Route as WebBannerDesignSriLankaRouteImport } from './routes/web-banner-design-sri-lanka'
 import { Route as WayfindingSignageSriLankaRouteImport } from './routes/wayfinding-signage-sri-lanka'
 import { Route as WaterBottlePrintingSriLankaRouteImport } from './routes/water-bottle-printing-sri-lanka'
 import { Route as WallpaperPrintingSriLankaRouteImport } from './routes/wallpaper-printing-sri-lanka'
@@ -36,6 +38,7 @@ import { Route as VehicleStickerPrintingSriLankaRouteImport } from './routes/veh
 import { Route as VehicleBrandingSriLankaRouteImport } from './routes/vehicle-branding-sri-lanka'
 import { Route as VanBrandingSriLankaRouteImport } from './routes/van-branding-sri-lanka'
 import { Route as ValetParkingSriLankaRouteImport } from './routes/valet-parking-sri-lanka'
+import { Route as UxDesignSriLankaRouteImport } from './routes/ux-design-sri-lanka'
 import { Route as UvPrintingSriLankaRouteImport } from './routes/uv-printing-sri-lanka'
 import { Route as UsbPrintingSriLankaRouteImport } from './routes/usb-printing-sri-lanka'
 import { Route as UplightingSriLankaRouteImport } from './routes/uplighting-sri-lanka'
@@ -54,12 +57,14 @@ import { Route as TradeShowBannerPrintingSriLankaRouteImport } from './routes/tr
 import { Route as ToteBagPrintingSriLankaRouteImport } from './routes/tote-bag-printing-sri-lanka'
 import { Route as TiktokMarketingSriLankaRouteImport } from './routes/tiktok-marketing-sri-lanka'
 import { Route as TiktokAdsSriLankaRouteImport } from './routes/tiktok-ads-sri-lanka'
+import { Route as ThumbnailDesignSriLankaRouteImport } from './routes/thumbnail-design-sri-lanka'
 import { Route as TentMarqueeRentalSriLankaRouteImport } from './routes/tent-marquee-rental-sri-lanka'
 import { Route as TechnicalSeoSriLankaRouteImport } from './routes/technical-seo-sri-lanka'
 import { Route as TableChairRentalSriLankaRouteImport } from './routes/table-chair-rental-sri-lanka'
 import { Route as TShirtPrintingSriLankaRouteImport } from './routes/t-shirt-printing-sri-lanka'
 import { Route as StreetFurnitureAdvertisingSriLankaRouteImport } from './routes/street-furniture-advertising-sri-lanka'
 import { Route as StickerPrintingSriLankaRouteImport } from './routes/sticker-printing-sri-lanka'
+import { Route as StationeryDesignSriLankaRouteImport } from './routes/stationery-design-sri-lanka'
 import { Route as StageSetupSriLankaRouteImport } from './routes/stage-setup-sri-lanka'
 import { Route as StageRentalSriLankaRouteImport } from './routes/stage-rental-sri-lanka'
 import { Route as StageBrandingSriLankaRouteImport } from './routes/stage-branding-sri-lanka'
@@ -67,10 +72,12 @@ import { Route as StageBackdropPrintingSriLankaRouteImport } from './routes/stag
 import { Route as SpotUvPrintingSriLankaRouteImport } from './routes/spot-uv-printing-sri-lanka'
 import { Route as SponsorshipAdvertisingSriLankaRouteImport } from './routes/sponsorship-advertising-sri-lanka'
 import { Route as SoundSystemRentalSriLankaRouteImport } from './routes/sound-system-rental-sri-lanka'
+import { Route as SocialMediaPostDesignSriLankaRouteImport } from './routes/social-media-post-design-sri-lanka'
 import { Route as SocialMediaMarketingSriLankaRouteImport } from './routes/social-media-marketing-sri-lanka'
 import { Route as SocialMediaManagementSriLankaRouteImport } from './routes/social-media-management-sri-lanka'
 import { Route as SocialMediaAgencySriLankaRouteImport } from './routes/social-media-agency-sri-lanka'
 import { Route as SmsMarketingSriLankaRouteImport } from './routes/sms-marketing-sri-lanka'
+import { Route as SignageDesignSriLankaRouteImport } from './routes/signage-design-sri-lanka'
 import { Route as ShrinkSleevePrintingSriLankaRouteImport } from './routes/shrink-sleeve-printing-sri-lanka'
 import { Route as ShopFrontStickerPrintingSriLankaRouteImport } from './routes/shop-front-sticker-printing-sri-lanka'
 import { Route as ShopBrandingSriLankaRouteImport } from './routes/shop-branding-sri-lanka'
@@ -108,6 +115,7 @@ import { Route as PrCommunicationsSriLankaRouteImport } from './routes/pr-commun
 import { Route as PpcSriLankaRouteImport } from './routes/ppc-sri-lanka'
 import { Route as PowerBankPrintingSriLankaRouteImport } from './routes/power-bank-printing-sri-lanka'
 import { Route as PosterPrintingSriLankaRouteImport } from './routes/poster-printing-sri-lanka'
+import { Route as PosterDesignSriLankaRouteImport } from './routes/poster-design-sri-lanka'
 import { Route as PopupBannerPrintingSriLankaRouteImport } from './routes/popup-banner-printing-sri-lanka'
 import { Route as PoloShirtPrintingSriLankaRouteImport } from './routes/polo-shirt-printing-sri-lanka'
 import { Route as PoliticalAdvertisingCampaignSriLankaRouteImport } from './routes/political-advertising-campaign-sri-lanka'
@@ -119,6 +127,7 @@ import { Route as PhotoBoothRentalSriLankaRouteImport } from './routes/photo-boo
 import { Route as PerformanceMarketingSriLankaRouteImport } from './routes/performance-marketing-sri-lanka'
 import { Route as PenPrintingSriLankaRouteImport } from './routes/pen-printing-sri-lanka'
 import { Route as PaperBagPrintingSriLankaRouteImport } from './routes/paper-bag-printing-sri-lanka'
+import { Route as PackagingDesignSriLankaRouteImport } from './routes/packaging-design-sri-lanka'
 import { Route as OutdoorBannerPrintingSriLankaRouteImport } from './routes/outdoor-banner-printing-sri-lanka'
 import { Route as OutdoorAdvertisingSriLankaRouteImport } from './routes/outdoor-advertising-sri-lanka'
 import { Route as OmnichannelMarketingSriLankaRouteImport } from './routes/omnichannel-marketing-sri-lanka'
@@ -134,6 +143,7 @@ import { Route as MugPrintingSriLankaRouteImport } from './routes/mug-printing-s
 import { Route as MotorcycleBrandingSriLankaRouteImport } from './routes/motorcycle-branding-sri-lanka'
 import { Route as MotionGraphicsSriLankaRouteImport } from './routes/motion-graphics-sri-lanka'
 import { Route as MobileBillboardSriLankaRouteImport } from './routes/mobile-billboard-sri-lanka'
+import { Route as MobileAppUiDesignSriLankaRouteImport } from './routes/mobile-app-ui-design-sri-lanka'
 import { Route as MobileAppAdvertisingSriLankaRouteImport } from './routes/mobile-app-advertising-sri-lanka'
 import { Route as MeshBannerPrintingSriLankaRouteImport } from './routes/mesh-banner-printing-sri-lanka'
 import { Route as MenuPrintingSriLankaRouteImport } from './routes/menu-printing-sri-lanka'
@@ -581,9 +591,19 @@ const WebsiteDevelopmentSriLankaRoute =
     path: '/website-development-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const WebsiteDesignSriLankaRoute = WebsiteDesignSriLankaRouteImport.update({
+  id: '/website-design-sri-lanka',
+  path: '/website-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WebDesignSriLankaRoute = WebDesignSriLankaRouteImport.update({
   id: '/web-design-sri-lanka',
   path: '/web-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WebBannerDesignSriLankaRoute = WebBannerDesignSriLankaRouteImport.update({
+  id: '/web-banner-design-sri-lanka',
+  path: '/web-banner-design-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WayfindingSignageSriLankaRoute =
@@ -655,6 +675,11 @@ const VanBrandingSriLankaRoute = VanBrandingSriLankaRouteImport.update({
 const ValetParkingSriLankaRoute = ValetParkingSriLankaRouteImport.update({
   id: '/valet-parking-sri-lanka',
   path: '/valet-parking-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UxDesignSriLankaRoute = UxDesignSriLankaRouteImport.update({
+  id: '/ux-design-sri-lanka',
+  path: '/ux-design-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const UvPrintingSriLankaRoute = UvPrintingSriLankaRouteImport.update({
@@ -752,6 +777,11 @@ const TiktokAdsSriLankaRoute = TiktokAdsSriLankaRouteImport.update({
   path: '/tiktok-ads-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ThumbnailDesignSriLankaRoute = ThumbnailDesignSriLankaRouteImport.update({
+  id: '/thumbnail-design-sri-lanka',
+  path: '/thumbnail-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TentMarqueeRentalSriLankaRoute =
   TentMarqueeRentalSriLankaRouteImport.update({
     id: '/tent-marquee-rental-sri-lanka',
@@ -785,6 +815,12 @@ const StickerPrintingSriLankaRoute = StickerPrintingSriLankaRouteImport.update({
   path: '/sticker-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StationeryDesignSriLankaRoute =
+  StationeryDesignSriLankaRouteImport.update({
+    id: '/stationery-design-sri-lanka',
+    path: '/stationery-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const StageSetupSriLankaRoute = StageSetupSriLankaRouteImport.update({
   id: '/stage-setup-sri-lanka',
   path: '/stage-setup-sri-lanka',
@@ -823,6 +859,12 @@ const SoundSystemRentalSriLankaRoute =
     path: '/sound-system-rental-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SocialMediaPostDesignSriLankaRoute =
+  SocialMediaPostDesignSriLankaRouteImport.update({
+    id: '/social-media-post-design-sri-lanka',
+    path: '/social-media-post-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SocialMediaMarketingSriLankaRoute =
   SocialMediaMarketingSriLankaRouteImport.update({
     id: '/social-media-marketing-sri-lanka',
@@ -844,6 +886,11 @@ const SocialMediaAgencySriLankaRoute =
 const SmsMarketingSriLankaRoute = SmsMarketingSriLankaRouteImport.update({
   id: '/sms-marketing-sri-lanka',
   path: '/sms-marketing-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignageDesignSriLankaRoute = SignageDesignSriLankaRouteImport.update({
+  id: '/signage-design-sri-lanka',
+  path: '/signage-design-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShrinkSleevePrintingSriLankaRoute =
@@ -1050,6 +1097,11 @@ const PosterPrintingSriLankaRoute = PosterPrintingSriLankaRouteImport.update({
   path: '/poster-printing-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PosterDesignSriLankaRoute = PosterDesignSriLankaRouteImport.update({
+  id: '/poster-design-sri-lanka',
+  path: '/poster-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PopupBannerPrintingSriLankaRoute =
   PopupBannerPrintingSriLankaRouteImport.update({
     id: '/popup-banner-printing-sri-lanka',
@@ -1113,6 +1165,11 @@ const PaperBagPrintingSriLankaRoute =
     path: '/paper-bag-printing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PackagingDesignSriLankaRoute = PackagingDesignSriLankaRouteImport.update({
+  id: '/packaging-design-sri-lanka',
+  path: '/packaging-design-sri-lanka',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OutdoorBannerPrintingSriLankaRoute =
   OutdoorBannerPrintingSriLankaRouteImport.update({
     id: '/outdoor-banner-printing-sri-lanka',
@@ -1197,6 +1254,12 @@ const MobileBillboardSriLankaRoute = MobileBillboardSriLankaRouteImport.update({
   path: '/mobile-billboard-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MobileAppUiDesignSriLankaRoute =
+  MobileAppUiDesignSriLankaRouteImport.update({
+    id: '/mobile-app-ui-design-sri-lanka',
+    path: '/mobile-app-ui-design-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MobileAppAdvertisingSriLankaRoute =
   MobileAppAdvertisingSriLankaRouteImport.update({
     id: '/mobile-app-advertising-sri-lanka',
@@ -3551,6 +3614,7 @@ export interface FileRoutesByFullPath {
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
   '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
+  '/mobile-app-ui-design-sri-lanka': typeof MobileAppUiDesignSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/motorcycle-branding-sri-lanka': typeof MotorcycleBrandingSriLankaRoute
@@ -3566,6 +3630,7 @@ export interface FileRoutesByFullPath {
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
   '/outdoor-banner-printing-sri-lanka': typeof OutdoorBannerPrintingSriLankaRoute
+  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/paper-bag-printing-sri-lanka': typeof PaperBagPrintingSriLankaRoute
   '/pen-printing-sri-lanka': typeof PenPrintingSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
@@ -3577,6 +3642,7 @@ export interface FileRoutesByFullPath {
   '/political-advertising-campaign-sri-lanka': typeof PoliticalAdvertisingCampaignSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
+  '/poster-design-sri-lanka': typeof PosterDesignSriLankaRoute
   '/poster-printing-sri-lanka': typeof PosterPrintingSriLankaRoute
   '/power-bank-printing-sri-lanka': typeof PowerBankPrintingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
@@ -3614,10 +3680,12 @@ export interface FileRoutesByFullPath {
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/shop-front-sticker-printing-sri-lanka': typeof ShopFrontStickerPrintingSriLankaRoute
   '/shrink-sleeve-printing-sri-lanka': typeof ShrinkSleevePrintingSriLankaRoute
+  '/signage-design-sri-lanka': typeof SignageDesignSriLankaRoute
   '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
   '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
   '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
   '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
+  '/social-media-post-design-sri-lanka': typeof SocialMediaPostDesignSriLankaRoute
   '/sound-system-rental-sri-lanka': typeof SoundSystemRentalSriLankaRoute
   '/sponsorship-advertising-sri-lanka': typeof SponsorshipAdvertisingSriLankaRoute
   '/spot-uv-printing-sri-lanka': typeof SpotUvPrintingSriLankaRoute
@@ -3625,12 +3693,14 @@ export interface FileRoutesByFullPath {
   '/stage-branding-sri-lanka': typeof StageBrandingSriLankaRoute
   '/stage-rental-sri-lanka': typeof StageRentalSriLankaRoute
   '/stage-setup-sri-lanka': typeof StageSetupSriLankaRoute
+  '/stationery-design-sri-lanka': typeof StationeryDesignSriLankaRoute
   '/sticker-printing-sri-lanka': typeof StickerPrintingSriLankaRoute
   '/street-furniture-advertising-sri-lanka': typeof StreetFurnitureAdvertisingSriLankaRoute
   '/t-shirt-printing-sri-lanka': typeof TShirtPrintingSriLankaRoute
   '/table-chair-rental-sri-lanka': typeof TableChairRentalSriLankaRoute
   '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
   '/tent-marquee-rental-sri-lanka': typeof TentMarqueeRentalSriLankaRoute
+  '/thumbnail-design-sri-lanka': typeof ThumbnailDesignSriLankaRoute
   '/tiktok-ads-sri-lanka': typeof TiktokAdsSriLankaRoute
   '/tiktok-marketing-sri-lanka': typeof TiktokMarketingSriLankaRoute
   '/tote-bag-printing-sri-lanka': typeof ToteBagPrintingSriLankaRoute
@@ -3649,6 +3719,7 @@ export interface FileRoutesByFullPath {
   '/uplighting-sri-lanka': typeof UplightingSriLankaRoute
   '/usb-printing-sri-lanka': typeof UsbPrintingSriLankaRoute
   '/uv-printing-sri-lanka': typeof UvPrintingSriLankaRoute
+  '/ux-design-sri-lanka': typeof UxDesignSriLankaRoute
   '/valet-parking-sri-lanka': typeof ValetParkingSriLankaRoute
   '/van-branding-sri-lanka': typeof VanBrandingSriLankaRoute
   '/vehicle-branding-sri-lanka': typeof VehicleBrandingSriLankaRoute
@@ -3662,7 +3733,9 @@ export interface FileRoutesByFullPath {
   '/wallpaper-printing-sri-lanka': typeof WallpaperPrintingSriLankaRoute
   '/water-bottle-printing-sri-lanka': typeof WaterBottlePrintingSriLankaRoute
   '/wayfinding-signage-sri-lanka': typeof WayfindingSignageSriLankaRoute
+  '/web-banner-design-sri-lanka': typeof WebBannerDesignSriLankaRoute
   '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
+  '/website-design-sri-lanka': typeof WebsiteDesignSriLankaRoute
   '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
   '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
   '/wedding-catering-sri-lanka': typeof WeddingCateringSriLankaRoute
@@ -4053,6 +4126,7 @@ export interface FileRoutesByTo {
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
   '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
+  '/mobile-app-ui-design-sri-lanka': typeof MobileAppUiDesignSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/motorcycle-branding-sri-lanka': typeof MotorcycleBrandingSriLankaRoute
@@ -4068,6 +4142,7 @@ export interface FileRoutesByTo {
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
   '/outdoor-banner-printing-sri-lanka': typeof OutdoorBannerPrintingSriLankaRoute
+  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/paper-bag-printing-sri-lanka': typeof PaperBagPrintingSriLankaRoute
   '/pen-printing-sri-lanka': typeof PenPrintingSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
@@ -4079,6 +4154,7 @@ export interface FileRoutesByTo {
   '/political-advertising-campaign-sri-lanka': typeof PoliticalAdvertisingCampaignSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
+  '/poster-design-sri-lanka': typeof PosterDesignSriLankaRoute
   '/poster-printing-sri-lanka': typeof PosterPrintingSriLankaRoute
   '/power-bank-printing-sri-lanka': typeof PowerBankPrintingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
@@ -4116,10 +4192,12 @@ export interface FileRoutesByTo {
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/shop-front-sticker-printing-sri-lanka': typeof ShopFrontStickerPrintingSriLankaRoute
   '/shrink-sleeve-printing-sri-lanka': typeof ShrinkSleevePrintingSriLankaRoute
+  '/signage-design-sri-lanka': typeof SignageDesignSriLankaRoute
   '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
   '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
   '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
   '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
+  '/social-media-post-design-sri-lanka': typeof SocialMediaPostDesignSriLankaRoute
   '/sound-system-rental-sri-lanka': typeof SoundSystemRentalSriLankaRoute
   '/sponsorship-advertising-sri-lanka': typeof SponsorshipAdvertisingSriLankaRoute
   '/spot-uv-printing-sri-lanka': typeof SpotUvPrintingSriLankaRoute
@@ -4127,12 +4205,14 @@ export interface FileRoutesByTo {
   '/stage-branding-sri-lanka': typeof StageBrandingSriLankaRoute
   '/stage-rental-sri-lanka': typeof StageRentalSriLankaRoute
   '/stage-setup-sri-lanka': typeof StageSetupSriLankaRoute
+  '/stationery-design-sri-lanka': typeof StationeryDesignSriLankaRoute
   '/sticker-printing-sri-lanka': typeof StickerPrintingSriLankaRoute
   '/street-furniture-advertising-sri-lanka': typeof StreetFurnitureAdvertisingSriLankaRoute
   '/t-shirt-printing-sri-lanka': typeof TShirtPrintingSriLankaRoute
   '/table-chair-rental-sri-lanka': typeof TableChairRentalSriLankaRoute
   '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
   '/tent-marquee-rental-sri-lanka': typeof TentMarqueeRentalSriLankaRoute
+  '/thumbnail-design-sri-lanka': typeof ThumbnailDesignSriLankaRoute
   '/tiktok-ads-sri-lanka': typeof TiktokAdsSriLankaRoute
   '/tiktok-marketing-sri-lanka': typeof TiktokMarketingSriLankaRoute
   '/tote-bag-printing-sri-lanka': typeof ToteBagPrintingSriLankaRoute
@@ -4151,6 +4231,7 @@ export interface FileRoutesByTo {
   '/uplighting-sri-lanka': typeof UplightingSriLankaRoute
   '/usb-printing-sri-lanka': typeof UsbPrintingSriLankaRoute
   '/uv-printing-sri-lanka': typeof UvPrintingSriLankaRoute
+  '/ux-design-sri-lanka': typeof UxDesignSriLankaRoute
   '/valet-parking-sri-lanka': typeof ValetParkingSriLankaRoute
   '/van-branding-sri-lanka': typeof VanBrandingSriLankaRoute
   '/vehicle-branding-sri-lanka': typeof VehicleBrandingSriLankaRoute
@@ -4164,7 +4245,9 @@ export interface FileRoutesByTo {
   '/wallpaper-printing-sri-lanka': typeof WallpaperPrintingSriLankaRoute
   '/water-bottle-printing-sri-lanka': typeof WaterBottlePrintingSriLankaRoute
   '/wayfinding-signage-sri-lanka': typeof WayfindingSignageSriLankaRoute
+  '/web-banner-design-sri-lanka': typeof WebBannerDesignSriLankaRoute
   '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
+  '/website-design-sri-lanka': typeof WebsiteDesignSriLankaRoute
   '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
   '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
   '/wedding-catering-sri-lanka': typeof WeddingCateringSriLankaRoute
@@ -4556,6 +4639,7 @@ export interface FileRoutesById {
   '/menu-printing-sri-lanka': typeof MenuPrintingSriLankaRoute
   '/mesh-banner-printing-sri-lanka': typeof MeshBannerPrintingSriLankaRoute
   '/mobile-app-advertising-sri-lanka': typeof MobileAppAdvertisingSriLankaRoute
+  '/mobile-app-ui-design-sri-lanka': typeof MobileAppUiDesignSriLankaRoute
   '/mobile-billboard-sri-lanka': typeof MobileBillboardSriLankaRoute
   '/motion-graphics-sri-lanka': typeof MotionGraphicsSriLankaRoute
   '/motorcycle-branding-sri-lanka': typeof MotorcycleBrandingSriLankaRoute
@@ -4571,6 +4655,7 @@ export interface FileRoutesById {
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
   '/outdoor-banner-printing-sri-lanka': typeof OutdoorBannerPrintingSriLankaRoute
+  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/paper-bag-printing-sri-lanka': typeof PaperBagPrintingSriLankaRoute
   '/pen-printing-sri-lanka': typeof PenPrintingSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
@@ -4582,6 +4667,7 @@ export interface FileRoutesById {
   '/political-advertising-campaign-sri-lanka': typeof PoliticalAdvertisingCampaignSriLankaRoute
   '/polo-shirt-printing-sri-lanka': typeof PoloShirtPrintingSriLankaRoute
   '/popup-banner-printing-sri-lanka': typeof PopupBannerPrintingSriLankaRoute
+  '/poster-design-sri-lanka': typeof PosterDesignSriLankaRoute
   '/poster-printing-sri-lanka': typeof PosterPrintingSriLankaRoute
   '/power-bank-printing-sri-lanka': typeof PowerBankPrintingSriLankaRoute
   '/ppc-sri-lanka': typeof PpcSriLankaRoute
@@ -4619,10 +4705,12 @@ export interface FileRoutesById {
   '/shop-branding-sri-lanka': typeof ShopBrandingSriLankaRoute
   '/shop-front-sticker-printing-sri-lanka': typeof ShopFrontStickerPrintingSriLankaRoute
   '/shrink-sleeve-printing-sri-lanka': typeof ShrinkSleevePrintingSriLankaRoute
+  '/signage-design-sri-lanka': typeof SignageDesignSriLankaRoute
   '/sms-marketing-sri-lanka': typeof SmsMarketingSriLankaRoute
   '/social-media-agency-sri-lanka': typeof SocialMediaAgencySriLankaRoute
   '/social-media-management-sri-lanka': typeof SocialMediaManagementSriLankaRoute
   '/social-media-marketing-sri-lanka': typeof SocialMediaMarketingSriLankaRoute
+  '/social-media-post-design-sri-lanka': typeof SocialMediaPostDesignSriLankaRoute
   '/sound-system-rental-sri-lanka': typeof SoundSystemRentalSriLankaRoute
   '/sponsorship-advertising-sri-lanka': typeof SponsorshipAdvertisingSriLankaRoute
   '/spot-uv-printing-sri-lanka': typeof SpotUvPrintingSriLankaRoute
@@ -4630,12 +4718,14 @@ export interface FileRoutesById {
   '/stage-branding-sri-lanka': typeof StageBrandingSriLankaRoute
   '/stage-rental-sri-lanka': typeof StageRentalSriLankaRoute
   '/stage-setup-sri-lanka': typeof StageSetupSriLankaRoute
+  '/stationery-design-sri-lanka': typeof StationeryDesignSriLankaRoute
   '/sticker-printing-sri-lanka': typeof StickerPrintingSriLankaRoute
   '/street-furniture-advertising-sri-lanka': typeof StreetFurnitureAdvertisingSriLankaRoute
   '/t-shirt-printing-sri-lanka': typeof TShirtPrintingSriLankaRoute
   '/table-chair-rental-sri-lanka': typeof TableChairRentalSriLankaRoute
   '/technical-seo-sri-lanka': typeof TechnicalSeoSriLankaRoute
   '/tent-marquee-rental-sri-lanka': typeof TentMarqueeRentalSriLankaRoute
+  '/thumbnail-design-sri-lanka': typeof ThumbnailDesignSriLankaRoute
   '/tiktok-ads-sri-lanka': typeof TiktokAdsSriLankaRoute
   '/tiktok-marketing-sri-lanka': typeof TiktokMarketingSriLankaRoute
   '/tote-bag-printing-sri-lanka': typeof ToteBagPrintingSriLankaRoute
@@ -4654,6 +4744,7 @@ export interface FileRoutesById {
   '/uplighting-sri-lanka': typeof UplightingSriLankaRoute
   '/usb-printing-sri-lanka': typeof UsbPrintingSriLankaRoute
   '/uv-printing-sri-lanka': typeof UvPrintingSriLankaRoute
+  '/ux-design-sri-lanka': typeof UxDesignSriLankaRoute
   '/valet-parking-sri-lanka': typeof ValetParkingSriLankaRoute
   '/van-branding-sri-lanka': typeof VanBrandingSriLankaRoute
   '/vehicle-branding-sri-lanka': typeof VehicleBrandingSriLankaRoute
@@ -4667,7 +4758,9 @@ export interface FileRoutesById {
   '/wallpaper-printing-sri-lanka': typeof WallpaperPrintingSriLankaRoute
   '/water-bottle-printing-sri-lanka': typeof WaterBottlePrintingSriLankaRoute
   '/wayfinding-signage-sri-lanka': typeof WayfindingSignageSriLankaRoute
+  '/web-banner-design-sri-lanka': typeof WebBannerDesignSriLankaRoute
   '/web-design-sri-lanka': typeof WebDesignSriLankaRoute
+  '/website-design-sri-lanka': typeof WebsiteDesignSriLankaRoute
   '/website-development-sri-lanka': typeof WebsiteDevelopmentSriLankaRoute
   '/website-maintenance-sri-lanka': typeof WebsiteMaintenanceSriLankaRoute
   '/wedding-catering-sri-lanka': typeof WeddingCateringSriLankaRoute
@@ -5060,6 +5153,7 @@ export interface FileRouteTypes {
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
     | '/mobile-app-advertising-sri-lanka'
+    | '/mobile-app-ui-design-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/motorcycle-branding-sri-lanka'
@@ -5075,6 +5169,7 @@ export interface FileRouteTypes {
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
     | '/outdoor-banner-printing-sri-lanka'
+    | '/packaging-design-sri-lanka'
     | '/paper-bag-printing-sri-lanka'
     | '/pen-printing-sri-lanka'
     | '/performance-marketing-sri-lanka'
@@ -5086,6 +5181,7 @@ export interface FileRouteTypes {
     | '/political-advertising-campaign-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
+    | '/poster-design-sri-lanka'
     | '/poster-printing-sri-lanka'
     | '/power-bank-printing-sri-lanka'
     | '/ppc-sri-lanka'
@@ -5123,10 +5219,12 @@ export interface FileRouteTypes {
     | '/shop-branding-sri-lanka'
     | '/shop-front-sticker-printing-sri-lanka'
     | '/shrink-sleeve-printing-sri-lanka'
+    | '/signage-design-sri-lanka'
     | '/sms-marketing-sri-lanka'
     | '/social-media-agency-sri-lanka'
     | '/social-media-management-sri-lanka'
     | '/social-media-marketing-sri-lanka'
+    | '/social-media-post-design-sri-lanka'
     | '/sound-system-rental-sri-lanka'
     | '/sponsorship-advertising-sri-lanka'
     | '/spot-uv-printing-sri-lanka'
@@ -5134,12 +5232,14 @@ export interface FileRouteTypes {
     | '/stage-branding-sri-lanka'
     | '/stage-rental-sri-lanka'
     | '/stage-setup-sri-lanka'
+    | '/stationery-design-sri-lanka'
     | '/sticker-printing-sri-lanka'
     | '/street-furniture-advertising-sri-lanka'
     | '/t-shirt-printing-sri-lanka'
     | '/table-chair-rental-sri-lanka'
     | '/technical-seo-sri-lanka'
     | '/tent-marquee-rental-sri-lanka'
+    | '/thumbnail-design-sri-lanka'
     | '/tiktok-ads-sri-lanka'
     | '/tiktok-marketing-sri-lanka'
     | '/tote-bag-printing-sri-lanka'
@@ -5158,6 +5258,7 @@ export interface FileRouteTypes {
     | '/uplighting-sri-lanka'
     | '/usb-printing-sri-lanka'
     | '/uv-printing-sri-lanka'
+    | '/ux-design-sri-lanka'
     | '/valet-parking-sri-lanka'
     | '/van-branding-sri-lanka'
     | '/vehicle-branding-sri-lanka'
@@ -5171,7 +5272,9 @@ export interface FileRouteTypes {
     | '/wallpaper-printing-sri-lanka'
     | '/water-bottle-printing-sri-lanka'
     | '/wayfinding-signage-sri-lanka'
+    | '/web-banner-design-sri-lanka'
     | '/web-design-sri-lanka'
+    | '/website-design-sri-lanka'
     | '/website-development-sri-lanka'
     | '/website-maintenance-sri-lanka'
     | '/wedding-catering-sri-lanka'
@@ -5562,6 +5665,7 @@ export interface FileRouteTypes {
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
     | '/mobile-app-advertising-sri-lanka'
+    | '/mobile-app-ui-design-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/motorcycle-branding-sri-lanka'
@@ -5577,6 +5681,7 @@ export interface FileRouteTypes {
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
     | '/outdoor-banner-printing-sri-lanka'
+    | '/packaging-design-sri-lanka'
     | '/paper-bag-printing-sri-lanka'
     | '/pen-printing-sri-lanka'
     | '/performance-marketing-sri-lanka'
@@ -5588,6 +5693,7 @@ export interface FileRouteTypes {
     | '/political-advertising-campaign-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
+    | '/poster-design-sri-lanka'
     | '/poster-printing-sri-lanka'
     | '/power-bank-printing-sri-lanka'
     | '/ppc-sri-lanka'
@@ -5625,10 +5731,12 @@ export interface FileRouteTypes {
     | '/shop-branding-sri-lanka'
     | '/shop-front-sticker-printing-sri-lanka'
     | '/shrink-sleeve-printing-sri-lanka'
+    | '/signage-design-sri-lanka'
     | '/sms-marketing-sri-lanka'
     | '/social-media-agency-sri-lanka'
     | '/social-media-management-sri-lanka'
     | '/social-media-marketing-sri-lanka'
+    | '/social-media-post-design-sri-lanka'
     | '/sound-system-rental-sri-lanka'
     | '/sponsorship-advertising-sri-lanka'
     | '/spot-uv-printing-sri-lanka'
@@ -5636,12 +5744,14 @@ export interface FileRouteTypes {
     | '/stage-branding-sri-lanka'
     | '/stage-rental-sri-lanka'
     | '/stage-setup-sri-lanka'
+    | '/stationery-design-sri-lanka'
     | '/sticker-printing-sri-lanka'
     | '/street-furniture-advertising-sri-lanka'
     | '/t-shirt-printing-sri-lanka'
     | '/table-chair-rental-sri-lanka'
     | '/technical-seo-sri-lanka'
     | '/tent-marquee-rental-sri-lanka'
+    | '/thumbnail-design-sri-lanka'
     | '/tiktok-ads-sri-lanka'
     | '/tiktok-marketing-sri-lanka'
     | '/tote-bag-printing-sri-lanka'
@@ -5660,6 +5770,7 @@ export interface FileRouteTypes {
     | '/uplighting-sri-lanka'
     | '/usb-printing-sri-lanka'
     | '/uv-printing-sri-lanka'
+    | '/ux-design-sri-lanka'
     | '/valet-parking-sri-lanka'
     | '/van-branding-sri-lanka'
     | '/vehicle-branding-sri-lanka'
@@ -5673,7 +5784,9 @@ export interface FileRouteTypes {
     | '/wallpaper-printing-sri-lanka'
     | '/water-bottle-printing-sri-lanka'
     | '/wayfinding-signage-sri-lanka'
+    | '/web-banner-design-sri-lanka'
     | '/web-design-sri-lanka'
+    | '/website-design-sri-lanka'
     | '/website-development-sri-lanka'
     | '/website-maintenance-sri-lanka'
     | '/wedding-catering-sri-lanka'
@@ -6064,6 +6177,7 @@ export interface FileRouteTypes {
     | '/menu-printing-sri-lanka'
     | '/mesh-banner-printing-sri-lanka'
     | '/mobile-app-advertising-sri-lanka'
+    | '/mobile-app-ui-design-sri-lanka'
     | '/mobile-billboard-sri-lanka'
     | '/motion-graphics-sri-lanka'
     | '/motorcycle-branding-sri-lanka'
@@ -6079,6 +6193,7 @@ export interface FileRouteTypes {
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
     | '/outdoor-banner-printing-sri-lanka'
+    | '/packaging-design-sri-lanka'
     | '/paper-bag-printing-sri-lanka'
     | '/pen-printing-sri-lanka'
     | '/performance-marketing-sri-lanka'
@@ -6090,6 +6205,7 @@ export interface FileRouteTypes {
     | '/political-advertising-campaign-sri-lanka'
     | '/polo-shirt-printing-sri-lanka'
     | '/popup-banner-printing-sri-lanka'
+    | '/poster-design-sri-lanka'
     | '/poster-printing-sri-lanka'
     | '/power-bank-printing-sri-lanka'
     | '/ppc-sri-lanka'
@@ -6127,10 +6243,12 @@ export interface FileRouteTypes {
     | '/shop-branding-sri-lanka'
     | '/shop-front-sticker-printing-sri-lanka'
     | '/shrink-sleeve-printing-sri-lanka'
+    | '/signage-design-sri-lanka'
     | '/sms-marketing-sri-lanka'
     | '/social-media-agency-sri-lanka'
     | '/social-media-management-sri-lanka'
     | '/social-media-marketing-sri-lanka'
+    | '/social-media-post-design-sri-lanka'
     | '/sound-system-rental-sri-lanka'
     | '/sponsorship-advertising-sri-lanka'
     | '/spot-uv-printing-sri-lanka'
@@ -6138,12 +6256,14 @@ export interface FileRouteTypes {
     | '/stage-branding-sri-lanka'
     | '/stage-rental-sri-lanka'
     | '/stage-setup-sri-lanka'
+    | '/stationery-design-sri-lanka'
     | '/sticker-printing-sri-lanka'
     | '/street-furniture-advertising-sri-lanka'
     | '/t-shirt-printing-sri-lanka'
     | '/table-chair-rental-sri-lanka'
     | '/technical-seo-sri-lanka'
     | '/tent-marquee-rental-sri-lanka'
+    | '/thumbnail-design-sri-lanka'
     | '/tiktok-ads-sri-lanka'
     | '/tiktok-marketing-sri-lanka'
     | '/tote-bag-printing-sri-lanka'
@@ -6162,6 +6282,7 @@ export interface FileRouteTypes {
     | '/uplighting-sri-lanka'
     | '/usb-printing-sri-lanka'
     | '/uv-printing-sri-lanka'
+    | '/ux-design-sri-lanka'
     | '/valet-parking-sri-lanka'
     | '/van-branding-sri-lanka'
     | '/vehicle-branding-sri-lanka'
@@ -6175,7 +6296,9 @@ export interface FileRouteTypes {
     | '/wallpaper-printing-sri-lanka'
     | '/water-bottle-printing-sri-lanka'
     | '/wayfinding-signage-sri-lanka'
+    | '/web-banner-design-sri-lanka'
     | '/web-design-sri-lanka'
+    | '/website-design-sri-lanka'
     | '/website-development-sri-lanka'
     | '/website-maintenance-sri-lanka'
     | '/wedding-catering-sri-lanka'
@@ -6567,6 +6690,7 @@ export interface RootRouteChildren {
   MenuPrintingSriLankaRoute: typeof MenuPrintingSriLankaRoute
   MeshBannerPrintingSriLankaRoute: typeof MeshBannerPrintingSriLankaRoute
   MobileAppAdvertisingSriLankaRoute: typeof MobileAppAdvertisingSriLankaRoute
+  MobileAppUiDesignSriLankaRoute: typeof MobileAppUiDesignSriLankaRoute
   MobileBillboardSriLankaRoute: typeof MobileBillboardSriLankaRoute
   MotionGraphicsSriLankaRoute: typeof MotionGraphicsSriLankaRoute
   MotorcycleBrandingSriLankaRoute: typeof MotorcycleBrandingSriLankaRoute
@@ -6582,6 +6706,7 @@ export interface RootRouteChildren {
   OmnichannelMarketingSriLankaRoute: typeof OmnichannelMarketingSriLankaRoute
   OutdoorAdvertisingSriLankaRoute: typeof OutdoorAdvertisingSriLankaRoute
   OutdoorBannerPrintingSriLankaRoute: typeof OutdoorBannerPrintingSriLankaRoute
+  PackagingDesignSriLankaRoute: typeof PackagingDesignSriLankaRoute
   PaperBagPrintingSriLankaRoute: typeof PaperBagPrintingSriLankaRoute
   PenPrintingSriLankaRoute: typeof PenPrintingSriLankaRoute
   PerformanceMarketingSriLankaRoute: typeof PerformanceMarketingSriLankaRoute
@@ -6593,6 +6718,7 @@ export interface RootRouteChildren {
   PoliticalAdvertisingCampaignSriLankaRoute: typeof PoliticalAdvertisingCampaignSriLankaRoute
   PoloShirtPrintingSriLankaRoute: typeof PoloShirtPrintingSriLankaRoute
   PopupBannerPrintingSriLankaRoute: typeof PopupBannerPrintingSriLankaRoute
+  PosterDesignSriLankaRoute: typeof PosterDesignSriLankaRoute
   PosterPrintingSriLankaRoute: typeof PosterPrintingSriLankaRoute
   PowerBankPrintingSriLankaRoute: typeof PowerBankPrintingSriLankaRoute
   PpcSriLankaRoute: typeof PpcSriLankaRoute
@@ -6630,10 +6756,12 @@ export interface RootRouteChildren {
   ShopBrandingSriLankaRoute: typeof ShopBrandingSriLankaRoute
   ShopFrontStickerPrintingSriLankaRoute: typeof ShopFrontStickerPrintingSriLankaRoute
   ShrinkSleevePrintingSriLankaRoute: typeof ShrinkSleevePrintingSriLankaRoute
+  SignageDesignSriLankaRoute: typeof SignageDesignSriLankaRoute
   SmsMarketingSriLankaRoute: typeof SmsMarketingSriLankaRoute
   SocialMediaAgencySriLankaRoute: typeof SocialMediaAgencySriLankaRoute
   SocialMediaManagementSriLankaRoute: typeof SocialMediaManagementSriLankaRoute
   SocialMediaMarketingSriLankaRoute: typeof SocialMediaMarketingSriLankaRoute
+  SocialMediaPostDesignSriLankaRoute: typeof SocialMediaPostDesignSriLankaRoute
   SoundSystemRentalSriLankaRoute: typeof SoundSystemRentalSriLankaRoute
   SponsorshipAdvertisingSriLankaRoute: typeof SponsorshipAdvertisingSriLankaRoute
   SpotUvPrintingSriLankaRoute: typeof SpotUvPrintingSriLankaRoute
@@ -6641,12 +6769,14 @@ export interface RootRouteChildren {
   StageBrandingSriLankaRoute: typeof StageBrandingSriLankaRoute
   StageRentalSriLankaRoute: typeof StageRentalSriLankaRoute
   StageSetupSriLankaRoute: typeof StageSetupSriLankaRoute
+  StationeryDesignSriLankaRoute: typeof StationeryDesignSriLankaRoute
   StickerPrintingSriLankaRoute: typeof StickerPrintingSriLankaRoute
   StreetFurnitureAdvertisingSriLankaRoute: typeof StreetFurnitureAdvertisingSriLankaRoute
   TShirtPrintingSriLankaRoute: typeof TShirtPrintingSriLankaRoute
   TableChairRentalSriLankaRoute: typeof TableChairRentalSriLankaRoute
   TechnicalSeoSriLankaRoute: typeof TechnicalSeoSriLankaRoute
   TentMarqueeRentalSriLankaRoute: typeof TentMarqueeRentalSriLankaRoute
+  ThumbnailDesignSriLankaRoute: typeof ThumbnailDesignSriLankaRoute
   TiktokAdsSriLankaRoute: typeof TiktokAdsSriLankaRoute
   TiktokMarketingSriLankaRoute: typeof TiktokMarketingSriLankaRoute
   ToteBagPrintingSriLankaRoute: typeof ToteBagPrintingSriLankaRoute
@@ -6665,6 +6795,7 @@ export interface RootRouteChildren {
   UplightingSriLankaRoute: typeof UplightingSriLankaRoute
   UsbPrintingSriLankaRoute: typeof UsbPrintingSriLankaRoute
   UvPrintingSriLankaRoute: typeof UvPrintingSriLankaRoute
+  UxDesignSriLankaRoute: typeof UxDesignSriLankaRoute
   ValetParkingSriLankaRoute: typeof ValetParkingSriLankaRoute
   VanBrandingSriLankaRoute: typeof VanBrandingSriLankaRoute
   VehicleBrandingSriLankaRoute: typeof VehicleBrandingSriLankaRoute
@@ -6678,7 +6809,9 @@ export interface RootRouteChildren {
   WallpaperPrintingSriLankaRoute: typeof WallpaperPrintingSriLankaRoute
   WaterBottlePrintingSriLankaRoute: typeof WaterBottlePrintingSriLankaRoute
   WayfindingSignageSriLankaRoute: typeof WayfindingSignageSriLankaRoute
+  WebBannerDesignSriLankaRoute: typeof WebBannerDesignSriLankaRoute
   WebDesignSriLankaRoute: typeof WebDesignSriLankaRoute
+  WebsiteDesignSriLankaRoute: typeof WebsiteDesignSriLankaRoute
   WebsiteDevelopmentSriLankaRoute: typeof WebsiteDevelopmentSriLankaRoute
   WebsiteMaintenanceSriLankaRoute: typeof WebsiteMaintenanceSriLankaRoute
   WeddingCateringSriLankaRoute: typeof WeddingCateringSriLankaRoute
@@ -6920,11 +7053,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WebsiteDevelopmentSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/website-design-sri-lanka': {
+      id: '/website-design-sri-lanka'
+      path: '/website-design-sri-lanka'
+      fullPath: '/website-design-sri-lanka'
+      preLoaderRoute: typeof WebsiteDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/web-design-sri-lanka': {
       id: '/web-design-sri-lanka'
       path: '/web-design-sri-lanka'
       fullPath: '/web-design-sri-lanka'
       preLoaderRoute: typeof WebDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/web-banner-design-sri-lanka': {
+      id: '/web-banner-design-sri-lanka'
+      path: '/web-banner-design-sri-lanka'
+      fullPath: '/web-banner-design-sri-lanka'
+      preLoaderRoute: typeof WebBannerDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/wayfinding-signage-sri-lanka': {
@@ -7016,6 +7163,13 @@ declare module '@tanstack/react-router' {
       path: '/valet-parking-sri-lanka'
       fullPath: '/valet-parking-sri-lanka'
       preLoaderRoute: typeof ValetParkingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ux-design-sri-lanka': {
+      id: '/ux-design-sri-lanka'
+      path: '/ux-design-sri-lanka'
+      fullPath: '/ux-design-sri-lanka'
+      preLoaderRoute: typeof UxDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/uv-printing-sri-lanka': {
@@ -7144,6 +7298,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TiktokAdsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/thumbnail-design-sri-lanka': {
+      id: '/thumbnail-design-sri-lanka'
+      path: '/thumbnail-design-sri-lanka'
+      fullPath: '/thumbnail-design-sri-lanka'
+      preLoaderRoute: typeof ThumbnailDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tent-marquee-rental-sri-lanka': {
       id: '/tent-marquee-rental-sri-lanka'
       path: '/tent-marquee-rental-sri-lanka'
@@ -7184,6 +7345,13 @@ declare module '@tanstack/react-router' {
       path: '/sticker-printing-sri-lanka'
       fullPath: '/sticker-printing-sri-lanka'
       preLoaderRoute: typeof StickerPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stationery-design-sri-lanka': {
+      id: '/stationery-design-sri-lanka'
+      path: '/stationery-design-sri-lanka'
+      fullPath: '/stationery-design-sri-lanka'
+      preLoaderRoute: typeof StationeryDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/stage-setup-sri-lanka': {
@@ -7235,6 +7403,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SoundSystemRentalSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/social-media-post-design-sri-lanka': {
+      id: '/social-media-post-design-sri-lanka'
+      path: '/social-media-post-design-sri-lanka'
+      fullPath: '/social-media-post-design-sri-lanka'
+      preLoaderRoute: typeof SocialMediaPostDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/social-media-marketing-sri-lanka': {
       id: '/social-media-marketing-sri-lanka'
       path: '/social-media-marketing-sri-lanka'
@@ -7261,6 +7436,13 @@ declare module '@tanstack/react-router' {
       path: '/sms-marketing-sri-lanka'
       fullPath: '/sms-marketing-sri-lanka'
       preLoaderRoute: typeof SmsMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signage-design-sri-lanka': {
+      id: '/signage-design-sri-lanka'
+      path: '/signage-design-sri-lanka'
+      fullPath: '/signage-design-sri-lanka'
+      preLoaderRoute: typeof SignageDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shrink-sleeve-printing-sri-lanka': {
@@ -7522,6 +7704,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PosterPrintingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/poster-design-sri-lanka': {
+      id: '/poster-design-sri-lanka'
+      path: '/poster-design-sri-lanka'
+      fullPath: '/poster-design-sri-lanka'
+      preLoaderRoute: typeof PosterDesignSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/popup-banner-printing-sri-lanka': {
       id: '/popup-banner-printing-sri-lanka'
       path: '/popup-banner-printing-sri-lanka'
@@ -7597,6 +7786,13 @@ declare module '@tanstack/react-router' {
       path: '/paper-bag-printing-sri-lanka'
       fullPath: '/paper-bag-printing-sri-lanka'
       preLoaderRoute: typeof PaperBagPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packaging-design-sri-lanka': {
+      id: '/packaging-design-sri-lanka'
+      path: '/packaging-design-sri-lanka'
+      fullPath: '/packaging-design-sri-lanka'
+      preLoaderRoute: typeof PackagingDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/outdoor-banner-printing-sri-lanka': {
@@ -7702,6 +7898,13 @@ declare module '@tanstack/react-router' {
       path: '/mobile-billboard-sri-lanka'
       fullPath: '/mobile-billboard-sri-lanka'
       preLoaderRoute: typeof MobileBillboardSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mobile-app-ui-design-sri-lanka': {
+      id: '/mobile-app-ui-design-sri-lanka'
+      path: '/mobile-app-ui-design-sri-lanka'
+      fullPath: '/mobile-app-ui-design-sri-lanka'
+      preLoaderRoute: typeof MobileAppUiDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mobile-app-advertising-sri-lanka': {
@@ -10590,6 +10793,7 @@ const rootRouteChildren: RootRouteChildren = {
   MenuPrintingSriLankaRoute: MenuPrintingSriLankaRoute,
   MeshBannerPrintingSriLankaRoute: MeshBannerPrintingSriLankaRoute,
   MobileAppAdvertisingSriLankaRoute: MobileAppAdvertisingSriLankaRoute,
+  MobileAppUiDesignSriLankaRoute: MobileAppUiDesignSriLankaRoute,
   MobileBillboardSriLankaRoute: MobileBillboardSriLankaRoute,
   MotionGraphicsSriLankaRoute: MotionGraphicsSriLankaRoute,
   MotorcycleBrandingSriLankaRoute: MotorcycleBrandingSriLankaRoute,
@@ -10605,6 +10809,7 @@ const rootRouteChildren: RootRouteChildren = {
   OmnichannelMarketingSriLankaRoute: OmnichannelMarketingSriLankaRoute,
   OutdoorAdvertisingSriLankaRoute: OutdoorAdvertisingSriLankaRoute,
   OutdoorBannerPrintingSriLankaRoute: OutdoorBannerPrintingSriLankaRoute,
+  PackagingDesignSriLankaRoute: PackagingDesignSriLankaRoute,
   PaperBagPrintingSriLankaRoute: PaperBagPrintingSriLankaRoute,
   PenPrintingSriLankaRoute: PenPrintingSriLankaRoute,
   PerformanceMarketingSriLankaRoute: PerformanceMarketingSriLankaRoute,
@@ -10617,6 +10822,7 @@ const rootRouteChildren: RootRouteChildren = {
     PoliticalAdvertisingCampaignSriLankaRoute,
   PoloShirtPrintingSriLankaRoute: PoloShirtPrintingSriLankaRoute,
   PopupBannerPrintingSriLankaRoute: PopupBannerPrintingSriLankaRoute,
+  PosterDesignSriLankaRoute: PosterDesignSriLankaRoute,
   PosterPrintingSriLankaRoute: PosterPrintingSriLankaRoute,
   PowerBankPrintingSriLankaRoute: PowerBankPrintingSriLankaRoute,
   PpcSriLankaRoute: PpcSriLankaRoute,
@@ -10656,10 +10862,12 @@ const rootRouteChildren: RootRouteChildren = {
   ShopBrandingSriLankaRoute: ShopBrandingSriLankaRoute,
   ShopFrontStickerPrintingSriLankaRoute: ShopFrontStickerPrintingSriLankaRoute,
   ShrinkSleevePrintingSriLankaRoute: ShrinkSleevePrintingSriLankaRoute,
+  SignageDesignSriLankaRoute: SignageDesignSriLankaRoute,
   SmsMarketingSriLankaRoute: SmsMarketingSriLankaRoute,
   SocialMediaAgencySriLankaRoute: SocialMediaAgencySriLankaRoute,
   SocialMediaManagementSriLankaRoute: SocialMediaManagementSriLankaRoute,
   SocialMediaMarketingSriLankaRoute: SocialMediaMarketingSriLankaRoute,
+  SocialMediaPostDesignSriLankaRoute: SocialMediaPostDesignSriLankaRoute,
   SoundSystemRentalSriLankaRoute: SoundSystemRentalSriLankaRoute,
   SponsorshipAdvertisingSriLankaRoute: SponsorshipAdvertisingSriLankaRoute,
   SpotUvPrintingSriLankaRoute: SpotUvPrintingSriLankaRoute,
@@ -10667,6 +10875,7 @@ const rootRouteChildren: RootRouteChildren = {
   StageBrandingSriLankaRoute: StageBrandingSriLankaRoute,
   StageRentalSriLankaRoute: StageRentalSriLankaRoute,
   StageSetupSriLankaRoute: StageSetupSriLankaRoute,
+  StationeryDesignSriLankaRoute: StationeryDesignSriLankaRoute,
   StickerPrintingSriLankaRoute: StickerPrintingSriLankaRoute,
   StreetFurnitureAdvertisingSriLankaRoute:
     StreetFurnitureAdvertisingSriLankaRoute,
@@ -10674,6 +10883,7 @@ const rootRouteChildren: RootRouteChildren = {
   TableChairRentalSriLankaRoute: TableChairRentalSriLankaRoute,
   TechnicalSeoSriLankaRoute: TechnicalSeoSriLankaRoute,
   TentMarqueeRentalSriLankaRoute: TentMarqueeRentalSriLankaRoute,
+  ThumbnailDesignSriLankaRoute: ThumbnailDesignSriLankaRoute,
   TiktokAdsSriLankaRoute: TiktokAdsSriLankaRoute,
   TiktokMarketingSriLankaRoute: TiktokMarketingSriLankaRoute,
   ToteBagPrintingSriLankaRoute: ToteBagPrintingSriLankaRoute,
@@ -10692,6 +10902,7 @@ const rootRouteChildren: RootRouteChildren = {
   UplightingSriLankaRoute: UplightingSriLankaRoute,
   UsbPrintingSriLankaRoute: UsbPrintingSriLankaRoute,
   UvPrintingSriLankaRoute: UvPrintingSriLankaRoute,
+  UxDesignSriLankaRoute: UxDesignSriLankaRoute,
   ValetParkingSriLankaRoute: ValetParkingSriLankaRoute,
   VanBrandingSriLankaRoute: VanBrandingSriLankaRoute,
   VehicleBrandingSriLankaRoute: VehicleBrandingSriLankaRoute,
@@ -10705,7 +10916,9 @@ const rootRouteChildren: RootRouteChildren = {
   WallpaperPrintingSriLankaRoute: WallpaperPrintingSriLankaRoute,
   WaterBottlePrintingSriLankaRoute: WaterBottlePrintingSriLankaRoute,
   WayfindingSignageSriLankaRoute: WayfindingSignageSriLankaRoute,
+  WebBannerDesignSriLankaRoute: WebBannerDesignSriLankaRoute,
   WebDesignSriLankaRoute: WebDesignSriLankaRoute,
+  WebsiteDesignSriLankaRoute: WebsiteDesignSriLankaRoute,
   WebsiteDevelopmentSriLankaRoute: WebsiteDevelopmentSriLankaRoute,
   WebsiteMaintenanceSriLankaRoute: WebsiteMaintenanceSriLankaRoute,
   WeddingCateringSriLankaRoute: WeddingCateringSriLankaRoute,
@@ -10900,13 +11113,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

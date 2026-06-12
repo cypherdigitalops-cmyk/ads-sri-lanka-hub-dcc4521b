@@ -1064,7 +1064,9 @@ function TodayPanel({
             </p>
           ) : (
             <ul className="grid gap-2 sm:grid-cols-2">
-              {inquiryPages.map((p) => (
+              {inquiryPages.map((p) => {
+                const ctaStats = pageMap.get(p.page);
+                return (
                 <li
                   key={p.page}
                   className="p-3"
@@ -1101,8 +1103,26 @@ function TodayPanel({
                     {p.names.length > 3 ? ` +${p.names.length - 3} more` : ""}
                     <span style={{ marginLeft: 6 }}>· last {fmtTime(p.latest)}</span>
                   </div>
+                  <div className="mt-2">
+                    <div style={{ fontSize: 10, color: "#6b6b68", marginBottom: 4 }}>
+                      CTA clicks on this page today
+                    </div>
+                    {ctaStats && (ctaStats.wa + ctaStats.call + ctaStats.quote + ctaStats.email) > 0 ? (
+                      <div className="flex flex-wrap gap-1.5">
+                        {ctaStats.wa > 0 && <Mini label={`${ctaStats.wa} WhatsApp`} bg="#C7F0DF" fg="#047857" />}
+                        {ctaStats.call > 0 && <Mini label={`${ctaStats.call} call`} bg="#D6EBB6" fg="#3F6212" />}
+                        {ctaStats.quote > 0 && <Mini label={`${ctaStats.quote} quote`} bg="#FDE4B5" fg="#B45309" />}
+                        {ctaStats.email > 0 && <Mini label={`${ctaStats.email} email`} bg="#FBD0D0" fg="#B91C1C" />}
+                      </div>
+                    ) : (
+                      <span style={{ fontSize: 10, color: "#9a9a96" }}>
+                        Form-only — no CTA buttons clicked
+                      </span>
+                    )}
+                  </div>
                 </li>
-              ))}
+                );
+              })}
             </ul>
           )}
         </div>

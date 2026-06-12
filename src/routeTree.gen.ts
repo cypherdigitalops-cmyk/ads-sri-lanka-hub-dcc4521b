@@ -119,7 +119,6 @@ import { Route as PhotoBoothRentalSriLankaRouteImport } from './routes/photo-boo
 import { Route as PerformanceMarketingSriLankaRouteImport } from './routes/performance-marketing-sri-lanka'
 import { Route as PenPrintingSriLankaRouteImport } from './routes/pen-printing-sri-lanka'
 import { Route as PaperBagPrintingSriLankaRouteImport } from './routes/paper-bag-printing-sri-lanka'
-import { Route as PackagingDesignSriLankaRouteImport } from './routes/packaging-design-sri-lanka'
 import { Route as OutdoorBannerPrintingSriLankaRouteImport } from './routes/outdoor-banner-printing-sri-lanka'
 import { Route as OutdoorAdvertisingSriLankaRouteImport } from './routes/outdoor-advertising-sri-lanka'
 import { Route as OmnichannelMarketingSriLankaRouteImport } from './routes/omnichannel-marketing-sri-lanka'
@@ -1114,11 +1113,6 @@ const PaperBagPrintingSriLankaRoute =
     path: '/paper-bag-printing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
-const PackagingDesignSriLankaRoute = PackagingDesignSriLankaRouteImport.update({
-  id: '/packaging-design-sri-lanka',
-  path: '/packaging-design-sri-lanka',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const OutdoorBannerPrintingSriLankaRoute =
   OutdoorBannerPrintingSriLankaRouteImport.update({
     id: '/outdoor-banner-printing-sri-lanka',
@@ -3572,7 +3566,6 @@ export interface FileRoutesByFullPath {
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
   '/outdoor-banner-printing-sri-lanka': typeof OutdoorBannerPrintingSriLankaRoute
-  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/paper-bag-printing-sri-lanka': typeof PaperBagPrintingSriLankaRoute
   '/pen-printing-sri-lanka': typeof PenPrintingSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
@@ -4075,7 +4068,6 @@ export interface FileRoutesByTo {
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
   '/outdoor-banner-printing-sri-lanka': typeof OutdoorBannerPrintingSriLankaRoute
-  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/paper-bag-printing-sri-lanka': typeof PaperBagPrintingSriLankaRoute
   '/pen-printing-sri-lanka': typeof PenPrintingSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
@@ -4579,7 +4571,6 @@ export interface FileRoutesById {
   '/omnichannel-marketing-sri-lanka': typeof OmnichannelMarketingSriLankaRoute
   '/outdoor-advertising-sri-lanka': typeof OutdoorAdvertisingSriLankaRoute
   '/outdoor-banner-printing-sri-lanka': typeof OutdoorBannerPrintingSriLankaRoute
-  '/packaging-design-sri-lanka': typeof PackagingDesignSriLankaRoute
   '/paper-bag-printing-sri-lanka': typeof PaperBagPrintingSriLankaRoute
   '/pen-printing-sri-lanka': typeof PenPrintingSriLankaRoute
   '/performance-marketing-sri-lanka': typeof PerformanceMarketingSriLankaRoute
@@ -5084,7 +5075,6 @@ export interface FileRouteTypes {
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
     | '/outdoor-banner-printing-sri-lanka'
-    | '/packaging-design-sri-lanka'
     | '/paper-bag-printing-sri-lanka'
     | '/pen-printing-sri-lanka'
     | '/performance-marketing-sri-lanka'
@@ -5587,7 +5577,6 @@ export interface FileRouteTypes {
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
     | '/outdoor-banner-printing-sri-lanka'
-    | '/packaging-design-sri-lanka'
     | '/paper-bag-printing-sri-lanka'
     | '/pen-printing-sri-lanka'
     | '/performance-marketing-sri-lanka'
@@ -6090,7 +6079,6 @@ export interface FileRouteTypes {
     | '/omnichannel-marketing-sri-lanka'
     | '/outdoor-advertising-sri-lanka'
     | '/outdoor-banner-printing-sri-lanka'
-    | '/packaging-design-sri-lanka'
     | '/paper-bag-printing-sri-lanka'
     | '/pen-printing-sri-lanka'
     | '/performance-marketing-sri-lanka'
@@ -6594,7 +6582,6 @@ export interface RootRouteChildren {
   OmnichannelMarketingSriLankaRoute: typeof OmnichannelMarketingSriLankaRoute
   OutdoorAdvertisingSriLankaRoute: typeof OutdoorAdvertisingSriLankaRoute
   OutdoorBannerPrintingSriLankaRoute: typeof OutdoorBannerPrintingSriLankaRoute
-  PackagingDesignSriLankaRoute: typeof PackagingDesignSriLankaRoute
   PaperBagPrintingSriLankaRoute: typeof PaperBagPrintingSriLankaRoute
   PenPrintingSriLankaRoute: typeof PenPrintingSriLankaRoute
   PerformanceMarketingSriLankaRoute: typeof PerformanceMarketingSriLankaRoute
@@ -7610,13 +7597,6 @@ declare module '@tanstack/react-router' {
       path: '/paper-bag-printing-sri-lanka'
       fullPath: '/paper-bag-printing-sri-lanka'
       preLoaderRoute: typeof PaperBagPrintingSriLankaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/packaging-design-sri-lanka': {
-      id: '/packaging-design-sri-lanka'
-      path: '/packaging-design-sri-lanka'
-      fullPath: '/packaging-design-sri-lanka'
-      preLoaderRoute: typeof PackagingDesignSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/outdoor-banner-printing-sri-lanka': {
@@ -10625,7 +10605,6 @@ const rootRouteChildren: RootRouteChildren = {
   OmnichannelMarketingSriLankaRoute: OmnichannelMarketingSriLankaRoute,
   OutdoorAdvertisingSriLankaRoute: OutdoorAdvertisingSriLankaRoute,
   OutdoorBannerPrintingSriLankaRoute: OutdoorBannerPrintingSriLankaRoute,
-  PackagingDesignSriLankaRoute: PackagingDesignSriLankaRoute,
   PaperBagPrintingSriLankaRoute: PaperBagPrintingSriLankaRoute,
   PenPrintingSriLankaRoute: PenPrintingSriLankaRoute,
   PerformanceMarketingSriLankaRoute: PerformanceMarketingSriLankaRoute,
@@ -10921,3 +10900,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

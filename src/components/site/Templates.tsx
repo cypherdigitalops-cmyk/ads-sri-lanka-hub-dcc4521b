@@ -306,7 +306,7 @@ function _RelatedCategoriesImpl({ categorySlug }: { categorySlug: string }) {
   );
 }
 
-function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro: string; crumbs: Crumb[] }) {
+export function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro: string; crumbs: Crumb[] }) {
   return (
     <section className="relative overflow-hidden text-primary-foreground">
       <div
@@ -457,7 +457,7 @@ function FeatureGrid({ title, items }: { title: string; items: { icon: React.Rea
   );
 }
 
-function Bullets({ title, items }: { title: string; items: string[] }) {
+export function Bullets({ title, items }: { title: string; items: string[] }) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-10">
       <h2 className="text-2xl font-bold sm:text-3xl">{title}</h2>
@@ -496,7 +496,7 @@ function ProcessSteps() {
   );
 }
 
-function FAQ({ items }: { items: { q: string; a: string }[] }) {
+export function FAQ({ items }: { items: { q: string; a: string }[] }) {
   return (
     <section className="mx-auto max-w-3xl px-4 py-12">
       <h2 className="text-2xl font-bold sm:text-3xl">Frequently asked questions</h2>

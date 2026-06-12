@@ -182,6 +182,19 @@ export function DesignSubServicePage({ data }: { data: DesignSubService }) {
         <h2 className="mb-3 text-xl font-extrabold text-[#15224a] sm:text-2xl">Who Needs {data.h1}?</h2>
         <p className="mb-8 text-base leading-loose text-slate-600">{data.whoNeeds}</p>
 
+        {data.longForm?.length ? (
+          <div className="mb-8 space-y-6">
+            {data.longForm.map((sec) => (
+              <div key={sec.h2}>
+                <h2 className="mb-3 text-xl font-extrabold text-[#15224a] sm:text-2xl">{sec.h2}</h2>
+                {sec.paragraphs.map((p, i) => (
+                  <p key={i} className="mb-4 text-base leading-loose text-slate-600">{p}</p>
+                ))}
+              </div>
+            ))}
+          </div>
+        ) : null}
+
         <div className="mb-6 rounded-xl border border-[#e0eaff] bg-[#f0f7ff] p-6">
           <h3 className="mb-3 text-lg font-bold text-[#15224a]">What is Included</h3>
           <ul className="list-disc space-y-1.5 pl-5 text-[15px] text-slate-700">

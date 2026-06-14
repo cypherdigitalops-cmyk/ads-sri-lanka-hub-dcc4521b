@@ -277,7 +277,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
 
   const maxServiceTotal = topServices[0]?.total ?? 0;
 
-  type ClickRow = { id: string; cta: string; page_url: string | null; created_at: string };
+  type ClickRow = { id: string; cta: string; page_url: string | null; referrer: string | null; created_at: string };
   const clicks = (clicksData?.clicks ?? []) as ClickRow[];
 
   function shortPath(url: string | null): string {
@@ -333,6 +333,51 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
     for (const c of clicks) t[c.cta] = (t[c.cta] ?? 0) + 1;
     return t;
   }, [clicks]);
+
+  // Traffic sources: where did the visitor come from before any click/inquiry?
+  const trafficSources = useMemo(() => {
+    type Row = {
+      bucket: SourceBucket;
+      visits: number;
+      inquiries: number;
+      whatsapp: number;
+      call: number;
+      topDomain: string;
+      domains: Map<string, number>;
+    };
+    const map = new Map<SourceBucket, Row>();
+    const bump = (referrer: string | null | undefined, kind: "visit" | "inq" | "wa" | "call") => {
+      const { bucket, host } = classifySource(referrer);
+      let cur = map.get(bucket);
+      if (!cur) {
+        cur = { bucket, visits: 0, inquiries: 0, whatsapp: 0, call: 0, topDomain: host, domains: new Map() };
+        map.set(bucket, cur);
+      }
+      if (kind === "visit") cur.visits += 1;
+      if (kind === "inq") cur.inquiries += 1;
+      if (kind === "wa") cur.whatsapp += 1;
+      if (kind === "call") cur.call += 1;
+      cur.domains.set(host, (cur.domains.get(host) ?? 0) + 1);
+    };
+    for (const i of inquiries) bump(i.referrer, "inq");
+    for (const c of clicks) {
+      bump(c.referrer, "visit");
+      if (c.cta === "whatsapp") bump(c.referrer, "wa");
+      if (c.cta === "call") bump(c.referrer, "call");
+    }
+    const rows = Array.from(map.values()).map((r) => {
+      let topHost = r.topDomain;
+      let topCount = 0;
+      for (const [h, n] of r.domains) {
+        if (n > topCount) { topCount = n; topHost = h; }
+      }
+      return { ...r, topDomain: topHost, total: r.visits + r.inquiries };
+    });
+    rows.sort((a, b) => b.total - a.total || b.inquiries - a.inquiries);
+    return rows;
+  }, [inquiries, clicks]);
+
+  const trafficTotal = trafficSources.reduce((s, r) => s + r.total, 0);
 
   async function handleLogout() {
     await supabase.auth.signOut();

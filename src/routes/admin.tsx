@@ -34,6 +34,53 @@ type Inquiry = {
   created_at: string;
 };
 
+type SourceBucket =
+  | "Google"
+  | "Facebook"
+  | "Instagram"
+  | "WhatsApp"
+  | "YouTube"
+  | "LinkedIn"
+  | "TikTok"
+  | "Bing"
+  | "Direct / typed"
+  | "Other";
+
+const SOURCE_COLORS: Record<SourceBucket, { bg: string; fg: string }> = {
+  Google:           { bg: "#CCE3F8", fg: "#1D4ED8" },
+  Facebook:         { bg: "#D8E3FB", fg: "#1E40AF" },
+  Instagram:        { bg: "#FBD0D0", fg: "#B91C1C" },
+  WhatsApp:         { bg: "#C7F0DF", fg: "#047857" },
+  YouTube:          { bg: "#FBD0D0", fg: "#B91C1C" },
+  LinkedIn:         { bg: "#CCE3F8", fg: "#0E4A8A" },
+  TikTok:           { bg: "#EEEDFE", fg: "#3C3489" },
+  Bing:             { bg: "#D6EBB6", fg: "#3F6212" },
+  "Direct / typed": { bg: "#E5E4DE", fg: "#1a1a1a" },
+  Other:            { bg: "#FDE4B5", fg: "#B45309" },
+};
+
+function classifySource(referrer: string | null | undefined): { bucket: SourceBucket; host: string } {
+  if (!referrer) return { bucket: "Direct / typed", host: "(direct)" };
+  let host = "";
+  try {
+    host = new URL(referrer).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return { bucket: "Other", host: referrer.slice(0, 40) };
+  }
+  if (!host) return { bucket: "Direct / typed", host: "(direct)" };
+  if (/(^|\.)google\./.test(host)) return { bucket: "Google", host };
+  if (/(^|\.)bing\./.test(host)) return { bucket: "Bing", host };
+  if (/facebook\.|fb\.me|m\.facebook\./.test(host)) return { bucket: "Facebook", host };
+  if (/instagram\.|l\.instagram\./.test(host)) return { bucket: "Instagram", host };
+  if (/whatsapp\.|wa\.me/.test(host)) return { bucket: "WhatsApp", host };
+  if (/youtube\.|youtu\.be/.test(host)) return { bucket: "YouTube", host };
+  if (/linkedin\.|lnkd\.in/.test(host)) return { bucket: "LinkedIn", host };
+  if (/tiktok\./.test(host)) return { bucket: "TikTok", host };
+  // self-referral counts as direct/internal
+  if (/advertisingsrilanka\.lk|lovable\.app/.test(host)) return { bucket: "Direct / typed", host };
+  return { bucket: "Other", host };
+}
+
 const STATUS_OPTIONS = ["new", "contacted", "quoted", "won", "lost"] as const;
 const STATUS_PILL: Record<string, { bg: string; fg: string }> = {
   new:       { bg: "#CCE3F8", fg: "#1D4ED8" },
@@ -230,7 +277,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
 
   const maxServiceTotal = topServices[0]?.total ?? 0;
 
-  type ClickRow = { id: string; cta: string; page_url: string | null; created_at: string };
+  type ClickRow = { id: string; cta: string; page_url: string | null; referrer: string | null; created_at: string };
   const clicks = (clicksData?.clicks ?? []) as ClickRow[];
 
   function shortPath(url: string | null): string {
@@ -286,6 +333,51 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
     for (const c of clicks) t[c.cta] = (t[c.cta] ?? 0) + 1;
     return t;
   }, [clicks]);
+
+  // Traffic sources: where did the visitor come from before any click/inquiry?
+  const trafficSources = useMemo(() => {
+    type Row = {
+      bucket: SourceBucket;
+      visits: number;
+      inquiries: number;
+      whatsapp: number;
+      call: number;
+      topDomain: string;
+      domains: Map<string, number>;
+    };
+    const map = new Map<SourceBucket, Row>();
+    const bump = (referrer: string | null | undefined, kind: "visit" | "inq" | "wa" | "call") => {
+      const { bucket, host } = classifySource(referrer);
+      let cur = map.get(bucket);
+      if (!cur) {
+        cur = { bucket, visits: 0, inquiries: 0, whatsapp: 0, call: 0, topDomain: host, domains: new Map() };
+        map.set(bucket, cur);
+      }
+      if (kind === "visit") cur.visits += 1;
+      if (kind === "inq") cur.inquiries += 1;
+      if (kind === "wa") cur.whatsapp += 1;
+      if (kind === "call") cur.call += 1;
+      cur.domains.set(host, (cur.domains.get(host) ?? 0) + 1);
+    };
+    for (const i of inquiries) bump(i.referrer, "inq");
+    for (const c of clicks) {
+      bump(c.referrer, "visit");
+      if (c.cta === "whatsapp") bump(c.referrer, "wa");
+      if (c.cta === "call") bump(c.referrer, "call");
+    }
+    const rows = Array.from(map.values()).map((r) => {
+      let topHost = r.topDomain;
+      let topCount = 0;
+      for (const [h, n] of r.domains) {
+        if (n > topCount) { topCount = n; topHost = h; }
+      }
+      return { ...r, topDomain: topHost, total: r.visits + r.inquiries };
+    });
+    rows.sort((a, b) => b.total - a.total || b.inquiries - a.inquiries);
+    return rows;
+  }, [inquiries, clicks]);
+
+  const trafficTotal = trafficSources.reduce((s, r) => s + r.total, 0);
 
   async function handleLogout() {
     await supabase.auth.signOut();
@@ -492,6 +584,70 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             empty="No call clicks tracked yet."
             barColor="#65A30D"
           />
+        </div>
+
+        {/* Traffic sources — where visitors & customers came from */}
+        <div className="mb-6 overflow-hidden" style={CARD_STYLE}>
+          <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+            <div>
+              <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                Traffic sources — where customers came from
+              </h2>
+              <p className="text-xs" style={{ color: "#6b6b68" }}>
+                Grouped from referrer URLs on inquiries and CTA clicks
+              </p>
+            </div>
+            <span className="text-xs" style={{ color: "#9e9d97" }}>
+              {trafficSources.length} source{trafficSources.length === 1 ? "" : "s"}
+            </span>
+          </div>
+          {trafficSources.length === 0 ? (
+            <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+              No referrer data yet.
+            </p>
+          ) : (
+            <ul>
+              {trafficSources.map((r) => {
+                const pill = SOURCE_COLORS[r.bucket];
+                const pct = trafficTotal ? (r.total / trafficTotal) * 100 : 0;
+                return (
+                  <li key={r.bucket} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <div className="flex items-center gap-2.5">
+                        <span
+                          style={{
+                            background: pill.bg,
+                            color: pill.fg,
+                            borderRadius: 20,
+                            padding: "2px 10px",
+                            fontSize: 11,
+                            fontWeight: 500,
+                          }}
+                        >
+                          {r.bucket}
+                        </span>
+                        <span className="text-xs" style={{ color: "#6b6b68" }}>{r.topDomain}</span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-3 text-xs" style={{ color: "#6b6b68" }}>
+                        <span title="Total touchpoints" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {r.total}
+                        </span>
+                        <span style={{ color: "#1D4ED8" }} title="Inquiries">{r.inquiries} inq</span>
+                        <span style={{ color: "#047857" }} title="WhatsApp clicks">{r.whatsapp} WA</span>
+                        <span style={{ color: "#3F6212" }} title="Call clicks">{r.call} call</span>
+                        <span className="w-10 text-right" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {pct.toFixed(0)}%
+                        </span>
+                      </div>
+                    </div>
+                    <div className="mt-2 overflow-hidden" style={{ height: 4, borderRadius: 2, background: "#e5e4de" }}>
+                      <div style={{ width: `${pct}%`, height: "100%", background: pill.fg }} />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
         </div>
 
         <PagePerformanceMatrix inquiries={inquiries} clicks={clicks} shortPath={shortPath} />

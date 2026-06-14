@@ -7,7 +7,7 @@ import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/l
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { getDemandInsights, type DemandRow } from "@/lib/demand-insights.functions";
 import { toast } from "sonner";
-import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, type LucideIcon } from "lucide-react";
+import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, Briefcase, TrendingUp, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,

@@ -1296,7 +1296,10 @@ function InquiryDrawer({
   onDelete: () => void;
 }) {
   const [notes, setNotes] = useState(inquiry.admin_notes ?? "");
-  const waPhone = inquiry.phone.replace(/[^0-9]/g, "").replace(/^0/, "94");
+  const phone = inquiry.phone || "";
+  const waPhone = phone.replace(/[^0-9]/g, "").replace(/^0/, "94");
+  const createdAt = new Date(inquiry.created_at);
+  const createdLabel = Number.isNaN(createdAt.getTime()) ? "Recently" : createdAt.toLocaleString();
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
@@ -1307,7 +1310,7 @@ function InquiryDrawer({
             <div>
               <h2 className="text-lg font-bold">{inquiry.name}</h2>
               <p className="text-xs text-muted-foreground">
-                {new Date(inquiry.created_at).toLocaleString()}
+                {createdLabel}
               </p>
             </div>
             <button onClick={onClose} className="text-muted-foreground hover:text-foreground">
@@ -1317,7 +1320,7 @@ function InquiryDrawer({
 
           <div className="mt-4 flex flex-wrap gap-2">
             <a
-              href={`tel:${inquiry.phone}`}
+              href={`tel:${phone}`}
               className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground"
             >
               <Phone className="h-3.5 w-3.5" /> Call
@@ -1342,7 +1345,7 @@ function InquiryDrawer({
         </div>
 
         <div className="space-y-4 p-5 text-sm">
-          <Field label="Phone">{inquiry.phone}</Field>
+          <Field label="Phone">{phone || "—"}</Field>
           {inquiry.email && <Field label="Email">{inquiry.email}</Field>}
           {inquiry.company && <Field label="Company">{inquiry.company}</Field>}
           {inquiry.service && <Field label="Service">{inquiry.service}</Field>}

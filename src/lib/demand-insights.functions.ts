@@ -1,6 +1,5 @@
 import { createServerFn } from "@tanstack/react-start";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 export type DemandRow = {
   page: string;
@@ -34,6 +33,7 @@ export const getDemandInsights = createServerFn({ method: "GET" })
     const isAdmin = (roleRows ?? []).some((r) => r.role === "admin");
     if (!isAdmin) throw new Error("Forbidden: admin only");
 
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const sinceIso = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
 
     const [viewsRes, clicksRes, inqRes] = await Promise.all([

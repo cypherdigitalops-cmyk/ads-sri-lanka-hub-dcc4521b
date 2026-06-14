@@ -1007,6 +1007,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                         <td className="px-3 py-2.5 text-right" style={{ color: r.email ? "#B91C1C" : "#9e9d97" }}>
                           {r.email || "—"}
                         </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.apply_job ? "#3C3489" : "#9e9d97" }}>
+                          {r.apply_job || "—"}
+                        </td>
                       </tr>
                     );
                   })}

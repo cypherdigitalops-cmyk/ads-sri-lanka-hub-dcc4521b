@@ -389,6 +389,52 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
 
   const trafficTotal = trafficSources.reduce((s, r) => s + r.total, 0);
 
+  // Page × Source × CTA — full attribution breakdown
+  const pageSourceBreakdown = useMemo(() => {
+    type Row = {
+      key: string;
+      page: string;
+      source: SourceBucket;
+      whatsapp: number;
+      call: number;
+      quote: number;
+      email: number;
+      inquiries: number;
+      total: number;
+    };
+    const map = new Map<string, Row>();
+    const ensure = (page: string, source: SourceBucket): Row => {
+      const key = `${page}|||${source}`;
+      let cur = map.get(key);
+      if (!cur) {
+        cur = { key, page, source, whatsapp: 0, call: 0, quote: 0, email: 0, inquiries: 0, total: 0 };
+        map.set(key, cur);
+      }
+      return cur;
+    };
+    for (const c of clicks) {
+      const page = shortPath(c.page_url);
+      const { bucket } = classifySource(c.referrer);
+      const row = ensure(page, bucket);
+      if (c.cta === "whatsapp") row.whatsapp += 1;
+      else if (c.cta === "call") row.call += 1;
+      else if (c.cta === "quote") row.quote += 1;
+      else if (c.cta === "email") row.email += 1;
+      row.total += 1;
+    }
+    for (const i of inquiries) {
+      const page = shortPath(i.page_url);
+      const { bucket } = classifySource(i.referrer);
+      const row = ensure(page, bucket);
+      row.inquiries += 1;
+      row.total += 1;
+    }
+    return Array.from(map.values())
+      .filter((r) => r.inquiries > 0 || r.total > 0)
+      .sort((a, b) => b.inquiries - a.inquiries || b.total - a.total)
+      .slice(0, 30);
+  }, [inquiries, clicks]);
+
   async function handleLogout() {
     await supabase.auth.signOut();
     navigate({ to: "/login", replace: true });
@@ -657,6 +703,88 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                 );
               })}
             </ul>
+          )}
+        </div>
+
+        {/* Page × Source × CTA — full attribution */}
+        <div className="mb-6 overflow-hidden" style={CARD_STYLE}>
+          <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+            <div>
+              <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                Page × Source × CTA — which page got an inquiry from where, and how
+              </h2>
+              <p className="text-xs" style={{ color: "#6b6b68" }}>
+                Each row = page + traffic source. Numbers show CTA clicks and inquiries from that combination.
+              </p>
+            </div>
+            <span className="text-xs" style={{ color: "#9e9d97" }}>
+              top {pageSourceBreakdown.length}
+            </span>
+          </div>
+          {pageSourceBreakdown.length === 0 ? (
+            <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+              No attributable activity yet.
+            </p>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs">
+                <thead style={{ background: "#F5F5F3", color: "#6b6b68" }}>
+                  <tr>
+                    <th className="px-4 py-2 text-left" style={{ fontWeight: 500 }}>Page</th>
+                    <th className="px-3 py-2 text-left" style={{ fontWeight: 500 }}>Source</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#1D4ED8" }}>Inquiries</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#047857" }}>WhatsApp</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#3F6212" }}>Call</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#B45309" }}>Quote</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#B91C1C" }}>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pageSourceBreakdown.map((r) => {
+                    const pill = SOURCE_COLORS[r.source];
+                    return (
+                      <tr key={r.key} style={{ borderTop: "0.5px solid #e5e4de" }}>
+                        <td className="px-4 py-2.5">
+                          <span className="break-all" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                            {r.page}
+                          </span>
+                        </td>
+                        <td className="px-3 py-2.5">
+                          <span
+                            style={{
+                              background: pill.bg,
+                              color: pill.fg,
+                              borderRadius: 20,
+                              padding: "2px 8px",
+                              fontSize: 11,
+                              fontWeight: 500,
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            {r.source}
+                          </span>
+                        </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.inquiries ? "#1D4ED8" : "#9e9d97", fontWeight: r.inquiries ? 600 : 400 }}>
+                          {r.inquiries || "—"}
+                        </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.whatsapp ? "#047857" : "#9e9d97" }}>
+                          {r.whatsapp || "—"}
+                        </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.call ? "#3F6212" : "#9e9d97" }}>
+                          {r.call || "—"}
+                        </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.quote ? "#B45309" : "#9e9d97" }}>
+                          {r.quote || "—"}
+                        </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.email ? "#B91C1C" : "#9e9d97" }}>
+                          {r.email || "—"}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           )}
         </div>
 

@@ -586,6 +586,70 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
           />
         </div>
 
+        {/* Traffic sources — where visitors & customers came from */}
+        <div className="mb-6 overflow-hidden" style={CARD_STYLE}>
+          <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+            <div>
+              <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                Traffic sources — where customers came from
+              </h2>
+              <p className="text-xs" style={{ color: "#6b6b68" }}>
+                Grouped from referrer URLs on inquiries and CTA clicks
+              </p>
+            </div>
+            <span className="text-xs" style={{ color: "#9e9d97" }}>
+              {trafficSources.length} source{trafficSources.length === 1 ? "" : "s"}
+            </span>
+          </div>
+          {trafficSources.length === 0 ? (
+            <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+              No referrer data yet.
+            </p>
+          ) : (
+            <ul>
+              {trafficSources.map((r) => {
+                const pill = SOURCE_COLORS[r.bucket];
+                const pct = trafficTotal ? (r.total / trafficTotal) * 100 : 0;
+                return (
+                  <li key={r.bucket} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <div className="flex items-center gap-2.5">
+                        <span
+                          style={{
+                            background: pill.bg,
+                            color: pill.fg,
+                            borderRadius: 20,
+                            padding: "2px 10px",
+                            fontSize: 11,
+                            fontWeight: 500,
+                          }}
+                        >
+                          {r.bucket}
+                        </span>
+                        <span className="text-xs" style={{ color: "#6b6b68" }}>{r.topDomain}</span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-3 text-xs" style={{ color: "#6b6b68" }}>
+                        <span title="Total touchpoints" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {r.total}
+                        </span>
+                        <span style={{ color: "#1D4ED8" }} title="Inquiries">{r.inquiries} inq</span>
+                        <span style={{ color: "#047857" }} title="WhatsApp clicks">{r.whatsapp} WA</span>
+                        <span style={{ color: "#3F6212" }} title="Call clicks">{r.call} call</span>
+                        <span className="w-10 text-right" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {pct.toFixed(0)}%
+                        </span>
+                      </div>
+                    </div>
+                    <div className="mt-2 overflow-hidden" style={{ height: 4, borderRadius: 2, background: "#e5e4de" }}>
+                      <div style={{ width: `${pct}%`, height: "100%", background: pill.fg }} />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+
         <PagePerformanceMatrix inquiries={inquiries} clicks={clicks} shortPath={shortPath} />
 
         {/* Top services */}

@@ -668,6 +668,153 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
           />
         </div>
 
+        {/* Top demand — recommended focus */}
+        <div className="mb-6 grid gap-4 lg:grid-cols-2">
+          <div className="overflow-hidden" style={CARD_STYLE}>
+            <div className="flex items-center gap-2 px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+              <div
+                className="flex items-center justify-center"
+                style={{ width: 28, height: 28, borderRadius: 8, background: "#FDE4B5" }}
+              >
+                <TrendingUp size={14} color="#B45309" />
+              </div>
+              <div>
+                <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                  Highest-demand pages — focus here
+                </h2>
+                <p className="text-xs" style={{ color: "#6b6b68" }}>
+                  Ranked by inquiries, then high-intent CTAs (call &gt; WhatsApp &gt; quote)
+                </p>
+              </div>
+            </div>
+            {topDemandPages.length === 0 ? (
+              <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+                Not enough data yet.
+              </p>
+            ) : (
+              <ol>
+                {topDemandPages.map((r, idx) => (
+                  <li key={r.page} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-2.5 min-w-0">
+                        <span
+                          style={{
+                            background: idx === 0 ? "#FDE4B5" : "#F5F5F3",
+                            color: idx === 0 ? "#B45309" : "#6b6b68",
+                            borderRadius: 8,
+                            padding: "2px 8px",
+                            fontSize: 11,
+                            fontWeight: 600,
+                            minWidth: 22,
+                            textAlign: "center",
+                          }}
+                        >
+                          {idx + 1}
+                        </span>
+                        <span className="break-all text-sm" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {r.page}
+                        </span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-2.5 text-xs" style={{ color: "#6b6b68" }}>
+                        {r.inquiries > 0 && <span style={{ color: "#1D4ED8", fontWeight: 600 }}>{r.inquiries} inq</span>}
+                        {r.call > 0 && <span style={{ color: "#3F6212" }}>{r.call} call</span>}
+                        {r.whatsapp > 0 && <span style={{ color: "#047857" }}>{r.whatsapp} WA</span>}
+                        {r.quote > 0 && <span style={{ color: "#B45309" }}>{r.quote} quote</span>}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+
+          <div className="overflow-hidden" style={CARD_STYLE}>
+            <div className="flex items-center gap-2 px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+              <div
+                className="flex items-center justify-center"
+                style={{ width: 28, height: 28, borderRadius: 8, background: "#CCE3F8" }}
+              >
+                <Star size={14} color="#1D4ED8" />
+              </div>
+              <div>
+                <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                  Top-performing services — most inquiries
+                </h2>
+                <p className="text-xs" style={{ color: "#6b6b68" }}>
+                  Services customers actually ask about, with won &amp; open counts
+                </p>
+              </div>
+            </div>
+            {topDemandServices.length === 0 ? (
+              <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+                No service inquiries yet.
+              </p>
+            ) : (
+              <ol>
+                {topDemandServices.map((r, idx) => (
+                  <li key={r.service} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-2.5 min-w-0">
+                        <span
+                          style={{
+                            background: idx === 0 ? "#CCE3F8" : "#F5F5F3",
+                            color: idx === 0 ? "#1D4ED8" : "#6b6b68",
+                            borderRadius: 8,
+                            padding: "2px 8px",
+                            fontSize: 11,
+                            fontWeight: 600,
+                            minWidth: 22,
+                            textAlign: "center",
+                          }}
+                        >
+                          {idx + 1}
+                        </span>
+                        <span className="break-words text-sm" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {r.service}
+                        </span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-2.5 text-xs" style={{ color: "#6b6b68" }}>
+                        <span style={{ color: "#1D4ED8", fontWeight: 600 }}>{r.inquiries} inq</span>
+                        {r.won > 0 && <span style={{ color: "#3F6212" }}>{r.won} won</span>}
+                        {r.open > 0 && <span style={{ color: "#B45309" }}>{r.open} open</span>}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+        </div>
+
+        {/* Careers — tracked separately */}
+        <div className="mb-6 p-5" style={CARD_STYLE}>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div
+                className="flex items-center justify-center"
+                style={{ width: 32, height: 32, borderRadius: 9, background: "#EEEDFE" }}
+              >
+                <Briefcase size={16} color="#3C3489" />
+              </div>
+              <div>
+                <div style={{ fontSize: 12, color: "#6b6b68" }}>Careers page (tracked separately)</div>
+                <div style={{ fontSize: 16, fontWeight: 500, color: "#1a1a1a" }}>
+                  <Link to="/careers" style={{ color: "#3C3489" }}>/careers</Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <StatPill label="Applications" value={careerStats.applies} bg="#EEEDFE" fg="#3C3489" />
+              <StatPill label="Page clicks" value={careerStats.pageEngagement} bg="#CCE3F8" fg="#1D4ED8" />
+              <StatPill label="Form inquiries" value={careerStats.inquiries} bg="#FDE4B5" fg="#B45309" />
+            </div>
+          </div>
+          <p className="mt-3 text-xs" style={{ color: "#6b6b68" }}>
+            Job applications use a separate <code>apply_job</code> CTA so they don't inflate the
+            customer-demand rankings above.
+          </p>
+        </div>
+
         {/* Best performing page */}
         {bestPage && (
           <div className="mb-6 p-5" style={CARD_STYLE}>

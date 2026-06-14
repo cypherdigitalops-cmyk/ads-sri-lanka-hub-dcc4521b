@@ -615,7 +615,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
         />
 
         {/* CTA totals */}
-        <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           <KpiCard
             label="WhatsApp clicks"
             value={ctaTotals.whatsapp}
@@ -655,6 +655,16 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             badgeLabel="Fix CTA"
             badgeBg="#FBD0D0"
             badgeFg="#B91C1C"
+          />
+          <KpiCard
+            label="Job applications"
+            value={ctaTotals.apply_job}
+            icon={Briefcase}
+            iconBg="#EEEDFE"
+            color="#3C3489"
+            badgeLabel="Careers"
+            badgeBg="#EEEDFE"
+            badgeFg="#3C3489"
           />
         </div>
 

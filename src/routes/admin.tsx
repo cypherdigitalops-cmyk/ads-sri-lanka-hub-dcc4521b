@@ -964,6 +964,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                     <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#3F6212" }}>Call</th>
                     <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#B45309" }}>Quote</th>
                     <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#B91C1C" }}>Email</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#3C3489" }}>Apply</th>
                   </tr>
                 </thead>
                 <tbody>

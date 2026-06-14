@@ -399,6 +399,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       call: number;
       quote: number;
       email: number;
+      apply_job: number;
       inquiries: number;
       total: number;
     };
@@ -407,7 +408,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       const key = `${page}|||${source}`;
       let cur = map.get(key);
       if (!cur) {
-        cur = { key, page, source, whatsapp: 0, call: 0, quote: 0, email: 0, inquiries: 0, total: 0 };
+        cur = { key, page, source, whatsapp: 0, call: 0, quote: 0, email: 0, apply_job: 0, inquiries: 0, total: 0 };
         map.set(key, cur);
       }
       return cur;
@@ -420,6 +421,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       else if (c.cta === "call") row.call += 1;
       else if (c.cta === "quote") row.quote += 1;
       else if (c.cta === "email") row.email += 1;
+      else if (c.cta === "apply_job") row.apply_job += 1;
       row.total += 1;
     }
     for (const i of inquiries) {
@@ -433,6 +435,74 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       .filter((r) => r.inquiries > 0 || r.total > 0)
       .sort((a, b) => b.inquiries - a.inquiries || b.total - a.total)
       .slice(0, 30);
+  }, [inquiries, clicks]);
+
+  // Demand ranking — pages ranked by inquiries first, then high-intent CTAs
+  // (call > whatsapp > quote). Excludes the careers page since it generates
+  // job applications, not customer inquiries.
+  const topDemandPages = useMemo(() => {
+    type Row = {
+      page: string;
+      inquiries: number;
+      call: number;
+      whatsapp: number;
+      quote: number;
+      email: number;
+      score: number;
+    };
+    const map = new Map<string, Row>();
+    const ensure = (page: string): Row => {
+      let cur = map.get(page);
+      if (!cur) {
+        cur = { page, inquiries: 0, call: 0, whatsapp: 0, quote: 0, email: 0, score: 0 };
+        map.set(page, cur);
+      }
+      return cur;
+    };
+    for (const i of inquiries) ensure(shortPath(i.page_url)).inquiries += 1;
+    for (const c of clicks) {
+      if (c.cta === "apply_job") continue; // career clicks are tracked separately
+      const row = ensure(shortPath(c.page_url));
+      if (c.cta === "call") row.call += 1;
+      else if (c.cta === "whatsapp") row.whatsapp += 1;
+      else if (c.cta === "quote") row.quote += 1;
+      else if (c.cta === "email") row.email += 1;
+    }
+    // Inquiries dominate; then high-intent CTAs weighted by intent strength.
+    for (const row of map.values()) {
+      row.score = row.inquiries * 100 + row.call * 8 + row.whatsapp * 6 + row.quote * 5 + row.email * 2;
+    }
+    return Array.from(map.values())
+      .filter((r) => r.page && !r.page.startsWith("/admin") && r.page !== "(unknown)" && r.page !== "/careers" && r.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 10);
+  }, [inquiries, clicks]);
+
+  // Demand ranking by service (uses inquiries only — services come from the form)
+  const topDemandServices = useMemo(() => {
+    const map = new Map<string, { service: string; inquiries: number; won: number; open: number }>();
+    for (const i of inquiries) {
+      const key = (i.service || "").trim();
+      if (!key) continue;
+      const cur = map.get(key) ?? { service: key, inquiries: 0, won: 0, open: 0 };
+      cur.inquiries += 1;
+      if (i.status === "won") cur.won += 1;
+      if (i.status !== "won" && i.status !== "lost") cur.open += 1;
+      map.set(key, cur);
+    }
+    return Array.from(map.values()).sort((a, b) => b.inquiries - a.inquiries).slice(0, 6);
+  }, [inquiries]);
+
+  // Career-page activity is reported separately
+  const careerStats = useMemo(() => {
+    const applies = clicks.filter((c) => c.cta === "apply_job");
+    const pageHits = clicks.filter((c) => shortPath(c.page_url) === "/careers");
+    const inq = inquiries.filter((i) => shortPath(i.page_url) === "/careers").length;
+    return {
+      applies: applies.length,
+      pageEngagement: pageHits.length,
+      inquiries: inq,
+    };
   }, [inquiries, clicks]);
 
   async function handleLogout() {

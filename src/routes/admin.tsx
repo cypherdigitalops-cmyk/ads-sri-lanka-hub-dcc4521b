@@ -11,6 +11,7 @@ import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, S
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
+  errorComponent: AdminError,
   head: () => ({
     meta: [
       { title: "Inquiries | Admin" },
@@ -18,6 +19,36 @@ export const Route = createFileRoute("/admin")({
     ],
   }),
 });
+
+function AdminError({ error, reset }: { error: Error; reset: () => void }) {
+  console.error(error);
+  return (
+    <div className="flex min-h-screen items-center justify-center px-6" style={{ background: "#F5F5F3", color: "#1a1a1a" }}>
+      <div className="max-w-md text-center">
+        <h1 className="text-2xl" style={{ fontWeight: 500 }}>Admin couldn’t load</h1>
+        <p className="mt-3 text-sm" style={{ color: "#6b6b68" }}>
+          Please sign in again or refresh the admin dashboard.
+        </p>
+        <div className="mt-6 flex justify-center gap-3">
+          <button
+            onClick={reset}
+            className="rounded-full px-4 py-2 text-sm"
+            style={{ background: "#1a1a1a", color: "#FFFFFF", fontWeight: 500 }}
+          >
+            Try again
+          </button>
+          <Link
+            to="/login"
+            className="rounded-full px-4 py-2 text-sm"
+            style={{ border: "0.5px solid #e5e4de", background: "#FFFFFF", color: "#1a1a1a", fontWeight: 500 }}
+          >
+            Sign in
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 type Inquiry = {
   id: string;

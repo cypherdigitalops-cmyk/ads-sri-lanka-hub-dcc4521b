@@ -389,6 +389,52 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
 
   const trafficTotal = trafficSources.reduce((s, r) => s + r.total, 0);
 
+  // Page × Source × CTA — full attribution breakdown
+  const pageSourceBreakdown = useMemo(() => {
+    type Row = {
+      key: string;
+      page: string;
+      source: SourceBucket;
+      whatsapp: number;
+      call: number;
+      quote: number;
+      email: number;
+      inquiries: number;
+      total: number;
+    };
+    const map = new Map<string, Row>();
+    const ensure = (page: string, source: SourceBucket): Row => {
+      const key = `${page}|||${source}`;
+      let cur = map.get(key);
+      if (!cur) {
+        cur = { key, page, source, whatsapp: 0, call: 0, quote: 0, email: 0, inquiries: 0, total: 0 };
+        map.set(key, cur);
+      }
+      return cur;
+    };
+    for (const c of clicks) {
+      const page = shortPath(c.page_url);
+      const { bucket } = classifySource(c.referrer);
+      const row = ensure(page, bucket);
+      if (c.cta === "whatsapp") row.whatsapp += 1;
+      else if (c.cta === "call") row.call += 1;
+      else if (c.cta === "quote") row.quote += 1;
+      else if (c.cta === "email") row.email += 1;
+      row.total += 1;
+    }
+    for (const i of inquiries) {
+      const page = shortPath(i.page_url);
+      const { bucket } = classifySource(i.referrer);
+      const row = ensure(page, bucket);
+      row.inquiries += 1;
+      row.total += 1;
+    }
+    return Array.from(map.values())
+      .filter((r) => r.inquiries > 0 || r.total > 0)
+      .sort((a, b) => b.inquiries - a.inquiries || b.total - a.total)
+      .slice(0, 30);
+  }, [inquiries, clicks]);
+
   async function handleLogout() {
     await supabase.auth.signOut();
     navigate({ to: "/login", replace: true });

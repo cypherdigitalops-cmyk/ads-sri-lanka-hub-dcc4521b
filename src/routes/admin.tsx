@@ -951,7 +951,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
           ) : (
             <ul>
               {trafficSources.map((r) => {
-                const pill = SOURCE_COLORS[r.bucket];
+                const pill = SOURCE_COLORS[r.bucket] ?? SOURCE_COLORS.Other;
                 const pct = trafficTotal ? (r.total / trafficTotal) * 100 : 0;
                 return (
                   <li key={r.bucket} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
@@ -1029,7 +1029,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                 </thead>
                 <tbody>
                   {pageSourceBreakdown.map((r) => {
-                    const pill = SOURCE_COLORS[r.source];
+                    const pill = SOURCE_COLORS[r.source] ?? SOURCE_COLORS.Other;
                     return (
                       <tr key={r.key} style={{ borderTop: "0.5px solid #e5e4de" }}>
                         <td className="px-4 py-2.5">
@@ -1193,7 +1193,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                 <tbody>
                   {filtered.map((i, idx) => {
                     const av = AVATAR_PALETTE[idx % AVATAR_PALETTE.length];
-                    const pill = STATUS_PILL[i.status];
+                    const pill = STATUS_PILL[i.status] ?? STATUS_PILL.new;
                     return (
                       <tr
                         key={i.id}

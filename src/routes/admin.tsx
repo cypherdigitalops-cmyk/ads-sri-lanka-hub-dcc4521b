@@ -1647,7 +1647,7 @@ function TodayPanel({
         <TodayKpi label="WhatsApp" value={counts.whatsapp} bg="#C7F0DF" fg="#047857" />
         <TodayKpi label="Calls" value={counts.call} bg="#D6EBB6" fg="#3F6212" />
         <TodayKpi label="Quote opens" value={counts.quote} bg="#FDE4B5" fg="#B45309" />
-        <TodayKpi label="Email" value={counts.email} bg="#FBD0D0" fg="#B91C1C" />
+        <TodayKpi label="Applications" value={counts.apply_job} bg="#EEEDFE" fg="#3C3489" />
       </div>
 
       <DemandInsights demand={demand} />
@@ -1717,12 +1717,13 @@ function TodayPanel({
                     <div style={{ fontSize: 10, color: "#6b6b68", marginBottom: 4 }}>
                       CTA clicks on this page today
                     </div>
-                    {ctaStats && (ctaStats.wa + ctaStats.call + ctaStats.quote + ctaStats.email) > 0 ? (
+                    {ctaStats && (ctaStats.wa + ctaStats.call + ctaStats.quote + ctaStats.email + ctaStats.apply) > 0 ? (
                       <div className="flex flex-wrap gap-1.5">
                         {ctaStats.wa > 0 && <Mini label={`${ctaStats.wa} WhatsApp`} bg="#C7F0DF" fg="#047857" />}
                         {ctaStats.call > 0 && <Mini label={`${ctaStats.call} call`} bg="#D6EBB6" fg="#3F6212" />}
                         {ctaStats.quote > 0 && <Mini label={`${ctaStats.quote} quote`} bg="#FDE4B5" fg="#B45309" />}
                         {ctaStats.email > 0 && <Mini label={`${ctaStats.email} email`} bg="#FBD0D0" fg="#B91C1C" />}
+                        {ctaStats.apply > 0 && <Mini label={`${ctaStats.apply} apply`} bg="#EEEDFE" fg="#3C3489" />}
                       </div>
                     ) : (
                       <span style={{ fontSize: 10, color: "#9a9a96" }}>
@@ -1799,7 +1800,7 @@ function TodayPanel({
             </div>
             <ul className="space-y-2">
               {recentEvents.map((e, idx) => {
-                const style = eventStyle[e.kind];
+                const style = eventStyle[e.kind] ?? { bg: "#E5E4DE", fg: "#1a1a1a" };
                 return (
                   <li
                     key={idx}

@@ -315,6 +315,7 @@ import { Route as CeilingGraphicsSriLankaRouteImport } from './routes/ceiling-gr
 import { Route as CataloguePrintingSriLankaRouteImport } from './routes/catalogue-printing-sri-lanka'
 import { Route as CatalogDesignSriLankaRouteImport } from './routes/catalog-design-sri-lanka'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
+import { Route as CareersRouteImport } from './routes/careers'
 import { Route as CarWrapPrintingSriLankaRouteImport } from './routes/car-wrap-printing-sri-lanka'
 import { Route as CapPrintingSriLankaRouteImport } from './routes/cap-printing-sri-lanka'
 import { Route as CanvasPrintingSriLankaRouteImport } from './routes/canvas-printing-sri-lanka'
@@ -2212,6 +2213,11 @@ const CaseStudiesRoute = CaseStudiesRouteImport.update({
   path: '/case-studies',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CarWrapPrintingSriLankaRoute = CarWrapPrintingSriLankaRouteImport.update({
   id: '/car-wrap-printing-sri-lanka',
   path: '/car-wrap-printing-sri-lanka',
@@ -3554,6 +3560,7 @@ export interface FileRoutesByFullPath {
   '/canvas-printing-sri-lanka': typeof CanvasPrintingSriLankaRoute
   '/cap-printing-sri-lanka': typeof CapPrintingSriLankaRoute
   '/car-wrap-printing-sri-lanka': typeof CarWrapPrintingSriLankaRoute
+  '/careers': typeof CareersRoute
   '/case-studies': typeof CaseStudiesRoute
   '/catalog-design-sri-lanka': typeof CatalogDesignSriLankaRoute
   '/catalogue-printing-sri-lanka': typeof CataloguePrintingSriLankaRoute
@@ -4081,6 +4088,7 @@ export interface FileRoutesByTo {
   '/canvas-printing-sri-lanka': typeof CanvasPrintingSriLankaRoute
   '/cap-printing-sri-lanka': typeof CapPrintingSriLankaRoute
   '/car-wrap-printing-sri-lanka': typeof CarWrapPrintingSriLankaRoute
+  '/careers': typeof CareersRoute
   '/case-studies': typeof CaseStudiesRoute
   '/catalog-design-sri-lanka': typeof CatalogDesignSriLankaRoute
   '/catalogue-printing-sri-lanka': typeof CataloguePrintingSriLankaRoute
@@ -4609,6 +4617,7 @@ export interface FileRoutesById {
   '/canvas-printing-sri-lanka': typeof CanvasPrintingSriLankaRoute
   '/cap-printing-sri-lanka': typeof CapPrintingSriLankaRoute
   '/car-wrap-printing-sri-lanka': typeof CarWrapPrintingSriLankaRoute
+  '/careers': typeof CareersRoute
   '/case-studies': typeof CaseStudiesRoute
   '/catalog-design-sri-lanka': typeof CatalogDesignSriLankaRoute
   '/catalogue-printing-sri-lanka': typeof CataloguePrintingSriLankaRoute
@@ -5138,6 +5147,7 @@ export interface FileRouteTypes {
     | '/canvas-printing-sri-lanka'
     | '/cap-printing-sri-lanka'
     | '/car-wrap-printing-sri-lanka'
+    | '/careers'
     | '/case-studies'
     | '/catalog-design-sri-lanka'
     | '/catalogue-printing-sri-lanka'
@@ -5665,6 +5675,7 @@ export interface FileRouteTypes {
     | '/canvas-printing-sri-lanka'
     | '/cap-printing-sri-lanka'
     | '/car-wrap-printing-sri-lanka'
+    | '/careers'
     | '/case-studies'
     | '/catalog-design-sri-lanka'
     | '/catalogue-printing-sri-lanka'
@@ -6192,6 +6203,7 @@ export interface FileRouteTypes {
     | '/canvas-printing-sri-lanka'
     | '/cap-printing-sri-lanka'
     | '/car-wrap-printing-sri-lanka'
+    | '/careers'
     | '/case-studies'
     | '/catalog-design-sri-lanka'
     | '/catalogue-printing-sri-lanka'
@@ -6720,6 +6732,7 @@ export interface RootRouteChildren {
   CanvasPrintingSriLankaRoute: typeof CanvasPrintingSriLankaRoute
   CapPrintingSriLankaRoute: typeof CapPrintingSriLankaRoute
   CarWrapPrintingSriLankaRoute: typeof CarWrapPrintingSriLankaRoute
+  CareersRoute: typeof CareersRoute
   CaseStudiesRoute: typeof CaseStudiesRoute
   CatalogDesignSriLankaRoute: typeof CatalogDesignSriLankaRoute
   CataloguePrintingSriLankaRoute: typeof CataloguePrintingSriLankaRoute
@@ -9305,6 +9318,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CaseStudiesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/car-wrap-printing-sri-lanka': {
       id: '/car-wrap-printing-sri-lanka'
       path: '/car-wrap-printing-sri-lanka'
@@ -10941,6 +10961,7 @@ const rootRouteChildren: RootRouteChildren = {
   CanvasPrintingSriLankaRoute: CanvasPrintingSriLankaRoute,
   CapPrintingSriLankaRoute: CapPrintingSriLankaRoute,
   CarWrapPrintingSriLankaRoute: CarWrapPrintingSriLankaRoute,
+  CareersRoute: CareersRoute,
   CaseStudiesRoute: CaseStudiesRoute,
   CatalogDesignSriLankaRoute: CatalogDesignSriLankaRoute,
   CataloguePrintingSriLankaRoute: CataloguePrintingSriLankaRoute,

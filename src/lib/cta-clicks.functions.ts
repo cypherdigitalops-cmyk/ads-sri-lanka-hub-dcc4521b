@@ -4,7 +4,7 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 const CtaInput = z.object({
-  cta: z.enum(["whatsapp", "call", "quote", "email"]),
+  cta: z.enum(["whatsapp", "call", "quote", "email", "apply_job"]),
   page_url: z.string().trim().max(500).optional().or(z.literal("")),
   referrer: z.string().trim().max(500).optional().or(z.literal("")),
   user_agent: z.string().trim().max(500).optional().or(z.literal("")),

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { logCtaClick } from "@/lib/cta-clicks.functions";
 
-type Cta = "whatsapp" | "call" | "quote" | "email";
+type Cta = "whatsapp" | "call" | "quote" | "email" | "apply_job";
 
 let trackFn: ((cta: Cta, meta?: Record<string, string>) => void) | null = null;
 

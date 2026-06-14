@@ -7,7 +7,7 @@ import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/l
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { getDemandInsights, type DemandRow } from "@/lib/demand-insights.functions";
 import { toast } from "sonner";
-import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, type LucideIcon } from "lucide-react";
+import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, Briefcase, TrendingUp, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
@@ -339,7 +339,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   }, [clicks]);
 
   const ctaTotals = useMemo(() => {
-    const t = { whatsapp: 0, call: 0, quote: 0, email: 0 } as Record<string, number>;
+    const t = { whatsapp: 0, call: 0, quote: 0, email: 0, apply_job: 0 } as Record<string, number>;
     for (const c of clicks) t[c.cta] = (t[c.cta] ?? 0) + 1;
     return t;
   }, [clicks]);
@@ -399,6 +399,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       call: number;
       quote: number;
       email: number;
+      apply_job: number;
       inquiries: number;
       total: number;
     };
@@ -407,7 +408,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       const key = `${page}|||${source}`;
       let cur = map.get(key);
       if (!cur) {
-        cur = { key, page, source, whatsapp: 0, call: 0, quote: 0, email: 0, inquiries: 0, total: 0 };
+        cur = { key, page, source, whatsapp: 0, call: 0, quote: 0, email: 0, apply_job: 0, inquiries: 0, total: 0 };
         map.set(key, cur);
       }
       return cur;
@@ -420,6 +421,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       else if (c.cta === "call") row.call += 1;
       else if (c.cta === "quote") row.quote += 1;
       else if (c.cta === "email") row.email += 1;
+      else if (c.cta === "apply_job") row.apply_job += 1;
       row.total += 1;
     }
     for (const i of inquiries) {
@@ -433,6 +435,74 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
       .filter((r) => r.inquiries > 0 || r.total > 0)
       .sort((a, b) => b.inquiries - a.inquiries || b.total - a.total)
       .slice(0, 30);
+  }, [inquiries, clicks]);
+
+  // Demand ranking — pages ranked by inquiries first, then high-intent CTAs
+  // (call > whatsapp > quote). Excludes the careers page since it generates
+  // job applications, not customer inquiries.
+  const topDemandPages = useMemo(() => {
+    type Row = {
+      page: string;
+      inquiries: number;
+      call: number;
+      whatsapp: number;
+      quote: number;
+      email: number;
+      score: number;
+    };
+    const map = new Map<string, Row>();
+    const ensure = (page: string): Row => {
+      let cur = map.get(page);
+      if (!cur) {
+        cur = { page, inquiries: 0, call: 0, whatsapp: 0, quote: 0, email: 0, score: 0 };
+        map.set(page, cur);
+      }
+      return cur;
+    };
+    for (const i of inquiries) ensure(shortPath(i.page_url)).inquiries += 1;
+    for (const c of clicks) {
+      if (c.cta === "apply_job") continue; // career clicks are tracked separately
+      const row = ensure(shortPath(c.page_url));
+      if (c.cta === "call") row.call += 1;
+      else if (c.cta === "whatsapp") row.whatsapp += 1;
+      else if (c.cta === "quote") row.quote += 1;
+      else if (c.cta === "email") row.email += 1;
+    }
+    // Inquiries dominate; then high-intent CTAs weighted by intent strength.
+    for (const row of map.values()) {
+      row.score = row.inquiries * 100 + row.call * 8 + row.whatsapp * 6 + row.quote * 5 + row.email * 2;
+    }
+    return Array.from(map.values())
+      .filter((r) => r.page && !r.page.startsWith("/admin") && r.page !== "(unknown)" && r.page !== "/careers" && r.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 10);
+  }, [inquiries, clicks]);
+
+  // Demand ranking by service (uses inquiries only — services come from the form)
+  const topDemandServices = useMemo(() => {
+    const map = new Map<string, { service: string; inquiries: number; won: number; open: number }>();
+    for (const i of inquiries) {
+      const key = (i.service || "").trim();
+      if (!key) continue;
+      const cur = map.get(key) ?? { service: key, inquiries: 0, won: 0, open: 0 };
+      cur.inquiries += 1;
+      if (i.status === "won") cur.won += 1;
+      if (i.status !== "won" && i.status !== "lost") cur.open += 1;
+      map.set(key, cur);
+    }
+    return Array.from(map.values()).sort((a, b) => b.inquiries - a.inquiries).slice(0, 6);
+  }, [inquiries]);
+
+  // Career-page activity is reported separately
+  const careerStats = useMemo(() => {
+    const applies = clicks.filter((c) => c.cta === "apply_job");
+    const pageHits = clicks.filter((c) => shortPath(c.page_url) === "/careers");
+    const inq = inquiries.filter((i) => shortPath(i.page_url) === "/careers").length;
+    return {
+      applies: applies.length,
+      pageEngagement: pageHits.length,
+      inquiries: inq,
+    };
   }, [inquiries, clicks]);
 
   async function handleLogout() {
@@ -545,7 +615,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
         />
 
         {/* CTA totals */}
-        <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           <KpiCard
             label="WhatsApp clicks"
             value={ctaTotals.whatsapp}
@@ -586,6 +656,163 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             badgeBg="#FBD0D0"
             badgeFg="#B91C1C"
           />
+          <KpiCard
+            label="Job applications"
+            value={ctaTotals.apply_job}
+            icon={Briefcase}
+            iconBg="#EEEDFE"
+            color="#3C3489"
+            badgeLabel="Careers"
+            badgeBg="#EEEDFE"
+            badgeFg="#3C3489"
+          />
+        </div>
+
+        {/* Top demand — recommended focus */}
+        <div className="mb-6 grid gap-4 lg:grid-cols-2">
+          <div className="overflow-hidden" style={CARD_STYLE}>
+            <div className="flex items-center gap-2 px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+              <div
+                className="flex items-center justify-center"
+                style={{ width: 28, height: 28, borderRadius: 8, background: "#FDE4B5" }}
+              >
+                <TrendingUp size={14} color="#B45309" />
+              </div>
+              <div>
+                <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                  Highest-demand pages — focus here
+                </h2>
+                <p className="text-xs" style={{ color: "#6b6b68" }}>
+                  Ranked by inquiries, then high-intent CTAs (call &gt; WhatsApp &gt; quote)
+                </p>
+              </div>
+            </div>
+            {topDemandPages.length === 0 ? (
+              <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+                Not enough data yet.
+              </p>
+            ) : (
+              <ol>
+                {topDemandPages.map((r, idx) => (
+                  <li key={r.page} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-2.5 min-w-0">
+                        <span
+                          style={{
+                            background: idx === 0 ? "#FDE4B5" : "#F5F5F3",
+                            color: idx === 0 ? "#B45309" : "#6b6b68",
+                            borderRadius: 8,
+                            padding: "2px 8px",
+                            fontSize: 11,
+                            fontWeight: 600,
+                            minWidth: 22,
+                            textAlign: "center",
+                          }}
+                        >
+                          {idx + 1}
+                        </span>
+                        <span className="break-all text-sm" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {r.page}
+                        </span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-2.5 text-xs" style={{ color: "#6b6b68" }}>
+                        {r.inquiries > 0 && <span style={{ color: "#1D4ED8", fontWeight: 600 }}>{r.inquiries} inq</span>}
+                        {r.call > 0 && <span style={{ color: "#3F6212" }}>{r.call} call</span>}
+                        {r.whatsapp > 0 && <span style={{ color: "#047857" }}>{r.whatsapp} WA</span>}
+                        {r.quote > 0 && <span style={{ color: "#B45309" }}>{r.quote} quote</span>}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+
+          <div className="overflow-hidden" style={CARD_STYLE}>
+            <div className="flex items-center gap-2 px-4 py-3" style={{ borderBottom: "0.5px solid #e5e4de" }}>
+              <div
+                className="flex items-center justify-center"
+                style={{ width: 28, height: 28, borderRadius: 8, background: "#CCE3F8" }}
+              >
+                <Star size={14} color="#1D4ED8" />
+              </div>
+              <div>
+                <h2 className="text-sm" style={{ fontWeight: 500, color: "#1a1a1a" }}>
+                  Top-performing services — most inquiries
+                </h2>
+                <p className="text-xs" style={{ color: "#6b6b68" }}>
+                  Services customers actually ask about, with won &amp; open counts
+                </p>
+              </div>
+            </div>
+            {topDemandServices.length === 0 ? (
+              <p className="px-4 py-6 text-center text-xs" style={{ color: "#6b6b68" }}>
+                No service inquiries yet.
+              </p>
+            ) : (
+              <ol>
+                {topDemandServices.map((r, idx) => (
+                  <li key={r.service} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-2.5 min-w-0">
+                        <span
+                          style={{
+                            background: idx === 0 ? "#CCE3F8" : "#F5F5F3",
+                            color: idx === 0 ? "#1D4ED8" : "#6b6b68",
+                            borderRadius: 8,
+                            padding: "2px 8px",
+                            fontSize: 11,
+                            fontWeight: 600,
+                            minWidth: 22,
+                            textAlign: "center",
+                          }}
+                        >
+                          {idx + 1}
+                        </span>
+                        <span className="break-words text-sm" style={{ color: "#1a1a1a", fontWeight: 500 }}>
+                          {r.service}
+                        </span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-2.5 text-xs" style={{ color: "#6b6b68" }}>
+                        <span style={{ color: "#1D4ED8", fontWeight: 600 }}>{r.inquiries} inq</span>
+                        {r.won > 0 && <span style={{ color: "#3F6212" }}>{r.won} won</span>}
+                        {r.open > 0 && <span style={{ color: "#B45309" }}>{r.open} open</span>}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+        </div>
+
+        {/* Careers — tracked separately */}
+        <div className="mb-6 p-5" style={CARD_STYLE}>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div
+                className="flex items-center justify-center"
+                style={{ width: 32, height: 32, borderRadius: 9, background: "#EEEDFE" }}
+              >
+                <Briefcase size={16} color="#3C3489" />
+              </div>
+              <div>
+                <div style={{ fontSize: 12, color: "#6b6b68" }}>Careers page (tracked separately)</div>
+                <div style={{ fontSize: 16, fontWeight: 500, color: "#1a1a1a" }}>
+                  <Link to="/careers" style={{ color: "#3C3489" }}>/careers</Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <StatPill label="Applications" value={careerStats.applies} bg="#EEEDFE" fg="#3C3489" />
+              <StatPill label="Page clicks" value={careerStats.pageEngagement} bg="#CCE3F8" fg="#1D4ED8" />
+              <StatPill label="Form inquiries" value={careerStats.inquiries} bg="#FDE4B5" fg="#B45309" />
+            </div>
+          </div>
+          <p className="mt-3 text-xs" style={{ color: "#6b6b68" }}>
+            Job applications use a separate <code>apply_job</code> CTA so they don't inflate the
+            customer-demand rankings above.
+          </p>
         </div>
 
         {/* Best performing page */}
@@ -737,6 +964,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                     <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#3F6212" }}>Call</th>
                     <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#B45309" }}>Quote</th>
                     <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#B91C1C" }}>Email</th>
+                    <th className="px-3 py-2 text-right" style={{ fontWeight: 500, color: "#3C3489" }}>Apply</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -778,6 +1006,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                         </td>
                         <td className="px-3 py-2.5 text-right" style={{ color: r.email ? "#B91C1C" : "#9e9d97" }}>
                           {r.email || "—"}
+                        </td>
+                        <td className="px-3 py-2.5 text-right" style={{ color: r.apply_job ? "#3C3489" : "#9e9d97" }}>
+                          {r.apply_job || "—"}
                         </td>
                       </tr>
                     );

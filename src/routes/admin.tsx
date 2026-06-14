@@ -43,6 +43,7 @@ type SourceBucket =
   | "LinkedIn"
   | "TikTok"
   | "Bing"
+  | "AI (ChatGPT/Perplexity/etc.)"
   | "Direct / typed"
   | "Other";
 
@@ -55,6 +56,7 @@ const SOURCE_COLORS: Record<SourceBucket, { bg: string; fg: string }> = {
   LinkedIn:         { bg: "#CCE3F8", fg: "#0E4A8A" },
   TikTok:           { bg: "#EEEDFE", fg: "#3C3489" },
   Bing:             { bg: "#D6EBB6", fg: "#3F6212" },
+  "AI (ChatGPT/Perplexity/etc.)": { bg: "#EEEDFE", fg: "#3C3489" },
   "Direct / typed": { bg: "#E5E4DE", fg: "#1a1a1a" },
   Other:            { bg: "#FDE4B5", fg: "#B45309" },
 };
@@ -68,6 +70,14 @@ function classifySource(referrer: string | null | undefined): { bucket: SourceBu
     return { bucket: "Other", host: referrer.slice(0, 40) };
   }
   if (!host) return { bucket: "Direct / typed", host: "(direct)" };
+  // AI assistants & answer engines — check before Google so bard/gemini.google subdomains route here
+  if (/(^|\.)chatgpt\.com$|(^|\.)chat\.openai\.com$|(^|\.)openai\.com$/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
+  if (/(^|\.)perplexity\.ai$/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
+  if (/(^|\.)claude\.ai$|(^|\.)anthropic\.com$/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
+  if (/(^|\.)gemini\.google\.com$|(^|\.)bard\.google\.com$/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
+  if (/(^|\.)copilot\.microsoft\.com$|(^|\.)bing\.com\/chat/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
+  if (/(^|\.)you\.com$|(^|\.)phind\.com$|(^|\.)poe\.com$|(^|\.)duckduckgo\.com\/\?.*assist/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
+  if (/(^|\.)grok\.x\.ai$|(^|\.)x\.ai$|(^|\.)meta\.ai$/.test(host)) return { bucket: "AI (ChatGPT/Perplexity/etc.)", host };
   if (/(^|\.)google\./.test(host)) return { bucket: "Google", host };
   if (/(^|\.)bing\./.test(host)) return { bucket: "Bing", host };
   if (/facebook\.|fb\.me|m\.facebook\./.test(host)) return { bucket: "Facebook", host };

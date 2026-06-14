@@ -192,26 +192,37 @@ function AdminPage() {
 
   useEffect(() => {
     let cancelled = false;
+    const fallback = window.setTimeout(() => {
+      if (!cancelled) {
+        setAuthState("unauth");
+        navigate({ to: "/login", replace: true });
+      }
+    }, 8000);
     async function check() {
       const { data, error } = await supabase.auth.getUser();
       if (cancelled) return;
       if (error || !data.user) {
+        window.clearTimeout(fallback);
         setAuthState("unauth");
         navigate({ to: "/login", replace: true });
         return;
       }
       setUserEmail(data.user.email ?? "");
       // Try to claim admin role (no-op if already admin or email doesn't match)
-      try {
-        await claim({});
-      } catch {
-        /* ignore */
-      }
+      void claim({}).catch(() => undefined);
+      window.clearTimeout(fallback);
       setAuthState("ready");
     }
-    check();
+    check().catch(() => {
+      if (!cancelled) {
+        window.clearTimeout(fallback);
+        setAuthState("unauth");
+        navigate({ to: "/login", replace: true });
+      }
+    });
     return () => {
       cancelled = true;
+      window.clearTimeout(fallback);
     };
   }, [navigate, claim]);
 

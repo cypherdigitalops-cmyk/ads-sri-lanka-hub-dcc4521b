@@ -1,7 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 const CtaInput = z.object({
   cta: z.enum(["whatsapp", "call", "quote", "email", "apply_job"]),
@@ -14,6 +13,7 @@ const CtaInput = z.object({
 export const logCtaClick = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => CtaInput.parse(input))
   .handler(async ({ data }) => {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { error } = await supabaseAdmin.from("cta_clicks").insert({
       cta: data.cta,
       page_url: data.page_url || null,
@@ -36,6 +36,7 @@ export const listCtaClicks = createServerFn({ method: "GET" })
     const isAdmin = (roleRows ?? []).some((r) => r.role === "admin");
     if (!isAdmin) throw new Error("Forbidden: admin only");
 
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data, error } = await supabaseAdmin
       .from("cta_clicks")
       .select("id,cta,page_url,referrer,created_at")

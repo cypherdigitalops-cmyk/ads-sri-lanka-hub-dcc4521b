@@ -1,7 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 const PageViewInput = z.object({
   page_url: z.string().trim().max(500).optional().or(z.literal("")),
@@ -13,6 +12,7 @@ const PageViewInput = z.object({
 export const logPageView = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => PageViewInput.parse(input))
   .handler(async ({ data }) => {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { error } = await supabaseAdmin.from("page_views").insert({
       page_url: data.page_url || null,
       page_path: data.page_path || null,
@@ -55,6 +55,7 @@ export const getHubStats = createServerFn({ method: "POST" })
     const path = data.page_path;
     // match either exact /slug or /slug?... — we store the path component as page_path
     const likePath = `${path}%`;
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
     const [viewsRes, ctaRes, inqRes] = await Promise.all([
       supabaseAdmin

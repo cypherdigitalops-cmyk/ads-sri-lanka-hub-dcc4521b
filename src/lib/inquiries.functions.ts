@@ -1,7 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 const InquiryInput = z.object({
   name: z.string().trim().min(1).max(120),
@@ -18,6 +17,7 @@ const InquiryInput = z.object({
 export const submitInquiry = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => InquiryInput.parse(input))
   .handler(async ({ data }) => {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const row = {
       name: data.name,
       phone: data.phone,
@@ -50,6 +50,7 @@ export const listInquiries = createServerFn({ method: "GET" })
     const isAdmin = (roleRows ?? []).some((r) => r.role === "admin");
     if (!isAdmin) throw new Error("Forbidden: admin only");
 
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data, error } = await supabaseAdmin
       .from("inquiries")
       .select("*")
@@ -82,6 +83,7 @@ export const updateInquiry = createServerFn({ method: "POST" })
     if (typeof data.admin_notes === "string") patch.admin_notes = data.admin_notes;
     if (Object.keys(patch).length === 0) return { ok: true };
 
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { error } = await supabaseAdmin
       .from("inquiries")
       .update(patch)
@@ -101,6 +103,7 @@ export const deleteInquiry = createServerFn({ method: "POST" })
       .eq("user_id", userId);
     const isAdmin = (roleRows ?? []).some((r) => r.role === "admin");
     if (!isAdmin) throw new Error("Forbidden: admin only");
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { error } = await supabaseAdmin.from("inquiries").delete().eq("id", data.id);
     if (error) throw new Error(error.message);
     return { ok: true };
@@ -119,6 +122,7 @@ export const claimAdminRole = createServerFn({ method: "POST" })
     if (!email || email !== adminEmail) {
       return { ok: false, reason: "Email does not match admin" };
     }
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { error } = await supabaseAdmin
       .from("user_roles")
       .upsert({ user_id: userId, role: "admin" }, { onConflict: "user_id,role" });

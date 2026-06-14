@@ -161,6 +161,7 @@ function greetingFor(date: Date): string {
 
 function relativeTime(iso: string): string {
   const then = new Date(iso);
+  if (Number.isNaN(then.getTime())) return "recently";
   const now = new Date();
   const diffMs = now.getTime() - then.getTime();
   const diffMin = Math.floor(diffMs / 60000);
@@ -1513,6 +1514,7 @@ function TodayPanel({
 }) {
   const isToday = (iso: string) => {
     const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return false;
     const now = new Date();
     return (
       d.getFullYear() === now.getFullYear() &&
@@ -1529,16 +1531,17 @@ function TodayPanel({
     call: todayClicks.filter((c) => c.cta === "call").length,
     quote: todayClicks.filter((c) => c.cta === "quote").length,
     email: todayClicks.filter((c) => c.cta === "email").length,
+    apply_job: todayClicks.filter((c) => c.cta === "apply_job").length,
     inquiries: todayInq.length,
   };
 
   // Pages visitors are interested in today (any engagement: click or inquiry)
   const pageMap = new Map<
     string,
-    { total: number; wa: number; call: number; quote: number; email: number; inq: number }
+    { total: number; wa: number; call: number; quote: number; email: number; apply: number; inq: number }
   >();
-  const bump = (k: string, kind: "wa" | "call" | "quote" | "email" | "inq") => {
-    const cur = pageMap.get(k) ?? { total: 0, wa: 0, call: 0, quote: 0, email: 0, inq: 0 };
+  const bump = (k: string, kind: "wa" | "call" | "quote" | "email" | "apply" | "inq") => {
+    const cur = pageMap.get(k) ?? { total: 0, wa: 0, call: 0, quote: 0, email: 0, apply: 0, inq: 0 };
     cur.total += 1;
     cur[kind] += 1;
     pageMap.set(k, cur);

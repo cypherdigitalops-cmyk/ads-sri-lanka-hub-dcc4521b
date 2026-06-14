@@ -34,6 +34,53 @@ type Inquiry = {
   created_at: string;
 };
 
+type SourceBucket =
+  | "Google"
+  | "Facebook"
+  | "Instagram"
+  | "WhatsApp"
+  | "YouTube"
+  | "LinkedIn"
+  | "TikTok"
+  | "Bing"
+  | "Direct / typed"
+  | "Other";
+
+const SOURCE_COLORS: Record<SourceBucket, { bg: string; fg: string }> = {
+  Google:           { bg: "#CCE3F8", fg: "#1D4ED8" },
+  Facebook:         { bg: "#D8E3FB", fg: "#1E40AF" },
+  Instagram:        { bg: "#FBD0D0", fg: "#B91C1C" },
+  WhatsApp:         { bg: "#C7F0DF", fg: "#047857" },
+  YouTube:          { bg: "#FBD0D0", fg: "#B91C1C" },
+  LinkedIn:         { bg: "#CCE3F8", fg: "#0E4A8A" },
+  TikTok:           { bg: "#EEEDFE", fg: "#3C3489" },
+  Bing:             { bg: "#D6EBB6", fg: "#3F6212" },
+  "Direct / typed": { bg: "#E5E4DE", fg: "#1a1a1a" },
+  Other:            { bg: "#FDE4B5", fg: "#B45309" },
+};
+
+function classifySource(referrer: string | null | undefined): { bucket: SourceBucket; host: string } {
+  if (!referrer) return { bucket: "Direct / typed", host: "(direct)" };
+  let host = "";
+  try {
+    host = new URL(referrer).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return { bucket: "Other", host: referrer.slice(0, 40) };
+  }
+  if (!host) return { bucket: "Direct / typed", host: "(direct)" };
+  if (/(^|\.)google\./.test(host)) return { bucket: "Google", host };
+  if (/(^|\.)bing\./.test(host)) return { bucket: "Bing", host };
+  if (/facebook\.|fb\.me|m\.facebook\./.test(host)) return { bucket: "Facebook", host };
+  if (/instagram\.|l\.instagram\./.test(host)) return { bucket: "Instagram", host };
+  if (/whatsapp\.|wa\.me/.test(host)) return { bucket: "WhatsApp", host };
+  if (/youtube\.|youtu\.be/.test(host)) return { bucket: "YouTube", host };
+  if (/linkedin\.|lnkd\.in/.test(host)) return { bucket: "LinkedIn", host };
+  if (/tiktok\./.test(host)) return { bucket: "TikTok", host };
+  // self-referral counts as direct/internal
+  if (/advertisingsrilanka\.lk|lovable\.app/.test(host)) return { bucket: "Direct / typed", host };
+  return { bucket: "Other", host };
+}
+
 const STATUS_OPTIONS = ["new", "contacted", "quoted", "won", "lost"] as const;
 const STATUS_PILL: Record<string, { bg: string; fg: string }> = {
   new:       { bg: "#CCE3F8", fg: "#1D4ED8" },

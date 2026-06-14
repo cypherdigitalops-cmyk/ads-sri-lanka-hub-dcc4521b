@@ -1552,6 +1552,7 @@ function TodayPanel({
     else if (c.cta === "call") bump(k, "call");
     else if (c.cta === "quote") bump(k, "quote");
     else if (c.cta === "email") bump(k, "email");
+    else if (c.cta === "apply_job") bump(k, "apply");
   }
   for (const i of todayInq) bump(shortPath(i.page_url), "inq");
 
@@ -1584,7 +1585,7 @@ function TodayPanel({
       page: shortPath(i.page_url),
     })),
     ...todayClicks.map((c) => ({
-      kind: c.cta as "whatsapp" | "call" | "quote" | "email",
+      kind: c.cta,
       ts: c.created_at,
       label:
         c.cta === "whatsapp"
@@ -1593,6 +1594,8 @@ function TodayPanel({
           ? "Call click"
           : c.cta === "quote"
           ? "Quote open"
+          : c.cta === "apply_job"
+          ? "Job application click"
           : "Email click",
       page: shortPath(c.page_url),
     })),
@@ -1606,13 +1609,17 @@ function TodayPanel({
     call: { bg: "#D6EBB6", fg: "#3F6212" },
     quote: { bg: "#FDE4B5", fg: "#B45309" },
     email: { bg: "#FBD0D0", fg: "#B91C1C" },
+    apply_job: { bg: "#EEEDFE", fg: "#3C3489" },
   };
 
-  const fmtTime = (iso: string) =>
-    new Date(iso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase();
+  const fmtTime = (iso: string) => {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return "recently";
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase();
+  };
 
   const hasAny =
-    counts.whatsapp + counts.call + counts.quote + counts.email + counts.inquiries > 0;
+    counts.whatsapp + counts.call + counts.quote + counts.email + counts.apply_job + counts.inquiries > 0;
 
   return (
     <div className="mb-6 p-5" style={CARD_STYLE}>

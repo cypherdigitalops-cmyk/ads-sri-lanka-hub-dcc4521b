@@ -242,16 +242,33 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["inquiries"],
     queryFn: () => list(),
+    retry: 1,
   });
 
   const { data: clicksData } = useQuery({
     queryKey: ["cta_clicks"],
-    queryFn: () => listClicks(),
+    queryFn: async () => {
+      try {
+        return await listClicks();
+      } catch (e) {
+        console.error(e);
+        return { clicks: [] };
+      }
+    },
+    retry: false,
   });
 
   const { data: demandData } = useQuery({
     queryKey: ["demand_insights_week"],
-    queryFn: () => fetchDemand(),
+    queryFn: async () => {
+      try {
+        return await fetchDemand();
+      } catch (e) {
+        console.error(e);
+        return { rows: [], sinceIso: new Date().toISOString() };
+      }
+    },
+    retry: false,
   });
 
   const updateMutation = useMutation({

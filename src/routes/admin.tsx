@@ -339,7 +339,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
   }, [clicks]);
 
   const ctaTotals = useMemo(() => {
-    const t = { whatsapp: 0, call: 0, quote: 0, email: 0 } as Record<string, number>;
+    const t = { whatsapp: 0, call: 0, quote: 0, email: 0, apply_job: 0 } as Record<string, number>;
     for (const c of clicks) t[c.cta] = (t[c.cta] ?? 0) + 1;
     return t;
   }, [clicks]);

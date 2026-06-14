@@ -161,6 +161,7 @@ function greetingFor(date: Date): string {
 
 function relativeTime(iso: string): string {
   const then = new Date(iso);
+  if (Number.isNaN(then.getTime())) return "recently";
   const now = new Date();
   const diffMs = now.getTime() - then.getTime();
   const diffMin = Math.floor(diffMs / 60000);
@@ -950,7 +951,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
           ) : (
             <ul>
               {trafficSources.map((r) => {
-                const pill = SOURCE_COLORS[r.bucket];
+                const pill = SOURCE_COLORS[r.bucket] ?? SOURCE_COLORS.Other;
                 const pct = trafficTotal ? (r.total / trafficTotal) * 100 : 0;
                 return (
                   <li key={r.bucket} className="px-4 py-3" style={{ borderTop: "0.5px solid #e5e4de" }}>
@@ -1028,7 +1029,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                 </thead>
                 <tbody>
                   {pageSourceBreakdown.map((r) => {
-                    const pill = SOURCE_COLORS[r.source];
+                    const pill = SOURCE_COLORS[r.source] ?? SOURCE_COLORS.Other;
                     return (
                       <tr key={r.key} style={{ borderTop: "0.5px solid #e5e4de" }}>
                         <td className="px-4 py-2.5">
@@ -1192,7 +1193,7 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
                 <tbody>
                   {filtered.map((i, idx) => {
                     const av = AVATAR_PALETTE[idx % AVATAR_PALETTE.length];
-                    const pill = STATUS_PILL[i.status];
+                    const pill = STATUS_PILL[i.status] ?? STATUS_PILL.new;
                     return (
                       <tr
                         key={i.id}
@@ -1295,7 +1296,10 @@ function InquiryDrawer({
   onDelete: () => void;
 }) {
   const [notes, setNotes] = useState(inquiry.admin_notes ?? "");
-  const waPhone = inquiry.phone.replace(/[^0-9]/g, "").replace(/^0/, "94");
+  const phone = inquiry.phone || "";
+  const waPhone = phone.replace(/[^0-9]/g, "").replace(/^0/, "94");
+  const createdAt = new Date(inquiry.created_at);
+  const createdLabel = Number.isNaN(createdAt.getTime()) ? "Recently" : createdAt.toLocaleString();
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
@@ -1306,7 +1310,7 @@ function InquiryDrawer({
             <div>
               <h2 className="text-lg font-bold">{inquiry.name}</h2>
               <p className="text-xs text-muted-foreground">
-                {new Date(inquiry.created_at).toLocaleString()}
+                {createdLabel}
               </p>
             </div>
             <button onClick={onClose} className="text-muted-foreground hover:text-foreground">
@@ -1316,7 +1320,7 @@ function InquiryDrawer({
 
           <div className="mt-4 flex flex-wrap gap-2">
             <a
-              href={`tel:${inquiry.phone}`}
+              href={`tel:${phone}`}
               className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground"
             >
               <Phone className="h-3.5 w-3.5" /> Call
@@ -1341,7 +1345,7 @@ function InquiryDrawer({
         </div>
 
         <div className="space-y-4 p-5 text-sm">
-          <Field label="Phone">{inquiry.phone}</Field>
+          <Field label="Phone">{phone || "—"}</Field>
           {inquiry.email && <Field label="Email">{inquiry.email}</Field>}
           {inquiry.company && <Field label="Company">{inquiry.company}</Field>}
           {inquiry.service && <Field label="Service">{inquiry.service}</Field>}
@@ -1513,6 +1517,7 @@ function TodayPanel({
 }) {
   const isToday = (iso: string) => {
     const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return false;
     const now = new Date();
     return (
       d.getFullYear() === now.getFullYear() &&
@@ -1529,16 +1534,17 @@ function TodayPanel({
     call: todayClicks.filter((c) => c.cta === "call").length,
     quote: todayClicks.filter((c) => c.cta === "quote").length,
     email: todayClicks.filter((c) => c.cta === "email").length,
+    apply_job: todayClicks.filter((c) => c.cta === "apply_job").length,
     inquiries: todayInq.length,
   };
 
   // Pages visitors are interested in today (any engagement: click or inquiry)
   const pageMap = new Map<
     string,
-    { total: number; wa: number; call: number; quote: number; email: number; inq: number }
+    { total: number; wa: number; call: number; quote: number; email: number; apply: number; inq: number }
   >();
-  const bump = (k: string, kind: "wa" | "call" | "quote" | "email" | "inq") => {
-    const cur = pageMap.get(k) ?? { total: 0, wa: 0, call: 0, quote: 0, email: 0, inq: 0 };
+  const bump = (k: string, kind: "wa" | "call" | "quote" | "email" | "apply" | "inq") => {
+    const cur = pageMap.get(k) ?? { total: 0, wa: 0, call: 0, quote: 0, email: 0, apply: 0, inq: 0 };
     cur.total += 1;
     cur[kind] += 1;
     pageMap.set(k, cur);
@@ -1549,6 +1555,7 @@ function TodayPanel({
     else if (c.cta === "call") bump(k, "call");
     else if (c.cta === "quote") bump(k, "quote");
     else if (c.cta === "email") bump(k, "email");
+    else if (c.cta === "apply_job") bump(k, "apply");
   }
   for (const i of todayInq) bump(shortPath(i.page_url), "inq");
 
@@ -1581,7 +1588,7 @@ function TodayPanel({
       page: shortPath(i.page_url),
     })),
     ...todayClicks.map((c) => ({
-      kind: c.cta as "whatsapp" | "call" | "quote" | "email",
+      kind: c.cta,
       ts: c.created_at,
       label:
         c.cta === "whatsapp"
@@ -1590,6 +1597,8 @@ function TodayPanel({
           ? "Call click"
           : c.cta === "quote"
           ? "Quote open"
+          : c.cta === "apply_job"
+          ? "Job application click"
           : "Email click",
       page: shortPath(c.page_url),
     })),
@@ -1603,13 +1612,17 @@ function TodayPanel({
     call: { bg: "#D6EBB6", fg: "#3F6212" },
     quote: { bg: "#FDE4B5", fg: "#B45309" },
     email: { bg: "#FBD0D0", fg: "#B91C1C" },
+    apply_job: { bg: "#EEEDFE", fg: "#3C3489" },
   };
 
-  const fmtTime = (iso: string) =>
-    new Date(iso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase();
+  const fmtTime = (iso: string) => {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return "recently";
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase();
+  };
 
   const hasAny =
-    counts.whatsapp + counts.call + counts.quote + counts.email + counts.inquiries > 0;
+    counts.whatsapp + counts.call + counts.quote + counts.email + counts.apply_job + counts.inquiries > 0;
 
   return (
     <div className="mb-6 p-5" style={CARD_STYLE}>
@@ -1637,7 +1650,7 @@ function TodayPanel({
         <TodayKpi label="WhatsApp" value={counts.whatsapp} bg="#C7F0DF" fg="#047857" />
         <TodayKpi label="Calls" value={counts.call} bg="#D6EBB6" fg="#3F6212" />
         <TodayKpi label="Quote opens" value={counts.quote} bg="#FDE4B5" fg="#B45309" />
-        <TodayKpi label="Email" value={counts.email} bg="#FBD0D0" fg="#B91C1C" />
+        <TodayKpi label="Applications" value={counts.apply_job} bg="#EEEDFE" fg="#3C3489" />
       </div>
 
       <DemandInsights demand={demand} />
@@ -1707,12 +1720,13 @@ function TodayPanel({
                     <div style={{ fontSize: 10, color: "#6b6b68", marginBottom: 4 }}>
                       CTA clicks on this page today
                     </div>
-                    {ctaStats && (ctaStats.wa + ctaStats.call + ctaStats.quote + ctaStats.email) > 0 ? (
+                    {ctaStats && (ctaStats.wa + ctaStats.call + ctaStats.quote + ctaStats.email + ctaStats.apply) > 0 ? (
                       <div className="flex flex-wrap gap-1.5">
                         {ctaStats.wa > 0 && <Mini label={`${ctaStats.wa} WhatsApp`} bg="#C7F0DF" fg="#047857" />}
                         {ctaStats.call > 0 && <Mini label={`${ctaStats.call} call`} bg="#D6EBB6" fg="#3F6212" />}
                         {ctaStats.quote > 0 && <Mini label={`${ctaStats.quote} quote`} bg="#FDE4B5" fg="#B45309" />}
                         {ctaStats.email > 0 && <Mini label={`${ctaStats.email} email`} bg="#FBD0D0" fg="#B91C1C" />}
+                        {ctaStats.apply > 0 && <Mini label={`${ctaStats.apply} apply`} bg="#EEEDFE" fg="#3C3489" />}
                       </div>
                     ) : (
                       <span style={{ fontSize: 10, color: "#9a9a96" }}>
@@ -1789,7 +1803,7 @@ function TodayPanel({
             </div>
             <ul className="space-y-2">
               {recentEvents.map((e, idx) => {
-                const style = eventStyle[e.kind];
+                const style = eventStyle[e.kind] ?? { bg: "#E5E4DE", fg: "#1a1a1a" };
                 return (
                   <li
                     key={idx}

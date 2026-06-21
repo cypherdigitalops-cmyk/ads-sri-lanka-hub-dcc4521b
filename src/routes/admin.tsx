@@ -671,6 +671,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
         {/* Executive KPIs */}
         <ExecutiveKpis />
 
+        {/* Page Performance Ranking */}
+        <PagePerformance />
+
         {/* Today's activity */}
         <TodayPanel
           inquiries={inquiries}

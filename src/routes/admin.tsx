@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { listInquiries, updateInquiry, deleteInquiry, claimAdminRole } from "@/lib/inquiries.functions";
 import { listCtaClicks } from "@/lib/cta-clicks.functions";
 import { getDemandInsights, type DemandRow } from "@/lib/demand-insights.functions";
+import { ExecutiveKpis } from "@/components/admin/ExecutiveKpis";
 import { toast } from "sonner";
 import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, Briefcase, TrendingUp, type LucideIcon } from "lucide-react";
 
@@ -665,6 +666,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
             {dateLabel}
           </span>
         </div>
+
+        {/* Executive KPIs */}
+        <ExecutiveKpis />
 
         {/* Today's activity */}
         <TodayPanel

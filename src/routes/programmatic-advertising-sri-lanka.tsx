@@ -19,5 +19,23 @@ export const Route = createFileRoute("/programmatic-advertising-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/programmatic-advertising-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="programmatic advertising sri lanka" /></PageShell>),
+  component: () => (
+    <PageShell>
+      <ServicePageTemplate category={CAT} keyword="programmatic advertising sri lanka" />
+      <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
+        <p>
+          Want another agency comparison? See{" "}
+          <a
+            href="https://cypherdigital.lk/programmatic-advertising-sri-lanka"
+            target="_blank"
+            rel="noopener"
+            className="text-primary underline-offset-2 hover:underline"
+          >
+            programmatic advertising Sri Lanka
+          </a>{" "}
+          by Cypher Digital for an alternative view of programmatic display and media buying.
+        </p>
+      </section>
+    </PageShell>
+  ),
 });

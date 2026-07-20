@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Uniform Printing Sri Lanka | Staff Uniforms from Rs 800";
-const DESC = "Uniform printing in Sri Lanka from Rs 800. Branded corporate uniforms, staff shirts & workwear with screen print, DTF or embroidery. Call 0771437707.";
+const DESC = "Uniform printing in Sri Lanka from Rs 800. Branded corporate uniforms, staff shirts & workwear with screen print, DTF or embroidery. Call 0701772626.";
 
 export const Route = createFileRoute("/uniform-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Vehicle Branding Sri Lanka | Car Wraps from Rs 40,000";
-const DESC = "Vehicle branding in Sri Lanka from Rs 40,000. Full wraps, partial wraps & fleet graphics using cast vinyl. 3-5 year outdoor life. Islandwide. Call 0771437707.";
+const DESC = "Vehicle branding in Sri Lanka from Rs 40,000. Full wraps, partial wraps & fleet graphics using cast vinyl. 3-5 year outdoor life. Islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/vehicle-branding-sri-lanka")({
   head: () => ({

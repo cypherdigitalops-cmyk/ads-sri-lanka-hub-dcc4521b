@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Paper Bag Printing Sri Lanka | Custom Branded Shopping Bags";
-const DESC = "Custom paper bag printing in Sri Lanka. Branded kraft & art paper shopping bags for boutiques, bakeries & retailers. Eco-friendly options. Call 0771437707.";
+const DESC = "Custom paper bag printing in Sri Lanka. Branded kraft & art paper shopping bags for boutiques, bakeries & retailers. Eco-friendly options. Call 0701772626.";
 
 export const Route = createFileRoute("/paper-bag-printing-sri-lanka")({
   head: () => ({

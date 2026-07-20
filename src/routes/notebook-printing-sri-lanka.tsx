@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Notebook Printing Sri Lanka | Custom Branded Notebooks from Rs 250";
-const DESC = "Notebook printing in Sri Lanka from Rs 250. A5/A6 hardback & soft-cover with logo debossing or full-colour print. Call 0771437707.";
+const DESC = "Notebook printing in Sri Lanka from Rs 250. A5/A6 hardback & soft-cover with logo debossing or full-colour print. Call 0701772626.";
 
 export const Route = createFileRoute("/notebook-printing-sri-lanka")({
   head: () => ({

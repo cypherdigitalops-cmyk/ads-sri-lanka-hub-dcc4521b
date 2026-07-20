@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "thumbnail-design-sri-lanka",
   h1: "Thumbnail Design in Sri Lanka",
   metaTitle: "Thumbnail Design Sri Lanka — YouTube Thumbnail Designer | Advertising Sri Lanka",
-  metaDescription: "Professional YouTube and video thumbnail design in Sri Lanka. Thumbnails that drive clicks and views. From Rs 1,500 per thumbnail. Call 0771437707.",
+  metaDescription: "Professional YouTube and video thumbnail design in Sri Lanka. Thumbnails that drive clicks and views. From Rs 1,500 per thumbnail. Call 0701772626.",
   intro: "Your YouTube thumbnail is the single biggest factor in whether someone clicks your video. A bold, well-designed thumbnail can multiply views several times over — for the same content.",
   whatIs: "Thumbnail design involves creating a compelling still image that represents a video and entices viewers to click. Great thumbnails use bold text, strong facial expressions, contrasting colours and clear visual hierarchy to stand out in a crowded YouTube feed.",
   whoNeeds: "YouTubers, businesses with YouTube channels, educators, news channels, corporate video producers and any creator publishing video content in Sri Lanka benefits from professional thumbnail design.",

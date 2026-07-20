@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Calendar Printing Sri Lanka | Wall, Desk & Custom Calendars 2026";
-const DESC = "Calendar printing in Sri Lanka — wall, desk, spiral & corporate calendars from Rs 250. Full-colour, custom branding, bulk discounts. Call 0771437707.";
+const DESC = "Calendar printing in Sri Lanka — wall, desk, spiral & corporate calendars from Rs 250. Full-colour, custom branding, bulk discounts. Call 0701772626.";
 
 export const Route = createFileRoute("/calendar-printing-sri-lanka")({
   head: () => ({

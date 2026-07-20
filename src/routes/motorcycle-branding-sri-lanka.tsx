@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Motorcycle Branding Sri Lanka | Motorbike Vinyl Graphics & Decals";
-const DESC = "Motorcycle branding & vinyl graphics in Sri Lanka for delivery bikes & fleet motorbikes. Durable cast vinyl, fast turnaround. Call 0771437707.";
+const DESC = "Motorcycle branding & vinyl graphics in Sri Lanka for delivery bikes & fleet motorbikes. Durable cast vinyl, fast turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/motorcycle-branding-sri-lanka")({
   head: () => ({

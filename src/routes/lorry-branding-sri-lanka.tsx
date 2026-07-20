@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Lorry Branding Sri Lanka | Truck & HGV Fleet Vinyl Graphics";
-const DESC = "Lorry & truck branding in Sri Lanka. Large vehicle vinyl wraps & graphics for HGVs, container trucks & fleet lorries. Islandwide. Call 0771437707.";
+const DESC = "Lorry & truck branding in Sri Lanka. Large vehicle vinyl wraps & graphics for HGVs, container trucks & fleet lorries. Islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/lorry-branding-sri-lanka")({
   head: () => ({

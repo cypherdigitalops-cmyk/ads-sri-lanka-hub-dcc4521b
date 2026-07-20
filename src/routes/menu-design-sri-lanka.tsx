@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "menu-design-sri-lanka",
   h1: "Menu Design in Sri Lanka",
   metaTitle: "Menu Design Sri Lanka — Restaurant & Café Menu Design | Advertising Sri Lanka",
-  metaDescription: "Professional restaurant and café menu design in Sri Lanka. Print menus and digital menus. From Rs 8,000. Call 0771437707.",
+  metaDescription: "Professional restaurant and café menu design in Sri Lanka. Print menus and digital menus. From Rs 8,000. Call 0701772626.",
   intro: "A well-designed menu does more than list dishes — it communicates your restaurant's personality, guides customer choices and directly increases average order value. Menu design is one of the highest-ROI investments a restaurant can make.",
   whatIs: "Menu design involves creating a printed or digital document that presents your food and beverage offerings in an organised, visually appealing way. Good menu design uses psychology, hierarchy and typography to guide customers towards high-margin items.",
   whoNeeds: "Restaurants, cafés, hotels, bars, catering companies, food courts and cloud kitchens across Sri Lanka benefit from professionally designed menus — both printed menus and digital menus displayed on screens or shared via QR code.",

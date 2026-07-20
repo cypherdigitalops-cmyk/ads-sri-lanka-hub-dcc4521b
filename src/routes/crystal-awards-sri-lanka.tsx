@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Crystal Awards Sri Lanka | Engraved Crystal Trophies from Rs 4,500";
-const DESC = "Crystal awards in Sri Lanka from Rs 4,500. Optical-grade crystal trophies with laser engraving for corporate recognition & awards nights. Call 0771437707.";
+const DESC = "Crystal awards in Sri Lanka from Rs 4,500. Optical-grade crystal trophies with laser engraving for corporate recognition & awards nights. Call 0701772626.";
 
 export const Route = createFileRoute("/crystal-awards-sri-lanka")({
   head: () => ({

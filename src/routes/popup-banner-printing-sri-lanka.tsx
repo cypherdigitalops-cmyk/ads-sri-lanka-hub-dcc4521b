@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Popup Banner Printing Sri Lanka | Pop-Up Stands from Rs 35,000";
-const DESC = "Popup banner printing in Sri Lanka from Rs 35,000. Curved & straight pop-up display walls, 3x3 & 3x4 with carry case. Call 0771437707.";
+const DESC = "Popup banner printing in Sri Lanka from Rs 35,000. Curved & straight pop-up display walls, 3x3 & 3x4 with carry case. Call 0701772626.";
 
 export const Route = createFileRoute("/popup-banner-printing-sri-lanka")({
   head: () => ({

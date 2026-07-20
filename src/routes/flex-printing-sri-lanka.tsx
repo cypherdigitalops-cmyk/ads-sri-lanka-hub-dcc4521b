@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Flex Printing Sri Lanka | PVC Flex Banners from Rs 120/sqft";
-const DESC = "Flex printing in Sri Lanka from Rs 120/sqft. Frontlit & backlit PVC flex for banners, hoardings & outdoor advertising. Any size, fast turnaround. Call 0771437707.";
+const DESC = "Flex printing in Sri Lanka from Rs 120/sqft. Frontlit & backlit PVC flex for banners, hoardings & outdoor advertising. Any size, fast turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/flex-printing-sri-lanka")({
   head: () => ({

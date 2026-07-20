@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "brand-style-guide-sri-lanka",
   h1: "Brand Style Guide Design in Sri Lanka",
   metaTitle: "Brand Style Guide Sri Lanka — Brand Guidelines Design | Advertising Sri Lanka",
-  metaDescription: "Professional brand style guide design in Sri Lanka. Ensure your brand looks consistent across every channel. Call 0771437707 for a free quote.",
+  metaDescription: "Professional brand style guide design in Sri Lanka. Ensure your brand looks consistent across every channel. Call 0701772626 for a free quote.",
   intro: "A brand style guide is your brand's rulebook — the definitive document that tells everyone how your brand should look, sound and feel. Without one, your brand risks appearing inconsistent and unprofessional across different channels.",
   whatIs: "A brand style guide (also called brand guidelines or a brand manual) documents every visual and verbal rule for your brand. It covers logo usage, colour codes, typography, imagery rules, tone of voice and examples of correct and incorrect usage.",
   whoNeeds: "Any business with more than one person producing content — marketing teams, agencies, printers, designers — needs a brand style guide. It ensures your brand looks identical whether it appears on a billboard in Colombo or a social media post.",

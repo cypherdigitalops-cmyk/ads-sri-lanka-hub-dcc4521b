@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
 const TITLE = "Email Marketing Sri Lanka — Campaigns That Convert";
-const DESC = "Full-service email marketing sri lanka — strategy, design, automation and reporting for Sri Lankan brands. Get pricing today. Call 0771437707.";
+const DESC = "Full-service email marketing sri lanka — strategy, design, automation and reporting for Sri Lankan brands. Get pricing today. Call 0701772626.";
 
 export const Route = createFileRoute("/email-marketing-sri-lanka")({
   head: () => ({

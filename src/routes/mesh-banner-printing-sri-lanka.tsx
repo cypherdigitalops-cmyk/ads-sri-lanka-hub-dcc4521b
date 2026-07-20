@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Mesh Banner Printing Sri Lanka | Building Wrap Mesh from Rs 140/sqft";
-const DESC = "Mesh banner printing in Sri Lanka from Rs 140/sqft. Perforated PVC mesh for scaffolding, building wraps & fence banners. Call 0771437707.";
+const DESC = "Mesh banner printing in Sri Lanka from Rs 140/sqft. Perforated PVC mesh for scaffolding, building wraps & fence banners. Call 0701772626.";
 
 export const Route = createFileRoute("/mesh-banner-printing-sri-lanka")({
   head: () => ({

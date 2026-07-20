@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Gift Box Printing Sri Lanka | Custom Branded Boxes from Rs 120";
-const DESC = "Gift box printing in Sri Lanka from Rs 120 per box. Rigid, foldable & magnetic-close boxes with logo print & lamination. Call 0771437707.";
+const DESC = "Gift box printing in Sri Lanka from Rs 120 per box. Rigid, foldable & magnetic-close boxes with logo print & lamination. Call 0701772626.";
 
 export const Route = createFileRoute("/gift-box-printing-sri-lanka")({
   head: () => ({

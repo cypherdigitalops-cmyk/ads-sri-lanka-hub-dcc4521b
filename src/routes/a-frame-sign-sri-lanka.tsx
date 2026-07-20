@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "A Frame Sign Sri Lanka | Pavement Signs & Sandwich Boards";
-const DESC = "A-frame & pavement sign printing in Sri Lanka. Folding sandwich boards for shops, restaurants & street promotions. Durable outdoor signs. Call 0771437707.";
+const DESC = "A-frame & pavement sign printing in Sri Lanka. Folding sandwich boards for shops, restaurants & street promotions. Durable outdoor signs. Call 0701772626.";
 
 export const Route = createFileRoute("/a-frame-sign-sri-lanka")({
   head: () => ({

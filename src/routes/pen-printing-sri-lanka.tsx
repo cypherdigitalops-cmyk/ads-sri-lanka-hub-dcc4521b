@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Pen Printing Sri Lanka — Branded Promotional & Logo Pens";
-const DESC = "Pen printing in Sri Lanka — plastic, metal & executive pens with pad print, screen print or laser engraving. Any quantity, same-day Colombo. Call 0771437707.";
+const DESC = "Pen printing in Sri Lanka — plastic, metal & executive pens with pad print, screen print or laser engraving. Any quantity, same-day Colombo. Call 0701772626.";
 
 export const Route = createFileRoute("/pen-printing-sri-lanka")({
   head: () => ({

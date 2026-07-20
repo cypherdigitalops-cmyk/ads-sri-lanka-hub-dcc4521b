@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "flyer-design-sri-lanka",
   h1: "Flyer Design in Sri Lanka",
   metaTitle: "Flyer Design Sri Lanka — Professional Flyer & Leaflet Design | Advertising Sri Lanka",
-  metaDescription: "Professional flyer and leaflet design in Sri Lanka from Rs 3,500. Event flyers, promotion flyers and product leaflets. Call 0771437707.",
+  metaDescription: "Professional flyer and leaflet design in Sri Lanka from Rs 3,500. Event flyers, promotion flyers and product leaflets. Call 0701772626.",
   intro: "A well-designed flyer grabs attention in seconds. Whether promoting an event, a sale, a new product or a service, a professional flyer design ensures your message is clear, compelling and on-brand.",
   whatIs: "Flyer design is the creation of a single-page promotional document — typically A4, A5 or A6 — used to announce events, promotions, new products or services. Flyers are distributed by hand, posted on notice boards, sent digitally or used in direct mail.",
   whoNeeds: "Restaurants, schools, clinics, shops, event organisers, religious organisations and businesses running promotions across Sri Lanka use flyers as a fast, affordable and effective marketing tool.",

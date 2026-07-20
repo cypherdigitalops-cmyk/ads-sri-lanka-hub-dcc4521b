@@ -6,7 +6,7 @@ import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
 
 const TITLE = "Advertising Packages in Sri Lanka — Custom Plans for Every Business";
-const DESC = "Flexible advertising packages combining ATL, BTL, digital, SEO, outdoor and creative services. Built for Sri Lankan SMEs and enterprises. Call 0771437707.";
+const DESC = "Flexible advertising packages combining ATL, BTL, digital, SEO, outdoor and creative services. Built for Sri Lankan SMEs and enterprises. Call 0701772626.";
 
 export const Route = createFileRoute("/advertising-packages")({
   head: () => ({

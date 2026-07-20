@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Acrylic Sign Board Sri Lanka | Indoor & Office Signs from Rs 3,500";
-const DESC = "Acrylic sign boards in Sri Lanka — reception, office & shop signs with 3mm–10mm acrylic, LED backlit options. Custom shapes, 5-day delivery. Call 0771437707.";
+const DESC = "Acrylic sign boards in Sri Lanka — reception, office & shop signs with 3mm–10mm acrylic, LED backlit options. Custom shapes, 5-day delivery. Call 0701772626.";
 
 export const Route = createFileRoute("/acrylic-sign-board-sri-lanka")({
   head: () => ({

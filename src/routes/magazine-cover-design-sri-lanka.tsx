@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "magazine-cover-design-sri-lanka",
   h1: "Magazine Cover Design in Sri Lanka",
   metaTitle: "Magazine Cover Design Sri Lanka — Editorial Design | Advertising Sri Lanka",
-  metaDescription: "Professional magazine cover and editorial layout design in Sri Lanka. Print and digital formats. From Rs 15,000. Call 0771437707.",
+  metaDescription: "Professional magazine cover and editorial layout design in Sri Lanka. Print and digital formats. From Rs 15,000. Call 0701772626.",
   intro: "A magazine cover is the most important single page in any publication. It must attract attention on a crowded shelf, communicate the issue's content and reinforce the magazine's brand identity — all in a single glance.",
   whatIs: "Magazine cover design involves creating the front cover and editorial layout for a publication — including masthead, cover lines, photography direction, typography and overall design style. Great magazine design is bold, distinctive and unmistakable.",
   whoNeeds: "Magazine publishers, corporate communications teams producing company magazines, schools and universities producing alumni magazines, and organisations publishing newsletters and journals in Sri Lanka need professional editorial design.",

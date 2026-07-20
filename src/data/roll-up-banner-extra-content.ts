@@ -215,6 +215,6 @@ export const ROLL_UP_BANNER_EXTRA_FAQS: FAQ[] = [
   },
   {
     q: "Do you offer bulk/quantity pricing for roll up banners in Sri Lanka?",
-    a: "Yes. Volume pricing is available starting from 5 units. Businesses ordering for franchise rollouts, multi-branch retail networks, or large-scale event deployments typically save 15 to 30% per unit compared to single-unit pricing. Contact us on 0771437707 or WhatsApp for a bulk quote with an itemised breakdown.",
+    a: "Yes. Volume pricing is available starting from 5 units. Businesses ordering for franchise rollouts, multi-branch retail networks, or large-scale event deployments typically save 15 to 30% per unit compared to single-unit pricing. Contact us on 0701772626 or WhatsApp for a bulk quote with an itemised breakdown.",
   },
 ];

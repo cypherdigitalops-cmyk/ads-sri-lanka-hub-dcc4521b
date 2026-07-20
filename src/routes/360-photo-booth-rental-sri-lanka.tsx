@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "360 Photo Booth Rental Sri Lanka — Trusted Sri Lankan Event Team | advertisingsrilanka.lk";
-const DESC = "Professional 360 photo booth rental sri lanka services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Professional 360 photo booth rental sri lanka services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/360-photo-booth-rental-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
 
 const TITLE = "Advertising Rates in Sri Lanka — Cost Guide for Every Channel | advertisingsrilanka.lk";
-const DESC = "Complete cost guide for advertising in Sri Lanka — TV, radio, newspaper, billboard, Google Ads, social media, SEO, branding, web and video. Indicative rates for budget planning. Call 0771437707.";
+const DESC = "Complete cost guide for advertising in Sri Lanka — TV, radio, newspaper, billboard, Google Ads, social media, SEO, branding, web and video. Indicative rates for budget planning. Call 0701772626.";
 
 export const Route = createFileRoute("/advertising-rates")({
   head: () => ({

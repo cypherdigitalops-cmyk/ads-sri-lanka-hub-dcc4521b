@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Barcode Label Printing Sri Lanka | EAN-13, QR & Serial Labels";
-const DESC = "Barcode label printing in Sri Lanka. EAN-13, QR codes & serial labels for supermarkets, warehouses & exporters. GS1 compliant. Call 0771437707.";
+const DESC = "Barcode label printing in Sri Lanka. EAN-13, QR codes & serial labels for supermarkets, warehouses & exporters. GS1 compliant. Call 0701772626.";
 
 export const Route = createFileRoute("/barcode-label-printing-sri-lanka")({
   head: () => ({

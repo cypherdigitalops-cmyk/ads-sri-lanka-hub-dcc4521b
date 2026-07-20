@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "book-cover-design-sri-lanka",
   h1: "Book Cover Design in Sri Lanka",
   metaTitle: "Book Cover Design Sri Lanka — Professional Book Cover Designer | Advertising Sri Lanka",
-  metaDescription: "Professional book cover design in Sri Lanka for authors and publishers. Print and digital covers. From Rs 10,000. Call 0771437707.",
+  metaDescription: "Professional book cover design in Sri Lanka for authors and publishers. Print and digital covers. From Rs 10,000. Call 0701772626.",
   intro: "A book cover is the single most important marketing tool for any publication. Research consistently shows that readers judge books by their covers — a compelling design dramatically increases pick-up rates and sales.",
   whatIs: "Book cover design involves creating a front cover, spine and back cover for a printed book, or a front cover for an e-book. It communicates the book's genre, tone and content through imagery, typography and colour — attracting the right readers.",
   whoNeeds: "Authors, publishers, academic institutions, schools, religious organisations and businesses producing books, reports and publications in Sri Lanka need professional book cover design.",

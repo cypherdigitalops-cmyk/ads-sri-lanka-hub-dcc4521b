@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "annual-report-design-sri-lanka",
   h1: "Annual Report Design in Sri Lanka",
   metaTitle: "Annual Report Design Sri Lanka — Corporate Annual Report Designer | Advertising Sri Lanka",
-  metaDescription: "Professional annual report design in Sri Lanka for listed companies, NGOs, banks and corporates. Print-ready and digital formats. Call 0771437707 for a free quote.",
+  metaDescription: "Professional annual report design in Sri Lanka for listed companies, NGOs, banks and corporates. Print-ready and digital formats. Call 0701772626 for a free quote.",
   intro: "Your annual report is the single most important document your organisation produces each year. It tells shareholders, regulators, donors and the public the story of your performance — and the way it looks shapes how that story is received.",
   whatIs: "Annual report design is the end-to-end creative work that turns your financial statements, chairman's message, sustainability data and operational highlights into a cohesive, beautifully designed publication. It covers concept, art direction, infographics, layout, typesetting of audited accounts and final print/digital delivery.",
   whoNeeds: "Listed companies on the Colombo Stock Exchange, licensed commercial banks, finance companies, insurers, plantation companies, NGOs, INGOs, government corporations and large private groups across Sri Lanka are required — or strongly expected — to publish a professional annual report each year.",

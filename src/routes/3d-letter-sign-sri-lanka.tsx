@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "3D Letter Sign Sri Lanka | Aluminium & Acrylic Letters";
-const DESC = "3D fabricated letter signs in Sri Lanka. Aluminium, stainless steel & acrylic letters for shops, offices & buildings. Illuminated & non-illuminated. Call 0771437707.";
+const DESC = "3D fabricated letter signs in Sri Lanka. Aluminium, stainless steel & acrylic letters for shops, offices & buildings. Illuminated & non-illuminated. Call 0701772626.";
 
 export const Route = createFileRoute("/3d-letter-sign-sri-lanka")({
   head: () => ({

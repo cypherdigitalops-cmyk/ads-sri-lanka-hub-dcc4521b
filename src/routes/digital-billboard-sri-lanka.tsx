@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
 const TITLE = "Digital Billboard Sri Lanka | LED Hoarding Ad Placement";
-const DESC = "Digital billboard advertising in Sri Lanka — premium LED hoarding sites in Colombo, Kandy & Galle. Slot planning & creative. Call 0771437707.";
+const DESC = "Digital billboard advertising in Sri Lanka — premium LED hoarding sites in Colombo, Kandy & Galle. Slot planning & creative. Call 0701772626.";
 
 export const Route = createFileRoute("/digital-billboard-sri-lanka")({
   head: () => ({

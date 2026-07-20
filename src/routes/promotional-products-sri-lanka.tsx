@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Promotional Products Sri Lanka | Custom Branded Merchandise";
-const DESC = "Promotional products in Sri Lanka — custom-branded giveaways, corporate gifts & event merchandise. Min 50 units. Call 0771437707.";
+const DESC = "Promotional products in Sri Lanka — custom-branded giveaways, corporate gifts & event merchandise. Min 50 units. Call 0701772626.";
 
 export const Route = createFileRoute("/promotional-products-sri-lanka")({
   head: () => ({

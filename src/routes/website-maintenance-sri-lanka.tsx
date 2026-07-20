@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
 const TITLE = "Website Maintenance Sri Lanka That Drives Real Results";
-const DESC = "From concept to launch — full-service website maintenance sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0771437707 today.";
+const DESC = "From concept to launch — full-service website maintenance sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0701772626 today.";
 
 export const Route = createFileRoute("/website-maintenance-sri-lanka")({
   head: () => ({

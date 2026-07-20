@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Water Bottle Printing Sri Lanka | Branded Bottles from Rs 450";
-const DESC = "Water bottle printing in Sri Lanka from Rs 450. BPA-free plastic, aluminium & stainless steel bottles with logo print. Call 0771437707.";
+const DESC = "Water bottle printing in Sri Lanka from Rs 450. BPA-free plastic, aluminium & stainless steel bottles with logo print. Call 0701772626.";
 
 export const Route = createFileRoute("/water-bottle-printing-sri-lanka")({
   head: () => ({

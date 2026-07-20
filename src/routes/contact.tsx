@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
 
-const TITLE = "Contact Advertising Sri Lanka — Call 0771437707";
+const TITLE = "Contact Advertising Sri Lanka — Call 0701772626";
 const DESC = "Contact advertisingsrilanka.lk for advertising, marketing, SEO, branding and media services in Sri Lanka. Phone, WhatsApp, email and office details.";
 
 export const Route = createFileRoute("/contact")({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Drone Rental in Sri Lanka — Hire & Pricing | advertisingsrilanka.lk";
-const DESC = "Reliable drone rental for events in Sri Lanka. Get pricing, packages and free guidance — call 0771437707 or WhatsApp.";
+const DESC = "Reliable drone rental for events in Sri Lanka. Get pricing, packages and free guidance — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/drone-rental-sri-lanka")({
   head: () => ({

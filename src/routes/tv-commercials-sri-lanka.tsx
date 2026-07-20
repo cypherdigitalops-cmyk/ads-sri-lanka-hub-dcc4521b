@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
 const TITLE = "TV Commercials Sri Lanka | TVC Production & Ad Placement";
-const DESC = "TV commercials in Sri Lanka — TVC production, script-to-screen direction & ad placement on Sirasa, Derana, Hiru & ITN. Call 0771437707.";
+const DESC = "TV commercials in Sri Lanka — TVC production, script-to-screen direction & ad placement on Sirasa, Derana, Hiru & ITN. Call 0701772626.";
 
 export const Route = createFileRoute("/tv-commercials-sri-lanka")({
   head: () => ({

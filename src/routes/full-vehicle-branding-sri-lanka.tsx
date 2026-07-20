@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Full Vehicle Branding Sri Lanka | Complete Fleet Wrap & Graphics";
-const DESC = "Full vehicle branding in Sri Lanka for cars, vans, trucks & buses. Complete corporate fleet wraps with cast vinyl. Professional installation. Call 0771437707.";
+const DESC = "Full vehicle branding in Sri Lanka for cars, vans, trucks & buses. Complete corporate fleet wraps with cast vinyl. Professional installation. Call 0701772626.";
 
 export const Route = createFileRoute("/full-vehicle-branding-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "stationery-design-sri-lanka",
   h1: "Stationery Design in Sri Lanka",
   metaTitle: "Stationery Design Sri Lanka — Corporate Stationery & Letterhead Design | Advertising Sri Lanka",
-  metaDescription: "Professional corporate stationery design in Sri Lanka — letterheads, envelopes, folders and branded office materials. Call 0771437707.",
+  metaDescription: "Professional corporate stationery design in Sri Lanka — letterheads, envelopes, folders and branded office materials. Call 0701772626.",
   intro: "Branded stationery is a quiet but powerful brand signal. A consistent letterhead, envelope and compliment slip set communicates that your business is established, organised and serious about its identity.",
   whatIs: "Corporate stationery design covers all branded printed materials used in day-to-day business: letterheads, compliment slips, envelopes, notepads, presentation folders, invoice templates and with-compliments cards.",
   whoNeeds: "Companies of all sizes in Sri Lanka need branded stationery — from small businesses sending quotations and invoices, to large corporations producing annual reports and board presentations.",

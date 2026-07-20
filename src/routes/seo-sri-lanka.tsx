@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
 const TITLE = "SEO Sri Lanka — Rank #1 on Google with Proven SEO";
-const DESC = "Full-service SEO Sri Lanka — keyword research, on-page, technical and link building for Sri Lankan brands. Get pricing today. Call 0771437707.";
+const DESC = "Full-service SEO Sri Lanka — keyword research, on-page, technical and link building for Sri Lankan brands. Get pricing today. Call 0701772626.";
 
 export const Route = createFileRoute("/seo-sri-lanka")({
   head: () => ({

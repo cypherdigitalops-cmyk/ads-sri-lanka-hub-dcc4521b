@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Large Format Printing Sri Lanka | Wide Format Banners & Displays";
-const DESC = "Large format printing in Sri Lanka — wide format banners, hoardings, backdrops & display graphics. Any size, fast turnaround. Call 0771437707.";
+const DESC = "Large format printing in Sri Lanka — wide format banners, hoardings, backdrops & display graphics. Any size, fast turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/large-format-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Gala Dinner Sri Lanka — Trusted Sri Lankan Event Team | advertisingsrilanka.lk";
-const DESC = "Professional gala dinner sri lanka services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Professional gala dinner sri lanka services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/gala-dinner-sri-lanka")({
   head: () => ({

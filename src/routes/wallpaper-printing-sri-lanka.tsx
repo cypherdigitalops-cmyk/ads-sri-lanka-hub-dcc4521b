@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Wallpaper Printing Sri Lanka | Custom Printed Wallpaper & Murals";
-const DESC = "Custom wallpaper printing in Sri Lanka for homes, hotels & offices. Printed wallpaper, textured designs & peel-and-stick wall murals. Call 0771437707.";
+const DESC = "Custom wallpaper printing in Sri Lanka for homes, hotels & offices. Printed wallpaper, textured designs & peel-and-stick wall murals. Call 0701772626.";
 
 export const Route = createFileRoute("/wallpaper-printing-sri-lanka")({
   head: () => ({

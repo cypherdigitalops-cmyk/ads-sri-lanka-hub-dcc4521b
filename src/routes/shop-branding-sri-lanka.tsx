@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
 const TITLE = "Shop Branding Sri Lanka | Shopfront Signage & Interior Branding";
-const DESC = "Shop branding in Sri Lanka — shopfront signage, ACP fascia, window graphics & interior branding. Design & installation. Call 0771437707.";
+const DESC = "Shop branding in Sri Lanka — shopfront signage, ACP fascia, window graphics & interior branding. Design & installation. Call 0701772626.";
 
 export const Route = createFileRoute("/shop-branding-sri-lanka")({
   head: () => ({

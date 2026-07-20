@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Launch Event Gifts Sri Lanka | Product Launch Giveaways";
-const DESC = "Launch event gifts in Sri Lanka — branded gift packs, premium giveaways & media kits for product & brand launches. Call 0771437707.";
+const DESC = "Launch event gifts in Sri Lanka — branded gift packs, premium giveaways & media kits for product & brand launches. Call 0701772626.";
 
 export const Route = createFileRoute("/launch-event-gifts-sri-lanka")({
   head: () => ({

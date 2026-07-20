@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "pr-communications-sri-lanka")!;
 const TITLE = "Market Research And Media Planning Sri Lanka — Strategy, Creative & Media";
-const DESC = "Need market research and media planning sri lanka that actually converts? We blend local insight with proven advertising frameworks to deliver leads and sales. Call 0771437707.";
+const DESC = "Need market research and media planning sri lanka that actually converts? We blend local insight with proven advertising frameworks to deliver leads and sales. Call 0701772626.";
 
 export const Route = createFileRoute("/market-research-sri-lanka")({
   head: () => ({

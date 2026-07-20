@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Luxury Corporate Gifts Sri Lanka | Premium Executive Gifting";
-const DESC = "Luxury corporate gifts in Sri Lanka — premium leather, crystal & metal gift sets with bespoke packaging for VIP clients. Call 0771437707.";
+const DESC = "Luxury corporate gifts in Sri Lanka — premium leather, crystal & metal gift sets with bespoke packaging for VIP clients. Call 0701772626.";
 
 export const Route = createFileRoute("/luxury-corporate-gifts-sri-lanka")({
   head: () => ({

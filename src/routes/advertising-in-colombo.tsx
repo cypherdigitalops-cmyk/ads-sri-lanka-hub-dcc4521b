@@ -16,7 +16,7 @@ const LOCAL_BUSINESS_JSONLD = {
   "@id": `${SITE.url}/${SLUG}#business`,
   name: `Advertising Sri Lanka — ${CITY}`,
   url: `${SITE.url}/${SLUG}`,
-  telephone: "+94771437707",
+  telephone: "+94701772626",
   image: `${SITE.url}/og-home.jpg`,
   priceRange: "$$",
   areaServed: { "@type": "City", name: CITY },
@@ -86,7 +86,7 @@ const SERVICES = [
 ];
 
 function CityPage() {
-  const wa = "94771437707";
+  const wa = "94701772626";
   return (
     <PageShell>
       <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">

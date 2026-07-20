@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
 const TITLE = "Sri Lanka's #1 TTL Advertising Hub — Plans, Pricing & Free Advice";
-const DESC = "Through-the-line, 360° and omnichannel campaigns that connect every touchpoint. Get pricing and free advice — call 0771437707 or WhatsApp.";
+const DESC = "Through-the-line, 360° and omnichannel campaigns that connect every touchpoint. Get pricing and free advice — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/ttl-advertising-sri-lanka")({
   head: () => ({

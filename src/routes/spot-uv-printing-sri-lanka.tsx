@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Spot UV Printing Sri Lanka | Gloss Coating from Rs 3,500";
-const DESC = "Spot UV printing in Sri Lanka from Rs 3,500 per 100. High-gloss UV coating on matt laminated business cards, folders & packaging. Call 0771437707.";
+const DESC = "Spot UV printing in Sri Lanka from Rs 3,500 per 100. High-gloss UV coating on matt laminated business cards, folders & packaging. Call 0701772626.";
 
 export const Route = createFileRoute("/spot-uv-printing-sri-lanka")({
   head: () => ({

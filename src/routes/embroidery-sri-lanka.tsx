@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Embroidery Sri Lanka | Logo Embroidery on Uniforms, Caps & Bags";
-const DESC = "Professional embroidery in Sri Lanka. Logo embroidery on corporate uniforms, polo shirts, caps & bags. Quality digitisation, fast turnaround. Call 0771437707.";
+const DESC = "Professional embroidery in Sri Lanka. Logo embroidery on corporate uniforms, polo shirts, caps & bags. Quality digitisation, fast turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/embroidery-sri-lanka")({
   head: () => ({

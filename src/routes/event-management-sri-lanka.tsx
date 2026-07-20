@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Event Management Sri Lanka — Corporate Events, Weddings & MICE | Full Service";
-const DESC = "Event management in Sri Lanka for corporate events, weddings, MICE, exhibitions, brand activations & product launches. Full-service — stage, sound, LED, catering. 500+ events. Call 0771437707.";
+const DESC = "Event management in Sri Lanka for corporate events, weddings, MICE, exhibitions, brand activations & product launches. Full-service — stage, sound, LED, catering. 500+ events. Call 0701772626.";
 const H1 = "Event Management Sri Lanka — Corporate Events, Weddings, MICE & Brand Activations";
 const INTRO = "Sri Lanka's full-service event management team — 500+ events delivered, 10+ years in event production, islandwide coverage. Corporate events, MICE (Meetings, Incentives, Conferences & Exhibitions), weddings, brand activations, exhibitions, product launches and concerts — stage, sound, lighting, LED, catering and permits under one accountable team.";
 
@@ -18,7 +18,7 @@ const SERVICE_JSONLD = {
     "@type": "Organization",
     name: "Advertising Sri Lanka",
     url: SITE.url,
-    telephone: "+94771437707",
+    telephone: "+94701772626",
     address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
   },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
@@ -46,7 +46,7 @@ const FAQ_JSONLD = {
     { "@type": "Question", name: "How far in advance should I book event management in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Small to medium events: 6 to 8 weeks. Large events above 500 people: 3 to 6 months. Premium Colombo venues in November/December: 4 to 6 months. Weddings: 6 to 18 months before the date." } },
     { "@type": "Question", name: "What permits are required for events in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "CMC Public Entertainment Permit (7–21 days), Police Permit for 500+ people events, CAASL drone permit (14–28 days), noise permit for outdoor amplified sound after 10pm, Excise temporary licence for alcohol service outside licensed venues." } },
     { "@type": "Question", name: "Can one company supply stage, sound, lighting and LED screens in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Yes — full-service event production companies own and operate stage, sound, lighting and LED as a complete package. This single-vendor approach prevents the coordination failures between separate contractors that are one of the leading causes of technical problems at Sri Lankan events." } },
-    { "@type": "Question", name: "Do you manage events outside Colombo across Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Yes. We manage events islandwide — dealer meets in Kandy, Kurunegala and Matara, activations in Galle and Negombo, corporate events in Jaffna and Anuradhapura, and beach events in Trincomalee and Bentota. Call 0771437707 with your event location." } },
+    { "@type": "Question", name: "Do you manage events outside Colombo across Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Yes. We manage events islandwide — dealer meets in Kandy, Kurunegala and Matara, activations in Galle and Negombo, corporate events in Jaffna and Anuradhapura, and beach events in Trincomalee and Bentota. Call 0701772626 with your event location." } },
   ],
 };
 
@@ -61,7 +61,7 @@ export const Route = createFileRoute("/event-management-sri-lanka")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: TITLE },
-      { name: "twitter:description", content: "Event management in Sri Lanka — corporate events, weddings, MICE, exhibitions, brand activations and full production. Call 0771437707." },
+      { name: "twitter:description", content: "Event management in Sri Lanka — corporate events, weddings, MICE, exhibitions, brand activations and full production. Call 0701772626." },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/event-management-sri-lanka` }],
     scripts: [

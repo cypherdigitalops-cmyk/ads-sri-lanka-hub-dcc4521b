@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "brand-identity-design-sri-lanka",
   h1: "Brand Identity Design in Sri Lanka",
   metaTitle: "Brand Identity Design Sri Lanka — Complete Branding Package | Advertising Sri Lanka",
-  metaDescription: "Complete brand identity design in Sri Lanka — logo, colours, typography, brand guidelines and stationery. Call 0771437707 for a free quote.",
+  metaDescription: "Complete brand identity design in Sri Lanka — logo, colours, typography, brand guidelines and stationery. Call 0701772626 for a free quote.",
   intro: "Brand identity is the full visual system that makes your business recognisable — not just a logo, but the complete set of design elements that communicate who you are, what you stand for, and why customers should trust you.",
   whatIs: "Brand identity design covers every visual touchpoint of your business: your logo, colour palette, typography, imagery style, tone of voice and design guidelines. When these elements work together consistently, they create a powerful, memorable brand.",
   whoNeeds: "Businesses launching a new brand, rebranding an existing company, or expanding into new markets need a strong brand identity. It is especially important for businesses that want to stand out in competitive Sri Lankan markets.",

@@ -16,7 +16,7 @@ import heroImg from "@/assets/hero-advertising.jpg";
 
 const TITLE = "Advertising Sri Lanka — Every Channel, Every Budget";
 const TITLE_OG = "Advertising Sri Lanka — Every Channel, Every Budget";
-const DESC = "Advertising in Sri Lanka — the complete guide to every channel. Compare ATL, BTL, digital, outdoor, SEO and social media advertising. Free guidance for Sri Lankan businesses. Call 0771437707.";
+const DESC = "Advertising in Sri Lanka — the complete guide to every channel. Compare ATL, BTL, digital, outdoor, SEO and social media advertising. Free guidance for Sri Lankan businesses. Call 0701772626.";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Tv, Megaphone, Layers, MousePointerClick, Search, Share2, Mail, Building2,
@@ -134,7 +134,7 @@ const LOCAL_BUSINESS_JSONLD = {
   url: SITE.url,
   image: SITE.url + "/og-home.jpg",
   description: "Sri Lanka's #1 advertising information hub — learn how every advertising channel works, compare options and get free guidance for your next campaign.",
-  telephone: "+94771437707",
+  telephone: "+94701772626",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Colombo",
@@ -146,11 +146,11 @@ const LOCAL_BUSINESS_JSONLD = {
   openingHours: "Mo-Sa 09:00-19:00",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+94771437707",
+    telephone: "+94701772626",
     contactType: "customer service",
     availableLanguage: ["English", "Sinhala", "Tamil"],
   },
-  sameAs: ["https://wa.me/94771437707"],
+  sameAs: ["https://wa.me/94701772626"],
 };
 
 const ITEM_LIST_JSONLD = {
@@ -917,7 +917,7 @@ function Index() {
           {[
             { i: Search, t: "1. Explore", d: "Browse 180+ advertising services and 13 categories — TV, radio, billboards, Google Ads, social media, SEO, branding and more.", c: "from-primary to-primary-glow" },
             { i: TrendingUp, t: "2. Compare", d: "Read plain-English guides explaining how each channel works, what it costs, and where it fits your business.", c: "from-primary-glow to-accent" },
-            { i: Zap, t: "3. Get help", d: "Call 0771437707 or WhatsApp us for free guidance. We connect you with the right Sri Lankan specialists.", c: "from-accent to-primary-glow" },
+            { i: Zap, t: "3. Get help", d: "Call 0701772626 or WhatsApp us for free guidance. We connect you with the right Sri Lankan specialists.", c: "from-accent to-primary-glow" },
           ].map((s, i) => (
             <div key={s.t} className="relative">
               <div className="group h-full rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)] transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-[var(--shadow-elegant)]">

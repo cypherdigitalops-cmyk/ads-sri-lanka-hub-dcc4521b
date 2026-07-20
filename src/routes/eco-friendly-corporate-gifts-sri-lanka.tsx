@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Eco-Friendly Corporate Gifts Sri Lanka | Sustainable Giveaways";
-const DESC = "Eco-friendly corporate gifts in Sri Lanka — bamboo, recycled & biodegradable branded items for sustainability-conscious brands. Call 0771437707.";
+const DESC = "Eco-friendly corporate gifts in Sri Lanka — bamboo, recycled & biodegradable branded items for sustainability-conscious brands. Call 0701772626.";
 
 export const Route = createFileRoute("/eco-friendly-corporate-gifts-sri-lanka")({
   head: () => ({

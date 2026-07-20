@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Event Management Kandy — Trusted Sri Lankan Event Team | advertisingsrilanka.lk";
-const DESC = "Professional event management kandy services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Professional event management kandy services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/event-management-kandy")({
   head: () => ({

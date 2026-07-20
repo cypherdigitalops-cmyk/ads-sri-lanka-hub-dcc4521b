@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
 const TITLE = "Landing Page Design Sri Lanka | Conversion Pages from Rs 35,000";
-const DESC = "Landing page design in Sri Lanka from Rs 35,000. Conversion-focused pages with copy, design, dev & A/B testing setup. Call 0771437707.";
+const DESC = "Landing page design in Sri Lanka from Rs 35,000. Conversion-focused pages with copy, design, dev & A/B testing setup. Call 0701772626.";
 
 export const Route = createFileRoute("/landing-page-design-sri-lanka")({
   head: () => ({

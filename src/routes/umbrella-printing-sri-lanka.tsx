@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Umbrella Printing Sri Lanka | Branded Umbrellas from Rs 850";
-const DESC = "Umbrella printing in Sri Lanka from Rs 850. 21-inch & 23-inch promotional umbrellas with full-colour logo print. Call 0771437707.";
+const DESC = "Umbrella printing in Sri Lanka from Rs 850. 21-inch & 23-inch promotional umbrellas with full-colour logo print. Call 0701772626.";
 
 export const Route = createFileRoute("/umbrella-printing-sri-lanka")({
   head: () => ({

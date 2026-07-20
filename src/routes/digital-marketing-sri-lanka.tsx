@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
 const TITLE = "Digital Marketing in Sri Lanka — Services Hub";
-const DESC = "Performance-driven Google, Meta, TikTok and programmatic campaigns. Get pricing and free advice — call 0771437707 or WhatsApp.";
+const DESC = "Performance-driven Google, Meta, TikTok and programmatic campaigns. Get pricing and free advice — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/digital-marketing-sri-lanka")({
   head: () => ({

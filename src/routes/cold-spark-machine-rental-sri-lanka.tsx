@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Cold Spark Machine Rental Sri Lanka — Trusted Sri Lankan Event Team | advertisingsrilanka.lk";
-const DESC = "Professional cold spark machine rental sri lanka services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Professional cold spark machine rental sri lanka services across Sri Lanka — planning, production, staging and on-ground delivery. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/cold-spark-machine-rental-sri-lanka")({
   head: () => ({

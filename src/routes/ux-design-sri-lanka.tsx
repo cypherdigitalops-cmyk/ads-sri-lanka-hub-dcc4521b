@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "ux-design-sri-lanka",
   h1: "UX Design in Sri Lanka",
   metaTitle: "UX Design Sri Lanka — User Experience Design | Advertising Sri Lanka",
-  metaDescription: "Professional UX design services in Sri Lanka. User research, wireframes and prototypes for websites and apps. From Rs 40,000. Call 0771437707.",
+  metaDescription: "Professional UX design services in Sri Lanka. User research, wireframes and prototypes for websites and apps. From Rs 40,000. Call 0701772626.",
   intro: "User experience design is the discipline of making digital products easy, intuitive and enjoyable to use. In Sri Lanka's growing digital economy, businesses that invest in UX design see higher conversion rates, lower bounce rates and more loyal customers.",
   whatIs: "UX design (User Experience design) involves researching how users interact with a product, identifying pain points and designing solutions that make the experience better. It includes user research, information architecture, wireframes and interactive prototypes.",
   whoNeeds: "Any business building or improving a website, app or digital platform in Sri Lanka benefits from UX design — especially e-commerce businesses, financial services, healthcare apps and government digital services.",

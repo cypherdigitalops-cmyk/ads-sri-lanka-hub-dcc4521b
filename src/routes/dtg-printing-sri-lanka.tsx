@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "DTG Printing Sri Lanka | Direct to Garment Photo-Quality Prints";
-const DESC = "DTG printing in Sri Lanka — photographic-quality full-colour print directly on t-shirts & garments. No minimum order. Any colour fabric. Call 0771437707.";
+const DESC = "DTG printing in Sri Lanka — photographic-quality full-colour print directly on t-shirts & garments. No minimum order. Any colour fabric. Call 0701772626.";
 
 export const Route = createFileRoute("/dtg-printing-sri-lanka")({
   head: () => ({

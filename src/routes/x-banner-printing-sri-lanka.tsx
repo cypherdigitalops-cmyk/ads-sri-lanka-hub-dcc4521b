@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "X Banner Printing Sri Lanka | Cross Frame Banners from Rs 2,500";
-const DESC = "X banner printing in Sri Lanka from Rs 2,500 including stand. Cross-frame display banners for events, retail & promotions. Fast delivery. Call 0771437707.";
+const DESC = "X banner printing in Sri Lanka from Rs 2,500 including stand. Cross-frame display banners for events, retail & promotions. Fast delivery. Call 0701772626.";
 
 export const Route = createFileRoute("/x-banner-printing-sri-lanka")({
   head: () => ({

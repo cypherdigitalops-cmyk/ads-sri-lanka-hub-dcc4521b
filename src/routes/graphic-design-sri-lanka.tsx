@@ -3,7 +3,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { SITE } from "@/data/site";
 
 const TITLE = "Graphic Design Sri Lanka — Logo, Branding, Print & Digital Design Services";
-const DESC = "Professional graphic design services in Sri Lanka — logo design, branding, brochures, packaging, web design, social media design and more. Call 0771437707 for a free quote.";
+const DESC = "Professional graphic design services in Sri Lanka — logo design, branding, brochures, packaging, web design, social media design and more. Call 0701772626 for a free quote.";
 
 const JSONLD = {
   "@context": "https://schema.org",
@@ -98,7 +98,7 @@ const GROUPS: Group[] = [
 ];
 
 const FAQS = [
-  { q: "How much does graphic design cost in Sri Lanka?", a: "Costs vary by service. Logo design starts from Rs 15,000. Brochures from Rs 8,000. Company profiles from Rs 25,000. Packaging design from Rs 20,000. Call 0771437707 for a same-day quote." },
+  { q: "How much does graphic design cost in Sri Lanka?", a: "Costs vary by service. Logo design starts from Rs 15,000. Brochures from Rs 8,000. Company profiles from Rs 25,000. Packaging design from Rs 20,000. Call 0701772626 for a same-day quote." },
   { q: "How long does graphic design take?", a: "Simple designs like flyers and social media posts can be delivered within 24–48 hours. Logos take 5–10 working days. Company profiles or packaging take 1–3 weeks." },
   { q: "Do you design in Sinhala and Tamil?", a: "Yes — we design in Sinhala, Tamil and English, including proper Unicode typography for both scripts." },
   { q: "What files will I receive?", a: "You receive editable source files (AI or PSD), print-ready PDFs, and web formats (PNG, JPG, SVG). You own all files outright." },

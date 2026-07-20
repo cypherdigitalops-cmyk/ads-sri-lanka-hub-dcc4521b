@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "LED Screen Rental Sri Lanka — Trusted Sri Lankan Agency | advertisingsrilanka.lk";
-const DESC = "Looking for led screen rental sri lanka? Our Sri Lankan team plans, executes and delivers seamless led screen rental sri lanka with full production support. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Looking for led screen rental sri lanka? Our Sri Lankan team plans, executes and delivers seamless led screen rental sri lanka with full production support. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/led-screen-rental-sri-lanka")({
   head: () => ({
@@ -90,7 +90,7 @@ function LedSizeTable() {
         All sizes available islandwide across Sri Lanka — Colombo, Kandy, Galle, Negombo, Jaffna and beyond. Not sure what size fits your venue? Tell us your hall dimensions and guest count — we will recommend the right screen for free.
         <div className="mt-4 flex flex-wrap gap-3">
           <a href={`tel:${SITE.phone}`} className="inline-flex items-center justify-center rounded-full bg-[image:var(--gradient-accent)] px-5 py-3 text-sm font-semibold text-accent-foreground">Call {SITE.phone}</a>
-          <a href="https://wa.me/94771437707?text=Hi,%20I%20need%20help%20choosing%20the%20right%20LED%20screen%20size%20for%20my%20event%20in%20Sri%20Lanka" className="inline-flex items-center justify-center rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold">WhatsApp for Size Guide</a>
+          <a href="https://wa.me/94701772626?text=Hi,%20I%20need%20help%20choosing%20the%20right%20LED%20screen%20size%20for%20my%20event%20in%20Sri%20Lanka" className="inline-flex items-center justify-center rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold">WhatsApp for Size Guide</a>
         </div>
       </div>
     </section>

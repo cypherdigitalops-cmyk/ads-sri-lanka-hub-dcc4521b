@@ -268,7 +268,7 @@ export const LED_SCREEN_RENTAL_EXTRA_FAQS: FAQ[] = [
   },
   {
     q: "How much does LED screen rental cost in Sri Lanka?",
-    a: "LED screen rental in Sri Lanka is quoted based on screen size, pixel pitch, event duration, location and whether additional services such as generator hire or live camera IMAG are required. Contact us on 0771437707 or WhatsApp with your event date, venue, approximate screen size requirement and number of attendees — we will provide a detailed written quotation within 2 working hours.",
+    a: "LED screen rental in Sri Lanka is quoted based on screen size, pixel pitch, event duration, location and whether additional services such as generator hire or live camera IMAG are required. Contact us on 0701772626 or WhatsApp with your event date, venue, approximate screen size requirement and number of attendees — we will provide a detailed written quotation within 2 working hours.",
   },
   {
     q: "Is an LED screen better than a projector for events in Sri Lanka?",

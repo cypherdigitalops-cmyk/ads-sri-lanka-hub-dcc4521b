@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Tuk Tuk Branding Sri Lanka | Three-Wheeler Advertising & Wraps";
-const DESC = "Tuk tuk branding & three-wheeler advertising in Sri Lanka. Printed vinyl graphics for fleet & individual three-wheelers. Islandwide. Call 0771437707.";
+const DESC = "Tuk tuk branding & three-wheeler advertising in Sri Lanka. Printed vinyl graphics for fleet & individual three-wheelers. Islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/tuk-tuk-branding-sri-lanka")({
   head: () => ({

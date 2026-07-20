@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Cap Printing Sri Lanka | Embroidered & Printed Caps from Rs 350";
-const DESC = "Cap printing in Sri Lanka from Rs 350. Embroidery, heat-transfer & screen print on cotton, dry-fit & trucker caps. Min 25 units. Call 0771437707.";
+const DESC = "Cap printing in Sri Lanka from Rs 350. Embroidery, heat-transfer & screen print on cotton, dry-fit & trucker caps. Min 25 units. Call 0701772626.";
 
 export const Route = createFileRoute("/cap-printing-sri-lanka")({
   head: () => ({

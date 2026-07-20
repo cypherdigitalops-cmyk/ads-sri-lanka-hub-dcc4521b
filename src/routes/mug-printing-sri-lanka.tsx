@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Mug Printing Sri Lanka — Photo & Logo Mugs";
-const DESC = "Mug printing in Sri Lanka — ceramic, magic & travel mugs with photo or logo print from 12 units. Same-day Colombo, islandwide. Call 0771437707.";
+const DESC = "Mug printing in Sri Lanka — ceramic, magic & travel mugs with photo or logo print from 12 units. Same-day Colombo, islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/mug-printing-sri-lanka")({
   head: () => ({

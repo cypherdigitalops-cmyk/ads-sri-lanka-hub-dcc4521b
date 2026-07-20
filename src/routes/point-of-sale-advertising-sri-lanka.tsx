@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
 const TITLE = "Point of Sale Advertising Sri Lanka | Retail POS Display";
-const DESC = "Point of sale advertising in Sri Lanka — shelf talkers, danglers, wobblers, FSDUs & counter displays for retail brands. Call 0771437707.";
+const DESC = "Point of sale advertising in Sri Lanka — shelf talkers, danglers, wobblers, FSDUs & counter displays for retail brands. Call 0701772626.";
 
 export const Route = createFileRoute("/point-of-sale-advertising-sri-lanka")({
   head: () => ({

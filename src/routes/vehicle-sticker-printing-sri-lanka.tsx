@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Vehicle Sticker Printing Sri Lanka | Car & Van Vinyl Stickers";
-const DESC = "Vehicle sticker printing in Sri Lanka using cast vinyl. Car, van, bus & tuk tuk stickers from Rs 25/sqft. Weatherproof 3-5 year life. Islandwide. Call 0771437707.";
+const DESC = "Vehicle sticker printing in Sri Lanka using cast vinyl. Car, van, bus & tuk tuk stickers from Rs 25/sqft. Weatherproof 3-5 year life. Islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/vehicle-sticker-printing-sri-lanka")({
   head: () => ({

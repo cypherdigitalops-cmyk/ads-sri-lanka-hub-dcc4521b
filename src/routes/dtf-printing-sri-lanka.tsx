@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "DTF Printing Sri Lanka | Heat Transfers from Rs 150 Each";
-const DESC = "DTF printing in Sri Lanka from Rs 150 per transfer. Full-colour heat transfers for t-shirts, hoodies & bags. No minimum order. Any fabric colour. Call 0771437707.";
+const DESC = "DTF printing in Sri Lanka from Rs 150 per transfer. Full-colour heat transfers for t-shirts, hoodies & bags. No minimum order. Any fabric colour. Call 0701772626.";
 
 export const Route = createFileRoute("/dtf-printing-sri-lanka")({
   head: () => ({

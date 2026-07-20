@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Letterhead Printing Sri Lanka | A4 Letterheads from Rs 8 Each";
-const DESC = "Letterhead printing in Sri Lanka from Rs 8 per A4 sheet. 80gsm & 100gsm bond paper, full-colour or single-colour. Minimum 500 sheets. Call 0771437707.";
+const DESC = "Letterhead printing in Sri Lanka from Rs 8 per A4 sheet. 80gsm & 100gsm bond paper, full-colour or single-colour. Minimum 500 sheets. Call 0701772626.";
 
 export const Route = createFileRoute("/letterhead-printing-sri-lanka")({
   head: () => ({

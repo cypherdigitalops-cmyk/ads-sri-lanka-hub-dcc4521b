@@ -228,7 +228,7 @@ export const BANNER_PRINTING_EXTRA_FAQS: FAQ[] = [
   },
   {
     q: "Can I get same-day banner printing in Colombo?",
-    a: "Yes. Same-day banner printing is available in Colombo for orders placed with approved, print-ready artwork before 10:00 AM on working days. Standard sizes in 440gsm frontlit flex with eyelet finish are available for same-day turnaround. Call 0771437707 to confirm availability before sending artwork.",
+    a: "Yes. Same-day banner printing is available in Colombo for orders placed with approved, print-ready artwork before 10:00 AM on working days. Standard sizes in 440gsm frontlit flex with eyelet finish are available for same-day turnaround. Call 0701772626 to confirm availability before sending artwork.",
   },
   {
     q: "What is the difference between flex and fabric banner printing?",

@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "mobile-app-ui-design-sri-lanka",
   h1: "Mobile App UI Design in Sri Lanka",
   metaTitle: "Mobile App UI Design Sri Lanka — App Interface Design | Advertising Sri Lanka",
-  metaDescription: "Professional mobile app UI design in Sri Lanka for iOS and Android. Intuitive interfaces that users love. From Rs 60,000. Call 0771437707.",
+  metaDescription: "Professional mobile app UI design in Sri Lanka for iOS and Android. Intuitive interfaces that users love. From Rs 60,000. Call 0701772626.",
   intro: "A great mobile app starts with a great interface. Clean layouts, clear navigation and tappable, accessible controls are what make users open your app every day instead of uninstalling it after a week.",
   whatIs: "Mobile app UI design involves creating the complete visual interface for a mobile application — all screens, navigation, buttons, icons and interactions. It covers both iOS and Android design guidelines and produces pixel-perfect files ready for development.",
   whoNeeds: "Startups, established businesses, banks, hospitals, delivery services, e-commerce brands and any organisation developing a mobile app in Sri Lanka needs professional UI design before beginning development.",

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Display Banner Printing Sri Lanka | Exhibition Display Banners";
-const DESC = "Display banner printing in Sri Lanka for exhibitions & trade shows. Roll-up, pop-up & flat display banners. Fast printing & delivery. Call 0771437707.";
+const DESC = "Display banner printing in Sri Lanka for exhibitions & trade shows. Roll-up, pop-up & flat display banners. Fast printing & delivery. Call 0701772626.";
 
 export const Route = createFileRoute("/display-banner-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Hoodie Printing Sri Lanka | Custom Branded Hoodies from Rs 2,500";
-const DESC = "Hoodie printing in Sri Lanka from Rs 2,500. Screen print, embroidery & DTF for corporate hoodies, event merch & team apparel. Fast turnaround. Call 0771437707.";
+const DESC = "Hoodie printing in Sri Lanka from Rs 2,500. Screen print, embroidery & DTF for corporate hoodies, event merch & team apparel. Fast turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/hoodie-printing-sri-lanka")({
   head: () => ({

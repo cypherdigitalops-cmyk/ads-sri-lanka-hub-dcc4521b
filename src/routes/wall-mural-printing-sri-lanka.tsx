@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Wall Mural Printing Sri Lanka | Office & Retail Wall Graphics";
-const DESC = "Custom wall mural printing in Sri Lanka for offices, retail & hospitality. Self-adhesive & fabric mural installations. Any size. Islandwide. Call 0771437707.";
+const DESC = "Custom wall mural printing in Sri Lanka for offices, retail & hospitality. Self-adhesive & fabric mural installations. Any size. Islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/wall-mural-printing-sri-lanka")({
   head: () => ({

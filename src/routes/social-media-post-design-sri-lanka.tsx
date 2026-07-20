@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "social-media-post-design-sri-lanka",
   h1: "Social Media Post Design in Sri Lanka",
   metaTitle: "Social Media Post Design Sri Lanka — Facebook, Instagram & TikTok Graphics | Advertising Sri Lanka",
-  metaDescription: "Professional social media post design in Sri Lanka for Facebook, Instagram, TikTok and LinkedIn. From Rs 5,000/month. Call 0771437707.",
+  metaDescription: "Professional social media post design in Sri Lanka for Facebook, Instagram, TikTok and LinkedIn. From Rs 5,000/month. Call 0701772626.",
   intro: "Sri Lankan audiences scroll fast. Branded, well-designed social media posts stop the scroll, build recognition and turn casual followers into loyal customers — across Facebook, Instagram, TikTok and LinkedIn.",
   whatIs: "Social media post design involves creating visual graphics specifically sized and designed for each platform — square posts, portrait stories, horizontal banners and animated GIFs. Each graphic communicates a message clearly while maintaining brand consistency.",
   whoNeeds: "Every business in Sri Lanka with a social media presence benefits from professional post design — restaurants, retail shops, schools, clinics, banks, hotels, real estate companies and any brand active on Facebook or Instagram.",

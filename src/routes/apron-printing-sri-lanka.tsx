@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Apron Printing Sri Lanka | Chef & Service Aprons for Restaurants";
-const DESC = "Custom apron printing in Sri Lanka. Branded chef & service aprons for restaurants, hotels & food businesses. Screen print & embroidery. Call 0771437707.";
+const DESC = "Custom apron printing in Sri Lanka. Branded chef & service aprons for restaurants, hotels & food businesses. Screen print & embroidery. Call 0701772626.";
 
 export const Route = createFileRoute("/apron-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
 const TITLE = "SMS Marketing Sri Lanka | Bulk SMS from Rs 0.80 per SMS";
-const DESC = "SMS marketing in Sri Lanka from Rs 0.80 per SMS. Bulk SMS, sender-ID setup, campaign scheduling & delivery reports. Call 0771437707.";
+const DESC = "SMS marketing in Sri Lanka from Rs 0.80 per SMS. Bulk SMS, sender-ID setup, campaign scheduling & delivery reports. Call 0701772626.";
 
 export const Route = createFileRoute("/sms-marketing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
 const TITLE = "Sri Lanka's #1 ATL Advertising Hub — Plans, Pricing & Free Advice";
-const DESC = "Above-the-line mass-media advertising across TV, radio, press and cinema. Get pricing and free advice — call 0771437707 or WhatsApp.";
+const DESC = "Above-the-line mass-media advertising across TV, radio, press and cinema. Get pricing and free advice — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/atl-advertising-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Polo Shirt Printing Sri Lanka | Corporate Uniforms from Rs 1,200";
-const DESC = "Polo shirt printing in Sri Lanka from Rs 1,200. Embroidery, screen print & DTF for corporate uniforms & branded polo shirts. Minimum 12 pieces. Call 0771437707.";
+const DESC = "Polo shirt printing in Sri Lanka from Rs 1,200. Embroidery, screen print & DTF for corporate uniforms & branded polo shirts. Minimum 12 pieces. Call 0701772626.";
 
 export const Route = createFileRoute("/polo-shirt-printing-sri-lanka")({
   head: () => ({

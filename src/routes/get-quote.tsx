@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 
 const TITLE = "Get a Free Advertising Quote in Sri Lanka | advertisingsrilanka.lk";
-const DESC = "Request a custom advertising plan and free quote for your business in Sri Lanka. ATL, BTL, digital, SEO, outdoor & more. Call 0771437707.";
+const DESC = "Request a custom advertising plan and free quote for your business in Sri Lanka. ATL, BTL, digital, SEO, outdoor & more. Call 0701772626.";
 
 export const Route = createFileRoute("/get-quote")({
   validateSearch: (search: Record<string, unknown>) => ({

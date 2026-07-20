@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Tote Bag Printing Sri Lanka | Canvas & Non-Woven Bags from Rs 350";
-const DESC = "Tote bag printing in Sri Lanka from Rs 350. Cotton canvas, non-woven & jute bags with custom logo printing. Corporate gifts & events. Call 0771437707.";
+const DESC = "Tote bag printing in Sri Lanka from Rs 350. Cotton canvas, non-woven & jute bags with custom logo printing. Corporate gifts & events. Call 0701772626.";
 
 export const Route = createFileRoute("/tote-bag-printing-sri-lanka")({
   head: () => ({

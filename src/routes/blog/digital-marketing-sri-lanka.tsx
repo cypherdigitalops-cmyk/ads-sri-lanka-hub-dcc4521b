@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
 const TITLE = "Digital Marketing Sri Lanka 2026 — Packages, Pricing (LKR) & Best Agencies";
-const DESC = "Complete digital marketing Sri Lanka guide: SEO, Google Ads, Facebook & Instagram costs in LKR, package pricing, agency selection, ROI benchmarks. Free strategy call: 0771437707.";
+const DESC = "Complete digital marketing Sri Lanka guide: SEO, Google Ads, Facebook & Instagram costs in LKR, package pricing, agency selection, ROI benchmarks. Free strategy call: 0701772626.";
 
 export const Route = createFileRoute("/blog/digital-marketing-sri-lanka")({
   head: () => ({

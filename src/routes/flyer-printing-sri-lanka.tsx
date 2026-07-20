@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Flyer Printing Sri Lanka | A5 & A4 Flyers from Rs 3 Each";
-const DESC = "Flyer printing in Sri Lanka from Rs 3 per A5 flyer. Single & double sided, gloss or matt. Minimum 100 copies. Fast 24hr turnaround. Call 0771437707.";
+const DESC = "Flyer printing in Sri Lanka from Rs 3 per A5 flyer. Single & double sided, gloss or matt. Minimum 100 copies. Fast 24hr turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/flyer-printing-sri-lanka")({
   head: () => ({

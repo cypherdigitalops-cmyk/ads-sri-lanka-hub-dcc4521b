@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Lenticular Printing Sri Lanka | 3D & Flip Effect Prints";
-const DESC = "Lenticular printing in Sri Lanka — 3D, flip, zoom & morph effects for POS displays & premium advertising. Eye-catching & memorable. Call 0771437707.";
+const DESC = "Lenticular printing in Sri Lanka — 3D, flip, zoom & morph effects for POS displays & premium advertising. Eye-catching & memorable. Call 0701772626.";
 
 export const Route = createFileRoute("/lenticular-printing-sri-lanka")({
   head: () => ({

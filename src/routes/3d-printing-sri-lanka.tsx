@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "3D Printing Sri Lanka 2026 | FDM, SLA & Resin Prototyping from Rs 500";
-const DESC = "Professional 3D printing in Sri Lanka — FDM, SLA resin & SLS prototyping, architectural models, custom parts & jigs from Rs 500. PLA, ABS, PETG, TPU, nylon & tough resin. Same-week delivery islandwide. WhatsApp 0771437707.";
+const DESC = "Professional 3D printing in Sri Lanka — FDM, SLA resin & SLS prototyping, architectural models, custom parts & jigs from Rs 500. PLA, ABS, PETG, TPU, nylon & tough resin. Same-week delivery islandwide. WhatsApp 0701772626.";
 
 export const Route = createFileRoute("/3d-printing-sri-lanka")({
   head: () => ({

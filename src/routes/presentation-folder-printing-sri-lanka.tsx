@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Presentation Folder Printing Sri Lanka | From Rs 250 Each";
-const DESC = "Presentation folder printing in Sri Lanka from Rs 250. Corporate folders, document wallets with spot UV & foil options. Offset quality. Call 0771437707.";
+const DESC = "Presentation folder printing in Sri Lanka from Rs 250. Corporate folders, document wallets with spot UV & foil options. Offset quality. Call 0701772626.";
 
 export const Route = createFileRoute("/presentation-folder-printing-sri-lanka")({
   head: () => ({

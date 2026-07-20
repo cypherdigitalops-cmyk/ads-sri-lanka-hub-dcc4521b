@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Notepad Printing Sri Lanka | Branded Notepads from Rs 150 Each";
-const DESC = "Custom notepad printing in Sri Lanka from Rs 150. Branded notepads & memo pads for corporate gifting, hotels & offices. Any size. Call 0771437707.";
+const DESC = "Custom notepad printing in Sri Lanka from Rs 150. Branded notepads & memo pads for corporate gifting, hotels & offices. Any size. Call 0701772626.";
 
 export const Route = createFileRoute("/notepad-printing-sri-lanka")({
   head: () => ({

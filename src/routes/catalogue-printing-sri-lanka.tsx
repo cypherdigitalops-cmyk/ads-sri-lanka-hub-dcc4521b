@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Catalogue Printing Sri Lanka | Product Catalogues from Rs 85";
-const DESC = "Catalogue printing in Sri Lanka from Rs 85 per copy. A4/A5 perfect-bound or saddle-stitched, gloss/matt lamination. Min 100 copies. Call 0771437707.";
+const DESC = "Catalogue printing in Sri Lanka from Rs 85 per copy. A4/A5 perfect-bound or saddle-stitched, gloss/matt lamination. Min 100 copies. Call 0701772626.";
 
 export const Route = createFileRoute("/catalogue-printing-sri-lanka")({
   head: () => ({

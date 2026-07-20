@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Exhibition Stall Branding Sri Lanka | Booth Design & Build";
-const DESC = "Exhibition stall branding in Sri Lanka — booth design, fabric backdrops, pop-up walls & full stand build for BMICH & SLECC. Call 0771437707.";
+const DESC = "Exhibition stall branding in Sri Lanka — booth design, fabric backdrops, pop-up walls & full stand build for BMICH & SLECC. Call 0701772626.";
 
 export const Route = createFileRoute("/exhibition-stall-branding-sri-lanka")({
   head: () => ({

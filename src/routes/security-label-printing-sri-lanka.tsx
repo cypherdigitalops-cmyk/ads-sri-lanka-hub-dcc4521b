@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Security Label Printing Sri Lanka | Void & Tamper-Evident Seals";
-const DESC = "Security label printing in Sri Lanka. Void labels, tamper-evident seals, holographic stickers & serialised labels for product authentication. Call 0771437707.";
+const DESC = "Security label printing in Sri Lanka. Void labels, tamper-evident seals, holographic stickers & serialised labels for product authentication. Call 0701772626.";
 
 export const Route = createFileRoute("/security-label-printing-sri-lanka")({
   head: () => ({

@@ -2,9 +2,9 @@ export const SITE = {
   name: "Advertising Sri Lanka",
   domain: "advertisingsrilanka.lk",
   url: "https://advertisingsrilanka.lk",
-  phone: "0771437707",
-  phoneIntl: "+94771437707",
-  whatsapp: "https://wa.me/94771437707",
+  phone: "0701772626",
+  phoneIntl: "+94701772626",
+  whatsapp: "https://wa.me/94701772626",
   tagline: "Sri Lanka's #1 Advertising Solutions Hub",
 };
 

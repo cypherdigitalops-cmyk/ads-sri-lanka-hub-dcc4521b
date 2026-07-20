@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "web-banner-design-sri-lanka",
   h1: "Web Banner Design in Sri Lanka",
   metaTitle: "Web Banner Design Sri Lanka — Display Ad & Banner Design | Advertising Sri Lanka",
-  metaDescription: "Professional web banner and display ad design in Sri Lanka. Google Display ads, website banners and digital advertising graphics. From Rs 5,000. Call 0771437707.",
+  metaDescription: "Professional web banner and display ad design in Sri Lanka. Google Display ads, website banners and digital advertising graphics. From Rs 5,000. Call 0701772626.",
   intro: "Web banners and display ads are the visual face of your digital advertising. A professionally designed banner communicates your offer clearly, reinforces your brand and drives clicks — in a fraction of a second of viewer attention.",
   whatIs: "Web banner design involves creating digital advertising graphics in standard IAB sizes for display advertising networks (Google Display Network), website banners and digital out-of-home screens. Each banner must communicate quickly and clearly.",
   whoNeeds: "Businesses running Google Display campaigns, e-commerce brands, hotels, real estate developers and any company advertising online in Sri Lanka needs professionally designed web banners and display ads.",

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Poster Printing Sri Lanka | A3 A2 A1 & Custom Size Posters";
-const DESC = "Poster printing in Sri Lanka — A3, A2, A1 & custom sizes. Gloss & matt lamination. From Rs 80 per A3. Fast 24–48hr turnaround. Islandwide delivery. Call 0771437707.";
+const DESC = "Poster printing in Sri Lanka — A3, A2, A1 & custom sizes. Gloss & matt lamination. From Rs 80 per A3. Fast 24–48hr turnaround. Islandwide delivery. Call 0701772626.";
 
 export const Route = createFileRoute("/poster-printing-sri-lanka")({
   head: () => ({

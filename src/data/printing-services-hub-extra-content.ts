@@ -104,7 +104,7 @@ export const PRINTING_HUB_EXTRA: Block[] = [
       ["Monaragala / Ella", "Uva", "3 days", "Plan ahead", "Hotel décor printing, canvas, signage"],
     ],
   },
-  { type: "p", text: "How to order from outside Colombo: WhatsApp your order details, artwork and delivery address to 0771437707. We confirm the production and delivery timeline by return. Payment by bank transfer — we dispatch on confirmation. For large or urgent outstation orders, call directly and we will plan the fastest available route." },
+  { type: "p", text: "How to order from outside Colombo: WhatsApp your order details, artwork and delivery address to 0701772626. We confirm the production and delivery timeline by return. Payment by bank transfer — we dispatch on confirmation. For large or urgent outstation orders, call directly and we will plan the fastest available route." },
 
   // ── SECTION 5: HOW TO CHOOSE ──
   { type: "h2", text: "How to Choose a Printing Company in Sri Lanka — What to Look For" },
@@ -177,7 +177,7 @@ export const PRINTING_HUB_EXTRA: Block[] = [
 export const PRINTING_HUB_EXTRA_FAQS: FAQ[] = [
   {
     q: "Where can I find printing services near me in Sri Lanka?",
-    a: "Printing services are available across all districts of Sri Lanka. Our production facility is in Colombo with islandwide delivery covering all 25 districts. For Colombo and the Western Province, same-day printing and delivery is available for orders placed before 11am. For Kandy, Galle, Negombo and other major cities, next-day delivery is standard. For outstation locations including Jaffna, Trincomalee, Anuradhapura and Batticaloa, delivery takes 2 to 4 days depending on location. WhatsApp 0771437707 or call us with your location and we will confirm the turnaround for your area.",
+    a: "Printing services are available across all districts of Sri Lanka. Our production facility is in Colombo with islandwide delivery covering all 25 districts. For Colombo and the Western Province, same-day printing and delivery is available for orders placed before 11am. For Kandy, Galle, Negombo and other major cities, next-day delivery is standard. For outstation locations including Jaffna, Trincomalee, Anuradhapura and Batticaloa, delivery takes 2 to 4 days depending on location. WhatsApp 0701772626 or call us with your location and we will confirm the turnaround for your area.",
   },
   {
     q: "What printing services are available in Sri Lanka?",
@@ -193,7 +193,7 @@ export const PRINTING_HUB_EXTRA_FAQS: FAQ[] = [
   },
   {
     q: "How much does printing cost in Sri Lanka?",
-    a: "Printing costs in Sri Lanka vary by product, material, quantity and finishing. Contact us on 0771437707 or WhatsApp with your specific requirements — quantity, size, material and delivery location — and we will provide a written quotation within 2 working hours. We are transparent on material grade and quantity bands so you know exactly what you are paying for.",
+    a: "Printing costs in Sri Lanka vary by product, material, quantity and finishing. Contact us on 0701772626 or WhatsApp with your specific requirements — quantity, size, material and delivery location — and we will provide a written quotation within 2 working hours. We are transparent on material grade and quantity bands so you know exactly what you are paying for.",
   },
   {
     q: "Do you deliver printing islandwide across Sri Lanka?",

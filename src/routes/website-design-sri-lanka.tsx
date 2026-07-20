@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "website-design-sri-lanka",
   h1: "Website Design in Sri Lanka",
   metaTitle: "Website Design Sri Lanka — CMS Website Design | Advertising Sri Lanka",
-  metaDescription: "Professional website design in Sri Lanka. CMS websites built to convert visitors into customers. From Rs 45,000. Call 0771437707.",
+  metaDescription: "Professional website design in Sri Lanka. CMS websites built to convert visitors into customers. From Rs 45,000. Call 0701772626.",
   intro: "Your website is the home base every advertising channel points to. A slow, outdated or confusing website destroys the return on any media investment. A professionally designed website turns visitors into enquiries and sales.",
   whatIs: "Website design in Sri Lanka involves creating a visually appealing, mobile-responsive and conversion-optimised site built on a CMS like WordPress. It includes the full design of every page — home, about, services, contact and more.",
   whoNeeds: "Every business in Sri Lanka that wants to be found online needs a professional website — from small local businesses to large corporations. A website is essential for credibility, Google visibility and customer acquisition.",

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Car Wrap Sri Lanka — Full Wraps from LKR 95,000 | 3M & Avery Cast Vinyl";
-const DESC = "Professional car wrap Sri Lanka: full wraps from LKR 95,000, partial from LKR 35,000. 3M, Avery, Oracal cast vinyl, 5–7 yr life. Free 3D mockup on WhatsApp 0771437707.";
+const DESC = "Professional car wrap Sri Lanka: full wraps from LKR 95,000, partial from LKR 35,000. 3M, Avery, Oracal cast vinyl, 5–7 yr life. Free 3D mockup on WhatsApp 0701772626.";
 
 export const Route = createFileRoute("/car-wrap-printing-sri-lanka")({
   head: () => ({

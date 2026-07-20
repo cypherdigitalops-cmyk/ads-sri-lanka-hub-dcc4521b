@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Invoice Book Printing Sri Lanka | Duplicate & Triplicate NCR";
-const DESC = "Invoice book printing in Sri Lanka. Duplicate & triplicate carbonless NCR books for retail, trade & services. Sequential numbering. Call 0771437707.";
+const DESC = "Invoice book printing in Sri Lanka. Duplicate & triplicate carbonless NCR books for retail, trade & services. Sequential numbering. Call 0701772626.";
 
 export const Route = createFileRoute("/invoice-book-printing-sri-lanka")({
   head: () => ({

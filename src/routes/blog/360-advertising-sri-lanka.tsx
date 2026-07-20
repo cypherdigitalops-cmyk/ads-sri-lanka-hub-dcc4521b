@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "ttl-advertising-sri-lanka")!;
 const TITLE = "How 360 Advertising Sri Lanka Works in Sri Lanka";
-const DESC = "Compare options, budgets and timelines for 360 advertising sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0771437707.";
+const DESC = "Compare options, budgets and timelines for 360 advertising sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0701772626.";
 
 export const Route = createFileRoute("/blog/360-advertising-sri-lanka")({
   head: () => ({

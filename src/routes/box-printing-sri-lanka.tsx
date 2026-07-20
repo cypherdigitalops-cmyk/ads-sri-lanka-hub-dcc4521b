@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Box Printing Sri Lanka | Custom Packaging Boxes & Gift Cartons";
-const DESC = "Custom packaging box printing in Sri Lanka. Product boxes, gift boxes & retail cartons with full-colour print. Die-cut & custom shapes available. Call 0771437707.";
+const DESC = "Custom packaging box printing in Sri Lanka. Product boxes, gift boxes & retail cartons with full-colour print. Die-cut & custom shapes available. Call 0701772626.";
 
 export const Route = createFileRoute("/box-printing-sri-lanka")({
   head: () => ({

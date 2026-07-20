@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
 const TITLE = "LinkedIn Ads Sri Lanka | B2B Lead Generation from Rs 50,000/month";
-const DESC = "LinkedIn ads management in Sri Lanka from Rs 50,000/month. B2B targeting, lead-gen forms, creative & reporting. Call 0771437707.";
+const DESC = "LinkedIn ads management in Sri Lanka from Rs 50,000/month. B2B targeting, lead-gen forms, creative & reporting. Call 0701772626.";
 
 export const Route = createFileRoute("/linkedin-ads-sri-lanka")({
   head: () => ({

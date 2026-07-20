@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Dye Sublimation Printing Sri Lanka | Fabric & Apparel Print";
-const DESC = "Dye sublimation printing in Sri Lanka — fabric banners, sportswear, flags & tabletop graphics with full-colour photo-quality print. Call 0771437707.";
+const DESC = "Dye sublimation printing in Sri Lanka — fabric banners, sportswear, flags & tabletop graphics with full-colour photo-quality print. Call 0701772626.";
 
 export const Route = createFileRoute("/dye-sublimation-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
 const TITLE = "Commercial Photography Sri Lanka — Brand, Product & Event Shoots";
-const DESC = "Professional commercial photography in Sri Lanka — product, food, fashion, corporate, event and brand campaign shoots. Call 0771437707.";
+const DESC = "Professional commercial photography in Sri Lanka — product, food, fashion, corporate, event and brand campaign shoots. Call 0701772626.";
 
 export const Route = createFileRoute("/photography-sri-lanka")({
   head: () => ({

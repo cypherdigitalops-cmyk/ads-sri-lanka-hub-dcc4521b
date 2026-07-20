@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
 const TITLE = "Ecommerce SEO Sri Lanka | Shopify & WooCommerce SEO Services";
-const DESC = "Ecommerce SEO in Sri Lanka — Shopify, WooCommerce & Magento optimisation, product schema, technical audits & link building. Call 0771437707.";
+const DESC = "Ecommerce SEO in Sri Lanka — Shopify, WooCommerce & Magento optimisation, product schema, technical audits & link building. Call 0701772626.";
 
 export const Route = createFileRoute("/ecommerce-seo-sri-lanka")({
   head: () => ({

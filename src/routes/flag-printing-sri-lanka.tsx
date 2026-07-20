@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Flag Printing Sri Lanka 2026 | Teardrop, Feather & Custom Flags from Rs 3,500";
-const DESC = "Custom flag printing in Sri Lanka — teardrop, feather, rectangle, table & national flags from Rs 3,500. Dye sublimation on premium polyester, pole + base included, 3–5 day delivery islandwide. WhatsApp 0771437707.";
+const DESC = "Custom flag printing in Sri Lanka — teardrop, feather, rectangle, table & national flags from Rs 3,500. Dye sublimation on premium polyester, pole + base included, 3–5 day delivery islandwide. WhatsApp 0701772626.";
 
 export const Route = createFileRoute("/flag-printing-sri-lanka")({
   head: () => ({

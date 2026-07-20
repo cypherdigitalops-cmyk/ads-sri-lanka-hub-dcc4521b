@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Certificate Printing Sri Lanka | Award Certificates & Diplomas";
-const DESC = "Certificate printing in Sri Lanka for academic awards, corporate recognition & completion diplomas. Quality paper & premium finishing. Call 0771437707.";
+const DESC = "Certificate printing in Sri Lanka for academic awards, corporate recognition & completion diplomas. Quality paper & premium finishing. Call 0701772626.";
 
 export const Route = createFileRoute("/certificate-printing-sri-lanka")({
   head: () => ({

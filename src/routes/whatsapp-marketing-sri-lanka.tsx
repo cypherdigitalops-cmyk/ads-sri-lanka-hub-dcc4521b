@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
 const TITLE = "WhatsApp Marketing Sri Lanka | WhatsApp Business API & Bulk Send";
-const DESC = "WhatsApp marketing in Sri Lanka — WhatsApp Business API setup, bulk broadcasts, chatbots & campaign management. Call 0771437707.";
+const DESC = "WhatsApp marketing in Sri Lanka — WhatsApp Business API setup, bulk broadcasts, chatbots & campaign management. Call 0701772626.";
 
 export const Route = createFileRoute("/whatsapp-marketing-sri-lanka")({
   head: () => ({

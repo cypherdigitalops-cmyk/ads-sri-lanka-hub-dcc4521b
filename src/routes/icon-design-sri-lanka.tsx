@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "icon-design-sri-lanka",
   h1: "Icon Design in Sri Lanka",
   metaTitle: "Icon Design Sri Lanka — Custom Icon Set Design | Advertising Sri Lanka",
-  metaDescription: "Professional custom icon design in Sri Lanka for apps, websites and brand systems. From Rs 15,000. Call 0771437707.",
+  metaDescription: "Professional custom icon design in Sri Lanka for apps, websites and brand systems. From Rs 15,000. Call 0701772626.",
   intro: "Custom icons give your app or website a distinctive, cohesive visual identity. Generic icon sets make your product look unfinished — custom icons signal quality and attention to detail that users notice and trust.",
   whatIs: "Icon design involves creating a set of custom vector icons that are visually consistent, recognisable at small sizes and aligned with your brand's visual style. Icons are used in apps, websites, infographics, presentations and printed materials.",
   whoNeeds: "App developers, web designers, businesses building custom software, marketing teams needing infographic icons and brands creating design systems in Sri Lanka all need professional icon design.",

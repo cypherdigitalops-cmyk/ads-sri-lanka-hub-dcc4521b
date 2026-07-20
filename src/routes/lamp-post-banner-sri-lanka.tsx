@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Lamp Post Banner Sri Lanka | Street Pole Banners for Events";
-const DESC = "Lamp post banner printing & installation in Sri Lanka. Double-sided street pole banners for events, elections & brand awareness campaigns. Call 0771437707.";
+const DESC = "Lamp post banner printing & installation in Sri Lanka. Double-sided street pole banners for events, elections & brand awareness campaigns. Call 0701772626.";
 
 export const Route = createFileRoute("/lamp-post-banner-sri-lanka")({
   head: () => ({

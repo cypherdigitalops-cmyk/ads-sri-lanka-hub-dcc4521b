@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "interior-book-design-sri-lanka",
   h1: "Interior Book Design in Sri Lanka",
   metaTitle: "Interior Book Design Sri Lanka — Book Layout & Typesetting | Advertising Sri Lanka",
-  metaDescription: "Professional interior book design and typesetting in Sri Lanka. Print-ready layouts for any genre. From Rs 15,000. Call 0771437707.",
+  metaDescription: "Professional interior book design and typesetting in Sri Lanka. Print-ready layouts for any genre. From Rs 15,000. Call 0701772626.",
   intro: "The interior design of a book is as important as its cover. Professional typesetting and layout ensures your book is easy to read, looks polished and meets the standards expected by readers and printers.",
   whatIs: "Interior book design involves typesetting your manuscript into a professionally designed page layout — including chapter headings, body text, footnotes, images, tables, running headers and page numbers. The result is a print-ready file for offset or digital printing.",
   whoNeeds: "Authors, publishers, academic institutions, schools, businesses producing annual reports and organisations publishing books in Sri Lanka need professional interior book design and typesetting.",

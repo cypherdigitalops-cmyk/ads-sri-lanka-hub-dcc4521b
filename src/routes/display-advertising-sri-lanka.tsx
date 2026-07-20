@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
 const TITLE = "Display Advertising Sri Lanka | Google & Programmatic Ads";
-const DESC = "Display advertising in Sri Lanka — Google Display Network, programmatic & retargeting campaigns with creative & reporting. Call 0771437707.";
+const DESC = "Display advertising in Sri Lanka — Google Display Network, programmatic & retargeting campaigns with creative & reporting. Call 0701772626.";
 
 export const Route = createFileRoute("/display-advertising-sri-lanka")({
   head: () => ({

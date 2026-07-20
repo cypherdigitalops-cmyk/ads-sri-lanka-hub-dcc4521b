@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Digital Printing Sri Lanka | Short-Run & On-Demand Print";
-const DESC = "Digital printing in Sri Lanka — short-run business cards, flyers, brochures & posters with same-day turnaround in Colombo. Call 0771437707.";
+const DESC = "Digital printing in Sri Lanka — short-run business cards, flyers, brochures & posters with same-day turnaround in Colombo. Call 0701772626.";
 
 export const Route = createFileRoute("/digital-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Offset Printing Sri Lanka | Brochures from Rs 20 per Copy";
-const DESC = "Offset printing in Sri Lanka from Rs 20 per copy. Brochures, catalogues, annual reports & stationery. Pantone colour matching. Call 0771437707.";
+const DESC = "Offset printing in Sri Lanka from Rs 20 per copy. Brochures, catalogues, annual reports & stationery. Pantone colour matching. Call 0701772626.";
 
 export const Route = createFileRoute("/offset-printing-sri-lanka")({
   head: () => ({

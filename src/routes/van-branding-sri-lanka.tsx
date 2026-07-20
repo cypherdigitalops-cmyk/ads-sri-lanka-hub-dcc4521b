@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Van Branding Sri Lanka | Full & Partial Van Wraps & Graphics";
-const DESC = "Van branding in Sri Lanka — full wraps from Rs 80,000, partial branding from Rs 30,000. Cast vinyl, 3–5 year outdoor life. Fleet discounts. Call 0771437707.";
+const DESC = "Van branding in Sri Lanka — full wraps from Rs 80,000, partial branding from Rs 30,000. Cast vinyl, 3–5 year outdoor life. Fleet discounts. Call 0701772626.";
 
 export const Route = createFileRoute("/van-branding-sri-lanka")({
   head: () => ({

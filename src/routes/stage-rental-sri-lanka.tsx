@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Stage Rental Sri Lanka — From LKR 25,000 | Free Quote in 30 Min";
-const DESC = "Professional stage rental Sri Lanka: modular decks, truss roofs, wedding & concert stages. LKR pricing, island-wide delivery, free LKR quote on WhatsApp 0771437707.";
+const DESC = "Professional stage rental Sri Lanka: modular decks, truss roofs, wedding & concert stages. LKR pricing, island-wide delivery, free LKR quote on WhatsApp 0701772626.";
 
 export const Route = createFileRoute("/stage-rental-sri-lanka")({
   head: () => ({

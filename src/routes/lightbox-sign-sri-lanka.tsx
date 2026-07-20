@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Lightbox Sign Sri Lanka | Illuminated Signs from Rs 8,000";
-const DESC = "Lightbox sign printing & fabrication in Sri Lanka from Rs 8,000. Backlit signs for shops, offices & events. Single & double-sided, custom sizes. Call 0771437707.";
+const DESC = "Lightbox sign printing & fabrication in Sri Lanka from Rs 8,000. Backlit signs for shops, offices & events. Single & double-sided, custom sizes. Call 0701772626.";
 
 export const Route = createFileRoute("/lightbox-sign-sri-lanka")({
   head: () => ({

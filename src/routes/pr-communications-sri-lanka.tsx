@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "pr-communications-sri-lanka")!;
 const TITLE = "PR & Communications in Sri Lanka — Services Hub";
-const DESC = "Public relations, media coverage, press releases and market research in Sri Lanka. Free guidance — call 0771437707 or WhatsApp.";
+const DESC = "Public relations, media coverage, press releases and market research in Sri Lanka. Free guidance — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/pr-communications-sri-lanka")({
   head: () => ({

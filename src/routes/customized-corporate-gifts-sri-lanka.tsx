@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Customized Corporate Gifts Sri Lanka | Logo-Branded Gifts";
-const DESC = "Customized corporate gifts in Sri Lanka — logo-branded executive sets, drinkware, tech & desk accessories. Min 25 units. Call 0771437707.";
+const DESC = "Customized corporate gifts in Sri Lanka — logo-branded executive sets, drinkware, tech & desk accessories. Min 25 units. Call 0701772626.";
 
 export const Route = createFileRoute("/customized-corporate-gifts-sri-lanka")({
   head: () => ({

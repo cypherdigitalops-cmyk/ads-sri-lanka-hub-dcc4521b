@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "email-design-sri-lanka",
   h1: "Email Design in Sri Lanka",
   metaTitle: "Email Design Sri Lanka — Email Template & Newsletter Design | Advertising Sri Lanka",
-  metaDescription: "Professional email template and newsletter design in Sri Lanka. Branded emails that get opened and clicked. From Rs 8,000. Call 0771437707.",
+  metaDescription: "Professional email template and newsletter design in Sri Lanka. Branded emails that get opened and clicked. From Rs 8,000. Call 0701772626.",
   intro: "A professionally designed email template builds brand trust in every inbox. With email marketing delivering the highest ROI of any digital channel — typically Rs 30–50 in revenue per Rs 1 spent — email design is one of the best investments a Sri Lankan business can make.",
   whatIs: "Email design involves creating HTML email templates for newsletters, promotional emails, welcome sequences, order confirmations and transactional emails. Good email design is mobile-responsive, loads quickly and guides the reader towards a clear call to action.",
   whoNeeds: "Businesses with email lists, e-commerce stores, hotels, schools, banks, insurance companies and any organisation using email marketing in Sri Lanka needs professional email template design.",

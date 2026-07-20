@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Event Branding Printing Sri Lanka | Full Event Identity & Print";
-const DESC = "Full event branding & print in Sri Lanka. Event identity, printed materials & branded environments for corporate events & launches. Call 0771437707.";
+const DESC = "Full event branding & print in Sri Lanka. Event identity, printed materials & branded environments for corporate events & launches. Call 0701772626.";
 
 export const Route = createFileRoute("/event-branding-printing-sri-lanka")({
   head: () => ({

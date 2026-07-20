@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Corporate Gifts Sri Lanka — Branded Pens, Mugs, Hampers from LKR 145";
-const DESC = "Corporate gifting Sri Lanka: branded pens, mugs, T-shirts, power banks, Ceylon tea hampers & awards. Bulk LKR pricing, 3–14 day delivery. WhatsApp 0771437707 for free quote.";
+const DESC = "Corporate gifting Sri Lanka: branded pens, mugs, T-shirts, power banks, Ceylon tea hampers & awards. Bulk LKR pricing, 3–14 day delivery. WhatsApp 0701772626 for free quote.";
 
 export const Route = createFileRoute("/corporate-gifting-sri-lanka")({
   head: () => ({

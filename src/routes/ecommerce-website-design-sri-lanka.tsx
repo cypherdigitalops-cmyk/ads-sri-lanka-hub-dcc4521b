@@ -5,7 +5,7 @@ const DATA: DesignSubService = {
   slug: "ecommerce-website-design-sri-lanka",
   h1: "E-commerce Website Design in Sri Lanka",
   metaTitle: "E-commerce Website Design Sri Lanka — Online Store Design | Advertising Sri Lanka",
-  metaDescription: "Professional e-commerce website design in Sri Lanka. Online stores built to sell — fast, mobile and conversion-ready. From Rs 80,000. Call 0771437707.",
+  metaDescription: "Professional e-commerce website design in Sri Lanka. Online stores built to sell — fast, mobile and conversion-ready. From Rs 80,000. Call 0701772626.",
   intro: "An e-commerce website is the engine of any online business in Sri Lanka. A professionally designed online store builds trust, simplifies the buying process and converts visitors into paying customers around the clock.",
   whatIs: "E-commerce website design involves building a fully functional online store where customers can browse products, add to cart, pay and receive order confirmations. In Sri Lanka, this includes integration with local payment gateways like PayHere, Genie and bank transfers.",
   whoNeeds: "Retailers, fashion brands, food companies, electronics sellers, gifting businesses and any product-based business in Sri Lanka wanting to sell online needs a professionally designed e-commerce website.",

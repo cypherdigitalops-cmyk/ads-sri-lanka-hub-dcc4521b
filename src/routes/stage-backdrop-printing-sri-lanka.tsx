@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Stage Backdrop Printing Sri Lanka | Conference Stage Banners";
-const DESC = "Stage backdrop printing in Sri Lanka for conferences, concerts & corporate events. Large format fabric & vinyl stage backdrops. Fast turnaround. Call 0771437707.";
+const DESC = "Stage backdrop printing in Sri Lanka for conferences, concerts & corporate events. Large format fabric & vinyl stage backdrops. Fast turnaround. Call 0701772626.";
 
 export const Route = createFileRoute("/stage-backdrop-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "UV Printing Sri Lanka | UV Flatbed Print on Any Material";
-const DESC = "UV printing in Sri Lanka — flatbed UV print on acrylic, wood, glass, metal & PVC. Scratch & weather resistant. Call 0771437707.";
+const DESC = "UV printing in Sri Lanka — flatbed UV print on acrylic, wood, glass, metal & PVC. Scratch & weather resistant. Call 0701772626.";
 
 export const Route = createFileRoute("/uv-printing-sri-lanka")({
   head: () => ({

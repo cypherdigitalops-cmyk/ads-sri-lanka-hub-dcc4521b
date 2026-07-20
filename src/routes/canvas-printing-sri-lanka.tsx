@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Canvas Printing Sri Lanka | Photo Canvas from Rs 1,500";
-const DESC = "Canvas printing in Sri Lanka from Rs 1,500. Stretched canvas, framed & roll canvas photo prints for homes, offices & hotels. Call 0771437707.";
+const DESC = "Canvas printing in Sri Lanka from Rs 1,500. Stretched canvas, framed & roll canvas photo prints for homes, offices & hotels. Call 0701772626.";
 
 export const Route = createFileRoute("/canvas-printing-sri-lanka")({
   head: () => ({

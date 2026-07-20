@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
 const TITLE = "Radio Advertising Sri Lanka | FM Ad Slots on Sirasa, Hiru & TNL";
-const DESC = "Radio advertising in Sri Lanka — ad slots on Sirasa FM, Hiru FM, TNL Radio, Y FM & Yes FM. Script, production & airtime buying. Call 0771437707.";
+const DESC = "Radio advertising in Sri Lanka — ad slots on Sirasa FM, Hiru FM, TNL Radio, Y FM & Yes FM. Script, production & airtime buying. Call 0701772626.";
 
 export const Route = createFileRoute("/radio-advertising-sri-lanka")({
   head: () => ({

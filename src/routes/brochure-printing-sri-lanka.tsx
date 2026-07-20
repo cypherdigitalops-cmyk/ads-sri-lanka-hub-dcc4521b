@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Brochure Printing Sri Lanka | A4 & A5 Brochures from Rs 25";
-const DESC = "Brochure printing in Sri Lanka from Rs 25 per copy. A4, A5, trifold & Z-fold. Gloss, matt & soft-touch lamination. Minimum 100 copies. Call 0771437707.";
+const DESC = "Brochure printing in Sri Lanka from Rs 25 per copy. A4, A5, trifold & Z-fold. Gloss, matt & soft-touch lamination. Minimum 100 copies. Call 0701772626.";
 
 export const Route = createFileRoute("/brochure-printing-sri-lanka")({
   head: () => ({

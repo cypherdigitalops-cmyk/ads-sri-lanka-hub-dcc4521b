@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Window Sticker Printing Sri Lanka — Decals & Frosted Film";
-const DESC = "Window sticker printing in Sri Lanka — custom decals, frosted film, one-way vision & shop window graphics. Any size, fast delivery islandwide. Call 0771437707.";
+const DESC = "Window sticker printing in Sri Lanka — custom decals, frosted film, one-way vision & shop window graphics. Any size, fast delivery islandwide. Call 0701772626.";
 
 export const Route = createFileRoute("/window-sticker-printing-sri-lanka")({
   head: () => ({

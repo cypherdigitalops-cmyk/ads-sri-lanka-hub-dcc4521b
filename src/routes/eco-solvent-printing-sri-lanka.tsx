@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Eco Solvent Printing Sri Lanka | Outdoor-Grade Wide Format";
-const DESC = "Eco solvent printing in Sri Lanka — outdoor-grade banners, vehicle graphics & signage with UV-stable, low-odour inks. Call 0771437707.";
+const DESC = "Eco solvent printing in Sri Lanka — outdoor-grade banners, vehicle graphics & signage with UV-stable, low-odour inks. Call 0701772626.";
 
 export const Route = createFileRoute("/eco-solvent-printing-sri-lanka")({
   head: () => ({

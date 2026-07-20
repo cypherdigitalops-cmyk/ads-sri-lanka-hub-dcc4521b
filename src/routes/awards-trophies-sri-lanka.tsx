@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Awards & Trophies Sri Lanka | Crystal, Acrylic & Metal Trophies";
-const DESC = "Awards & trophies in Sri Lanka — crystal, acrylic, metal & wooden trophies for sports, corporate & academic events. Custom engraving. Call 0771437707.";
+const DESC = "Awards & trophies in Sri Lanka — crystal, acrylic, metal & wooden trophies for sports, corporate & academic events. Custom engraving. Call 0701772626.";
 
 export const Route = createFileRoute("/awards-trophies-sri-lanka")({
   head: () => ({

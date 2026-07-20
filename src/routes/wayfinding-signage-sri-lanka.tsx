@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Wayfinding Signage Sri Lanka | Directional & Navigation Signs";
-const DESC = "Wayfinding signage in Sri Lanka for hospitals, hotels & offices. Directional signs, room ID & navigation panels. Islandwide install. Call 0771437707.";
+const DESC = "Wayfinding signage in Sri Lanka for hospitals, hotels & offices. Directional signs, room ID & navigation panels. Islandwide install. Call 0701772626.";
 
 export const Route = createFileRoute("/wayfinding-signage-sri-lanka")({
   head: () => ({

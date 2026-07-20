@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Billboard Printing Sri Lanka | Hoarding & Banner Print from Rs 90/sqft";
-const DESC = "Billboard printing in Sri Lanka — large-format hoardings, building wraps & roadside billboards from Rs 90/sqft. UV-stable inks, 510gsm flex. Call 0771437707.";
+const DESC = "Billboard printing in Sri Lanka — large-format hoardings, building wraps & roadside billboards from Rs 90/sqft. UV-stable inks, 510gsm flex. Call 0701772626.";
 
 export const Route = createFileRoute("/billboard-printing-sri-lanka")({
   head: () => ({

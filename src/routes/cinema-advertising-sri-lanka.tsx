@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "atl-advertising-sri-lanka")!;
 const TITLE = "Cinema Advertising Sri Lanka | Scope, PVR & Savoy Ad Slots";
-const DESC = "Cinema advertising in Sri Lanka — on-screen ad slots at Scope, PVR, Savoy & Liberty cinemas. Production, placement & reporting. Call 0771437707.";
+const DESC = "Cinema advertising in Sri Lanka — on-screen ad slots at Scope, PVR, Savoy & Liberty cinemas. Production, placement & reporting. Call 0701772626.";
 
 export const Route = createFileRoute("/cinema-advertising-sri-lanka")({
   head: () => ({

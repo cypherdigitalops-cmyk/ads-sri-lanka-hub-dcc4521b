@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
 const TITLE = "Outdoor Advertising Sri Lanka — Billboards, DOOH, Transit & OOH Campaigns";
-const DESC = "Outdoor advertising Sri Lanka — billboards, digital DOOH, transit, mobile billboards & hoardings. Premium sites on Galle Road, Baseline Road & islandwide. Call 0771437707.";
+const DESC = "Outdoor advertising Sri Lanka — billboards, digital DOOH, transit, mobile billboards & hoardings. Premium sites on Galle Road, Baseline Road & islandwide. Call 0701772626.";
 const H1 = "Outdoor Advertising Sri Lanka — Billboards, DOOH, Transit & Hoardings Islandwide";
 const INTRO = "Plan and book outdoor advertising in Sri Lanka — static billboards, digital DOOH screens, gantries, bus shelters, transit, mobile billboards and airport advertising on Galle Road, Baseline Road, Kirulapona, Thurstan Road and across all 25 districts. Permitted sites, transparent rates and free media planning.";
 
@@ -18,7 +18,7 @@ const SERVICE_JSONLD = {
     "@type": "Organization",
     name: "Advertising Sri Lanka",
     url: SITE.url,
-    telephone: "+94771437707",
+    telephone: "+94701772626",
     address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
   },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
@@ -42,10 +42,10 @@ const FAQ_JSONLD = {
     { "@type": "Question", name: "What is outdoor advertising (OOH) in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "OOH advertising in Sri Lanka covers billboards, digital LED screens (DOOH), transit advertising on buses/trains/three-wheelers, lamp post banners, mobile billboards and airport advertising. It cannot be skipped or blocked — visible to everyone who passes." } },
     { "@type": "Question", name: "What is DOOH advertising in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "DOOH (Digital Out-of-Home) uses digital LED screens to display animated and video advertising. Key Sri Lanka locations include One Galle Face Mall, Thurstan Road and Kirulapona gantries, World Trade Centre, Colombo City Centre Mall, Kandy City Centre and Bandaranaike International Airport." } },
     { "@type": "Question", name: "Which is better — static billboards or digital DOOH in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Static billboards give 100% share of voice 24/7. DOOH rotates between advertisers (15–25% SOV) at lower cost with creative flexibility. For brand launches and sustained awareness use static. For short promotions with changeable creative use DOOH. Many advertisers run both simultaneously." } },
-    { "@type": "Question", name: "How much does billboard advertising cost in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Costs vary by location, size and duration. Premium sites on Galle Road and key Colombo junctions command the highest rates; provincial and outstation locations are considerably lower. Call 0771437707 with your preferred location, size and duration for a detailed written quotation within 24 hours." } },
+    { "@type": "Question", name: "How much does billboard advertising cost in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Costs vary by location, size and duration. Premium sites on Galle Road and key Colombo junctions command the highest rates; provincial and outstation locations are considerably lower. Call 0701772626 with your preferred location, size and duration for a detailed written quotation within 24 hours." } },
     { "@type": "Question", name: "Do I need a permit for a billboard in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Yes — CMC or the relevant local authority permit plus RDA approval for sites adjacent to national highways. Permits must be in place before installation and renewed annually. Reputable OOH suppliers hold valid permits for all their sites — always verify in writing before booking." } },
     { "@type": "Question", name: "How long should an outdoor advertising campaign run in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Minimum 4 weeks for promotional campaigns. Minimum 3 months for brand awareness objectives. Outdoor works through repeated exposure — less than 4 weeks rarely builds measurable recall. Most effective campaigns run 3 to 6 months on key routes." } },
-    { "@type": "Question", name: "What are the best billboard locations in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Highest-value locations: Galle Road (80,000–200,000 daily impressions), Baseline Road (60,000–120,000), Kirulapona and Thurstan Road gantries (100,000–150,000) and One Galle Face Mall LED façade. Contact 0771437707 for site availability and a free media plan." } },
+    { "@type": "Question", name: "What are the best billboard locations in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Highest-value locations: Galle Road (80,000–200,000 daily impressions), Baseline Road (60,000–120,000), Kirulapona and Thurstan Road gantries (100,000–150,000) and One Galle Face Mall LED façade. Contact 0701772626 for site availability and a free media plan." } },
     { "@type": "Question", name: "Can I advertise on buses and three-wheelers in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Yes — CTB and private buses, Sri Lanka Railways trains and three-wheelers in multiple cities. Bus rear panel is one of the most cost-effective formats. Full bus body wraps give maximum presence; three-wheeler advertising is used for hyper-local awareness." } },
   ],
 };

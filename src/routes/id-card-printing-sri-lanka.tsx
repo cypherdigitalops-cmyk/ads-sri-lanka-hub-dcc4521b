@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "ID Card Printing Sri Lanka | PVC Employee Cards from Rs 150";
-const DESC = "ID card printing in Sri Lanka from Rs 150 per card. PVC employee, student & visitor cards with photo, barcode & RFID options. Call 0771437707.";
+const DESC = "ID card printing in Sri Lanka from Rs 150 per card. PVC employee, student & visitor cards with photo, barcode & RFID options. Call 0701772626.";
 
 export const Route = createFileRoute("/id-card-printing-sri-lanka")({
   head: () => ({

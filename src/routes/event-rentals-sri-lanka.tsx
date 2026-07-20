@@ -6,7 +6,7 @@ import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
 
 const TITLE = "Event Rentals Sri Lanka — Stage, Sound, LED, Tents & 17 Categories | Islandwide";
-const DESC = "Event rentals Sri Lanka — LED screens, sound, stages, lighting, tents, generators, photo booths & 17 categories. Delivered, set up & operated islandwide. Call 0771437707.";
+const DESC = "Event rentals Sri Lanka — LED screens, sound, stages, lighting, tents, generators, photo booths & 17 categories. Delivered, set up & operated islandwide. Call 0701772626.";
 
 const RENTALS: { slug: string; title: string; icon: string; desc: string }[] = [
   { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", icon: "🖥️", desc: "Indoor & outdoor LED video walls for stages, conferences and concerts." },
@@ -344,7 +344,7 @@ function RentalsRankContent() {
       {/* Section 4 */}
       <h2>How to Book Event Rentals in Sri Lanka — Step by Step</h2>
       <ol>
-        <li><strong>Determine your equipment needs.</strong> Use the event-type table above. Unsure on specs? Call 0771437707 or WhatsApp with event type, attendance and venue for free pre-booking guidance.</li>
+        <li><strong>Determine your equipment needs.</strong> Use the event-type table above. Unsure on specs? Call 0701772626 or WhatsApp with event type, attendance and venue for free pre-booking guidance.</li>
         <li><strong>Confirm venue details.</strong> Name and address, ceiling height (rigging/LED), available power (kVA), loading access, event date/times, setup access and derig deadline.</li>
         <li><strong>Request a written quotation.</strong> Listing each item, spec, rental period and any surcharges (outstation, extra generator fuel, CAASL drone permit). Never book on a verbal quote.</li>
         <li><strong>Confirm with a deposit.</strong> LED, line-array sound and large generators are limited. Peak months (November, December, April) book out 4–8 weeks ahead.</li>

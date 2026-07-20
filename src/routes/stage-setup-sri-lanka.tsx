@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Stage Setup Sri Lanka — Trusted Sri Lankan Agency | advertisingsrilanka.lk";
-const DESC = "Looking for stage setup sri lanka? Our Sri Lankan team plans, executes and delivers seamless stage setup sri lanka with full production support. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Looking for stage setup sri lanka? Our Sri Lankan team plans, executes and delivers seamless stage setup sri lanka with full production support. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/stage-setup-sri-lanka")({
   head: () => ({

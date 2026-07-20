@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "outdoor-advertising-sri-lanka")!;
 const TITLE = "Mobile Billboard Sri Lanka | Truck & Van Advertising";
-const DESC = "Mobile billboard advertising in Sri Lanka — branded trucks & vans for roadshow campaigns across Colombo & outstation routes. Call 0771437707.";
+const DESC = "Mobile billboard advertising in Sri Lanka — branded trucks & vans for roadshow campaigns across Colombo & outstation routes. Call 0701772626.";
 
 export const Route = createFileRoute("/mobile-billboard-sri-lanka")({
   head: () => ({

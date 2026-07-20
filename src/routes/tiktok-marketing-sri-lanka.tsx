@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
 const TITLE = "TikTok Marketing Sri Lanka | Ads, Content & Creator Campaigns";
-const DESC = "TikTok marketing in Sri Lanka — TikTok Ads, organic content, creator partnerships & influencer campaigns. Call 0771437707.";
+const DESC = "TikTok marketing in Sri Lanka — TikTok Ads, organic content, creator partnerships & influencer campaigns. Call 0701772626.";
 
 export const Route = createFileRoute("/tiktok-marketing-sri-lanka")({
   head: () => ({

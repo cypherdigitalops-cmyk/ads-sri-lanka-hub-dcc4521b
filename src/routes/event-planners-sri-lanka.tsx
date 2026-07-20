@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
 const TITLE = "Event Planners Sri Lanka — Trusted Sri Lankan Agency | advertisingsrilanka.lk";
-const DESC = "Looking for event planners sri lanka? Our Sri Lankan team plans, executes and delivers seamless event planners sri lanka with full production support. Free quote — call 0771437707 or WhatsApp.";
+const DESC = "Looking for event planners sri lanka? Our Sri Lankan team plans, executes and delivers seamless event planners sri lanka with full production support. Free quote — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/event-planners-sri-lanka")({
   head: () => ({

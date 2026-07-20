@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Banner Printing Sri Lanka — From Rs 120/sqft, Any Size";
-const DESC = "Banner printing in Sri Lanka — flex, vinyl, fabric & mesh from Rs 120/sqft. Any size, 2-day turnaround, hemming & eyelets free. Call 0771437707 for a quote.";
+const DESC = "Banner printing in Sri Lanka — flex, vinyl, fabric & mesh from Rs 120/sqft. Any size, 2-day turnaround, hemming & eyelets free. Call 0701772626 for a quote.";
 
 export const Route = createFileRoute("/banner-printing-sri-lanka")({
   head: () => ({

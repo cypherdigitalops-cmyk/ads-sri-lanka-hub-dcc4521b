@@ -39,7 +39,7 @@ export const Route = createFileRoute("/political-advertising-campaign-sri-lanka"
         publishedISO="2025-06-01"
         category={{ label: "Political Advertising", href: "/industry-advertising-sri-lanka" }}
         primaryAnchor={PRIMARY_ANCHOR}
-        intro="From local government to presidential campaigns — voter research, messaging, posters, social media, SMS blasts, rally production, TV, radio and real-time media monitoring. Islandwide coverage. Call 0771437707."
+        intro="From local government to presidential campaigns — voter research, messaging, posters, social media, SMS blasts, rally production, TV, radio and real-time media monitoring. Islandwide coverage. Call 0701772626."
         blocks={[
           { type: "h2", text: "What is Political Advertising in Sri Lanka?" },
           { type: "p", text: "Political advertising in Sri Lanka is the full set of communication tools used by candidates, political parties and campaign teams to reach voters, build name recognition, deliver policy messages and mobilise support — from the first day of campaigning to election eve." },
@@ -114,7 +114,7 @@ export const Route = createFileRoute("/political-advertising-campaign-sri-lanka"
           { type: "h3", text: "6. Weak rally production" },
           { type: "p", text: "A poorly produced rally — bad sound, dim stage, thin crowd — can be photographed and used against the campaign. Professional stage, lighting and LED screen production is an investment, not a luxury." },
 
-          { type: "callout", text: "Running for election? Call 0771437707 for a free, confidential strategy consultation. We work with candidates at all levels — local government to parliamentary." },
+          { type: "callout", text: "Running for election? Call 0701772626 for a free, confidential strategy consultation. We work with candidates at all levels — local government to parliamentary." },
         ]}
         faqs={[
           { q: "Is political advertising regulated in Sri Lanka?", a: "Yes. The Elections Commission of Sri Lanka issues guidelines for each election covering permissible advertising periods, spending limits, prohibited conduct and broadcast rules. The Bribery Commission also monitors campaign spending. Always work with a team familiar with current election regulations before launching any paid advertising." },

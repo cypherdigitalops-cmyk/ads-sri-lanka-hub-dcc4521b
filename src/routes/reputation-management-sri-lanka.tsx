@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
 const TITLE = "Reputation Management Sri Lanka — Strategy, Creative & Media";
-const DESC = "Need reputation management sri lanka that actually converts? We blend local insight with proven advertising frameworks to deliver leads and sales. Call 0771437707.";
+const DESC = "Need reputation management sri lanka that actually converts? We blend local insight with proven advertising frameworks to deliver leads and sales. Call 0701772626.";
 
 export const Route = createFileRoute("/reputation-management-sri-lanka")({
   head: () => ({

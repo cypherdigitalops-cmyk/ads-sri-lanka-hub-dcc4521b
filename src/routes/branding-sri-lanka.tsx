@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "branding-sri-lanka")!;
 const TITLE = "Branding Sri Lanka — Compare Services, Costs & Agencies";
-const DESC = "Brand identity, logo, packaging and creative design that stands out. Get pricing and free advice — call 0771437707 or WhatsApp.";
+const DESC = "Brand identity, logo, packaging and creative design that stands out. Get pricing and free advice — call 0701772626 or WhatsApp.";
 
 export const Route = createFileRoute("/branding-sri-lanka")({
   head: () => ({

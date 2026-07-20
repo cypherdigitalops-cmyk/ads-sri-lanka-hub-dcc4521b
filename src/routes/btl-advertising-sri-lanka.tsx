@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
 const TITLE = "BTL Advertising Sri Lanka — Brand Activations, Roadshows & Field Marketing";
-const DESC = "BTL advertising in Sri Lanka — brand activations, mall events, roadshows, sampling, retail branding & field marketing across all 25 districts. Free campaign planning. Call 0771437707.";
+const DESC = "BTL advertising in Sri Lanka — brand activations, mall events, roadshows, sampling, retail branding & field marketing across all 25 districts. Free campaign planning. Call 0701772626.";
 const H1 = "BTL Advertising Sri Lanka — Brand Activations, Roadshows, Sampling & Field Marketing";
 const INTRO = "Full-service BTL advertising in Sri Lanka — 500+ activations delivered across all 25 districts, 10+ years on-ground experience. Brand activations, mall events, roadshows, product sampling, retail branding, POS, exhibitions, field marketing and loyalty programmes — promoters in Sinhala, Tamil and English with real-time daily reporting.";
 
@@ -18,7 +18,7 @@ const SERVICE_JSONLD = {
     "@type": "Organization",
     name: "Advertising Sri Lanka",
     url: SITE.url,
-    telephone: "+94771437707",
+    telephone: "+94701772626",
     address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
   },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
@@ -44,7 +44,7 @@ const FAQ_JSONLD = {
     { "@type": "Question", name: "What is the difference between BTL and ATL advertising in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "ATL uses mass media (TV, radio, press, cinema, billboards) to build broad awareness. BTL uses targeted on-ground activations (mall events, roadshows, sampling, POS, field teams) to drive direct interaction, trial and conversion. Most effective Sri Lankan campaigns use both — ATL for awareness, BTL to convert that awareness into trial and purchase." } },
     { "@type": "Question", name: "What is a brand activation in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "A live, interactive consumer experience at high-footfall locations — malls, supermarkets, festivals, public spaces — designed to introduce or reinforce a product. Includes demos, sampling, competitions, photo booths and trained promoter engagement, driving trial, social content and real-time feedback advertising alone cannot replicate." } },
     { "@type": "Question", name: "What is a roadshow in Sri Lanka and how does it work?", acceptedAnswer: { "@type": "Answer", text: "A roadshow is a BTL campaign where a branded team — vehicle, sound, stall, promoters — travels to multiple locations across the island. Used for product launches, dealer activation and brand awareness where traditional media reach is limited. Typically 5–25 stops over 1–4 weeks, with each stop lasting half a day to 2 days. We run roadshows across all 25 districts." } },
-    { "@type": "Question", name: "How much does a BTL campaign cost in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Single-day mall activations with promoters, stall and sampling start from around Rs 150,000. National roadshows across 5+ cities over 2 weeks range from Rs 1 million upward. Field marketing teams covering 100+ outlets per month are typically monthly retainers. Call 0771437707 for a free itemised quote." } },
+    { "@type": "Question", name: "How much does a BTL campaign cost in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Single-day mall activations with promoters, stall and sampling start from around Rs 150,000. National roadshows across 5+ cities over 2 weeks range from Rs 1 million upward. Field marketing teams covering 100+ outlets per month are typically monthly retainers. Call 0701772626 for a free itemised quote." } },
     { "@type": "Question", name: "What is field marketing in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Deploying a trained team of brand or sales reps to retail outlets, markets, offices or residential areas to promote products, distribute samples, take orders, train retailer staff and gather market intelligence. FMCG, telecom and banking brands use field marketing teams as an extension of their sales force — especially for retail compliance and outlet relationships outside permanent sales coverage." } },
     { "@type": "Question", name: "Do you run BTL campaigns outside Colombo across Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Yes. We operate BTL campaigns across all 25 districts — mall activations in Colombo and Kandy, roadshows in Jaffna, Anuradhapura, Batticaloa and Trincomalee, and field teams in every province. Outstation activations use locally sourced promoters in the primary district language with on-ground supervision and daily digital reporting." } },
     { "@type": "Question", name: "How do I measure the ROI of a BTL campaign in Sri Lanka?", acceptedAnswer: { "@type": "Answer", text: "Measure cost per trial (cost ÷ samples or demos), cost per lead (cost ÷ qualified leads captured), and where possible cost per conversion (tracked via redemption codes, app installs or CRM sign-ups). Combine with post-campaign brand tracker surveys (aided and unaided awareness before vs after). Avoid measuring BTL by impressions or reach alone — these are ATL metrics misapplied." } },

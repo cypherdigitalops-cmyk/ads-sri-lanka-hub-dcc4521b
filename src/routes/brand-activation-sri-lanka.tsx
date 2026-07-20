@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "btl-advertising-sri-lanka")!;
 const TITLE = "Brand Activation Sri Lanka | Experiential Marketing & Sampling";
-const DESC = "Brand activation in Sri Lanka — mall, supermarket & roadshow activations, sampling, BTL events & promoter teams across the island. Call 0771437707.";
+const DESC = "Brand activation in Sri Lanka — mall, supermarket & roadshow activations, sampling, BTL events & promoter teams across the island. Call 0701772626.";
 
 export const Route = createFileRoute("/brand-activation-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Vinyl Printing Sri Lanka | Stickers, Wraps & Decals from Rs 120/sqft";
-const DESC = "Vinyl printing in Sri Lanka from Rs 120/sqft. Self-adhesive vinyl for stickers, wall graphics, vehicle wraps & window decals. Call 0771437707.";
+const DESC = "Vinyl printing in Sri Lanka from Rs 120/sqft. Self-adhesive vinyl for stickers, wall graphics, vehicle wraps & window decals. Call 0701772626.";
 
 export const Route = createFileRoute("/vinyl-printing-sri-lanka")({
   head: () => ({

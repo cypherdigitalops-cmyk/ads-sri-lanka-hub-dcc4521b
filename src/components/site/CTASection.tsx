@@ -172,7 +172,7 @@ export function PrintingPowerCTA({ service }: { service?: string }) {
               className="group relative inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-8 py-4 text-base font-extrabold text-[var(--whatsapp-foreground)] shadow-2xl ring-2 ring-[var(--whatsapp)]/50 transition hover:scale-105 sm:w-auto sm:text-lg"
             >
               <span className="absolute -inset-1 -z-10 animate-pulse rounded-full bg-[var(--whatsapp)] opacity-60 blur-md" aria-hidden />
-              <MessageCircle className="h-5 w-5" /> WhatsApp 0771437707
+              <MessageCircle className="h-5 w-5" /> WhatsApp 0701772626
             </a>
             <a
               href={`tel:${SITE.phone}`}

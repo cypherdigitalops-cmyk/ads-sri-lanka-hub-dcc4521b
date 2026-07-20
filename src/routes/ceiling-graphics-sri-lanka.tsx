@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Ceiling Graphics Sri Lanka | Printed Ceiling Films & Displays";
-const DESC = "Ceiling graphic printing & installation in Sri Lanka. Stretch ceiling systems, printed tiles & ceiling vinyl for retail, hospitality & offices. Call 0771437707.";
+const DESC = "Ceiling graphic printing & installation in Sri Lanka. Stretch ceiling systems, printed tiles & ceiling vinyl for retail, hospitality & offices. Call 0701772626.";
 
 export const Route = createFileRoute("/ceiling-graphics-sri-lanka")({
   head: () => ({

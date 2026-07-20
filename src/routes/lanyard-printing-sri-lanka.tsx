@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Lanyard Printing Sri Lanka | Custom Lanyards from Rs 95 Each";
-const DESC = "Lanyard printing in Sri Lanka from Rs 95. Polyester & woven lanyards with custom print, breakaway clips & card holders. Call 0771437707.";
+const DESC = "Lanyard printing in Sri Lanka from Rs 95. Polyester & woven lanyards with custom print, breakaway clips & card holders. Call 0701772626.";
 
 export const Route = createFileRoute("/lanyard-printing-sri-lanka")({
   head: () => ({

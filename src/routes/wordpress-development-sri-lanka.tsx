@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "web-design-sri-lanka")!;
 const TITLE = "WordPress Development Sri Lanka | Custom WP Sites from Rs 65,000";
-const DESC = "WordPress development in Sri Lanka from Rs 65,000. Custom themes, WooCommerce, plugins & ongoing maintenance. Call 0771437707.";
+const DESC = "WordPress development in Sri Lanka from Rs 65,000. Custom themes, WooCommerce, plugins & ongoing maintenance. Call 0701772626.";
 
 export const Route = createFileRoute("/wordpress-development-sri-lanka")({
   head: () => ({

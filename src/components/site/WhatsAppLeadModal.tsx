@@ -4,7 +4,6 @@ import { useServerFn } from "@tanstack/react-start";
 import { submitInquiry } from "@/lib/inquiries.functions";
 
 const LS_KEY = "asl_lead_v1";
-const SKIP_KEY = "asl_lead_skip_v1";
 
 type Saved = { name?: string; email?: string; phone?: string };
 
@@ -39,12 +38,6 @@ export function WhatsAppLeadModal() {
       if (!a) return;
       const href = a.getAttribute("href") || "";
       if (!href || !isWhatsAppHref(href)) return;
-      // Already captured / skipped -> let it through
-      try {
-        if (sessionStorage.getItem(SKIP_KEY) === "1") return;
-        const s = readSaved();
-        if (s.name) return;
-      } catch { /* ignore */ }
       e.preventDefault();
       e.stopPropagation();
       pendingUrl.current = a.href;
@@ -92,7 +85,6 @@ export function WhatsAppLeadModal() {
   }
 
   function closeAndSkip() {
-    try { sessionStorage.setItem(SKIP_KEY, "1"); } catch { /* ignore */ }
     proceed(false);
   }
 

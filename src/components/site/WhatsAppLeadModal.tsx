@@ -182,13 +182,13 @@ export function WhatsAppLeadModal() {
               className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-ring"
             />
           </label>
-          <div className="mt-1 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+          <div className="mt-1 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-end">
             <button
               type="button"
               onClick={closeAndSkip}
-              className="rounded-full border border-border px-4 py-2 text-sm font-semibold hover:bg-muted"
+              className="text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
             >
-              Skip
+              Skip this step
             </button>
             <button
               type="submit"

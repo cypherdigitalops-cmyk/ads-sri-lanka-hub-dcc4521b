@@ -4,7 +4,7 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
 const InquiryInput = z.object({
   name: z.string().trim().min(1).max(120),
-  phone: z.string().trim().min(4).max(40),
+  phone: z.string().trim().max(40).optional().or(z.literal("")),
   email: z.string().trim().email().max(255).optional().or(z.literal("")),
   company: z.string().trim().max(160).optional().or(z.literal("")),
   service: z.string().trim().max(160).optional().or(z.literal("")),
@@ -20,7 +20,7 @@ export const submitInquiry = createServerFn({ method: "POST" })
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const row = {
       name: data.name,
-      phone: data.phone,
+      phone: (data.phone && data.phone.trim()) || "N/A",
       email: data.email || null,
       company: data.company || null,
       service: data.service || null,

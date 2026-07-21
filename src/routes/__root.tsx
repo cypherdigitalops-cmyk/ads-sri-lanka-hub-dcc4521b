@@ -252,6 +252,7 @@ function RootComponent() {
       <Outlet />
       <Toaster richColors position="top-right" />
       <ClickTracker />
+      <WhatsAppLeadModal />
       <PageViewTracker />
     </QueryClientProvider>
   );

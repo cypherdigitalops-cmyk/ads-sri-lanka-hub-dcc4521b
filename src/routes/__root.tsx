@@ -14,6 +14,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { ClickTracker } from "@/components/site/ClickTracker";
+import { WhatsAppLeadModal } from "@/components/site/WhatsAppLeadModal";
 import { PageViewTracker } from "@/components/site/PageViewTracker";
 
 const ORG_JSONLD = {

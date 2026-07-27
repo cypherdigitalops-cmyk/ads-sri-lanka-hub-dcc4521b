@@ -19,9 +19,8 @@ export function SocialMediaStickyBanner() {
     <div
       role="complementary"
       aria-label="Social media marketing offer"
-      className="fixed z-[9999] animate-in fade-in slide-in-from-bottom-4 duration-500
-                 left-3 right-3 bottom-3 mx-auto max-w-sm
-                 sm:left-auto sm:right-5 sm:bottom-24 sm:mx-0 sm:w-[270px] sm:max-w-none"
+      className="hidden xl:block fixed z-40 animate-in fade-in slide-in-from-right-4 duration-500
+                 right-4 top-1/2 -translate-y-1/2 w-[240px]"
       style={{
         background: "linear-gradient(150deg,#15224a 0%,#20347a 100%)",
         borderRadius: 18,

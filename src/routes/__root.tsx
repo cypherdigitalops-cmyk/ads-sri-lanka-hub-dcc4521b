@@ -16,7 +16,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { ClickTracker } from "@/components/site/ClickTracker";
 import { WhatsAppLeadModal } from "@/components/site/WhatsAppLeadModal";
 import { PageViewTracker } from "@/components/site/PageViewTracker";
-import { SocialMediaStickyBanner } from "@/components/site/SocialMediaStickyBanner";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
@@ -256,7 +255,6 @@ function RootComponent() {
       <ClickTracker />
       <WhatsAppLeadModal />
       <PageViewTracker />
-      <SocialMediaStickyBanner />
     </QueryClientProvider>
   );
 }

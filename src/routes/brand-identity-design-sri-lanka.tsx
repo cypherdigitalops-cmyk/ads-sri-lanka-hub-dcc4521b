@@ -23,6 +23,7 @@ const DATA: DesignSubService = {
     { q: "What is the difference between a logo and brand identity?", a: "A logo is a single mark. Brand identity is the complete visual system — logo, colours, fonts, imagery style, guidelines — that ensures your brand looks consistent everywhere." },
     { q: "How long does brand identity design take?", a: "A complete brand identity project typically takes 2–4 weeks from briefing to final delivery." },
   ],
+  jobLink: { href: "https://cypherdigital.lk/careers/graphic-designer-jobs-sri-lanka", label: "Graphic Designer Jobs in Sri Lanka" },
   longForm: [
     {
       h2: "Why Brand Identity is the Foundation of Long-Term Growth",

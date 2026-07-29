@@ -25,6 +25,8 @@ export type DesignSubService = {
   faqs: DesignFAQ[];
   /** Optional long-form body (~1000 words) rendered between "Who Needs" and "What is Included". */
   longForm?: DesignLongFormSection[];
+  /** Optional backlink to design jobs / careers page. */
+  jobLink?: { href: string; label: string };
 };
 
 const RELATED = [

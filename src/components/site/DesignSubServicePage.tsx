@@ -25,6 +25,8 @@ export type DesignSubService = {
   faqs: DesignFAQ[];
   /** Optional long-form body (~1000 words) rendered between "Who Needs" and "What is Included". */
   longForm?: DesignLongFormSection[];
+  /** Optional backlink to design jobs / careers page. */
+  jobLink?: { href: string; label: string };
 };
 
 const RELATED = [
@@ -183,6 +185,20 @@ export function DesignSubServicePage({ data }: { data: DesignSubService }) {
         <p className="mt-4 text-muted-foreground">{data.whatIs}</p>
         <h2 className="mt-10 text-2xl font-bold sm:text-3xl">Who Needs {data.h1}?</h2>
         <p className="mt-4 text-muted-foreground">{data.whoNeeds}</p>
+        {data.jobLink ? (
+          <p className="mt-4 text-muted-foreground">
+            Looking for talented teams or new opportunities? Browse the latest{" "}
+            <a
+              href={data.jobLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              {data.jobLink.label}
+            </a>{" "}
+            at Cypher Digital.
+          </p>
+        ) : null}
       </section>
 
       {data.longForm?.length ? (

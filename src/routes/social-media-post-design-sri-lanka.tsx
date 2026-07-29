@@ -22,6 +22,7 @@ const DATA: DesignSubService = {
     { q: "How many posts do I need per month?", a: "Most Sri Lankan businesses post 3–5 times per week on Facebook and Instagram. We offer packages from 12 to 60 posts per month." },
     { q: "Do you create animated posts and reels covers?", a: "Yes — we design static posts, animated GIFs and video thumbnail covers for reels and TikTok." },
   ],
+  jobLink: { href: "https://cypherdigital.lk/careers/graphic-designer-jobs-sri-lanka", label: "Graphic Designer Jobs in Sri Lanka" },
   longForm: [
     {
       h2: "Why Social Media Design Decides Whether Your Reach Converts",

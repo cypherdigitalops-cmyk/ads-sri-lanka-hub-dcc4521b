@@ -169,6 +169,19 @@ function GraphicDesignHub() {
             </div>
           </div>
         ))}
+
+        <p className="mt-4 text-[15px] leading-relaxed text-slate-600">
+          Looking for talented teams or new opportunities? Browse the latest{" "}
+          <a
+            href="https://cypherdigital.lk/careers/graphic-designer-jobs-sri-lanka"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#2563eb] underline hover:text-[#15224a]"
+          >
+            Graphic Designer Jobs in Sri Lanka
+          </a>{" "}
+          at Cypher Digital.
+        </p>
       </section>
 
       <section className="bg-[#15224a] px-6 py-16 text-white">

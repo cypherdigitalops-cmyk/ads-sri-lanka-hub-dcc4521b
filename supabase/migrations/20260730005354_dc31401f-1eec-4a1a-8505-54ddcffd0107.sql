@@ -1,0 +1,1 @@
+DELETE FROM public.guidance_inquiries WHERE name = 'Test Perera' AND sells = 'Handmade furniture';

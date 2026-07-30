@@ -44,6 +44,66 @@ export type Database = {
         }
         Relationships: []
       }
+      guidance_inquiries: {
+        Row: {
+          admin_notes: string | null
+          budget: string | null
+          created_at: string
+          customers: string | null
+          digital_presence: string | null
+          goals: Json
+          id: string
+          ip_address: string | null
+          name: string
+          notes: string | null
+          referrer: string | null
+          sells: string
+          source_page: string | null
+          status: string
+          updated_at: string
+          user_agent: string | null
+          whatsapp: string
+        }
+        Insert: {
+          admin_notes?: string | null
+          budget?: string | null
+          created_at?: string
+          customers?: string | null
+          digital_presence?: string | null
+          goals?: Json
+          id?: string
+          ip_address?: string | null
+          name: string
+          notes?: string | null
+          referrer?: string | null
+          sells: string
+          source_page?: string | null
+          status?: string
+          updated_at?: string
+          user_agent?: string | null
+          whatsapp: string
+        }
+        Update: {
+          admin_notes?: string | null
+          budget?: string | null
+          created_at?: string
+          customers?: string | null
+          digital_presence?: string | null
+          goals?: Json
+          id?: string
+          ip_address?: string | null
+          name?: string
+          notes?: string | null
+          referrer?: string | null
+          sells?: string
+          source_page?: string | null
+          status?: string
+          updated_at?: string
+          user_agent?: string | null
+          whatsapp?: string
+        }
+        Relationships: []
+      }
       inquiries: {
         Row: {
           admin_notes: string | null

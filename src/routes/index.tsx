@@ -343,18 +343,19 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-14">
           <div className="text-center">
             <div className="text-xs font-bold uppercase tracking-widest text-accent">⭐ Most Requested Services</div>
-            <h2 className="mt-2 text-2xl font-bold sm:text-3xl">The 5 services Sri Lankan businesses ask for most</h2>
+            <h2 className="mt-2 text-2xl font-bold sm:text-3xl">The 6 services Sri Lankan businesses ask for most</h2>
             <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
               Highest-value, fastest-turnaround inquiries on the site. Tap any card to get an instant free quote.
             </p>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { slug: "printing-services-sri-lanka", title: "Printing Services", desc: "Banners, stickers, backdrops, sign boards & 35+ printing services.", icon: <Printer className="h-6 w-6" />, ring: "ring-accent" },
               { slug: "led-screen-rental-sri-lanka", title: "LED Screen Rental", desc: "Indoor & outdoor LED video walls for any event size.", icon: <Monitor className="h-6 w-6" />, ring: "ring-accent" },
               { slug: "digital-marketing-sri-lanka", title: "Digital Marketing", desc: "Google, Meta, TikTok, SEO & full-funnel campaigns for Sri Lankan businesses.", icon: <Target className="h-6 w-6" />, ring: "ring-accent" },
               { slug: "event-management-sri-lanka", title: "Event Management", desc: "Corporate events, weddings, exhibitions — full production.", icon: <PartyPopper className="h-6 w-6" />, ring: "ring-primary/30" },
               { slug: "outdoor-advertising-sri-lanka", title: "Outdoor Advertising", desc: "Billboards, LED screens, transit & OOH across Sri Lanka.", icon: <Megaphone className="h-6 w-6" />, ring: "ring-primary/30" },
+              { slug: "email-sms-marketing-sri-lanka", title: "Email / SMS / WhatsApp", desc: "Bulk email, SMS broadcasts and WhatsApp campaigns for direct customer reach.", icon: <Mail className="h-6 w-6" />, ring: "ring-primary/30" },
             ].map((s) => (
               <div key={s.slug} className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] ring-1 ${s.ring} transition hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]`}>
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-accent)] text-accent-foreground shadow-md">

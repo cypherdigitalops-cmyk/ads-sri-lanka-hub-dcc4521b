@@ -310,32 +310,30 @@ function Index() {
         </div>
       </section>
 
-      {/* PROMINENT: Free Marketing Guidance CTA */}
-      <section className="relative overflow-hidden border-y border-accent/20 bg-[image:var(--gradient-accent)] text-accent-foreground">
-        <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/20 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-white/20 blur-3xl" />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-10 text-center sm:flex-row sm:justify-between sm:py-12 sm:text-left">
+      {/* Free Marketing Guidance CTA */}
+      <section className="border-y border-border bg-muted/30">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-8 text-center sm:flex-row sm:justify-between sm:py-10 sm:text-left">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-accent-foreground/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-foreground backdrop-blur">
-              <Sparkles className="h-3.5 w-3.5" /> Free • No obligation • Reply within 24 hours
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-background px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm ring-1 ring-border">
+              <Lightbulb className="h-3.5 w-3.5" /> Free advice — reply within 24 hours
             </div>
-            <h2 className="mt-3 text-2xl font-bold sm:text-3xl lg:text-4xl">
+            <h2 className="mt-3 text-xl font-semibold text-foreground sm:text-2xl lg:text-3xl">
               Not sure which advertising channel fits your budget?
             </h2>
-            <p className="mt-3 text-base text-accent-foreground/90 sm:text-lg">
-              Tell us what you sell and your monthly budget. A specialist will send you a free, tailored plan showing exactly which channels — Google, social, TV, radio, billboards or BTL — will work best for your Sri Lankan business.
+            <p className="mt-2 text-sm text-muted-foreground sm:text-base">
+              Tell us what you sell and your monthly budget. A specialist will send you a free, tailored plan showing which channels will work best for your Sri Lankan business.
             </p>
-            <div className="mt-4 flex flex-wrap justify-center gap-3 text-sm font-semibold sm:justify-start">
-              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4" /> Personal recommendation</span>
-              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4" /> Matched to your budget</span>
-              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4" /> Sinhala, Tamil or English</span>
+            <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-muted-foreground sm:justify-start">
+              <span className="inline-flex items-center gap-1"><CheckCircle2 className="h-3.5 w-3.5" /> Personal recommendation</span>
+              <span className="inline-flex items-center gap-1"><CheckCircle2 className="h-3.5 w-3.5" /> Matched to your budget</span>
+              <span className="inline-flex items-center gap-1"><CheckCircle2 className="h-3.5 w-3.5" /> Sinhala, Tamil or English</span>
             </div>
           </div>
           <Link
             to="/free-marketing-guidance"
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-elegant)] transition hover:scale-[1.02] hover:shadow-xl"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
           >
-            <Sparkles className="h-5 w-5" /> Get My Free Marketing Guidance
+            Get Free Marketing Guidance <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

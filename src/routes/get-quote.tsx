@@ -1,5 +1,6 @@
 import { createFileRoute, useSearch } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
+import { z } from "zod";
 import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -8,10 +9,12 @@ import { CATEGORIES, SITE, titleCase } from "@/data/site";
 const TITLE = "Get a Free Advertising Quote in Sri Lanka | advertisingsrilanka.lk";
 const DESC = "Request a custom advertising plan and free quote for your business in Sri Lanka. ATL, BTL, digital, SEO, outdoor & more. Call 0701772626.";
 
+const searchSchema = z.object({
+  service: z.string().optional(),
+});
+
 export const Route = createFileRoute("/get-quote")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    service: typeof search.service === "string" ? search.service : undefined,
-  }),
+  validateSearch: searchSchema.parse,
   head: () => ({
     meta: [
       { title: TITLE },

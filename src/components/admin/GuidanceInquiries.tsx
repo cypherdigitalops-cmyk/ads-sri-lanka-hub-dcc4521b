@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
@@ -194,8 +194,8 @@ export function GuidanceInquiries() {
               const goals = goalList(r.goals);
               const open = openId === r.id;
               return (
-                <>
-                  <tr key={r.id} className="border-t border-border align-top">
+                <Fragment key={r.id}>
+                  <tr className="border-t border-border align-top">
                     <td className="px-3 py-2 whitespace-nowrap text-muted-foreground">
                       {new Date(r.created_at).toLocaleDateString()}
                     </td>
@@ -231,7 +231,7 @@ export function GuidanceInquiries() {
                     </td>
                   </tr>
                   {open ? (
-                    <tr key={`${r.id}-detail`} className="border-t border-border bg-secondary/20">
+                    <tr className="border-t border-border bg-secondary/20">
                       <td colSpan={8} className="px-3 py-4">
                         <div className="grid gap-3 sm:grid-cols-2">
                           <p><span className="font-semibold text-foreground">Customers:</span> {r.customers ?? "—"}</p>
@@ -253,7 +253,7 @@ export function GuidanceInquiries() {
                       </td>
                     </tr>
                   ) : null}
-                </>
+                </Fragment>
               );
             })}
             {!isLoading && filtered.length === 0 ? (

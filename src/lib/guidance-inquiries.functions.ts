@@ -101,7 +101,7 @@ export const updateGuidanceInquiry = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => UpdateInput.parse(input))
   .handler(async ({ data, context }) => {
     await assertAdmin(context as never);
-    const patch: Record<string, string> = {};
+    const patch: { status?: GuidanceStatus; admin_notes?: string } = {};
     if (data.status) patch.status = data.status;
     if (typeof data.admin_notes === "string") patch.admin_notes = data.admin_notes;
     if (Object.keys(patch).length === 0) return { ok: true };

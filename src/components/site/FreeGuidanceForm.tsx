@@ -41,6 +41,7 @@ export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
+  const [waLink, setWaLink] = useState<string>(SITE.whatsapp);
 
   useEffect(() => {
     startedAt.current = Date.now();
@@ -54,17 +55,46 @@ export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
     const f = new FormData(e.currentTarget);
     setError(null);
     setSending(true);
+    const values = {
+      sells: String(f.get("sells") ?? ""),
+      customers: String(f.get("customers") ?? ""),
+      budget: String(f.get("budget") ?? ""),
+      name: String(f.get("name") ?? ""),
+      whatsapp: String(f.get("whatsapp") ?? ""),
+      notes: String(f.get("notes") ?? ""),
+    };
+    const presenceLabel = PRESENCE_OPTIONS.find((p) => p.value === presence)?.label ?? "Not stated";
+    const message = [
+      "Hi, I'd like free marketing guidance.",
+      "",
+      `Name: ${values.name}`,
+      `WhatsApp: ${values.whatsapp}`,
+      `What I sell: ${values.sells}`,
+      `My customers: ${values.customers}`,
+      `Goals: ${goals.length ? goals.join(", ") : "Not sure"}`,
+      `Budget: ${values.budget || "Not stated"}`,
+      `Digital presence: ${presenceLabel}`,
+      values.notes ? `Notes: ${values.notes}` : "",
+      "",
+      `Page: ${SITE.url}${pathname}`,
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const link = `${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
+    setWaLink(link);
+    // Opened synchronously-ish after submit so mobile browsers keep the user gesture.
+    const waWindow = typeof window !== "undefined" ? window.open("", "_blank") : null;
     try {
       await submit({
         data: {
-          sells: String(f.get("sells") ?? ""),
-          customers: String(f.get("customers") ?? ""),
+          sells: values.sells,
+          customers: values.customers,
           goals,
-          budget: String(f.get("budget") ?? ""),
+          budget: values.budget,
           digital_presence: presence || undefined,
-          name: String(f.get("name") ?? ""),
-          whatsapp: String(f.get("whatsapp") ?? ""),
-          notes: String(f.get("notes") ?? ""),
+          name: values.name,
+          whatsapp: values.whatsapp,
+          notes: values.notes,
           source_page: pathname,
           referrer: typeof document !== "undefined" ? document.referrer.slice(0, 500) : "",
           hp: String(f.get("company_website") ?? ""),
@@ -72,8 +102,10 @@ export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
         },
       });
       setDone(true);
+      if (waWindow) waWindow.location.href = link;
       if (typeof window !== "undefined") window.scrollTo({ top: window.scrollY - 120, behavior: "smooth" });
     } catch (err) {
+      waWindow?.close();
       setError(
         err instanceof Error && err.message.length < 160
           ? err.message
@@ -101,13 +133,16 @@ export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
               : "Our specialist will send you a simple plan matched to your goal and budget."}
         </p>
         <a
-          href={SITE.whatsapp}
+          href={waLink}
           target="_blank"
           rel="noopener"
           className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:brightness-105"
         >
-          <MessageCircle className="h-4 w-4" /> In a hurry? Chat now on WhatsApp
+          <MessageCircle className="h-4 w-4" /> Send your details on WhatsApp
         </a>
+        <p className="mt-3 text-xs text-muted-foreground">
+          WhatsApp should have opened with your details ready to send — if not, tap the button above.
+        </p>
       </div>
     );
   }

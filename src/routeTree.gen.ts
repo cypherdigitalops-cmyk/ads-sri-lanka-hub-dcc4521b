@@ -211,6 +211,7 @@ import { Route as GalaDinnerSriLankaRouteImport } from './routes/gala-dinner-sri
 import { Route as FullVehicleBrandingSriLankaRouteImport } from './routes/full-vehicle-branding-sri-lanka'
 import { Route as FullServiceAdvertisingSriLankaRouteImport } from './routes/full-service-advertising-sri-lanka'
 import { Route as FrostedGlassPrintingSriLankaRouteImport } from './routes/frosted-glass-printing-sri-lanka'
+import { Route as FreeMarketingGuidanceRouteImport } from './routes/free-marketing-guidance'
 import { Route as ForexBoardPrintingSriLankaRouteImport } from './routes/forex-board-printing-sri-lanka'
 import { Route as FogMachineRentalSriLankaRouteImport } from './routes/fog-machine-rental-sri-lanka'
 import { Route as FoamBoardPrintingSriLankaRouteImport } from './routes/foam-board-printing-sri-lanka'
@@ -1637,6 +1638,11 @@ const FrostedGlassPrintingSriLankaRoute =
     path: '/frosted-glass-printing-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const FreeMarketingGuidanceRoute = FreeMarketingGuidanceRouteImport.update({
+  id: '/free-marketing-guidance',
+  path: '/free-marketing-guidance',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ForexBoardPrintingSriLankaRoute =
   ForexBoardPrintingSriLankaRouteImport.update({
     id: '/forex-board-printing-sri-lanka',
@@ -3665,6 +3671,7 @@ export interface FileRoutesByFullPath {
   '/foam-board-printing-sri-lanka': typeof FoamBoardPrintingSriLankaRoute
   '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
   '/forex-board-printing-sri-lanka': typeof ForexBoardPrintingSriLankaRoute
+  '/free-marketing-guidance': typeof FreeMarketingGuidanceRoute
   '/frosted-glass-printing-sri-lanka': typeof FrostedGlassPrintingSriLankaRoute
   '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
   '/full-vehicle-branding-sri-lanka': typeof FullVehicleBrandingSriLankaRoute
@@ -4193,6 +4200,7 @@ export interface FileRoutesByTo {
   '/foam-board-printing-sri-lanka': typeof FoamBoardPrintingSriLankaRoute
   '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
   '/forex-board-printing-sri-lanka': typeof ForexBoardPrintingSriLankaRoute
+  '/free-marketing-guidance': typeof FreeMarketingGuidanceRoute
   '/frosted-glass-printing-sri-lanka': typeof FrostedGlassPrintingSriLankaRoute
   '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
   '/full-vehicle-branding-sri-lanka': typeof FullVehicleBrandingSriLankaRoute
@@ -4722,6 +4730,7 @@ export interface FileRoutesById {
   '/foam-board-printing-sri-lanka': typeof FoamBoardPrintingSriLankaRoute
   '/fog-machine-rental-sri-lanka': typeof FogMachineRentalSriLankaRoute
   '/forex-board-printing-sri-lanka': typeof ForexBoardPrintingSriLankaRoute
+  '/free-marketing-guidance': typeof FreeMarketingGuidanceRoute
   '/frosted-glass-printing-sri-lanka': typeof FrostedGlassPrintingSriLankaRoute
   '/full-service-advertising-sri-lanka': typeof FullServiceAdvertisingSriLankaRoute
   '/full-vehicle-branding-sri-lanka': typeof FullVehicleBrandingSriLankaRoute
@@ -5252,6 +5261,7 @@ export interface FileRouteTypes {
     | '/foam-board-printing-sri-lanka'
     | '/fog-machine-rental-sri-lanka'
     | '/forex-board-printing-sri-lanka'
+    | '/free-marketing-guidance'
     | '/frosted-glass-printing-sri-lanka'
     | '/full-service-advertising-sri-lanka'
     | '/full-vehicle-branding-sri-lanka'
@@ -5780,6 +5790,7 @@ export interface FileRouteTypes {
     | '/foam-board-printing-sri-lanka'
     | '/fog-machine-rental-sri-lanka'
     | '/forex-board-printing-sri-lanka'
+    | '/free-marketing-guidance'
     | '/frosted-glass-printing-sri-lanka'
     | '/full-service-advertising-sri-lanka'
     | '/full-vehicle-branding-sri-lanka'
@@ -6308,6 +6319,7 @@ export interface FileRouteTypes {
     | '/foam-board-printing-sri-lanka'
     | '/fog-machine-rental-sri-lanka'
     | '/forex-board-printing-sri-lanka'
+    | '/free-marketing-guidance'
     | '/frosted-glass-printing-sri-lanka'
     | '/full-service-advertising-sri-lanka'
     | '/full-vehicle-branding-sri-lanka'
@@ -6837,6 +6849,7 @@ export interface RootRouteChildren {
   FoamBoardPrintingSriLankaRoute: typeof FoamBoardPrintingSriLankaRoute
   FogMachineRentalSriLankaRoute: typeof FogMachineRentalSriLankaRoute
   ForexBoardPrintingSriLankaRoute: typeof ForexBoardPrintingSriLankaRoute
+  FreeMarketingGuidanceRoute: typeof FreeMarketingGuidanceRoute
   FrostedGlassPrintingSriLankaRoute: typeof FrostedGlassPrintingSriLankaRoute
   FullServiceAdvertisingSriLankaRoute: typeof FullServiceAdvertisingSriLankaRoute
   FullVehicleBrandingSriLankaRoute: typeof FullVehicleBrandingSriLankaRoute
@@ -8588,6 +8601,13 @@ declare module '@tanstack/react-router' {
       path: '/frosted-glass-printing-sri-lanka'
       fullPath: '/frosted-glass-printing-sri-lanka'
       preLoaderRoute: typeof FrostedGlassPrintingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/free-marketing-guidance': {
+      id: '/free-marketing-guidance'
+      path: '/free-marketing-guidance'
+      fullPath: '/free-marketing-guidance'
+      preLoaderRoute: typeof FreeMarketingGuidanceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/forex-board-printing-sri-lanka': {
@@ -11068,6 +11088,7 @@ const rootRouteChildren: RootRouteChildren = {
   FoamBoardPrintingSriLankaRoute: FoamBoardPrintingSriLankaRoute,
   FogMachineRentalSriLankaRoute: FogMachineRentalSriLankaRoute,
   ForexBoardPrintingSriLankaRoute: ForexBoardPrintingSriLankaRoute,
+  FreeMarketingGuidanceRoute: FreeMarketingGuidanceRoute,
   FrostedGlassPrintingSriLankaRoute: FrostedGlassPrintingSriLankaRoute,
   FullServiceAdvertisingSriLankaRoute: FullServiceAdvertisingSriLankaRoute,
   FullVehicleBrandingSriLankaRoute: FullVehicleBrandingSriLankaRoute,

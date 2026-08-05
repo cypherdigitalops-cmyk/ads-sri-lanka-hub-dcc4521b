@@ -9,6 +9,7 @@ import { getDemandInsights, type DemandRow } from "@/lib/demand-insights.functio
 import { ExecutiveKpis } from "@/components/admin/ExecutiveKpis";
 import { PagePerformance } from "@/components/admin/PagePerformance";
 import { GuidanceInquiries } from "@/components/admin/GuidanceInquiries";
+import { ExportEmails } from "@/components/admin/ExportEmails";
 import { toast } from "sonner";
 import { LogOut, Search, Trash2, Phone, MessageCircle, Mail, FileText, Trophy, Star, AlertTriangle, Ghost, Briefcase, TrendingUp, type LucideIcon } from "lucide-react";
 
@@ -677,6 +678,9 @@ function AdminDashboard({ userEmail }: { userEmail: string }) {
 
         {/* Free Guidance Inquiries */}
         <GuidanceInquiries />
+
+        {/* Export emails */}
+        <ExportEmails />
 
         {/* Today's activity */}
         <TodayPanel

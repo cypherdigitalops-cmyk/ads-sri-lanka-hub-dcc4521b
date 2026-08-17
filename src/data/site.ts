@@ -432,6 +432,7 @@ export const CATEGORIES: Category[] = [
       { slug: "2d-animation-sri-lanka", keyword: "2d animation sri lanka" },
       { slug: "3d-animation-sri-lanka", keyword: "3d animation sri lanka" },
       { slug: "drone-videography-sri-lanka", keyword: "drone videography sri lanka" },
+      { slug: "ai-video-production-sri-lanka", keyword: "ai video production sri lanka" },
     ],
     blog: [
       { slug: "video-production-sri-lanka", keyword: "video production sri lanka" },

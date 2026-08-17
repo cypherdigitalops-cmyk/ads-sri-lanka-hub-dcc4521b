@@ -360,6 +360,7 @@ import { Route as AnnualReportPrintingSriLankaRouteImport } from './routes/annua
 import { Route as AnnualReportDesignSriLankaRouteImport } from './routes/annual-report-design-sri-lanka'
 import { Route as AnimationSriLankaRouteImport } from './routes/animation-sri-lanka'
 import { Route as AirportAdvertisingSriLankaRouteImport } from './routes/airport-advertising-sri-lanka'
+import { Route as AiVideoProductionSriLankaRouteImport } from './routes/ai-video-production-sri-lanka'
 import { Route as AffiliateMarketingSriLankaRouteImport } from './routes/affiliate-marketing-sri-lanka'
 import { Route as AdvertisingRatesRouteImport } from './routes/advertising-rates'
 import { Route as AdvertisingPackagesRouteImport } from './routes/advertising-packages'
@@ -2458,6 +2459,12 @@ const AirportAdvertisingSriLankaRoute =
     path: '/airport-advertising-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const AiVideoProductionSriLankaRoute =
+  AiVideoProductionSriLankaRouteImport.update({
+    id: '/ai-video-production-sri-lanka',
+    path: '/ai-video-production-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AffiliateMarketingSriLankaRoute =
   AffiliateMarketingSriLankaRouteImport.update({
     id: '/affiliate-marketing-sri-lanka',
@@ -3523,6 +3530,7 @@ export interface FileRoutesByFullPath {
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
+  '/ai-video-production-sri-lanka': typeof AiVideoProductionSriLankaRoute
   '/airport-advertising-sri-lanka': typeof AirportAdvertisingSriLankaRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/annual-report-design-sri-lanka': typeof AnnualReportDesignSriLankaRoute
@@ -4052,6 +4060,7 @@ export interface FileRoutesByTo {
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
+  '/ai-video-production-sri-lanka': typeof AiVideoProductionSriLankaRoute
   '/airport-advertising-sri-lanka': typeof AirportAdvertisingSriLankaRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/annual-report-design-sri-lanka': typeof AnnualReportDesignSriLankaRoute
@@ -4582,6 +4591,7 @@ export interface FileRoutesById {
   '/advertising-packages': typeof AdvertisingPackagesRoute
   '/advertising-rates': typeof AdvertisingRatesRoute
   '/affiliate-marketing-sri-lanka': typeof AffiliateMarketingSriLankaRoute
+  '/ai-video-production-sri-lanka': typeof AiVideoProductionSriLankaRoute
   '/airport-advertising-sri-lanka': typeof AirportAdvertisingSriLankaRoute
   '/animation-sri-lanka': typeof AnimationSriLankaRoute
   '/annual-report-design-sri-lanka': typeof AnnualReportDesignSriLankaRoute
@@ -5113,6 +5123,7 @@ export interface FileRouteTypes {
     | '/advertising-packages'
     | '/advertising-rates'
     | '/affiliate-marketing-sri-lanka'
+    | '/ai-video-production-sri-lanka'
     | '/airport-advertising-sri-lanka'
     | '/animation-sri-lanka'
     | '/annual-report-design-sri-lanka'
@@ -5642,6 +5653,7 @@ export interface FileRouteTypes {
     | '/advertising-packages'
     | '/advertising-rates'
     | '/affiliate-marketing-sri-lanka'
+    | '/ai-video-production-sri-lanka'
     | '/airport-advertising-sri-lanka'
     | '/animation-sri-lanka'
     | '/annual-report-design-sri-lanka'
@@ -6171,6 +6183,7 @@ export interface FileRouteTypes {
     | '/advertising-packages'
     | '/advertising-rates'
     | '/affiliate-marketing-sri-lanka'
+    | '/ai-video-production-sri-lanka'
     | '/airport-advertising-sri-lanka'
     | '/animation-sri-lanka'
     | '/annual-report-design-sri-lanka'
@@ -6701,6 +6714,7 @@ export interface RootRouteChildren {
   AdvertisingPackagesRoute: typeof AdvertisingPackagesRoute
   AdvertisingRatesRoute: typeof AdvertisingRatesRoute
   AffiliateMarketingSriLankaRoute: typeof AffiliateMarketingSriLankaRoute
+  AiVideoProductionSriLankaRoute: typeof AiVideoProductionSriLankaRoute
   AirportAdvertisingSriLankaRoute: typeof AirportAdvertisingSriLankaRoute
   AnimationSriLankaRoute: typeof AnimationSriLankaRoute
   AnnualReportDesignSriLankaRoute: typeof AnnualReportDesignSriLankaRoute
@@ -9646,6 +9660,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AirportAdvertisingSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-video-production-sri-lanka': {
+      id: '/ai-video-production-sri-lanka'
+      path: '/ai-video-production-sri-lanka'
+      fullPath: '/ai-video-production-sri-lanka'
+      preLoaderRoute: typeof AiVideoProductionSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/affiliate-marketing-sri-lanka': {
       id: '/affiliate-marketing-sri-lanka'
       path: '/affiliate-marketing-sri-lanka'
@@ -10938,6 +10959,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdvertisingPackagesRoute: AdvertisingPackagesRoute,
   AdvertisingRatesRoute: AdvertisingRatesRoute,
   AffiliateMarketingSriLankaRoute: AffiliateMarketingSriLankaRoute,
+  AiVideoProductionSriLankaRoute: AiVideoProductionSriLankaRoute,
   AirportAdvertisingSriLankaRoute: AirportAdvertisingSriLankaRoute,
   AnimationSriLankaRoute: AnimationSriLankaRoute,
   AnnualReportDesignSriLankaRoute: AnnualReportDesignSriLankaRoute,
@@ -11476,3 +11498,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Branded Merchandise Sri Lanka | Custom Corporate Giveaways";
-const DESC = "Branded merchandise in Sri Lanka — caps, mugs, pens, USBs, bags & apparel printed or embroidered with your logo. Min 50 units. Call 0701772626.";
+const DESC = "Branded merchandise in Sri Lanka — caps, mugs, pens, USBs, bags & apparel printed or embroidered with your logo. Min 50 units. Call 0707310410.";
 
 export const Route = createFileRoute("/branded-merchandise-sri-lanka")({
   head: () => ({

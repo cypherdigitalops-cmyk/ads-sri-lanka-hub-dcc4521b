@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Screen Printing Sri Lanka | Garment Screen Print from Rs 350";
-const DESC = "Screen printing in Sri Lanka from Rs 350 per garment. T-shirts, hoodies, bags & promotional textiles. Vibrant results, minimum 24 pieces. Call 0701772626.";
+const DESC = "Screen printing in Sri Lanka from Rs 350 per garment. T-shirts, hoodies, bags & promotional textiles. Vibrant results, minimum 24 pieces. Call 0707310410.";
 
 export const Route = createFileRoute("/screen-printing-sri-lanka")({
   head: () => ({

@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "corporate-gifting-sri-lanka")!;
 const TITLE = "Conference Gift Packs Sri Lanka | Delegate Welcome Kits";
-const DESC = "Conference gift packs in Sri Lanka — branded delegate welcome kits with notebooks, pens, USBs & lanyards. Custom packaging. Call 0701772626.";
+const DESC = "Conference gift packs in Sri Lanka — branded delegate welcome kits with notebooks, pens, USBs & lanyards. Custom packaging. Call 0707310410.";
 
 export const Route = createFileRoute("/conference-gift-packs-sri-lanka")({
   head: () => ({

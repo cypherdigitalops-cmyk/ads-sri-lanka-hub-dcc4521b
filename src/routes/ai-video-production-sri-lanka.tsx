@@ -4,7 +4,7 @@ import { SITE } from "@/data/site";
 
 const TITLE = "AI Video Production Sri Lanka — Reels, Ads & Brand Films Fast";
 const DESC =
-  "AI-assisted video production in Sri Lanka — social reels, ad creatives and brand films produced faster and cheaper than traditional shoots. Get a free quote — call 0701772626 or WhatsApp.";
+  "AI-assisted video production in Sri Lanka — social reels, ad creatives and brand films produced faster and cheaper than traditional shoots. Get a free quote — call 0707310410 or WhatsApp.";
 
 const SERVICES = [
   { icon: "📱", t: "Social Media Reels", d: "Short vertical videos (15–60s) for Facebook Reels, Instagram and TikTok — captioned, music-backed and scroll-stopping. Ideal for retail, food and beverage, fashion and salons that need a constant content flow." },
@@ -26,13 +26,13 @@ const STEPS = [
 
 const FAQS = [
   { q: "What is AI video production?", a: "AI video production uses artificial-intelligence tools to handle or speed up parts of the video-making process — scriptwriting, voiceover, subtitles, motion graphics, background visuals and even AI on-screen presenters. In a professional workflow, AI output is then refined by human editors for quality and brand consistency, delivering results faster and more affordably than a traditional shoot." },
-  { q: "How much does AI video production cost in Sri Lanka?", a: "Cost depends on the number of videos, their length and format complexity, language requirements, and any custom elements like AI avatars or on-site filming. Short social reels are the most affordable option, brand videos sit higher, and multi-video or enterprise packages are custom-quoted. Call 0701772626 for a free, project-specific estimate." },
+  { q: "How much does AI video production cost in Sri Lanka?", a: "Cost depends on the number of videos, their length and format complexity, language requirements, and any custom elements like AI avatars or on-site filming. Short social reels are the most affordable option, brand videos sit higher, and multi-video or enterprise packages are custom-quoted. Call 0707310410 for a free, project-specific estimate." },
   { q: "How long does AI video production take?", a: "Most AI-assisted videos are delivered within a few days of script approval — far faster than the two to four weeks a traditional production typically requires. Simple reels can turn around in 24–48 hours, while more complex brand films or multi-video packages take a little longer." },
   { q: "Can you produce videos in Sinhala and Tamil?", a: "Yes. AI voiceover and captioning make it straightforward to produce the same video in Sinhala, Tamil and English — one of the biggest advantages of AI video for the Sri Lankan market, since additional languages usually mean swapping the voiceover rather than re-shooting." },
   { q: "Is AI video lower quality than traditional video?", a: "Not when it's done properly. AI accelerates production, but the quality comes from human oversight — editors who apply colour grading, refine pacing and ensure the video is genuinely on-brand. The result is professional content at a fraction of traditional cost and time." },
   { q: "What is an AI avatar video?", a: "An AI avatar video features a realistic, computer-generated on-screen presenter that speaks your script with natural lip-sync — no camera, studio or hired talent required. It's ideal for education, healthcare, finance and e-learning, and for any business that needs professional presenter-style content, including multilingual versions." },
   { q: "Can AI videos be used as Facebook and Google ads?", a: "Yes. Video ad creatives can be produced in the correct aspect ratios, lengths and formats for Facebook Ads, Google Display, YouTube pre-roll and TikTok, and structured around a strong opening hook to maximise performance in paid campaigns." },
-  { q: "How do I get started?", a: "The quickest way is to WhatsApp or call 0701772626. Tell us what kind of video you need and the platform it's for, and we'll recommend the right format and send you a transparent, fixed-price quote." },
+  { q: "How do I get started?", a: "The quickest way is to WhatsApp or call 0707310410. Tell us what kind of video you need and the platform it's for, and we'll recommend the right format and send you a transparent, fixed-price quote." },
 ];
 
 const JSONLD = {

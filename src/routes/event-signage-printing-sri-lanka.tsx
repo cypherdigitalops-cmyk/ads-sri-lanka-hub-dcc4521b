@@ -5,7 +5,7 @@ import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "printing-services-sri-lanka")!;
 const TITLE = "Event Signage Printing Sri Lanka | Welcome & Directional Boards";
-const DESC = "Event signage printing in Sri Lanka — welcome boards, directional signs, table numbers & event banners. Fast turnaround. Islandwide. Call 0701772626.";
+const DESC = "Event signage printing in Sri Lanka — welcome boards, directional signs, table numbers & event banners. Fast turnaround. Islandwide. Call 0707310410.";
 
 export const Route = createFileRoute("/event-signage-printing-sri-lanka")({
   head: () => ({

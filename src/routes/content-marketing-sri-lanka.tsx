@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
+import { CypherSocialBacklink } from "@/components/site/CypherSocialBacklink";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
 const TITLE = "Affordable Content Marketing Sri Lanka for Sri Lankan Brands";
@@ -19,5 +20,5 @@ export const Route = createFileRoute("/content-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/content-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="content marketing sri lanka" /></PageShell>),
+  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="content marketing sri lanka" /><CypherSocialBacklink /></PageShell>),
 });

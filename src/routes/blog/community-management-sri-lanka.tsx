@@ -20,5 +20,5 @@ export const Route = createFileRoute("/blog/community-management-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/community-management-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="community management sri lanka" extraLinks={[{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing","anchor":"social media marketing Sri Lanka"},{"href":"/content-creation-sri-lanka","label":"Content Creation","anchor":"content creation Sri Lanka"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="community management sri lanka" extraLinks={[{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing","anchor":"social media marketing Sri Lanka"},{"href":"/content-creation-sri-lanka","label":"Content Creation","anchor":"content creation Sri Lanka"}]} /><CypherSocialBacklink /></PageShell>),
 });

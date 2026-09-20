@@ -20,5 +20,5 @@ export const Route = createFileRoute("/content-marketing-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/content-marketing-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="content marketing sri lanka" /></PageShell>),
+  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="content marketing sri lanka" /><CypherSocialBacklink /></PageShell>),
 });

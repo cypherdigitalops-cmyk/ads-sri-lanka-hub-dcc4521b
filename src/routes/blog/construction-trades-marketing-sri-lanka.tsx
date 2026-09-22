@@ -201,7 +201,7 @@ function ConstructionTradesPage() {
               advertise directly with Findit
             </a>
             . It's a low-cost, highly targeted alternative — or complement — to running mass-market{" "}
-            <Link to="/digital-advertising-sri-lanka" className={ext}>
+            <Link to="/blog/digital-advertising-sri-lanka" className={ext}>
               digital advertising in Sri Lanka
             </Link>
             .

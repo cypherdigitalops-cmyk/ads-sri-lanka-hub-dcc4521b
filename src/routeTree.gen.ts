@@ -517,6 +517,7 @@ import { Route as BlogCorporateAdvertisingSriLankaRouteImport } from './routes/b
 import { Route as BlogConversionMarketingSriLankaRouteImport } from './routes/blog/conversion-marketing-sri-lanka'
 import { Route as BlogContentCreationSriLankaRouteImport } from './routes/blog/content-creation-sri-lanka'
 import { Route as BlogConsumerPromotionsSriLankaRouteImport } from './routes/blog/consumer-promotions-sri-lanka'
+import { Route as BlogConstructionTradesMarketingSriLankaRouteImport } from './routes/blog/construction-trades-marketing-sri-lanka'
 import { Route as BlogCommunityManagementSriLankaRouteImport } from './routes/blog/community-management-sri-lanka'
 import { Route as BlogBusinessBrandingSriLankaRouteImport } from './routes/blog/business-branding-sri-lanka'
 import { Route as BlogBusAdvertisingSriLankaRouteImport } from './routes/blog/bus-advertising-sri-lanka'
@@ -3366,6 +3367,12 @@ const BlogConsumerPromotionsSriLankaRoute =
     path: '/blog/consumer-promotions-sri-lanka',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogConstructionTradesMarketingSriLankaRoute =
+  BlogConstructionTradesMarketingSriLankaRouteImport.update({
+    id: '/blog/construction-trades-marketing-sri-lanka',
+    path: '/blog/construction-trades-marketing-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogCommunityManagementSriLankaRoute =
   BlogCommunityManagementSriLankaRouteImport.update({
     id: '/blog/community-management-sri-lanka',
@@ -3902,6 +3909,7 @@ export interface FileRoutesByFullPath {
   '/blog/bus-advertising-sri-lanka': typeof BlogBusAdvertisingSriLankaRoute
   '/blog/business-branding-sri-lanka': typeof BlogBusinessBrandingSriLankaRoute
   '/blog/community-management-sri-lanka': typeof BlogCommunityManagementSriLankaRoute
+  '/blog/construction-trades-marketing-sri-lanka': typeof BlogConstructionTradesMarketingSriLankaRoute
   '/blog/consumer-promotions-sri-lanka': typeof BlogConsumerPromotionsSriLankaRoute
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
@@ -4432,6 +4440,7 @@ export interface FileRoutesByTo {
   '/blog/bus-advertising-sri-lanka': typeof BlogBusAdvertisingSriLankaRoute
   '/blog/business-branding-sri-lanka': typeof BlogBusinessBrandingSriLankaRoute
   '/blog/community-management-sri-lanka': typeof BlogCommunityManagementSriLankaRoute
+  '/blog/construction-trades-marketing-sri-lanka': typeof BlogConstructionTradesMarketingSriLankaRoute
   '/blog/consumer-promotions-sri-lanka': typeof BlogConsumerPromotionsSriLankaRoute
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
@@ -4963,6 +4972,7 @@ export interface FileRoutesById {
   '/blog/bus-advertising-sri-lanka': typeof BlogBusAdvertisingSriLankaRoute
   '/blog/business-branding-sri-lanka': typeof BlogBusinessBrandingSriLankaRoute
   '/blog/community-management-sri-lanka': typeof BlogCommunityManagementSriLankaRoute
+  '/blog/construction-trades-marketing-sri-lanka': typeof BlogConstructionTradesMarketingSriLankaRoute
   '/blog/consumer-promotions-sri-lanka': typeof BlogConsumerPromotionsSriLankaRoute
   '/blog/content-creation-sri-lanka': typeof BlogContentCreationSriLankaRoute
   '/blog/conversion-marketing-sri-lanka': typeof BlogConversionMarketingSriLankaRoute
@@ -5495,6 +5505,7 @@ export interface FileRouteTypes {
     | '/blog/bus-advertising-sri-lanka'
     | '/blog/business-branding-sri-lanka'
     | '/blog/community-management-sri-lanka'
+    | '/blog/construction-trades-marketing-sri-lanka'
     | '/blog/consumer-promotions-sri-lanka'
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
@@ -6025,6 +6036,7 @@ export interface FileRouteTypes {
     | '/blog/bus-advertising-sri-lanka'
     | '/blog/business-branding-sri-lanka'
     | '/blog/community-management-sri-lanka'
+    | '/blog/construction-trades-marketing-sri-lanka'
     | '/blog/consumer-promotions-sri-lanka'
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
@@ -6555,6 +6567,7 @@ export interface FileRouteTypes {
     | '/blog/bus-advertising-sri-lanka'
     | '/blog/business-branding-sri-lanka'
     | '/blog/community-management-sri-lanka'
+    | '/blog/construction-trades-marketing-sri-lanka'
     | '/blog/consumer-promotions-sri-lanka'
     | '/blog/content-creation-sri-lanka'
     | '/blog/conversion-marketing-sri-lanka'
@@ -7086,6 +7099,7 @@ export interface RootRouteChildren {
   BlogBusAdvertisingSriLankaRoute: typeof BlogBusAdvertisingSriLankaRoute
   BlogBusinessBrandingSriLankaRoute: typeof BlogBusinessBrandingSriLankaRoute
   BlogCommunityManagementSriLankaRoute: typeof BlogCommunityManagementSriLankaRoute
+  BlogConstructionTradesMarketingSriLankaRoute: typeof BlogConstructionTradesMarketingSriLankaRoute
   BlogConsumerPromotionsSriLankaRoute: typeof BlogConsumerPromotionsSriLankaRoute
   BlogContentCreationSriLankaRoute: typeof BlogContentCreationSriLankaRoute
   BlogConversionMarketingSriLankaRoute: typeof BlogConversionMarketingSriLankaRoute
@@ -10759,6 +10773,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogConsumerPromotionsSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/construction-trades-marketing-sri-lanka': {
+      id: '/blog/construction-trades-marketing-sri-lanka'
+      path: '/blog/construction-trades-marketing-sri-lanka'
+      fullPath: '/blog/construction-trades-marketing-sri-lanka'
+      preLoaderRoute: typeof BlogConstructionTradesMarketingSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/community-management-sri-lanka': {
       id: '/blog/community-management-sri-lanka'
       path: '/blog/community-management-sri-lanka'
@@ -11343,6 +11364,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogBusAdvertisingSriLankaRoute: BlogBusAdvertisingSriLankaRoute,
   BlogBusinessBrandingSriLankaRoute: BlogBusinessBrandingSriLankaRoute,
   BlogCommunityManagementSriLankaRoute: BlogCommunityManagementSriLankaRoute,
+  BlogConstructionTradesMarketingSriLankaRoute:
+    BlogConstructionTradesMarketingSriLankaRoute,
   BlogConsumerPromotionsSriLankaRoute: BlogConsumerPromotionsSriLankaRoute,
   BlogContentCreationSriLankaRoute: BlogContentCreationSriLankaRoute,
   BlogConversionMarketingSriLankaRoute: BlogConversionMarketingSriLankaRoute,

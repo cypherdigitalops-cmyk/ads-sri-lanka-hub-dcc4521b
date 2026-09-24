@@ -175,6 +175,7 @@ import { Route as LedScreenRentalSriLankaRouteImport } from './routes/led-screen
 import { Route as LedScreenAdvertisingSriLankaRouteImport } from './routes/led-screen-advertising-sri-lanka'
 import { Route as LeafletDistributionSriLankaRouteImport } from './routes/leaflet-distribution-sri-lanka'
 import { Route as LeadGenerationSriLankaRouteImport } from './routes/lead-generation-sri-lanka'
+import { Route as LeadFollowUpServicesSriLankaRouteImport } from './routes/lead-follow-up-services-sri-lanka'
 import { Route as LaunchEventGiftsSriLankaRouteImport } from './routes/launch-event-gifts-sri-lanka'
 import { Route as LargeFormatPrintingSriLankaRouteImport } from './routes/large-format-printing-sri-lanka'
 import { Route as LanyardPrintingSriLankaRouteImport } from './routes/lanyard-printing-sri-lanka'
@@ -1444,6 +1445,12 @@ const LeadGenerationSriLankaRoute = LeadGenerationSriLankaRouteImport.update({
   path: '/lead-generation-sri-lanka',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeadFollowUpServicesSriLankaRoute =
+  LeadFollowUpServicesSriLankaRouteImport.update({
+    id: '/lead-follow-up-services-sri-lanka',
+    path: '/lead-follow-up-services-sri-lanka',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LaunchEventGiftsSriLankaRoute =
   LaunchEventGiftsSriLankaRouteImport.update({
     id: '/launch-event-gifts-sri-lanka',
@@ -3723,6 +3730,7 @@ export interface FileRoutesByFullPath {
   '/lanyard-printing-sri-lanka': typeof LanyardPrintingSriLankaRoute
   '/large-format-printing-sri-lanka': typeof LargeFormatPrintingSriLankaRoute
   '/launch-event-gifts-sri-lanka': typeof LaunchEventGiftsSriLankaRoute
+  '/lead-follow-up-services-sri-lanka': typeof LeadFollowUpServicesSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
   '/leaflet-distribution-sri-lanka': typeof LeafletDistributionSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
@@ -4254,6 +4262,7 @@ export interface FileRoutesByTo {
   '/lanyard-printing-sri-lanka': typeof LanyardPrintingSriLankaRoute
   '/large-format-printing-sri-lanka': typeof LargeFormatPrintingSriLankaRoute
   '/launch-event-gifts-sri-lanka': typeof LaunchEventGiftsSriLankaRoute
+  '/lead-follow-up-services-sri-lanka': typeof LeadFollowUpServicesSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
   '/leaflet-distribution-sri-lanka': typeof LeafletDistributionSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
@@ -4786,6 +4795,7 @@ export interface FileRoutesById {
   '/lanyard-printing-sri-lanka': typeof LanyardPrintingSriLankaRoute
   '/large-format-printing-sri-lanka': typeof LargeFormatPrintingSriLankaRoute
   '/launch-event-gifts-sri-lanka': typeof LaunchEventGiftsSriLankaRoute
+  '/lead-follow-up-services-sri-lanka': typeof LeadFollowUpServicesSriLankaRoute
   '/lead-generation-sri-lanka': typeof LeadGenerationSriLankaRoute
   '/leaflet-distribution-sri-lanka': typeof LeafletDistributionSriLankaRoute
   '/led-screen-advertising-sri-lanka': typeof LedScreenAdvertisingSriLankaRoute
@@ -5319,6 +5329,7 @@ export interface FileRouteTypes {
     | '/lanyard-printing-sri-lanka'
     | '/large-format-printing-sri-lanka'
     | '/launch-event-gifts-sri-lanka'
+    | '/lead-follow-up-services-sri-lanka'
     | '/lead-generation-sri-lanka'
     | '/leaflet-distribution-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
@@ -5850,6 +5861,7 @@ export interface FileRouteTypes {
     | '/lanyard-printing-sri-lanka'
     | '/large-format-printing-sri-lanka'
     | '/launch-event-gifts-sri-lanka'
+    | '/lead-follow-up-services-sri-lanka'
     | '/lead-generation-sri-lanka'
     | '/leaflet-distribution-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
@@ -6381,6 +6393,7 @@ export interface FileRouteTypes {
     | '/lanyard-printing-sri-lanka'
     | '/large-format-printing-sri-lanka'
     | '/launch-event-gifts-sri-lanka'
+    | '/lead-follow-up-services-sri-lanka'
     | '/lead-generation-sri-lanka'
     | '/leaflet-distribution-sri-lanka'
     | '/led-screen-advertising-sri-lanka'
@@ -6913,6 +6926,7 @@ export interface RootRouteChildren {
   LanyardPrintingSriLankaRoute: typeof LanyardPrintingSriLankaRoute
   LargeFormatPrintingSriLankaRoute: typeof LargeFormatPrintingSriLankaRoute
   LaunchEventGiftsSriLankaRoute: typeof LaunchEventGiftsSriLankaRoute
+  LeadFollowUpServicesSriLankaRoute: typeof LeadFollowUpServicesSriLankaRoute
   LeadGenerationSriLankaRoute: typeof LeadGenerationSriLankaRoute
   LeafletDistributionSriLankaRoute: typeof LeafletDistributionSriLankaRoute
   LedScreenAdvertisingSriLankaRoute: typeof LedScreenAdvertisingSriLankaRoute
@@ -8377,6 +8391,13 @@ declare module '@tanstack/react-router' {
       path: '/lead-generation-sri-lanka'
       fullPath: '/lead-generation-sri-lanka'
       preLoaderRoute: typeof LeadGenerationSriLankaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lead-follow-up-services-sri-lanka': {
+      id: '/lead-follow-up-services-sri-lanka'
+      path: '/lead-follow-up-services-sri-lanka'
+      fullPath: '/lead-follow-up-services-sri-lanka'
+      preLoaderRoute: typeof LeadFollowUpServicesSriLankaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/launch-event-gifts-sri-lanka': {
@@ -11168,6 +11189,7 @@ const rootRouteChildren: RootRouteChildren = {
   LanyardPrintingSriLankaRoute: LanyardPrintingSriLankaRoute,
   LargeFormatPrintingSriLankaRoute: LargeFormatPrintingSriLankaRoute,
   LaunchEventGiftsSriLankaRoute: LaunchEventGiftsSriLankaRoute,
+  LeadFollowUpServicesSriLankaRoute: LeadFollowUpServicesSriLankaRoute,
   LeadGenerationSriLankaRoute: LeadGenerationSriLankaRoute,
   LeafletDistributionSriLankaRoute: LeafletDistributionSriLankaRoute,
   LedScreenAdvertisingSriLankaRoute: LedScreenAdvertisingSriLankaRoute,

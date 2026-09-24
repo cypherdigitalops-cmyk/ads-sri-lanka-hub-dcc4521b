@@ -404,12 +404,12 @@ function LeadFollowUpPage() {
           </div>
           <p>Lead follow-up is a more specific sales-focused application of outbound calling. For businesses whose main requirement is to contact existing prospects, understand their requirements and provide information to the sales team, a specialized lead follow-up service may be more relevant than a traditional general-purpose call center. For a broader overview of inbound and outbound contact centre services, see this guide on{" "}
             <a
-              href="https://cypherdigital.lk/call-center-outsourcing-sri-lanka"
+              href="https://cypherdigital.lk/lead-follow-up-services-sri-lanka"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground underline-offset-4 hover:underline"
             >
-              call center outsourcing Sri Lanka
+              lead follow-up services Sri Lanka
             </a>
             .</p>
         </div>

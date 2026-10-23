@@ -74,7 +74,7 @@ const topicRows: [string, string, string, string, string, string, string][] = [
 const topics = new Map(topicRows.map(([key, label, answer, scope, measure, caution, decision]) => [key, { label, answer, scope, measure, caution, decision }]));
 
 const blogFocus: Record<string, [string, string]> = {
-  "best-time-to-run-facebook-ads-in-sri-lanka": ["Finding the right schedule from your own results", "There is no verified universal best hour for every Sri Lankan advertiser. Compare qualified enquiries and sales by time in your own account, check the reporting timezone and whether staff can reply, and test a schedule without changing other major campaign settings at the same time."],
+  "best-time-to-run-facebook-ads-in": ["Finding the right schedule from your own results", "There is no verified universal best hour for every Sri Lankan advertiser. Compare qualified enquiries and sales by time in your own account, check the reporting timezone and whether staff can reply, and test a schedule without changing other major campaign settings at the same time."],
   "digital-marketing-vs-traditional-advertising": ["Comparing reach, context and response", "Traditional and digital channels can both support discovery or demand, but their buying and measurement systems differ. Compare the audience, media context, creative requirements and customer response path. Do not assume a fixed percentage split, universal entry price or that one channel always creates more trust."],
   "google-business-profile-setup-guide": ["Checking profile eligibility and ownership", "Check the official Business Profile eligibility rules before creating a listing. Use the real business name and correct address or service-area setup, retain owner access and follow the verification method Google offers. Keep hours and contact information accurate; do not promise verification or map-ranking timelines."],
   "how-to-get-on-first-page-of-google": ["Diagnosing search visibility before promising a result", "Check whether the intended pages are accessible and indexed, whether their content meets the customer's search intent and whether internal links lead to the right service. Prioritise specific fixes and useful information. Neither a first-page position nor a fixed ranking timeline can be guaranteed."],
@@ -120,7 +120,7 @@ const blogFocus: Record<string, [string, string]> = {
 };
 
 const familyAliases: Record<string, string> = {
-  "best-time-to-run-facebook-ads-in-sri-lanka": "facebook-ads", "digital-marketing-vs-traditional-advertising": "digital-marketing",
+  "best-time-to-run-facebook-ads-in": "facebook-ads", "digital-marketing-vs-traditional-advertising": "digital-marketing",
   "google-business-profile-setup-guide": "local-seo", "how-to-get-on-first-page-of-google": "seo",
   "sinhala-vs-tamil-vs-english-advertising-language": "digital-marketing", "youtube-video-marketing": "youtube-marketing", "seo-pricing": "seo-services",
   "online-marketing": "digital-marketing", "internet-marketing": "digital-marketing", "digital-advertising": "digital-marketing",

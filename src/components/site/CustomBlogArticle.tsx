@@ -299,7 +299,7 @@ export function CustomBlogArticle({
 
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
-          headline={anchor.ctaHeadline ?? `Get expert help with ${anchor.fallbackText}`}
+          headline={digitalGuide ? `Get guidance on ${digitalGuide.label.toLowerCase()}` : anchor.ctaHeadline ?? `Get expert help with ${anchor.fallbackText}`}
           sub={digitalGuide ? `Discuss your audience, objective and budget — call ${phone} or WhatsApp.` : `Free advice on screen size, pixel pitch and budget — call ${phone} or WhatsApp.`}
           service={anchor.ctaService ?? anchor.fallbackText}
         />

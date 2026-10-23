@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/best-time-to-run-facebook-ads-in-sri-lanka";
-const TITLE = "Best Time To Run Facebook Ads In Sri Lanka | Practical Business Guide";
-const DESC = "Explore best time to run facebook ads in in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
+const TITLE = "Facebook Ads Scheduling Sri Lanka | Practical Business Guide";
+const DESC = "Explore facebook ads scheduling in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/facebook-marketing-sri-lanka",

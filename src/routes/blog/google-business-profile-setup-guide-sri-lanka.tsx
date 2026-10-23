@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/google-business-profile-setup-guide-sri-lanka";
-const TITLE = "Google Business Profile Setup Guide Sri Lanka | Practical Business Guide";
-const DESC = "Explore google business profile setup guide in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
+const TITLE = "Google Business Profile Setup Sri Lanka | Practical Business Guide";
+const DESC = "Explore google business profile setup in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/local-seo-sri-lanka",

@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/how-to-get-on-first-page-of-google-sri-lanka";
-const TITLE = "How To Get On First Page Of Google Sri Lanka | Practical Business Guide";
-const DESC = "Explore how to get on first page of google in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
+const TITLE = "Improving Google Search Visibility Sri Lanka | Practical Business Guide";
+const DESC = "Explore improving google search visibility in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/seo-services-sri-lanka",

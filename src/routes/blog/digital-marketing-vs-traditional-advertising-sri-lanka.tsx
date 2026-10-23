@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/digital-marketing-vs-traditional-advertising-sri-lanka";
-const TITLE = "Digital Marketing Vs Traditional Advertising Sri Lanka | Practical Business Guide";
-const DESC = "Explore digital marketing vs traditional advertising in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
+const TITLE = "Digital vs Traditional Advertising Sri Lanka | Practical Business Guide";
+const DESC = "Explore digital vs traditional advertising in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/",

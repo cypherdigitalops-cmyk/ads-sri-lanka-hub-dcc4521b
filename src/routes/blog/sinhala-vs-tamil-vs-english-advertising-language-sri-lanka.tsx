@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/sinhala-vs-tamil-vs-english-advertising-language-sri-lanka";
-const TITLE = "Sinhala Vs Tamil Vs English Advertising Language Sri Lanka | Practical Business Guide";
-const DESC = "Explore sinhala vs tamil vs english advertising language in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
+const TITLE = "Sinhala, Tamil & English Advertising Sri Lanka | Practical Business Guide";
+const DESC = "Explore sinhala, tamil & english advertising in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/digital-marketing-sri-lanka",

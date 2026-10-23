@@ -74,6 +74,12 @@ const topicRows: [string, string, string, string, string, string, string][] = [
 const topics = new Map(topicRows.map(([key, label, answer, scope, measure, caution, decision]) => [key, { label, answer, scope, measure, caution, decision }]));
 
 const blogFocus: Record<string, [string, string]> = {
+  "best-time-to-run-facebook-ads-in-sri-lanka": ["Finding the right schedule from your own results", "There is no verified universal best hour for every Sri Lankan advertiser. Compare qualified enquiries and sales by time in your own account, check the reporting timezone and whether staff can reply, and test a schedule without changing other major campaign settings at the same time."],
+  "digital-marketing-vs-traditional-advertising": ["Comparing reach, context and response", "Traditional and digital channels can both support discovery or demand, but their buying and measurement systems differ. Compare the audience, media context, creative requirements and customer response path. Do not assume a fixed percentage split, universal entry price or that one channel always creates more trust."],
+  "google-business-profile-setup-guide": ["Checking profile eligibility and ownership", "Check the official Business Profile eligibility rules before creating a listing. Use the real business name and correct address or service-area setup, retain owner access and follow the verification method Google offers. Keep hours and contact information accurate; do not promise verification or map-ranking timelines."],
+  "how-to-get-on-first-page-of-google": ["Diagnosing search visibility before promising a result", "Check whether the intended pages are accessible and indexed, whether their content meets the customer's search intent and whether internal links lead to the right service. Prioritise specific fixes and useful information. Neither a first-page position nor a fixed ranking timeline can be guaranteed."],
+  "sinhala-vs-tamil-vs-english-advertising-language": ["Researching language preference without stereotypes", "Choose language using actual customer conversations, service areas and content comprehension. Do not infer purchasing power from language or assume fixed advertising cost differences. Review translations with fluent readers, preserve the offer's meaning and compare qualified responses from language variants."],
+  "youtube-video-marketing": ["Connecting video topics to customer decisions", "Build videos around demonstrations, comparisons and real buyer questions. Use accurate titles and captions and link to the relevant product or service. Keep organic channel learning separate from paid video-ad distribution and avoid interpreting every view as a potential buyer."],
   "digital-marketing": ["Choosing a practical channel mix", "List the questions customers ask before buying and separate people discovering the offer from people actively looking for it. Use one primary acquisition test and one follow-up process, then expand only when the results can be explained."],
   "online-marketing": ["Connecting discovery to a sale", "Trace the journey from a search result or social post to the offer page, enquiry and sales response. A customer should see consistent product details, service areas and next steps throughout that journey."],
   "internet-marketing": ["Building the foundations before promotion", "Check the mobile website, business information, useful service pages and enquiry handling before buying traffic. A working customer journey is more valuable than accounts on every available platform."],
@@ -114,6 +120,9 @@ const blogFocus: Record<string, [string, string]> = {
 };
 
 const familyAliases: Record<string, string> = {
+  "best-time-to-run-facebook-ads-in-sri-lanka": "facebook-ads", "digital-marketing-vs-traditional-advertising": "digital-marketing",
+  "google-business-profile-setup-guide": "local-seo", "how-to-get-on-first-page-of-google": "seo",
+  "sinhala-vs-tamil-vs-english-advertising-language": "digital-marketing", "youtube-video-marketing": "youtube-marketing", "seo-pricing": "seo-services",
   "online-marketing": "digital-marketing", "internet-marketing": "digital-marketing", "digital-advertising": "digital-marketing",
   "social-media-advertising": "social-media-marketing", "facebook-advertising": "facebook-ads", "instagram-advertising": "instagram-ads",
   "tiktok-advertising": "tiktok-ads", "google-advertising": "google-ads", "search-engine-marketing": "ppc", "sem": "ppc", "pay-per-click": "ppc",
@@ -134,6 +143,8 @@ const entries = categories.flatMap(c => [
   ...c.blog.map(b => ({ path: `blog/${b.slug}`, label: b.keyword, hub: c.slug })),
 ]);
 entries.push(
+  { path: "seo-pricing-sri-lanka", label: "SEO Pricing", hub: "seo-services-sri-lanka" },
+  ...["best-time-to-run-facebook-ads-in-sri-lanka", "digital-marketing-vs-traditional-advertising-sri-lanka", "google-business-profile-setup-guide-sri-lanka", "how-to-get-on-first-page-of-google-sri-lanka", "sinhala-vs-tamil-vs-english-advertising-language-sri-lanka", "youtube-video-marketing-sri-lanka"].map(slug => ({ path: `blog/${slug}`, label: slug.replace(/-sri-lanka$/, "").replaceAll("-", " "), hub: slug.includes("google") ? "seo-services-sri-lanka" : "digital-marketing-sri-lanka" })),
   { path: "google-ads-cost-sri-lanka", label: "Google Ads Costs", hub: "digital-marketing-sri-lanka" },
   { path: "facebook-ads-cost-sri-lanka", label: "Facebook Ads Costs", hub: "social-media-marketing-sri-lanka" },
   { path: "blog/how-to-run-tiktok-ads-in-sri-lanka-step-by-step", label: "TikTok Ads Setup", hub: "digital-marketing-sri-lanka" },
@@ -151,9 +162,9 @@ function makeGuide(entry: typeof entries[number]): DigitalGuide | undefined {
   const topic = topics.get(familyAliases[key] ?? key);
   if (!topic) return undefined;
   const isBlog = entry.path.startsWith("blog/");
-  const isCost = key.endsWith("-cost");
+  const isCost = key.endsWith("-cost") || key === "seo-pricing";
   const focus = blogFocus[key];
-  const label = isCost ? entry.label : isBlog ? entry.label.replace(/sri lanka/gi, "").trim().replace(/\b\w/g, c => c.toUpperCase()).replace(/Seo/g, "SEO").replace(/Sem/g, "SEM").replace(/Whatsapp/g, "WhatsApp").replace(/Tiktok/g, "TikTok") : topic.label;
+  const label = isCost ? entry.label : isBlog ? entry.label.replace(/sri lanka/gi, "").trim().replace(/\b\w/g, c => c.toUpperCase()).replace(/Seo/g, "SEO").replace(/Sem/g, "SEM").replace(/Sms/g, "SMS").replace(/Whatsapp/g, "WhatsApp").replace(/Tiktok/g, "TikTok").replace(/Youtube/g, "YouTube") : topic.label;
   const title = `${label} Sri Lanka | ${isCost ? "Budget & Fee Guide" : isBlog ? "Practical Business Guide" : "Services & Planning Guide"}`;
   const description = isCost
     ? `Understand ${label.toLowerCase()} in Sri Lanka: media spend, management fees, creative costs and qualified-lead measurement. Compare an itemised quote.`

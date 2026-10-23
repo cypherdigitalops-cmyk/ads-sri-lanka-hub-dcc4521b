@@ -523,7 +523,6 @@ export function CategoryHubTemplate({
   reducedCtas,
   extraContent,
 }: {
-  const { phone } = useSiteContact();
   category: Category;
   extraLinks?: { href: string; label: string; anchor?: string }[];
   h1Override?: string;
@@ -531,6 +530,7 @@ export function CategoryHubTemplate({
   reducedCtas?: boolean;
   extraContent?: React.ReactNode;
 }) {
+  const { phone } = useSiteContact();
   resetHomeAnchor(category.slug);
   setExtraLinks(
     (extraLinks ?? []).map((l) => ({
@@ -704,11 +704,11 @@ export function ServicePageTemplate({
   keyword,
   extraLinks,
 }: {
-  const { phone } = useSiteContact();
   category: Category;
   keyword: string;
   extraLinks?: { href: string; label: string; anchor?: string }[];
 }) {
+  const { phone } = useSiteContact();
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";

@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link, type ErrorComponentProps } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/admin")({
   }),
 });
 
-function AdminError({ error, reset }: { error: Error; reset: () => void }) {
+function AdminError({ error, reset }: ErrorComponentProps) {
   console.error(error);
   return (
     <div className="flex min-h-screen items-center justify-center px-6" style={{ background: "#F5F5F3", color: "#1a1a1a" }}>

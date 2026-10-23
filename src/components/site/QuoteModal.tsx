@@ -1,3 +1,4 @@
+import { useSiteContact } from "@/lib/site-contact";
 import { useEffect, useState } from "react";
 import { MessageCircle, Phone, Send, X } from "lucide-react";
 import { SITE, CATEGORIES, titleCase } from "@/data/site";
@@ -44,6 +45,7 @@ const ALL_SERVICES: string[] = (() => {
 })();
 
 export function QuoteModal() {
+  const { phone: sitePhone, whatsapp } = useSiteContact();
   const [open, setOpen] = useState(false);
   const [service, setService] = useState("");
   const [name, setName] = useState("");
@@ -106,7 +108,7 @@ export function QuoteModal() {
       company ? `Company: ${company}` : "",
       message ? `Message: ${message}` : "",
     ].filter(Boolean);
-    const url = `${SITE.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
+    const url = `${whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
     window.open(url, "_blank", "noopener");
     setSent(true);
     setSubmitting(false);
@@ -243,7 +245,7 @@ export function QuoteModal() {
                   <Send className="h-4 w-4" /> {submitting ? "Sending…" : "Send Free Quote Request"}
                 </button>
                 <a
-                  href={`tel:${SITE.phone}`}
+                  href={`tel:${sitePhone}`}
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-semibold hover:bg-muted"
                 >
                   <Phone className="h-4 w-4" /> Call

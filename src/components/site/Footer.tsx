@@ -1,9 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
 import { CATEGORIES, FOOTER_RENTALS, FOOTER_PRINTING, SITE } from "@/data/site";
+import { useSiteContact } from "@/lib/site-contact";
 import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
+  const { phone, whatsapp } = useSiteContact();
   return (
     <footer className="mt-16 bg-[image:var(--gradient-hero)] text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-5">
@@ -13,8 +15,8 @@ export function SiteFooter() {
             Sri Lanka's information hub for every advertising solution — ATL, BTL, digital, SEO, social media, outdoor, branding, web &amp; video. Search, learn, then call us with your question.
           </p>
           <div className="mt-5 space-y-2 text-sm">
-            <a href={`tel:${SITE.phone}`} className="flex items-center gap-2 hover:text-accent"><Phone className="h-4 w-4" /> {SITE.phone}</a>
-            <a href={SITE.whatsapp} target="_blank" rel="noopener" className="flex items-center gap-2 hover:text-accent"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
+            <a href={`tel:${phone}`} className="flex items-center gap-2 hover:text-accent"><Phone className="h-4 w-4" /> {phone}</a>
+            <a href={whatsapp} target="_blank" rel="noopener" className="flex items-center gap-2 hover:text-accent"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Colombo, Sri Lanka</div>
           </div>
         </div>
@@ -95,7 +97,7 @@ export function SiteFooter() {
 
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-4 py-5 text-xs text-primary-foreground/70">
-          © 2025 {SITE.domain} — Information hub. Call {SITE.phone} for free advertising guidance.
+          © 2025 {SITE.domain} — Information hub. Call {phone} for free advertising guidance.
         </div>
       </div>
     </footer>

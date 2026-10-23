@@ -4,6 +4,7 @@ import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection, InlineInquiryForm, MidContentWhatsAppCTA, PrintingPowerCTA } from "./CTASection";
 import { openQuoteModal } from "./QuoteModal";
 import { RELATED_CATEGORIES, SITE, titleCase, type Category } from "@/data/site";
+import { useSiteContact } from "@/lib/site-contact";
 import heroImg from "@/assets/hero-advertising.jpg";
 import {
   buildBlogArticle,
@@ -307,6 +308,7 @@ function _RelatedCategoriesImpl({ categorySlug }: { categorySlug: string }) {
 }
 
 export function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string; intro: string; crumbs: Crumb[] }) {
+  const { phone, whatsapp } = useSiteContact();
   return (
     <section className="relative overflow-hidden text-primary-foreground">
       <div
@@ -334,15 +336,15 @@ export function Hero({ kicker, h1, intro, crumbs }: { kicker: string; h1: string
             <Send className="h-5 w-5" /> Get Free Quote <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
           </button>
           <a
-            href={`${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${kicker}. Please share pricing and timelines.`)}`}
+            href={`${whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${kicker}. Please share pricing and timelines.`)}`}
             target="_blank"
             rel="noopener"
             className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3.5 text-base font-bold text-[var(--whatsapp-foreground)] shadow-xl transition hover:scale-[1.03]"
           >
             <MessageCircle className="h-5 w-5" /> WhatsApp Us
           </a>
-          <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20">
-            <Phone className="h-5 w-5" /> Call {SITE.phone}
+          <a href={`tel:${phone}`} className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3.5 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20">
+            <Phone className="h-5 w-5" /> Call {phone}
           </a>
         </div>
         <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-primary-foreground/85">
@@ -528,6 +530,7 @@ export function CategoryHubTemplate({
   reducedCtas?: boolean;
   extraContent?: React.ReactNode;
 }) {
+  const { phone } = useSiteContact();
   resetHomeAnchor(category.slug);
   setExtraLinks(
     (extraLinks ?? []).map((l) => ({
@@ -659,7 +662,7 @@ export function CategoryHubTemplate({
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={`Have a question about ${category.title.toLowerCase()} in Sri Lanka?`}
-          sub={`Free guidance from real specialists — call ${SITE.phone} or send an inquiry.`}
+          sub={`Free guidance from real specialists — call ${phone} or send an inquiry.`}
           service={category.title}
         />
       </div>
@@ -705,6 +708,7 @@ export function ServicePageTemplate({
   keyword: string;
   extraLinks?: { href: string; label: string; anchor?: string }[];
 }) {
+  const { phone } = useSiteContact();
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
@@ -899,7 +903,7 @@ export function ServicePageTemplate({
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={`Want clear answers about ${title}?`}
-          sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${SITE.phone}.`}
+          sub={`Tell us your goal — we'll explain options, channels and what to expect. Call ${phone}.`}
           service={title}
         />
       </div>

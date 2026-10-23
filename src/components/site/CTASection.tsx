@@ -3,6 +3,7 @@ import { MessageCircle, Phone, Send } from "lucide-react";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
 import { useState } from "react";
 import { openQuoteModal } from "./QuoteModal";
+import { useSiteContact } from "@/lib/site-contact";
 
 /**
  * Derive the human-readable service/category name from the current URL path
@@ -20,10 +21,10 @@ function useCurrentService(): string | undefined {
   return undefined;
 }
 
-function waLink(service?: string) {
-  if (!service) return SITE.whatsapp;
+function waLink(service: string | undefined, whatsappBase: string) {
+  if (!service) return whatsappBase;
   const msg = `Hi, I'm inquiring about ${service}. Please share more details.`;
-  return `${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+  return `${whatsappBase}?text=${encodeURIComponent(msg)}`;
 }
 
 /**
@@ -31,6 +32,7 @@ function waLink(service?: string) {
  * shown above the main header on every page.
  */
 export function TopContactBar() {
+  const { phone, whatsapp } = useSiteContact();
   return (
     <div
       className="w-full text-white"
@@ -38,15 +40,15 @@ export function TopContactBar() {
     >
       <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-3 px-4 text-[12px] font-medium">
         <a
-          href={`tel:${SITE.phone}`}
+          href={`tel:${phone}`}
           className="inline-flex items-center gap-1.5 hover:text-accent"
         >
           <Phone className="h-3.5 w-3.5" />
-          <span className="hidden xs:inline">Call</span> {SITE.phone}
+          <span className="hidden xs:inline">Call</span> {phone}
         </a>
         <div className="flex items-center gap-4">
           <a
-            href={SITE.whatsapp}
+            href={whatsapp}
             target="_blank"
             rel="noopener"
             className="inline-flex items-center gap-1.5 hover:text-accent"
@@ -85,9 +87,10 @@ export function FloatingQuoteButton() {
  * down so visitors can jump straight into a conversation.
  */
 export function MidContentWhatsAppCTA({ service }: { service?: string }) {
+  const { phone, whatsapp } = useSiteContact();
   const href = service
-    ? `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${service}. Can you share pricing and timelines?`)}`
-    : SITE.whatsapp;
+    ? `${whatsapp}?text=${encodeURIComponent(`Hi, I'm interested in ${service}. Can you share pricing and timelines?`)}`
+    : whatsapp;
   return (
     <section className="mx-auto my-12 max-w-4xl px-4">
       <div className="relative overflow-hidden rounded-3xl bg-[image:var(--gradient-hero)] p-7 text-primary-foreground shadow-[var(--shadow-elegant)] sm:p-9">
@@ -120,10 +123,10 @@ export function MidContentWhatsAppCTA({ service }: { service?: string }) {
               <MessageCircle className="h-5 w-5" /> WhatsApp Now
             </a>
             <a
-              href={`tel:${SITE.phone}`}
+              href={`tel:${phone}`}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-7 py-3 text-sm font-bold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
             >
-              <Phone className="h-4 w-4" /> Call {SITE.phone}
+              <Phone className="h-4 w-4" /> Call {phone}
             </a>
           </div>
         </div>
@@ -137,8 +140,9 @@ export function MidContentWhatsAppCTA({ service }: { service?: string }) {
  * Larger, more urgency, free sample + free quote hooks specific to print buyers.
  */
 export function PrintingPowerCTA({ service }: { service?: string }) {
+  const { phone, whatsapp } = useSiteContact();
   const label = service ?? "your print job";
-  const href = `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I need a quote for ${label}. Please share pricing, samples and delivery time.`)}`;
+  const href = `${whatsapp}?text=${encodeURIComponent(`Hi, I need a quote for ${label}. Please share pricing, samples and delivery time.`)}`;
   return (
     <section className="mx-auto my-14 max-w-4xl px-4">
       <div className="relative overflow-hidden rounded-3xl border-2 border-[var(--whatsapp)]/40 bg-[image:var(--gradient-hero)] p-8 text-primary-foreground shadow-[var(--shadow-elegant)] sm:p-12">
@@ -172,13 +176,13 @@ export function PrintingPowerCTA({ service }: { service?: string }) {
               className="group relative inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-8 py-4 text-base font-extrabold text-[var(--whatsapp-foreground)] shadow-2xl ring-2 ring-[var(--whatsapp)]/50 transition hover:scale-105 sm:w-auto sm:text-lg"
             >
               <span className="absolute -inset-1 -z-10 animate-pulse rounded-full bg-[var(--whatsapp)] opacity-60 blur-md" aria-hidden />
-              <MessageCircle className="h-5 w-5" /> WhatsApp 0707310410
+              <MessageCircle className="h-5 w-5" /> WhatsApp {phone}
             </a>
             <a
-              href={`tel:${SITE.phone}`}
+              href={`tel:${phone}`}
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-7 py-3.5 text-sm font-bold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20 sm:w-auto"
             >
-              <Phone className="h-4 w-4" /> Call {SITE.phone}
+              <Phone className="h-4 w-4" /> Call {phone}
             </a>
           </div>
           <p className="mt-4 text-[11px] uppercase tracking-wider text-primary-foreground/70">
@@ -195,6 +199,7 @@ export function PrintingPowerCTA({ service }: { service?: string }) {
  * details pre-filled. No backend required and works on every page.
  */
 export function InlineInquiryForm({ service }: { service?: string }) {
+  const { phone: sitePhone, whatsapp } = useSiteContact();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -211,7 +216,7 @@ export function InlineInquiryForm({ service }: { service?: string }) {
       "",
       message ? `Message: ${message}` : "",
     ].filter(Boolean);
-    const url = `${SITE.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
+    const url = `${whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
     window.open(url, "_blank", "noopener");
   }
 
@@ -276,10 +281,10 @@ export function InlineInquiryForm({ service }: { service?: string }) {
               <MessageCircle className="h-5 w-5" /> Send via WhatsApp
             </button>
             <a
-              href={`tel:${SITE.phone}`}
+              href={`tel:${sitePhone}`}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold hover:bg-muted"
             >
-              <Phone className="h-4 w-4" /> Or call {SITE.phone}
+              <Phone className="h-4 w-4" /> Or call {sitePhone}
             </a>
           </div>
           <p className="text-xs text-muted-foreground">
@@ -292,9 +297,10 @@ export function InlineInquiryForm({ service }: { service?: string }) {
 }
 
 export function CTASection({ headline, sub, service }: { headline?: string; sub?: string; service?: string }) {
+  const { phone, whatsapp } = useSiteContact();
   const waHref = service
-    ? `${SITE.whatsapp}?text=${encodeURIComponent(`Hi, I'm inquiring about ${service}. Please share more details.`)}`
-    : SITE.whatsapp;
+    ? `${whatsapp}?text=${encodeURIComponent(`Hi, I'm inquiring about ${service}. Please share more details.`)}`
+    : whatsapp;
   const quoteHref = service ? `/get-quote?service=${encodeURIComponent(service)}` : "/get-quote";
   return (
     <section className="my-12 rounded-2xl bg-[image:var(--gradient-hero)] p-8 text-primary-foreground shadow-[var(--shadow-elegant)] sm:p-12">
@@ -325,10 +331,10 @@ export function CTASection({ headline, sub, service }: { headline?: string; sub?
             </span>
           </a>
           <a
-            href={`tel:${SITE.phone}`}
+            href={`tel:${phone}`}
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-7 py-3 text-base font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90"
           >
-            <Phone className="h-5 w-5" /> Call {SITE.phone}
+            <Phone className="h-5 w-5" /> Call {phone}
           </a>
           <Link
             to={quoteHref as never}
@@ -352,6 +358,7 @@ export function CTASection({ headline, sub, service }: { headline?: string; sub?
  * compact circle on mobile (lifts above the StickyCallBar).
  */
 export function FloatingWhatsApp() {
+  const { whatsapp } = useSiteContact();
   const service = useCurrentService();
   const label = service ? `WhatsApp about ${service}` : "Chat on WhatsApp";
   return (
@@ -365,7 +372,7 @@ export function FloatingWhatsApp() {
         </span>
       ) : null}
       <a
-        href={waLink(service)}
+        href={waLink(service, whatsapp)}
         target="_blank"
         rel="noopener"
         aria-label={service ? `Chat on WhatsApp about ${service}` : "Chat on WhatsApp — typically replies within 5 minutes"}
@@ -386,6 +393,7 @@ export function FloatingWhatsApp() {
 }
 
 export function StickyCallBar() {
+  const { phone, whatsapp } = useSiteContact();
   const service = useCurrentService();
   return (
     <>
@@ -396,14 +404,14 @@ export function StickyCallBar() {
         style={{ background: "#15224A", borderTop: "1px solid rgba(255,255,255,0.12)" }}
       >
         <a
-          href={`tel:${SITE.phone}`}
+          href={`tel:${phone}`}
           className="flex flex-1 items-center justify-center gap-2 text-white"
           style={{ fontSize: 14, fontWeight: 500 }}
         >
           <Phone className="h-4 w-4" /> Call
         </a>
         <a
-          href={waLink(service)}
+          href={waLink(service, whatsapp)}
           target="_blank"
           rel="noopener"
           className="flex flex-1 items-center justify-center gap-2 text-white"

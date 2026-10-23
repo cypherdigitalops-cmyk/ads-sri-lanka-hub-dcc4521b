@@ -1,8 +1,11 @@
+import { useSiteContact } from "@/lib/site-contact";
 import { useEffect, useState } from "react";
 import { MessageCircle, X, ArrowRight } from "lucide-react";
 
-const WA_URL =
-  "https://wa.me/94707310410?text=Hi%2C%20I%20want%20to%20promote%20my%20business%20on%20social%20media.%20Can%20you%20help%3F";
+const WA_TEXT = "Hi, I want to promote my business on social media. Can you help?";
+function waUrl(whatsapp: string) {
+  return `${whatsapp}?text=${encodeURIComponent(WA_TEXT)}`;
+}
 
 const GRADIENT = "linear-gradient(150deg,#15224a 0%,#20347a 100%)";
 const BORDER = "1px solid #2c3f7f";
@@ -10,6 +13,8 @@ const WHATSAPP_GREEN = "#25d366";
 const TEXT_MUTED = "#c3cfeb";
 
 export function SocialMediaStickyBanner() {
+  const { whatsapp } = useSiteContact();
+  const WA_URL = waUrl(whatsapp);
   const [open, setOpen] = useState(false);
   const [dismissed, setDismissed] = useState(false);
 

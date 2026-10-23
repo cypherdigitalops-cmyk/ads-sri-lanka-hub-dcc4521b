@@ -24,7 +24,7 @@ export const Route = createFileRoute("/admin")({
   }),
 });
 
-function AdminError({ error, reset }: { error: Error; reset: () => void }) {
+function AdminError({ error, reset }: ErrorComponentProps) {
   console.error(error);
   return (
     <div className="flex min-h-screen items-center justify-center px-6" style={{ background: "#F5F5F3", color: "#1a1a1a" }}>

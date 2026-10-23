@@ -164,7 +164,14 @@ function makeGuide(entry: typeof entries[number]): DigitalGuide | undefined {
   const isBlog = entry.path.startsWith("blog/");
   const isCost = key.endsWith("-cost") || key === "seo-pricing";
   const focus = blogFocus[key];
-  const label = isCost ? entry.label : isBlog ? entry.label.replace(/sri lanka/gi, "").trim().replace(/\b\w/g, c => c.toUpperCase()).replace(/Seo/g, "SEO").replace(/Sem/g, "SEM").replace(/Sms/g, "SMS").replace(/Whatsapp/g, "WhatsApp").replace(/Tiktok/g, "TikTok").replace(/Youtube/g, "YouTube") : topic.label;
+  const editorialLabels: Record<string, string> = {
+    "best-time-to-run-facebook-ads-in": "Facebook Ads Scheduling",
+    "digital-marketing-vs-traditional-advertising": "Digital vs Traditional Advertising",
+    "google-business-profile-setup-guide": "Google Business Profile Setup",
+    "how-to-get-on-first-page-of-google": "Improving Google Search Visibility",
+    "sinhala-vs-tamil-vs-english-advertising-language": "Sinhala, Tamil & English Advertising",
+  };
+  const label = editorialLabels[key] ?? (isCost ? entry.label : isBlog ? entry.label.replace(/sri lanka/gi, "").trim().replace(/\b\w/g, c => c.toUpperCase()).replace(/Seo/g, "SEO").replace(/Sem/g, "SEM").replace(/Sms/g, "SMS").replace(/Whatsapp/g, "WhatsApp").replace(/Tiktok/g, "TikTok").replace(/Youtube/g, "YouTube") : topic.label);
   const title = `${label} Sri Lanka | ${isCost ? "Budget & Fee Guide" : isBlog ? "Practical Business Guide" : "Services & Planning Guide"}`;
   const description = isCost
     ? `Understand ${label.toLowerCase()} in Sri Lanka: media spend, management fees, creative costs and qualified-lead measurement. Compare an itemised quote.`

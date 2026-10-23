@@ -2,11 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { SITE } from "@/data/site";
+import { useSiteContact } from "@/lib/site-contact";
 import { CATEGORIES } from "@/data/site";
 import logo from "@/assets/logo.png";
 import { GlobalSearch } from "./GlobalSearch";
 
 export function SiteHeader() {
+  const { phone } = useSiteContact();
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
@@ -30,11 +32,11 @@ export function SiteHeader() {
             <GlobalSearch compact />
           </div>
           <a
-            href={`tel:${SITE.phone}`}
+            href={`tel:${phone}`}
             className="hidden items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-4 py-2 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] transition hover:opacity-90 sm:inline-flex"
           >
             <Phone className="h-4 w-4" />
-            {SITE.phone}
+            {phone}
           </a>
           <button
             type="button"
@@ -70,10 +72,10 @@ export function SiteHeader() {
               Contact
             </Link>
             <a
-              href={`tel:${SITE.phone}`}
+              href={`tel:${phone}`}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-4 py-2 font-semibold text-accent-foreground sm:hidden"
             >
-              <Phone className="h-4 w-4" /> Call {SITE.phone}
+              <Phone className="h-4 w-4" /> Call {phone}
             </a>
           </nav>
         </div>

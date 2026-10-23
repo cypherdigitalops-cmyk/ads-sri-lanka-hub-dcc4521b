@@ -1,3 +1,4 @@
+import { useSiteContact } from "@/lib/site-contact";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, Sparkles } from "lucide-react";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
@@ -207,6 +208,7 @@ function FaqList({ items }: { items: FAQ[] }) {
 }
 
 export function CustomBlogArticle({
+  const { phone } = useSiteContact();
   slug,
   title,
   description,
@@ -279,10 +281,10 @@ export function CustomBlogArticle({
               {anchor.ctaLabel} <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href={`tel:${SITE.phone}`}
+              href={`tel:${phone}`}
               className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
             >
-              <Phone className="h-4 w-4" /> {SITE.phone}
+              <Phone className="h-4 w-4" /> {phone}
             </a>
           </div>
         </div>
@@ -295,7 +297,7 @@ export function CustomBlogArticle({
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={anchor.ctaHeadline ?? `Get expert help with ${anchor.fallbackText}`}
-          sub={`Free advice on screen size, pixel pitch and budget — call ${SITE.phone} or WhatsApp.`}
+          sub={`Free advice on screen size, pixel pitch and budget — call ${phone} or WhatsApp.`}
           service={anchor.ctaService ?? anchor.fallbackText}
         />
       </div>

@@ -1,3 +1,4 @@
+import { useSiteContact } from "@/lib/site-contact";
 import { useEffect, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { useLocation } from "@tanstack/react-router";
@@ -33,6 +34,7 @@ const fieldClass =
   "mt-2 w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20";
 
 export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
+  const { whatsapp } = useSiteContact();
   const submit = useServerFn(submitGuidanceInquiry);
   const { pathname } = useLocation();
   const startedAt = useRef<number>(Date.now());
@@ -41,7 +43,7 @@ export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
-  const [waLink, setWaLink] = useState<string>(SITE.whatsapp);
+  const [waLink, setWaLink] = useState<string>(whatsapp);
 
   useEffect(() => {
     startedAt.current = Date.now();
@@ -80,7 +82,7 @@ export function FreeGuidanceForm({ digital = false }: { digital?: boolean }) {
     ]
       .filter(Boolean)
       .join("\n");
-    const link = `${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
+    const link = `${whatsapp}?text=${encodeURIComponent(message)}`;
     setWaLink(link);
     // Opened synchronously-ish after submit so mobile browsers keep the user gesture.
     const waWindow = typeof window !== "undefined" ? window.open("", "_blank") : null;

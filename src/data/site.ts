@@ -5,6 +5,10 @@ export const SITE = {
   phone: "0707310410",
   phoneIntl: "+94707310410",
   whatsapp: "https://wa.me/94707310410",
+  // Digital marketing & social media marketing pages route their CTAs here.
+  phoneDigital: "0771437707",
+  phoneDigitalIntl: "+94771437707",
+  whatsappDigital: "https://wa.me/94771437707",
   tagline: "Sri Lanka's #1 Advertising Solutions Hub",
 };
 

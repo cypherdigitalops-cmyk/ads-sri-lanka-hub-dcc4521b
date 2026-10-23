@@ -580,7 +580,7 @@ export function CategoryHubTemplate({
       />
       <Hero
         kicker={`${category.title} Sri Lanka`}
-        h1={h1OverrideProp ?? digitalGuide?.label + (digitalGuide ? " in Sri Lanka" : "") ?? h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`}
+        h1={h1OverrideProp ?? (digitalGuide ? `${digitalGuide.label} in Sri Lanka` : h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`)}
         intro={introOverride ?? digitalGuide?.answer ?? h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />

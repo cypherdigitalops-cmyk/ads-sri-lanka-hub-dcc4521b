@@ -5,6 +5,8 @@ import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { CTASection } from "./CTASection";
 import { SITE } from "@/data/site";
 import heroImg from "@/assets/hero-advertising.jpg";
+import { getDigitalGuide } from "@/data/digital-marketing-content";
+import { DigitalMarketingGuide } from "./DigitalMarketingGuide";
 
 export type ContentBlock =
   | { type: "p"; text: string }
@@ -221,6 +223,7 @@ export function CustomBlogArticle({
   primaryAnchor,
 }: CustomBlogProps) {
   const { phone } = useSiteContact();
+  const digitalGuide = getDigitalGuide(slug);
   const anchor = primaryAnchor ?? DEFAULT_ANCHOR;
   const url = `${SITE.url}/${slug}`;
   const articleJsonLd = {
@@ -231,14 +234,14 @@ export function CustomBlogArticle({
     description,
     inLanguage: "en-LK",
     datePublished: publishedISO,
-    dateModified: publishedISO,
+    dateModified: digitalGuide ? "2026-10-23" : publishedISO,
     mainEntityOfPage: url,
     url,
     author: { "@id": `${SITE.url}/#organization` },
     publisher: { "@id": `${SITE.url}/#organization` },
-    about: { "@type": "Thing", name: category?.label ?? "LED screen rent Sri Lanka" },
-    articleSection: category?.label ?? "Event AV",
-    keywords: [
+    about: { "@type": "Thing", name: digitalGuide?.label ?? category?.label ?? "LED screen rent Sri Lanka" },
+    articleSection: digitalGuide ? "Digital Marketing" : category?.label ?? "Event AV",
+    keywords: digitalGuide ? `${digitalGuide.label}, Sri Lanka` : [
       "led screen rent",
       "led screen rental sri lanka",
       "led screen hire sri lanka",
@@ -271,8 +274,8 @@ export function CustomBlogArticle({
           <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-medium text-accent">
             <Sparkles className="h-3.5 w-3.5" /> {kicker}
           </div>
-          <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{title}</h1>
-          <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{intro}</p>
+          <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">{digitalGuide?.title ?? title}</h1>
+          <p className="mt-5 max-w-2xl text-base text-primary-foreground/85 sm:text-lg">{digitalGuide?.answer ?? intro}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
               to={anchor.href as never}
@@ -290,19 +293,19 @@ export function CustomBlogArticle({
         </div>
       </section>
 
-      <article className="mx-auto max-w-3xl px-4 py-12">
+      {digitalGuide ? <DigitalMarketingGuide path={slug} showFaqs={false} /> : <article className="mx-auto max-w-3xl px-4 py-12">
         <Blocks blocks={blocks} anchor={anchor} />
-      </article>
+      </article>}
 
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={anchor.ctaHeadline ?? `Get expert help with ${anchor.fallbackText}`}
-          sub={`Free advice on screen size, pixel pitch and budget — call ${phone} or WhatsApp.`}
+          sub={digitalGuide ? `Discuss your audience, objective and budget — call ${phone} or WhatsApp.` : `Free advice on screen size, pixel pitch and budget — call ${phone} or WhatsApp.`}
           service={anchor.ctaService ?? anchor.fallbackText}
         />
       </div>
 
-      <FaqList items={faqs} />
+      <FaqList items={digitalGuide?.faqs ?? faqs} />
 
       {related.length ? (
         <section className="mx-auto max-w-7xl px-4 py-10">

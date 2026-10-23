@@ -199,7 +199,7 @@ export function PrintingPowerCTA({ service }: { service?: string }) {
  * details pre-filled. No backend required and works on every page.
  */
 export function InlineInquiryForm({ service }: { service?: string }) {
-  const { phone, whatsapp } = useSiteContact();
+  const { phone: sitePhone, whatsapp } = useSiteContact();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -281,10 +281,10 @@ export function InlineInquiryForm({ service }: { service?: string }) {
               <MessageCircle className="h-5 w-5" /> Send via WhatsApp
             </button>
             <a
-              href={`tel:${phone}`}
+              href={`tel:${sitePhone}`}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold hover:bg-muted"
             >
-              <Phone className="h-4 w-4" /> Or call {phone}
+              <Phone className="h-4 w-4" /> Or call {sitePhone}
             </a>
           </div>
           <p className="text-xs text-muted-foreground">

@@ -4,18 +4,19 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Email Marketing Sri Lanka — Compare Services, Costs & Agencies";
-const DESC = "Bulk email, SMS and WhatsApp campaigns that deliver and convert. Get pricing and free advice — call 0707310410 or WhatsApp.";
+const TITLE = "Email, SMS & WhatsApp Marketing Sri Lanka | Services & Planning Guide";
+const DESC = "Explore email, sms & whatsapp marketing in Sri Lanka: service scope, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/email-sms-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "email marketing sri lanka, email & sms marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "email, sms & whatsapp marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/email-sms-marketing-sri-lanka` }],
   }),

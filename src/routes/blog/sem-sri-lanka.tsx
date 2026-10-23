@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "The Sri Lankan Brand's Playbook to SEM Sri Lanka";
-const DESC = "From planning to launch — a complete walkthrough of SEM sri lanka for Sri Lankan businesses. Tools, tips and partner-selection checklist included.";
+const TITLE = "SEM Sri Lanka | Practical Business Guide";
+const DESC = "Explore sem in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/sem-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "SEM sri lanka, digital marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "sem sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/sem-sri-lanka` }],
   }),

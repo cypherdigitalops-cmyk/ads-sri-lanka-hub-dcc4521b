@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/whatsapp-marketing-guide-sri-lankan-businesses";
-const TITLE = "WhatsApp Marketing Guide for Sri Lankan Businesses (2025)";
-const DESC = "Complete WhatsApp marketing playbook for Sri Lanka — Business App vs Cloud API, broadcast rules, catalogs, automation, template messages and compliance.";
+const TITLE = "WhatsApp Marketing Guide Sri Lanka | Practical Business Guide";
+const DESC = "Explore whatsapp marketing guide in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/whatsapp-advertising-sri-lanka",
@@ -24,6 +24,7 @@ export const Route = createFileRoute("/blog/whatsapp-marketing-guide-sri-lankan-
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE.url}/${SLUG}` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/${SLUG}` }],

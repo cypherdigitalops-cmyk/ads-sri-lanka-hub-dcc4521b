@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Keyword Research Sri Lanka in 2026 — Trends & Tactics";
-const DESC = "Avoid the most common keyword research sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to finish.";
+const TITLE = "Keyword Research Sri Lanka | Practical Business Guide";
+const DESC = "Explore keyword research in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/keyword-research-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "keyword research sri lanka, seo services sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "keyword research sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/keyword-research-sri-lanka` }],
   }),

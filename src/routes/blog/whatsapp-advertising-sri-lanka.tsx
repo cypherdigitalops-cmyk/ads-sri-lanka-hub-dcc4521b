@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "Whatsapp Advertising Sri Lanka in 2026 — Trends & Tactics";
-const DESC = "Avoid the most common whatsapp advertising sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to finish.";
+const TITLE = "WhatsApp Advertising Sri Lanka | Practical Business Guide";
+const DESC = "Explore whatsapp advertising in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/whatsapp-advertising-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "whatsapp advertising sri lanka, email marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "whatsapp advertising sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/whatsapp-advertising-sri-lanka` }],
   }),

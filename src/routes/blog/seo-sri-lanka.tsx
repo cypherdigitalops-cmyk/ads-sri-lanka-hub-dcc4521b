@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "SEO Sri Lanka — Pricing, Best Practices & How to Pick a Partner";
-const DESC = "Wondering if seo sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
+const TITLE = "SEO Sri Lanka | Practical Business Guide";
+const DESC = "Explore seo in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/seo-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "seo sri lanka, seo services sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "seo sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/seo-sri-lanka` }],
   }),

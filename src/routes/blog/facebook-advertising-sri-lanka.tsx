@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Facebook Advertising Sri Lanka — Pricing & Best Practices";
-const DESC = "Wondering if facebook advertising sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
+const TITLE = "Facebook Advertising Sri Lanka | Practical Business Guide";
+const DESC = "Explore facebook advertising in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/facebook-advertising-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "facebook advertising sri lanka, digital marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "facebook advertising sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/facebook-advertising-sri-lanka` }],
   }),

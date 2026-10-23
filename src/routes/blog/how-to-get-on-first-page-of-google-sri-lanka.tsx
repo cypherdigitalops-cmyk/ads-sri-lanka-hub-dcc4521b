@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/how-to-get-on-first-page-of-google-sri-lanka";
-const TITLE = "How to Get Your Business on the First Page of Google in Sri Lanka";
-const DESC = "Proven playbook to rank on the first page of Google in Sri Lanka — keyword research, on-page SEO, local SEO, content strategy, ethical link building and realistic timelines.";
+const TITLE = "How To Get On First Page Of Google Sri Lanka | Practical Business Guide";
+const DESC = "Explore how to get on first page of google in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/seo-services-sri-lanka",
@@ -24,6 +24,7 @@ export const Route = createFileRoute("/blog/how-to-get-on-first-page-of-google-s
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE.url}/${SLUG}` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/${SLUG}` }],

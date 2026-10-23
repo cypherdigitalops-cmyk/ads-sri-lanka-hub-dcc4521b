@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "video-production-sri-lanka")!;
-const TITLE = "How Youtube Video Marketing Sri Lanka Works in Sri Lanka";
-const DESC = "Compare options, budgets and timelines for youtube video marketing sri lanka. We break down each step so you can plan with confidence.";
+const TITLE = "YouTube Video Marketing Sri Lanka | Practical Business Guide";
+const DESC = "Explore youtube video marketing in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/youtube-video-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "youtube video marketing sri lanka, video production sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "youtube video marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/youtube-video-marketing-sri-lanka` }],
   }),

@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Viral Marketing Sri Lanka in 2026 — Trends & Tactics";
-const DESC = "Avoid the most common viral marketing sri lanka mistakes Sri Lankan brands make. This guide covers strategy, creative and execution from start to finish.";
+const TITLE = "Viral Marketing Sri Lanka | Practical Business Guide";
+const DESC = "Explore viral marketing in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/viral-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "viral marketing sri lanka, social media marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "viral marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/viral-marketing-sri-lanka` }],
   }),

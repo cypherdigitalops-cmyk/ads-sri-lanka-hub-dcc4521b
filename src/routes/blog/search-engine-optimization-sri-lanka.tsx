@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Search Engine Optimization Sri Lanka — Costs, Channels & ROI";
-const DESC = "Learn how search engine optimization sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
+const TITLE = "Search Engine Optimization Sri Lanka | Practical Business Guide";
+const DESC = "Explore search engine optimization in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/search-engine-optimization-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "search engine optimization sri lanka, seo services sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "search engine optimization sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/search-engine-optimization-sri-lanka` }],
   }),

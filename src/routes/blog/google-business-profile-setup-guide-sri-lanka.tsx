@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/google-business-profile-setup-guide-sri-lanka";
-const TITLE = "Google Business Profile Setup Guide for Sri Lankan Businesses";
-const DESC = "Step-by-step guide to creating, verifying and optimising a Google Business Profile in Sri Lanka — categories, photos, posts, reviews, ranking factors and local SEO playbook.";
+const TITLE = "Google Business Profile Setup Guide Sri Lanka | Practical Business Guide";
+const DESC = "Explore google business profile setup guide in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/local-seo-sri-lanka",
@@ -24,6 +24,7 @@ export const Route = createFileRoute("/blog/google-business-profile-setup-guide-
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE.url}/${SLUG}` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/${SLUG}` }],

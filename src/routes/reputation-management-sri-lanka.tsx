@@ -4,18 +4,19 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Reputation Management Sri Lanka — Strategy, Creative & Media";
-const DESC = "Need reputation management sri lanka that actually converts? We blend local insight with proven advertising frameworks to deliver leads and sales. Call 0771437707.";
+const TITLE = "Reputation Management Sri Lanka | Services & Planning Guide";
+const DESC = "Explore reputation management in Sri Lanka: service scope, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/reputation-management-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "reputation management sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "reputation management sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/reputation-management-sri-lanka` }],
   }),

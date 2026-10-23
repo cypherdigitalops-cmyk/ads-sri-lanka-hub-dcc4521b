@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Beginner's Guide to Organic Traffic Sri Lanka";
-const DESC = "An expert overview of organic traffic sri lanka in Sri Lanka — what works in 2026, what to avoid and how to measure results.";
+const TITLE = "Organic Traffic Sri Lanka | Practical Business Guide";
+const DESC = "Explore organic traffic in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/organic-traffic-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "organic traffic sri lanka, seo services sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "organic traffic sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/organic-traffic-sri-lanka` }],
   }),

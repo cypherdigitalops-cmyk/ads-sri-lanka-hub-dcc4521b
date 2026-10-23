@@ -5,18 +5,19 @@ import { CATEGORIES, SITE } from "@/data/site";
 import { CypherSocialBacklink } from "@/components/site/CypherSocialBacklink";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "What Is Content Creation Sri Lanka? A Practical Sri Lankan Guide";
-const DESC = "A practical, no-fluff guide to content creation sri lanka in Sri Lanka. Real tactics, indicative pricing and proven frameworks. Talk to our specialists.";
+const TITLE = "Content Creation Sri Lanka | Practical Business Guide";
+const DESC = "Explore content creation in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/content-creation-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "content creation sri lanka, social media marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "content creation sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/content-creation-sri-lanka` }],
   }),

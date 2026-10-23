@@ -34,6 +34,8 @@ import { MUG_PRINTING_EXTRA, MUG_PRINTING_EXTRA_FAQS } from "@/data/mug-printing
 import { ATL_EXTRA, ATL_EXTRA_FAQS } from "@/data/atl-advertising-extra-content";
 import { TODAY_MODIFIED, getCrossLinksExcluding } from "@/data/today-cross-links";
 import { HubConversionBadge } from "@/components/site/HubConversionBadge";
+import { getDigitalGuide } from "@/data/digital-marketing-content";
+import { DigitalMarketingGuide } from "./DigitalMarketingGuide";
 
 /**
  * Linkify variants of the brand keyword to the homepage.
@@ -539,6 +541,7 @@ export function CategoryHubTemplate({
     })),
   );
   const h1 = `${titleCase(category.hubKeyword)}`;
+  const digitalGuide = getDigitalGuide(category.slug);
   const longForm = buildCategoryLongForm(category);
   const uniqueCat = getServiceUniqueContent(category.slug);
   const hasUnique = uniqueCat.length > 0;
@@ -551,7 +554,7 @@ export function CategoryHubTemplate({
     "@id": `${SITE.url}/${category.slug}#service`,
     name: `${category.title} in Sri Lanka`,
     serviceType: category.title,
-    description: category.intro,
+    description: digitalGuide?.answer ?? category.intro,
     url: `${SITE.url}/${category.slug}`,
     provider: { "@id": `${SITE.url}/#organization` },
     areaServed: { "@type": "Country", name: "Sri Lanka" },
@@ -577,8 +580,8 @@ export function CategoryHubTemplate({
       />
       <Hero
         kicker={`${category.title} Sri Lanka`}
-        h1={h1OverrideProp ?? h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`}
-        intro={introOverride ?? h1Override?.intro ?? category.intro}
+        h1={h1OverrideProp ?? (digitalGuide ? `${digitalGuide.label} in Sri Lanka` : h1Override?.h1 ?? `${category.title} in Sri Lanka — ${category.short}`)}
+        intro={introOverride ?? digitalGuide?.answer ?? h1Override?.intro ?? category.intro}
         crumbs={[{ label: "Home", to: "/" }, { label: h1 }]}
       />
       {/* PRINTING HUB: browse first, then CTA further down */}
@@ -601,8 +604,9 @@ export function CategoryHubTemplate({
       {/* Printing hub: high-intent mid-page WhatsApp CTA right after the services grid */}
       {isPrinting ? <MidContentWhatsAppCTA service={category.title} /> : null}
       {extraContent ? <>{extraContent}</> : null}
+      {digitalGuide ? <DigitalMarketingGuide path={category.slug} showFaqs={false} /> : null}
       {/* PRIORITY: unique content first */}
-      {hasUnique ? (
+      {hasUnique && !digitalGuide ? (
         <section className="mx-auto max-w-3xl px-4 py-8">
           <LongFormBlocks blocks={uniqueCat} />
         </section>
@@ -615,7 +619,7 @@ export function CategoryHubTemplate({
       {isAtl ? (
         <PrintingExtraWithMidCTA blocks={ATL_EXTRA} service={category.title} />
       ) : null}
-      {!hasUnique ? (
+      {!hasUnique && !digitalGuide ? (
         <>
           {longForm.blocks.length ? (
             <section className="mx-auto max-w-3xl px-4 py-8">
@@ -669,6 +673,7 @@ export function CategoryHubTemplate({
       <RelatedCategories categorySlug={category.slug} />
       <FaqList
         items={(() => {
+          if (digitalGuide) return digitalGuide.faqs;
           const base = getPageFaqs(category.slug).length ? getPageFaqs(category.slug) : longForm.faqs;
           const extras = isPrinting ? PRINTING_HUB_EXTRA_FAQS : isAtl ? ATL_EXTRA_FAQS : [];
           if (!extras.length) return base;
@@ -712,6 +717,7 @@ export function ServicePageTemplate({
   const title = titleCase(keyword);
   const longForm = buildServiceLongForm(category, keyword);
   const slug = category.services.find((s) => s.keyword === keyword)?.slug ?? "";
+  const digitalGuide = getDigitalGuide(slug);
   resetHomeAnchor(slug);
   setExtraLinks(
     (extraLinks ?? []).map((l) => ({
@@ -749,7 +755,7 @@ export function ServicePageTemplate({
     name: title,
     serviceType: title,
     category: category.title,
-    description: `Professional ${title} services for businesses across Sri Lanka — strategy, creative, media and reporting under one team.`,
+    description: digitalGuide?.answer ?? `Professional ${title} services for businesses across Sri Lanka — strategy, creative, media and reporting under one team.`,
     url: `${SITE.url}/${slug}`,
     provider: { "@id": `${SITE.url}/#organization` },
     areaServed: { "@type": "Country", name: "Sri Lanka" },
@@ -764,8 +770,8 @@ export function ServicePageTemplate({
       />
       <Hero
         kicker={`${category.title} • Sri Lanka`}
-        h1={h1Override?.h1 ?? `${title} — Get Found, Get Customers`}
-        intro={h1Override?.intro ?? `Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
+        h1={digitalGuide ? `${digitalGuide.label} in Sri Lanka` : h1Override?.h1 ?? `${title} — Get Found, Get Customers`}
+        intro={digitalGuide?.answer ?? h1Override?.intro ?? `Looking for the best ${title} solution? We design, plan and execute high-performing ${title} campaigns for businesses across Sri Lanka. Strategy, creative and media — all under one team.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: category.title, to: `/${category.slug}` },
@@ -775,7 +781,8 @@ export function ServicePageTemplate({
       {slug === "led-screen-rental-sri-lanka" ? <LedEventTypesSection /> : null}
       {category.slug === "printing-services-sri-lanka" ? <PrintingTopCategoryCards /> : null}
       {/* PRIORITY: unique content first — drives reading + trust + CTA clicks */}
-      {uniqueSvc.length ? (
+      {digitalGuide ? <DigitalMarketingGuide path={slug} showFaqs={false} /> : null}
+      {uniqueSvc.length && !digitalGuide ? (
         <section className="mx-auto max-w-3xl px-4 py-12">
           <LongFormBlocks blocks={uniqueSvc} />
         </section>
@@ -845,7 +852,7 @@ export function ServicePageTemplate({
         </section>
       ) : null}
       {/* Generic template sections — only when no unique content exists, to avoid duplicate SEO content across pages */}
-      {!hasUnique ? (
+      {!hasUnique && !digitalGuide ? (
         <>
           <section className="mx-auto max-w-3xl px-4 py-12">
             <h2 className="text-2xl font-bold sm:text-3xl">Why {title} works in Sri Lanka</h2>
@@ -898,7 +905,7 @@ export function ServicePageTemplate({
             ))}
         </div>
       </section>
-      <FaqList items={faqs} />
+      <FaqList items={digitalGuide?.faqs ?? faqs} />
       <TodayCrossLinks currentSlug={slug} />
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
@@ -943,14 +950,15 @@ export function BlogArticleTemplate({
   }));
   setExtraLinks(filteredExtra);
   const slug = category.blog.find((b) => b.keyword === keyword)?.slug ?? "";
+  const digitalGuide = getDigitalGuide(`blog/${slug}`);
   resetHomeAnchor(`blog/${slug}`);
   const url = `${SITE.url}/blog/${slug}`;
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     "@id": `${url}#article`,
-    headline: `${title}: Complete Guide`,
-    description: `Everything Sri Lankan businesses need to know about ${title}.`,
+    headline: digitalGuide?.title ?? `${title}: Complete Guide`,
+    description: digitalGuide?.description ?? `Everything Sri Lankan businesses need to know about ${title}.`,
     inLanguage: "en-LK",
     mainEntityOfPage: url,
     url,
@@ -969,8 +977,8 @@ export function BlogArticleTemplate({
       />
       <Hero
         kicker="Insights & Guides"
-        h1={`${title}: Complete Guide`}
-        intro={`Everything Sri Lankan businesses need to know about ${title} — strategies, channels, costs to consider, common mistakes and how to choose the right partner.`}
+        h1={digitalGuide ? `${digitalGuide.label} in Sri Lanka: Practical Guide` : `${title}: Complete Guide`}
+        intro={digitalGuide?.answer ?? `Everything Sri Lankan businesses need to know about ${title} — strategies, channels, costs to consider, common mistakes and how to choose the right partner.`}
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Blog" },
@@ -994,8 +1002,9 @@ export function BlogArticleTemplate({
             </ul>
           </div>
         ) : null}
-        <LongFormBlocks blocks={article.blocks} />
+        {!digitalGuide ? <LongFormBlocks blocks={article.blocks} /> : null}
       </article>
+      {digitalGuide ? <DigitalMarketingGuide path={`blog/${slug}`} showFaqs={false} /> : null}
       <div className="mx-auto max-w-7xl px-4">
         <CTASection
           headline={`Still have questions about ${title}?`}
@@ -1003,7 +1012,7 @@ export function BlogArticleTemplate({
           service={title}
         />
       </div>
-      <FaqList items={article.faqs} />
+      <FaqList items={digitalGuide?.faqs ?? article.faqs} />
       {filteredExtra.length ? (
         <section className="mx-auto max-w-7xl px-4 py-10">
           <h2 className="text-2xl font-bold">Recommended reading</h2>

@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "How Pay Per Click Sri Lanka Works in Sri Lanka — Tips & Mistakes";
-const DESC = "Compare options, budgets and timelines for pay per click sri lanka. We break down each step so you can plan with confidence. WhatsApp or call 0771437707.";
+const TITLE = "Pay Per Click Sri Lanka | Practical Business Guide";
+const DESC = "Explore pay per click in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/pay-per-click-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "pay per click sri lanka, digital marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "pay per click sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/pay-per-click-sri-lanka` }],
   }),

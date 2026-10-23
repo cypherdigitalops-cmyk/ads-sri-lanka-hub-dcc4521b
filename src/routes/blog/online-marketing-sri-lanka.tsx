@@ -5,18 +5,19 @@ import { CATEGORIES, SITE } from "@/data/site";
 import { CypherSocialBacklink } from "@/components/site/CypherSocialBacklink";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Online Marketing Sri Lanka — Costs, Channels & ROI";
-const DESC = "Learn how online marketing sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
+const TITLE = "Online Marketing Sri Lanka | Practical Business Guide";
+const DESC = "Explore online marketing in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/online-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "online marketing sri lanka, digital marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "online marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/online-marketing-sri-lanka` }],
   }),

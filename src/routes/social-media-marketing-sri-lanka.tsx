@@ -4,18 +4,19 @@ import { CategoryHubTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Social Media Marketing Sri Lanka | Facebook, Instagram & TikTok Ads from LKR 45,000/mo";
-const DESC = "Sri Lanka's results-driven social media marketing agency. Facebook, Instagram, TikTok & LinkedIn ads in Sinhala, Tamil & English. Free strategy call — WhatsApp 0771437707.";
+const TITLE = "Social Media Marketing Sri Lanka | Services & Planning Guide";
+const DESC = "Explore social media marketing in Sri Lanka: service scope, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/social-media-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "social media marketing sri lanka, social media marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "social media marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/social-media-marketing-sri-lanka` }],
   }),

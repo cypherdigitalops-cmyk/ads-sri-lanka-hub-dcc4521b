@@ -5,18 +5,19 @@ import { CATEGORIES, SITE } from "@/data/site";
 import { CypherSocialBacklink } from "@/components/site/CypherSocialBacklink";
 
 const CAT = CATEGORIES.find((x) => x.slug === "social-media-marketing-sri-lanka")!;
-const TITLE = "Social Media Campaigns Sri Lanka — Pricing & Best Practices";
-const DESC = "Wondering if social media campaigns sri lanka is right for your business? This guide explains pros, cons, costs and case studies. Free consultation available.";
+const TITLE = "Social Media Campaigns Sri Lanka | Practical Business Guide";
+const DESC = "Explore social media campaigns in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/social-media-campaigns-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "social media campaigns sri lanka, social media marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "social media campaigns sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/social-media-campaigns-sri-lanka` }],
   }),

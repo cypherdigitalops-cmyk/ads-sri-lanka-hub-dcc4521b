@@ -4,8 +4,8 @@ import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
 
 const SLUG = "blog/how-to-run-tiktok-ads-in-sri-lanka-step-by-step";
-const TITLE = "How to Run TikTok Ads in Sri Lanka — Step-by-Step (2025)";
-const DESC = "Complete TikTok Ads setup guide for Sri Lanka — account creation, pixel install, audience targeting, creative specs, budgets, bidding and optimisation cycle.";
+const TITLE = "TikTok Ads Setup Sri Lanka | Practical Business Guide";
+const DESC = "Explore tiktok ads setup in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 const PRIMARY_ANCHOR = {
   href: "/tiktok-marketing-sri-lanka",
@@ -24,6 +24,7 @@ export const Route = createFileRoute("/blog/how-to-run-tiktok-ads-in-sri-lanka-s
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE.url}/${SLUG}` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/${SLUG}` }],

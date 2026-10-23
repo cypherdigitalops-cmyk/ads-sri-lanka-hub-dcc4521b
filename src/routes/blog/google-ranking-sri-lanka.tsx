@@ -4,18 +4,19 @@ import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "seo-services-sri-lanka")!;
-const TITLE = "Google Ranking Sri Lanka — Costs, Channels & ROI";
-const DESC = "Learn how google ranking sri lanka delivers measurable ROI for Sri Lankan brands — channels, audience targeting, creative tips and reporting.";
+const TITLE = "Google Ranking Sri Lanka | Practical Business Guide";
+const DESC = "Explore google ranking in Sri Lanka: practical steps, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/blog/google-ranking-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "google ranking sri lanka, seo services sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "google ranking sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/google-ranking-sri-lanka` }],
   }),

@@ -260,7 +260,7 @@ export const CATEGORIES: Category[] = [
     slug: "seo-services-sri-lanka",
     hubKeyword: "seo services sri lanka",
     title: "SEO Services",
-    short: "Rank #1 on Google with proven on-page, off-page and technical SEO.",
+    short: "Improve organic visibility with on-page, off-page and technical SEO.",
     intro:
       "Win organic traffic that converts. Our SEO team delivers keyword research, technical audits, on-page optimisation, content strategy, link building and local SEO for Sri Lankan businesses targeting both local and global keywords.",
     icon: "Search",

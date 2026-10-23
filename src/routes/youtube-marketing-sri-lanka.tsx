@@ -4,18 +4,19 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Best Youtube Marketing Sri Lanka Agency in Sri Lanka";
-const DESC = "Affordable, ROI-focused youtube marketing sri lanka for Sri Lankan SMEs and enterprises. We design, run and report every campaign end-to-end.";
+const TITLE = "YouTube Marketing Sri Lanka | Services & Planning Guide";
+const DESC = "Explore youtube marketing in Sri Lanka: service scope, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/youtube-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "youtube marketing sri lanka, digital marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "youtube marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/youtube-marketing-sri-lanka` }],
   }),

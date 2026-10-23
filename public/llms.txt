@@ -36,4 +36,21 @@
 
 ## Indexes
 
+## Digital marketing planning guides
+
+- [Google Ads](https://advertisingsrilanka.lk/google-ads-sri-lanka): Search intent, campaign scope, negative keywords and qualified-lead measurement.
+- [Facebook Ads](https://advertisingsrilanka.lk/facebook-ads-sri-lanka): Campaign destinations, creative testing and enquiry quality.
+- [Social Media Management](https://advertisingsrilanka.lk/social-media-management-sri-lanka): Organic publishing, approvals, moderation and account ownership.
+- [Content Marketing](https://advertisingsrilanka.lk/content-marketing-sri-lanka): Customer questions, useful evidence, editorial briefs and distribution.
+- [Lead Generation](https://advertisingsrilanka.lk/lead-generation-sri-lanka): Qualification, contactability and sales hand-off.
+- [Lead Follow-Up](https://advertisingsrilanka.lk/lead-follow-up-services-sri-lanka): What happens after an enquiry.
+- [Google Ads Budget Guide](https://advertisingsrilanka.lk/google-ads-cost-sri-lanka): Media spend versus fees, production and measurement costs; not a fixed market-rate card.
+- [Facebook Ads Budget Guide](https://advertisingsrilanka.lk/facebook-ads-cost-sri-lanka): Itemised campaign costs and meaningful outcome measurement.
+- [SEO Pricing Guide](https://advertisingsrilanka.lk/seo-pricing-sri-lanka): Comparing project scope and ongoing work without ranking guarantees.
+
+Digital and social marketing pages use 0771437707 for calls and WhatsApp (https://wa.me/94771437707). Other pages retain their existing contact destination.
+These are educational planning guides. Search positions, AI citations and campaign outcomes are not guaranteed. Visible FAQs explain the topic; FAQ markup does not promise Google FAQ rich-result eligibility.
+
+## Sitemap
+
 - [Sitemap (XML)](https://advertisingsrilanka.lk/sitemap.xml)

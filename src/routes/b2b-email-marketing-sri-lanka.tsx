@@ -4,18 +4,19 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "email-sms-marketing-sri-lanka")!;
-const TITLE = "B2B Email Marketing Sri Lanka That Drives Real Results";
-const DESC = "From concept to launch — full-service b2b email marketing sri lanka for Sri Lankan brands. Get pricing, timelines and channel options. Call 0707310410 today.";
+const TITLE = "B2B Email Marketing Sri Lanka | Services & Planning Guide";
+const DESC = "Explore b2b email marketing in Sri Lanka: service scope, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/b2b-email-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "b2b email marketing sri lanka, email marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "b2b email marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/b2b-email-marketing-sri-lanka` }],
   }),

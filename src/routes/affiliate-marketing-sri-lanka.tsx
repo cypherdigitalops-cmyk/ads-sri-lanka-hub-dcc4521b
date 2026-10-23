@@ -4,18 +4,19 @@ import { ServicePageTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "digital-marketing-sri-lanka")!;
-const TITLE = "Affiliate Marketing Sri Lanka — Pay Only For Sales";
-const DESC = "Launch and manage affiliate programs for your Sri Lankan business. Recruit publishers, set commissions, track conversions and scale revenue with zero ad waste.";
+const TITLE = "Affiliate Marketing Sri Lanka | Services & Planning Guide";
+const DESC = "Explore affiliate marketing in Sri Lanka: service scope, budget factors, measurement and common mistakes. Get clear answers and guidance.";
 
 export const Route = createFileRoute("/affiliate-marketing-sri-lanka")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "affiliate marketing sri lanka, digital marketing sri lanka, advertising sri lanka" },
+      { name: "keywords", content: "affiliate marketing sri lanka, marketing planning sri lanka" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/affiliate-marketing-sri-lanka` }],
   }),

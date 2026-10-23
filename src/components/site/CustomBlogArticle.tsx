@@ -208,7 +208,6 @@ function FaqList({ items }: { items: FAQ[] }) {
 }
 
 export function CustomBlogArticle({
-  const { phone } = useSiteContact();
   slug,
   title,
   description,
@@ -221,6 +220,7 @@ export function CustomBlogArticle({
   related = [],
   primaryAnchor,
 }: CustomBlogProps) {
+  const { phone } = useSiteContact();
   const anchor = primaryAnchor ?? DEFAULT_ANCHOR;
   const url = `${SITE.url}/${slug}`;
   const articleJsonLd = {

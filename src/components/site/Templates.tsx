@@ -516,7 +516,6 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
 
 /* ========== CATEGORY HUB ========== */
 export function CategoryHubTemplate({
-  const { phone } = useSiteContact();
   category,
   extraLinks,
   h1Override: h1OverrideProp,
@@ -524,6 +523,7 @@ export function CategoryHubTemplate({
   reducedCtas,
   extraContent,
 }: {
+  const { phone } = useSiteContact();
   category: Category;
   extraLinks?: { href: string; label: string; anchor?: string }[];
   h1Override?: string;
@@ -700,11 +700,11 @@ export function CategoryHubTemplate({
 
 /* ========== SUB-SERVICE ========== */
 export function ServicePageTemplate({
-  const { phone } = useSiteContact();
   category,
   keyword,
   extraLinks,
 }: {
+  const { phone } = useSiteContact();
   category: Category;
   keyword: string;
   extraLinks?: { href: string; label: string; anchor?: string }[];

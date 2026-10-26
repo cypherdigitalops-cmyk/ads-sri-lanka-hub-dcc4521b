@@ -87,14 +87,12 @@ export function EventPlannersSmmPopup() {
       <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
       <div className="relative max-h-[calc(100dvh-2rem)] w-full max-w-md animate-in fade-in slide-in-from-bottom-6 overflow-y-auto rounded-2xl border border-border bg-card shadow-[var(--shadow-elegant)]">
         {/* Header */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary px-5 py-4 text-primary-foreground">
+        <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary-glow px-5 py-4 text-primary-foreground">
           <div className="flex items-start justify-between gap-3">
-            <div className="flex items-center gap-2">
-              <Sparkles className="h-5 w-5" />
-              <p className="text-xs font-semibold uppercase tracking-wider opacity-90">
-                Social media marketing
-              </p>
-            </div>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-accent-foreground shadow-sm">
+              <Sparkles className="h-4 w-4" />
+              Social Media Marketing
+            </span>
             <Button
               type="button"
               variant="ghost"
@@ -106,9 +104,10 @@ export function EventPlannersSmmPopup() {
               <X className="h-4 w-4" />
             </Button>
           </div>
-          <h2 id="smm-popup-title" className="mt-1 text-lg font-bold leading-snug sm:text-xl">
-            Your business deserves <br className="hidden sm:block" />
-            social media that stands out
+          <h2 id="smm-popup-title" className="mt-2 text-lg font-bold leading-snug sm:text-xl">
+            Your business deserves{" "}
+            <span className="text-accent">social media marketing</span>
+            <br className="hidden sm:block" /> that stands out
           </h2>
         </div>
 

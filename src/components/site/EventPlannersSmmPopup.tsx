@@ -215,7 +215,7 @@ export function EventPlannersSmmPopup() {
               rel="noopener"
               onClick={close}
             >
-              <MessageCircle className="h-4 w-4" />
+              <WhatsAppGlyph className="h-4 w-4" />
               WhatsApp {SITE.phoneDigital}
             </a>
             </Button>

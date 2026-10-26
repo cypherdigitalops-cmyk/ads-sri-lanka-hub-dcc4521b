@@ -39,8 +39,12 @@ export function EventPlannersSmmPopup() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    console.log("[SmmPopup] mounted, shouldShow:", shouldShow());
     if (!shouldShow()) return;
-    const timer = window.setTimeout(() => setOpen(true), SHOW_DELAY_MS);
+    const timer = window.setTimeout(() => {
+      console.log("[SmmPopup] opening");
+      setOpen(true);
+    }, SHOW_DELAY_MS);
     return () => window.clearTimeout(timer);
   }, []);
 

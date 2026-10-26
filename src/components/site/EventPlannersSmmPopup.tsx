@@ -149,11 +149,12 @@ export function EventPlannersSmmPopup() {
               WhatsApp {SITE.phoneDigital}
             </a>
             </Button>
-            <Button asChild className="h-auto whitespace-normal rounded-full px-4 py-2.5 font-bold">
+            <Button asChild className="h-auto whitespace-normal rounded-full bg-accent px-4 py-2.5 font-extrabold text-accent-foreground hover:bg-accent hover:opacity-95">
             <Link
               to="/digital-marketing-sri-lanka"
               onClick={close}
             >
+              <Sparkles className="h-4 w-4" />
               Try Social Media Marketing
             </Link>
             </Button>

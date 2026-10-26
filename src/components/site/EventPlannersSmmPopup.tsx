@@ -151,6 +151,25 @@ export function EventPlannersSmmPopup() {
             <span className="text-accent">social media marketing</span>
             <br className="hidden sm:block" /> that stands out
           </h2>
+          <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-primary-foreground/70">
+              We create &amp; run ads on
+            </span>
+            <div className="flex items-center gap-1.5">
+              {PLATFORMS.map((p) => (
+                <Link
+                  key={p.name}
+                  to={p.to}
+                  onClick={close}
+                  aria-label={p.label}
+                  title={p.label}
+                  className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary-foreground/15 text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                >
+                  {p.icon}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Body */}

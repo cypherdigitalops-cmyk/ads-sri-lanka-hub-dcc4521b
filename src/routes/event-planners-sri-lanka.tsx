@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { ServicePageTemplate } from "@/components/site/Templates";
+import { EventPlannersSmmPopup } from "@/components/site/EventPlannersSmmPopup";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;

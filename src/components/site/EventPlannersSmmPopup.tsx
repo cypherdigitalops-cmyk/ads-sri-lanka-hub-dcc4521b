@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, Sparkles, TrendingUp, X } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { SITE } from "@/data/site";
+import { Button } from "@/components/ui/button";
 
 const LS_KEY = "asl_event_smm_popup_v1";
 const SHOW_DELAY_MS = 6000;
@@ -28,24 +29,32 @@ function markDismissed() {
 }
 
 const WA_URL = `${SITE.whatsappDigital}?text=${encodeURIComponent(
-  "Hi! I'm planning an event and saw your page. I'd like to try your Social Media Marketing — can you share details?",
+  "Hi! I saw AdvertisingSriLanka.lk. I'm interested in Social Media Marketing for my business — can you share details?",
 )}`;
 
 /**
- * Promo popup for /event-planners-sri-lanka: promotes the social media
+ * Site-wide public-page promo popup: promotes the social media
  * marketing desk (077 143 7707) and routes interest to the digital marketing hub.
  */
 export function EventPlannersSmmPopup() {
   const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  const privatePage = /^\/(admin|login)(\/|$)/.test(pathname);
 
   useEffect(() => {
+    if (privatePage) {
+      setOpen(false);
+      return;
+    }
     if (!shouldShow()) return;
-    const timer = window.setTimeout(() => setOpen(true), SHOW_DELAY_MS);
+    const timer = window.setTimeout(() => {
+      if (shouldShow()) setOpen(true);
+    }, SHOW_DELAY_MS);
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [privatePage]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open || privatePage) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setOpen(false);
@@ -53,19 +62,20 @@ export function EventPlannersSmmPopup() {
       }
     };
     document.addEventListener("keydown", onKey);
+    const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
+      document.body.style.overflow = previousOverflow;
     };
-  }, [open]);
+  }, [open, privatePage]);
 
   function close() {
     setOpen(false);
     markDismissed();
   }
 
-  if (!open) return null;
+  if (!open || privatePage) return null;
 
   return (
     <div
@@ -74,81 +84,86 @@ export function EventPlannersSmmPopup() {
       aria-modal="true"
       aria-labelledby="smm-popup-title"
     >
-      <button type="button" aria-label="Close popup" onClick={close} className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
-      <div className="relative w-full max-w-md animate-in fade-in slide-in-from-bottom-6 overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-elegant)]">
+      <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
+      <div className="relative max-h-[calc(100dvh-2rem)] w-full max-w-md animate-in fade-in slide-in-from-bottom-6 overflow-y-auto rounded-2xl border border-border bg-card shadow-[var(--shadow-elegant)]">
         {/* Header */}
         <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary px-5 py-4 text-primary-foreground">
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-2">
               <Sparkles className="h-5 w-5" />
               <p className="text-xs font-semibold uppercase tracking-wider opacity-90">
-                Special for event planners
+                Social media marketing
               </p>
             </div>
-            <button
+            <Button
               type="button"
+              variant="ghost"
+              size="icon"
               onClick={close}
               aria-label="Close"
-              className="rounded-full p-1 hover:bg-white/20"
+              className="h-7 w-7 rounded-full hover:bg-primary-foreground/20 hover:text-primary-foreground"
             >
               <X className="h-4 w-4" />
-            </button>
+            </Button>
           </div>
           <h2 id="smm-popup-title" className="mt-1 text-lg font-bold leading-snug sm:text-xl">
-            Your events look amazing — <br className="hidden sm:block" />
-            shouldn't your social media too?
+            Your business deserves <br className="hidden sm:block" />
+            social media that stands out
           </h2>
         </div>
 
         {/* Body */}
         <div className="grid gap-4 px-5 py-5">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            We turn event moments into <span className="font-semibold text-foreground">reels, posts & ads that bring new clients</span> —
-            done-for-you social media marketing from the same team behind Sri Lanka's biggest event campaigns.
+            Explore <span className="font-semibold text-foreground">reels, posts & ads for your business</span> —
+            connect with the social media marketing desk to discuss your goals and options.
           </p>
 
           <ul className="grid gap-2 text-sm">
             <li className="flex items-start gap-2">
               <TrendingUp className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-              <span>Monthly content plan + posting — from <strong>LKR 15,000/month</strong></span>
+              <span>Monthly content planning and posting</span>
             </li>
             <li className="flex items-start gap-2">
               <TrendingUp className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-              <span>Event reels, before/after posts & client testimonials</span>
+              <span>Business reels, product posts and customer stories</span>
             </li>
             <li className="flex items-start gap-2">
               <TrendingUp className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-              <span>Free first post preview — see it before you pay anything</span>
+              <span>Discuss a plan that fits your business and budget</span>
             </li>
           </ul>
 
           <div className="grid gap-2 sm:grid-cols-2">
+            <Button asChild className="h-auto whitespace-normal rounded-full bg-[var(--whatsapp)] px-4 py-2.5 font-bold text-[var(--whatsapp-foreground)] hover:bg-[var(--whatsapp)] hover:opacity-95">
             <a
               href={WA_URL}
               target="_blank"
               rel="noopener"
-              onClick={markDismissed}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-4 py-2.5 text-sm font-bold text-[var(--whatsapp-foreground)] shadow-md transition hover:opacity-95"
+              onClick={close}
             >
               <MessageCircle className="h-4 w-4" />
               WhatsApp {SITE.phoneDigital}
             </a>
+            </Button>
+            <Button asChild className="h-auto whitespace-normal rounded-full px-4 py-2.5 font-bold">
             <Link
               to="/digital-marketing-sri-lanka"
-              onClick={markDismissed}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-bold text-primary-foreground shadow-md transition hover:opacity-95"
+              onClick={close}
             >
               Try Social Media Marketing
             </Link>
+            </Button>
           </div>
 
-          <button
+          <Button
             type="button"
+            variant="link"
             onClick={close}
             className="mx-auto text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
           >
             No thanks, maybe later
-          </button>
+          </Button>
         </div>
       </div>
     </div>

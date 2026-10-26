@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MessageCircle, Sparkles, TrendingUp, X } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MessageCircle, Sparkles, TrendingUp, X, Youtube } from "lucide-react";
 import { Link, useLocation } from "@tanstack/react-router";
 import { SITE } from "@/data/site";
 import { Button } from "@/components/ui/button";

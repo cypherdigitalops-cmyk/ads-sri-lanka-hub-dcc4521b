@@ -32,6 +32,48 @@ const WA_URL = `${SITE.whatsappDigital}?text=${encodeURIComponent(
   "Hi! I saw AdvertisingSriLanka.lk. I'm interested in Social Media Marketing for my business — can you share details?",
 )}`;
 
+/** Simple TikTok glyph — not part of the icon set, so it is drawn inline. */
+function TiktokGlyph({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
+      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.07-.01 2.12-.47 2.86-1.26.26-.28.49-.59.64-.96.16-.43.22-.9.23-1.35.04-4.09-.02-8.18.02-12.26z" />
+    </svg>
+  );
+}
+
+const PLATFORMS = [
+  {
+    name: "Facebook",
+    label: "Facebook marketing in Sri Lanka",
+    to: "/facebook-ads-sri-lanka",
+    icon: <Facebook className="h-3.5 w-3.5" />,
+  },
+  {
+    name: "Instagram",
+    label: "Instagram marketing in Sri Lanka",
+    to: "/instagram-ads-sri-lanka",
+    icon: <Instagram className="h-3.5 w-3.5" />,
+  },
+  {
+    name: "TikTok",
+    label: "TikTok marketing in Sri Lanka",
+    to: "/tiktok-ads-sri-lanka",
+    icon: <TiktokGlyph className="h-3.5 w-3.5" />,
+  },
+  {
+    name: "YouTube",
+    label: "YouTube marketing in Sri Lanka",
+    to: "/youtube-ads-sri-lanka",
+    icon: <Youtube className="h-3.5 w-3.5" />,
+  },
+  {
+    name: "LinkedIn",
+    label: "LinkedIn marketing in Sri Lanka",
+    to: "/linkedin-ads-sri-lanka",
+    icon: <Linkedin className="h-3.5 w-3.5" />,
+  },
+] as const;
+
 /**
  * Site-wide public-page promo popup: promotes the social media
  * marketing desk (077 143 7707) and routes interest to the digital marketing hub.

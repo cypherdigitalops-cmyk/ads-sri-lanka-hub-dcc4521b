@@ -114,8 +114,12 @@ export function EventPlannersSmmPopup() {
         {/* Body */}
         <div className="grid gap-4 px-5 py-5">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Explore <span className="font-semibold text-foreground">reels, posts & ads for your business</span> —
-            connect with the social media marketing desk to discuss your goals and options.
+            Our{" "}
+            <span className="rounded bg-accent/25 px-1.5 py-0.5 font-bold text-foreground">
+              social media marketing
+            </span>{" "}
+            desk handles <span className="font-semibold text-foreground">reels, posts &amp; ads for your business</span>{" "}
+            — tell us your goals and we'll show you the options.
           </p>
 
           <ul className="grid gap-2 text-sm">

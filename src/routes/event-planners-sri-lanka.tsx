@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { ServicePageTemplate } from "@/components/site/Templates";
-import { EventPlannersSmmPopup } from "@/components/site/EventPlannersSmmPopup";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "event-management-sri-lanka")!;
@@ -17,8 +16,9 @@ export const Route = createFileRoute("/event-planners-sri-lanka")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/event-planners-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="event planners sri lanka" /><EventPlannersSmmPopup /></PageShell>),
+  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="event planners sri lanka" /></PageShell>),
 });

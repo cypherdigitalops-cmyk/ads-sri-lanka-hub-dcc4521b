@@ -87,14 +87,12 @@ export function EventPlannersSmmPopup() {
       <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
       <div className="relative max-h-[calc(100dvh-2rem)] w-full max-w-md animate-in fade-in slide-in-from-bottom-6 overflow-y-auto rounded-2xl border border-border bg-card shadow-[var(--shadow-elegant)]">
         {/* Header */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary px-5 py-4 text-primary-foreground">
+        <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary-glow px-5 py-4 text-primary-foreground">
           <div className="flex items-start justify-between gap-3">
-            <div className="flex items-center gap-2">
-              <Sparkles className="h-5 w-5" />
-              <p className="text-xs font-semibold uppercase tracking-wider opacity-90">
-                Social media marketing
-              </p>
-            </div>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-accent-foreground shadow-sm">
+              <Sparkles className="h-4 w-4" />
+              Social Media Marketing
+            </span>
             <Button
               type="button"
               variant="ghost"
@@ -106,17 +104,22 @@ export function EventPlannersSmmPopup() {
               <X className="h-4 w-4" />
             </Button>
           </div>
-          <h2 id="smm-popup-title" className="mt-1 text-lg font-bold leading-snug sm:text-xl">
-            Your business deserves <br className="hidden sm:block" />
-            social media that stands out
+          <h2 id="smm-popup-title" className="mt-2 text-lg font-bold leading-snug sm:text-xl">
+            Your business deserves{" "}
+            <span className="text-accent">social media marketing</span>
+            <br className="hidden sm:block" /> that stands out
           </h2>
         </div>
 
         {/* Body */}
         <div className="grid gap-4 px-5 py-5">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Explore <span className="font-semibold text-foreground">reels, posts & ads for your business</span> —
-            connect with the social media marketing desk to discuss your goals and options.
+            Our{" "}
+            <span className="rounded bg-accent/25 px-1.5 py-0.5 font-bold text-foreground">
+              social media marketing
+            </span>{" "}
+            desk handles <span className="font-semibold text-foreground">reels, posts &amp; ads for your business</span>{" "}
+            — tell us your goals and we'll show you the options.
           </p>
 
           <ul className="grid gap-2 text-sm">
@@ -146,11 +149,12 @@ export function EventPlannersSmmPopup() {
               WhatsApp {SITE.phoneDigital}
             </a>
             </Button>
-            <Button asChild className="h-auto whitespace-normal rounded-full px-4 py-2.5 font-bold">
+            <Button asChild className="h-auto whitespace-normal rounded-full bg-accent px-4 py-2.5 font-extrabold text-accent-foreground hover:bg-accent hover:opacity-95">
             <Link
               to="/digital-marketing-sri-lanka"
               onClick={close}
             >
+              <Sparkles className="h-4 w-4" />
               Try Social Media Marketing
             </Link>
             </Button>

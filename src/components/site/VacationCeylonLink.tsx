@@ -3,7 +3,7 @@
  * Styled to read as ordinary page copy: same colour, size and line height as the
  * surrounding paragraphs, no underline, no box, no highlight.
  */
-export function VacationCeylonBacklink({
+export function VacationCeylonLink({
   lead = "For island-wide trip planning and ground arrangements, see this",
 }: {
   lead?: string;

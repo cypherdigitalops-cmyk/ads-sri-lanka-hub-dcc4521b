@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { ServicePageTemplate } from "@/components/site/Templates";
-import { VacationCeylonBacklink } from "@/components/site/VacationCeylonBacklink";
+import { VacationCeylonLink } from "@/components/site/VacationCeylonLink";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "industry-advertising-sri-lanka")!;
@@ -20,5 +20,5 @@ export const Route = createFileRoute("/advertising-for-travel-tourism-sri-lanka"
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/advertising-for-travel-tourism-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="advertising for travel and tourism sri lanka" /><VacationCeylonBacklink /></PageShell>),
+  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="advertising for travel and tourism sri lanka" /><VacationCeylonLink /></PageShell>),
 });

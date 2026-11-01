@@ -10,7 +10,7 @@ export function VacationCeylonBacklink({
 }) {
   return (
     <section className="mx-auto max-w-3xl px-4 py-8">
-      <p className="text-muted-foreground leading-relaxed">
+      <p className="text-muted-foreground">
         {lead}{" "}
         <a
           href="https://vacationceylon.com/"

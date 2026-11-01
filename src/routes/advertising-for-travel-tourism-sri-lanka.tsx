@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { ServicePageTemplate } from "@/components/site/Templates";
+import { VacationCeylonBacklink } from "@/components/site/VacationCeylonBacklink";
 import { CATEGORIES, SITE } from "@/data/site";
 
 const CAT = CATEGORIES.find((x) => x.slug === "industry-advertising-sri-lanka")!;

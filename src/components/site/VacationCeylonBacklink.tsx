@@ -1,7 +1,7 @@
 /**
  * Subtle external anchor backlink to Vacation Ceylon.
  * Styled to read as ordinary page copy: same colour, size and line height as the
- * article's own paragraphs, no underline, no box, no highlight.
+ * surrounding paragraphs, no underline, no box, no highlight.
  */
 export function VacationCeylonBacklink({
   lead = "For island-wide trip planning and ground arrangements, see this",

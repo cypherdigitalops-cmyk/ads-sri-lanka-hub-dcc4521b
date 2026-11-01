@@ -1,7 +1,7 @@
 /**
  * Subtle external anchor backlink to Vacation Ceylon.
- * Styled to blend in (muted, no underline) — not highlighted.
- * Renders a short contextual sentence containing the keyword-rich anchor text.
+ * Styled to read as ordinary page copy: same colour, size and line height as the
+ * article's own paragraphs, no underline, no box, no highlight.
  */
 export function VacationCeylonBacklink({
   lead = "For island-wide trip planning and ground arrangements, see this",
@@ -9,8 +9,8 @@ export function VacationCeylonBacklink({
   lead?: string;
 }) {
   return (
-    <section className="mx-auto max-w-3xl px-4 pb-14 text-sm text-muted-foreground">
-      <p>
+    <section className="mx-auto max-w-3xl px-4 py-8">
+      <p className="text-muted-foreground leading-relaxed">
         {lead}{" "}
         <a
           href="https://vacationceylon.com/"

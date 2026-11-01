@@ -20,5 +20,5 @@ export const Route = createFileRoute("/advertising-for-travel-tourism-sri-lanka"
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/advertising-for-travel-tourism-sri-lanka` }],
   }),
-  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="advertising for travel and tourism sri lanka" /></PageShell>),
+  component: () => (<PageShell><ServicePageTemplate category={CAT} keyword="advertising for travel and tourism sri lanka" /><VacationCeylonBacklink /></PageShell>),
 });

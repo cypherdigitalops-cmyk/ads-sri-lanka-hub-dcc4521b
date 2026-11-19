@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
@@ -142,6 +143,7 @@ export const Route = createFileRoute("/blog/event-stage-setup-av-package-sri-lan
         ]}
         related={[{"href":"/blog/corporate-event-av-checklist-sri-lanka","label":"Corporate event AV checklist for Sri Lanka"},{"href":"/blog/led-screen-rent-for-weddings-sri-lanka","label":"LED screen rent for weddings — what couples need to know"},{"href":"/blog/pixel-pitch-explained-led-screen-rent-sri-lanka","label":"Pixel pitch explained — choosing the right LED screen"},{"href":"/stage-setup-sri-lanka","label":"Stage Setup Sri Lanka"},{"href":"/stage-rental-sri-lanka","label":"Stage Rental"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/sound-system-rental-sri-lanka","label":"Sound System Rental"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

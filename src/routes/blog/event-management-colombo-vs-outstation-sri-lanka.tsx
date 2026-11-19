@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/event-management-colombo-vs-outstati
         related={[{"href":"/blog/event-venues-sri-lanka-colombo","label":"Best event venues in Sri Lanka"},{"href":"/event-management-colombo","label":"Event management Colombo"},{"href":"/event-management-kandy","label":"Event management Kandy"},{"href":"/event-management-galle","label":"Event management Galle"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/event-planning-checklist-sri-lanka")
         related={[{"href":"/blog/event-permits-sri-lanka","label":"Event permits in Sri Lanka — CMC, police, fire safety"},{"href":"/blog/corporate-event-management-sri-lanka-guide","label":"Corporate event management — complete planning guide"},{"href":"/blog/how-to-choose-event-management-company-sri-lanka","label":"How to choose an event management company"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/event-planners-sri-lanka","label":"Event Planners Sri Lanka"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/tent-marquee-rental-sri-lanka","label":"Tent & Marquee Rental"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

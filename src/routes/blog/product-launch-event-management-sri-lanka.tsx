@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/product-launch-event-management-sri-
         related={[{"href":"/blog/stage-setup-av-production-sri-lanka","label":"Stage setup & AV production for events"},{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"LED screen rent cost in Sri Lanka"},{"href":"/product-launch-sri-lanka","label":"Product launch — service page"},{"href":"/led-screen-rental-sri-lanka","label":"LED screen rental — service page"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/brand-activation-sri-lanka","label":"Brand Activation"},{"href":"/event-photography-sri-lanka","label":"Event Photography"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

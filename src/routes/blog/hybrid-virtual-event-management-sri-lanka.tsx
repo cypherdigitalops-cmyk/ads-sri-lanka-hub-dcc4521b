@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/hybrid-virtual-event-management-sri-
         related={[{"href":"/blog/stage-setup-av-production-sri-lanka","label":"Stage setup & AV production"},{"href":"/hybrid-event-sri-lanka","label":"Hybrid event — service page"},{"href":"/event-live-streaming-sri-lanka","label":"Event live streaming — service page"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { SITE } from "@/data/site";
@@ -214,6 +215,7 @@ export const Route = createFileRoute("/blog/events-that-need-led-screen-rental-s
           { href: "/event-management-sri-lanka", label: "Event Management Sri Lanka" },
         ]}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -118,6 +119,7 @@ export const Route = createFileRoute("/blog/corporate-event-management-sri-lanka
         related={[{"href":"/blog/event-management-cost-sri-lanka","label":"How much does event management cost in Sri Lanka? 2025 price guide"},{"href":"/blog/event-venues-sri-lanka-colombo","label":"Best event venues in Sri Lanka — corporate, wedding, conference"},{"href":"/blog/event-planning-checklist-sri-lanka","label":"The ultimate event planning checklist for Sri Lanka"},{"href":"/corporate-event-management-sri-lanka","label":"Corporate event management — service page"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/conference-management-sri-lanka","label":"Conference Management"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

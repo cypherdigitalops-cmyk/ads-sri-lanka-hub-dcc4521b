@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -121,6 +122,7 @@ export const Route = createFileRoute("/blog/event-management-cost-sri-lanka")({
         related={[{"href":"/blog/how-to-choose-event-management-company-sri-lanka","label":"How to choose an event management company in Sri Lanka"},{"href":"/blog/event-venues-sri-lanka-colombo","label":"Best event venues in Sri Lanka"},{"href":"/blog/stage-setup-av-production-sri-lanka","label":"Stage setup & AV production — what a real package covers"},{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"LED screen rent cost in Sri Lanka — 2025 breakdown"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/event-planners-sri-lanka","label":"Event Planners Sri Lanka"},{"href":"/led-screen-rental-sri-lanka","label":"LED Screen Rental"},{"href":"/stage-rental-sri-lanka","label":"Stage Rental"},{"href":"/generator-rental-sri-lanka","label":"Generator Rental"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

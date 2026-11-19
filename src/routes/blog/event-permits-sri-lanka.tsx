@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/event-permits-sri-lanka")({
         related={[{"href":"/blog/event-planning-checklist-sri-lanka","label":"Event planning checklist — 12 weeks to event day"},{"href":"/blog/how-to-choose-event-management-company-sri-lanka","label":"How to choose an event management company"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/corporate-event-management-sri-lanka","label":"Corporate Event Management"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

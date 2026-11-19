@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/stage-setup-av-production-sri-lanka"
         related={[{"href":"/blog/how-much-does-led-screen-rent-cost-sri-lanka","label":"LED screen rent cost — 2025 breakdown"},{"href":"/blog/corporate-event-av-checklist-sri-lanka","label":"Corporate event AV checklist"},{"href":"/stage-setup-sri-lanka","label":"Stage setup — service page"},{"href":"/led-screen-rental-sri-lanka","label":"LED screen rental — service page"},{"href":"/sound-system-rental-sri-lanka","label":"Sound system rental — service page"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/generator-rental-sri-lanka","label":"Generator Rental"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

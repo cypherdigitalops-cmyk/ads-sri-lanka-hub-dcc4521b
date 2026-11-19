@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { BlogArticleTemplate } from "@/components/site/Templates";
 import { CATEGORIES, SITE } from "@/data/site";
@@ -19,5 +20,5 @@ export const Route = createFileRoute("/blog/event-promotion-sri-lanka")({
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/blog/event-promotion-sri-lanka` }],
   }),
-  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="event promotion sri lanka" extraLinks={[{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka","anchor":"event management Sri Lanka"},{"href":"/event-marketing-sri-lanka","label":"Event Marketing Sri Lanka","anchor":"event marketing Sri Lanka"},{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing","anchor":"social media marketing Sri Lanka"}]} /></PageShell>),
+  component: () => (<PageShell><BlogArticleTemplate category={CAT} keyword="event promotion sri lanka" extraLinks={[{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka","anchor":"event management Sri Lanka"},{"href":"/event-marketing-sri-lanka","label":"Event Marketing Sri Lanka","anchor":"event marketing Sri Lanka"},{"href":"/social-media-marketing-sri-lanka","label":"Social Media Marketing","anchor":"social media marketing Sri Lanka"}]} /><CypherEventLink /></PageShell>),
 });

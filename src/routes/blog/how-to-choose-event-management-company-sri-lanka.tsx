@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CypherEventLink } from "@/components/site/CypherEventLink";
 import { PageShell } from "@/components/site/PageShell";
 import { CustomBlogArticle } from "@/components/site/CustomBlogArticle";
 import { EVENT_MGMT_ANCHOR } from "@/lib/event-management-anchor";
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/blog/how-to-choose-event-management-compa
         related={[{"href":"/blog/event-management-cost-sri-lanka","label":"Event management cost in Sri Lanka — 2025 price guide"},{"href":"/blog/event-planning-checklist-sri-lanka","label":"Event planning checklist"},{"href":"/blog/corporate-event-management-sri-lanka-guide","label":"Corporate event management — complete planning guide"},{"href":"/event-management-sri-lanka","label":"Event Management Sri Lanka"},{"href":"/event-planners-sri-lanka","label":"Event Planners Sri Lanka"},{"href":"/","label":"Advertising Sri Lanka (Home)"}]}
         primaryAnchor={EVENT_MGMT_ANCHOR}
       />
+    <CypherEventLink />
     </PageShell>
   ),
 });

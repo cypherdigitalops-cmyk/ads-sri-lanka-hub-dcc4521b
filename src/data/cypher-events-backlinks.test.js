@@ -6,14 +6,14 @@ describe("Cypher Events destination selection", () => {
     const destinations = Object.values(CYPHER_EVENTS_BACKLINKS).map((entry) => entry.href);
     expect(destinations).toHaveLength(65);
     expect(destinations.filter((url) => url === "https://cypherevents.lk/event-planning-sri-lanka/")).toHaveLength(15);
-    expect(destinations.filter((url) => url === "https://cypherevents.lk/event-management-sri-lanka/")).toHaveLength(31);
-    expect(destinations.filter((url) => url === "https://cypherevents.lk/")).toHaveLength(19);
+    expect(destinations.filter((url) => url === "https://cypherevents.lk/event-management-sri-lanka/")).toHaveLength(50);
+    expect(destinations.filter((url) => url === "https://cypherevents.lk/")).toHaveLength(0);
   });
 
   test("preserves the three distinct destinations on the overlapping event pages", () => {
     expect(getEventBacklink("/event-planners-sri-lanka")?.href).toBe("https://cypherevents.lk/event-planning-sri-lanka/");
     expect(getEventBacklink("/event-management-sri-lanka")?.href).toBe("https://cypherevents.lk/event-management-sri-lanka/");
-    expect(getEventBacklink("/event-marketing-sri-lanka")?.href).toBe("https://cypherevents.lk/");
+    expect(getEventBacklink("/event-marketing-sri-lanka")?.href).toBe("https://cypherevents.lk/event-management-sri-lanka/");
   });
 
   test("normalizes trailing slashes and ignores query strings without assigning links to unrelated pages", () => {
@@ -22,4 +22,9 @@ describe("Cypher Events destination selection", () => {
       expect(getEventBacklink(path)).toBeUndefined();
     }
   });
+});
+test("every link uses one of the two requested keywords", () => {
+  for (const e of Object.values(CYPHER_EVENTS_BACKLINKS)) {
+    expect(e.anchor).toBe(e.href.includes("event-planning") ? "event planning Sri Lanka" : "event management Sri Lanka");
+  }
 });

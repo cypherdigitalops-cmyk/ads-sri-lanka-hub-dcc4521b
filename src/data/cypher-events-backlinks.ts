@@ -10,392 +10,392 @@ export const CYPHER_EVENTS_BACKLINKS: Readonly<Record<string, EventBacklink>> = 
   "/event-planners-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
     "anchor": "event planning Sri Lanka",
-    "before": "If you want one team to plan the whole event for you, Cypher Events offers full ",
-    "after": " services."
+    "before": "If you want one team to plan the whole event for you, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/event-planning-checklist-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "event planning in Sri Lanka",
-    "before": "When assigning the checklist's venue, supplier and rehearsal tasks, ",
-    "after": " can help bring those responsibilities into one coordinated plan."
+    "anchor": "event planning Sri Lanka",
+    "before": "When assigning the checklist's tasks, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/business-events-calendar-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "plan your event",
-    "before": "Once you have shortlisted dates from the calendar, you can ",
-    "after": " with Cypher Events around venue availability, supplier deadlines and guest schedules."
+    "anchor": "event planning Sri Lanka",
+    "before": "Once you have shortlisted dates from the calendar, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/venue-finding-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "event planners in Sri Lanka",
-    "before": "Before committing to a venue, discuss capacity, access and supplier requirements with ",
-    "after": " so the location fits the complete brief."
+    "anchor": "event planning Sri Lanka",
+    "before": "Before committing to a venue, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-venue-colombo": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
     "anchor": "event planning Sri Lanka",
-    "before": "For a Colombo venue booking that also needs supplier coordination and a guest programme, explore ",
-    "after": " through Cypher Events."
+    "before": "For a Colombo venue booking that also needs supplier coordination and a guest programme, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/event-venues-sri-lanka-colombo": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "professional event planning",
-    "before": "When comparing Colombo venues, ",
-    "after": " helps connect the room layout, access times and supplier arrangements to the guest experience."
+    "anchor": "event planning Sri Lanka",
+    "before": "When comparing Colombo venues, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/event-permits-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "planning an event in Sri Lanka",
-    "before": "When ",
-    "after": ", include permit responsibilities and approval deadlines in the brief shared with your organiser and venue."
+    "anchor": "event planning Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/school-events-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "event planning team",
-    "before": "A school programme also needs clear arrival, rehearsal and dismissal arrangements; an ",
-    "after": " can coordinate these alongside the stage and suppliers."
+    "anchor": "event planning Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/university-events-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
     "anchor": "event planning Sri Lanka",
-    "before": "For university conferences, celebrations and student programmes, ",
-    "after": " can bring venues, technical suppliers and the running order into one brief."
+    "before": "For university conferences, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/charity-events-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "plan a charity event",
-    "before": "If you need to ",
-    "after": ", outline the fundraising objective, guest journey and supplier responsibilities before confirming the programme."
+    "anchor": "event planning Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-decor-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "Cypher Events planning",
-    "before": "To align décor with the venue layout, guest movement and setup schedule, explore ",
-    "after": " alongside your visual brief."
+    "anchor": "event planning Sri Lanka",
+    "before": "To align décor with the venue layout, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-rentals-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "event planning in Sri Lanka",
-    "before": "For equipment bookings that need to fit a complete venue and supplier schedule, ",
-    "after": " can help coordinate delivery, rehearsals and the guest programme."
+    "anchor": "event planning Sri Lanka",
+    "before": "For equipment bookings that need to fit a complete venue and supplier schedule, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-catering-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "full event planning",
-    "before": "For food service that fits speeches, entertainment and guest arrivals, consider ",
-    "after": " alongside your catering arrangements."
+    "anchor": "event planning Sri Lanka",
+    "before": "For catering that fits the programme, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/tent-marquee-rental-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
-    "anchor": "outdoor event planning",
-    "before": "When booking tents and marquees, ",
-    "after": " should also account for access, power, guest movement and a wet-weather alternative."
+    "anchor": "event planning Sri Lanka",
+    "before": "When booking tents and marquees, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/table-chair-rental-sri-lanka": {
     "href": "https://cypherevents.lk/event-planning-sri-lanka/",
     "anchor": "event planning Sri Lanka",
-    "before": "To connect table quantities and seating layouts with the wider guest programme, explore ",
-    "after": " through Cypher Events."
+    "before": "To connect table quantities and seating layouts with the wider guest programme, Cypher Events offers specialist ",
+    "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management in Sri Lanka",
-    "before": "For complete planning and on-the-day management, our sister company Cypher Events handles ",
-    "after": " end to end."
+    "anchor": "event management Sri Lanka",
+    "before": "For complete planning and on-the-day management, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-management-colombo": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "For Colombo events needing coordinated venues, suppliers and on-site delivery, consider an ",
-    "after": " such as Cypher Events."
+    "anchor": "event management Sri Lanka",
+    "before": "For Colombo events needing coordinated venues, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-management-kandy": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For Kandy programmes involving travel, venue access and multiple suppliers, explore ",
-    "after": " with Cypher Events."
+    "before": "For Kandy events involving travelling guests, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-management-galle": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "island-wide event management",
-    "before": "For Galle events with coastal venues and travelling guests, ",
-    "after": " helps connect local arrangements with the overall production schedule."
+    "anchor": "event management Sri Lanka",
+    "before": "For Galle events with coastal venues and travelling guests, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-management-negombo": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management services",
-    "before": "For Negombo hotel, corporate and destination programmes, explore ",
-    "after": " that connect the guest itinerary with supplier coordination."
+    "anchor": "event management Sri Lanka",
+    "before": "For Negombo hotel and beach events, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-management-jaffna": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For Jaffna events requiring transport, local venue coordination and a clear running order, explore ",
-    "after": " through Cypher Events."
+    "before": "For Jaffna events requiring transport and logistics, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-management-cost-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "When comparing budgets, ask an ",
-    "after": " such as Cypher Events to separate planning, production and supplier responsibilities in its proposal."
+    "anchor": "event management Sri Lanka",
+    "before": "When comparing budgets, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/event-management-cost-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "get an event management quote",
-    "before": "To compare the budget categories in this guide against your own brief, ",
-    "after": " that specifies the venue, attendance, programme and production scope."
+    "anchor": "event management Sri Lanka",
+    "before": "To compare the budget categories in this guide against your own brief, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/how-to-choose-event-management-company-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "When shortlisting an ",
-    "after": ", compare the proposed scope, named on-site lead and supplier coordination process against the checklist in this guide."
+    "anchor": "event management Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/event-management-colombo-vs-outstation-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For programmes spanning Colombo and regional venues, ",
-    "after": " should address crew travel, supplier access and local setup constraints in one plan."
+    "before": "For programmes spanning Colombo and regional venues, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/corporate-event-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "full event management",
-    "before": "For a team that handles the planning, suppliers and on-the-day running, see Cypher Events' ",
-    "after": " service."
+    "anchor": "event management Sri Lanka",
+    "before": "For a team that handles everything, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/corporate-event-management-sri-lanka-guide": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company Sri Lanka",
-    "before": "For a corporate brief involving delegates, suppliers and a timed programme, review an ",
-    "after": " service that coordinates those workstreams together."
+    "anchor": "event management Sri Lanka",
+    "before": "For a corporate event with delegates, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/conference-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For conferences that need full planning and on-site coordination, Cypher Events provides ",
-    "after": " services."
+    "before": "For conferences that need full planning and on-site coordination, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/exhibition-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "Cypher Events management team",
-    "before": "For exhibitions needing coordinated installation, exhibitor access and show-day operations, explore the ",
-    "after": " alongside your stand and promotion brief."
+    "anchor": "event management Sri Lanka",
+    "before": "For exhibitions needing coordinated installation, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/exhibition-management-sri-lanka-bmich": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For a BMICH exhibition, ",
-    "after": " should connect organiser requirements, supplier access, installation deadlines and the live visitor experience."
+    "before": "For a BMICH exhibition, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/gala-dinner-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "For a gala dinner combining catering, speeches and entertainment, an ",
-    "after": " can coordinate the programme and supplier handovers."
+    "anchor": "event management Sri Lanka",
+    "before": "For a gala dinner programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/awards-ceremony-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For an awards ceremony, ",
-    "after": " can align presenter cues, award sequences, technical rehearsals and guest arrangements."
+    "before": "For an awards ceremony, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/product-launch-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "launch event management",
-    "before": "Alongside the advertising brief, ",
-    "after": " brings the reveal, media arrivals, stage cues and supplier schedule into one coordinated programme."
+    "anchor": "event management Sri Lanka",
+    "before": "Alongside the advertising brief, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/product-launch-event-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For the live side of a launch, ",
-    "after": " can connect your reveal sequence, rehearsal plan and guest journey with supplier delivery."
+    "before": "For the live side of a launch, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/hybrid-event-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management services",
-    "before": "For hybrid programmes, ",
-    "after": " should coordinate the room experience, remote speakers and streaming cues within the same running order."
+    "anchor": "event management Sri Lanka",
+    "before": "For hybrid programmes, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/virtual-event-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For virtual programmes with multiple presenters, ",
-    "after": " can help coordinate rehearsals, speaker handovers and contingency arrangements."
+    "before": "For virtual programmes with multiple presenters, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/hybrid-virtual-event-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company Sri Lanka",
-    "before": "When briefing an ",
-    "after": " service for hybrid or virtual delivery, specify responsibility for remote rehearsals, live cues and technical backup."
+    "anchor": "event management Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/crowd-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "on-site event management",
-    "before": "Crowd plans work best when ",
-    "after": " connects entry arrangements, steward briefings and escalation contacts to the event schedule."
+    "anchor": "event management Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-security-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For a security brief that fits the wider programme, ",
-    "after": " should connect access control, guest movements and incident contacts with the on-site team."
+    "before": "For a security brief that fits the wider programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-registration-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management team",
-    "before": "An ",
-    "after": " can connect registration desk staffing, guest lists and arrival timings with the wider venue and programme plan."
+    "anchor": "event management Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-ticketing-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "Alongside ticket sales, ",
-    "after": " can coordinate entry scanning, guest support and capacity arrangements on the day."
+    "before": "Alongside ticket sales, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/stage-setup-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "For stage installations involving several suppliers, an ",
-    "after": " can coordinate access, technical rehearsals and the running order."
+    "anchor": "event management Sri Lanka",
+    "before": "For stage installations involving several suppliers, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/stage-setup-av-production-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "When planning stage and AV production, ",
-    "after": " can connect installation milestones, rehearsals and live cue responsibilities."
+    "before": "When planning stage and AV production, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/corporate-event-av-checklist-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "professional event management",
-    "before": "To put this AV checklist into practice, ",
-    "after": " can assign owners for technical checks, presenter rehearsals and on-site handovers."
+    "anchor": "event management Sri Lanka",
+    "before": "To put this AV checklist into practice, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/event-stage-setup-av-package-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
     "anchor": "event management Sri Lanka",
-    "before": "For an AV package that fits the wider programme, ",
-    "after": " can align the technical specification with setup access and rehearsal timings."
+    "before": "For an AV package that fits the wider programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/wedding-event-management-sri-lanka": {
     "href": "https://cypherevents.lk/event-management-sri-lanka/",
-    "anchor": "event management company Sri Lanka",
-    "before": "When comparing wedding suppliers, an ",
-    "after": " service can coordinate ceremony timings, guest arrangements and reception handovers."
+    "anchor": "event management Sri Lanka",
+    "before": "When comparing wedding suppliers, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/about": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "For the planning and on-the-day coordination of live events, our sister company ",
-    "after": " handles the event side alongside the advertising brief."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For the planning and on-the-day coordination of live events, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/services": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "If your advertising brief also includes a live programme, consider an ",
-    "after": " for venue, supplier and on-site coordination."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "If your advertising brief also includes a live programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/case-studies": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "cypherevents.lk",
-    "before": "For the live-event side of a campaign, explore ",
-    "after": " alongside your advertising objectives and activation brief."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For the live-event side of a campaign, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-marketing-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "Need the event itself planned and run as well as promoted? Our sister company ",
-    "after": " handles that side."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/blog/event-promotion-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "event specialists in Sri Lanka",
-    "before": "Before promoting an event, align dates, capacity and the guest programme with ",
-    "after": " so the campaign reflects the delivery plan."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "Before promoting an event, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/360-marketing-campaigns-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "When a 360-degree campaign includes a live launch or activation, ",
-    "after": " is an option for planning and coordinating that event element."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "When a 360-degree campaign includes a live launch or activation, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/full-service-advertising-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "cypherevents.lk",
-    "before": "For campaigns that combine advertising with a live programme, explore ",
-    "after": " for the event planning and coordination side."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For campaigns that combine advertising with a live programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/integrated-marketing-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "When integrating media with a live brand experience, ",
-    "after": " can be considered for the event delivery part of the campaign."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "When integrating media with a live brand experience, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-photography-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "To align photography with arrivals, speeches and key programme moments, coordinate the event brief with ",
-    "after": " alongside your photographer."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "To align photography with the event schedule, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-videography-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "event company in Sri Lanka",
-    "before": "For video coverage that follows the live running order, an ",
-    "after": " can help connect crew positions with the event schedule."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For video coverage that follows the live running order, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-live-streaming-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "For live streams covering a wider event programme, coordinate the room schedule and broadcast cues with ",
-    "after": " alongside the technical crew."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For live streams covering a wider event programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/event-entertainment-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "An ",
-    "after": " can connect artist arrival times, sound checks and performance slots with the wider guest programme."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For extra support, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/mc-host-hire-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "To align your host's script and stage cues with the wider programme, discuss the event running order with ",
-    "after": " alongside the MC brief."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "To align your host's script and stage cues with the wider programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/dj-hire-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "For DJ sets within a larger event programme, ",
-    "after": " is an option for coordinating performance timings and technical handovers."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For DJ sets within a larger event programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/live-band-hire-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "event specialists",
-    "before": "For live bands sharing a stage with speeches or other acts, ",
-    "after": " can help coordinate sound checks and changeovers."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For live bands sharing a stage with speeches or other acts, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/dancer-hire-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "For dance performances within a larger programme, coordinate rehearsal access and stage cues with ",
-    "after": " alongside the performers' brief."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For dance performances within a larger programme, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/brand-activation-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "event management company in Sri Lanka",
-    "before": "For activations with live audiences and multiple suppliers, an ",
-    "after": " can coordinate the experience alongside the promotion campaign."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For activations with live audiences and multiple suppliers, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/mall-activation-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "cypherevents.lk",
-    "before": "For mall activations requiring access schedules, staffing and on-site coordination, explore ",
-    "after": " alongside the campaign brief."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For mall activations requiring on-site coordination, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   },
   "/roadshow-marketing-sri-lanka": {
-    "href": "https://cypherevents.lk/",
-    "anchor": "Cypher Events",
-    "before": "For roadshows combining promotion with live activities in several locations, ",
-    "after": " is an option for coordinating the event delivery schedule."
+    "href": "https://cypherevents.lk/event-management-sri-lanka/",
+    "anchor": "event management Sri Lanka",
+    "before": "For roadshows combining promotion with live activities in several locations, Cypher Events offers specialist ",
+    "after": " services that handle on-the-day delivery from setup to close."
   }
 };
 

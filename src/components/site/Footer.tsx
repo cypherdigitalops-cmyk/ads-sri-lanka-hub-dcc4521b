@@ -98,6 +98,9 @@ export function SiteFooter() {
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-4 py-5 text-xs text-primary-foreground/70">
           © 2025 {SITE.domain} — Information hub. Call {phone} for free advertising guidance.
+          <p className="mt-2">
+            Our group: <a href="https://cypherevents.lk/" className="hover:underline underline-offset-2">Cypher Events</a> – event planning &amp; management.
+          </p>
         </div>
       </div>
     </footer>

@@ -3,6 +3,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
+import { CypherEventsContextLink } from "@/components/site/CypherEventsContextLink";
 
 const TITLE = "Event Management Cost in Sri Lanka — Realistic Budgets (2026)";
 const DESC = "Event management cost in Sri Lanka — corporate events, weddings, product launches, conferences and exhibitions. Per-head and turnkey ranges.";
@@ -70,6 +71,7 @@ export const Route = createFileRoute("/event-management-cost-sri-lanka")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE.url}/${SLUG}` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/${SLUG}` }],
@@ -88,6 +90,7 @@ function CostPage() {
           </div>
           <h1 className="mt-4 text-3xl font-bold sm:text-5xl">Event Management Cost in Sri Lanka</h1>
           <p className="mt-4 max-w-3xl text-primary-foreground/85">{DESC}</p>
+          <CypherEventsContextLink className="mt-4 max-w-3xl leading-relaxed text-primary-foreground/85" />
         </div>
       </section>
 

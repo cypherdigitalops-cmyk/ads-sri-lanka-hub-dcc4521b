@@ -2,6 +2,7 @@ import { Fragment, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { SITE } from "@/data/site";
 import { BRIEF_POSTS, PUBLISHED, type BriefPost } from "@/data/cypher-blog-posts";
+import { CypherEventsContextLink } from "./CypherEventsContextLink";
 
 const AUTHOR = "Advertising Sri Lanka Editorial Team";
 
@@ -26,7 +27,7 @@ function inline(text: string): ReactNode[] {
   return out;
 }
 
-export function Markdown({ source }: { source: string }) {
+export function Markdown({ source, afterFirstParagraph }: { source: string; afterFirstParagraph?: ReactNode }) {
   const lines = source.split("\n");
   const blocks: ReactNode[] = [];
   let i = 0;
@@ -74,6 +75,10 @@ export function Markdown({ source }: { source: string }) {
     }
     const g = collect((l) => !!l.trim() && !/^(#|>|\||[-*] |\d+\. )/.test(l));
     blocks.push(<p key={k++} className="my-4 leading-relaxed text-muted-foreground">{inline(g.join(" "))}</p>);
+    if (afterFirstParagraph) {
+      blocks.push(<Fragment key={k++}>{afterFirstParagraph}</Fragment>);
+      afterFirstParagraph = undefined;
+    }
   }
   return <>{blocks}</>;
 }
@@ -125,7 +130,7 @@ export function BriefBlogPost({ slug }: { slug: string }) {
       <p className="mt-3 text-sm text-muted-foreground">
         By {AUTHOR} · Last updated <time dateTime={PUBLISHED}>{date}</time>
       </p>
-      <Markdown source={p.body} />
+      <Markdown source={p.body} afterFirstParagraph={<CypherEventsContextLink path={`/blog/${slug}`} className="my-4 leading-relaxed text-muted-foreground" />} />
       <h2 className="mt-10 text-2xl font-bold text-foreground">Frequently asked questions</h2>
       <div className="mt-4 space-y-3">
         {p.faqs.map((f) => (

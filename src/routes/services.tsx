@@ -4,6 +4,7 @@ import { ArrowRight, Search } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { CATEGORIES, SITE, titleCase } from "@/data/site";
+import { CypherEventsContextLink } from "@/components/site/CypherEventsContextLink";
 
 const TITLE = "All Advertising Services in Sri Lanka — Full Directory | advertisingsrilanka.lk";
 const DESC = "Browse 180+ advertising services for Sri Lanka — ATL, BTL, digital, SEO, social media, outdoor, branding, web & video. Search and find your solution in seconds.";
@@ -15,6 +16,8 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: DESC },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: SITE.url + "/services" }],
   }),
@@ -44,6 +47,7 @@ function ServicesIndex() {
           <p className="mt-4 max-w-2xl text-primary-foreground/85">
             Every service we offer, organised by category. Use search to find exactly what you need.
           </p>
+          <CypherEventsContextLink className="mt-4 max-w-2xl leading-relaxed text-primary-foreground/85" />
           <div className="relative mt-7 max-w-2xl">
             <Search className="pointer-events-none absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
             <input

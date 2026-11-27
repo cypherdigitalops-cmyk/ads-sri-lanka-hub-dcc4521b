@@ -3,6 +3,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
+import { CypherEventsContextLink } from "@/components/site/CypherEventsContextLink";
 
 const TITLE = "Case Studies — Advertising Campaigns in Sri Lanka";
 const DESC = "Real campaign results from Sri Lankan brands across digital, ATL, BTL, outdoor and SEO. See how advertisingsrilanka.lk delivers measurable growth.";
@@ -14,6 +15,8 @@ export const Route = createFileRoute("/case-studies")({
       { name: "description", content: DESC },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/case-studies` }],
   }),
@@ -37,6 +40,7 @@ function Cases() {
           <div className="text-primary-foreground/80"><Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Case Studies" }]} /></div>
           <h1 className="mt-4 text-3xl font-bold sm:text-5xl">Case studies</h1>
           <p className="mt-4 max-w-2xl text-primary-foreground/85">A snapshot of recent work for Sri Lankan brands.</p>
+          <CypherEventsContextLink className="mt-4 max-w-2xl leading-relaxed text-primary-foreground/85" />
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-4 py-14">

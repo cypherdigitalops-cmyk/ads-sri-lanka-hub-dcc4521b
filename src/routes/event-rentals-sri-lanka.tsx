@@ -4,6 +4,7 @@ import { ArrowRight, Phone, MessageCircle, CheckCircle2, Truck, Wrench, ShieldCh
 import { PageShell } from "@/components/site/PageShell";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
+import { CypherEventsContextLink } from "@/components/site/CypherEventsContextLink";
 
 const TITLE = "Event Rentals Sri Lanka — Stage, Sound, LED, Tents & 17 Categories | Islandwide";
 const DESC = "Event rentals Sri Lanka — LED screens, sound, stages, lighting, tents, generators, photo booths & 17 categories. Delivered, set up & operated islandwide. Call 0707310410.";
@@ -37,6 +38,7 @@ export const Route = createFileRoute("/event-rentals-sri-lanka")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/event-rentals-sri-lanka` }],
     scripts: [
@@ -123,6 +125,7 @@ function RentalsHubPage() {
             <p className="mt-4 max-w-2xl text-lg opacity-90">
               LED screens, sound, stages, lighting, photo booths, tents, generators, drones and more — delivered, set up and operated islandwide. Get pricing and free guidance.
             </p>
+            <CypherEventsContextLink className="mt-4 max-w-2xl text-lg leading-relaxed text-primary-foreground/90" />
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={`tel:${SITE.phone}`}

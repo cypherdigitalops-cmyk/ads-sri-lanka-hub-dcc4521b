@@ -4,6 +4,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/site";
+import { CypherEventsContextLink } from "@/components/site/CypherEventsContextLink";
 
 const TITLE = "About Us | Advertising Sri Lanka";
 const DESC = "Meet the advertising specialists behind advertisingsrilanka.lk. Strategy, creative, media, digital, SEO and outdoor — one expert team for every brand in Sri Lanka.";
@@ -15,6 +16,8 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: DESC },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/about` }],
   }),
@@ -29,6 +32,7 @@ function About() {
           <div className="text-primary-foreground/80"><Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "About" }]} /></div>
           <h1 className="mt-4 text-3xl font-bold sm:text-5xl">About advertisingsrilanka.lk</h1>
           <p className="mt-4 max-w-2xl text-primary-foreground/85">Sri Lanka's all-in-one advertising hub — built by senior strategists, creatives and media buyers with decades of combined experience.</p>
+          <CypherEventsContextLink className="mt-4 max-w-2xl leading-relaxed text-primary-foreground/85" />
         </div>
       </section>
       <section className="mx-auto max-w-3xl px-4 py-14 text-muted-foreground">

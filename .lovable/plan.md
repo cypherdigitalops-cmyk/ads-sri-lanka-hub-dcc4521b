@@ -1,10 +1,14 @@
-# Event Rentals page: fix Cypher Events link text
+# Cypher Events links: use only two keywords
 
-The link is already on /event-rentals-sri-lanka in the preview (top banner, right under the opening sentence), but its words are "event planning in Sri Lanka". You want "event planning Sri Lanka".
+Right now the 65 Cypher Events links use about 30 different link words (e.g. "Cypher Events", "event planning in Sri Lanka", "event management company in Sri Lanka"). You want only two keywords.
 
 ## Changes
-1. Change the link words on /event-rentals-sri-lanka to **event planning Sri Lanka**, and adjust the sentence so it still reads naturally:
-   "For equipment bookings that need to fit a complete venue and supplier schedule, a team offering **event planning Sri Lanka** wide can help coordinate delivery, rehearsals and the guest programme."
-2. One other page also uses "event planning in Sri Lanka" — change it to "event planning Sri Lanka" the same way.
-3. Link destination stays https://cypherevents.lk/event-planning-sri-lanka/. Nothing else on the pages changes.
-4. Check both pages show the new words, then publish so the live site gets all the Cypher Events links (the live site doesn't have them yet, which is why you couldn't find it).
+1. Every link to the Cypher Events **event planning** page uses the words **event planning Sri Lanka**.
+2. Every link to the Cypher Events **event management** page uses **event management Sri Lanka**.
+3. Links that currently go to the Cypher Events **home page** will use **event management Sri Lanka** and point to the event management page instead, so every link targets one of the two keywords.
+4. Reword each surrounding sentence so it still reads naturally with the new keyword (e.g. on /event-rentals-sri-lanka: "...a specialist in **event planning Sri Lanka** can help coordinate delivery, rehearsals and the guest programme.").
+5. The footer link stays as it is. No other page content changes. Links stay subtle, same style.
+6. Check every page shows exactly one link with the right keyword, then publish so the live site gets them — the live site doesn't have these links yet, which is why you couldn't find it on event rentals.
+
+## Technical details
+- Edit anchor/before/after/href in the pathname-keyed backlinks data file; update its test (destination counts become planning vs management only).

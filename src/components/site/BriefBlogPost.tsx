@@ -27,7 +27,7 @@ function inline(text: string): ReactNode[] {
   return out;
 }
 
-export function Markdown({ source, afterFirstParagraph }: { source: string; afterFirstParagraph?: ReactNode }) {
+export function Markdown({ source, afterFirstParagraph, customBlocks }: { source: string; afterFirstParagraph?: ReactNode; customBlocks?: Record<string, ReactNode> }) {
   const lines = source.split("\n");
   const blocks: ReactNode[] = [];
   let i = 0;
@@ -35,6 +35,9 @@ export function Markdown({ source, afterFirstParagraph }: { source: string; afte
   while (i < lines.length) {
     const line = lines[i] ?? "";
     if (!line.trim()) { i++; continue; }
+    const customBlock = customBlocks?.[line.trim()];
+    if (customBlock) { blocks.push(<Fragment key={k++}>{customBlock}</Fragment>); i++; continue; }
+    if (line.trim() === "---") { blocks.push(<hr key={k++} className="my-8 border-border" />); i++; continue; }
     if (line.startsWith("### ")) { blocks.push(<h3 key={k++} className="mt-6 text-lg font-bold text-foreground">{inline(line.slice(4))}</h3>); i++; continue; }
     if (line.startsWith("## ")) { blocks.push(<h2 key={k++} className="mt-10 text-2xl font-bold text-foreground">{inline(line.slice(3))}</h2>); i++; continue; }
     const collect = (test: (l: string) => boolean) => { const g: string[] = []; while (i < lines.length && test(lines[i] ?? "")) g.push(lines[i++] ?? ""); return g; };

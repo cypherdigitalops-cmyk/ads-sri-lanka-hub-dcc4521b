@@ -8,91 +8,91 @@ export type EventBacklink = {
 
 export const CYPHER_EVENTS_BACKLINKS: Readonly<Record<string, EventBacklink>> = {
   "/event-planners-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "If you want one team to plan the whole event for you, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/event-planning-checklist-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "When assigning the checklist's tasks, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/business-events-calendar-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "Once you have shortlisted dates from the calendar, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/venue-finding-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "Before committing to a venue, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-venue-colombo": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For a Colombo venue booking that also needs supplier coordination and a guest programme, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/event-venues-sri-lanka-colombo": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "When comparing Colombo venues, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/blog/event-permits-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For extra support, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/school-events-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For extra support, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/university-events-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For university conferences, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/charity-events-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For extra support, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-decor-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "To align décor with the venue layout, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-rentals-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For equipment bookings that need to fit a complete venue and supplier schedule, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/event-catering-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "For catering that fits the programme, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/tent-marquee-rental-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "When booking tents and marquees, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."
   },
   "/table-chair-rental-sri-lanka": {
-    "href": "https://cypherevents.lk/event-planning-sri-lanka/",
+    "href": "https://cypherevents.lk/event-planning-sri-lanka",
     "anchor": "event planning Sri Lanka",
     "before": "To connect table quantities and seating layouts with the wider guest programme, Cypher Events offers specialist ",
     "after": " services that bring venues, suppliers and timelines into one plan."

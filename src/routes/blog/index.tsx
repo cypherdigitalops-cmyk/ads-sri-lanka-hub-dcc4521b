@@ -1,12 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { SITE } from "@/data/site";
+import { EVENT_PACKAGE_PAGES } from "@/data/cypher-events-package";
 
 const modules = import.meta.glob("./*.tsx", { eager: false });
-const SLUGS = Object.keys(modules)
+const NEWEST_SLUGS = EVENT_PACKAGE_PAGES
+  .filter((page) => page.kind === "blog")
+  .map((page) => page.path.replace("/blog/", ""));
+const EXISTING_SLUGS = Object.keys(modules)
   .map((p) => p.replace("./", "").replace(/\.tsx$/, ""))
-  .filter((s) => s !== "index")
+  .filter((s) => s !== "index" && !NEWEST_SLUGS.includes(s))
   .sort();
+const SLUGS = [...NEWEST_SLUGS, ...EXISTING_SLUGS];
 
 function humanize(slug: string) {
   return slug
